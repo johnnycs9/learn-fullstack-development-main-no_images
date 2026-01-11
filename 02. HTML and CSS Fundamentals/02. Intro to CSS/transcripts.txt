@@ -1,0 +1,1527 @@
+Speaker
+
+Okay, now you are going to learn about centering elements in CSS. And that is he.
+
+Speaker
+
+scary topic for a lot of developers. So scary that this stack overflow question about how
+
+Speaker
+
+Up to horizontally centered an element has been viewed 4.5 billion times.
+
+Speaker
+
+So if you think this is a little bit confusing, you are in very good company.
+
+Speaker
+
+Don't worry about it.
+
+Speaker
+
+So with that in mind, let's move over to our example.
+
+Speaker
+
+You are going to center this dinosaur pool.
+
+Speaker
+
+As you can see in the CSS.
+
+Speaker
+
+It has just one property set at this point.
+
+Speaker
+
+of more space than we have available.
+
+Speaker
+
+and setting the wither at is actually an important thing in order to center it.
+
+Speaker
+
+because there are some
+
+Speaker
+
+things that need to be in place when we are to send your elements.
+
+Speaker
+
+with the technique you are about to learn.
+
+Speaker
+
+a centering with margins. And these three components are first, the element needs to be displayed blocked. Because how is an element supposed to center itself if it doesn't command full control over all the horizontal space?
+
+Speaker
+
+If it's displayed in line and allows other elements to stack themselves besides the element, well, then it won't be able to center itself because that space now is busy with other things.
+
+Speaker
+
+So in order to center this pool,
+
+Speaker
+
+It needs to control.
+
+Speaker
+
+All the horizontal space.
+
+Speaker
+
+So it needs this.
+
+Speaker
+
+Now, that didn't change anything.
+
+Speaker
+
+But under the hood.
+
+Speaker
+
+the poor now controls the full horizontal space.
+
+Speaker
+
+Okay, the second part is that it must have a width.
+
+Speaker
+
+And that is what we've done here already, because...
+
+Speaker
+
+How is this item supposed to be centered inside the browser if it is wider than the browser itself? That's often what happens with either large elements or with some HTML elements who just naturally actually expand to take up all the available space in the block.
+
+Speaker
+
+So we have to make sure that our element has a width.
+
+Speaker
+
+And finally...
+
+Speaker
+
+We set the margin on the left hand side and the right hand side to the value
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+all the way to the right hand side.
+
+Speaker
+
+Auto here means take up
+
+Speaker
+
+all the available space. And since this is a block element,
+
+Speaker
+
+The available space is all the space that's left after the pool has taken up its 200 pixels.
+
+Speaker
+
+So just ate up all of this space and turned it into margin.
+
+Speaker
+
+However, at this point, margin right enters the party.
+
+Speaker
+
+And just...
+
+Speaker
+
+I won't be available space as well.
+
+Speaker
+
+And at that point, the margin left and margin right goes into a discussion and decides, "Well...
+
+Speaker
+
+Actually, there are two of us here pushing on each of the sides of the element.
+
+Speaker
+
+trying to get all of the available white space.
+
+Speaker
+
+Let's just divide it evenly amongst both of us.
+
+Speaker
+
+And result? Well, it is that the item is centered.
+
+Speaker
+
+So that was a long explanation of centering with margins.
+
+Speaker
+
+you feel confused, don't worry about it right now. All you need to do is remember these three conditions and just be aware of the 4.5 million other developers who are in or have been in the same boat as you. Let's move on to the next scrim.
+
+Mic
+
+That's an important one.
+
+Speaker
+
+Okay, we are back at our Google project. Now your challenge is to center the logo and the search field using the technique you just learned.
+
+Speaker
+
+So go ahead and give that a shot right now.
+
+Speaker
+
+And then I will, of course, show you the solution afterwards as well.
+
+Mic
+
+That's weird.
+
+Mic
+
+you would think that the day
+
+Mic
+
+- Live.
+
+Speaker
+
+as you hopefully remembered.
+
+Speaker
+
+the way to center an element, which is display block and has a width.
+
+Speaker
+
+is by adding margin list auto and margin right auto. So let's do that.
+
+Speaker
+
+As you can see, that pushes the logo all the way to the right hand side because the margin left is set to auto and it takes up as much space as it can.
+
+Speaker
+
+We'll do the same thing with the right hand side. Good Martin. Right.
+
+Speaker
+
+Then, the right hand side starts pushing back again, and when they're both taking up each
+
+Speaker
+
+equally as much space.
+
+Speaker
+
+The margin left and margin right kind of decides, yeah, let's not argue anymore. Now we have a nice balance and whoa, low and behold, our element is centered.
+
+Speaker
+
+Now what we can do is be super lazy and copy that code.
+
+Speaker
+
+and paste it in down here and boom.
+
+Speaker
+
+our input field is centered as well.
+
+Speaker
+
+And our project is starting to look a little bit like our finished design. So this is super cool. Let's just keep up the pace and move on.
+
+Speaker
+
+We need to take a little step back and learn a new CSS concept.
+
+Speaker
+
+Which is the...
+
+Speaker
+
+relative of
+
+Speaker
+
+margins.
+
+Speaker
+
+Pudding.
+
+Speaker
+
+And, of course, going to learn that.
+
+Speaker
+
+through the lens of an example.
+
+Speaker
+
+So here I have
+
+Speaker
+
+Just a simple div.
+
+Speaker
+
+Which contains?
+
+Speaker
+
+a little bit of text, or specifically the two first sentences in the white paper behind Bitcoin.
+
+Speaker
+
+And let's say we want to turn this into a nice-looking card that people can read.
+
+Speaker
+
+If so, we'd probably create a class, can call it Card?
+
+Speaker
+
+And then of course in the style.css, we'd select that card and apply the styling. As for now, it just has one property set, which is the color.
+
+Speaker
+
+that we've said to a shade of black, that isn't...
+
+Speaker
+
+You're black.
+
+Speaker
+
+a little bit softer, so to speak? That is because...
+
+Speaker
+
+By default.
+
+Speaker
+
+And you browse your users pure black as the text color and pure white as the background color. And as a rule of thumb, you never want to have.
+
+Speaker
+
+pure black on pure white.
+
+Speaker
+
+That's not a pleasant experience for the ice.
+
+Speaker
+
+that was a diversion, let's move on with turning this into a nice looking card.
+
+Speaker
+
+So what Card needs a background color, so let's just...
+
+Speaker
+
+You're back, wrong.
+
+Speaker
+
+Gray, for example, like that.
+
+Speaker
+
+And we also don't want our card to be full with, because as you remember, divs are blocked by default and take up the full with.
+
+Speaker
+
+if you don't specify anywhere on it.
+
+Speaker
+
+We're gonna do with...
+
+Speaker
+
+For example, 300 pixels like that.
+
+Speaker
+
+And then we also want some space above the card.
+
+Speaker
+
+of course, Martin
+
+Speaker
+
+Let the pressure 50 pixels down from the top.
+
+Speaker
+
+And finally, it should be centered, so...
+
+Speaker
+
+Let's do it, Marken.
+
+Speaker
+
+Left.
+
+Speaker
+
+Auto and margin.
+
+Speaker
+
+Right.
+
+Speaker
+
+Okay, so now we have something that looks at least a little bit like a card.
+
+Speaker
+
+there's one problem here.
+
+Speaker
+
+You can see the text is crammed all the way into the edges of the if, which doesn't look particularly good.
+
+Speaker
+
+And that is where
+
+Speaker
+
+comes into play.
+
+Speaker
+
+So now I'm just gonna apply the padding.
+
+Speaker
+
+We're doing potting.
+
+Speaker
+
+for example.
+
+Speaker
+
+Thank you, Wendy.
+
+Speaker
+
+Prickles like that.
+
+Speaker
+
+As you can see.
+
+Speaker
+
+That created a little bit of space
+
+Speaker
+
+basically some breathing room in between the text and the edge of our div container here.
+
+Speaker
+
+And if I do...
+
+Speaker
+
+50, you can see it's even more breathing room.
+
+Speaker
+
+So where's margin?
+
+Speaker
+
+add space on the
+
+Speaker
+
+outside of our div.
+
+Speaker
+
+card which we've selected here.
+
+Speaker
+
+Padding will
+
+Speaker
+
+add space on the inside.
+
+Speaker
+
+in between the
+
+Speaker
+
+content.
+
+Speaker
+
+and the edges of the container.
+
+Speaker
+
+So, margin kind of lives.
+
+Speaker
+
+up here.
+
+Speaker
+
+And down here.
+
+Speaker
+
+If we are to visualize this in our HTML.
+
+Speaker
+
+where padding lives on the inside.
+
+Speaker
+
+of our element.
+
+Speaker
+
+That is here.
+
+Speaker
+
+I'm here.
+
+Speaker
+
+And now you might wonder, well, why did I just write padding? First, for Martin, we're specifying each of the sides.
+
+Speaker
+
+And well, you can do exactly that on padding as well.
+
+Speaker
+
+This padding 20 pixels right here is the exact same thing as writing the following.
+
+Speaker
+
+Padding top 20, bottom 20, left 20, and right 20.
+
+Speaker
+
+So with these four lines, we
+
+Speaker
+
+We can actually delete this one up here.
+
+Speaker
+
+Then we have the same convention as we're using with Martis.
+
+Speaker
+
+It's just that you can use
+
+Speaker
+
+Adding 20 pixels like that.
+
+Speaker
+
+all of the values are the same.
+
+Speaker
+
+It's basically a shorthand.
+
+Speaker
+
+And now that we have all of them written out, we can play around a little bit with it, perhaps, Adi.
+
+Speaker
+
+100 pixels on the left hand side looks really weird and 100 pixels on the top as well.
+
+Speaker
+
+And suddenly our card does not look very good.
+
+Speaker
+
+Let's get it back.
+
+Speaker
+
+And now I want to give you a challenge.
+
+Speaker
+
+I want you to ask
+
+Speaker
+
+padding to make our card.
+
+Speaker
+
+look like the provided design.
+
+Speaker
+
+And the provided design is right here.
+
+Speaker
+
+You can see it's a completely broken card, as we've been ruthless about our padding.
+
+Speaker
+
+And I've actually removed all of the padding rules from the CSS as I want you to build some muscle memory writing padding.
+
+Speaker
+
+So go ahead and make this card look like it does in the slide.
+
+Speaker
+
+and then return back to me once you've done it.
+
+Speaker
+
+Okay, hopefully that went well. If not, no worries, let's do it together.
+
+Speaker
+
+As you can see here, it's completely crammed into the bottom left corner.
+
+Speaker
+
+Which means that it doesn't have...
+
+Speaker
+
+any padding on the left hand side or
+
+Speaker
+
+any padding on the bottom.
+
+Speaker
+
+But a ton of padding on the top.
+
+Speaker
+
+and a ton of padding on the right.
+
+Speaker
+
+So I'm just gonna do...
+
+Speaker
+
+100 pixels, something I got.
+
+Speaker
+
+Seems.
+
+Speaker
+
+Pretty much what we have in the design as well.
+
+Speaker
+
+and then do the same.
+
+Speaker
+
+cladding.
+
+Speaker
+
+And to me, that looks actually pretty much like our design.
+
+Speaker
+
+I don't need to write padding bottom or padding left now.
+
+Speaker
+
+Do I could do it? I could do it.
+
+Speaker
+
+Potting.
+
+Speaker
+
+- Autumn.
+
+Speaker
+
+0 pixels or just 0.
+
+Speaker
+
+I'm padding.
+
+Speaker
+
+Left.
+
+Speaker
+
+Zero, that's well.
+
+Speaker
+
+Go.
+
+Speaker
+
+That didn't change anything.
+
+Speaker
+
+So it's actually not needed because by default the padding of a
+
+Speaker
+
+is
+
+Speaker
+
+zero.
+
+Speaker
+
+So, however you solve this.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+So now you've learned about controlling the space on the outside of the element with the margin.
+
+Speaker
+
+on the inside of the element with the padding.
+
+Speaker
+
+Wouldn't it be nice if we could also control the border in between the margin and the padding?
+
+Speaker
+
+And it turns out we can.
+
+Speaker
+
+You guessed it.
+
+Speaker
+
+border property.
+
+Speaker
+
+How's everybody right there?
+
+Speaker
+
+and then specify, for example.
+
+Speaker
+
+Two pixels thickness solid in shape.
+
+Speaker
+
+and then color red.
+
+Speaker
+
+Good to see you.
+
+Speaker
+
+Then we get a border, which
+
+Speaker
+
+which is on the outside of the padding, but on the inside of the margin.
+
+Speaker
+
+if we change any of these through.
+
+Speaker
+
+values here.
+
+Speaker
+
+It'll update accordingly, so let's try.
+
+Speaker
+
+pixels with instead, you can see it's much thicker now.
+
+Speaker
+
+Instead of solid, we can do...
+
+Speaker
+
+Audit like that.
+
+Speaker
+
+Pretty weird.
+
+Speaker
+
+And instead of red, we can do.
+
+Speaker
+
+For example, FF.
+
+Speaker
+
+White in hex decimal.
+
+Speaker
+
+Or just right.
+
+Speaker
+
+White like that.
+
+Speaker
+
+or just blue, so it's a little bit clearer.
+
+Speaker
+
+Now there are many types of borders, but in 99.9% of the cases you want to use solid like that.
+
+Speaker
+
+And also very often.
+
+Speaker
+
+You'd want to soft knob in the
+
+Speaker
+
+these corners.
+
+Speaker
+
+And you can do that with the border.
+
+Speaker
+
+Adios property. An area specify a pixel value, for example. 30 pixels and boom, there you can see.
+
+Speaker
+
+We have it much softer corners.
+
+Speaker
+
+If it crank this up to...
+
+Speaker
+
+100.
+
+Speaker
+
+For a thousand, it stops at some point because then the edges have simply turned into half circles. So at some point, there's no use going any higher.
+
+Speaker
+
+No, this looks...
+
+Speaker
+
+- You hit it, Pat.
+
+Speaker
+
+So what I want you to do now is fix it up so that it looks...
+
+Speaker
+
+Like this.
+
+Speaker
+
+And I'm not going to give you any of the values I've used here just a little hint.
+
+Speaker
+
+I took an already existing color in our box and used it for the border.
+
+Speaker
+
+That's a common web design trick to
+
+Speaker
+
+reuse colors and not have too many different colors. So if you think this is pure black, mm-hmm, you are wrong.
+
+Speaker
+
+So go ahead and change the values.
+
+Speaker
+
+the border and border radius so that our example here matches the design I've provided in the slide.
+
+Mic
+
+I'm gonna fuck them, I suppose for now it's 2, 2, 2, 2, 2 like that.
+
+Speaker
+
+Be a hen.
+
+Speaker
+
+Hopefully that went well.
+
+Speaker
+
+So let's start with the border.
+
+Speaker
+
+Big pixels here.
+
+Speaker
+
+bit to thick for me, so let's try
+
+Speaker
+
+instead.
+
+Speaker
+
+Is that not just better? Yes.
+
+Speaker
+
+and the color.
+
+Speaker
+
+I gave you hint.
+
+Speaker
+
+was just the blackish color we have for our text.
+
+Speaker
+
+Like that.
+
+Speaker
+
+And the border radius is much smaller, let's try 10.
+
+Speaker
+
+It still looks a little bit rounder.
+
+Speaker
+
+So
+
+Speaker
+
+Yes, there I think we got it.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Now.
+
+Speaker
+
+cool thing to do in order to inspect the margin.
+
+Speaker
+
+border padding and size of the element in general.
+
+Speaker
+
+is to open up the dev tools which can be done by right clicking on the nav bar here.
+
+Speaker
+
+and then clicking in spec and then this dev tools panel will open.
+
+Speaker
+
+Here, clicking on the "Select icon" on the left hand side.
+
+Speaker
+
+and then hovering over the...
+
+Speaker
+
+Element.
+
+Speaker
+
+Finally clicking at it.
+
+Speaker
+
+There you will see.
+
+Speaker
+
+We have selected the element in the elements tab.
+
+Speaker
+
+And under the styles tab, you can see the styling, we have applied
+
+Speaker
+
+using CSS.
+
+Speaker
+
+heard it can actually modify them if you want.
+
+Speaker
+
+But we're not going to do that right now.
+
+Speaker
+
+We're gonna scroll down.
+
+Speaker
+
+and verify that our margin border and padding are correct.
+
+Speaker
+
+So if I hover over the margin here, you can see up here in the minibrowser and it's marked in orange.
+
+Speaker
+
+And the values are provided down in the box here. If I move over to the border, you can see that border is now selected in the browser.
+
+Speaker
+
+And as indeed four pixels, as we coded up a minute ago.
+
+Speaker
+
+If I move over to the padding.
+
+Speaker
+
+You can see that is also indeed 20 on each side just as we want it to be. And finally, if I...
+
+Speaker
+
+over the center here.
+
+Speaker
+
+content is highlighted and the content of this div is just the text.
+
+Speaker
+
+And as you can see, it is 300 pixels wide.
+
+Mic
+
+(chuckles)
+
+Speaker
+
+just as we said it us so it's working us expected
+
+Speaker
+
+And the height is dictated by
+
+Speaker
+
+many lines of text are two sentences required.
+
+Speaker
+
+using this technique of inspecting an element.
+
+Mic
+
+Hey Siri, 30 minute timer, alarm.
+
+Speaker
+
+And its sizing properties like this is a really good way of debugging if something, for example, looks wrong.
+
+Mic
+
+30 minutes counting down.
+
+Speaker
+
+because it gives you an ability to verify if the numbers here match up with what you've tried to write in your CSS.
+
+Speaker
+
+So now that you've learned all of that.
+
+Speaker
+
+I want to tell you the name of this.
+
+Speaker
+
+It's actually cold.
+
+Speaker
+
+the box model.
+
+Speaker
+
+And to be honest, I've never really liked this word.
+
+Speaker
+
+It sounds more complex than the rest, in my opinion.
+
+Speaker
+
+It's just spacing around the element, a border,
+
+Speaker
+
+meeting on the inside of an element and the content itself. But in web development, we call this the box model.
+
+Speaker
+
+So you'll probably hear this name come up from time to time.
+
+Speaker
+
+But you shouldn't fair it. You know exactly what it is and you've used all of the properties in the box model. So don't worry about it. Actually, let's give you a new box model practice in the next script.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, now you are going to create a really neat looking button.
+
+Speaker
+
+Namely, the following button on Twitter. Let's zoom in a little bit and here you can see it. This is the button you see if you already are following someone. And, we zoom out again. This is the Scrimbo Twitter profile.
+
+Speaker
+
+definitely just click this image and follow us because we share a
+
+Speaker
+
+of useful tips and tricks and career advice for aspiring coders here.
+
+Speaker
+
+So it's definitely worthwhile.
+
+Speaker
+
+Anyway, now you are going to use the things you've learned about
+
+Speaker
+
+adding.
+
+Speaker
+
+border, border radius, and so forth in order to make this button right here with the ugly default styling.
+
+Speaker
+
+Look exactly like this.
+
+Speaker
+
+Or not exactly?
+
+Speaker
+
+As we're not going to worry about the font, it is a little bit different, but other than that you should try to make it look identical.
+
+Speaker
+
+I've given you some hints here.
+
+Speaker
+
+For example, the border color is this hex color right here and the text color is this one right here. And also, you need to remember to adjust the font weight.
+
+Speaker
+
+And I don't think you've done that.
+
+Speaker
+
+Ever since the very first scrim, where you wrote your first lines of CSS?
+
+Speaker
+
+So you might have to look back.
+
+Speaker
+
+So, if you figure out how to adjust the font weight, or you can Google it up to you.
+
+Speaker
+
+Anyway, just go ahead and give this your best shot.
+
+Speaker
+
+And if you had some
+
+Speaker
+
+Okay, hopefully that went well, let's do it together.
+
+Speaker
+
+I'm going to target the button just using an element selector like this. And now let's pick the low hanging fruit.
+
+Speaker
+
+Namely, the ones we've gotten here already. For example, by doing color.
+
+Speaker
+
+and copying this.
+
+Speaker
+
+All the right here. Okay, that didn't change much. At least not visibly. Then let's do border.
+
+Speaker
+
+And I'm going to start with one pixel solid.
+
+Speaker
+
+and then the border color right here.
+
+Speaker
+
+So it looks a little bit different, though.
+
+Speaker
+
+but not quite.
+
+Speaker
+
+This.
+
+Speaker
+
+One thing we can clearly see is that this image has a white background.
+
+Speaker
+
+where ours is still a little bit great. So let's do that as well.
+
+Speaker
+
+Okay, yes.
+
+Speaker
+
+Arbucken is much more crammed. There's too little padding.
+
+Speaker
+
+We're as hairy, you can see we have a little bit of padding.
+
+Speaker
+
+top and the bottom and actually quite a lot of padding on the left and right hand side.
+
+Speaker
+
+And that's actually a little design tip right there.
+
+Speaker
+
+you often see is that buttons have more padding on the left hand side and the right hand side.
+
+Speaker
+
+they have a
+
+Speaker
+
+often below.
+
+Speaker
+
+Let's try.
+
+Speaker
+
+potting.
+
+Speaker
+
+Five pixels, for example, padding.
+
+Speaker
+
+bottom.
+
+Speaker
+
+five pixels and then we'll try.
+
+Speaker
+
+Left.
+
+Speaker
+
+10 pixels and...
+
+Speaker
+
+Right 10 pixels as well.
+
+Speaker
+
+How does that look?
+
+Speaker
+
+Not too bad, but actually it looks like this button has even more.
+
+Speaker
+
+So we've added.
+
+Speaker
+
+half as much on the top and bottom as we have on the sides. So let's crank up both of these a little bit.
+
+Speaker
+
+of these into
+
+Speaker
+
+top and below.
+
+Speaker
+
+and select both of these and do 16 left and right. Yeah, I think that's more like it.
+
+Speaker
+
+One thing that definitely is remaining is the round that edges here.
+
+Speaker
+
+So that is the border radius.
+
+Speaker
+
+I don't appear with the border.
+
+Speaker
+
+I can pick us.
+
+Speaker
+
+It's a little bit round now, but not as round as the Twitter button.
+
+Speaker
+
+So let's do
+
+Speaker
+
+16.
+
+Speaker
+
+word like it?
+
+Speaker
+
+Can we go higher?
+
+Speaker
+
+I think we can go to 18.
+
+Speaker
+
+That looks quite good to me.
+
+Speaker
+
+If we compare it to this one.
+
+Speaker
+
+And then finally, we needed to remember the font weight.
+
+Speaker
+
+Wait.
+
+Speaker
+
+That looks a lot better.
+
+Speaker
+
+I think the final adjustment.
+
+Speaker
+
+I want to make it is.
+
+Speaker
+
+adding even a little bit more padding around it.
+
+Speaker
+
+a bit more spacious.
+
+Speaker
+
+So here we are really in the Knit picking area.
+
+Speaker
+
+But let's try 10.
+
+Speaker
+
+on both of the carbon bottom, and let's try 20 on the left and right.
+
+Speaker
+
+And what's interesting now is that since the box now has grown in size, because it's affected by the padding, the border radius can also be cranked up a little bit.
+
+Speaker
+
+I think actually we can do 20 now.
+
+Speaker
+
+Yes, because the bigger the box is...
+
+Speaker
+
+More pixels you need to add in order to get this fully soft looking button.
+
+Speaker
+
+essentially has two half circles on each of its sides.
+
+Speaker
+
+Looking at the example?
+
+Speaker
+
+and comparing it with ours, I think we have reached our goal.
+
+Speaker
+
+And if your values are different than mine, that does not matter at all.
+
+Speaker
+
+actually creating the button of a huge public company here, you are just learning basic CSS, so it's totally not expected that you create buttons as neatly as Twitter does.
+
+Speaker
+
+as they probably have a team of developers and designers working just on this profile page.
+
+Speaker
+
+So, however it went, be proud of yourself and get ready to move on with our Google project.
