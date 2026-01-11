@@ -1,0 +1,1627 @@
+Speaker
+
+We are back at our Google project and now you are going to fix the design of our search field.
+
+Speaker
+
+and you're actually gonna get a design spec and a proper walkthrough of how I want it to look.
+
+Speaker
+
+So here I've opened up the dev tools, actually on the right hand side, as I want to inspect the box model of the
+
+Speaker
+
+this element with you.
+
+Speaker
+
+And if you wonder how I managed to stick the tools to the right hand side here.
+
+Speaker
+
+Just click these three icons if you're in Chrome, then you can choose the Doc side.
+
+Speaker
+
+So let's move on down here to the box model of the input field. And if I hover over the content in the box model here, you can see that it says
+
+Speaker
+
+400 pixels times 24 pixels.
+
+Mic
+
+you
+
+Speaker
+
+And you can see the content is marked in blue.
+
+Speaker
+
+in the Mini Browser here.
+
+Mic
+
+you
+
+Speaker
+
+That means that our width is 400 pixels.
+
+Speaker
+
+We know that because we set it ourselves here and the height of the content should be 24 pixels. Okay, let's move on to the padding. By hover over that,
+
+Mic
+
+you
+
+Speaker
+
+You can see it's green and it's highlighted in green in the mini browser, the padding at the top and the bottom are...
+
+Speaker
+
+10 pixels as you can see down
+
+Speaker
+
+here and the left hand side and right hand side have
+
+Speaker
+
+30 pixels each.
+
+Mic
+
+you
+
+Speaker
+
+And then if we move over to the border, you can see that it's simply one pixel.
+
+Speaker
+
+all around.
+
+Mic
+
+you
+
+Speaker
+
+Here is your design spec given to you by your hipster designer down in the bottom right corner here.
+
+Speaker
+
+Is your desire is your desire all around if we and the bottom are?
+
+Speaker
+
+10 pixels, as you can see down here, and the left hand side and the right hand side have
+
+Speaker
+
+30 pixels each.
+
+Mic
+
+you
+
+Speaker
+
+And then if we move over to the border...
+
+Speaker
+
+You can see that it's simply one pixel.
+
+Speaker
+
+all around.
+
+Mic
+
+you
+
+Speaker
+
+Here is your design spec given to you. Bye.
+
+Speaker
+
+your hipster designer down in the bottom right corner here.
+
+Speaker
+
+Hide-of content 24 pixels.
+
+Speaker
+
+But do remember the Thaddis,
+
+Speaker
+
+actually the height of the inner box here.
+
+Speaker
+
+not the height of the total input field?
+
+Speaker
+
+as that all
+
+Speaker
+
+But the height property should be 24 pixels.
+
+Speaker
+
+The padding above and beyond are said to ten pixels.
+
+Speaker
+
+right on the left hand side, 30 pixels.
+
+Speaker
+
+thickness of border one pixel.
+
+Speaker
+
+color of border is this.
+
+Speaker
+
+And then finally also the border radius is also a value that our designer has been kind enough to give to you.
+
+Speaker
+
+Take this design spec and implement it using CSS.
+
+Speaker
+
+Okay, hopefully that went well. If not, no worries, we'll do this together right now.
+
+Speaker
+
+So starting with the height of 24. There I'm going to just write.
+
+Speaker
+
+24 pixels like that.
+
+Speaker
+
+So it became a little bit colder now. The next step is the binding top and bottom was 10 pixels.
+
+Speaker
+
+10px.
+
+Speaker
+
+Autumn was also NPX like that.
+
+Speaker
+
+The padding left and right hand side were 30 pixels.
+
+Speaker
+
+according to the spec.
+
+Speaker
+
+So let's implement that, like that.
+
+Speaker
+
+and then we'll move on to the border.
+
+Speaker
+
+One pixel and this hex code right here.
+
+Speaker
+
+So I'll do border and here we have to provide it with three values. So one.
+
+Speaker
+
+Pixel.
+
+Speaker
+
+It is going to be solid and the color is...
+
+Speaker
+
+D-F-E-1-E.
+
+Speaker
+
+That looking pretty good.
+
+Speaker
+
+The final thing then is the border radius.
+
+Speaker
+
+And that should be 24 pixels, according to the design.
+
+Speaker
+
+And look at this, it is starting to look very
+
+Speaker
+
+really professional.
+
+Speaker
+
+So really good job if you did this challenge. If you did a couple of mistakes, no worries at all.
+
+Speaker
+
+I also did a little mistake here, according to best practices, when setting heights for input fields.
+
+Speaker
+
+because actually...
+
+Speaker
+
+I'm going to show you that this height of 24 pixels here is actually not the way.
+
+Speaker
+
+We want to do it.
+
+Speaker
+
+Because if I Google,
+
+Speaker
+
+Set type of input field CSS and then click the first link.
+
+Speaker
+
+That is a Stack Overflow question.
+
+Speaker
+
+And here you can see someone who's been having problems with this, so they've asked a question about it. If we scroll a little bit down, you can see that people are saying,
+
+Speaker
+
+with padding.
+
+Speaker
+
+and Wine Height.
+
+Speaker
+
+line height, that's not something we've used.
+
+Speaker
+
+We scroll a little bit down, you can see that.
+
+Speaker
+
+Some browsers will honor a CSS high-true.
+
+Speaker
+
+some not, so it seems to be a little bit difficult to use height for the input field.
+
+Speaker
+
+And this person's wall suggests line height.
+
+Speaker
+
+And likewise with this third person here. So I'm going to trust the wisdom of the crowds here and use line height instead.
+
+Speaker
+
+Didn't change anything, but we are using a property that more browsers apparently will honor.
+
+Speaker
+
+and line height is actually just the height of
+
+Speaker
+
+one line of text.
+
+Speaker
+
+and says that is everything we have inside of an input field. It's just one line of text.
+
+Speaker
+
+That'll be the exact same thing for setting the height.
+
+Speaker
+
+of the inner content of the input field.
+
+Speaker
+
+So if that was a little bit confusing and you prefer to just use height, that's totally fine as well. It's more important that you are using what you are comfortable with and then that you are doing it the 100% correct way according to conventions. So just use whatever you want.
+
+Speaker
+
+I just wanted you to be aware the fact that this is the recommended way according to Stack Overflow.
+
+Speaker
+
+With that,
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, we are back at our Google project and now you are going to fix the deal.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, we are back at our Google project and now you are going to fix the design of our search field.
+
+Speaker
+
+And you're actually gonna get a design spec and proper walkthrough of how I want it to look.
+
+Speaker
+
+So here I've opened up the
+
+Speaker
+
+Okay, now we're going to add the first button to our Google project.
+
+Speaker
+
+So I'm gonna head over to the HTML and here beneath the input field. I'm just gonna
+
+Speaker
+
+It's gonna type.
+
+Speaker
+
+button
+
+Speaker
+
+Like that.
+
+Speaker
+
+And this will be the...
+
+Speaker
+
+Google search button.
+
+Speaker
+
+So there we have it.
+
+Speaker
+
+Doesn't exactly look good, but don't worry about that.
+
+Speaker
+
+Now, I want to give this a class as well.
+
+Speaker
+
+a class named you'll often see used for buttons is simply B, D, and like that.
+
+Speaker
+
+Now that we have that,
+
+Speaker
+
+want you to center the button and add some space above it. So go ahead and use the class selector to select this button and solve this challenge. Good luck!
+
+Speaker
+
+Okay, so what I'll do is do dot vtn to select the button. Here you might have been tempted to simply do margin left auto.
+
+Speaker
+
+doesn't seem to do anything. Why is that? Well, if you remember the criteria you needed in order to use this technique to center elements.
+
+Speaker
+
+One of them was that you need your element to be display block.
+
+Speaker
+
+buttons are actually displayed in line by default.
+
+Speaker
+
+So if we do display.
+
+Speaker
+
+Ooh, there we go.
+
+Speaker
+
+The button is centered.
+
+Speaker
+
+And now you might ask, well, what about the width? We also set the width on the input field and the logo.
+
+Speaker
+
+But could do that as well with this one? Let's do with.
+
+Speaker
+
+200 pixels for example. However,
+
+Speaker
+
+not needed because if we remove the width you can see that it still has a width which is certainly not full width across the entire page so it kind of has an implicit width without us setting the width. So even though it is a criteria that your element needs a width in order to use this technique.
+
+Speaker
+
+technique here in order to center it, you don't necessarily have to set the width yourself if the element already has some kind of width. So it works perfectly fine just doing display block and margin left right auto in this example.
+
+Speaker
+
+Finally, we are going to add some space above it. So let's do that.
+
+Speaker
+
+I'll do a margin top.
+
+Speaker
+
+do for example 30 pixels. Yeah.
+
+Speaker
+
+Looking pretty good.
+
+Speaker
+
+Great job solving this challenge, let's move on.
+
+Speaker
+
+We are going to style the button in our Google project.
+
+Speaker
+
+Because as you can see this is our button currently looks but
+
+Speaker
+
+This is how we want it to look.
+
+Speaker
+
+So we gotta do a bunch of changes. However.
+
+Speaker
+
+There's one thing I want to change actually on this Google.com homepage. Because notice how low the contrast is between the background color of the button and the background color of the entire website. It's hardly possible to see that there's any difference. And that's not good because it reduces the accessibility of the site and makes it hard for people who are visually impaired to use it. And actually, to prove this, let's take these two colors, the light gray hair and the white.
+
+Speaker
+
+put them into a contrast checker online. For example, this one right here on userray.org.
+
+Speaker
+
+have this nice little contrast checker where you can paste in the foreground color and the background color and then get it.
+
+Speaker
+
+contrast ratio. And this F8F9FA hex color.
+
+Speaker
+
+Is it the one?
+
+Speaker
+
+that Google is using?
+
+Speaker
+
+And if we scroll a bit down, you'll see that Google indeed
+
+Speaker
+
+on this test.
+
+Speaker
+
+complete failure.
+
+Speaker
+
+The ratio is 1.05, though it should have been 4.5 or more.
+
+Speaker
+
+So what we will do instead is change the background from this to something like this.
+
+Speaker
+
+Here you can see it's much easier to see, but it is indeed a button.
+
+Speaker
+
+So even though the real background color is this one right here, we are going to use this one right here.
+
+Speaker
+
+So with that in mind, I want you to style the button according to the provided design you now have.
+
+Speaker
+
+the only info. Give you a start.
+
+Speaker
+
+These are the properties you are going to use.
+
+Speaker
+
+However, I'm not giving you the values of any of them because I want you to practice looking at an example and making your best guess as to what the values for the CSS properties should be, as that's how you'll work out in the real world when a designer, for example, gives you a design file. So go ahead and do this right now, and then I will show you the solution afterwards as well.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+I'm going to bring up the example here, have it on the side so that we can see how it develops. And then start with the background color as we have the value for that one.
+
+Speaker
+
+down here.
+
+Speaker
+
+Round.
+
+Speaker
+
+I would try to see what is the most apparent difference between this button.
+
+Speaker
+
+This one right here.
+
+Speaker
+
+Well, the border is certainly different.
+
+Speaker
+
+This button does not have a border at all.
+
+Speaker
+
+this one has a border.
+
+Speaker
+
+So let's just remove it.
+
+Speaker
+
+None like that.
+
+Speaker
+
+Keep good.
+
+Speaker
+
+Now, we can see that the text is much more crammed into this box.
+
+Speaker
+
+then this one right here. So that is the padding.
+
+Speaker
+
+And also, you can notice that there's more padding on the left and right hand side than on the top and bottom.
+
+Speaker
+
+So I'm going to try to add, for example.
+
+Speaker
+
+Hiding.
+
+Speaker
+
+Five pixels.
+
+Speaker
+
+looks like this one here has more than five pixels because this space is still pretty cramped.
+
+Speaker
+
+I'm going to do it, for example.
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+I think that is more like it.
+
+Speaker
+
+that on the bottom as well.
+
+Speaker
+
+On the sides, I'm just going to try the double.
+
+Speaker
+
+Six invicables.
+
+Speaker
+
+Right?
+
+Speaker
+
+16 pixels and you know what?
+
+Speaker
+
+I think...
+
+Speaker
+
+that button.
+
+Speaker
+
+And our button looks pretty similar in size.
+
+Speaker
+
+So next up is the border radius because you can see this one is totally rectangular, whereas this one has softer corners.
+
+Speaker
+
+So I'm gonna do.
+
+Speaker
+
+border.
+
+Speaker
+
+Radius.
+
+Speaker
+
+Something like four pixels. So that is pretty good.
+
+Speaker
+
+The final minor adjustments I'm going to make is reduce the font size ever so little from what is here.
+
+Speaker
+
+down to what it is here.
+
+Speaker
+
+minutes almost identical.
+
+Speaker
+
+But I happen to know that this one is indeed 14 pixels.
+
+Speaker
+
+So I'm gonna do it.
+
+Speaker
+
+on the size.
+
+Speaker
+
+like.
+
+Speaker
+
+And there we actually have the buttons, this one.
+
+Speaker
+
+And this one.
+
+Speaker
+
+Identical.
+
+Speaker
+
+Now if you chose any other values than the ones I've chosen, don't worry about it at all.
+
+Speaker
+
+The point was not for you to reach the exact same values as me, but just in the same range basically.
+
+Speaker
+
+So, regardless of how your example ended up, good job reaching this far, let's just keep up the pace and move on.
+
+Speaker
+
+Now we are going to add the second button to our Google project. This I'm feeling lucky button right here.
+
+Speaker
+
+And I wanted you to do that on your own first.
+
+Speaker
+
+So that's your challenge, add the next button, and do remember to give that button a BTM class so that it's styled as our search button.
+
+Speaker
+
+And once you've done that and executed the code,
+
+Speaker
+
+I want you to take a look in the mini browser and
+
+Speaker
+
+Ask yourself.
+
+Speaker
+
+Why aren't our buttons
+
+Mic
+
+you
+
+Speaker
+
+having as we want them to because as you'll see.
+
+Speaker
+
+There's something wrong with layout.
+
+Speaker
+
+at least when comparing it to this layout right here.
+
+Speaker
+
+Go ahead and do that right now and try to think of why our layout is wrong. Then I will do it as well when you return back to me and explain what's going on.
+
+Mic
+
+[BLANK_AUDIO]
+
+Mic
+
+[BLANK_AUDIO]
+
+Speaker
+
+Okay, let's do this. So I'm lazy, so I'm just gonna copy this one like that and write.
+
+Speaker
+
+Feeling...
+
+Speaker
+
+Lucky?
+
+Speaker
+
+Rem the cold.
+
+Speaker
+
+As you can see.
+
+Speaker
+
+The buttons are now stacked on top.
+
+Speaker
+
+top of each other.
+
+Speaker
+
+What we can do in order to figure out what's going on here is actually use the built-in dev tools in the browser, which you've seen a few times now.
+
+Speaker
+
+Let me show you this debug session using slides. I'm going to right click in the nav bar and then choose inspect.
+
+Speaker
+
+Open up the Elements tab.
+
+Speaker
+
+and then click on the selector icon here so that I can select this button by hovering over it.
+
+Speaker
+
+And then down in the Styles tab.
+
+Speaker
+
+I can scroll down until I see the box model for our button. And what you'll notice is that our button is taking up all the available space on the left hand side and the right hand side. And if we move down to the second button,
+
+Speaker
+
+You can see that that button is also doing that.
+
+Speaker
+
+That is because they are display block.
+
+Speaker
+
+Exactly this line right here.
+
+Speaker
+
+If you remember from previous lectures, display block kind of takes up all of the available space on the horizontal axis.
+
+Speaker
+
+So as we said earlier, display block stacks on top. We aren't able to get the layout we want if our buttons are display block. And then you might be tempted to do, well, let's just remove the display block.
+
+Speaker
+
+However,
+
+Speaker
+
+If we do, they will be on the same line, yes. They are now in line elements, but they will just be crammed all the way to the left-hand side.
+
+Speaker
+
+Because.
+
+Speaker
+
+Margin left right auto doesn't work.
+
+Speaker
+
+If you remember from the lecture about centering, you learned that
+
+Speaker
+
+display block and
+
+Speaker
+
+margin left right arrow works together in order to center something.
+
+Speaker
+
+You can't have just one of them.
+
+Speaker
+
+Which means that in order to go from this layout to this layout, we have to use a different technique for centering the elements.
+
+Speaker
+
+And there's actually two ways we could do this. There's the simple and inflexible way using text align. And then there's the slightly harder but super flexible way using Flexbox. And since you're going to use Flexbox several times throughout this course, I want you to get familiar with it right away. So in the next scrim, we're going to talk about Flexbox, but before we do that, I just want to show you the simple way as well so that you've seen it. Because as you might remember, from one of the very first scrims in this section, we used something called
+
+Speaker
+
+right or center.
+
+Speaker
+
+the text "line property"
+
+Speaker
+
+works on all inline elements, not just on text.
+
+Speaker
+
+So what we can do is
+
+Speaker
+
+remove the display block from our buttons.
+
+Speaker
+
+As you know...
+
+Speaker
+
+that turns them into inline elements, and they are
+
+Speaker
+
+to the left.
+
+Speaker
+
+And that's inline element only take up the available space they need according to their content.
+
+Speaker
+
+There is no available margin to use. So Auto here, which basically means take up whatever available margin there is.
+
+Speaker
+
+serve snow purpose.
+
+Speaker
+
+So we can remove both of these to as well. As you can see, it made no difference. And then we can move up to the main, the parent, through the text align.
+
+Speaker
+
+Center like that and boom.
+
+Speaker
+
+Both buttons are now centered. So here we have told the container the main element all in line elements inside of it should align to the center.
+
+Speaker
+
+So that was the EC but inflexible way of doing this. Let's instead of using this technique move on to do it how the pro-sto it using FlexBox.
+
+Speaker
+
+Flexbox is everywhere.
+
+Speaker
+
+Let's just have a look at Twitter for example. Here the menu on the left hand side is created with Flexbox, as with the Tweet Options menu, and the timeline itself.
+
+Speaker
+
+and guess what the trends for you and who to follow which created with? You guessed it, Flexbox. So this is something you need to learn.
+
+Speaker
+
+Let's imagine that you have a ecommerce website, which you can see here.
+
+Speaker
+
+that sells shoes, hoodies, and t-shirts. Well, then you'd probably have a navigation menu like this one, where users can click and then probably open up a submenu or something like that.
+
+Speaker
+
+As you can see, the items stack on top of each other. That is to be expected as these are devs and devs are displayed block. They want to take up all the available space in the width.
+
+Speaker
+
+And if you're wondering how I styled these, we can head over to the styles.css and just have a quick look at that. You can see I've aligned the text to the center inside of all the items.
+
+Speaker
+
+had my done that, would have been aligned to the left.
+
+Speaker
+
+Also, there's a border, as you can see. There's some padding on the inside, and there's some margin in between the elements.
+
+Speaker
+
+Now the question is...
+
+Speaker
+
+What if I instead of this vertical layout wanted a horizontal layout, which is more common for so-called navigation bars?
+
+Speaker
+
+So something that looks like this.
+
+Speaker
+
+This is where FlexBox comes to the rescue. And in order to turn this into a FlexBox layout, I would first have to wrap these three items in a container. Because the FlexBox layout always consists of a container and its direct children.
+
+Speaker
+
+Let's wrap it in a bit.
+
+Speaker
+
+And give this a class of...
+
+Speaker
+
+For example, nav-rapper like that.
+
+Speaker
+
+If I run this now, nothing happens because divs as you know are invisible unless you give them any styling or content.
+
+Speaker
+
+Let's head over to the Style Stop CSS.
+
+Speaker
+
+And now target the wrapper like that.
+
+Speaker
+
+In order to turn this into a flex box container, what I have to do is write
+
+Speaker
+
+display, flex and boom.
+
+Speaker
+
+Suddenly, we have forced our three divs into one row. Now this layout flows from left to right along the horizontal axis, and that is pretty significant, given that these items were displayed block by default.
+
+Speaker
+
+But flick's box as powerful as it is over-right stat, and forces them onto one line.
+
+Speaker
+
+However, we haven't got quite the layout we want yet.
+
+Speaker
+
+As you can see, it's centered, and there's also some space in between the items.
+
+Speaker
+
+Let's start with the centring because...
+
+Speaker
+
+Flexbox now has control over these items and can decide where along the main axis they should be positioned. So we can do justify column. That is a little bit of a weird name for a property, but that's just how it is.
+
+Speaker
+
+And then set that to...
+
+Speaker
+
+Center.
+
+Speaker
+
+Now all of the items are centered.
+
+Speaker
+
+And the final step is just to get some spacing in between these items. And that is done with our good old friend, Margin, through the margin left. Let's do 10 pixels. And let's add the same thing on the margin.
+
+Speaker
+
+Right.
+
+Speaker
+
+And there we have the layout we wanted.
+
+Speaker
+
+Now a final cool thing I want to show you is that
+
+Speaker
+
+We can do, for example, an air as well, and that'll push it all the way to the right hand side.
+
+Speaker
+
+At the beginning, or alternatively, the space dash around. That's pretty cool. Now we've distributed all the white space around the space.
+
+Speaker
+
+around each of the items. And another one is space between.
+
+Speaker
+
+Now all of the available space is between the items, so they're spread out like this.
+
+Speaker
+
+Now we are getting ahead of ourselves here. I just wanted to demonstrate this to show how powerful Flexbox is. What you are going to work with is the center here.
+
+Speaker
+
+So with that, let's return back to our Google phone.
+
+Speaker
+
+Okay, we are back at our Google project and now your job is to center these two buttons besides each other.
+
+Speaker
+
+Meaning.
+
+Speaker
+
+getting to this layout right here.
+
+Speaker
+
+And the way to do that is of course using.
+
+Speaker
+
+Flexbox, so you'll wrap the two buttons in a Flexbox div and then center them.
+
+Speaker
+
+And then also...
+
+Speaker
+
+I want you to give the Div a class of Btn-Rapper.
+
+Speaker
+
+So you'll need to modify both the HTML and
+
+Speaker
+
+and the CSS here.
+
+Speaker
+
+Now, before you start...
+
+Speaker
+
+I'm going to remove these three lines here because they are solely there in order to center our buttons using this display block and margin of dry auto technique.
+
+Speaker
+
+However, now we're going to use the Flexbox technique, and we don't want to use both techniques at the same time, because that'll just be confusing, as they will affect each other.
+
+Speaker
+
+I will remove these lines and now you're left with this left aligned layout here.
+
+Speaker
+
+So please take over here.
+
+Speaker
+
+Do this talent.
+
+Speaker
+
+And then return back to me when you've done it or when you feel you need some guidance.
+
+Speaker
+
+Okay, hopefully that went well. If not, no worries, we'll do it now together.
+
+Speaker
+
+So I'm going to start with this Flexbox dev.
+
+Speaker
+
+that we want in our HTML.
+
+Speaker
+
+It should wrap our book.
+
+Speaker
+
+and only our buttons.
+
+Speaker
+
+So we want to start it up here.
+
+Speaker
+
+class of
+
+Speaker
+
+[speaking in foreign language]
+
+Speaker
+
+My bubbles.
+
+Speaker
+
+And then...
+
+Speaker
+
+And the div down here.
+
+Speaker
+
+So now it is simply wrapping our truth.
+
+Speaker
+
+If I run this code,
+
+Speaker
+
+seemingly nothing has happened.
+
+Speaker
+
+under the hood, we have
+
+Speaker
+
+rapper, which we can.
+
+Speaker
+
+Target using BTN.
+
+Speaker
+
+- That's Rapper.
+
+Speaker
+
+And then we can do.
+
+Speaker
+
+display.
+
+Speaker
+
+Flex.
+
+Speaker
+
+Let's turn our div into a flex box.
+
+Speaker
+
+And now we can use the...
+
+Speaker
+
+Justify content.
+
+Speaker
+
+Center, like that.
+
+Speaker
+
+Thank you.
+
+Speaker
+
+Both our buttons are centered.
+
+Speaker
+
+However,
+
+Speaker
+
+They are totally...
+
+Speaker
+
+crammed into each other now.
+
+Speaker
+
+There's no margin in between them.
+
+Speaker
+
+So in order to fix that,
+
+Speaker
+
+want to add a little bit of margin left and right.
+
+Speaker
+
+to these buttons.
+
+Speaker
+
+I'm going to do it.
+
+Speaker
+
+Martin.
+
+Speaker
+
+Left.
+
+Speaker
+
+four pixels.
+
+Speaker
+
+Morgan.
+
+Speaker
+
+Right.
+
+Speaker
+
+or pixels as well.
+
+Speaker
+
+Like that.
+
+Speaker
+
+That's looking.
+
+Speaker
+
+Pretty good to me.
+
+Speaker
+
+So if you didn't do this no worries at all and also if you are a little bit confused
+
+Speaker
+
+Thanks for watching.
+
+Speaker
+
+That is totally okay as well, we're going to work with that.
+
+Speaker
+
+several times throughout this course, you'll get more opportunities to practice.
+
+Speaker
+
+This is this, just feel proud that you've at least dipped your toes into Flexbox.
+
+Speaker
+
+Super important tool for
+
+Speaker
+
+any front-end developer.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Now there's one final thing I want you to know.
+
+Speaker
+
+And that is the...
+
+Speaker
+
+You are amazing.
+
+Speaker
+
+Because you have taken your very first step.
+
+Speaker
+
+into the world of CSS.
+
+Speaker
+
+That is more than
+
+Speaker
+
+and most people.
+
+Speaker
+
+So take this moment to feel great about yourself.
+
+Speaker
+
+And also, let's take this moment.
+
+Speaker
+
+to recap what you've learned.
+
+Speaker
+
+Starting out, you learned about the CSS syntax.
+
+Speaker
+
+That is how you select elements and also use properties and values.
+
+Speaker
+
+And then you learn the key concept about inline elements versus block elements.
+
+Speaker
+
+So block elements snacking on top of each other, like these two, and inline elements
+
+Speaker
+
+and then kind of in a horizontal line like the buttons here.
+
+Speaker
+
+Moving on, you learned about margins, which is how you create white space outside of elements. For example, above the Google logo here, and you learned about its close cousin, the padding, which is how you create space on the inside of elements. For example, in between the text and the edges of these buttons.
+
+Mic
+
+you
+
+Mic
+
+you
+
+Speaker
+
+Also borders is what is between padding and margins.
+
+Mic
+
+you
+
+Speaker
+
+And we use that on the input field here. We decided its thickness, its type, and color, and also the radius of the corners.
+
+Speaker
+
+We didn't want to sharp edges but rather soft.
+
+Speaker
+
+circular edges, which we achieved with this border radius property.
+
+Speaker
+
+But we also did was take a closer look at the dev tank, which is so briefly in the HTML section.
+
+Mic
+
+you
+
+Speaker
+
+This time around though, you actually created two divs, one to wrap the entire project and another to wrap the buttons. And we had to separate those from each other, so you had to learn about classes.
+
+Speaker
+
+That is the attribute you set like this.
+
+Speaker
+
+and you select.
+
+Speaker
+
+by using the dot notation in CSS.
+
+Mic
+
+you
+
+Mic
+
+you
+
+Speaker
+
+Also a big thing is centering in CSS you learned through
+
+Speaker
+
+We need different ways of doing this.
+
+Speaker
+
+And the final way you centered elements was through the use of
+
+Speaker
+
+Flexbox is super powerful too.
+
+Speaker
+
+all front and developers need to be comfortable with.
+
+Speaker
+
+So
+
+Mic
+
+you
+
+Speaker
+
+you have learned.
+
+Speaker
+
+lot.
+
+Speaker
+
+Now, I think you should take a little break?
+
+Speaker
+
+you have to digest these things, recharge, and then I will see you back here when you are ready.
+
+Speaker
+
+in the next section.
+
+Speaker
+
+Hi there, this is Pera from Screenbar. Just take quick pause in your learning, as I wanted to tell you about our screen bastards.
