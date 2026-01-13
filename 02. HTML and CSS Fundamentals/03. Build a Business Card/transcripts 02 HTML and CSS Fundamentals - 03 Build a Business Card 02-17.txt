@@ -1,0 +1,2724 @@
+
+Speaker
+
+Welcome to the second CSS section of this course, where you are going to build a business card for yourself. And it's gonna look more or less like this, though you're going to personalize it, make it your own, not only with your own information, but also with a beautiful color palette of your choice and a font that you like. So you are going to level up your design skills as well as your CSS skills, meaning that this is going to be a lot of fun. So let's just get started with it right away.
+
+Speaker
+
+Okay, let's start out by having a quick look at the basic skeleton for our app.
+
+Speaker
+
+As you can see, in the file system here, we have an index HTML file, also a style.css file, and finally, we have an images folder which contains my avatar. It's a PNG file called pair.png.
+
+Speaker
+
+Starting with the HTML, it's just a very simple setup with the HTML tag and then the head tag which links to the style style CSS. As for the body, it has one direct child, which is a div, which will work like kind of the container for our business card. And inside of that div, we have an image tag.
+
+Speaker
+
+We have an H3 with my name.
+
+Speaker
+
+We have a paragraph with the title add an age 4 with the location.
+
+Speaker
+
+Moving over to the CSS, we only have one rule here. We're setting the margin to 20 pixels on the body. And if you remember how this works, when we're not specifying either margin top, margin bottom, left or right, just setting the margin in general, these 20 pixels will be added on all four sides, on the top, on the left, bottom and right. And that's simply because I want to avoid that these elements touch the edges of the mini browser.
+
+Speaker
+
+There's a problem though.
+
+Speaker
+
+As you can see, the image isn't rendering properly. It's just an icon. That is as far as I can remember, not how my face looks like. And the problem is in the image tag.
+
+Speaker
+
+So I want you to try to fix that and I'm not gonna give you any more hints rather than if you are stuck true
+
+Speaker
+
+to Google HTML file paths. That should help you.
+
+Speaker
+
+So go ahead and give this one a shot, and then I will show you how to solve it as well when you return back to me.
+
+Speaker
+
+Okay, let's do this. Let's take this string right here and paste it into Google. There you can see that the top result is a W3 schools article. Let's head into that one. Here you can see file path examples. Let's zoom in on this one. And if we have image source equals picture dot jpeg, which would be the same as we have here, although our image is called pair dot PNG. That means that the file is located in the same folder
+
+Speaker
+
+Ask the current page.
+
+Speaker
+
+case now, looking at our current page index.html. You can see that.
+
+Speaker
+
+The image is not located in the same folder as the index HGL, because the image lives inside of the images folder.
+
+Speaker
+
+So what we then might need is something like this, where we do images slash then the picture name. Here it means that the picture is located in the images folder in the current folder.
+
+Speaker
+
+The images folder.
+
+Speaker
+
+is in the same folder as index.html and
+
+Speaker
+
+the headshot of me is located inside of that images folder.
+
+Speaker
+
+That means that we can try to do images like that, slash.
+
+Speaker
+
+Run the code OOOH!
+
+Speaker
+
+There we go.
+
+Speaker
+
+We have my avatar imported and are ready to move on to the next trim.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, let's start out by having a quick look at the basic skeleton for our app.
+
+Speaker
+
+As you can see, in the file system here, we have an index HTML file, also a style.css file. And finally, we have an images folder, which contains my avatar. It's a PNG file called pair.png. Now,
+
+Speaker
+
+Starting with the HTML, it's just a very simple setup with the HTML tag and then the head tag which links to the style style CSS. As for the body, it has one direct child, which is a div, which will work like kind of the container for our business card. And inside of that div, we have an image tag, we have an h3 with my name.
+
+Speaker
+
+We have a paragraph with the title and an age move on to the next trim.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, let's start out by having a quick look at an already extreme.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Hi there, my name is Bob's role. I'm another teacher here at Scrumma and I wanted to expound a little bit on the lesson that you just learned with Pear. This is a very similar example to what you just saw with the Google homepage. In this example, we have an image that is referencing cat.jpeg, but as it turns out, relative to where our index.html file is, that cat.jpeg file is only inside of the images folder. So as you just saw in the example with Pear, I will need to prefix this with images /
+
+Speaker
+
+When I begin my string this way, it's saying, "Look in the directory that the current file or the index.html file is in for another directory called images." The directory that the index.html file is in is called the project root folder, and that's everything that you see here under this explorer title here in scrimba. And by correctly referencing the path to where this cat.jpydimages found, I can hit save. And our image of this cat is giant because our CSS file is commented out, but we'll
+
+Speaker
+
+Okay, when would this be useful? Well, let's go into our source directory and then inside of our CSS directory and open up our index.css. And here you'll notice that we're selecting an image div class and giving it a background image with this URL. This URL has a relative path that goes up two directories first before going down into the images directory. Because our index.css file lives inside of the CSS folder, which is inside of the source folder, which is a sibling,
+
+Speaker
+
+before we can then drill back down into the images directory. Now, why isn't this dog.jpeg showing up in our mini browser over here? That's because in our index.html, we commented out the style sheet and we don't have the correct atref here. So take a quick second as a mini challenge, pause now, and fix this atref so that, first of all, our cat image will be more reasonably sized and second of all, the dog image will show up. Pause now and see if you can get that to work.
+
+Speaker
+
+To do this, we can start with a dot slash if we want, go into the source folder, then into the CSS folder, and then into index dot CSS. We'll hit save, and there we go. Everything is working. Really quickly, we can also see an example of this dot slash. If I were to move my index.html inside of, let's say, my source folder, I'll need to make a quick change to the mini browser here to begin it with slash source dot index.html, but you can see that my sleeping
+
+Speaker
+
+Okay, well relative to the index page, which is now inside of the source directory, I no longer need to reference dot slash source. Instead, I can just simply go into the CSS directory because the current directory is the source directory. With our cat image, I need to go up a directory first in order to get to the project root where I can then drill down into the images directory. So I'll hit save and sure enough everything's working the way it was. I'm not feeling great about putting the index page inside of my source directory, so I'm
+
+Speaker
+
+Our index.html is at the root of our project, so I have a bunch of different ways that I could do this. I could just start with a slash to indicate start from the root, then I would go into source scripts.
+
+Speaker
+
+open this up, scripts, and then main.js. So slash main.js. We'll hit save, and we get that I'm the main.js file console log just like we would expect when it's working. Because this file is at the root, I don't necessarily need to specify a slash at the beginning. I could just say SRC, or as I mentioned, my preference would be to start with a dot slash SRC, and hitting save shows that log coming up again and everything also working that way. I know this is a really simple topic, but I'm hoping this can eliminate any confusion
+
+Speaker
+
+Okay, thanks for letting me talk about relative fads for just a little bit. I'm going to pass you on back to pair.
+
+Speaker
+
+Okay, now we're gonna do a little bit of housekeeping here because this image element is
+
+Speaker
+
+actually has a serious flaw. Because it lacks an important ingredient that all image tags should
+
+Speaker
+
+have, which is called the Old Text or the Alternative Text.
+
+Speaker
+
+That is simply an attribute.
+
+Speaker
+
+that is written like this, old.
+
+Speaker
+
+equals and then
+
+Speaker
+
+Inside of quotes, you are to write a description of the image.
+
+Speaker
+
+So here it could be, for example, Pierre Borgen.
+
+Speaker
+
+Smiling like that.
+
+Speaker
+
+However, if we run this code now, we can see that seemingly nothing has changed. So why do we at all write these old texts? Well, first of all, it makes your site accessible. Because imagine that a person who is visually impaired or who is blind is trying to visit your website.
+
+Speaker
+
+In that case, they would use a screen reader, which would be...
+
+Speaker
+
+goes through the HTML and reads it out loud to the user.
+
+Speaker
+
+And as for the H3 tag, it would be simple for the screen reader to read out loud what that says because that is text.
+
+Speaker
+
+However, for an image like this one, you need to add an alt tag to describe the image so that the screen reader has something to read out loud. And secondly, this also works as a fallback if your image doesn't render properly.
+
+Speaker
+
+Let's say you have a spelling mistake in the sorts attribute.
+
+Speaker
+
+For example, an extra R.
+
+Speaker
+
+Well, in that case, the image won't render, but the alt tag provides as a backup, so that the user's seeing this can
+
+Speaker
+
+kind of understand what was at least supposed to be there.
+
+Speaker
+
+And finally, writing old texts will help your site rank higher on Google, meaning you get more search traffic. And that is because the old tag most likely provide important metadata about the image so that Google knows how to use it in a search results page. And if your site is not accessible, it might be punished in the form of ranking lower.
+
+Speaker
+
+with that in mind, let's look at how to write these old texts. And the first thing you need to know is that you should not include, for example, image of
+
+Speaker
+
+because that's simply not necessary. The screen reader knows that it is an image because it is an image tag.
+
+Speaker
+
+Secondly, should become size, meaning less than 125 characters.
+
+Speaker
+
+because a lot of screen readers will cut off after this limit has been reached. And finally, a trick you should use in order to come up with a good old text is imagine that you are describing this image
+
+Speaker
+
+the person over the phone.
+
+Speaker
+
+So let's try to do that with an example.
+
+Speaker
+
+Here we have an iconic image of Muhammad Ali in a boxing match.
+
+Speaker
+
+And one way to write an old text for this could be just a boxing match, but it
+
+Speaker
+
+would actually be a pretty poor way of describing it because there's so much more going on here and you have plenty more characters you can use in order to describe it. So a better one would be two boxers in the ring, one lying down and the other standing up.
+
+Speaker
+
+That's a good thing.
+
+Speaker
+
+factual explanation, but we're not quite there yet, because it isn't actually describing this iconic moment when Muhammad Ali knocked out Sani listen. So if you were to describe this over the phone, you would probably understand that this description is pretty shallow.
+
+Speaker
+
+So what I would rather write as an
+
+Speaker
+
+all text for this image would be Muhammad Ali in the boxing ring, screaming at Sonya Listen after knocking him out.
+
+Speaker
+
+that, in my opinion,
+
+Speaker
+
+The intent of this image what the person who has decided to show this image on
+
+Speaker
+
+on a website is trying to convey.
+
+Speaker
+
+So with that example in mind.
+
+Speaker
+
+I want you to...
+
+Speaker
+
+Right, what do you think? Is an appropriate alt text for this image?
+
+Speaker
+
+Go ahead and do that right now and then I will show you what.
+
+Speaker
+
+I would write when you return back to me.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+to the alt equals.
+
+Speaker
+
+quotes and here I will use my name here.
+
+Speaker
+
+I wrote.
+
+Speaker
+
+Morgan.
+
+Speaker
+
+And you can see I'm smiling and I'm looking at the camera. I think that's important. So I'd write the smiling.
+
+Speaker
+
+the camera.
+
+Speaker
+
+Finally, we...
+
+Speaker
+
+background is really playful and colorful.
+
+Speaker
+
+So I would include, for example, with a...
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+So if yours was a bit simpler or a short term, don't worry about it.
+
+Speaker
+
+The most important thing is that you add an alt text and do as best as you can. And actually plenty of developers never add this. So just by adding it, you are actually separating yourself from most other beginners. So with that, let's just move on.
+
+Speaker
+
+The next thing we're going to do...
+
+Speaker
+
+is shrink this image to a suitable size for our business card, because as it is now, it is far too big. So I want you to head over to the styles.css and solve this challenge. You are to set the width of the image to 150 pixels. And you need to use a class to select the image element. So go ahead and give this a shot right now.
+
+Speaker
+
+Hopefully, that went well. Let's now do it together.
+
+Speaker
+
+So first we need to actually create the class that we are going to select from the CSS. So let's head over to the HTML file here. We'll just do.
+
+Speaker
+
+class.
+
+Speaker
+
+equals.
+
+Speaker
+
+And I'm gonna call this one an avatar.
+
+Speaker
+
+Actually, now that we have three of these on the image element, I think for readability purposes, it works well to break them into three lines.
+
+Speaker
+
+I think this is a little bit easier to read.
+
+Speaker
+
+Then I'll head over to the style.css and target the class.
+
+Speaker
+
+I have a car.
+
+Speaker
+
+And reset the width.
+
+Speaker
+
+250 pixels. Now, rerun the code.
+
+Speaker
+
+There we go.
+
+Speaker
+
+Great job solving this challenge. Let's move on.
+
+Speaker
+
+Okay, now you're soon going to start building the layout of this card. However, right now the card...
+
+Speaker
+
+kind of
+
+Speaker
+
+to
+
+Speaker
+
+order for us to more clearly separate the card from the background.
+
+Speaker
+
+For that, we need to grab hold of the outer element of the card.
+
+Speaker
+
+And can you take a guess what kind of HTML element you think should wrap the entire card?
+
+Speaker
+
+If you guessed a div, that is correct. And heading over to the HTML, you can see we are actually already wrapping the entire thing in a div. So here we have our container div or
+
+Speaker
+
+card div or whatever you want to call it.
+
+Speaker
+
+So, what I want you to do now is to first give that div a class and actually I think you should call it card.
+
+Speaker
+
+And then I want you to select the card class in CSS and give it a dotted blue border. This is our helper styles. It'll give us a little blue border around the element so that we can see how our card div kind of behaves. And also, as you can see from the design here, none of the elements touch the edge of the border. So it seems like there's some padding in play here. Let's just add 20 pixels of padding on all sides of the card.
+
+Speaker
+
+as well.
+
+Speaker
+
+So go ahead.
+
+Speaker
+
+these three challenges, and then I'll of course show you the solution as well.
+
+Speaker
+
+Okay, let's do this. So first we need to give the card div a class.
+
+Speaker
+
+I'll head over here and do class equals card.
+
+Speaker
+
+I'll run this code so that we have this class in the DOM.
+
+Speaker
+
+The next step is to select the class.
+
+Speaker
+
+by doing cart.
+
+Speaker
+
+And then adding a border, if you remember from previously, that is done through the border property, which takes three values. The first one being the thickness of the border.
+
+Speaker
+
+I'm just gonna set it to one pixel. The second being the quality, for example, solid or dotted or dashed or a few others.
+
+Speaker
+
+We're going to use the dotted one.
+
+Speaker
+
+and the color will be blue.
+
+Speaker
+
+And there we can see.
+
+Speaker
+
+We have a border.
+
+Speaker
+
+around our entire cart.
+
+Speaker
+
+And this will make it a lot easier for us to work with the card, now that we can see it clearly on the page. Finally, we want to add 20 pixels of padding, because as you can see here, the elements touch the border on the sides, and we don't want that, we want some space, so we'll do padding.
+
+Speaker
+
+20 pixels like that.
+
+Speaker
+
+And there we go.
+
+Speaker
+
+We have solved the challenge.
+
+Speaker
+
+With this in place, I think we're ready to start moving on with fixing the layout.
+
+Speaker
+
+And as you can see on the finished design here, there's a big difference between this one and our current one. And that is that the current one is vertical.
+
+Speaker
+
+Worse, this one is more horizontal, so they stack up differently. We want the image on the left hand side and the text on the right hand side, not everything on top of each other. So basically, we want two columns.
+
+Speaker
+
+one for the image.
+
+Speaker
+
+and one for the text. And as you might remember from previously, FlexBox helps us create columns. So let's now just experiment by adding this leaf like to the card.
+
+Speaker
+
+And that's what happens. Oh, wow.
+
+Speaker
+
+Okay, so what's happened there?
+
+Speaker
+
+It actually turned...
+
+Speaker
+
+every single element into a column in itself. That's not exactly what we want here.
+
+Speaker
+
+So display flex.
+
+Speaker
+
+Isn't the entire solution? So what we're going to do now is to go out on a tangent, learn a little bit more about this Flexbox concept in CSS, and then return back to this business card project once we're ready to
+
+Speaker
+
+build a layout like this.
+
+Speaker
+
+Let's move on and learn more about Flexbox.
+
+Speaker
+
+Okay, so let's say that you've built some kind of software as a service and now you want to sell it. Then you might have a page like this, where people can upgrade to Pro and they can choose the individual plan, which gives them one gigabyte and no support, or the Enterprise plan, which gives them 10 gigabytes and priority support.
+
+Speaker
+
+Now, I've purposely not given any design to this example, as I wanted to make it as easy as possible to grasp. But hopefully, if you are to create a pricing page, you can make it look a lot better than what we have here.
+
+Speaker
+
+You can see the HTML right here for the entire pricing layout.
+
+Speaker
+
+wrapped it in a div.
+
+Speaker
+
+I'm using an H2, an ordered list, a button and so on. Now let's say that you instead of having this one column layout here where everything stacks on top of each other, you want this two column layout where you have the individual plan at the left hand side and the enterprise plan at the right hand side. Well, if so, we know that Flexbox will help us create columns, but if we try turning our container, this is the
+
+Speaker
+
+with a class of pricing.
+
+Speaker
+
+into a flex box?
+
+Speaker
+
+You'll see that.
+
+Speaker
+
+It'll break the layout, just as we saw in our business card example.
+
+Speaker
+
+Because what's going on here is that...
+
+Speaker
+
+Flexbox.
+
+Speaker
+
+take every single item.
+
+Speaker
+
+That is every single direct child.
+
+Speaker
+
+turn sitting to a column and self.
+
+Speaker
+
+So we get a column for the H2 for the unordered list for the
+
+Speaker
+
+Bye, bye.
+
+Speaker
+
+for the H2 again and so on.
+
+Speaker
+
+And this is obviously not what we want.
+
+Speaker
+
+It's far from this two-column layout right here.
+
+Speaker
+
+However, there's one hint to be drawn from this example.
+
+Speaker
+
+And that is that.
+
+Speaker
+
+You check out the unwelled
+
+Speaker
+
+order list here.
+
+Speaker
+
+see that it has two children with self, L.I. elements.
+
+Speaker
+
+And those two are not their own columns. They are in the same column, stacking on top of each other. So it seems as if, Flexbox only turns the direct children into their own columns.
+
+Speaker
+
+So the direct children are
+
+Speaker
+
+the H2 here, the UL.
+
+Speaker
+
+not the list items.
+
+Speaker
+
+Once we know that, we can use that knowledge.
+
+Speaker
+
+in order to get to this layout.
+
+Speaker
+
+because this layout has two columns that
+
+Speaker
+
+That means that our Flexbox container should have two
+
+Speaker
+
+direct children, not six as it has now.
+
+Speaker
+
+And how can we achieve that?
+
+Speaker
+
+Well, we want this group to be inside of a direct chart.
+
+Speaker
+
+wild.
+
+Speaker
+
+this container.
+
+Speaker
+
+And we won't.
+
+Speaker
+
+This group of...
+
+Speaker
+
+HTML elements to also be inside of another.
+
+Speaker
+
+by Rick Child of the Flexbox Container.
+
+Speaker
+
+So what will simply do?
+
+Speaker
+
+is a wrap both of these.
+
+Speaker
+
+side of a div.
+
+Speaker
+
+fit for readability purposes.
+
+Speaker
+
+Let's try to run this code.
+
+Speaker
+
+having wrapped one of the two groups into its own dev.
+
+Speaker
+
+And there you can see.
+
+Speaker
+
+the four individuals plan.
+
+Speaker
+
+Now stacks up just how we want it.
+
+Speaker
+
+but the rest of the layout is still broken. So we need to do the same thing down here.
+
+Speaker
+
+And there we go.
+
+Speaker
+
+Xbox Container actually only contains two items.
+
+Speaker
+
+this div and this div as it doesn't care about what's inside of both of those children.
+
+Speaker
+
+It only cares about its direct children.
+
+Speaker
+
+And the result is the
+
+Speaker
+
+We get the layout we want it here.
+
+Speaker
+
+at least in terms of having two columns.
+
+Speaker
+
+There's still a problem with lacking space in between these two children, but we're not going to deal about that right now.
+
+Speaker
+
+for now.
+
+Speaker
+
+going to send you back to the business card example so that you can use this.
+
+Speaker
+
+to improve our layout.
+
+Speaker
+
+Okay, we are back at...
+
+Speaker
+
+our business card example, and now I want you to use what you've just learned in order to fix our cards broken column layout.
+
+Speaker
+
+Because you are going to make this card into a...
+
+Speaker
+
+to column instead of a four column, which is
+
+Speaker
+
+This now, it's the image name.
+
+Speaker
+
+Title and location at four different columns.
+
+Speaker
+
+But instead, we want two columns, one for the image.
+
+Speaker
+
+and another one for the text elements.
+
+Speaker
+
+This challenge is solved in the HTML.
+
+Speaker
+
+As you know, we already have a display flex on the card.
+
+Speaker
+
+And the only thing you need to do is one change inside of our FlexBox.
+
+Speaker
+
+So hopefully you're able to do that. Go get it.
+
+Speaker
+
+give it a shot, and then I will show you the solution as well.
+
+Speaker
+
+Hopefully that went well.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+problem is that Flexbox
+
+Speaker
+
+streets.
+
+Speaker
+
+each of these elements.
+
+Speaker
+
+Ask a single child.
+
+Speaker
+
+and thus each of them get its own column.
+
+Speaker
+
+We only want two columns, so we want these three to be governed by one.
+
+Speaker
+
+Flexchild.
+
+Speaker
+
+So we need to wrap them.
+
+Speaker
+
+inside of a div.
+
+Speaker
+
+like this, open the dev, and then close the dev down here.
+
+Speaker
+
+and we'll invent these so we get some better readability.
+
+Speaker
+
+Now you can see the flex box only has two direct children, this one.
+
+Speaker
+
+And this one.
+
+Speaker
+
+That means that we should get it.
+
+Speaker
+
+two columns in our layout? And yes, we do.
+
+Speaker
+
+Brilliant.
+
+Speaker
+
+Of course, there's still a long way from this design to this design.
+
+Speaker
+
+But we are making great progress here, so let's just keep up the pace and move on to the next scrim.
+
+Speaker
+
+I think.
+
+Speaker
+
+looking at this example now.
+
+Speaker
+
+I gotta admit, I'm...
+
+Speaker
+
+pretty pleased with this border, one pixel dotted blue here.
+
+Speaker
+
+I think it serves a very nice purpose, which is to highlight for us how our card is being laid out on the page. So wouldn't it be nice if we could use that exact technique on other
+
+Speaker
+
+elements on the page as well. For example, the children of the Flexbox container.
+
+Speaker
+
+that is this image right here and the diff tag.
+
+Speaker
+
+That would have been really neat.
+
+Speaker
+
+can do that by, for example, just
+
+Speaker
+
+this one and adding it, for example, to the avatar.
+
+Speaker
+
+Be there the avatars got that blue border as well
+
+Speaker
+
+However, wouldn't it be neat if we...
+
+Speaker
+
+in our HTML could just.
+
+Speaker
+
+quickly apply a class to any element.
+
+Speaker
+
+For example, this one.
+
+Speaker
+
+And it would get the same thing as well. So basically, the argument I'm making is that we should create a dedicated class
+
+Speaker
+
+for this blue border.
+
+Speaker
+
+And what that is,
+
+Speaker
+
+a utility class.
+
+Speaker
+
+a class that only sets a single CSS property.
+
+Speaker
+
+So let me show you how this would work.
+
+Speaker
+
+Let's say that we, for example, want a class to make our text italic.
+
+Speaker
+
+Doesn't simply do class equals.
+
+Speaker
+
+I call it like that.
+
+Speaker
+
+If we run this code, nothing has happened because the
+
+Speaker
+
+and that hasn't been created yet.
+
+Speaker
+
+But here we can create the metallic class.
+
+Speaker
+
+Funk style.
+
+Speaker
+
+And now you can see.
+
+Speaker
+
+The name is in italic.
+
+Speaker
+
+Now if we want to reuse this.
+
+Speaker
+
+You can just do.
+
+Speaker
+
+Class.
+
+Speaker
+
+I call it here as well.
+
+Speaker
+
+From the cold, and...
+
+Speaker
+
+The location is also idiotic.
+
+Speaker
+
+And if we want the entire card italic, we can even add the class here.
+
+Speaker
+
+up on the container element itself.
+
+Speaker
+
+Run the code and now.
+
+Speaker
+
+This has been inherited down.
+
+Speaker
+
+to all of these elements.
+
+Speaker
+
+And if you're a bit confused about what I'm doing here, it is simply adding
+
+Speaker
+
+through CSS classes.
+
+Speaker
+
+single element. Do that simply by adding a space in between the two classes.
+
+Speaker
+
+Let's...
+
+Speaker
+
+You get rid of these.
+
+Speaker
+
+like that.
+
+Speaker
+
+And delete this one as well.
+
+Speaker
+
+Now what I want you to do is create a utility class.
+
+Speaker
+
+for the dotted blue border.
+
+Speaker
+
+This is the styling we have here.
+
+Speaker
+
+And then give the class to
+
+Speaker
+
+Flexbox Children in the HTML.
+
+Speaker
+
+That is the Flexbox items you can see.
+
+Speaker
+
+And also...
+
+Speaker
+
+I think it should give the same class to the card as well so that you can remove this line 10 here.
+
+Speaker
+
+So go ahead and give this one a shot, and then I will show you how to do it after
+
+Speaker
+
+works as well.
+
+Speaker
+
+Okay, hopefully that went well. Let's start out by creating the class.
+
+Speaker
+
+All right, border.
+
+Speaker
+
+Lou here.
+
+Speaker
+
+And then inside of it, I'll just...
+
+Speaker
+
+Cropped this away and pasted in here instead.
+
+Speaker
+
+Now we have a utility class for blue borders.
+
+Speaker
+
+I'll copy it.
+
+Speaker
+
+and add it to this flex item and
+
+Speaker
+
+a second us to the image element.
+
+Speaker
+
+We run this code because he now both of these.
+
+Speaker
+
+Have the blue border around them?
+
+Speaker
+
+Let's also add the border blue class to the flex box container, run the code, and boom, there we go!
+
+Speaker
+
+Now we have an even better overview over how our elements are laid out.
+
+Speaker
+
+Okay, with these blue borders around the Flexbox children, it's pretty easy to see that our layout is pretty far from how we want it to be. Because here you can see in the card that there's some space in between the two elements. Whereas in our example, they're completely crammed together and also pushed all the way to the left-hand side. Whereas here, they're kind of spaced out.
+
+Speaker
+
+There's some space on the left hand side in between the element.
+
+Speaker
+
+and also some space on the right hand side. So they're kind of spaced out in a nice way. And now I want you to add that horizontal space around the flex children. There's a flex box property that does this, and you've seen that property before. However, you might have forgotten it, if so.
+
+Speaker
+
+then Google justify content, and you might find the answer.
+
+Speaker
+
+I'm not going to give you any more hints than that, because if you have forgotten about it, it is a great practice to Google it.
+
+Speaker
+
+Then once you figure out the answer, go ahead and add the horizontal space so that our example becomes a little bit more like this layout. And just so you know, you only need to add one property for this, not multiple.
+
+Speaker
+
+So give it your best shot and then I will show you the solution afterwards as well.
+
+Speaker
+
+Okay, let's do this. So, the property is called...
+
+Speaker
+
+justify confidence, a little bit of a weird name I agree, but that's how it is. And here we can use a range of different values, and the one we're looking for is called space around
+
+Speaker
+
+Now you can see both elements now have some space around them. And also we can do space between.
+
+Speaker
+
+Then all of the available space will be between the two items, or we can even do.
+
+Speaker
+
+Center, as you've seen before, then there's no space in between them, but both of them are centered.
+
+Speaker
+
+end.
+
+Speaker
+
+purchase it all the way to the end.
+
+Speaker
+
+Start. Keeps it up and start.
+
+Speaker
+
+So this is a super p-
+
+Speaker
+
+powerful property.
+
+Speaker
+
+and we want the space around value for it. As you can see, it's at least
+
+Speaker
+
+getting closer to the layout we have in our finished design. So, great job, let's move on.
+
+Speaker
+
+Okay, time for a new challenge. You are going to set a fixed width on the card and then center it on the page because its behavior is a little bit weird right now.
+
+Speaker
+
+As you can see, if we enlarge in the screen, the card gets enlarged as well.
+
+Speaker
+
+And that makes the spacing between the elements look super weird. The aspect ratio becomes very different from a business card, so we don't want that. Instead, we want the width to be 400 pixels.
+
+Speaker
+
+So it should be a fixed width, and then we also want the card to be centered on the page.
+
+Speaker
+
+Now, one thing I wanted to notice when I enlarged this,
+
+Speaker
+
+is that the card is a display block.
+
+Speaker
+
+even though we've set it to display flex. So that means that flex box containers by default are display block.
+
+Speaker
+
+And hopefully you remember from previously that display block takes up all the available space in the horizontal axis. And there's also one of the three ingredients you need in order to center an element using margins. So hopefully you remember from the Google project how to center block elements. So go ahead and give this one your best job. And then I will show you the solution as well when you return back to me.
+
+Speaker
+
+Okay, let's do this. I'll start by setting the width.
+
+Speaker
+
+two 400 pixels like that. Now you can see if we enlarge on the screen, the card is stuck to the left hand side of the website.
+
+Speaker
+
+So in order to fix that, and instead centric, we'll use margins. And hopefully you remember that we'll do margin.
+
+Speaker
+
+Left.
+
+Speaker
+
+and set that to auto.
+
+Speaker
+
+that pushes it all the way to the right hand side because all of the margin is now on the left hand side. But then in order to even it out and centric will be margin right as well and set that to auto.
+
+Speaker
+
+And the result of having an equal margin on the left hand side and the right hand side is that the card is centered.
+
+Speaker
+
+So great job on solving this challenge. Let's move on.
+
+Speaker
+
+Alright, let's take a minute to talk about CSS inheritance. And you're probably thinking, "Wait a minute, this isn't the Singsongi Nordic Accent of Paraborgon, and you'd be right. My name is Bob Zorall. I'm another teacher here at Scrimba, and I'm interjecting myself here to make a small accessibility update just in the way that the HTML was written in the original version of the screencast." But also, as a way to introduce myself, if you're here as part of the front end career path, you will be taking another one of my courses, either the APIs and asynchronous JavaScript course,
+
+Speaker
+
+Okay, I've centered my text there for the H1. Now let's go to our H2 and do the exact same thing. So we'll go ahead and center the H2. Great, we're part way there. Then we have to also select the paragraphs and hopefully you can see the point I'm trying to make here. In this case, we would not consider our code very dry because we are repeating ourself instead of following DRY. Don't repeat yourself. So what does this have to do with inheritance? Well, let's look at our HTML and we can see that our entire art
+
+Speaker
+
+Okay, now it's time for a challenge in the Business Card Project. Because you are going to center the text inside of the paragraph and the age 4 elements. And that is the paragraph right here, which has front-on developer and the age 4 right here.
+
+Speaker
+
+Because as you can see
+
+Speaker
+
+Both of those elements are now crammed all the way to the left hand side, versus in art.
+
+Speaker
+
+finished design, they are aligned at the center.
+
+Speaker
+
+of this flex children directly underneath the name perherald borgen. And if you're wondering why we're not caring about centering this one, it's because it takes up the full width of
+
+Speaker
+
+So you can't center or left or right align it, because it takes up the full width anyway. It is the element that actually decides how wide this can be.
+
+Speaker
+
+container should be.
+
+Speaker
+
+You will only see the paragraph and the age 4 change when you fix this. And the way you should do it is by only adding one property and then have inheritance take care of applying that property to both elements. So you're only going to write one line of code.
+
+Speaker
+
+I'm not going to tell you where you should add that line of code. You have to figure that out on your own. And I'm also not going to tell you what the property is called or the value, you'll give it. But you have seen it before.
+
+Speaker
+
+So hopefully it's not that foreign to you.
+
+Speaker
+
+So jump into the cold and try to solve this challenge now, then of course revert back to me when you want to see my solution.
+
+Speaker
+
+Okay, hopefully that went well now
+
+Speaker
+
+I'm going to use the text align property and set it to center.
+
+Speaker
+
+But before we do that, we need to decide which element we should target with that property. Should we add it to the entire body, for example? If so, it'll inherit down.
+
+Speaker
+
+From the body.
+
+Speaker
+
+into the card.
+
+Speaker
+
+And then into our flex children right here and then finally to these elements as well. That works perfectly fine. We can actually try it, text align.
+
+Speaker
+
+center and boom! These two are now centered. However, imagine that this card is a part of a bigger website. If so, we've now centered all text inside of the body.
+
+Speaker
+
+which is where all of the HTML both now and in the future will live.
+
+Speaker
+
+So this might have second order consequences. Perhaps you want to have a nav bar with a title that isn't text line center, but rather text line right or left. So actually, I think it's better to scope this. Two, for example, our card. We at least know now that all the text we currently have in our card should be aligned to the center. So let's do that instead. Let's just remove it from the body and paste it in here. And now we're not causing any unwanted second order effects outside of the card.
+
+Speaker
+
+So this is, in my opinion, a better solution. But if you added it to the body, that is a perfectly valid solution as well. So don't feel that you did a mistake. In coding, there's always plenty of ways to solve things, and there's rarely one right answer. There's just consequences for whatever choice you make.
+
+Speaker
+
+So really good job doing this, let's move on.
+
+Speaker
+
+Alright, now the fun stuff remains, which is adding colors according to the specified design here. So this is a really rewarding little challenge that will make a ton of difference as you'll go from this boring white layout here to a nice colorful layout.
+
+Speaker
+
+So you're going to add these three colors. As you can see, I've added the hexadecimal values for each of the colors, the black, the blue, and the purple.
+
+Speaker
+
+The purple is the border at the bottom here, the blue is the background color of course, and then finally you might wonder, well, what's the black? Well, that is actually the text color, as the text here isn't pure black.
+
+Speaker
+
+uses this shade of black instead.
+
+Speaker
+
+Now you might wonder,
+
+Speaker
+
+How do I create this order at the bottom here? I've only learned how to create borders around an entire element previously.
+
+Speaker
+
+well, the way to solve any problem when coding is to Google it.
+
+Speaker
+
+So let's just write a border bottom CSS in Google. There you can see a W3 schools article.
+
+Speaker
+
+click in on it and here.
+
+Speaker
+
+It has some code examples, which we can zoom in on, set the style of the bottom border for different elements. And here it shows us how to set the border bottom. So we do border dash bottom, and then for example, 5px solid red. Well,
+
+Speaker
+
+That's exactly how we'd set the border itself, except that we would omit this dash bottom in the property name.
+
+Speaker
+
+So you'll use the exact same technique you've used for the entire border.
+
+Speaker
+
+just with this extra word add it to the end. So hopefully you'll be able to do that. So here is the design.
+
+Speaker
+
+The final thing I'm going to do before I'll leave it to you is to remove these blue borders here because we don't need them anymore.
+
+Speaker
+
+So let's head into the HTML.
+
+Speaker
+
+I'm going to mark the border blue utility class we've added to command plus D that enables you to select multiple instances of whatever you've highlighted and then.
+
+Speaker
+
+And then also, we don't need any class in the div.
+
+Speaker
+
+but this flex children anymore.
+
+Speaker
+
+the cold
+
+Speaker
+
+Our borders are gone.
+
+Speaker
+
+I'll leave this for now.
+
+Speaker
+
+In case you want to add it back again.
+
+Speaker
+
+But now...
+
+Speaker
+
+It's your turn.
+
+Speaker
+
+Go ahead and try to solve this challenge, and then of course I will show you this solution when you return back to me.
+
+Speaker
+
+Okay, hopefully that went well. Let's now do it together.
+
+Speaker
+
+I'm gonna start with the blue background. I'll start, I'll make the biggest difference. So I'll do background.
+
+Speaker
+
+be this one right here? Yes, not as visible as the previous change, but something border dash.
+
+Speaker
+
+Let's try two. It looks like it is definitely thicker here.
+
+Speaker
+
+And right now, so let's just keep up this great pace and finish up this project over the next few scripts.
+
+Speaker
+
+Okay, now I want to talk a little bit about fonts because fonts are actually really important. Say that you, for example, have created a computer specialist's company called Click Lovers. Well, you might want to think about which font you choose in that case. Or if you're the owner of the Megaflex shop, you should also think carefully about which font you choose. Finally, if you are the head of the Wig and Pen Association, make sure that your font spaces outwards correctly. Now, these are of course extreme cases and they're all on prints. You'll rarely see cases
+
+Speaker
+
+Let's take Wikipedia, for example. Here is a random article about people who have died from laughter. As you can see, Wikipedia has this very serious nice font, but if we change that to something like Comic Sans, you can see the text gives a whole different type of association. It went from being very serious like this to being more like a comic book. So when you are building projects, it is important that you choose a font that kind of suits your project.
+
+Speaker
+
+So let's move on to look at how it works technically under the hood.
+
+Speaker
+
+us when you visit a website, for example, scrimble.com.
+
+Speaker
+
+If you've visited via a client that could be your mobile tablet, desktop, or whatever, what happens is that when you type www.scrimber.com into the URL bar, it sends a request to
+
+Speaker
+
+and then the server says, "Yeah, okay, you want to visit our website?" Yeah, of course. Here you go.
+
+Speaker
+
+And it takes everything you need in order to run the scrim by the browser, that is the HTML, the CSS, the JavaScript, the assets, which can be images and videos and so forth, and then also the recipe for the font.
+
+Speaker
+
+and then it sends that back to the client.
+
+Speaker
+
+However, for some websites.
+
+Speaker
+
+They won't send you the recipe for the font over the network because they will instead on the website use a font that most likely is already pre-installed in your clients. That is also called a web safe font.
+
+Speaker
+
+meaning that the recipe for rendering that font exists in most clients. Now, of course, there might be some clients that don't have that specific font, but in almost all cases.
+
+Speaker
+
+It's safe to use one of the WebSafe fonts without sending the recipe for it over the network.
+
+Speaker
+
+So what are these website files? Well...
+
+Speaker
+
+Here is an article on V3 schools. You can see all of the VBSA fonts for HTML and CSS. So when you're using these, you don't have to send the recipe for the font.
+
+Mic
+
+[Music]
+
+Mic
+
+Hi Lily.
+
+Mic
+
+Good how are you?
+
+Mic
+
+No, nothing specific.
+
+Mic
+
+I just been doing it.
+
+Mic
+
+some access issues that I had with VOCRUM and also the decline for the
+
+Mic
+
+the one I
+
+Mic
+
+that you can do this and I gave you? Yeah, those, yes.
+
+Mic
+
+and access issues.
+
+Mic
+
+They have done, they have done definition.
+
+Mic
+
+- Sure.
+
+Mic
+
+Okay.
+
+Mic
+
+Yeah, no problem.
+
+Mic
+
+Thank you.
+
+Mic
+
+Sure.
+
+Mic
+
+(gentle music)
+
+Mic
+
+(clears throat)
+
+Mic
+
+It's this wheel.
+
+Mic
+
+She has 10.
+
+Speaker
+
+Now for our digital business card, we're only going to use WebSafe fonts.
+
+Speaker
+
+But later down the line, you'll also learn how to pull in external fonts so that you can go outside of these 10 fonts, as they don't really give you a lot of flexibility.
+
+Speaker
+
+So with that in place, let's look at how you actually use a font in CSS. So in order to set the font, you first target normally the body and then type out font family and then the name of the font. And here you can see we've typed V E and that triggers VS code, which is the editor powering squimba to come up with suggestions for you. You can see it doesn't only suggest Verdona, which is the font we want. It also adds a bunch of other fonts after it all separated by comma.
+
+Speaker
+
+So if we hit enter now.
+
+Speaker
+
+Then we've added what's called a font stack.
+
+Speaker
+
+And what this means is that if the browser finds the Verdona font installed, it finds the recipe for that font, then it will use it. However, if it can't find it, if Verdona is installed in the client's computer, then it will try to find Geneva, which is a pretty similar font.
+
+Speaker
+
+If it can't find Geneva, it'll jump on and try to home up.
+
+Speaker
+
+And if it can't even find Tohoma,
+
+Speaker
+
+says, well, give me any sans serif font. And sans serif is a category of fonts. So here it's just saying, give me any font from this category. And there are mainly two categories, sans serif and serif. Here you can see an example of both of them. Serif fonts contain these decorative strokes at the end of the letter. You can see it here.
+
+Speaker
+
+Here.
+
+Speaker
+
+Here, where's "sansarif" is without those decorative endings. So "sans" then means "without" or "not" or something like that. You get the point.
+
+Speaker
+
+Okay, that falls a lot of theory. Now it is your turn.
+
+Speaker
+
+You are going to set the font here to Verdona and also make sure to remember to get the entire font stack so that we have backups in case the clients doesn't include the Verdona font.
+
+Speaker
+
+Go ahead and do that right now.
+
+Speaker
+
+Okay, hopefully that went well. What you'd wanna do is, found family.
+
+Speaker
+
+pull on. Start typing and then the editor suggests the entire font stack, though you won't see that now because the scrimbot DOM recorder doesn't record it. However, I can see it, so I'm just going to hit enter and boom, the editor suggested the
+
+Speaker
+
+entire phone stack with me.
+
+Speaker
+
+We have changed the font, let's verify that by removing it. Boom, yeah, that's different from...
+
+Speaker
+
+This.
+
+Speaker
+
+So, really good job. We've actually now completed the design for our business card.
+
+Speaker
+
+However, there's a little issue with our code, because this is how nubes write their margins, and I want to teach you how the pros do it. So let's move on to the next screen, where you'll learn exactly that.
+
+Speaker
+
+Okay, now it's time to learn about the short hands for margin and padding. And you've actually been exposed to one of them already, which is that if you have the same value on the margin top, right, bottom and left, you can reduce those four lines into one.
+
+Speaker
+
+margin 10px, then the browser will take this 10px and apply them to all sides, so these four lines are identical to this one down here.
+
+Speaker
+
+So, first one becomes what happens when you have four different values, for example 10px, 20px, 30 and 40. Well, if so, you have to do like this. Margin, and then 10px, 20, 30, 40. So the first one is margin top, the second one is right,
+
+Speaker
+
+third one is bottom and the fourth one is left. So now you're probably thinking, well, how can I possibly remember this order? And the trick is to think of the clock.
+
+Speaker
+
+It's Star Trek the Top.
+
+Speaker
+
+Then goes to the right, then goes to the bottom, and then goes to the left.
+
+Speaker
+
+So with that in mind.
+
+Speaker
+
+I want you to improve this code here, which creates the Japanese flag in CSS.
+
+Speaker
+
+as you can see this red circle here, which is a div.
+
+Speaker
+
+Has a few styles applied up here?
+
+Speaker
+
+But down here, we've used the non-short hand way to set the margins.
+
+Speaker
+
+Setting some margin on the top so that the circle is pushed down. Nothing on the right and the bottom, but 100 pixels on the left so that it's pushed to more or less the center of a screen, given that the screen is as wide as it is right now. So...
+
+Speaker
+
+to translate this into using the margin short time instead. Go ahead and do that.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+going to actually comment these lines out. Now you can see the circle is up in the left corner and then I'm going to do margin starting at the top.
+
+Speaker
+
+be 40 pixels, then the right side, 0 pixels, and the bottom should also have 0 pixels, and then the left side, which should have
+
+Speaker
+
+100 pixels, and there we go, we are back at the exact same layout.
+
+Speaker
+
+So great job if you manage to solve this.
+
+Speaker
+
+There's another scenario I'm gonna teach you about as well, which is if we have
+
+Speaker
+
+top and bottom as well.
+
+Speaker
+
+one value.
+
+Speaker
+
+And right and left.
+
+Speaker
+
+as another value.
+
+Speaker
+
+So you can actually reduce it to margin and then only two values. Here you do 10px and auto because 10px is top and bottom and auto is left and right.
+
+Mic
+
+(bell dings)
+
+Speaker
+
+So the way to think about this is that the first value controls the vertical line, the y-axis, and the second value controls the horizontal line, also known as the x-axis. So with that in mind, let me change this a little bit. I'm going to go back to the one key way of writing this, and I'm actually going to improve it a little bit, because if we want to center the circle, we shouldn't hard-code a margin left, because not only work on this screen size. When we do like this, it's not centered anymore. So let's instead use the better technique of using the
+
+Speaker
+
+I want to add 40 pixels to the Martin bottom.
+
+Speaker
+
+So now, I'll make it a little bit easier for you and separate these two.
+
+Speaker
+
+With this in mind, can you reduce these four lines into two? Go ahead and give that a shot right now.
+
+Mic
+
+(dramatic music)
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+I'll comment out these.
+
+Speaker
+
+And if you wondered what shortcut I used for that, I'm using command + k + c, but that is on a MAC keyboard.
+
+Speaker
+
+I'll comment this out. Then I'll do it in margin. First, we'll set the vertical axis. We could have 40 pixels at the top and the bottom, so that is 40px, and then we'll set the horizontal axis, which is auto like that.
+
+Speaker
+
+There we go, we have a center.
+
+Speaker
+
+Please, horizontally, regardless of how wide the screen is.
+
+Speaker
+
+and we have reduced four lines into one.
+
+Speaker
+
+So, great job, let's move on.
+
+Speaker
+
+Now you're going to take what you've learned about the margins or hand and use that in order to use these two lines into one.
+
+Speaker
+
+If you're going to replace the two margin properties.
+
+Speaker
+
+with a single marker.
+
+Speaker
+
+for a patent.
+
+Speaker
+
+And of course, after you've done that...
+
+Speaker
+
+the card should still be centered as it is now.
+
+Speaker
+
+Go ahead and give this one your best shot.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+I'm going to start by removing both of these.
+
+Speaker
+
+Now you can see the card is aligned on the left side.
+
+Speaker
+
+So in order to fix this, we'll do it in margin.
+
+Speaker
+
+And then the first property will set.
+
+Speaker
+
+will be the vertical line.
+
+Speaker
+
+meaning margin top and margin bottom. 'Cause we're only gonna set two values. And when we do that, each of the value dictates two sides, either top, bottom or left, right. So we'll set zero as the first value.
+
+Speaker
+
+That means margin top zero and margin bottom zero.
+
+Speaker
+
+Then for the second value, which dictates the horizontal margin, meaning left hand side and right hand side, we'll set of course.
+
+Speaker
+
+You see, now the card is still centered and we have reduced two lines into one.
+
+Mic
+
+(speaking in foreign language)
+
+Speaker
+
+So great job of solving this challenge.
+
+Mic
+
+I'm gonna entrust this.
+
+Mic
+
+(speaking in foreign language)
+
+Speaker
+
+You have reached the final step of the business card project. That is phenomenally well done.
+
+Speaker
+
+give yourself a pat on the back and now
+
+Speaker
+
+only the fun stuff remains.
+
+Speaker
+
+because now you're going to personalize this card.
+
+Speaker
+
+So first I want you to
+
+Speaker
+
+add your own information to this card.
+
+Speaker
+
+That's really the image. You can just drag and drop an image.
+
+Speaker
+
+over the file system here.
+
+Speaker
+
+Link to it from the source.
+
+Speaker
+
+And once you've done that, head over to the CSS because here you're going to do a few cool challenges.
+
+Speaker
+
+First off, I want you to find a color palette you like on Coolers.co.
+
+Speaker
+
+And this is Coolers. It's a super neat site for finding nice looking colors and color combinations.
+
+Speaker
+
+So what you can do is simply click this Explore Trending Palettes.
+
+Speaker
+
+Then you'll come to this overview which has a ton of different palettes and you can also search up in the right corner here.
+
+Speaker
+
+Let's say you're a big fan of roses, then you can write that.
+
+Speaker
+
+And then boom, you'll find a ton of pallets.
+
+Speaker
+
+with rose-looking colors.
+
+Speaker
+
+When you hover over.
+
+Speaker
+
+one of the colors, you'll see the hex value of that color.
+
+Speaker
+
+And also, if you have an account on Coolers, you can click on these three dots here.
+
+Speaker
+
+and then choose "Save Palette".
+
+Speaker
+
+then you can give it a name and save it.
+
+Speaker
+
+When you then later visit your profile, which you can do by clicking up here in the top right corner
+
+Speaker
+
+then you'll see.
+
+Speaker
+
+all of your saved pallets.
+
+Speaker
+
+head and find a palette you like on Coolers.
+
+Speaker
+
+change these values here so that your business card becomes completely unique.
+
+Speaker
+
+Also, once that's done, I want you to find a website font you like and add it to your card as well.
+
+Speaker
+
+Because you shouldn't use Verdana, you should pick one of the other website fonts. And if you have to Google a little bit, you find the website fonts, well, that is just important practice.
+
+Speaker
+
+If you want to go a bit.
+
+Speaker
+
+But above and beyond, go crazy. I've created some stretch goals for you.
+
+Speaker
+
+I want you to simply find other ways to personalize the design of your business card.
+
+Speaker
+
+For example, you can change the border or borders.
+
+Speaker
+
+You cannot abort a radius.
+
+Speaker
+
+You can also shuffle the layout, like...
+
+Speaker
+
+Should the image be here or maybe centered at the top or at the right hand side or just in the corner? I don't know.
+
+Speaker
+
+And if you want to do something mind blowing, you can add shadows, for example, I've not taught you anything about shadows. So that's far outside the scope of this course.
+
+Speaker
+
+Or, if you want to go even more crazy,
+
+Speaker
+
+double mind blown.
+
+Speaker
+
+So let's when you hover with a cursor over some of the elements, they change.
+
+Speaker
+
+business card 2.0 in my opinion.
+
+Speaker
+
+And if you want to go
+
+Speaker
+
+triple mind blown.
+
+Speaker
+
+create some CSS animations. Now, please
+
+Speaker
+
+Please don't stress about doing any of these.
+
+Speaker
+
+It is not expected that you do any of them.
+
+Speaker
+
+I just wanted to add it there for those of you who can't help going above and beyond.
+
+Speaker
+
+Now, once you're done personalizing your business card, I have
+
+Speaker
+
+one more task for you. And that is 2
+
+Speaker
+
+Download the code.
+
+Speaker
+
+To your local computer.
+
+Speaker
+
+and then place it in a folder called BusinessCard.
+
+Speaker
+
+Because we're going to use this folder when we deploy your business card.
+
+Speaker
+
+the next room.
+
+Speaker
+
+Go ahead and do all of this, and I will see you when you're done.
+
+Speaker
+
+Last time we deployed a project.
+
+Speaker
+
+We first added our code.
+
+Speaker
+
+to netlify, which then again to care on
+
+Speaker
+
+the playing project.
+
+Speaker
+
+Now, while this works perfectly fine, the way the pros do it is to go via an intermediate service and step
+
+Speaker
+
+And then let GitHub take care of sending off the codes to Netlify so that it's deployed to the web.
+
+Speaker
+
+And the reason you want this kind of architecture is because GitHub allows you to
+
+Speaker
+
+collaborate on your code with other developers.
+
+Speaker
+
+So now we are going to deploy your business card using this technique.
+
+Speaker
+
+The first thing you need to do is head over to GitHub.
+
+Speaker
+
+If you're watching this course on a screen button, you can just click on this slide right here. But if you're following us on YouTube, just head over to github.com and you'll get to the exact same page.
+
+Speaker
+
+Once you're there.
+
+Speaker
+
+I want you to click at the sign up button.
+
+Speaker
+
+That'll open up a form where you have to add your email, create a
+
+Speaker
+
+a password and also choose a username. Once you've done all that, click the continue button, which then sends you to this onboarding screen, where you can add a little bit of information about yourself or just click on the skip personalization option, if you are impatient. Once you've done this, you'll see a dashboard. Yours is probably not as filled with information as mine, though that doesn't matter. What we're going to do now is click on the plus icon in the top right corner. There, it opens up a menu, where you are to choose new repository.
+
+Speaker
+
+The repository is the backbone of any software project.
+
+Speaker
+
+This is where you'll find all the project files.
+
+Speaker
+
+and GitHub along with the Git Pro.
+
+Speaker
+
+protocol takes care of tracking all the changes that has been done to the repository.
+
+Speaker
+
+from its birth.
+
+Speaker
+
+Though we're getting ahead of ourselves right now, we're just going to give it a name, which you type in here in the repository name field.
+
+Speaker
+
+Like that, I'm going to call it business card.
+
+Speaker
+
+And then I'm not going to touch any of the options here. I'm just going to scroll down and click create repository. And there we go.
+
+Speaker
+
+Now we have to upload our files.
+
+Speaker
+
+can do that in many different ways. Right now, we're just going to do the very simplest one.
+
+Speaker
+
+So what I want you to do is click on the uploading and existing file link right here.
+
+Speaker
+
+that'll take you to a dragon drop field quite similar to what we saw at Netlify earlier.
+
+Speaker
+
+Here I want you to open up the business card folder.
+
+Speaker
+
+you created on your local computer in the previous scrim.
+
+Speaker
+
+Mark all of the files and then just
+
+Speaker
+
+drag and drop them into the rectangle at GitHub.
+
+Speaker
+
+Once you've done that, you'll see all of your files listed.
+
+Speaker
+
+scroll a little bit down and then we have to do something called
+
+Speaker
+
+changes.
+
+Speaker
+
+might seem a little bit weird and complicated. But don't worry about that right now. I'm just going to go with the recommended text.
+
+Speaker
+
+Add Files via Upload.
+
+Speaker
+
+And then hit "click."
+
+Speaker
+
+commit changes.
+
+Speaker
+
+And boom, there we go. We have a repository on GitHub, which includes all the code we need.
+
+Speaker
+
+for our business card.
+
+Speaker
+
+Now.
+
+Speaker
+
+If you were to collaborate with other developers on this project, they would push their code up.
+
+Speaker
+
+to this specific repository. And you would also probably create issues for tasks you want to do and work with something called pull requests, which is when you want to merge someone's changes into the codebase. And there's also a ton of other things you can do here, but we're not going to worry about any
+
+Speaker
+
+of that right now.
+
+Speaker
+
+because the only thing we want to use to this repository for right now is as an intermediate step before our deployment.
+
+Speaker
+
+So let's head over to Netlify and make sure you're logged in so that you see the previous project with deployed.
+
+Speaker
+
+And right beside it, you can see this button called Add New Site.
+
+Speaker
+
+Click on it and choose Import and Existing Project.
+
+Speaker
+
+Here you're able to choose GitHub, click on that, and it'll open this pop-up menu where GitHub asks where you want to install Netlify because that's what you're doing. Now we're installing Netlify on our GitHub profile. Click on your GitHub username, in my case, PearBorgon.
+
+Speaker
+
+here.
+
+Speaker
+
+I'm just gonna leave all the settings as they are, scroll down and hit install.
+
+Speaker
+
+And there we go. Now you can see that Netlify has pulled in your GitHub profile.
+
+Speaker
+
+and has your repositories listed.
+
+Speaker
+
+I have a bunch of repositories, so I'll have to search for the business card, I'll write the business, and there we can see it. When I click on this repository, it is imported into Netlify. And here I can adjust some settings, but I'm not going to do any of that as usual. Just scroll down to the bottom and hit Deploy Site, and there we go.
+
+Speaker
+
+deployment is now in progress, so we'll have to wait a little bit and then once this image turns into a screenshot of your site, it is deployed.
+
+Speaker
+
+So clicking on this link will open up our
+
+Speaker
+
+business card.
+
+Speaker
+
+Really?
+
+Speaker
+
+Good job.
+
+Speaker
+
+Though I hope your business card looks a lot cooler than this as you were to personalize it in the previous scrim.
+
+Speaker
+
+Actually, to prove to me that you end personalize this,
+
+Speaker
+
+I want you to head over to Twitter and share your deployed business card.
+
+Speaker
+
+is Michael Rokadas here and mention me if you want to alongside a link to your project and perhaps even a screenshot of it.
+
+Speaker
+
+that would be super cool. So go ahead and do that right now, and then I'll see you in the next scrim.
+
+Speaker
+
+Hi there, my name is Bob Sorol, and I'm another teacher here at Scrumba.
+
+Speaker
+
+You just learned a little bit about how to use GitHub to deploy your project to Netlify.
+
+Speaker
+
+This might be a good opportunity for us to dive a little bit deeper into the differences between "Get" and "Get Hub."
+
+Mic
+
+[BLANK_AUDIO]
+
+Speaker
+
+This is going to be a little bit more surface level just so that we have a solid understanding of the difference between the two, so we're not going to be really diving into the weeds with either of these things quite yet. To better understand them, let's look at the differences between the two. First, we'll start with Git. Git is what's called a version control system. We'll talk pretty soon about what exactly that means, but it's important to know that Git is something that runs locally on your own machine. If your machine didn't come with Git already pre-installed, then it is something that you would have to download and
+
+Speaker
+
+In contrast, GitHub is an online platform that stores something called Git Repositories. The term repository is just kind of a fancy way to say a folder of your code that you have been tracking the changes of in Git.
+
+Speaker
+
+In contrast with Git, which runs locally on your own machine, GitHub runs online in the cloud. And where Git's main task is to keep track of a history of the changes you've made to your project, GitHub is a way for one to share your code and that history of the changes from Git with other people.
+
+Speaker
+
+Maybe an imperfect but illustrative analogy is Git is kind of like taking photos on your phone or your camera, which happens locally on your own device. And GitHub is kind of like an online photo sharing platform like Instagram.
+
+Speaker
+
+It's not a perfect example, but it does highlight some of the main differences between Git and GitHub.
+
+Speaker
+
+Okay, we talked about version control, so what exactly is version control? The main thing that version control provides for us is a way for us to create save points, which in Git are called commits of your code so that you can revert back to them if needed.
+
+Speaker
+
+These save points or commits aren't something that actually alters the content of your code itself. This information is saved in kind of a separate hidden folder inside of your project that is using Git.
+
+Speaker
+
+But it provides you a way that if, let's say, you were to write some kind of bug into your code, or accidentally delete everything and then close your editor, that you couldn't just undo those changes. With a Git commit, we can revert back to that commit and have everything restored the way that it was at that save point.
+
+Speaker
+
+This reminds me of the most difficult level of any video game I've ever played in my life. If you know you know, and I probably would have enjoyed this game a lot more if I had the ability to create safe points along the way that I could go to every time I died or failed.
+
+Speaker
+
+Another major benefit of version control is that it manages changes made by other people that are also working on the same code base, giving us a means to merge multiple different versions of the same code base together and fix any of the resulting conflicts.
+
+Speaker
+
+If you've ever worked on a group paper and, well, you're old enough, you might be familiar with this phenomenon. As different people are working on their own parts of the paper, you would end up emailing the paper back and forth, and you had to come up with unique names. And then you'd have to have someone in the group who was an editor and could take all of these different versions and merge them together into one version that became the final paper the group would turn in.
+
+Speaker
+
+In the end, it just becomes a huge pain, and this is something that version control helps us mitigate. Now, this isn't to say that you won't have two people that make, let's say, a change to the same line of code, but in different ways. But rather, get, as a version control system, gives us a way to highlight those changes and decide which one of those changes we want to include in the final code base.
+
+Speaker
+
+In the end, version control generally allows us to be less worried about making any mistakes or having our code conflict with other people that are working on our same project. Okay, so this is version control with Git. Let's now switch over and start talking about GitHub. GitHub is a cloud-based SAS product. As a SAS product a few years ago, it was purchased by Microsoft. And its main feature is that it gives us a way to share our code and the changes that were made to our code with those commits and Git with other people. As the name would imply,
+
+Speaker
+
+Personally, I think it's really important for beginners to become familiar with and start using Git and GitHub from an early point in their learning. But I do think there is a more approachable way to do this, and that's by using a product from GitHub called GitHub Desktop.
+
+Speaker
+
+This is a native desktop application that you can download from the GitHub website, and it allows you to perform Git operations on Git repositories on your local machine, and in a pretty seamless way, push those changes up to GitHub where they can be shared with other people.
+
+Speaker
+
+If you're interested in learning more now about GitHub desktop, you can click the screenshot you see here. That will take you to another scrim that's in a future module here on scrimba, which is taught by treasure.
+
+Speaker
+
+using GitHub desktop might not be as hardcore as a senior developer who's using Git from the command line.
+
+Mic
+
+(coughing)
+
+Speaker
+
+with how powerful and therefore complex get is the learning curve can be a little bit steep and I think GitHub desktop is a great approachable way to begin using an understanding get.
+
+Speaker
+
+by the way, congratulations on deploying your business card. That really is a huge feat. And as Per said, it's something that should be shared with the world.
+
+Speaker
+
+That's it from me for now.
+
+Speaker
+
+But I'm sure we'll run into each other in another lesson here on Scrumba.
+
+Speaker
+
+Bye for now.
+
+Speaker
+
+No matter how much you ended up personalizing your business card, I want to say well done.
+
+Speaker
+
+You reached the end of this section, so give yourself a pat on the back, you deserve it.
+
+Speaker
+
+And let's now have a look at what you learned.
+
+Speaker
+
+at the beginning of this section, you learned about all texts on images, which is really important for accessibility.
+
+Speaker
+
+And then you learn about child containers in Flexbox.
+
+Speaker
+
+because we created this card as a Flexbox container.
+
+Speaker
+
+and made sure that it only had two direct children.
+
+Speaker
+
+So that these two got their own columns?
+
+Speaker
+
+And then inside of the second column, you could add things on rows again, which is what we did here. That concept of only the direct children being the flex items and then turning these children into containers again is a critical thing to understand in order to create sophisticated flex box layouts.
+
+Speaker
+
+Moving on, you learned more about inheritance.
+
+Speaker
+
+This is something you had been exposed to before, but hopefully you have more conscious relationship to this right now as you understand how setting the text align on the
+
+Speaker
+
+that is this one right here makes that property applied to these elements as well as they inherited the textile line center from the grandparent that is the div up here.
+
+Speaker
+
+You also learned about short hands.
+
+Speaker
+
+And more specifically, the margin and padding short hands.
+
+Speaker
+
+Here we're setting the margin to zero at the top and bottom and auto at left right. And it is a lot more compact than writing out margin top, left, right and bottom, all on their own lines. Another thing you learned about was website fonts, which we used up here in the body, where we used Verdana, which is one of those fonts you can use without worrying about whether or not it's installed on your user's computers. Because most likely it is.
+
+Speaker
+
+And then a really important concept in web design is color palettes. We took a look at that. And hopefully you found your own palette so that you personalized your business card because colors really do make or break a design. So that was quite a lot of concepts. You should be really proud of yourself reaching this far. Now it's time for you to take a break so that these concepts mature in your mind and do whatever you need to recharge your batteries. And then I'll see you back here in the next section.
