@@ -1,0 +1,2556 @@
+
+Speaker
+
+Okay, now you're gonna get a new superpower in your tool belt.
+
+Speaker
+
+called
+
+Speaker
+
+That is a service that gives you access to over a thousand different
+
+Speaker
+
+high-quality fonts.
+
+Speaker
+
+you can use in your projects.
+
+Speaker
+
+And the reason you need to learn about this now is because the
+
+Speaker
+
+font we have here.
+
+Speaker
+
+isn't good enough in my opinion.
+
+Speaker
+
+It is a little bit boring for a space project.
+
+Speaker
+
+What do we want instead?
+
+Speaker
+
+is something like this.
+
+Speaker
+
+looks a lot more sci-fi-ish.
+
+Speaker
+
+However, this font is
+
+Speaker
+
+isn't one of the so-called web safe fonts you learned about earlier.
+
+Speaker
+
+which is already installed in most operating systems.
+
+Speaker
+
+This is a very custom font.
+
+Speaker
+
+So we have to use.
+
+Speaker
+
+Google Fonts in order to
+
+Speaker
+
+bring it into our project.
+
+Speaker
+
+And here you can see the Google Fonts interface. It's located at fonts.google.com.
+
+Speaker
+
+And if we scroll a bit down, you can see it contains a range of very different faults.
+
+Speaker
+
+Now it has a search feature up in the
+
+Speaker
+
+top left corner.
+
+Speaker
+
+But it's actually not that good, to be honest.
+
+Speaker
+
+It's better to just use regular Google search when searching for Google faults.
+
+Speaker
+
+So let's do that instead.
+
+Speaker
+
+The way I found the font we're going to use now.
+
+Speaker
+
+It's just by Googling Sci-Fi.
+
+Speaker
+
+and then Google Fonts.
+
+Speaker
+
+and then Google suggested this or be Tron font.
+
+Speaker
+
+So if we click into it, you can see here it is.
+
+Speaker
+
+If we scroll a bit down.
+
+Speaker
+
+You can see we have to choose specifically which styles we want.
+
+Speaker
+
+So I'm going to choose this 400 regular style.
+
+Speaker
+
+by clicking on select this style.
+
+Speaker
+
+like that.
+
+Speaker
+
+And you can see the power.
+
+Speaker
+
+on the right hand side.
+
+Speaker
+
+and it is clear that we have chosen the Orbichron font and the regular 400 font weight.
+
+Speaker
+
+Also, let's...
+
+Speaker
+
+Click on this extra bulb in case we want to bold some text on our site.
+
+Speaker
+
+And there we have that one as well.
+
+Speaker
+
+Now if we want to use this on the web.
+
+Speaker
+
+We can embed it by simply copying a piece of code into the head of our HTML.
+
+Speaker
+
+That is the...
+
+Speaker
+
+Cold, do you want to copy?
+
+Speaker
+
+And then paste it in.
+
+Speaker
+
+Exactly.
+
+Speaker
+
+Next up, we also have to specify it in our CSS.
+
+Speaker
+
+That's done by pasting...
+
+Speaker
+
+This line.
+
+Speaker
+
+Intune.
+
+Speaker
+
+or CSS?
+
+Speaker
+
+example in the body tag.
+
+Speaker
+
+I'm not going to do this for you, though.
+
+Speaker
+
+Scrimber is all about you doing things on your own?
+
+Speaker
+
+your hands on the keyboard.
+
+Speaker
+
+So now I want you to head over to Google Fonts.
+
+Speaker
+
+fetch the Orbe-tron font?
+
+Speaker
+
+in these two styles.
+
+Speaker
+
+And then do whatever you need to do in order to make the Orbeutron font render properly on our site.
+
+Speaker
+
+I'm going to leave you here.
+
+Speaker
+
+with this screenshot.
+
+Speaker
+
+Because make sure to complete
+
+Speaker
+
+here.
+
+Speaker
+
+This design?
+
+Speaker
+
+with.
+
+Speaker
+
+What do you get in the mini browser?
+
+Speaker
+
+because there might be something you need to do down in the BTN selector.
+
+Speaker
+
+And hopefully you're able to spot that if not no worries because I'll be here showing you the solution when you return back to me.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+First, we're going to take this snippet of code right here.
+
+Speaker
+
+and then paste it into our HTML.
+
+Speaker
+
+need to run the code.
+
+Speaker
+
+so that it is imported into our project.
+
+Speaker
+
+And then next up, it is the styles, which we're going to set here.
+
+Speaker
+
+Let's copy that line of code.
+
+Speaker
+
+And then simply.
+
+Speaker
+
+paste it in right here and boom!
+
+Speaker
+
+Join the exploration now looks like art.
+
+Speaker
+
+Project right here.
+
+Speaker
+
+However, this one also has...
+
+Speaker
+
+the orbitron font applied to the button.
+
+Speaker
+
+But we don't have that, we still use that boring old font that we had previously.
+
+Speaker
+
+Why is that?
+
+Speaker
+
+Well, that's actually because of buttons.
+
+Speaker
+
+Don't inherit font families.
+
+Speaker
+
+So here, the H1 has inherited the font property from body.
+
+Speaker
+
+but the button has not.
+
+Speaker
+
+So what we need to do here is specifically tell the button to
+
+Speaker
+
+have this phone family.
+
+Speaker
+
+And we can do that in two.
+
+Speaker
+
+ways.
+
+Speaker
+
+One way is through using a CSS value, you haven't learned yet. That is.
+
+Speaker
+
+The Inherits keyword.
+
+Speaker
+
+As you can see, now it does inherit.
+
+Speaker
+
+from the body, but only because we've specifically told the button to do exactly that.
+
+Speaker
+
+What I'm assuming you did instead, which works perfectly fine as well, is simply to,
+
+Speaker
+
+on the BTN class.
+
+Speaker
+
+As you can see, that also works well.
+
+Speaker
+
+So hopefully you were able to spot this.
+
+Speaker
+
+If not, no worries, it was just a little gacha I left here.
+
+Speaker
+
+Let's move on to the next scrim.
+
+Speaker
+
+Before we move on from the subject of fonts,
+
+Speaker
+
+Before we move on from the subject of fonts, there's one more technique I want to teach you. Because in some cases, Google fonts might actually not be enough. And that's typically the case if you want very specific fonts. For example, let's say that you are building a Godfather website in honor of the classic film.
+
+Speaker
+
+Well, in that case, you'd probably want to get a hold of the real godfather font.
+
+Speaker
+
+though Google fonts doesn't host that one because it is simply too specific for them to care about.
+
+Speaker
+
+So, you most likely have to find this font somewhere on the worldwide web. And there are great services for this.
+
+Speaker
+
+www.fant.com
+
+Speaker
+
+there if you search for Godfather.
+
+Speaker
+
+They actually have it. So you can click into it, scroll a little down, and click download.
+
+Speaker
+
+So what you then did is kind of downloaded the recipe for the phone. And if you open up the folder you got, you'll see a TTF file. That's a file format for phones.
+
+Speaker
+
+What you then can do is simply drag and drop that file into your file system. Like I have done right here. You can see I have the Cordione.ttf file. Now what I can do is use the @fantface rule in CSS.
+
+Speaker
+
+So simply writing an "at" and then font dash face and then open up the curly brackets and write two properties. The source, which should use the URL technique,
+
+Speaker
+
+pointing to the TTF file, which I'm doing right here. And also I need to tell CSS what name I want to give this font in my style sheets.
+
+Speaker
+
+And I'm just gonna choose Corollio enough for now. But I could've chosen whatever name I wanted. Now?
+
+Speaker
+
+I'm able to target the Atron and use this fun family.
+
+Speaker
+
+Shall do.
+
+Speaker
+
+- Thank you, Frank.
+
+Speaker
+
+Portliona, and there you can see I have the godfather font, so I'm off to a great start on my tribute page.
+
+Speaker
+
+So now what I think you should do is actually try and do this yourself. Find a random font online.
+
+Speaker
+
+download it so you get a hold of the TTF file.
+
+Speaker
+
+drag and drop that TTF file into the file system here on Scrippa and use the add font face property to make that font available in your style sheets. Once you've done that, I will see you in the next scrim.
+
+Speaker
+
+Hey, it's Gil from Scrumba!
+
+Speaker
+
+I wanted to jump in here real quick to talk about the usability implications of Webfons. While fonts add style and character to your pages, they also come with a hidden cost that's worth considering. Using Webfons for the @fauntface feature in CSS means your website has to load these fonts from external sources. Each font is like an extra item your website has to carry. It looks nice, but it also adds weight in terms of download size. In the world of web performance, smaller is usually better, so more font
+
+Speaker
+
+hits all about balance, so use fonts to enhance your site's look, but keep in mind their impact on performance. Look at font files carefully to make sure they don't contain more glyphs than you're actually going to use.
+
+Speaker
+
+Also consider using newer font formats like WAF2, which use much better compression than older font formats, which means smaller file sizes. A well-designed website looks good, loads quickly, and runs smoothly. By being selective with your web fonts, you ensure your site remains stylish and user-friendly. To learn more, check out the MDN docs at fontfacereference, and this web.dev article also has more ideas and best practices for fonts.
+
+Speaker
+
+Hey, it's Gil from Scrum.
+
+Speaker
+
+I wanted to jump in here real quick.
+
+Speaker
+
+Now you are going to learn about the Spantag.
+
+Speaker
+
+because in the next screen, you are going to create an underlying under the exploration world.
+
+Speaker
+
+And in order to achieve that, you need the spantack.
+
+Speaker
+
+So let's take a little step back from our Space Exploration site.
+
+Speaker
+
+and learn all about this awesome tag.
+
+Speaker
+
+The example we're going to use in order to learn the Spantag is
+
+Speaker
+
+of banner apps.
+
+Speaker
+
+You've probably seen these before and you've browsed the web, for example, on new sites.
+
+Speaker
+
+Many of these are actually so-called HTML5 ads, where they're built using HTML and CSS.
+
+Speaker
+
+And it's actually a little bit sad how many clever developers in this world were spending all of their time in their best years.
+
+Speaker
+
+and getting more people to click on these ads.
+
+Speaker
+
+through making them more invasive, more eye-catching, and more targeted.
+
+Speaker
+
+But that's the name of the game, so we just have to accept it, and you are now going to
+
+Speaker
+
+do exactly that. You are going to make this ad more eye catching. So that's hopefully more people click on it and visit our scammy casino.
+
+Speaker
+
+So how do we do this? Well...
+
+Speaker
+
+Looking at the HTML.
+
+Speaker
+
+You can see the div wrapper has a class of add, which sets the background color border and the text alignment inside of this green rectangle.
+
+Speaker
+
+And there are two elements inside of the ad, that is the H1 and the H3.
+
+Speaker
+
+And it says click here. So what we want to do is make this
+
+Speaker
+
+Here, word.
+
+Speaker
+
+Pop out more.
+
+Speaker
+
+So how do we do that? We can't.
+
+Speaker
+
+target the age 3 itself because that'll style.
+
+Speaker
+
+the entire sentence, we only want to style this word.
+
+Speaker
+
+And this is where Spance come in.
+
+Speaker
+
+We can write the span like that.
+
+Speaker
+
+Open the tag before the word and close it directly afterward.
+
+Speaker
+
+If we now run this code, seemingly nothing has happened because spans are invisible unless you give them styling.
+
+Speaker
+
+So, they're kind of like the div as divs neither provide any styling.
+
+Speaker
+
+unless you give it to it specifically.
+
+Speaker
+
+Although the difference is that spans are in line, where as divs are
+
+Speaker
+
+Walk based.
+
+Speaker
+
+So to demonstrate that, if we change this to a div...
+
+Speaker
+
+What would happen?
+
+Speaker
+
+from the cold, it's dark.
+
+Speaker
+
+It would break the hair word onto a new line because devs are
+
+Speaker
+
+display block.
+
+Speaker
+
+into wisdom.
+
+Speaker
+
+where spans do not do that, only take up in a space they need in order to make room for this content.
+
+Speaker
+
+What we now can do it?
+
+Speaker
+
+Peace.
+
+Speaker
+
+Give this spam a class.
+
+Speaker
+
+I'm going to call it CTA, that's short for call to action.
+
+Speaker
+
+as that's normally what these kinds of elements are called.
+
+Speaker
+
+And in the CSS, we'll see TA.
+
+Speaker
+
+Let's just see if it works.
+
+Speaker
+
+by doing
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+Yes!
+
+Speaker
+
+There we can see, we have now only targeted the here word.
+
+Speaker
+
+This doesn't look particularly good though, so let's instead do something that...
+
+Speaker
+
+Mix it look a bit more like a button.
+
+Speaker
+
+For that, we need a border, in my opinion, for example, two pixels, and we want it to be solid.
+
+Speaker
+
+And here let's steal the color from the border around the ad so that we reuse it a little bit I think that can look nice yeah okay.
+
+Speaker
+
+So you can see that it's out of a border around the work.
+
+Speaker
+
+It is very crammed on the left and right hand side, so let's try to add some padding.
+
+Speaker
+
+It's just five pixels or something.
+
+Speaker
+
+Actually, I think we can do five things on the top and...
+
+Speaker
+
+10 pixels on the left and right, yeah, that looks much better.
+
+Speaker
+
+And then to make it pop out even more.
+
+Speaker
+
+so that it doesn't blend into the overall background we have.
+
+Speaker
+
+on the ad itself.
+
+Speaker
+
+So I'm going to do background.
+
+Speaker
+
+Well now I happen to have a...
+
+Speaker
+
+Nice brown color here.
+
+Speaker
+
+Which I think looks deep.
+
+Speaker
+
+with the other colors here.
+
+Speaker
+
+So now.
+
+Speaker
+
+It is.
+
+Speaker
+
+a lot more easier to see that you are going to click here.
+
+Speaker
+
+this thing that looks like a button.
+
+Speaker
+
+it stands out more. And hopefully...
+
+Speaker
+
+We have increased.
+
+Speaker
+
+They click through rate with
+
+Speaker
+
+0.02%.
+
+Speaker
+
+those made our boss.
+
+Speaker
+
+really happy.
+
+Speaker
+
+Great job!
+
+Speaker
+
+Now that you've learned this, let's return back to the space exploration site and put
+
+Speaker
+
+your new skills.
+
+Speaker
+
+to the test.
+
+Speaker
+
+Okay, now you're going to create this neat little underlying under the expiration word.
+
+Speaker
+
+And I wanted to do that using a span.
+
+Speaker
+
+As for the specific design of the underlying and what kind of CSS property you are to use,
+
+Speaker
+
+That is something you'll have to figure out on your own.
+
+Speaker
+
+So go ahead and give this a shot.
+
+Speaker
+
+Good luck, and I'll see you on the other side.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do it.
+
+Speaker
+
+I'm going to start with adding this spam to the HTML.
+
+Speaker
+
+It shouldn't wrap the exploration word.
+
+Speaker
+
+So, span like that.
+
+Speaker
+
+And then I'm going to give it a class.
+
+Speaker
+
+I'm going to call this class underline because they'll only have one.
+
+Speaker
+
+job and that is to give the expiration word the underline. So this class is something we've talked about earlier. It's a utility class. It only has one job and that is setting a
+
+Speaker
+
+single CSS property.
+
+Speaker
+
+So if we run the code now.
+
+Speaker
+
+nothing has to be
+
+Speaker
+
+Okay
+
+Speaker
+
+Hopefully that went
+
+Speaker
+
+Let's do it.
+
+Speaker
+
+I'm going to start with adding this spam to the HTML.
+
+Speaker
+
+It shouldn't wrap the exploration word.
+
+Speaker
+
+So span like that.
+
+Speaker
+
+And then I'm going to give it a class.
+
+Speaker
+
+I'm going to call this class underline because it'll only have one.
+
+Speaker
+
+job and that is to give the expiration word the underlying. So this class is something we've talked about earlier. It's a utility class. It only has one job and that is setting a single CSS property.
+
+Speaker
+
+So if we run the code now.
+
+Speaker
+
+nothing has seemingly happened, but...
+
+Speaker
+
+we do have this in our dawn.
+
+Speaker
+
+Meaning we can select it in these CSS.
+
+Speaker
+
+We'll do Doc Underline.
+
+Speaker
+
+like that, let's just...
+
+Speaker
+
+right.
+
+Speaker
+
+and set the color to red to see that it works. And yes, it does indeed work.
+
+Speaker
+
+In fact, we won't, we want to set the...
+
+Speaker
+
+Underline.
+
+Speaker
+
+And what is this underlying?
+
+Speaker
+
+Well, it's actually just a border bottom.
+
+Speaker
+
+We do order.
+
+Speaker
+
+bottom like that.
+
+Speaker
+
+Two pixels.
+
+Speaker
+
+Solid.
+
+Speaker
+
+White, you can see, yes, we need to get...
+
+Speaker
+
+a border ungrids.
+
+Speaker
+
+However, this border looks a little bit thicker, so I don't think two pixels is the correct thickness. I think we want to have something like...
+
+Speaker
+
+for.
+
+Speaker
+
+Yes.
+
+Speaker
+
+That looks pretty.
+
+Speaker
+
+Pretty good to me.
+
+Speaker
+
+So we have solved this challenge and we are ready to move on.
+
+Speaker
+
+Okay, now we are going to add this SpaceX logo at the time.
+
+Speaker
+
+And while you're adding it, you're going to learn a whole new concept
+
+Speaker
+
+in HTML and CSS.
+
+Speaker
+
+Namely,
+
+Speaker
+
+closed
+
+Speaker
+
+last attribute.
+
+Speaker
+
+Just called the...
+
+Speaker
+
+by the attribute.
+
+Speaker
+
+And the way to use it is simply by writing ID instead of class.
+
+Speaker
+
+But now you're probably wondering why would we use this idea?
+
+Speaker
+
+If we now try to rerun this code,
+
+Speaker
+
+You can see that our underline is gone.
+
+Speaker
+
+And that is because when you are using an ID like this,
+
+Speaker
+
+You have to refer to it in the CSS, not by using a dot, but instead by using a hashtag.
+
+Speaker
+
+There you can see, now our border bottom.
+
+Speaker
+
+It's again applied to our example.
+
+Speaker
+
+So now you're probably wondering, well, why would we want to use this? It just further complicates things.
+
+Speaker
+
+by having both IDs and classes to worry about.
+
+Speaker
+
+And the thing is...
+
+Speaker
+
+They serve two different scenarios.
+
+Speaker
+
+You should use an ID.
+
+Speaker
+
+If you know that your element is unique and you'll only use it once.
+
+Speaker
+
+ID of underline should only be applied once in this entire document.
+
+Speaker
+
+Wish class.
+
+Speaker
+
+is something you can reuse again and again.
+
+Speaker
+
+It's meant for reusage.
+
+Speaker
+
+So if you, for example, wanted a button here.
+
+Speaker
+
+That also said, for example, FA.
+
+Speaker
+
+Cute!
+
+Speaker
+
+class is what you use in order to make sure that this button has the same styling as this button.
+
+Speaker
+
+But if you did that with IDs?
+
+Speaker
+
+And turn the BTN here into an ID.
+
+Speaker
+
+this would be invalid HTML.
+
+Speaker
+
+Broughsters are very forgiving, so it probably would work.
+
+Speaker
+
+Technically.
+
+Speaker
+
+The styling would be applied, but you just shouldn't do it.
+
+Speaker
+
+As for this idea of underlying here, I actually don't think it makes sense to use an ID.
+
+Speaker
+
+Because this underline here...
+
+Speaker
+
+could perfectly find be a part of our design system and also be applied at
+
+Speaker
+
+multiple other sections and paragraphs throughout our entire page.
+
+Speaker
+
+as we build out this space exploration site.
+
+Speaker
+
+So I want to have the freedom to be able to reuse this.
+
+Speaker
+
+later as well.
+
+Speaker
+
+even though I'm only using it once now.
+
+Speaker
+
+So I'm going to turn this into a class again.
+
+Speaker
+
+Rerun the example, now it's not applied.
+
+Speaker
+
+And then...
+
+Speaker
+
+Go from the ID selector to the class selector in CSS by replacing the hashtag with a dot.
+
+Speaker
+
+and there it is applied.
+
+Speaker
+
+That was a long intro.
+
+Speaker
+
+The reason for that was that I want you to render this SpaceX logo.
+
+Speaker
+
+You can see I've added the SpaceX.png.
+
+Speaker
+
+which file up here.
+
+Speaker
+
+And then I want you to give it ID.
+
+Speaker
+
+Because this basics logo at the top here.
+
+Speaker
+
+It's most likely unique. We probably don't want to have multiple...
+
+Speaker
+
+centered SpaceX logos.
+
+Speaker
+
+this size.
+
+Speaker
+
+So this is kind of our main logo.
+
+Speaker
+
+And you can give it that ID.
+
+Speaker
+
+main logo.
+
+Speaker
+
+Then in DCSS, you need to select the logo using whatever ID you have given it.
+
+Speaker
+
+Then as you'll see, you'll have to reduce its size. That's why you need this CSS rule right here because it is far too big this image.
+
+Speaker
+
+Finally, I'm going to remove this FAQ.
+
+Speaker
+
+so that we're back to our original design.
+
+Speaker
+
+Now it's your turn, take over and try to solve this challenge.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do it.
+
+Speaker
+
+We're going to render it using an IMD.
+
+Speaker
+
+Be kind.
+
+Speaker
+
+And the source will be...
+
+Speaker
+
+First, images, and then slash.
+
+Speaker
+
+SpaceX.png.
+
+Speaker
+
+Like that, if we run this, you can see, oh wow.
+
+Speaker
+
+Ha ha.
+
+Speaker
+
+That is not exactly what we were looking for. It's far too big this image. So we have to reduce its size.
+
+Speaker
+
+And to try.
+
+Speaker
+
+Target, we're going to use an ID.
+
+Speaker
+
+And I'm going to call this main logo like that.
+
+Speaker
+
+Now, if we head to the style.css,
+
+Speaker
+
+We'll do hashtag main-logo.
+
+Speaker
+
+And here we have to reduce its width.
+
+Speaker
+
+So let's write with, for example.
+
+Speaker
+
+Perhaps this is 200 pixels, I don't know.
+
+Speaker
+
+200px, I got oof
+
+Speaker
+
+That was a bit too large in my opinion.
+
+Speaker
+
+So, let's reduce it further.
+
+Speaker
+
+to 100 pixels and yes that
+
+Speaker
+
+artists.
+
+Speaker
+
+much more like our design in my opinion.
+
+Speaker
+
+Looking pretty good.
+
+Speaker
+
+So with that, we have solved the challenge. Great job.
+
+Speaker
+
+we're gonna breathe some more life into our example here.
+
+Speaker
+
+because.
+
+Speaker
+
+It works fine with this static JPEG-asti background image, but wouldn't it be a lot cooler if it was animated so you could see the stars flying around?
+
+Speaker
+
+And in our images folder, we now just happen to have a file called Galaxy.
+
+Speaker
+
+.web
+
+Speaker
+
+What's that? Let's just try to replace this Universe JPEG here with the Galaxy Web P file.
+
+Speaker
+
+I'll do galaxy.
+
+Speaker
+
+The galaxy where B is an animated image.
+
+Speaker
+
+in which you see a bunch of stars.
+
+Speaker
+
+around the galaxy. And to me, this looks a lot cooler than what we just had.
+
+Speaker
+
+Now you might wonder what this web P here is. That is just an image format. Pretty similar to so-called GIFs.
+
+Speaker
+
+and GIF is what you recognize from all over the web in animated images like this one right here, which you've
+
+Speaker
+
+probably seen before.
+
+Speaker
+
+So WebP is used exactly as GIFs are on the web.
+
+Speaker
+
+However, it has a better compression, so it's more compact and doesn't use as much data as gifts use when they're sent from a server to a client.
+
+Speaker
+
+We want to use WebP where we can.
+
+Speaker
+
+And now you might wonder, well, where did you find this galaxy that web page?
+
+Speaker
+
+That is on a site called Giffy, G-I-P-H-Y.
+
+Speaker
+
+That is a search engine for GIFs.
+
+Speaker
+
+So I just navigated to it.
+
+Speaker
+
+Search for galaxy?
+
+Speaker
+
+Scroll a little bit down and found this neat looking galaxy gift here.
+
+Speaker
+
+created by the European Space Agency.
+
+Speaker
+
+Now this is a slideshow.
+
+Speaker
+
+So you can't see that this.
+
+Speaker
+
+GIF is now being animated, but it actually is.
+
+Speaker
+
+because I just saved this image to my local computer.
+
+Speaker
+
+And then,
+
+Speaker
+
+loaded to the images folder right here.
+
+Speaker
+
+Now if you want you can also click on the share button here and click copy "giffling". And then you can simply paste that link into this URL.
+
+Speaker
+
+And then that'll give as you see the exact same result.
+
+Speaker
+
+but I prefer to rather use the version which we've
+
+Speaker
+
+important project right here.
+
+Speaker
+
+in case the goofy file might change at some point or something.
+
+Speaker
+
+However, for experimentation purposes, I think you should head over to Kiefe.
+
+Speaker
+
+search for a few images and just...
+
+Speaker
+
+Paste them in right here.
+
+Speaker
+
+and see how that affects our example.
+
+Speaker
+
+just so you've got familiar with the using Giffy and pasting external URLs into the background image property in CSS.
+
+Speaker
+
+Go ahead and do that, and then I will see you in the next scrim.
+
+Speaker
+
+See you in the next scrim.
+
+Speaker
+
+Going to space is definitely a risky affair. So I want to add this terms and conditions apply text underneath the main section of our site. However, I
+
+Speaker
+
+I don't want to add this. This is Cribba, so you're going to do it, of course. But I'm going to give you a set of detailed instructions so that you know how to go about doing this.
+
+Speaker
+
+So you're going to start with wrapping the hero section in a div.
+
+Speaker
+
+And the Hero section is the one you can see on top here. It's very often called a Hero section in Web design and it's probably called that because kind of serves as the user's first glimpse of the company and the offering and has this kind of prominent place towards the top and it usually extends full with. It is kind of the Hero of the website. So in our case, it is these three elements right here, the logo, title and the call to action button and those should all be wrapped inside of a div and then I want you to move the background image
+
+Speaker
+
+Then I want you to add the terms and conditions apply in an H3 below the hero section. And then finally a problem you'll probably come across is that
+
+Speaker
+
+The body tag has some default margins, which right now doesn't bother us, but which will become apparent once you change this layout. So go ahead and give this one your best shot, and when you return back to me, I'll show you how to do it as well.
+
+Speaker
+
+Let's go.
+
+Speaker
+
+I'm going to start with the Hero section Dave.
+
+Speaker
+
+I'm gonna add it.
+
+Speaker
+
+Right here.
+
+Speaker
+
+I'll give it an idea of hero, because it is unique, so it's okay to use ID.
+
+Speaker
+
+Then I'm going to indent this in.
+
+Speaker
+
+And run the cold and seemingly nothing has happened.
+
+Speaker
+
+Because as you remember from previously, devs don't have any default styling to them.
+
+Speaker
+
+So, what do we need to do?
+
+Speaker
+
+Peace.
+
+Speaker
+
+Target the
+
+Speaker
+
+Hero.
+
+Speaker
+
+And then move the background properties from the body.
+
+Speaker
+
+through the heroine.
+
+Speaker
+
+And there we go.
+
+Speaker
+
+And as you can see, it doesn't look particularly good now. As I said, we will be forced to deal with the padding in the hero.
+
+Speaker
+
+Because you can see here, this logo is really crammed all the way up to the top and there's no space underneath the button. So let's add padding. And on the top, maybe we want 10 pixels like that, yes. On the right hand side, we don't need anything for now.
+
+Speaker
+
+But on the bottom, we want a lot of padding, maybe we'll do.
+
+Speaker
+
+40 pixels like that.
+
+Speaker
+
+And then on the left hand side, don't need anything either.
+
+Speaker
+
+So here we have the padding.
+
+Speaker
+
+Now, let's add the terms and conditions apply, h3 below the hero.
+
+Speaker
+
+That's just...
+
+Speaker
+
+like this, adding in age 3.
+
+Speaker
+
+and conditions apply like that.
+
+Speaker
+
+From the code?
+
+Speaker
+
+And there we go, it has already the color we want since we have set the blue color as the text color on the body, so we're inherits the color property from the body. However, as you can see, they are still not quite done because something has happened with the margins on the sides, or at least the margins of the body has become more apparent because now the entire body isn't filled with the background image anymore. So we're suddenly noticing that the body has some default margins on all sides. We don't want that.
+
+Speaker
+
+So we're gonna neutralize that by doing margin zero and boom
+
+Speaker
+
+There we go.
+
+Speaker
+
+We have completed the challenge.
+
+Speaker
+
+Now, there is one more thing, which is a little bit problematic, which is that if you watch this on a mobile, for example, so that the exploration word is located directly over the galaxy, the readability sinks quite a bit, because the text color blends in with the background.
+
+Speaker
+
+And we will fix that is by using a shadow technique on this text.
+
+Speaker
+
+So now you're going to learn exactly that.
+
+Speaker
+
+Text Shadow is a really nice tool to have in your web design tool.
+
+Speaker
+
+as it can make your designs much better.
+
+Speaker
+
+So here I've created a very simple imitation of the Netflix logo with the red background.
+
+Speaker
+
+and white text.
+
+Speaker
+
+As you can see, I've pulled in a font which kind of looks like the Netflix font. It's not really the same, but it's close enough.
+
+Speaker
+
+It is an age one and I've set the font size to 80 pixels.
+
+Speaker
+
+Now, what if I want to have?
+
+Speaker
+
+Black Shadow like this.
+
+Speaker
+
+As that makes it look even more like the classical Netflix logo.
+
+Speaker
+
+I can achieve that by on the age one.
+
+Speaker
+
+which is the...
+
+Speaker
+
+element that includes the Netflix text. As you can see here.
+
+Speaker
+
+I can add.
+
+Speaker
+
+a property called text bash.
+
+Speaker
+
+Shout out.
+
+Speaker
+
+which must contain three values.
+
+Speaker
+
+So just bear with me here, I'll write all three of them out, and then I'll explain it.
+
+Speaker
+
+I'll do zero pixels, zero pixels.
+
+Speaker
+
+And seemingly nothing happened.
+
+Speaker
+
+That's because I first wanted to show you the third value here black
+
+Speaker
+
+And that's pretty simple.
+
+Speaker
+
+the color of the shadow. And as you can see here, it is black.
+
+Speaker
+
+The two other values dictate the offset of the
+
+Speaker
+
+the shadow.
+
+Speaker
+
+on the horizontal line and the vertical line.
+
+Speaker
+
+So if I add, for example, 5px here, you can see that now.
+
+Speaker
+
+shadow appeared.
+
+Speaker
+
+as if it's sticking out to the right of the letters.
+
+Speaker
+
+Five pixels.
+
+Speaker
+
+If I do the opposite, minus five pixels, it'll stick out five pixels on the left hand side.
+
+Speaker
+
+As you can see.
+
+Speaker
+
+There's no shadow below and above.
+
+Speaker
+
+because that's dictated by the second value.
+
+Speaker
+
+So if I turn this back to five.
+
+Speaker
+
+and on the...
+
+Speaker
+
+Vertical one do, for example.
+
+Speaker
+
+30.
+
+Speaker
+
+Then you can see the 3 shadow got pushed far too much downwards.
+
+Speaker
+
+If I do minus 30, it's
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+If I do.
+
+Speaker
+
+five pixels, it's pushed.
+
+Speaker
+
+Only five pixels downwards.
+
+Speaker
+
+which looks pretty good actually.
+
+Speaker
+
+that is indeed the design we were looking for.
+
+Speaker
+
+I'm right here.
+
+Speaker
+
+the first value.
+
+Speaker
+
+is how many pixels do you want to push the shadow to the right?
+
+Speaker
+
+the second value.
+
+Speaker
+
+is how many pixels do you want to approach to the shadow?
+
+Speaker
+
+downwards.
+
+Speaker
+
+and the third is the color.
+
+Speaker
+
+So what I want you to do now?
+
+Speaker
+
+Is?
+
+Speaker
+
+try to make the shadow look
+
+Speaker
+
+like this.
+
+Speaker
+
+As you can see now it's on the left hand side and
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+like as if the sun is shining from the
+
+Speaker
+
+top right corner.
+
+Speaker
+
+So.
+
+Speaker
+
+Take a guess at how you need to change.
+
+Speaker
+
+This line 11 here.
+
+Speaker
+
+in order to get that effect.
+
+Speaker
+
+Go ahead and do that right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+What you need to do?
+
+Speaker
+
+is basically.
+
+Speaker
+
+Put a minus in front of the first value.
+
+Speaker
+
+Like that.
+
+Speaker
+
+That shifted the shadow.
+
+Speaker
+
+from being on the right hand side of the letters to the left hand side.
+
+Speaker
+
+Change the get back here.
+
+Speaker
+
+Now I want to teach you.
+
+Speaker
+
+But for this value, you can add to the text shadow property.
+
+Speaker
+
+And that is the third pixel value.
+
+Speaker
+
+So, okay.
+
+Speaker
+
+You can also write, for example.
+
+Speaker
+
+Five.
+
+Speaker
+
+PX, and what happened now?
+
+Speaker
+
+If we compare what we have here right now...
+
+Speaker
+
+with how it was before we added that value.
+
+Speaker
+
+You can see that previously the edges of the shadow.
+
+Speaker
+
+We're sharp.
+
+Speaker
+
+There's no blur.
+
+Speaker
+
+We're here.
+
+Speaker
+
+They're kind of fading over into the red color behind it.
+
+Speaker
+
+And this is called
+
+Speaker
+
+Learn.
+
+Speaker
+
+If we reduce this onto zero again, the edge is sharp again.
+
+Speaker
+
+Now if we do something crazy like...
+
+Speaker
+
+50? You can see that.
+
+Speaker
+
+It is so blurry that it just looks a little bit like background, this little bit dirty.
+
+Speaker
+
+So let's get it back to...
+
+Speaker
+
+Zero again here.
+
+Speaker
+
+What I want you to do now is
+
+Speaker
+
+- Peace.
+
+Speaker
+
+Try to achieve this shadow.
+
+Speaker
+
+Go ahead and give that a shot right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's have a look.
+
+Speaker
+
+You can see the shadow is above and to the right.
+
+Speaker
+
+All the letters, let's fix that first.
+
+Speaker
+
+To have it on the right of the letters we need plus value on the first one we want to push it to the right
+
+Speaker
+
+And we're gonna have it above this week, don't wanna push it.
+
+Speaker
+
+downwards as we're doing with this value, so we want to minus it pushing it up.
+
+Speaker
+
+upwards.
+
+Speaker
+
+Now the only difference is that this is a lot more blurry.
+
+Speaker
+
+where this is completely sharp.
+
+Speaker
+
+So let's try five pixels here as well.
+
+Speaker
+
+And boom, there we go.
+
+Speaker
+
+That looks...
+
+Speaker
+
+Pretty correct to me.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Doing this challenge.
+
+Speaker
+
+Before we move on, I have just a final trick I want to show you.
+
+Speaker
+
+Which is a little bit of a hack.
+
+Speaker
+
+But super useful.
+
+Speaker
+
+Because let's say that, for example, the background here was...
+
+Speaker
+
+white smoke instead of the red color and white smoke is a very white color with just a little bit of gray in it.
+
+Speaker
+
+As you can see, it looks really bad.
+
+Speaker
+
+Now, we can hardly see the letters.
+
+Speaker
+
+We can clear to see the shadows.
+
+Speaker
+
+If we know.
+
+Speaker
+
+set 0 pixels on the two first values.
+
+Speaker
+
+It keeps the blur.
+
+Speaker
+
+And then suddenly, there's no shadow, but there's just a glowing effect around the letters.
+
+Speaker
+
+making them visible, even though they are in almost the same color.
+
+Speaker
+
+Ask the background.
+
+Speaker
+
+And if we make this smaller, for example, one, you can see the line around the letters look a little bit sharper.
+
+Speaker
+
+since it's very little blur now.
+
+Speaker
+
+If you do like.
+
+Speaker
+
+20.
+
+Speaker
+
+each letter gets a lot of blur around it.
+
+Speaker
+
+and thus making them visible.
+
+Speaker
+
+That is a little trick to use.
+
+Speaker
+
+Normally with small values on the blur.
+
+Speaker
+
+in order to make your text stand out a little bit more in the situation where you're
+
+Speaker
+
+Text color and your background color.
+
+Speaker
+
+is a little bit too similar.
+
+Speaker
+
+And this is very relevant.
+
+Speaker
+
+If you have a background image in which the contrast between
+
+Speaker
+
+between that image and the text color is a little bit too weak.
+
+Speaker
+
+So then you'd use this hack.
+
+Speaker
+
+To make your text stand out despite the similarities between your text color and
+
+Speaker
+
+and the background image.
+
+Speaker
+
+So that was quite a lot about text shadows.
+
+Speaker
+
+But now you know it, so we are ready to move on to the next scrim.
+
+Speaker
+
+Okay, now we are going to fix this problem.
+
+Speaker
+
+the text blending too much into the background when it is broken into two lines and
+
+Speaker
+
+And thus are located exactly over the galaxy in the background image here.
+
+Speaker
+
+because the readability is a bit too low now, in my opinion.
+
+Speaker
+
+And I want you to fix that.
+
+Speaker
+
+by adding a blurred border around the atron tag using the technique.
+
+Speaker
+
+you just learned.
+
+Speaker
+
+You should set the blur to 4 pixels.
+
+Speaker
+
+the color to black.
+
+Speaker
+
+So go ahead and do this right now.
+
+Speaker
+
+then I will trigger this solution as well when you return back to me.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+So first we need to select the A drone.
+
+Speaker
+
+And we've been really good at using IDs and classes here.
+
+Speaker
+
+So instead of just selecting the element, I'm actually gonna give this one an ID.
+
+Speaker
+
+because we probably only have one title on the page.
+
+Speaker
+
+So running this.
+
+Speaker
+
+and navigating back into the CSS file, I can select the title.
+
+Speaker
+
+And then I need to use the text shadow property.
+
+Speaker
+
+We want both the horizontal offset and vertical offset to be zero pixels.
+
+Speaker
+
+I'm not actually creating a shadow here. The effect we want is more of an outline. So then without any offset, but four pixels blur.
+
+Speaker
+
+It'll blur a black shadowish effect around the entirety of all the characters.
+
+Speaker
+
+So, if you look at it now...
+
+Speaker
+
+And look closely, there is a...
+
+Speaker
+
+slight blurred black border around the letters.
+
+Speaker
+
+It's not that easy to see, but if you now look at this while I comment out that CSS rule, you'll see the difference. So keep looking at the exploration word.
+
+Speaker
+
+And I will comment it out.
+
+Speaker
+
+I'll comment it back again.
+
+Speaker
+
+There.
+
+Speaker
+
+I'm at that out.
+
+Speaker
+
+I'm going to go back in again.
+
+Speaker
+
+So hopefully you saw that has changed here a little bit.
+
+Speaker
+
+So now the readability is a little bit better.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Hey, it's Gil. I'm a teacher at Scrumba. Before we wrap up this section, I want to drop in and teach you about a small, yet important part of your HTML document. And that is setting the document language using the HTML Lang attribute. And this is important for several reasons. First, screen readers use the Lang attribute to determine which language to use when reading the content. And this is essential for users who rely on assistive technologies. Search engines also use the Lang attribute to understand the language of your
+
+Speaker
+
+Sometimes your page might contain content in multiple language. In that case, you'll set the primary language in the HTML tag and use the link attribute on elements with different languages. For example, in the H3 tag, add a link attribute and set it to Spanish. Setting the language of your page might seem like a small step, but it does play a big role in accessibility and helps your website reach the right audience. To learn more about the link attribute and all the different language codes, be sure to review the MDN docs reference list
+
+Speaker
+
+Now I'm not sure if you're aware.
+
+Speaker
+
+Now, I'm not sure if you're aware of this.
+
+Speaker
+
+You're the best.
+
+Speaker
+
+because you've completed this section and that is very well done.
+
+Speaker
+
+plenty of people who have started this section has never completed it.
+
+Speaker
+
+You're not like them.
+
+Speaker
+
+So I am really proud of you. And let's take a quick look at what you've learned.
+
+Speaker
+
+Starting out, you learned about background images. More specifically, you learned about the background image property and
+
+Speaker
+
+and the URL function.
+
+Speaker
+
+and also the background size property in CSS and setting that to cover.
+
+Speaker
+
+We'll then use a web P format.
+
+Speaker
+
+in order to get this animated image in our hero section.
+
+Speaker
+
+just super cool and really breathes life into our website.
+
+Speaker
+
+And then you learn about Google Fonts.
+
+Speaker
+
+We imported them.
+
+Speaker
+
+Appear in the head section and then you set the font family like this.
+
+Speaker
+
+Fonts do so much for the design of websites, so this is an important thing to know as a web developer.
+
+Speaker
+
+And you also learned a new HTML tag, which is the spam tag, which you can see right here. It is well allowed us to create this underlying under the expiration word.
+
+Speaker
+
+which I did in combination with a utility class.
+
+Speaker
+
+The underlying class would only have one job and that is to set the underlying whatever element it's applied to.
+
+Speaker
+
+And then also, we learned about IDs.
+
+Speaker
+
+which is another attribute in HTML that you target in the CSS using a hashtag.
+
+Speaker
+
+And at the very end, we did a really cool trick with the text shadow property in order to make the readability of our title here a little bit better.
