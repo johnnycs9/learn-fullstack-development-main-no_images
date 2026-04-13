@@ -1,0 +1,2310 @@
+
+
+Speaker
+
+Welcome to this section where you are going to build a birthday gift site and it is just so cool because this site is something you can use for whenever a friend or family member of yours has a birthday. So what you do is basically add their information to the header here and then we have these gifts. So for example, this one saying here's how happy I am for you today and when the birthday boy or girl hovers over the image, they will see a nice gift that makes them feel truly appreciated.
+
+Speaker
+
+Going down we have other gifts how people react when you enter the room
+
+Speaker
+
+This meant to make them feel really good looking.
+
+Speaker
+
+And here.
+
+Speaker
+
+If I had to describe you with one word,
+
+Speaker
+
+So you make them feel really smart.
+
+Speaker
+
+Next up, the only person as badass as you is of course James Bond.
+
+Speaker
+
+and then rounding it up with a little toast.
+
+Speaker
+
+Hopefully you have someone special to send this side to, like Nick here for example, who despite being a computer-generated image created by an AI also is
+
+Speaker
+
+one of my best
+
+Speaker
+
+best friends.
+
+Speaker
+
+So I am looking forward to making Nick happy on his birthday. Let's just get started with this section.
+
+Speaker
+
+Okay, it's time for your first challenge.
+
+Speaker
+
+What you're going to do is create this basic design here for the header of our app.
+
+Speaker
+
+And it's pretty far from what we got right now. As you can see in this style.css we have no styling at the moment. So our site looks pretty though.
+
+Speaker
+
+You can see everything is left aligned and the image of Nick is far too large plus we're lacking the appropriate fun
+
+Speaker
+
+Taking a look at the HTML here, it's just a very simple structure with an age 1, an image tag, an age 2, and an age 4 inside of the body. So nothing special there.
+
+Speaker
+
+The font that you will use is called Happy Monkey and there is a Google font so you're going to have to head over to Google Font, fetch it and then embed it into our project.
+
+Speaker
+
+As you can see in the provided design, the image of Nick should be rounded and not squared as it is right now.
+
+Speaker
+
+So you'll have to figure out how to make an image round. And yet again, you'll find the answer if you Google it.
+
+Speaker
+
+Finally, I want you to consider how you should select the image. So should you use a class selector, an ID selector, or an element selector. You can use any of them, but I want you to think about it and try to figure out what you think makes most sense.
+
+Speaker
+
+Go ahead and do this right now, and then I of course will show you the solution when you return back to me.
+
+
+
+
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+I'm gonna start with centering everything and for that I'm gonna do
+
+Speaker
+
+Body.
+
+Speaker
+
+will set the
+
+Speaker
+
+Next line.
+
+Speaker
+
+to center like that.
+
+Speaker
+
+You can see that indeed centered our elements.
+
+Speaker
+
+Next up, I want to fix the image.
+
+Speaker
+
+It is here, and I think it makes sense to use an ID selector here, because this is kind of the main image of our birthday boy.
+
+Speaker
+
+I don't think we'll duplicate it across the page. So it is unique, meaning we can use an ID. So I'll do ID equals.
+
+Speaker
+
+And then BFF for best friend forever because Nick is my BFF. Please don't make fun of me because my BFF is a computer-generated image, but that is just how it is. And then I'll do dash IMG just to make it a little bit easier to understand what it is based upon the ID name.
+
+Speaker
+
+Then I'll run the code so that that is applied to the DOM.
+
+Speaker
+
+and heading over to the styles.
+
+Speaker
+
+We'll do hashtag BFF-IMG like that. And first, we want to fix the width of it. It's far too wide. This looks more like 100 to 100 pixels. So let's try.
+
+Speaker
+
+with 150 pixels like that, yes, that is pretty much what we're looking for.
+
+Speaker
+
+Hopefully you figure out how to make an image round. And the way to do it is to use the border radius property, which you've seen a couple of times by now. And the maximum border radius an element can have is 50%. And boom.
+
+Speaker
+
+There it is completely round.
+
+Speaker
+
+The final part is to add the Google font, the Happy Monkey font. That is a very birthday-ish font. Actually, I found it just by Googling Google Fonts Birthday. Then Happy Monkey was the top result. Clicking into that will select it by clicking select this style.
+
+Speaker
+
+and then we'll copy the links here so that we can embed it into our project.
+
+Speaker
+
+I'll paste that into the head of our project, then copy the font family rule so that I can paste that directly in as well.
+
+Speaker
+
+Now I'll have to rerun so that the font is embedded and yes, there we go. That is, as far as I can see, exactly the design we were looking for.
+
+Speaker
+
+So, great job, let's move on.
+
+Speaker
+
+Okay, your next challenge is to colorize the app.
+
+Speaker
+
+because I wanted to look like this.
+
+Speaker
+
+with a nice blue background.
+
+Speaker
+
+pink border and white text.
+
+Speaker
+
+And as you can see, I've provided the hexadecimal values for the pink, blue, and white colors here. So your job is simply to figure out where you need to add this and what kind of CSS properties you're going to use.
+
+Speaker
+
+Go ahead and do this right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+I'm going to start here in the body.
+
+Speaker
+
+taking the blue hexadecimal value and setting it.
+
+Speaker
+
+That's the background of the...
+
+Speaker
+
+body.
+
+Speaker
+
+There we go.
+
+Speaker
+
+Next up, we want to set the color property here.
+
+Speaker
+
+two
+
+Speaker
+
+White, just just six F's after each other.
+
+Speaker
+
+Like that?
+
+Speaker
+
+Now that it's inherited down from the body.
+
+Speaker
+
+to all of these.
+
+Speaker
+
+Okay, final step is the image.
+
+Speaker
+
+As you can see it should have a border around Nick and it should be pink. So here we'll use the border property and let's try six pixels because it looks pretty thick.
+
+Speaker
+
+It should be solid.
+
+Speaker
+
+And then...
+
+Speaker
+
+We'll copy the hex value from pink.
+
+Speaker
+
+and paste it in right there.
+
+Speaker
+
+And actually, that looks about right to me.
+
+Speaker
+
+Great job.
+
+
+
+
+
+
+
+Speaker
+There is one problem with our site at the moment, which is that if we run these two colors through a contrast checker, for example, userway.org, you'll see there are accessibility actually fails, because the contrast ratio is too small. So what can we do to improve this?
+Speaker
+Given that we want to keep the colors we have, what we can do is use the trick you learned in the Space Exploration section.
+Speaker
+Because...
+Speaker
+Pay attention to what happens to this text.
+Speaker
+If we add a thin black border,
+Speaker
+around the text using the text shadow property.
+Speaker
+So this is without the text shadow property.
+Speaker
+And this is with it.
+Speaker
+As you can see, the text now stands out more as
+Speaker
+black contrast as well with both the white and the blue background. And this also pretty subtle, so the text still looks white.
+Speaker
+But it's just a little bit more visible. And in my opinion, I think the readability here is pretty good. So what I want you to do now is write the CSS for this exact technique.
+Speaker
+So add a thin blurred border around the H1, H2 and H4 elements.
+Speaker
+using the text trial technique.
+Speaker
+you learned in the Space Exploration section.
+Speaker
+you're going to set the blur to one pixel and the color to
+Speaker
+Okay, hopefully you remember how to do that.
+Speaker
+Give it your best shot, and then I will of course show.
+Speaker
+trowel the solution as well when you return back to me.
+Speaker
+Okay, let's do this.
+Speaker
+Let's start with the H1 here. And here I'm just going to use an element selector. As we'll have a lot of H2's and H4's throughout the site. And I think we want all of them to have this style, so there's no point separating it into a class.
+Speaker
+the probably good to solve this challenge.
+Speaker
+But I do want to show you a little trick which allows us to reduce all of these from your device.
+Speaker
+that you actually usually have the cut out on the line, so I'm...
+Speaker
+And here I'm just going to use an element select who and yet another one for the age.
+Speaker
+for them. The color is
+Speaker
+And boom, there we go, we have that thin outline.
+Speaker
+which improves the readability.
+Speaker
+And now you probably did something like this.
+Speaker
+Add a whole new rule for the age 2 and get another one for the age.
+Speaker
+for.
+Speaker
+And if you did, that is completely fine. That is how I expect you to solve this challenge. But I do want to show you a little trick which allows us to reduce all of these into one line.
+Speaker
+And that is simply by using a group CSS selector.
+Speaker
+you simply add multiple selectors on one line.
+Speaker
+What you do is instead of just writing age one, you write age one.
+Speaker
+comma.
+Speaker
+H2.
+Speaker
+Now we can delete the egg string.
+Speaker
+Because this rule is applied to both the age one.
+Speaker
+and the H2.
+Speaker
+And likewise.
+Speaker
+We can just add the 8-4 here as well.
+Speaker
+Now we can remove all this.
+Speaker
+as you can see.
+Speaker
+the
+Speaker
+applied to all of the elements.
+Speaker
+Now it is really important that you actually use a comma here and not just add it like this. This means something entirely different and we're not going to learn about that right now.
+Speaker
+as it's outside of the scope of this section.
+Speaker
+So make sure you have the commas, and then you can use this technique.
+Speaker
+I happen to know that we also want this text shadow to be applied to our age 3 elements down the line and also our paragraphs down the line. So I'm just going to add them here so that we don't have to think about this as we add new elements to our site later down the line.
+Speaker
+So...
+Speaker
+Great job, let's move on.
+Speaker
+we want to take this pink background that we have around the image and apply it behind the H2 and the H4 element.
+Speaker
+so that it looks like this.
+Speaker
+So let's try the most intuitive approach and see how that works. That would be too...
+Speaker
+target the H2 and the H4. I'm going to use this comma selector here to target both simultaneously.
+Speaker
+As we've done up here.
+Speaker
+And then we'll set the background.
+Speaker
+to this pink color right here.
+Speaker
+However,
+Speaker
+As you can see, that did not give us what we wanted.
+Speaker
+because heading elements like age 2 and age 4 are by default display block.
+Speaker
+So they take up all the available horizontal space. So let's then try to turn them into display in-line and see what happens then.
+Speaker
+that did not work well either because when they're in line,
+Speaker
+They're actually narrow enough to be on the same line and actually jump up to the line above with the image, which also is display in line.
+Speaker
+So let's remove the display in line as well. And the way to actually solve this is to use the technique you haven't learned yet. Now I'm just going to show it to you fast and then we're going to take a closer look at how
+Speaker
+works in the next script.
+Speaker
+Because what we can do is...
+Speaker
+head into the body, which is the container element.
+Speaker
+for these two and for all of our elements actually.
+Speaker
+This way.
+Mic
+you
+Speaker
+Flex, that stacks things up on a horizontal line turning every element into its own column. But we can change that by doing Flex by Ricksion. Now, is set to Row by default.
+
+Speaker
+And that might sound a little bit confusing since I've always said that Flexbox turns every element into its own column. And yes, it does that. However, what it also does is make sure that all of the elements are in the same row. So that is why it's called Flexdirection Row.
+Speaker
+because Rose go from left to right.
+Mic
+Yes.
+Mic
+[inaudible]
+Speaker
+And you can see there's only one row from left to right here.
+Speaker
+which becomes even clearer if you do like this.
+Mic
+(indistinct chatter)
+Mic
+Is it?
+Speaker
+and all the elements are inside of the same row.
+Speaker
+Now in order to flip this, we can simply change rule from...
+Mic
+[inaudible]
+Speaker
+Call them like that!
+Mic
+[BLANK_AUDIO]
+Mic
+[BLANK_AUDIO]
+Mic
+Yeah.
+Speaker
+Now all of the elements are stacked on top of each other again in one column.
+Speaker
+because a column goes from top to bottom. So this is just one column now.
+Mic
+Please, please.
+Mic
+[inaudible]
+Mic
+I
+Speaker
+with that in place, we can use another CSS property in that Flexbox gave us, which is called a line
+Speaker
+[BLANK_AUDIO]
+Speaker
+and set that to center and
+Mic
+Yeah.
+Speaker
+There we go.
+Mic
+Look here.
+Mic
+[inaudible]
+Speaker
+this was probably pretty confusing and you were not meant to understand this right now, which is why we're going to take a little digression here and look closer at how Flexbox works and then return back to this example.
+Speaker
+where you will code it up yourself and properly understand it.
+Mic
+[inaudible]
+Speaker
+If you are to become a Flexbox Master, you will need to know a line items.
+Speaker
+Luckily though, it's not that hard to learn because it is a close cousin of a pro
+
+Speaker
+property you already know, which is just
+Speaker
+justify content.
+
+Speaker
+So let's pretend that the two of us, for example, work in a lab together. Well, if so, we have our lab equipment, which you can see here inside of our lab, which is this green rectangle right here. And what we're going to do now is use FlexBox along with justify content and line items in order to organize our lab equipment in different ways in our lab. So let's have a look at the code.
+
+Speaker
+The HTML is very simple. It's just a container which has three divs and each div holds exactly one piece of lab equipment, visualized VR and emoji.
+Mic
+[BLANK_AUDIO]
+Mic
+[BLANK_AUDIO]
+Mic
+[inaudible]
+Speaker
+If we head over to the CSS, you can see that the container has a border.
+Speaker
+and a fixed height. So that's why we get this green rectangle.
+.
+Speaker
+The items have a width and a height.
+
+Speaker
+There's some margin in between them and some padding on the inside. I've set the font size and also added a border and finally...
+Mic
+(screaming)
+Speaker
+Something you haven't learned yet, but I've added a gradient background.
+Mic
+[BLANK_AUDIO]
+Speaker
+so that the color is slightly fades.
+Speaker
+from a darker shade of green to a lighter shade of green in the background.
+Speaker
+Now you are going to learn about the linear gradient later on, so don't worry a second about this right now.
+Speaker
+They just accept that it is how it is.
+Speaker
+And let's get going with the organizing.
+Mic
+[BLANK_AUDIO]
+Speaker
+As you can see.
+Speaker
+by default the "lab equipment"
+
+Speaker
+The Divs status?
+
+Speaker
+are stacked on top of each other, because as you remember, divs are displayed block.
+Mic
+(crowd cheering)
+Speaker
+However, if we turn it into a flexbox layout...
+
+Speaker
+Each of the item gets its own column, and as a consequence they stack up on the horizontal line.
+Speaker
+So far so good?
+Mic
+[BLANK_AUDIO]
+Speaker
+And if we set the ecosystem, it's probably.
+
+Speaker
+It will arrange these in different ways along this horizontal axis.
+Speaker
+So if we do center, for example, they are centered, if we do N, they are pushed all the way to the end.
+Speaker
+You know the deal. So what align items does?
+Speaker
+instead of controlling the horizontal line, which I from now will call the main axis, it controls
+Speaker
+the cross-axis.
+Speaker
+which is the vertical going from top to
+Speaker
+bottom.
+Mic
+[inaudible]
+Speaker
+Let's turn this back to start.
+Speaker
+And do a line.
+Speaker
+items.
+
+Speaker
+Center.
+
+Speaker
+Boom, here we can see, now it's pushed.
+
+Speaker
+All the three items.
+Speaker
+down to the center so that they are centered vertically, meaning they are centered along the cross-axis.
+Speaker
+And then I can combine this with the main axis.
+Speaker
+which is justified content.
+Speaker
+to control the horizontal one going from left to right.
+Speaker
+for example, do.
+Mic
+[BLANK_AUDIO]
+Speaker
+end here and boom.
+Speaker
+And we are.
+Speaker
+still vertically aligned, so we're in the middle.
+Speaker
+But we are pushed all the way to the right hand side.
+Speaker
+along the main horizontal axis.
+Speaker
+So the values you are going to use for line items to begin with are start center and end.
+Speaker
+Works with justify content, as you know you can use Start Centurion and, but also these space around, space evenly, and space between properties.
+Speaker
+Okay, let's move on to the challenge.
+
+Speaker
+What I want you to do is follow my orders on where we should leave our lab equipment.
+Mic
+(clears throat)
+Speaker
+Because I want you to do it in very specific ways, starting with this position here where they're all squeezed down in the bottom left corner. So go ahead and modify justify content and line items to achieve that layout right now.
+
+Speaker
+So to achieve this layout, you can see it.
+Speaker
+the vertical one, so we'll do...
+Speaker
+End.
+Speaker
+on a line items.
+Speaker
+But it is at the start of the main axis.
+Speaker
+because it is pushed all the way to the left.
+Speaker
+Meaning that we should just start up here and there we go. We have sold it.
+Speaker
+Okay.
+Speaker
+New challenge. I want you to achieve this.
+Speaker
+this layout.
+Speaker
+Go ahead and do this right now.
+Speaker
+Here we can see we are actually centered both along the main axis, horizontally, and the
+Speaker
+cross-axis vertically.
+Speaker
+I'll try Center.
+Speaker
+Yes.
+Speaker
+And center again, and there we go.
+Speaker
+Okay, final one.
+Speaker
+I want you to organize the equipment like this.
+Speaker
+Go ahead and do it right now.
+
+Speaker
+Okay, hopefully that went well.
+Speaker
+The first thing I'll notice here is that all of the items are squeezed to the top, so align items should be stark.
+Speaker
+there's some space around the elements.
+Speaker
+So we need to try one of these, for example, space around, space evenly, or space between.
+Speaker
+So let's try, for example, space
+Speaker
+We?
+Speaker
+Hmm
+
+Speaker
+that didn't exactly achieve what we wanted because there should be some white space on the left side and the right hand side here, whereas these two are squeezed all the way to the end.
+
+Speaker
+So maybe we can do space around instead. Yes.
+Speaker
+That looks exactly like what we want.
+Speaker
+Really good job.
+Speaker
+solving these three challenges.
+Speaker
+Before we move on, they're just a small thing I want to tell you.
+Speaker
+That is something you might see from time to time.
+Speaker
+Which is that if I
+Speaker
+Now remove the height.
+Speaker
+of our items.
+Speaker
+See, then they just became a little bit higher because the content inside of it wants a little more height, but that was besides the point.
+Speaker
+What I want us to do is also remove the align items.
+Speaker
+Let's see what happens.
+Speaker
+Oh wow.
+Speaker
+It turns out that Flexbox...
+Speaker
+in the cross axis.
+Speaker
+actually stretches the content like this.
+Speaker
+And the reason it didn't happen previously was because our hike property over roads
+Speaker
+stretching.
+Speaker
+So what this means is that line
+Speaker
+items.
+Speaker
+by default,
+Speaker
+the value stretch.
+Speaker
+When we do, for example, start.
+Speaker
+no longer scratched.
+Speaker
+So this might feel very confusing and the only reason I want to tell you about it now is
+Speaker
+is that when you aren't any flick-spox layout.
+Speaker
+And you notice that something is stretching in way you don't.
+Speaker
+want to stretch, the prime suspect you should look at is a line items. An experiment with that.
+Speaker
+So be aware of that, but...
+Speaker
+Don't worry too much if you found this a little bit confusing. It's totally okay. Let's just keep up the pace and move on to the next scrim.
+Speaker
+Now you're going to learn about the flex.
+Speaker
+direction.
+Speaker
+because there is one problem with our lab system now.
+Speaker
+And that is that regardless of how we change around on the align items and justify content,
+Speaker
+with center and end, for example.
+Speaker
+Our lab equipment will always stack up beside each other.
+Speaker
+They'll be under the same row, and there's no way to get them to stack on top.
+Speaker
+top of each other.
+Speaker
+But maybe that's how I prefer to leave my lab equipment for the night, regardless of how we change to justify content and line items, that is now impossible.
+Speaker
+possible.
+Speaker
+Now we could of course remove the display flex and then these divs will stack on top of each other by default.
+Speaker
+So by doing this.
+Speaker
+this, now they stack on top of each other.
+Speaker
+However...
+Speaker
+Just if I comment and line items.
+Speaker
+No longer work, say if I cry.
+Speaker
+changing these.
+Speaker
+Nothing happens because these properties work inside of a flex box not inside of a random div that by default is display block.
+Speaker
+So, we need the display flex.
+Speaker
+like that in order to make these work.
+Speaker
+However, what we can do is change the flex direction.
+Speaker
+So first, let me just go to the least, go back to the start.
+Speaker
+And then I'll deflex dash direction.
+Speaker
+And it by default is a row because as I said, the stack up along side of each other on a row. But if we change this to...
+Speaker
+column.
+Speaker
+boom, there you can see.
+Speaker
+Now they suddenly stack on top of each other.
+Speaker
+as if they are in the same column as columns go from top to
+Speaker
+So now we are back to the original layout we have before we made this into a flex container.
+Speaker
+just if I content and align items.
+Speaker
+Now work.
+Speaker
+However...
+Speaker
+They work in a little bit of a different way and you might expect because...
+Speaker
+As you remember, I previously talked about
+Speaker
+Main axis going from left to right.
+Speaker
+and being the one controlled by justify content.
+Speaker
+process going from top to bottom.
+Speaker
+and also being controlled by a line items.
+Speaker
+When we change the flex direction
+Speaker
+and our items stack up differently.
+Speaker
+on top of each other.
+Speaker
+We also change the main axis, so this is no longer the cross axis, it is the main axis.
+Speaker
+and it's controlled by justified content.
+Speaker
+Where's the horizontal one?
+Speaker
+It's no longer the main.
+Speaker
+It is the cross.
+Speaker
+and it's controlled by align items.
+Speaker
+So basically,
+Speaker
+slipped a line items and just if I can't.
+Speaker
+So we find now.
+Speaker
+Do just if I content and
+Speaker
+end.
+Speaker
+He'll jump downwards.
+Speaker
+Whereas previously, they would have jumped to the right.
+Speaker
+And if I now do a line items...
+Speaker
+End.
+Speaker
+- Kill Jim.
+Speaker
+the right.
+Speaker
+previously aligned items.
+Speaker
+the vertical position.
+Speaker
+So this is probably a little bit confusing now.
+Speaker
+You should not feel bad if this feels overwhelming.
+Speaker
+This will take time to mature in your mind, and it's totally okay that in the beginning now, you're just experimenting with these values in order to get the layout you want.
+Speaker
+and not really remembering exactly why it works as it works.
+Speaker
+So let's now give you some practice.
+Speaker
+I want to clean up my lab equipment and
+Speaker
+And I want it to be like this.
+Speaker
+So go ahead and
+Speaker
+change round on these two values in order to achieve that layout.
+
+Speaker
+Okay.
+Speaker
+What we need to do is on justify content.
+Speaker
+I want to center it.
+Speaker
+so that it's vertically centered.
+Speaker
+but then we want to align it to the start on the left hand side.
+Speaker
+Yes, that is correct.
+Speaker
+Okay, new one.
+Speaker
+achieve this layout.
+
+Speaker
+Okay.
+Speaker
+Here we can see some space in between the items.
+Speaker
+So I think we need to use.
+Speaker
+space between on just if I count them.
+Speaker
+Yes,
+Speaker
+Good.
+
+Speaker
+But we are aligning to the left, we want to align it to the right instead.
+Speaker
+So, all right, items should...
+Speaker
+Probably be.
+Speaker
+and instead of start and boom.
+Speaker
+That is correct.
+Speaker
+Finally, help.
+Speaker
+This one right here, give it a shot right now.
+
+Speaker
+We can see that they are all squishy.
+Speaker
+towards the top.
+Speaker
+So I think we'll do just if I content.
+Speaker
+Yes, this is good.
+Speaker
+But we want to center it as well.
+Speaker
+So we'll do a line item.
+Speaker
+center and there we go.
+Speaker
+Great job doing this. Let's just move on.
+Speaker
+Okay, now we're going to put your freshly acquired Flexbox skills
+Speaker
+through the test.
+Speaker
+Because you are going to turn this layout here into...
+Speaker
+This layout.
+Speaker
+So first, I want you to wrap the HTML elements in a div with an ID called header.
+Speaker
+Salatis.
+Speaker
+All of these items right here.
+Speaker
+And then you are to select this header and then use FlexBox to achieve the layout from the design slide.
+Speaker
+And as you might have guessed, you will need to use the flex direction and align items to solve this. So...
+Speaker
+Go ahead and give this your best shot.
+
+Speaker
+So we'll start in the HTML.
+Speaker
+Create that. Open tag.
+Speaker
+and closer off down here.
+Speaker
+You can't miss.
+Speaker
+- Run it.
+Speaker
+no change scene in the mini browser.
+Speaker
+That is to be expected.
+Speaker
+Target it and style it.
+Speaker
+So I'm going to do header.
+Speaker
+And then first.
+
+Speaker
+is play flex.
+Speaker
+that forces all of the elements into one row because it is flex direction row by default.
+Speaker
+However, we don't want that, we want everything in one column.
+Speaker
+So we'll do flex.
+Speaker
+direction.
+Speaker
+Call them like that.
+Speaker
+Now they stack on top of each other.
+Speaker
+It's just what we want.
+Speaker
+But there's a problem.
+Speaker
+The two elements here are stretching and the image of Nick is left aligned. It's not centered, so I think we need to change the align items.
+Speaker
+Items.
+Speaker
+into center.
+Speaker
+like that and there we have
+Speaker
+the layout we wanted.
+Speaker
+Great job, let's move on.
+Mic
+(screaming)
+Speaker
+Okay, now you're going to fix up the design for this 24 years old element and the date element right here because I wanted to look like this. Here you can see that there's some space between the content of the element and the edge of the element and there's not as much space between the elements.
+Speaker
+and also the edges of the rectangles are a bit softer.
+Speaker
+But before you start doing this, there's a couple of things I want to do.
+Speaker
+Because here the H2 and the H4
+Speaker
+have no IDs or classes, they are just selected using the element selector and also using a selector list separated by commas. And I don't think we should do either of those. First of all, we probably don't want all of our age 2 and age 4s on the page to be styled according to how it looks hair up in the header.
+Speaker
+So we actually want to give these two IDs.
+Speaker
+I'm going to call this one "edae age".
+Speaker
+And this one.
+Speaker
+BB.
+Speaker
+running this code so that we got it applied. And then in these CSS, instead of using element selectors, we'll use ID selectors.
+Speaker
+Be great.
+Speaker
+Age.
+Speaker
+You date dates.
+Speaker
+And then finally...
+Speaker
+Let's avoid applying styles to both of these simultaneously. Let's work with one or the other because this is really an optimization and writing code, which is so called dry short for don't repeat yourself. And while that is a good thing, I want you to focus on the core CSS now because this will introduce a little bit more complexity. So let us instead just keep it simple.
+Speaker
+So break this into new lines, we got the birthday date rule here, and then copy the exact same thing to the BTH.
+Speaker
+like that. Okay, now it's time for your challenge.
+Speaker
+You are going to make the B-day elements look like the provided the science light like this.
+Speaker
+Go ahead and do this right now.
+Mic
+(dramatic music)
+Speaker
+Okay, hopefully that went well. Let's start with the age element. As you can see, there is some space around it. That is
+Speaker
+[BLANK_AUDIO]
+Speaker
+Most likely.
+Speaker
+So let's add padding, for example, 10 pixels and see how that works. If we compare that with what we have in the design, it looks pretty good, but I think we shouldn't have 10 pixels on each side. I think the padding on the left and right side is meant to be slightly larger than the top and bottom, as we've often seen with buttons and layouts in general. So for the top and bottom, we'll do eye pixels and left and right 10 pixels. That is what we are looking for.
+Speaker
+as far as I can see. Okay, next up, there is some border radius here as well. Not that easy to see, but it definitely is there. So we'll do border radius, five pixels for example. That looks pretty good to me. And now let's just try to copy this down to our birthday date.
+Speaker
+and see how that works.
+Speaker
+Here you can see.
+Speaker
+Except for the fact that there's much less space between the elements here, they look
+Speaker
+pretty similar as far as I can see.
+Speaker
+So, we need to move on to the margin. Let's try first and remove all the margin from the birthday date.
+Speaker
+margin 0 like that. Now it's quite a lot closer and whatever margin comes from the age 2 element, it probably has a bit too much margin bottom. So let's rather control that by doing margin bottom for 10 pixels.
+Speaker
+And yes, that looks pretty good to me. Let's also look at the margin top here. It is too much space between the age element and the image. So if we do margin top, I can't make this up there. That looks pretty good.
+Speaker
+pretty good, but it's perhaps still a little bit too much, so let's do five instead? Yeah, actually I think we got it.
+Speaker
+So the final step then is to convert this into a shorthand because we know how to use shorthand, don't we? We want five on the top and ten at the bottom.
+Speaker
+Then we'll do margin, 5px for the top, 0 for the right hand side, 10px for the bottom, and 0 for the left hand side.
+Speaker
+And there we go. Now, if your solution is slightly different from mine, perhaps you used.
+Speaker
+slightly different margins, sporter radius, padding. That doesn't really matter. Give yourself a pat on the back, regardless of how you solve this, and let's move on.
+Speaker
+Okay, now you are going to create the first gift section of our site.
+Speaker
+So as you can see it contains a title, a little hint about hovering over the gift, then there's the image itself. Now the hover effect is not a part of this challenge, you're only going to work with this hard-coded gift cover at this point. And that gift cover has been added up here in a images folder, which I've just created.
+Speaker
+We now have two images, so I wanted to gather them together in this images folder.
+Speaker
+That means that I've also changed the image of Nick or the source.
+Speaker
+of Nick.
+Speaker
+the HTML.
+Speaker
+and direct path into the images folder.
+Speaker
+The challenge is described in detail here.
+Speaker
+I want you to start by creating a gift section, Dave.
+Speaker
+that will wrap all of the elements for the first gift.
+Speaker
+And then I want you to add the age 2, age 3, and IMG elements.
+Speaker
+So that is the title which is age two.
+Speaker
+the hint, which is on age three.
+Speaker
+and finally the image itself.
+Speaker
+And I want you to give them all their own classes.
+Speaker
+so that you can use the classes to select the elements when you are to style them according to the design. And as a final hint, the image should be 400 pixels wide.
+Speaker
+So go ahead and do this right now.
+
+Speaker
+Hopefully that went well.
+Speaker
+So I'll start by heading over to the HTML and create the markup.
+Speaker
+So we wanted a dev to begin with.
+Speaker
+I'm going to create that.
+Speaker
+and thank you for the class of...
+Mic
+[BLANK_AUDIO]
+Mic
+(laughing)
+Speaker
+Gift section like that.
+Speaker
+And inside of it, we wanted first an H2 for the title.
+Speaker
+which should contain the following text. Let's run this and yeah, ah, nice!
+Speaker
+You can see that the text already has the correct font and also the slight shadow around it. Okay, very nice.
+Speaker
+let's then give it a class, a stat, or something we should do with all elements.
+Speaker
+Now, cool this.
+Speaker
+gift us.
+Speaker
+title like that.
+Speaker
+and the R of the H3 with the following text.
+Speaker
+Well, give that a class.
+Speaker
+of gift hint.
+Speaker
+So you can see I'm using GIFT.
+Speaker
+and then a description.
+Speaker
+I think that makes it easy to understand that these are all somewhat related to each other.
+Speaker
+Finally, the image element.
+Speaker
+to have a source of images.
+Speaker
+slash gift.
+Speaker
+cover.vapek.
+Speaker
+and also a class of.
+Speaker
+gift I am reaped.
+Speaker
+All right, let's run this code.
+Speaker
+And as you can see, everything is being rendered. The whole image is far too large.
+Speaker
+So we need to get going with these styling.
+Speaker
+I'll start with the image.
+Speaker
+I am V.
+Speaker
+and give it a width of 400 pixels.
+Speaker
+I guess that is much better and it is centered because of art.
+Speaker
+text align center up here.
+Speaker
+Very nice.
+Speaker
+Okay, let's just carry on with this one. You can see it has a white border.
+Speaker
+So let's do.
+Speaker
+Order.
+Speaker
+It looks to be something like six pixels or something and solid white.
+Speaker
+Pretty good.
+Speaker
+And finally, a border radius.
+Speaker
+because the corners here are a little bit rounded off.
+Speaker
+So let's try order.
+Speaker
+And yeah.
+Speaker
+that looks pretty much like the design.
+Speaker
+the image.
+Speaker
+Nice. Okay, next up is the...
+Speaker
+Spacing. As you can see, we have far too little space from the gift section itself to the header section above.
+Speaker
+And I could add that to
+Speaker
+the top element here to the title for example.
+Speaker
+but it makes a lot more sense to add it to the container element itself because it should control.
+Speaker
+how far it is between this container and the container above.
+Speaker
+So let's do...
+Speaker
+gift section.
+Mic
+[BLANK_AUDIO]
+Speaker
+and for example, 50 pixels.
+Speaker
+It's more, it's better and looks...
+Speaker
+pretty much like what we have here. Now, you see that the space between the title and the hint, it is very limited, it's not that much space. Where's here? The default margins for the H2 and H3 elements create quite a lot of space in between them.
+Speaker
+So now we probably have to work with both the default margin that the H2 has at its bottom.
+Mic
+[BLANK_AUDIO]
+Speaker
+and the default margin, which the H3 has at its top.
+Speaker
+Doesn't really matter what we start with.
+Speaker
+But for example, just start with the gift.
+Speaker
+hint and see what happens if we set the margin top. Actually, let's bring it up on the side here. Now we've not done anything with the margin top at all. Let's set it to zero.
+Speaker
+You can see hmm
+Speaker
+Nothing happened. Okay, that must be because the margin top here and the margin bottom under the h2 collapsed into each other and the margin bottom for the h2 was probably larger than the margin top for the h3. So removing it served no purpose.
+Speaker
+That means that we also need to try and remove the...
+Speaker
+gift titles margin at expotom.
+Speaker
+Set it to zero for a couple.
+Speaker
+And there we go. Now they're really crammed into each other. Actually, too much, they should have a little bit of spacing in between them. So let's try to instead of reducing that to...
+Speaker
+We said it for example 10 pixels. That looks much more like the design we have here. Very good. So you probably had different names on your classes and different margins and perhaps different borders and radiuses.
+Speaker
+that doesn't matter. The important thing is that you gave it a shot and got some kind of result, hopefully.
+Speaker
+resembling this.
+Speaker
+So no matter what you did.
+Speaker
+Great job!
+Speaker
+Let's carry on with this course.
+Speaker
+Okay, now we're going to prepare.
+
+Speaker
+So that we later came out.
+Speaker
+add the hover feature.
+Speaker
+So we're not going to add the hover feature right now.
+Speaker
+We're just going to set the stage for it.
+Speaker
+And in order to do that, I'm going to first mess up this project a little bit, and then it'll be your job to fix it.
+Speaker
+Because...
+Speaker
+We are not going to use the image tag here in order to display this gift.
+Speaker
+Instead, we are going to use a
+Speaker
+Bivtack.
+Speaker
+I'm changing this into a div.
+Speaker
+which means I also need to close it.
+Speaker
+like that, because divs are not self-closing as IMG tags are.
+Speaker
+the next up.
+Speaker
+DIVs don't have a source attribute. So we can't use this in order to display the image. If I now run this,
+Speaker
+Can see boons.
+Speaker
+our images gone.
+Speaker
+this SRC attribute has no place here because instead we are going to render this image through the CSS background image property.
+Speaker
+So I'm going to remove this one, if we run the code again, you can see nothing else has happened and moving over to the CSS.
+Speaker
+Now it is your job to turn this weird line here into...
+Speaker
+something that looks like this, which is exactly what we had before I messed up the code here.
+Speaker
+So you are to fix the...
+Speaker
+gift i am g div because i kept the class
+Speaker
+Right here.
+Speaker
+so that it looks like the provider decided.
+Speaker
+And a little bit of a hint.
+Speaker
+It needs a height, and if you wonder how much, I want it to be a square, so equal with a height.
+Speaker
+It also needs a background image, which is how you'll render this gift cover. There also should be centered again.
+Speaker
+Because as you can see here, this looks very much left aligned.
+Speaker
+So basically what's happened here is that
+Speaker
+The div has zero height because the div has
+Speaker
+No content inside of it. So the only thing that's visible is the border which
+Speaker
+spans 400 pixels starting from the left hand side and over towards the right hand side. So go ahead and give this a shot, and then I will show you the solution when you return back to me.
+
+Speaker
+Okay, let's do this.
+Speaker
+First, it needs a height, and it should be a square, meaning equal with and height. So let's just do...
+Speaker
+and set it to 400px like that.
+Speaker
+As you can see.
+Speaker
+We now have a empty div on our page. Next up, we're going to set the background image.
+Speaker
+So how do we do that? Well, you've seen that one before.
+Speaker
+background image.
+Speaker
+URL.
+Speaker
+and then point it to the images folder.
+Speaker
+And me.
+Speaker
+There you go.
+Speaker
+But what is happening here? It seems like we only kind of see the top left corner of the image.
+Speaker
+That is because the image itself is huge, much larger than this 400 by 400 pixel container.
+Speaker
+So we need to use our good old friend.
+Speaker
+background size and set that to cover.
+Speaker
+And that squeezes our large image into the current width we have available here. Now, finally, why isn't this element centered anymore?
+Speaker
+While the centring of the image used to happen because the text align is set to center, the text align will only center inline elements inside of its container. And as you hopefully remember, devs
+Speaker
+They are not in line. They are display block.
+Speaker
+And you might have tried to do--
+Speaker
+display in line like that.
+Speaker
+You can see
+Speaker
+That doesn't really work.
+Speaker
+Then our "with" property and "height" property gets this weird underline underneath them because they are simply ignored by CSS.
+Speaker
+because you can't force the Withern height of an inline element, as they should only be as large as the content inside of them are.
+Speaker
+This dev doesn't have any content, so we can't really use
+Speaker
+display in line.
+Speaker
+What we rather can use is the margin technique you learned earlier.
+Speaker
+the one where you set the left and right margin to RO.
+Speaker
+because that works on elements that are displayed block and which have a set width.
+Speaker
+Let's do margin zero on the top and bottom.
+Speaker
+an article on the left and right.
+Speaker
+And there we go.
+Speaker
+We have it centered.
+Speaker
+We are back to our original design.
+Speaker
+And we've set the stage.
+Speaker
+for our hover effect, which Nick is going to be so glad to experience. So it's really cool that you've made it this far, and let's just keep up the pace and move on to the next scrim.
+Speaker
+Hey there, it's Bob's Roll Again, and I'm coming to you now with a quick update to the lesson that used to be here. We're going to have a quick aside to learn about the HoverSudo class.
+Speaker
+To see this, we're just going to use this simple little app that we have here where we have a restaurant menu, and the user should be, of course, able to click on any of these, which would theoretically take you to a different page. In the HTML, you can see we have this semantic nav element, which indicates that it will be a section of navigation.
+Speaker
+And we kept it simple here with three anchor tags to link to other parts of our site. Now currently these are just going to this hash mark, which is sort of a placeholder. It won't actually direct us anywhere different. We can head over to the CSS. We can see there's just a few rules here to make these anchors look a little bit more like buttons. We have the text aligned to the center, the color of the font is white. There's some margin to separate it from other elements and some padding inside. The background is the red color that you see. We've increased the font size and because anchor
+Speaker
+Now what would be really nice with this menu is if we gave some kind of visual feedback to the user when you were hovering over the different menu items here. I'm sure you're not a stranger to this concept. It's something that many websites do when you're hovering over the navigation. There's some kind of hover effect that happens. And we can target our CSS specifically to an element that is currently being hovered by using the hover pseudoclass.
+Speaker
+way we can do this is by selecting our anchor just like we did up above.
+Speaker
+At this time putting a colon,
+Speaker
+Hover.
+Speaker
+This way, any CSS properties that we include here will only be applied when the element is currently being hovered. Or in other words, whenever the mouse has entered the perimeter of that element.
+Speaker
+So for example, one thing we could do is when the element is being hovered, we could change the background color to this hexadecimal value here, which is a little bit cryptic. It doesn't really tell you much about it, but just know that it's a slightly darker shade of the red background that we have when the item is not being hovered. And you can see that just by putting my mouse inside the perimeter of that element, we get our hover styles or this change in background color applied, and it's a much more interactive experience.
+Mic
+(laughing)
+Speaker
+So what's happening here is we have added an additional level of specificity, or in other words, we are being more specific about this background color rule than we were about the background that's up here. And actually, maybe just to have an apples to apples, we could change this to background color. That way we can see that our anchor, colon, hover is being more specific, and therefore this background color is being applied when we hover.
+Speaker
+To be clear, this isn't happening because we have written this below our other anchor. I can move this up above and see that the styles will still apply just like they were before. But rather, it has to do with how specific our rules are and the way CSS is working under the hood, which we don't have to dive into too deeply at this point. But it's enough to know that CSS is doing the intuitive thing, just as you would expect.
+Speaker
+Of course, background color is not the only thing that we could change here. We could change the font size, for example, to let's call it 40 pixels and see that we can make as many different changes as we want. And now the hovered menu item is really jumping out at you. I think that might be a little bit much, so I'm going to get rid of that roll.
+Speaker
+on that vein of being able to change other properties. One cool trick that we can do, and this will help us in the challenge that's coming up in the next scrim, is we could do something like changing the background image, and we could set this to a URL. We'll use this CSS URL function as you are familiar with, and let's just point it to eyes.jpg.
+Speaker
+which we have inside of our files appear.
+Speaker
+All right, let's see what happens. I'm going to go to my menu and we'll see that we get our friend Nick's eyes kind of creepily looking at us through the background of these menu items.
+Speaker
+This is a little creepy and probably the strangest menu items you've ever seen on a website.
+Speaker
+But hopefully this is a perfect primer for the challenge that's coming up on our birthday gift site, as we are just about ready to help Nick unwrap his birthday presents.
+Speaker
+So that's what we'll be jumping into next.
+Speaker
+Okay, now we are getting into the fun stuff here because now we're going to create this epic feature where Nick when he hovers over the gift paper gets revealed an underlying gift that
+Speaker
+makes him feel
+Speaker
+and appreciated on his birthday.
+Speaker
+So the challenge is described here. You are to swap the gift paper image out
+Speaker
+with the happy gifts.
+Speaker
+when you hover over.
+Speaker
+The
+Speaker
+gift paper.
+Speaker
+the
+Speaker
+Now the gift paper image you are to swap out is
+Speaker
+This div right here?
+Speaker
+As you remember, we gave it a background image, which is the giftcover.jpg file, which also is in our images folder. So, go ahead and solve this challenge right now, and then I will show you the solution when you return back to me.
+Speaker
+Okay, hopefully that went well.
+Speaker
+What we'll do is first target this gift IAMG here as we want to create a hover effect on it.
+Speaker
+So I'll do it this, I am Lee.
+Speaker
+Call on hover.
+Speaker
+Now?
+Speaker
+Whatever CSS properties and values we are setting inside of these curly brackets will be applied when the user hovers over.
+Speaker
+this gift image.
+Speaker
+And what kind of properties do we want to change? Well, it's actually only one, just the background image here.
+Speaker
+So I'm gonna copy that one, paste it in.
+Speaker
+And we don't want it to be the gift covered up JPG. We want it to be the happy dot.
+Speaker
+Give, like that.
+Speaker
+Let's see how this works.
+Speaker
+move the cursor down towards the image, and when it crosses over, we see Phoebe and Rachel from friends being super happy for Nick on his birthday.
+Speaker
+And I don't know about you, but if someone told me that they would be this happy for me on my birthday, it would make me feel so grateful and appreciated. So we are really doing a good deed creating this website. And you know what? You've done a great deed for yourself in terms of getting this far in the course. You have crushed through so many difficult CSS concepts. So Phoebe and Rachel are also sharing for you. Take a moment to appreciate that. And then I will see you again in the next scrim.
+Speaker
+Okay, now that we've made sure that Nick feels appreciated on his birthday through this Phoebe and Rachel gift, let's make sure he also feels really good looking. Because now we're going to create this gift right here, which is how people react when you enter the room.
+Speaker
+and the GIF will show when he hovers over the settlement is this hot GIF up here.
+Speaker
+I'm not gonna show it to you now, you're gonna have to solve the challenge to see it.
+Speaker
+And speaking of that, let's have a look at the challenge text.
+Speaker
+So you're to create the next gift which uses the hot gift.
+Speaker
+and its HTML structure should be like the previous one, but without the gift hint element. Because as you can see here we have this hint.
+Speaker
+written in parentheses, however.
+Speaker
+That's not needed for this one, I think Nick will probably get the point by the time he's scrolled down to this one.
+Speaker
+So let's just skip it.
+Speaker
+But other than that, you can simply copy paste this section, and then of course change the text as well.
+Speaker
+However, you will need to do some more things as well.
+Mic
+(door slams)
+Speaker
+Now that you have multiple gifts on the page.
+Mic
+(door slams)
+Speaker
+You cannot use the GIST image class to set the background image on hover.
+Speaker
+That is this one right here because
+Speaker
+If you have multiple gift image elements,
+Speaker
+on the page.
+Speaker
+Well, then every single one of them will just show this happy gift, and that's obviously not what we want.
+Speaker
+So instead?
+Speaker
+each of the gifts.
+Mic
+(bell dings)
+Speaker
+will need a unique idea that controls which background image
+Speaker
+should be shown.
+Speaker
+when the user hovers over the element.
+Speaker
+But if you didn't quite catch it, just go.
+Speaker
+Go ahead and try to solve the challenge because I think you will see this problem sooner or later anyway. You definitely will, actually. So make it your best shot and then of course I will show you the solution when you return back to me.
+Mic
+(dramatic music)
+Speaker
+Okay, let's do this.
+Speaker
+starting in the HTML by simply
+Speaker
+copying this one right here and pasting it in down here removing the gift hint because we don't need that.
+Speaker
+and then updating the title.
+Speaker
+Let's run the code now.
+Speaker
+And here we can see the...
+Speaker
+First element with Phoebe Enraitshaw.
+Speaker
+Let's scroll a bit down.
+Speaker
+And there we have our second element.
+Speaker
+though it still shows Phoebe and Rachel.
+Speaker
+So that is a problem and that is because as I said this gift image class
+Speaker
+just sets the background image.
+Speaker
+on hover.
+Speaker
+to the happy gifts on both of these elements right now.
+Speaker
+So we can't use a class for this, we need a unique ID, but we're not going to remove the class of gift, it, I am G.
+Speaker
+Because it...
+Speaker
+Actually, gives.
+Speaker
+a lot of styling, actually, all the styling to the element.
+Speaker
+So it's only the hover pseudo class that needs to be applied to something else.
+Speaker
+So let's instead now.
+Speaker
+on the first one here.
+Speaker
+Add an ID.
+Speaker
+that will call gift-iong.
+Speaker
+Happy.
+Speaker
+We'll run the code so that it's applied.
+Speaker
+And then instead of referring to the generic class,
+Speaker
+for this.
+Speaker
+gift, I am G.
+Speaker
+Happy!
+Speaker
+ID.
+Speaker
+Knowledge will run the cold.
+Speaker
+You can see that.
+Speaker
+It works.
+Speaker
+on the first gift.
+Speaker
+Though the second gift now lacks a hover effect.
+Speaker
+And that's because...
+Speaker
+The only hover effect we've applied now
+Speaker
+on this specific idea here.
+Speaker
+on the first gift.
+Speaker
+Previously, we used the generic gift IMG class, so it was applied to all gift images.
+Speaker
+But now...
+Speaker
+The hover only works in the first one.
+Speaker
+So what we need to do is use this exact technique.
+Speaker
+this section as well.
+Speaker
+create an ID.
+Speaker
+on this section.
+Speaker
+and call it.
+Speaker
+gift dash i am free
+Speaker
+Bosh.
+Speaker
+I'll run the code so that it's applied.
+Speaker
+And then, since I'm lazy, I'll copy this.
+Speaker
+If IMG, happy should be changed to gift IMG. Hot because that is our new.
+Speaker
+ID that targets that element.
+Speaker
+And we don't want to show the happy gift, we want to show the park gift.
+Speaker
+Let's see if this works.
+Speaker
+Here we are at the section when we hover over the image, we see someone looking pretty interested in Nick. So I think he will feel really good looking and hot.
+Speaker
+on his birthday when he sees this gift.
+Speaker
+So great job solving this challenge, let's move on.
+Speaker
+As you can see over in the file system, I've added a genius gif and a badass gif. So your job is now to create the genius and badass gif sections. They should look exactly as the hot section.
+Speaker
+So I'm not going to give you any more instructions, other than giving you the titles so that you can just copy them from here instead of writing them out on your own.
+Speaker
+So, go ahead and create these two sections right now, and then I will show you the solution when you return back to me. Good luck!
+Speaker
+Okay, let's do this.
+Speaker
+So I'm going to start in the HTML file.
+Speaker
+'Cause we're simply gonna copy paste.
+Speaker
+This one.
+Speaker
+Then I'm going to add the titles.
+Speaker
+I'll copy this one.
+Speaker
+and paste in.
+Speaker
+Here.
+Speaker
+copy this one.
+Speaker
+and paste it in.
+Speaker
+Okay.
+Speaker
+Let's run this.
+Speaker
+Now, we can see we have the Hot Gift.
+Speaker
+and then the genius section, which still has the hot GIF underneath it.
+Speaker
+That's to be expected.
+Speaker
+And there we have the bad-ass section, which also still has the same GIF.
+Speaker
+So now we have the sections rendered on the page at least, but we need to fix up the CSS.
+Speaker
+Lazy as I am, I'll copy this one.
+Speaker
+There it has a gift, image hot.
+Speaker
+The first one will be the genius one.
+Speaker
+genius instead.
+Speaker
+That should refer to the
+Speaker
+genius gift?
+Speaker
+Now that we have this in place, we can just give this class.
+Speaker
+to the respective image.
+Speaker
+Like that?
+Speaker
+Running the codes?
+Speaker
+We have the Happy Gift.
+Speaker
+We have the hot gif and then...
+Speaker
+The
+Speaker
+Genius gift.
+Speaker
+That is pretty cool. I surely think Nick will appreciate this compliment.
+Speaker
+Okay.
+Speaker
+The final one?
+Speaker
+the keyword is badas.
+Speaker
+So I'll change the ID.
+Speaker
+Kubeats, now that we are in the HTML.
+Speaker
+and moving on to the CSS.
+Speaker
+Copy this.
+Speaker
+And change.
+Speaker
+from genius to
+Speaker
+Badd us.
+Speaker
+because that's the idea we just created.
+Speaker
+And the...
+Speaker
+If we want to fetch out from our images folder, it's the badass.giff. Let's open up our example again.
+Speaker
+Scroll down to who is the only person as badass as you?
+Speaker
+It is, of course.
+Speaker
+Checknaries.
+Speaker
+All right.
+Speaker
+We are done with this challenge!
+Speaker
+Great job!
+Speaker
+Let's move on.
+Speaker
+Now it's finally time to add the very last gift and that is the Cheers gift.
+Speaker
+So you're going to add this section, but there's a little difference between this section and the previous ones.
+Speaker
+because as you can see here, it is not squared.
+Speaker
+rather more rectangular. So what I want you to do is give the gift section a height of 200 pixels, which is different from the original height that we controlled up here on the gift IMG class where we set it to 400 pixels.
+Speaker
+So the way you are to change this or override it is by selecting the gift IMG chairs.
+Speaker
+which you are going to create just like you've created IDs for all the other GIF images as well. And then you're going to set the height.
+Speaker
+on that element.
+Speaker
+which essentially means to override the previous height. And finally, here is the text as well.
+Speaker
+along with the chairs gift up in the file system here, and I really think you'll enjoy this one. So go ahead and give it your best shot, and then I will show you this solution when you return back to me.
+
+Speaker
+Okay, let's do this. I'll start in the HTML. Bye again. Copy-pasting.
+Speaker
+The previous section.
+Speaker
+And here, I need to change the text first.
+Speaker
+So I'm going to do it.
+Speaker
+Like that.
+Speaker
+And then we're not gonna have bad ass, we'd rather it'd share, it's...
+Speaker
+So running this, you can see we have a squared image in place.
+Speaker
+That's not exactly what we want, so we need to do the next step, which is to use this ID, which we just created.
+Speaker
+and override the height.
+Speaker
+of your height, 200 pixels like that.
+Speaker
+And there we can see it is now too
+Speaker
+just as we want it. The final step then is to
+Speaker
+Use this hover pseudo class in order to change the background image to chairs.
+Speaker
+This one.
+Speaker
+And do.
+Speaker
+And now if we hover over it, we see Leonardo DiCaprio in a smoking
+Speaker
+even as a toast.
+Speaker
+Really nice.
+Speaker
+What do you think I want to mention here?
+Speaker
+is that?
+Speaker
+You might be a little bit confused as to...
+Speaker
+why this height property takes precedence over this height property.
+Speaker
+And
+Speaker
+It is actually not because this is written further down in the CSS file, actually if we remove it to even.
+Speaker
+further up in the CSS file, even though CSS reads from the top and then downwards, this still takes precedence over this.
+Speaker
+And that is because of something called specificity.
+Speaker
+Which means that the more specific ACS selector is,
+Speaker
+the higher it will be prioritized.
+Speaker
+And this
+Speaker
+ID selector is a more specific selector than the class, because as you know, only one element can have an ID, where multiple elements can share the same class.
+Speaker
+So, IDs are more specific than classes.
+Speaker
+Now I don't want to get more into specificity or learn more about that later in the front-end developer career path. For now, I just wanted to mention it in case you were confused. So we have now done.
+Speaker
+all of the gifts.
+Speaker
+And we have a super cool birthday page we can send to Nick.
+Speaker
+There's just a...
+Speaker
+few things left.
+Speaker
+And then we are completely done with this epic birthday site.
+Speaker
+So I'll see you in the next scrim.
+Speaker
+Hey there, Gil here. I'm a T-Treat Skrumba.
+Speaker
+You'll get to know more about me soon in an upcoming course. For now, I'm poking my head in here to give you a quick tip on creating more accessible websites. Throughout this project, we've been using CSS background images to display different GIFs and the div elements with the class Gift Image.
+Speaker
+While this approach is visually effective, especially with the hover effects changing the images, it does present an accessibility challenge. You see, these images are part of the actual content, carrying meaning or context that's important to the user.
+Speaker
+But as background images, they lack alternative or alt text, which is a critical feature for screen reader users and those with visual impairments. As you've learned, alt text is a concise description of an image's content and purpose. Without alt text, users can miss out on the information conveyed by the images. For example, the image might be broken or the user cannot see the image. Now, with CSS background images, there's no direct way to provide alt text. This is because background image
+Speaker
+And the image tag, which does support alt text, isn't being used in the scenario. Fortunately, the web platform provides us with a tool set to add semantics and alt text were needed in the form of WAI ARIA. We can use what are called ARIA roles and attributes to enhance accessibility where HTML falls short.
+Speaker
+So to make our background images accessible to users, we can use the role attribute here in the Gift Image Div, where we're displaying the Gift Background Images, and setting this role attribute to image, semantically denotes this diff container as an image to the browser.
+Speaker
+Then, to provide the alt text, we use the "area-lebel" attribute. So, for instance, for this first
+Speaker
+GIF, we might say.
+Speaker
+Two friends cheering and jumping.
+Speaker
+Now in our case, we're dealing with divs that display a different image on hover. So providing an accurate ARIA label can be a bit trickier since the content of the div changes based on user interaction. So one solution might be to provide a description that encompasses both images like this. We can start the alt text with a wrapped present, then say that when hovered over, it changes to reveal a GIF of two friends cheering and jumping.
+Speaker
+Okay, let's move on to the second gift image.
+Speaker
+So here in the next GIF image div, I'll add the role attribute and set it to the value image.
+Speaker
+then follow it with the ARIA label attributes.
+Speaker
+And let's see, this is the image of the person smiling and winking. So as the alt text, we can say a wrapped present, then it changes to reveal a person smiling and winking on hover.
+Speaker
+So again, role image tells assistive technologies that this div element is an image and are yet label provides the necessary alt text description.
+Speaker
+Okay, I did the first two. Now it's your turn to work on the remaining gift images.
+Speaker
+So your challenge is to add similar areiroles and labels to the remaining divs with the class gift image.
+Speaker
+Pause the screen now and go for it.
+
+Speaker
+All right, hopefully you added those. I'll go ahead and do the same.
+Speaker
+For this stiff with the ID, Gift, Image, Genius, I'll paste in the roll attribute. And notice how the alt text set with Aria label says a wrapped present, and then when covered over, it changes to reveal a genius meme of popular rapper Drake.
+Speaker
+And I'll quickly do the same for the other two dibs.
+Speaker
+And here's an example of how you can be even more descriptive with your alt text, or in this case your ARIA labels.
+Speaker
+Again, we begin the alt text by describing the wrapped present image, then we describe the aspects of the animated GIF in full detail. Being descriptive goes a long way with alt text. Alright, so while Aria rolls and attributes can enhance accessibility, it's best used as a supplement to semantic HTML, not a replacement. So whenever possible, use the image tag with alt text for content images and try to reserve CSS background images for decorative purposes. Remember, the goal is to convey
+Speaker
+So if the hover effect is crucial to understanding the content, it's important to convey this information in an accessible manner.
+Speaker
+To learn more on our year roles and attributes and accessibility practices, you can visit the MDN docs' "Are Your Reference." And you can also refer to our scrim on "Are Ya."
+Speaker
+With all that said, let's keep moving.
+Speaker
+Now, you are going to create the footer for our site. And it should have a paragraph that says, "want to create your own birthday gift site, take this HTML and CSS course." With a link to, well, this exact HTML and CSS course.
+Speaker
+I want you to configure the anchor tag so that it opens up the link in a new tab. If you've forgotten how to do that, well, then you simply have to Google it.
+Speaker
+I've provided the link right here and also the text so that you don't have to write that out on your own.
+Speaker
+However,
+Speaker
+Now, I'll try that, I'm not going to give you any more hints, but I want you to notice that there is some spacing around this paragraph, both above it and beneath it. You can see it doesn't touch the bottom of the site. And also, it is centered, it's about as wide as the images themselves, and it's also in italic.
+Speaker
+So, you're going to have to figure out how this translates into CSS. I think you can do it. Go ahead and give it your best shot, and then I will see you again when you return back to me.
+
+Speaker
+Okay, let's do this.
+Speaker
+So I'll head over to the HTML and add a paragraph.
+Speaker
+which I'll give an ID of.
+Speaker
+and let's paste in the text.
+Speaker
+like that, also the...
+Speaker
+Linked.
+Speaker
+That's when you need to create.
+Speaker
+And I could tag.
+Speaker
+It should be around.
+Speaker
+This HTML and CSS course, so we'll start the anchor tag here.
+Speaker
+an age ref.
+Speaker
+In order to open the anchor tag in a new tab, we'll do target equals.
+Speaker
+Under score.
+Speaker
+and then we'll close it off at the end here.
+Speaker
+Let's run this.
+Speaker
+Okay, so we have now.
+Speaker
+something that looks...
+Speaker
+Not too far from our design.
+Speaker
+It's decent, but still a lot of things lacking.
+Speaker
+First of all...
+Speaker
+This text is far too wide.
+Speaker
+It should be.
+Speaker
+more or less the same with us the images.
+Speaker
+So let's do.
+Speaker
+Footer.
+Speaker
+to be with you.
+Speaker
+400 pixels.
+Speaker
+What happened now?
+Speaker
+We do have Textline Center.
+Speaker
+But now that this is 400 pixels wide, and it's still a display block element, as paragraph is that.
+Speaker
+The text line center won't center the contents here.
+Speaker
+inside of its container.
+Speaker
+so we need to center it using the margin technique.
+Speaker
+Meaning that will do.
+Speaker
+margin.
+Speaker
+zero at top and bottom and then auto at left and right.
+Speaker
+Yes, near it is centered.
+Speaker
+But actually, we do want some margin at the top and bottom because as you can see right here it has some spacing above and a little bit more spacing beneath it. So let's try 40 pixels on top.
+Speaker
+Yeah, that's pretty good.
+Speaker
+Now, 40 pixels at the bottom, that's a bit too much in my opinion. Here, it looks more like 20 or something.
+Speaker
+So let's rather than do it.
+Speaker
+But it's because it's like that.
+Speaker
+Now we have 40 up top, Auto at left right.
+Speaker
+and 20th bottom.
+Speaker
+And that looks pretty good to me.
+Speaker
+However, one obvious thing we need to fix is that
+Speaker
+this
+Speaker
+also be white.
+Speaker
+I'm going to target the element itself.
+Speaker
+Do call her.
+Speaker
+Like that.
+Speaker
+I think the final step we have is to make it italic.
+Speaker
+And that's done up here.
+Speaker
+where we can do.
+Speaker
+style.
+Speaker
+And there we go!
+Speaker
+That looks...
+Speaker
+identical in my eyes.
+Speaker
+Really good job.
+Speaker
+I'll see you in the next room.
+
+Speaker
+Okay, now we're going to talk about gradients, and that's something you've probably seen many times in nature, though not really thought much about. Because for example,
+
+Speaker
+Because the sky is full of gradients. Here you can see a sky that kind of fades from a light blue color into a whiteish color. And this fade is basically a gradient.
+Speaker
+Here's another example where it starts almost black at the top and then slowly fades over into
+Speaker
+purple and then again into a orangeish or like brown or I don't know what to call this color.
+Speaker
+But you get the point. It's fading from one color to another.
+Speaker
+And this is very often used in web design.
+Speaker
+And you can do it with CSS pretty easily.
+Speaker
+Let's for example remove this.
+Speaker
+image of the gift card from our gifts. Now you can see it's just transparent.
+Speaker
+And that instead will write...
+Speaker
+background.
+Speaker
+and linear dash gradients.
+Speaker
+and then two parentheses.
+Speaker
+So this looks a little bit like the URL keyword we write when we want to refer to images, meaning that this is also a so-called CSS function.
+Speaker
+Now inside of the parentheses, we simply write the two colors we want to fade from and to.
+Speaker
+So let's do, from red.
+Speaker
+to blue and boom.
+Speaker
+There you go. Now you can see that all of our gifts fade from red.
+Speaker
+down to blue.
+Speaker
+And by default, it starts with the
+Speaker
+first color at the top and then the second color at the bottom. So let's try to mimic this image here in CSS. I happen to know that there's a CSS color called
+Speaker
+Light sky blue.
+Speaker
+If we start with that one...
+Speaker
+and go down to...
+Speaker
+And have a look at this gradient here.
+Speaker
+Actually.
+Speaker
+To me, it's kind of similar to this one we have here.
+Speaker
+Not quite, but...
+Speaker
+You get the point.
+Speaker
+Okay.
+Speaker
+Now I'm going to remove this.
+Speaker
+Give us our gift cover back and then give you a challenge. Because now I want you to change our site's background into a gradient that goes from blue at the top.
+Speaker
+to pink at the bottom.
+Speaker
+Let me show it to you, let me...
+Speaker
+And let me hear, show you how it will look.
+Speaker
+I'm gonna do some magic now. I'm gonna knit my fingers.
+Speaker
+And then the gradient will be applied automatically.
+Speaker
+Pretty nice.
+Speaker
+Now you can see the bottom here is pink.
+Speaker
+And if we scroll up...
+Speaker
+It slowly fades over into blue.
+Speaker
+And at the top, it's totally blue.
+Mic
+[BLANK_AUDIO]
+Mic
+[BLANK_AUDIO]
+Speaker
+So this makes the site slightly more fancy, which I think is cool and matches the birthday team.
+Mic
+And then, until...
+Speaker
+So now I'm going to knit again and the gradient will be gone.
+Mic
+(speaking in foreign language)
+Mic
+Oh
+Speaker
+like that now are
+Speaker
+site is blue.
+Speaker
+all the way from the bottom to the top.
+Mic
+Oh
+Speaker
+And it's your job now to get the gradient back.
+Speaker
+So go ahead and do that right now.
+Mic
+(dramatic music)
+Speaker
+Okay, let's do it.
+Speaker
+So the property we need to fix is the background on the body.
+Speaker
+Because we need here a linear.
+Speaker
+Radiance?
+Speaker
+Going from the...
+Speaker
+Blue color is used to have.
+Speaker
+the pink color which we've been using as a border of our image of Nick.
+Speaker
+So then I'll simply paste that one in right here.
+Speaker
+Now we should be fading from blue to...
+Speaker
+- Thank you, Pink.
+Speaker
+Let's see.
+Speaker
+We can see the blue. Yes, it looks like it is slowly fading towards pink.
+Speaker
+Now you've learned a super cool CSS technique.
+Speaker
+I'll see you in the next scrim.
+Speaker
+Okay, now that we have completed Nick's birthday site,
+Speaker
+I want you to make it your own.
+Speaker
+So first, try to think of someone whose birthday is upcoming.
+Speaker
+It could be a friend, a family member, a celebrity, yourself.
+Speaker
+or even me.
+Speaker
+love to get tons of these sites sent my way on my birthday on January 26th.
+Speaker
+And then we'll just figure out who to send this to.
+Speaker
+Make this site about them.
+Speaker
+Meaning that I think you should choose your own gifts.
+Speaker
+You can just drag and drop a GIF file.
+Speaker
+to the images folder here.
+Speaker
+and then refer to it in the code.
+Speaker
+will be aware that Scrimba sets certain size limitations on gifts, so if it doesn't work to upload it, you might instead just want to grab the URL for a gift you can find online, copy it, and paste it in right here.
+Speaker
+so that squirma isn't hosting it, but rather the website where you originally found the gift.
+Speaker
+Another thing you can do is change around on the text for the gifts and of course also if you really want to go crazy
+Speaker
+Feel free to change round on the design, perhaps you want to do other colors, other fonts, and in general, be creative and make it your own.
+Speaker
+Finally, you have to deploy this to the web. That's the whole point with the site because the person who has a birthday needs to see it.
+Speaker
+So you know how to do that.
+Speaker
+As we've done that already, earlier in this course.
+Speaker
+And I would love to see your site in I built this so feel free to drop the link to your deployed site in this channel if you are offered.
+Speaker
+So hopefully I'll see tons of these in the I built this channel, and I'll also see you in the next scrim.
+Speaker
+It is not just Nick who deserves a graduation on this day, you too my friend deserve exactly that.
+Speaker
+Congrats on completing this section.
+Speaker
+Let's now take a look at what you've learned.
+Speaker
+Early on, we took a deeper dive into Flexbox and learned about a
+Speaker
+line items. This property here, which aligns the items in a Flexbox container along the cross axis. And speaking of axis, you'll learn how to flip the main axis
+Speaker
+of a flex box using the flex direction property. We set it to column here, which is the opposite of the default row value.
+Speaker
+So then flipping the direction from being horizontal to being vertical.
+Speaker
+You also learned about a super cool pseudo class called hover, which allowed us to create this epic feature where Nick hovers over the image and sees the underlying GIF.
+Speaker
+and you'll learn about another cool CSS feature, which is how to create
+Speaker
+gradient so that the background of this website slowly fades.
+Speaker
+From blue to pink.
+Speaker
+And we achieved that using the linear gradient function, which we added to the background of the body.
+Speaker
+A final thing we touched briefly upon was the grouping selector, which allowed us to make our CSS syntax much more compact as we could target all of these HTML tags instead of having to recreate this text shadow rule again and again on new lines.
+Speaker
+So you have made a ton of learnings, make sure you take a break and get some rest, and then I will see you back here in the next section when you are ready.
+Speaker
+Welcome to the final section of this course.
+Speaker
+Okay, it is time to...
+
+
