@@ -1,0 +1,3743 @@
+Speaker
+So today is actually a really important day in your life because you're going to write your first lines of JavaScript.
+Speaker
+That is just six eight pounds.
+Speaker
+powerful thing to do because you take the first step in
+Speaker
+to a world of
+Speaker
+opportunities to win. It might even change your life. So in a year, you might want to celebrate this day, as the anniversary, the day you met JavaScript.
+Speaker
+and changed your life for the better.
+Speaker
+Anyway...
+Speaker
+That's why you're going to write. It's not this.
+Speaker
+one right here, it's a little bit too difficult to add the moment, I'm actually going to add a double slash in front of it.
+Speaker
+like that, you can see that.
+Speaker
+greyed it out and needs a drawerscript will ignore this. This is now a code.
+Speaker
+So if we run the code here.
+Speaker
+the browser you can see that now we are not tomorrow
+Speaker
+Each true tag anymore?
+Speaker
+So we already hair down at line three to right our first lines of code.
+Speaker
+Now let's think a little bit.
+Speaker
+What do we need actually to build this subway passenger counter app?
+Speaker
+Well,
+Speaker
+The first thing we need is some way to store the count.
+Speaker
+and that's a natural job for JavaScript.
+Speaker
+because it's kind of like the day that we need to store.
+Speaker
+And when you need to store data, you need to create.
+Speaker
+So called
+Speaker
+valuable to store the data in.
+Speaker
+And I'm now going to create a variable.
+Speaker
+Oat Count!
+Speaker
+And the way we do that
+Speaker
+Thanks for being right.
+Speaker
+Yay cool.
+Speaker
+Zero.
+Speaker
+It's now we have a variable called count and it holds.
+Speaker
+Tiny piece of data?
+Speaker
+Namely, the number 0.
+Speaker
+the way you can read this in English. It's actually...
+Speaker
+B zero.
+Speaker
+So really natural.
+Speaker
+And let's actually try and verify that actually our count variable does indeed equal zero. We'll look into that by using a tool that every single developer uses every single day. It's called
+Speaker
+console.
+Speaker
+then open and close parentheses.
+Speaker
+And inside of these parentheses, you can put almost whatever you want.
+Speaker
+And in our case.
+Speaker
+We are going to put
+Speaker
+Count variable here.
+Speaker
+We now run the code.
+Speaker
+You can see the down in the console.
+Speaker
+We print it out the number zero.
+Speaker
+and the control.
+Speaker
+is something that the browser provides us with.
+Speaker
+So they're mainly for...
+Speaker
+for checking our code, like we are doing here,
+Speaker
+my own eyes that it is what I think it is.
+Speaker
+And indeed it was.
+Speaker
+And this console you see here is a grimbus implementation of the console.
+Speaker
+to go.
+Speaker
+any page basically.
+Speaker
+Right click and choose the inspect option and you click that and open up this for called developer tools.
+Speaker
+Which shows you a bunch of HTML. As we're now not going to worry about that. Just click on the console option.
+Speaker
+That will open up a blank console, actually, in addition to printing out stuff which we did down here in the screen.
+Speaker
+can write JavaScript as well. So if you want to write let count equals five minute enter.
+Speaker
+then write, console log in the pass, and count in the parentheses.
+Speaker
+hit enter you'll see that it'll log out five as well so the console is available to you
+Speaker
+all browsers and it's a tool that developers use every single day.
+Speaker
+I'm really happy that you've learned about it this early on.
+Speaker
+Now, actually have a time for you.
+Speaker
+And what should you do? Thanks for
+Speaker
+first you're going to create a variable called myH and then set its value to your H.
+Speaker
+and log the MyH variable to the console. So go ahead and do this right now, and then I will show you how to do it as well when you come back.
+Speaker
+Okay, hopefully that went wrong.
+
+Speaker
+I have 35.
+Speaker
+I haven't been 35 in a moment.
+Speaker
+and to control about my Excel you consult.
+Speaker
+the now we are printing out both account and also my age.
+Speaker
+So we have verified that our variables indeed work as expected.
+Speaker
+Before we move on, there's one thing I want to show you.
+Speaker
+And that is to take this line for the control logging of my age.
+Speaker
+above the my age variable declaration. So now we try to control my age before we define it.
+Speaker
+In Strow v Script, it starts reading at the top and works its way downwards.
+Speaker
+So what do you think then will happen if I now remove these other console logs and only keep the my age console log?
+Speaker
+Thank you guys.
+Speaker
+Well, what happens is that...
+Speaker
+We get a reference error.
+Speaker
+cannot access my age before initialization.
+Speaker
+So JavaScript actually understands what we're trying to do.
+Speaker
+actually referencing a value before it has been initialized.
+Speaker
+And that simply doesn't work.
+Speaker
+So now that you're already aware of that, let's move on.
+Speaker
+Okay, so let's return back to our count variable, learn some more advanced concepts, which is that you'd actually use JavaScript kind of a calculator.
+Speaker
+So instead of just writing the left count equals five, you can do a left count equals five plus seven, for example.
+Speaker
+When you run that code, you'll see 12 in the console.
+Speaker
+You know, minus, of course, that'll result in minus 2 in the console, we're even divided, that'll be 0.71 bunch of numbers after that.
+Speaker
+of course multiply gives us 35.
+Speaker
+So there's a lot of mathematical operations built into JavaScript, and you're not going to learn about all them now, because now instead of just hard-coing raw numbers, let's try to use a variable, instead. Because oftentimes, you want to say this kind of operation. You'll normally see numbers represented as variables in real-world code bases.
+Speaker
+So, removing this right here.
+Speaker
+For example, dude.
+Speaker
+equal five.
+Speaker
+This was the battery people that first entered the subway wagon and instead of harkwing five here yet again.
+Speaker
+Count people's first action.
+Speaker
+Well, what do you think we'll be logged out here then?
+Speaker
+Quite correctly, it's five.
+Speaker
+Status 5, account is set to the same as 5.
+Speaker
+And perhaps there was another back to swallow, let.
+Speaker
+Second, actually, a group of people that enter just before the North Coast. Maybe not for seven people?
+Speaker
+Well, let me do it.
+Speaker
+down equals first on batch plus second batch.
+Speaker
+Yes, this works well. This is a much more dominant thing to see in JavaScript. That variable is set to the value of, for example, two other variables added together.
+Speaker
+Now I want to calm down this, like that.
+Speaker
+if you wonder how I did that magic, how the multiple lines at once, I did simply command +k +c.
+Speaker
+I think this was control here on a Windows machine.
+Speaker
+Because what I want to do now, I want to gather this cold up here.
+Speaker
+And then I want to give you 8-3 parts calics.
+Speaker
+you are going to convert your age into dog ears.
+Speaker
+First, create two variables, my age, and here.
+Speaker
+and dog ratio. That is the ratio between humiers and dog ears.
+Speaker
+For the sake of simplicity, we're going to say that one human year is about seven dog years. Now the calculation is actually a little bit more complicated than that, but that's not that important. And the important thing here is learning.
+Speaker
+So, set in the human dog ratio to 7.
+Speaker
+and then multiply the two variables together and store the results in my baggage.
+Speaker
+Finally, log my dog age to the console. This is great practice. It's important to build up your muscle memory. So go ahead and do this right now, and then return back to the screencast when you want to see how I sold it as well.
+Speaker
+Okay, hopefully, that went well.
+Speaker
+Let's do it together.
+Speaker
+Remove the consoles, so we get to more space here.
+Speaker
+And we'll start with my eight swivel still is 35.
+Speaker
+And we'll do.
+Speaker
+Human.
+Speaker
+Dom, ratio.
+Speaker
+That should be seven.
+Speaker
+Finally.
+Speaker
+The my dog age should be...
+Speaker
+Thanks!
+Speaker
+Multiplyed with...
+Speaker
+human.
+Speaker
+great show.
+Speaker
+That's a very fine. That works by logging out my dog age.
+Speaker
+Maybe called and yes, we can see in the console we get 245 my god
+Speaker
+I would be an-
+Speaker
+All the dark if I was talking, I'm really kind.
+Speaker
+I'm human, actually.
+Speaker
+Let's move on.
+Speaker
+Okay, so let's return back to our count example.
+Speaker
+Now, you've learned how to initialize a variable and even how to do mathematical operations on it, both with hard-coded numbers and with other variables if we need that.
+Speaker
+That's all great.
+Speaker
+However...
+Speaker
+Up until now, we've just been working on...
+Speaker
+the initialization or the
+Speaker
+so called assignment of the variable.
+Speaker
+What if you want to reassign it or in plain English?
+Speaker
+You want to change the variable.
+Speaker
+Well, then you can do that, for example, down here on line five. Just to count equals.
+Speaker
+If we now run the code, you can see that we log out three as opposed to five.
+Speaker
+Because JavaScript starts from the top.
+Speaker
+and runs down and uses the latest value it can find.
+Speaker
+For any variable defined with the "let" key,
+Speaker
+Word.
+Speaker
+Now there are other types of variables that you can to reassign like this, but we'll get to that later as for now.
+Speaker
+We're just going to work with the let.
+Speaker
+And you can do this as many times as you want if I want to change that even.
+Speaker
+Further down down to 1, you can see now the JavaScript is only taking into account the line 7 reassignment of the count variable. So this is all good, but it doesn't really help us if we want to increment our people entered count with one every time we, for example, click a button. What we then want to do
+Speaker
+It's something like, "Calm."
+Speaker
+one.
+Speaker
+Because we want to take the current count, keep track of how many we've counted up until now, and then just increment with one.
+Speaker
+The way to do that is actually by simply doing like this.
+Speaker
+Now, let's make a little bit weird, because we have a count on both sides of the...
+Speaker
+Equal mark and probably you've learned at school that the
+Speaker
+Left and right hand side of the equal mark should be
+Speaker
+completely equal in mathematics, or that's not how it works in JavaScript.
+Speaker
+Here we are assigning this variable.
+Speaker
+to take on this value. The first you want to calculate the value and the value is this point for
+Speaker
+That's one.
+Speaker
+Well then.
+Speaker
+Tons now, we'll be...
+Speaker
+equal to six.
+Speaker
+Let's run this code and see that it works. Yes.
+Speaker
+And let's say we wanted to.
+Speaker
+I think it's recommended by two, then we do.
+Speaker
+And now...
+Speaker
+because 5+2 is 7.
+Speaker
+Do the same thing again.
+Speaker
+This time we can implement it with 10 now
+Speaker
+We're up at 17 and
+Speaker
+Minus up with two again.
+Speaker
+Now that we're down at 15.
+Speaker
+I think you get the point.
+Speaker
+Now I have a challenge for you.
+Speaker
+Okay, so you are to create a variable.
+Speaker
+Bonus points. So this could, for example, be a game where your bonus points goes up and down.
+Speaker
+And I want you to initialize it as 50, and then increase it to 100.
+Speaker
+Decrease it down to 25, then finally increase it up to 70 again.
+Speaker
+And you are to use the same technique that we used here with account.
+Speaker
+where you reassign the variable to the old value of the variable and then adding or subtract a new value.
+Speaker
+And I want you to...
+Speaker
+Control-log the value after each step.
+Speaker
+So go ahead and do this right now.
+Speaker
+and then I will show you the solution as well.
+Speaker
+Okay, hopefully this went well.
+Speaker
+Let's do this together.
+Speaker
+We'll start with let bonus points be 50
+Speaker
+I'm so logging it out.
+Speaker
+And then we're going to do bonus points.
+Speaker
+equals
+Speaker
+Bonus points.
+Speaker
+I'll see you later.
+Speaker
+Bonus points equals bonus points.
+Speaker
+minus 75 because we want to get down to 25.
+Speaker
+logging it out again.
+Speaker
+Finally.
+Speaker
+bonus points equals
+Speaker
+We're at this point.
+Speaker
+Now we need to increase it with 45.
+Speaker
+You got to be 70.
+Speaker
+Comment out this quote up here and run the code bring up the console and yes 50 125 70 great job
+Speaker
+Let's move on.
+Speaker
+Okay, now you know enough JavaScript for us to move on to the HTML and build the interface for our app.
+Speaker
+And it's...
+Speaker
+not a lot of interface. To begin with just a button, and later on down the line, we're going to create another button.
+Speaker
+has to be written.
+Speaker
+And you are going to do that.
+Speaker
+So I want you to follow these instructions. You are to create an increment button.
+Speaker
+Majesty text of the book.
+Speaker
+with the ID of a...
+Speaker
+increment dash BTM.
+Speaker
+So go ahead and do this right now.
+Speaker
+Hopefully, that went well.
+Speaker
+Now, let's do it together.
+Speaker
+create the closing tag. I'm glad I'm here. All right.
+Speaker
+increment.
+Speaker
+Could have written "count" here, but I think increment is more of a technically descriptive word, so let's use that.
+Speaker
+And ID?
+Speaker
+Increment - VPN like that if we
+Speaker
+From this code, you'll see, yes, we indeed have this button and there is already styled!
+Speaker
+How convenient.
+Speaker
+Let's check out the CSS for that, we have a
+Speaker
+General styling for buttons, which are reused across both of our buttons. This is there using the button selector. And then our increment button and our save button has a
+Speaker
+specific background each of them there.
+Speaker
+our bread and dark green.
+Speaker
+Great job doing this!
+Speaker
+Now the question is...
+Speaker
+How do we make this button interactive?
+Speaker
+right now.
+Speaker
+Nothing happens if I click it.
+Speaker
+In the next lecture, we'll go through exactly how to do that.
+Speaker
+Okay, so now we're going to...
+Speaker
+the different pieces in this puzzle together. And also add a whole new piece. And in order to free up some space in our JavaScript file here, let's just remove this previous exercise and actually write out in pseudo code the procedures that we need to do
+Speaker
+in order to make this work.
+Speaker
+First, know that we need to store the town somewhere.
+Speaker
+And we know that we want to initialize it at zero.
+Speaker
+And then as I said in the previous lesson.
+Speaker
+need to kind of listen for clicks on this button here.
+Speaker
+When it's clicked, we need to ink ruin our counts.
+Speaker
+Then finally, we're not going to do just yet, but I just want to write that procedure out as well, so do you know what to expect?
+Speaker
+We need to change the countdown.
+Speaker
+This paragraph right here.
+Speaker
+In the HTML.
+Speaker
+to reflect the new count.
+Speaker
+We know how to initialize the counter zero, and we know how to increment the account variable.
+Speaker
+So to achieve these first three we need to do this task that is listening for clicks on the increment button
+Speaker
+And that can be done in a multitude of ways. The easiest one?
+Speaker
+is simply.
+Speaker
+in the HTML.
+Speaker
+defining
+Speaker
+Event listener. You simply write on quick e.
+Speaker
+- Who's?
+Speaker
+and then something in between quotes.
+Speaker
+So this is an attribute in the HTML, just like the ID is an attribute as well.
+Speaker
+And inside of here.
+Speaker
+You write the function that you want to be triggered.
+Speaker
+when the button is clicked.
+Speaker
+Something like...
+Speaker
+increment.
+Speaker
+open and close parentheses here.
+Speaker
+Now, that probably looks really weird for you. And that's totally okay if you're confused by what's going on here.
+Speaker
+because we've seen nothing of the word increment in our JavaScript yet.
+Speaker
+So rightfully so, we need to create that.
+Speaker
+function.
+Speaker
+I'll do that down here, and I'll use the keyword function.
+Speaker
+Then the name.
+Speaker
+Increment.
+Speaker
+Open and close, brand new seats.
+Speaker
+and then opening closed brackets.
+Speaker
+So pretty funky syntax right there. And the first time you type them feels weird, but over time it becomes second nature.
+Speaker
+What you write inside of these curly brackets?
+Speaker
+is the so-called body of the function.
+Speaker
+And that piece of code that is in the body.
+Speaker
+We'll be executed.
+Speaker
+Every time this function is called or invoked.
+Speaker
+That's the same thing.
+Speaker
+So just to see it in action.
+Speaker
+Going to write a console log.
+Speaker
+But in was.
+Speaker
+If we run the code...
+Speaker
+And I click the button, you can see that in the console we see the button was clicked, if I do it again, again and again and again, so...
+Speaker
+Every single time, the button is clicked.
+Speaker
+This piece of code runs. And it runs because we in the HTML's are seeing
+Speaker
+A JavaScript when this button is clicked?
+Speaker
+on click event.
+Speaker
+And I want you to run a function.
+Speaker
+Cold increment.
+Speaker
+And that's what's happening here.
+Speaker
+And then JavaScript is like, "Yeah, for sure."
+Speaker
+It sits ready and listens.
+Speaker
+For that specific click event, and JavaScript can do that, it pays attention to what the user does on the screen.
+Speaker
+And when it sees someone...
+Speaker
+Clicking on this button.
+Speaker
+It's firesoft this piece of coat.
+Speaker
+This was...
+Speaker
+Probably a lot of information to parse in one goal.
+Speaker
+So before we move on and continue on turning our pseudo code into real JavaScript,
+Speaker
+Let's take a closer look at functions over the next few casts so that you get the right functions as well.
+Speaker
+and build up your understanding and muscle memory.
+Speaker
+Okay, so let's pretend that we are building a racecar game.
+Speaker
+So here I have some comments, which are meant as pseudocode for the functionalities of the game. And the only real functional part of it is these five
+Speaker
+console logs, which are counting down from 5 to 1.
+Speaker
+If we start the game by setting up the race...
+Speaker
+Then we do 5, 4, 3, 2, 1.
+Speaker
+If I run the code, you can see that is log to the console.
+Speaker
+That means that it's
+Speaker
+your
+Speaker
+Start racing.
+Speaker
+And they would be running the race, and then the race is finished, and the winner is declared.
+Speaker
+And then of course, we are getting ready for a new race.
+Speaker
+However,
+Speaker
+With the current knowledge, we have about JavaScript the way we would count down for a new race.
+Speaker
+Would have to be too close.
+Speaker
+All of these lines.
+Speaker
+and paste them in down here.
+Speaker
+So that now when we run it, we get...
+Speaker
+5-3-2-1 printed two times to the console.
+Speaker
+However,
+Speaker
+This isn't good.
+Speaker
+Anytime you see this kind of...
+Speaker
+Repetition is in your code. You should try to think is there any way we can
+Speaker
+extract this into a function.
+Speaker
+And that is exactly what we are going to do. We are going to refactor this so that it instead uses a function.
+Speaker
+Another word for function could be command.
+Speaker
+So we are.
+Speaker
+Asking JavaScript to kind of
+Speaker
+remember a command so that we can use it later on as well.
+Speaker
+that command can be as comprehensive as you want.
+Speaker
+In our case, it's going to be to count down from 5 to 1.
+Speaker
+So let's just do this to see it in action.
+Speaker
+creative function.
+Speaker
+As I talked about in the previous cast, we used the function keyword.
+Speaker
+And then the name of the function.
+Speaker
+I'm going to call this function.
+Speaker
+Count?
+Speaker
+Then open and close parentheses.
+Speaker
+Then...
+Speaker
+opening closed curly brackets.
+Speaker
+All of the action happens inside of the curly brackets.
+Speaker
+So I'm going to break that into a new line.
+Speaker
+And I'm gonna...
+Speaker
+be all of these console logs.
+Speaker
+Haste them inside here.
+Speaker
+Like that.
+Speaker
+And here I'm topping it out.
+Speaker
+Just to highlight.
+Speaker
+that this code is inside of that function.
+Speaker
+This is not something JavaScript cares about, it's to make our code easy to read for humans.
+Speaker
+So now I have to
+Speaker
+cleared our function.
+Speaker
+If we...
+Speaker
+Remove this down here and now try to run the code.
+Speaker
+Nothing happened because...
+Speaker
+It has only been declared
+Speaker
+It hasn't been
+Speaker
+invoked
+Speaker
+also.
+Speaker
+called as this.
+Speaker
+code inside of here will only run if we call the function.
+Speaker
+So if JavaScript was a dog
+Speaker
+And we've taught our dog to roll around.
+Speaker
+than in order to get our dog to actually grow the route. - Hunt, we have to say.
+Speaker
+Roll around!
+Speaker
+Same thing here.
+Speaker
+JavaScript to count down, but in order for it to actually.
+Speaker
+Do the counting?
+Speaker
+We have to say,
+Speaker
+countdown.
+Speaker
+And...
+Speaker
+We do that.
+Speaker
+like this.
+Speaker
+Simply writing count down.
+Speaker
+with open and close parentheses.
+Speaker
+So now you can see.
+Speaker
+When I run the cold.
+Speaker
+It indeed does the counting.
+Speaker
+If I comment this out,
+Speaker
+us.
+Speaker
+nothing. So what I'm going to do now is I'm going to take this countdown and I'm going to put
+Speaker
+it all the way here at the top.
+Speaker
+And then I'm going to call it.
+Speaker
+When we are ready to start the first race.
+Speaker
+And then also call it...
+Speaker
+when we are ready to start the second race.
+Speaker
+Now, if I run the code...
+Speaker
+You can see that we indeed
+Speaker
+countdown to
+Speaker
+times before the first race and before the second race.
+Speaker
+And this is much better than...
+Speaker
+typing out all
+Speaker
+All five console logs both here on line 11 and on line 19.
+Speaker
+So we have compressed our code a lot.
+Speaker
+So with this knowledge, fresh in mind.
+Speaker
+Let's move on to the next cast where you are to write your first function.
+Speaker
+Okay, now it's
+Speaker
+It's your turn. You are going to create a function.
+Speaker
+that logs out the number 42 to the
+Speaker
+Okay, let's do this.
+Speaker
+I'm gonna call it my...
+Speaker
+Logger?
+Speaker
+Open it close, I guess.
+Speaker
+And then inside of the body, do console.log.
+Speaker
+42.
+Speaker
+Not we to call it.
+Speaker
+Longer?
+Speaker
+We are on the code.
+Speaker
+And yes, you can see we are logging 42 to the console.
+Speaker
+Great job!
+Speaker
+Okay, hopefully that went well.
+Speaker
+Let's do this.
+Speaker
+Good function.
+Speaker
+I'm going to call this function.
+Speaker
+Long.
+Speaker
+Laptop.
+Speaker
+Open and close parentheses.
+Speaker
+Here.
+Speaker
+I can either.
+Speaker
+first create.
+Speaker
+variable.
+Speaker
+total.
+Speaker
+Kind, for example.
+Speaker
+Good luck.
+Speaker
+One plus lap.
+Speaker
+2 plus lap.
+Speaker
+3 and then console log out.
+Speaker
+Total lap time like that.
+Speaker
+Log.
+Speaker
+Last time, invoke the function down here on line 11.
+Speaker
+If we now run the code, we get the yes, we are logging out 103.
+Speaker
+This is one we are doing it alternatively.
+Speaker
+I could have skipped creating this variable in here.
+Speaker
+and simply added the variables inside of the console log.
+Speaker
+It will give me, as you can see, the exact same result.
+Speaker
+The reason I wanted to create this variable here though is to just...
+Speaker
+Show you one thing.
+Speaker
+Just that.
+Speaker
+while this function.
+Speaker
+Could access these variables.
+Speaker
+From the so-called global scope, the outer scope, which is not on the inside of the function, but on the
+Speaker
+outside of it.
+Speaker
+This doesn't work the other way around.
+Speaker
+If I now, let's try to console log.
+Speaker
+Portal time.
+Speaker
+From the outer scope.
+Speaker
+If you run this, you can say,
+Speaker
+Total time is not defined.
+Speaker
+That is because when you define a letter variable,
+Speaker
+inside of this scope.
+Speaker
+It only exists inside of this block of code.
+Speaker
+This is the scope in which the function lives.
+Speaker
+And that's why we call "Let variables blockscoped."
+Speaker
+So that might be a little bit confusing.
+Speaker
+that the lap
+Speaker
+go from the outside of the function and
+Speaker
+to the inside of the function.
+Speaker
+But total time.
+Speaker
+couldn't go from the
+Speaker
+inside of the function.
+Speaker
+outside of the function.
+Speaker
+But don't worry too much about this.
+Speaker
+JavaScript will tell you, and something isn't defined?
+Speaker
+And you can be sure that you will miss step at times.
+Speaker
+But that's just a part of the process.
+Speaker
+Let's now move on to the next challenge.
+Speaker
+Okay, so now we have to combine some of the things you've learned up until now.
+Speaker
+in order to build this lap counter feature.
+Speaker
+Because in our racing game, we want to keep track of how many laps a player has completed.
+Speaker
+So I've created this variable called Labs Completed.
+Speaker
+and initialize it.
+Speaker
+0
+Speaker
+So what I want you to do now is create a function that
+Speaker
+increments.
+Speaker
+the Labs Completed variable with one.
+Speaker
+every time you run the function.
+Speaker
+Then I want you to run or
+Speaker
+Cool.
+Speaker
+>> Thank you.
+Speaker
+or whatever you want to call it.
+Speaker
+This function
+Speaker
+Three times.
+Speaker
+So that's on line 9 here. The value that's logged out will be 3.
+Speaker
+If you're wondering how to increment a variable in JavaScript,
+Speaker
+Just look back a few casts because we did that previously.
+Speaker
+So now you have to combine that knowledge.
+Speaker
+with your freshly acquired knowledge about writing functions.
+Speaker
+So go ahead and give this your best try right now.
+Speaker
+Okay, hopefully that went well.
+Speaker
+No worries, let's do this together.
+Speaker
+so that you get to see how we do it.
+Speaker
+Do function.
+Speaker
+And I'm going to call this function
+Speaker
+in Vermont.
+Speaker
+like that.
+Speaker
+Open and close parentheses.
+Speaker
+then open close curly brackets.
+Speaker
+And here, we have to increment this variable just as we did a few casts ago.
+Speaker
+By doing LAPs completed.
+Speaker
+equals the old value of lapse complete.
+Speaker
+See ya.
+Speaker
+That's one.
+Speaker
+like that.
+Speaker
+run.
+Speaker
+Increment last.
+Speaker
+One time, you'll see that.
+Speaker
+We're logging out to them.
+Speaker
+Good stuff.
+Speaker
+Let's...
+Speaker
+Vocal three times.
+Speaker
+And there we can see we are logging out three to the console.
+Speaker
+Great job doing this!
+Speaker
+If you didn't manage it.
+Speaker
+Just go back and try again now that you've seen.
+Speaker
+solution because it's really important.
+Speaker
+you actually write the code here.
+Speaker
+So if you build up that important muscle memory.
+Speaker
+Hopefully that's what's wrong.
+Speaker
+Let's do this together.
+Speaker
+Increment.
+Speaker
+Open and close parentheses.
+Speaker
+open and closed currently brackets.
+Speaker
+We have the buckle, let's verify that it works.
+Speaker
+Good thing to do after every single step so that you know if you at some point get a bug you will have a better understanding of where it happens as you know which steps you were able to get to without triggering any bugs.
+Speaker
+Click.
+Speaker
+run the code.
+Speaker
+Click the button. Yes, that works. Okay.
+Speaker
+not going to increment the count.
+Speaker
+So we're going to do that inside here and of course then we need the count initialized, begin with.
+Speaker
+So count equals zero.
+Speaker
+As you remember, it's just as we're simply going to do what we're data up at the line for.
+Speaker
+And now finally...
+Speaker
+Console, logged.
+Speaker
+remove this and run the code.
+Speaker
+Hit increment.
+Speaker
+Yes, we see one.
+Speaker
+And two, and three, and four.
+Speaker
+Nice.
+Speaker
+So then we have...
+Speaker
+Don't, these.
+Speaker
+parks.
+Speaker
+remove this.
+Speaker
+helper code right here we have these
+Speaker
+final part left.
+Speaker
+And we can finally start understanding what this weird piece of code here
+Speaker
+online one that we worked with in the very beginning of the course.
+Speaker
+actually means.
+Speaker
+Let's do that.
+Speaker
+in the next lecture.
+Speaker
+Okay, so we are ready to add the final piece of the puzzle.
+Speaker
+Just to change the count L.
+Speaker
+H2 by care, which currently has zero.
+Speaker
+so that it reflects the new count.
+Speaker
+And the new count is down here.
+Speaker
+here, which we are logging out. So we have to do something down here at line nine. And what we're going to do is take this line right here, which has just been lying here in the background all along.
+Speaker
+Now.
+Speaker
+in order to properly understand this expression.
+Speaker
+I think I should break it into two.
+Speaker
+Take the first part, where we're actually asking for the HTML element.
+Speaker
+In the second part, we're actually modifying the HTML element.
+Speaker
+So starting with the first part, I'm going to store this in a variable called CountL.
+Speaker
+like that and do.
+Speaker
+Document.
+Speaker
+Element.
+Speaker
+ID?
+Speaker
+Want to call us parentheses passing in.
+Speaker
+Come.
+Speaker
+It's exact. Spring right here.
+Speaker
+Notice that we're using
+Speaker
+Different naming convention, hearing the JavaScript.
+Speaker
+This is called
+Speaker
+Camel case.
+Speaker
+Were you capitalized the first letter of the second word?
+Speaker
+not the first letter of the first word.
+Speaker
+This is how you want to write JavaScript variables. It's a very normal convention.
+Speaker
+Also, if we were to try to use the same conventions we've been using in our HTML and CSS, JavaScript would actually tell us, "A-ah-ah, you can't do that."
+Speaker
+Is it good to see?
+Speaker
+We are getting a red line under this character, which is the JavaScript's way of complaining to us, because it's not a valid variable name.
+Speaker
+when you're stashed.
+Speaker
+So, we gotta remove it.
+Speaker
+So, always.
+Speaker
+What do you think we should do now? Now that we've taken one step into the unknown.
+Speaker
+Well, of course, we're going to use our good old friend console lock.
+Speaker
+'Cause we have to verify at every single step that we're actually on track.
+Speaker
+We haven't introduced any bugs.
+Speaker
+So I'll do consult.log.
+Speaker
+and logging out.
+Speaker
+If we bring up the console, we can see actually we're getting what looks like an HTML element in the console.
+Speaker
+That's pretty interesting now. It's actually
+Speaker
+not a real HTML element? It's more of a representation. It's a model of an HTML element.
+Speaker
+And it gives us a lot of other opportunities to change it using JavaScript as well. But for now, it's perfectly fine to think of this as just, yeah, that is the element that we are
+Speaker
+Seeing right here.
+Speaker
+It's a JavaScript representation of that element.
+Speaker
+Because, remember, we said, "Hey, HTML document, why don't you get me the element?"
+Speaker
+that has
+Speaker
+the ID of Council.
+Speaker
+And the HTML is like, yeah, sure, just take it.
+Speaker
+Then you store that in the account algorithm and now you as a JavaScript developer have control over this element and you can manipulate it.
+Speaker
+Which is exactly what we're going to do down here at Line 14.
+Speaker
+Because now we're going to move on to the second part of this big expression.
+Speaker
+modifying the element itself.
+Speaker
+.intertext equals 5 or...
+Speaker
+In our case.
+Speaker
+How will do we write this?
+Speaker
+Well, we've turned this big thing here into this variable.
+Speaker
+So we'll use this variable.
+Speaker
+And do it, Doc.
+Speaker
+Intertext.
+Speaker
+That is inner.
+Speaker
+Text like that equals
+Speaker
+And we're not going to set up your five because.
+Speaker
+I wouldn't make any sense. What are we going to settle to? Think a second about that.
+Speaker
+Did it is the account?
+Speaker
+because we know from console logging earlier on that the count does indeed. Increment correctly. And now we're just saying that we want the inner text.
+Speaker
+That is, the text on the inside of the tags.
+Speaker
+We want it to be the key.
+Speaker
+We'll run the cold.
+Speaker
+Hit the increment button.
+Speaker
+And yes, it works. Now we are incrementing. We are counting people. Really good job reaching this point. Your JavaScript skills are starting to become dangerous.
+Speaker
+so you now know how to create interactive app.
+Speaker
+Now, before we move on, there's one thing I want to mention.
+Speaker
+Which is...
+Speaker
+that this get element by ID here.
+Speaker
+And this...
+Speaker
+dot log.
+Speaker
+Both are functions in
+Speaker
+the same way our increment function is a function.
+Speaker
+now they are hooked on.
+Speaker
+to the document object and the console object. But that's just nuance. There's still functions or methods as we call functions that are hooked down to.
+Speaker
+So
+Speaker
+objects.
+Speaker
+If that sounds confusing, it's because it should be at this point because you haven't learned about the album.
+Speaker
+and methods on objects, but...
+Speaker
+Don't worry about that, just think of them as...
+Speaker
+functions. Actually, the thing we've been doing here...
+Speaker
+of adding something in between the parentheses of the function when we are calling it.
+Speaker
+is called.
+Speaker
+to pass in arguments, which means that we are giving the function
+Speaker
+some data to work with.
+Speaker
+like here we're specifying the ID of the element we want to grab.
+Speaker
+the vice.
+Speaker
+If we didn't do that...
+Speaker
+This function would just be
+Speaker
+running in the wild.
+Speaker
+not know what to look for.
+Speaker
+Likewise.
+Speaker
+In this dot log here.
+Speaker
+We're passing in which variable we want to log to the console. If we didn't do this,
+Speaker
+the log function wouldn't know what to log.
+Speaker
+So speaking in analogies,
+Speaker
+If the function is a
+Speaker
+that are to cook a meal for you?
+Speaker
+then the arguments you pass in are the ingredients.
+Speaker
+the chef uses to
+Speaker
+cook that meal.
+Speaker
+So hopefully that made everything a bit more clear.
+Speaker
+Let's clean up this code and move on.
+Speaker
+Now, before we move on...
+Speaker
+I want to talk a little bit about what we're doing here, where we're saying documents to dot get element by ID.
+Speaker
+Because you'll often hear developers refer to this technique.
+Speaker
+As working with the...
+Speaker
+the DOM.
+Speaker
+That's one of those
+Speaker
+three letter acronyms in web development.
+Speaker
+Sounds super complicated.
+Speaker
+I was really confused about this when I was learning to code.
+Speaker
+And I want you to avoid that confusion.
+Speaker
+So let's just unpack this expression.
+Speaker
+It's short for document object model.
+Speaker
+That sounds really fancy.
+Speaker
+Whatever.
+Speaker
+It's actually just
+Speaker
+you use JavaScript to
+Speaker
+modify your website.
+Speaker
+It's just that people naming this.
+Speaker
+want it to give it a really
+Speaker
+abstract name.
+Speaker
+But if we look at each of the words separately, the name actually does make sense.
+Speaker
+Let's do that.
+Speaker
+with the document.
+Speaker
+Why that?
+Speaker
+Well, that's because what you are interacting with.
+Speaker
+SNHJ Mall document.
+Speaker
+Well, that's because the document keyword in JavaScript
+Speaker
+of the data type object.
+Speaker
+Meaning they've taken the HTML document and shoved it into a JavaScript object.
+Speaker
+Of course, that's a little bit of a simplification, but that's the essence.
+Speaker
+Word document.
+Speaker
+of the data type object.
+Speaker
+Now, you haven't learned about objects yet?
+Speaker
+Is that you're going to do that a little bit later?
+Speaker
+Finally, there's model.
+Speaker
+Model is basically a representation or a modulation.
+Speaker
+Kind of like, you know, there's a real Tateron 5 rocket that's not built.
+Speaker
+then there's the...
+Speaker
+Lego model.
+Speaker
+That's how it is here as well. There's the real HTML element which
+Speaker
+you're written in your dot HTML file.
+Speaker
+Then there's the JavaScript model, the representation you have.
+Speaker
+over this element in JavaScript.
+Speaker
+Don't be frightened when people talk about the DOM.
+Speaker
+just in your head translated to
+Speaker
+How to use JavaScript to modify websites.
+Speaker
+And with that out of the way, let's move on with the coding.
+Speaker
+Or actually before we move on, I have to insert a full dual then, but...
+Speaker
+Gus
+Speaker
+The problem with the previous lecture was that I wrote the code and that's just wrong.
+Speaker
+you are going to write the code.
+Speaker
+That's how you learn.
+Speaker
+I've removed the...
+Speaker
+two lines of code that I wrote.
+Speaker
+Namely, grabbing the counter element and storing it in a count L variable.
+Speaker
+and also setting the count else inner text to
+Speaker
+the calendar.
+Speaker
+So just do that and if you struggle just go back and look at my solution.
+Speaker
+So no need for me to write this out for you yet again.
+Speaker
+Just go ahead and give it your best shot and...
+Speaker
+refer to that if you need help.
+Speaker
+and I will see you in the next lecture.
+Speaker
+OK, it's time for you to build some muscle memory because you are going to create a save button and a save function.
+Speaker
+You're going to start with a function.
+Speaker
+Here is the instructions, create a function.
+Speaker
+safe.
+Speaker
+which logs out the count when it's cold.
+Speaker
+We're going to modify this to do some other stuff afterwards, but as for now, I wanted to just log out the count.
+Speaker
+Secondly.
+Speaker
+In the HTML, you are going to create the Save button.
+Speaker
+You are to set the ID as "Save BPN"
+Speaker
+have it call the save function.
+Speaker
+when they're clicked.
+Speaker
+Go ahead and do this right now and then return back to the screencast.
+Speaker
+when you want to see my solution.
+Speaker
+Hopefully that's 2012.
+Speaker
+Let's do this.
+Speaker
+Let's do this.
+Speaker
+function.
+Speaker
+Save.
+Speaker
+Open and close parentheses.
+Speaker
+then the body of the function.
+Speaker
+Control log.
+Speaker
+We're counting.
+Speaker
+If we want to check that this actually works now, we can call the same function.
+Speaker
+Run the code, and we can see that the count is indeed locked out as a consequence of us calling the function here on line 15.
+Speaker
+Okay, let's remove that.
+Speaker
+Going over to the HTML we're going to create a save button and
+Speaker
+And we do open.
+Speaker
+Welcome PAG!
+Speaker
+just a closer right away.
+Speaker
+All right, save in between the time.
+Speaker
+Thanks.
+Speaker
+and give it the idea of save.btm.
+Speaker
+Now we can actually run it to see that a render is yes, it indeed does.
+Speaker
+But nothing happens when we click it, and that's because we have to do.
+Speaker
+on quick.
+Speaker
+We want to run the save function.
+Speaker
+Here, we have to invoke it with the opening close parentheses. Otherwise, it won't call the function.
+Speaker
+We're running the code.
+Speaker
+Getting saved? Yes, there we are logging out zero!
+Speaker
+Because of this line.
+Speaker
+Now I get increment.
+Speaker
+a couple of times and see.
+Speaker
+Ooh, now we're logging out six!
+Speaker
+Pretty nice!
+Speaker
+Now we're starting to get somewhere.
+Speaker
+It's only a matter of a saving account to the website as well, and rendering it out under the buttons.
+Speaker
+But before that, there's some new concepts you need to learn, so I'll see you in the next cast.
+Speaker
+Okay, so now it's time for us to build this little functionality here, which allows us to save the number of people who have entered into the
+Speaker
+subway at each of the departures.
+Speaker
+However, this requires you to work with this full paragraph, which actually includes both numbers, which you can see, but also like regular text.
+Speaker
+previous entries and some symbols as well.
+Speaker
+And once you move away from just straight out numbers in JavaScript,
+Speaker
+You're moving into the land of so-called "strings".
+Speaker
+and strings
+Speaker
+a data type in JavaScript.
+Speaker
+and in case you wondered, yes, numbers is also a data type.
+Speaker
+And if you think the word string is a little bit weird, well, you can also think of this as just...
+Speaker
+The strings you work with in JavaScript are normally meant to be text that the user reads on the page.
+Speaker
+Now we have been working with text here before. We've hard-coded in some text here and there in the HTML.
+Speaker
+as far as HTML knows.
+Speaker
+Everything is strings. Doesn't even know about numbers. HTML can't do calculations for you.
+Speaker
+So when I'm talking about strengths and numbers,
+Speaker
+I'm talking about it in the context of JavaScript.
+Speaker
+even though you're probably not even aware of it.
+Speaker
+You've actually written the string already.
+Speaker
+Appear in line one.
+Speaker
+You've wrapped?
+Speaker
+The Count
+Speaker
+-l
+Speaker
+Inside of two quotes.
+Speaker
+That is how you create a string in JavaScript.
+Speaker
+But you've had a f-
+Speaker
+are from enough practice to start.
+Speaker
+working with strings in our People Counter app. So in the next lesson, we're going to go over the basics of it and then you're going to solve some challenges so that we build up that muscle memory and make you capable of using strings in our app.
+Speaker
+I'll see you there.
+Speaker
+So strings are used all over the place and software.
+Speaker
+Let's say that you, for example, are building an app.
+Speaker
+where people can authenticate.
+Speaker
+Well then most likely you have to store it.
+Speaker
+some kind of username for your users.
+Speaker
+That would most likely be stored.
+Speaker
+I'll say scream.
+Speaker
+For example, pair it.
+Speaker
+double quotes.
+Speaker
+this string.
+Speaker
+Just like we did with numbers.
+Speaker
+will be stored in a variable.
+Speaker
+Use your name.
+Speaker
+equals pair.
+Speaker
+I'm so look out.
+Speaker
+username.
+Speaker
+Let me get here, logged to the console.
+Speaker
+One thing I want to mention is that...
+Speaker
+I'm using double quotes here to
+Speaker
+create this string.
+Speaker
+I couldn't use...
+Speaker
+Single quotes instead if I want to, you can see that works.
+Speaker
+However, I cannot start with a single quote and end with a double quote.
+Speaker
+As you can see.
+Speaker
+Now, our editor tells us that this syntax is off, and if we try to run the code, we are getting a syntax error.
+Speaker
+So you gotta stick with one or the other.
+Speaker
+I usually use double quotes, but that's just a matter of preference.
+Speaker
+If you're a prefer single quotes.
+Speaker
+Go ahead.
+Speaker
+Now I want to give you a challenge.
+Speaker
+I think you are to create a variable.
+Speaker
+message that stores the string.
+Speaker
+You have three new notifications.
+Speaker
+Go ahead and do that right now.
+Mic
+(upbeat music)
+Speaker
+That's control.
+Speaker
+Let's do this.
+Speaker
+Message equals
+Speaker
+This ring right here.
+Speaker
+Now, what we want to do here.
+Speaker
+is
+Speaker
+Combine this string.
+Speaker
+With this string, because this string right here is probably the result of us checking in the database and seeing that, oh, there's three new notifications that.
+Speaker
+Here hasn't seen so
+Speaker
+render out this ring right here.
+Speaker
+And then of course we need to combine it with the
+Speaker
+name. So what we want to do is
+Speaker
+message.
+Speaker
+Plus.
+Speaker
+username, like that.
+Speaker
+When we add a plus here.
+Speaker
+We so called "cantanase" the two strings together, so let's have a look at what happens when we run the code.
+Speaker
+becomes slightly ugly string.
+Speaker
+You have three new notifications here.
+Speaker
+no space in between the strings, so it kind of becomes like...
+Speaker
+This.
+Speaker
+Isn't really what we wanted.
+Speaker
+What we then also can do is...
+Speaker
+I'd third string in between here, which includes
+Speaker
+include a comma.
+Speaker
+and a space.
+Speaker
+Now, if we run it, you have three new notifications pair.
+Speaker
+And maybe we even want to add a...
+Speaker
+Let me see Mark at the end like that.
+Speaker
+As you can see...
+Speaker
+When we use the plus for strings?
+Speaker
+It simply concatenates the characters together.
+Speaker
+Okay, now I have a new challenge for you.
+Speaker
+You are to create a variable message to user that contains the message we have logged.
+Speaker
+By that, I mean the entire message in here.
+Speaker
+This should be a new variable.
+Speaker
+And then afterwards...
+Speaker
+I would log it out just to make sure.
+Speaker
+that you have configured the message to user in the correct way.
+Speaker
+Why don't do this right now?
+Speaker
+Okay, to do this you do left message.
+Speaker
+to user equals.
+Speaker
+Message plus.
+Speaker
+Karma space.
+Speaker
+Plus, your turn name.
+Speaker
+Plus?
+Speaker
+Thanks for the information, Mark.
+Speaker
+No?
+Speaker
+We can replace all of this.
+Speaker
+with message to user.
+Speaker
+And running the code again, we got the exact same string.
+Speaker
+which is just what we wanted.
+Speaker
+Great job!
+Speaker
+Okay, time for another challenge.
+Speaker
+You are to create two variables.
+Speaker
+name and greeting.
+Speaker
+And the name variable should store your name.
+Speaker
+And the greeting.
+Speaker
+to store, for example, hi, my name is.
+Speaker
+Then you are to create a third variable.
+Speaker
+migrating.
+Speaker
+that concatenates the two strings.
+Speaker
+Finally, log the migrating variable to the console.
+Speaker
+So, this is just to give you some muscle memory.
+Speaker
+Go ahead and do this right now.
+Speaker
+Let's do this. I'll do let name equals pair carol.
+Speaker
+then let.
+Speaker
+Everything.
+Speaker
+My name is and then a space at the end.
+Speaker
+And then finally...
+Speaker
+Let's...
+Speaker
+My
+Speaker
+I agree.
+Speaker
+Thank you.
+Speaker
+Reading plus name and you see how that's what we do
+Speaker
+I'm so log my.
+Speaker
+Everything.
+Speaker
+Running the code?
+Speaker
+Yes, we get high. My name is Pierre Harold Bogan.
+Speaker
+Notice that here.
+Speaker
+I added the space inside of one of the strings.
+Speaker
+as opposed to doing something like...
+Speaker
+Winner.
+Speaker
+being that would work the exact same way.
+Speaker
+Great job solving this challenge!
+Speaker
+Let's move on.
+
+Speaker
+Let's mix it up a little bit.
+Speaker
+Say that my name isn't Pierre Harald-Borgon, it's actually 42.
+Speaker
+A strange name, but anyway, what do you think will happen when we have one number and one string? What will the result be?
+Speaker
+Let's do it.
+Speaker
+It's actually high, my name is 42.
+Speaker
+So the 42 here has actually been turned into string.
+Mic
+(buzzer)
+Speaker
+It's been added into like this, and that's kind of what happens.
+Speaker
+in a wrestling game between a string and a number.
+Speaker
+the string always wins.
+Speaker
+Now, this was a little bit of a weird example, so let's take one that's a bit more interesting.
+Speaker
+Let's try.
+Speaker
+Let points.
+Speaker
+equals four and then let's say
+Speaker
+Bonus points.
+Speaker
+This is some kind of game.
+Speaker
+That is...
+Speaker
+That total points.
+Speaker
+equals points plus
+Speaker
+Bonus points.
+Speaker
+Poodle points.
+Speaker
+Now, what do you think?
+Speaker
+We'll log out here.
+Speaker
+I'm going to comment out this one right here.
+Speaker
+Take two seconds to think about.
+Speaker
+what the result will be.
+Speaker
+Okay.
+Speaker
+Let's run this.
+Speaker
+The result is 410.
+Speaker
+that is weird, because perhaps you expected 14?
+Speaker
+As I said...
+Speaker
+The string always wins.
+Speaker
+So when we see Ford.
+Speaker
+Plus.
+Speaker
+just the values of these variables.
+Speaker
+The Ford will be turned into a string.
+Speaker
+And the result when you can create two strings is just easy to see by just removing
+Speaker
+this fluff in between them.
+Speaker
+410.
+Speaker
+If the numbers won the wrestling game...
+Speaker
+We'll be like this, and we'll indeed log out for 10.
+Speaker
+But it couldn't.
+Speaker
+So, I'm gonna give you eight.
+Speaker
+A couple of challenges here.
+Speaker
+What do you think these four console logs will log out?
+Speaker
+Take a minute to think about that.
+Speaker
+potentially write your solutions.
+Speaker
+in eight.
+Speaker
+cold coming either above or
+Speaker
+I'm Stephen.
+Speaker
+After each of the lines, then return back to the screencast and then we'll have a look at it together.
+Speaker
+Okay, here we have a number and a number. So this will end up as a number as well for plus five is nine as far as I can remember.
+Speaker
+A string plus a string even though they are number characters inside of the strings that doesn't matter JavaScript still steese this as a string and the result will be a string of 24
+Speaker
+Here, the wrestling marks between a
+Speaker
+spring
+Speaker
+Number sadly, the number always loses, so this will be 501.
+Speaker
+Again, wrestling match between A.
+Speaker
+number any string, the result is always at the string when, so this will be 100.
+Speaker
+Yes.
+Speaker
+So you also can see from the console.
+Speaker
+The way the Scrimber Console highlights the difference between numbers and strings is with the color.
+Speaker
+The strings are white, whereas the numbers are blue.
+Speaker
+Great job, let's move on.
+
+
+Speaker
+Now you've had a chance to work with strings, we need to talk about a common problem that you might already have come across. I've got a string here that says, "I'd love to see the show, the Lion King." Let's just hit save. And we're successfully logging that out, so it works. But what if I wanted to emphasize the fact that the Lion King was the name of the show?
+Speaker
+In that case, I might want to put that in quotation marks. As soon as I do that, you can see the red squiggly line, and that tells us we're about to get an error.
+Speaker
+Let's save.
+Speaker
+Yeah, there we are. It says unexpected identifier the
+Speaker
+Well, that tells us that it's running into a problem right here.
+Speaker
+And the reason this is happening is that two JavaScripts are the basic brain. The string is starting right here with this quotation mark, and it's finishing right here with this quotation mark.
+Speaker
+So if this is the string, then what an earth is all of this.
+Speaker
+Well, at that point, JavaScript gets confused and it throws a tantrum, or rather it throws an error.
+Speaker
+Now, we could potentially get round that by changing these quotation marks to inverted commas. But look, now we've got loads of red squiggly line. Let's just hit save, and now it says unexpected identifier D. And the problem that we've got is that JavaScript thinks these string starts with this inverted comma and actually finishes with this apostrophe. Because to JavaScript, the inverted comma and the apostrophe are exactly the same thing.
+Speaker
+Now if I removed this apostrophe,
+Speaker
+Well, look, the red lines disappeared and that actually works, but that's not good enough. We don't want to have to make a typo in our string just to avoid an error. So we need another solution here, and the solution is the escape character.
+Speaker
+Let me just put that apostrophe back in.
+Speaker
+Now the escape character is the backslash.
+Speaker
+And I put it right in there and you'll see the red line has all disappeared. Let's hit save.
+Speaker
+And now I could do the same thing if I went back to our original quotation marks.
+Speaker
+The apostrophe now doesn't need an escape character, so I can delete that.
+Speaker
+but we do need an escape character right here.
+Speaker
+And the second one right here. Now let's hit save.
+Speaker
+And we get the same result, it is working. So what exactly are these escape characters doing?
+Speaker
+Well, what the escape character does is it tells JavaScript that the next character should not be seen as a string delimiter. So the next character is not starting or finishing a string, it's just part of the string.
+Speaker
+So whenever you run into the problem of having to use a quotation mark or an apostrophe inside a string and you get an error because it's clashing with your string delimiters, i.e. whatever you're using to open and close the string, well you can use the escape character to tell JavaScript that the character that comes next
+Speaker
+is not to be treated as a string delimiter. It's not to be treated as a piece of code. It's just part of the string.
+Speaker
+Now as you spend more time encoding, you will come across escape characters more and more, but that is just a really quick introduction to them to solve that really common problem.
+Speaker
+Okay, I just wanted to bring that to your attention. Now let's get back to the main project.
+Speaker
+Okay, it's time for challenge.
+Speaker
+This time, you are going to create a feature that we already have on Scrimbo.
+Speaker
+Because on the dashboard, we welcome our users by saying, "Welcome back, Pierre Harrell Borgen."
+Speaker
+That's a normal thing, a lot of apps do.
+Speaker
+which makes sense to try to implement it.
+Speaker
+And we want to do it is through
+Speaker
+having a hold of this paragraph here, which I've given an idea of welcome-l.
+Speaker
+That is the first part of the challenge. You're going to store that paragraph in a variable called welcomel using this camel case convention.
+Speaker
+And then you want to create two variables.
+Speaker
+name and greeting that contains your name.
+Speaker
+and the greeting we want to render on the page.
+Speaker
+In our case, nice, welcome back.
+Speaker
+Finally, you are going to render the entire welcome message using welcomel.com.
+Speaker
+in our text.
+Speaker
+So go ahead and give this one a shot, and then I will show you the solution when you return back to this cast.
+Speaker
+Okay, let's do this.
+Speaker
+We'll start by grabbing the Welcome Altair graph.
+Speaker
+Welcome, Al.
+Speaker
+equals.
+Speaker
+You meant that.
+Speaker
+by ID.
+Speaker
+passing in the
+Speaker
+ID, we have here.
+Speaker
+like that.
+Speaker
+Now we need to create the two variables, let name.
+Speaker
+My name is pair Harald.
+Speaker
+Morgan.
+Speaker
+Great thing.
+Speaker
+And finally, rendering it out.
+Speaker
+I just don't know what I'm doing.
+Speaker
+Welcome.
+Speaker
+L?
+Speaker
+Intertext.
+Speaker
+Equals.
+Speaker
+Everything.
+Speaker
+plus name.
+Speaker
+Now, if we run this, we are rendering out. Welcome back to Paraharlaborgon.
+Speaker
+but there's no space between welcome back.
+Speaker
+and my name, that can easily be sold by just adding a space.
+Speaker
+After welcome back!
+Speaker
+or we could of course hard-coded in between these two variables when we concatenated the screen as well, but that doesn't really matter that much in this case. So let's just stick with this and move on to the next lesson.
+
+Speaker
+and move on to the next lesson.
+Speaker
+Now, there's one more thing you want to do because personally, I think this welcome message could be.
+Speaker
+be a little bit more lively and fun.
+Speaker
+help there is to add an emoji.
+Speaker
+some more great right here.
+Speaker
+That would look pretty nice. So I want you to add that to the welcome element intertext.
+Speaker
+However,
+Speaker
+Catch.
+Speaker
+You are not allowed to modify the code over line 9. You have to write it below.
+Speaker
+So the question is, how can you add this emoji?
+Speaker
+to the end.
+Speaker
+Here in the browser.
+Speaker
+by simply writing more code not by modifying any of the existing codes.
+Speaker
+And to give you a hint, you need to remember...
+Speaker
+Back.
+Speaker
+when you incremented numbers.
+Speaker
+technique here.
+Speaker
+You can do the same thing.
+Speaker
+with welcomel.com.
+Speaker
+intertext.
+Speaker
+So go ahead and give this a shot.
+Speaker
+Okay, hopefully that went well.
+Speaker
+No worries.
+Speaker
+We'll do this together.
+Speaker
+We're simply going to do here instead of using count.
+Speaker
+going to use welcomel.intertext. And instead of the one, we're going to use an emoji. So here we'll do.
+Speaker
+Text equals.
+Speaker
+Oh
+Speaker
+Welcome.
+Speaker
+Else.
+Speaker
+Enter text.
+Speaker
+Plus.
+Speaker
+This new movie right here.
+Speaker
+And emoji is just a string like all other characters. It's just rendered out a little bit fancy.
+Speaker
+if we run this,
+Speaker
+Yes, we indeed get the Emoji at the end. Now...
+Speaker
+Before we leave, I'm
+Speaker
+I want to teach you a little trick.
+Speaker
+Because this line here is pretty clunky.
+Speaker
+writing the welcome out of the intertext.
+Speaker
+twice.
+Speaker
+It's not something you don't see out in the while.
+Speaker
+because there's a shorter version of writing this.
+Speaker
+And that is simply using
+Speaker
+See you.
+Speaker
+us equal operator.
+Speaker
+What it does?
+Speaker
+Thanks.
+Speaker
+current value you have, and then adds this one after it.
+Speaker
+It's the exact same thing that you were doing.
+Speaker
+Teambit weird.
+Speaker
+this plus equal sign here. Just try and remember that it typically takes what you have here.
+Speaker
+and adds this to it.
+Speaker
+So that.
+Speaker
+After this line...
+Speaker
+Welcome to our intertext, it consists of the...
+Speaker
+I'm quiet and here.
+Speaker
+Okay, with that in mind?
+Speaker
+Let's go back to our passenger counter app.
+
+Speaker
+Okay, just a minor thing before we start using strings in our app.
+Speaker
+I want you to use the D+= technique instead of this slightly longer.
+Speaker
+count equals count plus one technique.
+Speaker
+Go ahead and do that.
+Speaker
+Okay, hopefully that went well.
+Speaker
+by it simply.
+Speaker
+doing like this.
+Speaker
+Count plus equals 1.
+Speaker
+From the code.
+Speaker
+It works.
+Speaker
+Let's move on.
+Speaker
+Okay, so now you are going to solve a super cool challenge. You're going to take everything you've learned about JavaScript up until now.
+Speaker
+And use it.
+Speaker
+to create this save feature.
+Speaker
+You can see it says previous entries.
+Speaker
+Then for 5/11.
+Speaker
+with dashes that separate them.
+Speaker
+And these are of course added every time you hit the save button.
+Speaker
+Now there's a dash after the three numbers as well.
+Speaker
+Don't worry about that. It might look a little bit weird, but it's the easiest way to do this, and we want to do it the easiest way.
+Speaker
+out of your building stuff like this.
+Speaker
+time around.
+Speaker
+Don't worry about details.
+Speaker
+Make it work first.
+Speaker
+then make it better. That's my philosophy. So we're just going to make this work.
+Speaker
+Your three challenges are listed as comments here in the JavaScript.
+Speaker
+And...
+Speaker
+And the HTML on
+Speaker
+I'm going to write the paragraph for you so that you have something to work with.
+Speaker
+So this is the P-Tag.
+Speaker
+And it should say previous.
+Speaker
+increase like that and I'm gonna give it an ID.
+Speaker
+Equals.
+Speaker
+Save Boshel.
+Speaker
+or save elements.
+Speaker
+Then you are going to...
+Speaker
+Grab the save element, power rough, and store it in the variable called save L.
+Speaker
+And then in the save function, which is triggered when the save button is clicked on, you are going to create a variable that contains
+Speaker
+both account.
+Speaker
+That is the number.
+Speaker
+and the Dash Separator.
+Speaker
+If it'll look something like this.
+Speaker
+Like 12?
+Speaker
+Space, dash, space.
+Speaker
+And then you are to render this newly created variable.
+Speaker
+Into the save element?
+Speaker
+using Intertext.
+Speaker
+However, you must make sure that you don't delete the existing content.
+Speaker
+from the Save L paragraph.
+Speaker
+because you want to concatenate this ring.
+Speaker
+not wipe it out entirely.
+Speaker
+replace the paragraph with the latest entry.
+Speaker
+So you gotta remember your plus equal. But luckily, you know how to use plus equals, and that might be helpful in this situation.
+Speaker
+Finally, one thing I want to mention.
+Speaker
+that you might struggle a little bit with the spaces here, and it might end up slightly different than what you can see here.
+Speaker
+And that is perfectly okay, don't worry about that.
+Speaker
+In the next cast, actually, we are going to do some
+Speaker
+searching online to figure out if there's a
+Speaker
+alternative methods we can do this on.
+Speaker
+which will help us keep these spaces.
+Speaker
+That's a critical part of web development.
+Speaker
+Searching for solutions online.
+Speaker
+left a little gacha for you here so we get a nice little problem to solve using Google.
+Speaker
+and some online docs in the next cast.
+Speaker
+Don't worry about that.
+Speaker
+Just go ahead and give this your best shot and if you need help, just revert to the screencast and
+Speaker
+I will show you the solution as well.
+
+Speaker
+Hopefully this went well.
+Speaker
+If not, no worries.
+Speaker
+Let's do it together.
+Speaker
+See you now.
+Speaker
+That'll be document.
+Speaker
+Get elements by ID.
+Speaker
+And we are going to get the save.
+Speaker
+L.
+Speaker
+Don't waste, I like to control log.
+Speaker
+just to see that I have the correct.
+Speaker
+Element fetched.
+Speaker
+Let's run this code and yes, bring it up. The console, we see that we have grabbed the correct element.
+Speaker
+then we can move on.
+Speaker
+First, create a variable that contains both the count and
+Speaker
+and the Dash Sepator.
+Speaker
+So what are we going to call this variable?
+Speaker
+I intentionally didn't give you a name for it because I want you to think what could be a suitable name for this ring.
+Speaker
+And there's no right or wrong answer.
+Speaker
+one thing you could call it would be "count string" or
+Speaker
+account str.
+Speaker
+Like that, so...
+Speaker
+It is the count.
+Speaker
+Look, we've torn it into a string, so a count string.
+Speaker
+Kind of makes sense.
+Speaker
+And the value of it will be count.
+Speaker
+Lots.
+Speaker
+And then the string.
+Speaker
+a lot of space.
+Speaker
+A bash in the face.
+Speaker
+Three, render the variable using EnterText.
+Speaker
+Save L.
+Speaker
+vertex then you might have been tempted to do equal.
+Speaker
+But that won't work.
+Speaker
+[BLANK_AUDIO]
+Speaker
+Run the code, wait in command, hit save, boom, then we suddenly remove the previous entries text, we layer it out, of course, because we set all the intertext to be just this count string.
+Speaker
+That doesn't work, we have to take care.
+Speaker
+into account what was there previously as well.
+Speaker
+So we add plus equals like that.
+Speaker
+Increment increment increment.
+Speaker
+Yes, that works.
+Mic
+(speaking in foreign language)
+Speaker
+Alright, so it works really well actually.
+Speaker
+However, this dash would be in there.
+Speaker
+It's gone.
+Speaker
+- Ass is our--
+Speaker
+space here in the paragraph.
+Speaker
+And that is a bit weird.
+Speaker
+we want to keep those spaces.
+Speaker
+However, it's also a great opportunity to do some searching online.
+Speaker
+in order to solve this problem, which is a critical skill for any developers,
+Speaker
+Namely, finding answers online.
+Speaker
+We'll do that in the next video.
+Speaker
+the next cast.
+
+Speaker
+Okay, so we have this little problem here, which is that our spaces aren't working in the way. We want them to work, basically.
+Speaker
+Space here.
+Speaker
+It's lost on the way.
+Speaker
+somewhere. I don't know where, but it happens.
+Speaker
+How do we go about figuring out?
+Speaker
+What's wrong?
+Speaker
+Looking at these two lines, which is where we deal with this save element paragraph.
+Speaker
+You can think what would be a suspect, which tool that we are using would be a good suspect.
+Speaker
+I'm going to point to this one right here.
+Mic
+[BLANK_AUDIO]
+Speaker
+Because I happen to know that that is actually the guilty one, the inner text.
+Speaker
+And let's say you would guess that as well.
+Speaker
+How do you go about?
+Speaker
+finding another tool that
+Speaker
+doesn't work this way.
+Speaker
+Well, one thing you can do it.
+Speaker
+screen right.
+Speaker
+in your text alternative.
+Speaker
+and then end the end.
+Speaker
+Put that into Google.
+Speaker
+and see what it returns.
+Speaker
+MDN is short for Mozilla developer networks and it's a great resource. So if we do that,
+Speaker
+Type that into Google, you can see the very first result.
+Speaker
+Node text content.
+Speaker
+That's interesting.
+Speaker
+Let's click into that.
+Speaker
+There we land on an interface you're going to get very familiar with the MDN WebDox.
+Speaker
+which says "Nold Darth Txt content."
+Speaker
+Don't worry about this node here. It's kind of fancy way of saying HTML element.
+Speaker
+Sort of.
+Speaker
+not entirely, but it just
+Speaker
+translated to HTML Element right now.
+Speaker
+You'll be good.
+Speaker
+And then you can read.
+Speaker
+Text content property of the HTML element.
+Speaker
+represents the tip.
+Speaker
+content of the element.
+Speaker
+Okay, seems pretty useful to me.
+Speaker
+And then we can scroll a little bit down.
+Speaker
+Then you see they've actually listed up differences.
+Speaker
+between Intertext and Text Content.
+Speaker
+And here we scan through this.
+Speaker
+You can see that.
+Speaker
+Intertext only shows huge
+Speaker
+and Greedable Elements.
+Speaker
+And...
+Speaker
+Yet again, Intertext is aware of styling.
+Speaker
+and won't return the text of hidden elements.
+Speaker
+Okay, so it seems to be that the inner text somehow struggles a little bit to return things that are hidden or not human readable.
+Speaker
+And like,
+Speaker
+Yeah, it's based on that human-readable character.
+Speaker
+So maybe...
+Speaker
+We can just change it then to dot
+Speaker
+text content instead.
+Speaker
+Let's try that.
+Speaker
+Thank you for your comment.
+Speaker
+safe.
+Speaker
+Ooh.
+Speaker
+Oh, yes indeed!
+Speaker
+Now we get this basis.
+Speaker
+And one thing I want to highlight here is that.
+Speaker
+While the Mozilla WebDox is a great resource, it's very
+Speaker
+very comprehensive, the language you'll see in these kinds of documentation sites is often very technical.
+Speaker
+That's why I kind of...
+Mic
+That's what?
+Speaker
+skimmed through and found some hints of human readable and hidden.
+Speaker
+And I kind of didn't worry too much about going into depth.
+Mic
+[BLANK_AUDIO]
+Speaker
+And I think you as well should think.
+Speaker
+When you see a page like this.
+Speaker
+don't feel that you need to understand everything.
+
+Speaker
+And for the love of God, don't try to learn code by just reading documentation. Some people say that's a good idea. I think it's a terrible idea.
+Speaker
+You want to slowly learn how to get comfortable reading documentation, but you also want to ignore all of the complex stuff that it's very often wrapped within.
+Speaker
+And there are other sites as well that explain things in various degrees of different things.
+Speaker
+For example, there's also something called W3 schools, which is very good.
+Speaker
+stack overflow and many more and you're going to see more of this.
+Speaker
+progress in the course as we're going to come back to this.
+Speaker
+debugging concepts later on as well.
+Speaker
+But as for now, we've just had a little sneak peek on the Mozilla developer network.
+Speaker
+And actually it's kind of trash talking the dot inner text here and saying that it's also computationally
+Speaker
+expensive
+Speaker
+me, I've gotten enough hints that I actually want to use dot text content instead of intertext.
+Speaker
+I'm going to change this up here as well.
+Speaker
+It still works.
+Speaker
+Now our app is...
+Speaker
+Almost complete, there's only one more thing we need to do, and we'll do that in the next cast.
+Speaker
+Okay, so now we are going to put the final pieces in our puzzle.
+Speaker
+We need to fix the fact that.
+Speaker
+If I increment this and then hit save,
+Speaker
+And then the subway leaves the station and I'm gonna count a new group of people then with the current solution
+Speaker
+I will be counting.
+Speaker
+Further on from 6, like 7, 8, 9, and that's not what we want. We want this one.
+Speaker
+to be set back to zero.
+Speaker
+Every time we hit save.
+Speaker
+And to do this, you need to write two lines of code. And at this point, I want to just throw you into the deep end of the pool and see how you swim.
+Speaker
+I'm not going to give you any hints or write any pseudocode or tell you where you're going to write these two lines.
+Speaker
+Now you really have to think and think of yourself, what do you need to do here in order to make this work?
+Speaker
+And feel free to hack a little bit on it, try a solution, run the code, see how it works.
+Speaker
+and solo out the values and just hack away at it and give it your best shot.
+Speaker
+And if you don't manage to do it, no worries at all, because I will show you how to do it again. Of course, when you return back to this greencast.
+Speaker
+So then you can just try to do it again.
+Speaker
+after you've seen my solution.
+Speaker
+of talk, jump into the code here.
+Speaker
+and give this a shot.
+Speaker
+Now let's solve this together.
+Speaker
+What can you do?
+Speaker
+is
+Speaker
+be set back to zero.
+Speaker
+And how do we set this element to be zero?
+Speaker
+That is the count element, which we've worked with previously.
+Speaker
+I'm setting it to zero. We know how to do that. We can do count.
+Speaker
+Take its content and set that equal to zero, like that.
+Speaker
+by re-run the code.
+Speaker
+increment increment increment increment increment.
+Speaker
+It's safe.
+Speaker
+And yes, it's now cereal.
+Speaker
+But if I now try to hit the increment again, you'll see.
+Speaker
+Oh.
+Speaker
+Five.
+Speaker
+[laughs]
+Speaker
+That's weird, why is that?
+Speaker
+That's because we have indeed set the text content of the account element to zero.
+Speaker
+So this
+Speaker
+It's true right here.
+Speaker
+But in the JavaScript, we're still keeping track of the count, and that count has been incremented this point five times.
+Speaker
+So what do we need it to do here?
+Speaker
+When we set the...
+Speaker
+Text content to zero.
+Speaker
+Also,
+Speaker
+the count back to zero as well.
+Speaker
+Cost travel script remembers what we've done previously unless we refresh the entire browser.
+Speaker
+But even though JavaScript can see that yeah you are setting the text content of this element here to zero.
+Speaker
+It still keeps track of the count here and JavaScript can't deduct that.
+Speaker
+since you want to set this here to zero.
+Speaker
+You also want this to zero. No, you got it. Give JavaScript
+Speaker
+very specific instructions.
+Speaker
+So you need to do here.
+Speaker
+Count.
+Speaker
+equal zero as well.
+Speaker
+Now if we run the code.
+Speaker
+Bum, bum, bum.
+Speaker
+Save, et cetera, zero.
+Speaker
+And yes, we indeed start at.
+Speaker
+0 again.
+Speaker
+Oh hey, it's Gil from Scrumba.
+Speaker
+that you didn't expect me here.
+Mic
+(chuckles)
+Speaker
+just wanted me to pop in real quick to share something important with you. Thanks, Farron.
+Speaker
+So in this section, we started off by using the on click event handler HTML attribute to call and run functions like increment and save when their corresponding buttons get clicked.
+Speaker
+This is an intuitive and straightforward way to understand how event listeners can be attached to HTML elements and grasp the basics of interactivity.
+Speaker
+But in larger, real-world projects, mixing HTML structure and JavaScript behavior like this can lead to code that is harder to maintain and manage.
+Speaker
+So keep this in mind, and real soon, we'll teach you the more recommended and maintainable approach for registering event listeners and executing JavaScript. And this app is looking outstanding by the way, so great job getting this far.
+Speaker
+So...
+Speaker
+You have built your very first JavaScript app.
+Speaker
+From scratch.
+Speaker
+Congratulations, that is a huge accomplishment. So, give yourself a pat on the back. You have really learned a lot in this section and to prove that to you.
+Speaker
+We're actually going to do a little recap, so you get to see in front of you.
+Speaker
+all the new concepts you've shoved into your brain at this point.
+Speaker
+So, we started out with the script tag, if you remember?
+Speaker
+We had it here in the--
+Speaker
+Next.html file.
+Speaker
+And we wrote our JavaScript internally.
+Speaker
+in this file.
+Speaker
+However, we realized that that wasn't the way we wanted to go, so we instead
+Speaker
+pointed
+Speaker
+this script tag to a source?
+Speaker
+Finally, the index.js file so that we could write our JavaScript there instead.
+Speaker
+Then we moved on quickly and learned about variables.
+Speaker
+Namely, the left variable.
+Speaker
+And we set its value to a number.
+Speaker
+Which brings us to your very first data type. Numbers, you learned how to work with numbers.
+Speaker
+Do mathematical operations?
+Speaker
+and even increment numbers here on line six and also reassign the count variable to zero.
+Speaker
+Year Online 14.
+Speaker
+So a lot of work with numbers in this app.
+Speaker
+But you also learned about strings, which was your second data type.
+Speaker
+Here you add a string to
+Speaker
+build the save feature and also you can also log out a few strings along the way with code that we have deleted now. So I added this console log here to remind you about it.
+Speaker
+Because that is a truly important concept in developing and you will use it throughout your entire career.
+Speaker
+Also, another thing you will use constantly as a developer is functions.
+Speaker
+you learned how to create functions like this increment and save function.
+Speaker
+to call them, aka invoke them.
+Speaker
+from the HTML file.
+Speaker
+here on the button clicks.
+Speaker
+And that brings us to the next concept which you learned a ton about.
+Speaker
+or just the DOM or the document object model.
+Speaker
+or what I like to call it.
+Speaker
+How to use JavaScript to change the website.
+Speaker
+So we interacted with Dom at several places, for example up here where we did
+Speaker
+Document.getElementByID
+Speaker
+That's one you're going to get very familiar with throughout this module.
+Speaker
+We passed in the ID.
+Speaker
+[BLANK_AUDIO]
+Speaker
+So the JavaScript was able to
+Speaker
+head into the HTML and
+Speaker
+fetch out the
+Speaker
+content you told it to look for.
+Speaker
+And another way we interacted with the DOM was through the inner text property.
+Speaker
+We use that.
+Speaker
+Here.
+Speaker
+instead of text content.
+Speaker
+But then we googled our way to the Mozilla developer network.
+Speaker
+be
+Speaker
+better solution.
+Speaker
+So we learned about that and...
+Speaker
+"Oh my God, this is a lot of concepts to learn."
+Speaker
+You can totally understand if you're a little bit...
+Speaker
+overwhelmed and if you feel that you are on thin ice on a few of these concepts, that's totally okay. We are going to repeat all of these things over and over again throughout the module.
+Speaker
+So don't worry about that.
+Speaker
+Actually.
+Speaker
+We are going to jump directly into a section.
+Speaker
+Were you are going to get assignments that test you for these skills? Just to give you that repetition and muscle memory you need.
+Speaker
+in order to make these concepts become a second nature.
+Speaker
+So let's go ahead and get some repetition.
+Speaker
+And then once we've done with that, we'll move on to our
+Speaker
+next big project.
+Speaker
+The Black Duck.
+Speaker
+which is going to be so much fun to build.
+Speaker
+I can't wait to see you there. For now, let's jump into a few quick fire challenges.
+Speaker
+Okay, in this challenge, you're going to repeat.
+Speaker
+variables.
+Speaker
+First, you are going to create two variables.
+Speaker
+first name and last name.
+Speaker
+Okay, let's do this.
+Speaker
+I'll do first name equals.
+Speaker
+Here?
+Speaker
+And then I'll do let last name equals.
+Speaker
+Borgen, like that.
+Speaker
+We need to concatenate the two together.
+Speaker
+Oh, name.
+Speaker
+equals.
+Speaker
+first name.
+Speaker
+loss.
+Speaker
+Last name, like that.
+Speaker
+Finally, I want to log it to the control.
+Speaker
+console.log.
+Speaker
+for name?
+Speaker
+Now I can run the code.
+Speaker
+And as you can see, we're logging here, Borgen.
+Speaker
+To the console?
+Speaker
+There's no space in between the two names, so...
+Speaker
+I could achieve this in a multitude of ways.
+Speaker
+either by adding a space here.
+Speaker
+Or?
+Speaker
+Adding a space.
+Speaker
+Before, Borgen?
+Speaker
+Still good?
+Speaker
+However, neither of these are optimal since.
+Speaker
+I want the first name and last name to be the name and the name only, not an extra space.
+Speaker
+So what I'll do instead?
+Speaker
+is in between here.
+Speaker
+add an extra space like that.
+Speaker
+running the code.
+Speaker
+There we go.
+Speaker
+Now first name and last name.
+Speaker
+contain only the characters of my name?
+Speaker
+but we still get the space by adding this.
+Speaker
+string here.
+Speaker
+when we create full name.
+Speaker
+So...
+Speaker
+No matter how you did it,
+Speaker
+Great job, let's move on.
+Mic
+(bell dings)
+Speaker
+In this challenge, you are going to create a function that logs out
+Speaker
+high there in the when cold.
+Speaker
+And you have to use the name and the greeting variable inside of the body of your function.
+Speaker
+And also there's a comma and then explanation mark. You also have to include.
+Speaker
+So that you get this exact string log to the controller.
+Speaker
+Go ahead and solve this one, and then I will show you the solution afterwards as well.
+Speaker
+Okay, let's do this.
+Speaker
+creative function.
+Speaker
+I'll call it.
+Speaker
+Great Linda like that.
+Speaker
+And here we are going to Control-og.
+Speaker
+First, the greeting, then we have to plus.
+Speaker
+We, comma.
+Speaker
+on the space.
+Speaker
+And then plus again.
+Speaker
+Then the name.
+Speaker
+And then plus again.
+Speaker
+and then the exclamation mark like that.
+Speaker
+final step to check our code, we need to run it.
+Speaker
+Greek
+Speaker
+Linda, like that.
+Speaker
+Running the code.
+Speaker
+And there we see.
+Speaker
+this exact string and the console.
+Speaker
+Great job.
+Speaker
+In this challenge, you are going to practice your incrementing and decrementing skills.
+Speaker
+So let's say that you are building a game and the player is collecting points, which currently are at three and you need to create two functions, one which is called add three points.
+Speaker
+and one which is called remove one point.
+Speaker
+And of course then have these add and remove their given points.
+Speaker
+or to the my points variable.
+Speaker
+Remove one point.
+Speaker
+Decrease my point with one.
+Speaker
+three points.
+Speaker
+should add 3 points to the my point variable.
+Speaker
+Your job is to...
+Speaker
+create those two functions and then call them.
+Speaker
+However, many times you need to call them.
+Speaker
+order for this line done.
+Speaker
+here to log out the number 10.
+Speaker
+You are going to write your code.
+Speaker
+in between here.
+Speaker
+You can add as many lines as you want.
+Speaker
+But when you eventually run the code,
+Speaker
+My point should be 10.
+Speaker
+And you should only have changed my points.
+Speaker
+Via.
+Speaker
+calling these two functions.
+Speaker
+a number of times.
+Speaker
+Go ahead and give this one your best shot.
+Speaker
+And then I, of course, will show you the solution afterwards as well.
+Speaker
+Okay, hopefully that went well. Let's do it together.
+Speaker
+new function.
+Speaker
+Three points.
+Speaker
+What I'll do is take my points.
+Speaker
+plus equal three.
+Speaker
+I'm sure...
+Speaker
+Remove.
+Speaker
+One.
+Speaker
+Point.
+Speaker
+And that should do my point minus equal one.
+Speaker
+Okay, now we have them, which means that we just need to call them a couple of times.
+Speaker
+We are at 3 and we need to get it up to 10.
+Speaker
+What I will do then is I'll first do...
+Speaker
+Add 3 points, call that.
+Speaker
+three times.
+Speaker
+because then we'll go up to 2.
+Speaker
+12?
+Speaker
+My calculation is correct.
+Speaker
+I'll throw this.
+Speaker
+Yes, we are indeed logging 12.
+Speaker
+That means that we can.
+Speaker
+Remove one point.
+Speaker
+Good times.
+Speaker
+That could get us to Canada.
+Speaker
+Yes!
+Speaker
+We are logging out to him.
+Speaker
+So we have sold the challenge.
+Speaker
+Great job!
+Speaker
+Okay, it's time for some strings and numbers repetition. You are going to add a bunch of strings and numbers together and try to predict what the result is.
+Speaker
+Here, after each one of these lines, I've added two slashes. That means that you can write to your prediction.
+Speaker
+Try to go through all these.
+Speaker
+and then run the code and see how you did it.
+Speaker
+and then I will give your shot afterwards as well.
+Speaker
+Okay, starting on the
+Speaker
+Number two.
+Speaker
+That is a string plus a number. We know the JavaScript.
+Speaker
+then turns both of these into strings so it becomes
+Speaker
+11 plus seven since we're correct
+Speaker
+That was good. Otherwise, I would lose all my integrity, so I'm really happy about that. Let's move on.
+Speaker
+Okay, let's imagine that you are working on an e-commerce website.
+Speaker
+and this website sells shoes.
+Speaker
+So here you can see a Nike shoe with a purchase button.
+Speaker
+The HTML is located here, of course,
+Speaker
+with an image tag, the paragraph.
+Speaker
+or the Nike shoe, the button, but then there's also an empty air
+Speaker
+paragraph.
+Speaker
+And this is pretty common because in case there's an error going happening, for example,
+Speaker
+or
+Speaker
+some kind of bug, cost the operation to fail, or whatever it is, we want to render something inside of this paragraph.
+Speaker
+So that is your job in this challenge. You are going to set up the JavaScript so that when the user clicks on the purchase button, you are to render out a
+Speaker
+something went wrong, please try again.
+Speaker
+in the power rough the
+Speaker
+It has the ID of...
+Speaker
+That's of course.
+Speaker
+This one.
+Speaker
+And above and they will click is of course
+Speaker
+You can see there is some CSS here, but you're not going to worry about that because
+Speaker
+because this challenge is all about the JavaScript
+Speaker
+And of course also.
+Speaker
+hooking up the on click.
+Speaker
+event listener on this button.
+Speaker
+You should know how to do that by now.
+Speaker
+And you should also know how to render text inside of a paragraph.
+Speaker
+So go ahead and give this one a shot. And then of course, I will show you the solution afterwards as well.
+Speaker
+So there are two parts to this challenge. First, there's registering that to use your clicks on the button.
+Speaker
+And then there is rendering out the text in the DOM.
+Speaker
+So let's take first things first.
+Speaker
+bubble.
+Speaker
+So I'll head over to the button and do an on
+Speaker
+on.
+Speaker
+Click the event listener and here we need to...
+Speaker
+Specify which function we want to run, we haven't written any function yet.
+Speaker
+So let's do that.
+Speaker
+call it.
+Speaker
+purchase.
+Speaker
+that's what the user is trying to do.
+Speaker
+Open and close to curly bracket. Now I can take this function.
+Speaker
+And...
+Speaker
+Best
+Speaker
+call this function.
+Speaker
+Good stuff, let's just...
+Speaker
+Control log out.
+Speaker
+up your plate.
+Speaker
+On this call, try to click the button, and yes, we are rendering out button clicked.
+Speaker
+The next step is to
+Speaker
+Grab a hold of the...
+Speaker
+paragraph that we are going to render text inside of.
+Speaker
+So we'll do.
+Speaker
+Error paragraph?
+Speaker
+You meant to stop it, get element.
+Speaker
+by ID.
+Speaker
+I'll take it in.
+Speaker
+or like that.
+Speaker
+Yet again, we can do control log just to verify.
+Speaker
+that we have grabbed a hold of the right power raft.
+Speaker
+We're in the code.
+Speaker
+And bring up the console, and yes, we can see that we have.
+Speaker
+the paragraph?
+Speaker
+Then inside of the purchase function,
+Speaker
+This is where we want to trigger the rendering of the...
+Speaker
+error text.
+Speaker
+or paragraph?
+Speaker
+Thanks to Colin.
+Speaker
+Equals.
+Speaker
+This spring right here.
+Speaker
+Now, if we rerun the code...
+Speaker
+Click the purchase button. Yes!
+Speaker
+something went wrong, please try again. And as you can see, it's ended up in red text, which is very common, because we want to grab the user's attention and
+Speaker
+tell them that something wrong has happened.
+Speaker
+And that's, of course, something we have specified in the CSS.
+Speaker
+But this challenge is not about CSS. It was about JavaScript. So great job solving this.
+Speaker
+Let's move on.
+Speaker
+Okay, let's imagine that you are working on an ecommerce website.
+Mic
+(bell dings)
+Speaker
+and this website sells shoes.
+Speaker
+So here you can see a Nike shoe with a purchase.
+Speaker
+or like that, and shouldn't end.
+Speaker
+Tell them that something wrong has. It was about JavaScript. So great job solving this. Let's move on.
+Speaker
+Okay, let's imagine that you are working
+Speaker
+Okay, in this challenge, you are going to create a very basic calculator.
+Speaker
+As you can see in the Minibrowster here, I've set up the...
+Speaker
+UI for you?
+Speaker
+Here we have it.
+Speaker
+Two buttons. Here we have the numbers.
+Speaker
+8 and 2.
+Speaker
+And there's four buttons, adds of track, divide and multiply.
+Speaker
+If I try to click one of these now, nothing happens. But what you then, of course, want to happen is that
+Speaker
+For example, if you hit "subtract," you're to take eight.
+Speaker
+minus 2, which is
+Speaker
+six.
+Speaker
+and then render that out in the sum here.
+Speaker
+so that it'll say some colon.
+Speaker
+6.
+Speaker
+Taking a look at the HTML.
+Speaker
+We can see that the
+Speaker
+numbers at the top.
+Speaker
+Number 1L and number 2L.
+Speaker
+That's the 8 and 2.
+Speaker
+or simply "spance"?
+Speaker
+However,
+Speaker
+They are empty, so how come we have?
+Speaker
+called that in them when they are rendered.
+Speaker
+Well that is because I'm doing that in the JavaScript.
+Speaker
+First defining two left variables, number one and number two.
+Speaker
+and setting them to 8 and 2.
+Speaker
+And then doing document.
+Speaker
+Get element by ID.
+Speaker
+Fetching out, num1L and num2L.
+Speaker
+and setting each of their text contents
+Speaker
+No, no, no.
+Speaker
+Nam too.
+Speaker
+And that's why
+Speaker
+we're then bring out.
+Speaker
+These numbers moving on to the buttons you can see that they are very simple
+Speaker
+Only the tag and the text.
+Speaker
+I've not created the event listeners because that's your job.
+Speaker
+And then finally, the span with the ID of some L is where you are going to render out.
+Speaker
+the result of the calculation.
+Speaker
+So, summing this up, you are to create four functions here in the JavaScript file.
+Speaker
+"abs" "subtract" "divide" and "multiply" and then you need to call the correct function when the user clicks on one of the buttons.
+Speaker
+So obviously, when the user clicks the add button, you are to call the add function.
+Speaker
+versa with all the others.
+Speaker
+Then inside of the functions, you are to perform the given calculation.
+Speaker
+So in add.
+Speaker
+You need to add number one and number two together.
+Speaker
+And subtract, you'll take number 1 minus number 2 and divide.
+Speaker
+and so on.
+Speaker
+Finally, render the result of the calculation in the paragraph that has the ID of some L.
+Speaker
+So go ahead and give this one a shot and
+Speaker
+And then of course, return back to the screencast when you want to see my solution.
+Mic
+(beep)
+Mic
+(clicking)
+Mic
+(clicking)
+Mic
+[BLANK_AUDIO]
+Mic
+(people chattering)
+Speaker
+Let's do this.
+Speaker
+I'm gonna start by...
+Speaker
+creating here and on click.
+Speaker
+And call this function add.
+Speaker
+Because when the user clicks the ad button, we want to convoke a function, which are to be named ad.
+Speaker
+And then we need to create the function.
+Speaker
+function.
+Speaker
+Okay, what do we want to do?
+Speaker
+First we just want to...
+Speaker
+Check that it works.
+Speaker
+And yes, we are.
+Speaker
+We're logging out.
+Speaker
+Now, then we need to grab a hold of the Sumpar rough.
+Speaker
+Shall we?
+Speaker
+some L.
+Speaker
+equals.
+Speaker
+document.
+Speaker
+element.
+Speaker
+by ID.
+Speaker
+The idea is some that L.
+Speaker
+Like that.
+Speaker
+I'm just going to see if it works.
+Speaker
+by doing some L dot text.
+Speaker
+equals
+Speaker
+Number one.
+Speaker
+lost Nam Ku.
+Speaker
+rerunning the code.
+Speaker
+And yes, there we can see.
+Speaker
+We're rendering out 10.
+Speaker
+However,
+Speaker
+We wanted to render out.
+Speaker
+some colon equals 10.
+Speaker
+So let's try.
+Speaker
+Adding that, some colon.
+Speaker
+Plus number one, plus number two.
+Speaker
+rerunning the code, heading Add.
+Speaker
+And now we have come into a situation where actually...
+Speaker
+JavaScript is turning all of our three values into strings.
+Speaker
+As you remember, when you add strings and numbers together, they're all turned into strings.
+Speaker
+What we need to do here is first perform the
+Speaker
+the calculation.
+Speaker
+and then concatenate that with the string.
+Speaker
+So we'll do let result equals num 1 plus num 2 because here we're only adding numbers together and draw a triple, we'll treat them as numbers and thus perform a mathematical calculation and not a string concatenation. So then we can
+Speaker
+Please.
+Speaker
+this expression here with results.
+Speaker
+We're running the code.
+Speaker
+Clicking Add.
+Speaker
+And yes, there we go.
+Speaker
+Great stuff.
+Speaker
+I'm a little bit lazy, so I'm just gonna copy this.
+Speaker
+Peace to then.
+Speaker
+tracked.
+Speaker
+And simply.
+Speaker
+Replace this with a minus.
+Speaker
+Abi.
+Speaker
+On click equals sum.
+Speaker
+like that.
+Speaker
+running the code.
+Speaker
+Clicking subscribe.
+Speaker
+Oh, so I'm at six.
+Speaker
+Brilliant.
+Speaker
+We'll just...
+Speaker
+I'll be past again.
+Speaker
+Divide!
+Speaker
+you get this.
+Speaker
+Use the division symbol.
+Speaker
+and multiply should use the...
+Speaker
+Multiplication symbol.
+Speaker
+Now we only need to.
+Speaker
+Last two event handlers.
+Speaker
+Divide is the name of that function.
+Speaker
+Great hair.
+Speaker
+And,
+Speaker
+Multiply is the name of the final function.
+Speaker
+Running the code.
+Speaker
+Trying, add, give us 10 brilliant.
+Speaker
+Subscribe, give sex, not correct.
+Speaker
+Divide.
+Speaker
+Rightly gives four and multiply 16.
+Speaker
+We have made a calculator.
+Speaker
+Good job.
+Speaker
+You have all reason to be proud of yourself now.
+
+Speaker
+And if you didn't manage to do this one, if you found it a bit too hard, now that you've seen the solution, just go back and try it again.
+Speaker
+That's great practice, and gives you the muscle memory you need.
+Speaker
+And when you're ready, I'll see you in the next cast.
+Speaker
+Hey, it's Tom here again, and now we've used some mathematical operators in JavaScript. I want to talk to you about operator precedence.
+Speaker
+Don't worry, to be a webdev you don't need to note loads of crazy, difficult maths.
+
+Speaker
+an understanding of how JavaScript deals with mathematical operators
+Speaker
+is a very good thing.
+Speaker
+Okay, this might take you back to your school days or perhaps you're still in your school days, but here is a maths problem for you to solve.
+Speaker
+This is Pools Now.
+Speaker
+and write your answer in right here.
+Speaker
+Okay, so you might have read this as 50 plus 10 equals 60.
+Speaker
+And then a plus 2 equals 10.
+Speaker
+And so finally, 60 divided by 10 equals 6.
+Speaker
+Let's look out and see if JavaScript agrees.
+Speaker
+Well, in the console, we're getting 53.25, so the browser is doing something different. The browser does this part with the division,
+Speaker
+fast.
+Mic
+(mumbles)
+Speaker
+So it says, "10 divided by 8."
+Speaker
+is 1.25.
+Speaker
+And then it takes that 1.25 and it adds the 50.
+Speaker
+And the two.
+Speaker
+And that's how we get the 53.25 that you see in the console.
+Speaker
+Now it's doing this calculation first due to operator precedence.
+Speaker
+perhaps called PEMDAS BID MAS or BOD MAS. They all amount to the same thing.
+Speaker
+So basically, with operator precedence,
+Speaker
+Multiply and divide come first.
+Speaker
+and then add and subtract, come after that.
+Speaker
+The calculation is evaluated from left to right, just like normal.
+Speaker
+And we can override the operator presidents by putting parentheses around the part you want to be executed first.
+Speaker
+So if we wanted to come in here, let's just delete this.
+Speaker
+And we want to make this equal 6.
+Speaker
+Let's wrap these in parentheses.
+Speaker
+And we'll hit save and we get 9.5. So what we're doing at the moment is we're taking 5+10 first, so that's now 60.
+Speaker
+we're then dividing it by eight, which gets a 7.5.
+Speaker
+and adding to.
+Speaker
+Okay, let's wrap these also in parentheses.
+Speaker
+Now when we save, we're getting six.
+Speaker
+say we're saying do 50 plus 10 first, that's 60, then do a plus two, that's 10.
+Speaker
+and then divide 60 by 10.
+Speaker
+And that gets us the sixth.
+Speaker
+Okay, so that's an example of operator precedence. Now, let's just have a challenge when I'm bare with me while I speed type it.
+Speaker
+Okay, here is your challenge and it's a bit of a thinking challenge, so it might take you a few moments to work it out.
+Speaker
+the following expression that we've got down here.
+Speaker
+should calculate total expenses for a trip.
+Speaker
+But it's got a problem.
+Speaker
+It's giving me 548 and if I open up the console you can see we've got that right there.
+Speaker
+But I think that is too cheap.
+Speaker
+Have a look at what's going on.
+Speaker
+And see if you can figure out what the problem is. We've obviously got a problem with operator presidents. That's what we're talking about.
+Speaker
+So when you figure it out, just change this code right here.
+Speaker
+So we can log out the correct
+Speaker
+cost of the trip.
+Speaker
+Now you've got all of the variables you need here. You just need to do a little bit of thinking.
+Speaker
+figure out.
+Speaker
+what calculations need to happen first.
+Speaker
+Okay.
+Speaker
+pause now, get this sorted, and I'll see you back here in just a minute.
+
+Speaker
+Okay, so hopefully you managed to do that just fine, and hopefully you realized that all we really need to do is come in here to this calculation, where we're taking the hotel cosper night
+Speaker
+and we're taking away the hotel discount per night.
+Speaker
+Now what's happening as things stand is that this calculation with this multiplication is being done first. So we're taking the trip length in days, which at the moment is two, and we're multiplying that by the hotel discount per night in this case six.
+Speaker
+obviously that gives us 12. So what happens then is we take this hotel cost per night figure, which is 60, and we minus the 12 from that. And that is what we don't want to do. What we want to do is get the total price of the hotel night. So that's hotel cost per night minus hotel discount per night. And we want to calculate that first. So let's just wrap these in parentheses.
+Speaker
+Now when I hit save, I'm seeing 608 down in the console, and that was the answer I expected to get. So congratulations if you figured that out, and hopefully now you've got a bit of an introduction to Arith Medical Operative Presidents in JavaScript. Now there is more to operator precedence than this, and it is something that will come up from time to time, but luckily not too often. And there are some really complex aspects with it, but you can worry about them if you need to much further down the road.
+Speaker
+Okay, let's get back to it.
+Speaker
+In the next scrim, you will be given a solo project. That means a project that you are going to build all on your own.
+Speaker
+I will not be there to help you, unfortunately. Now, before you jump into the solo project, there's one thing you need to know about. And that is the service called Figma. It is a design tool that is heavily used in the industry these days. So it has almost become a must have skill for any front end developer working in a team with designers. You will be given the solo project design in a Figma file. So click on this image right here and create a Figma account. And then once you're ready, you can click on this image as
+Speaker
+Now, a final thing I want to mention is that the Solar Project is a pro offering. So if you haven't upgraded to Scrimber Pro, now is a great time to do that. With that,
+Speaker
+I wish you good luck.
+
