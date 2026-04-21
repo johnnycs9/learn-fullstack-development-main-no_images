@@ -1,0 +1,3589 @@
+Okay, so we're going to kick this off with a challenge.
+
+You are going to create two variables, the first card and the second card.
+
+Then you're going to set their values to a random number between 2 and 11.
+
+So that's the value, so you can draw from the deck of cards in blacktack.
+
+Secondly, you are going to create a variable sum and set it to the sum of the two cards.
+
+So go ahead and do this right now. Okay.
+
+Let's do this.
+
+Start with the.. First card?
+
+I'm gonna set it to six, and the second card, after nine, then the some, of course. Equals first card, plus.
+
+I can card, like that.
+
+Let's consoling out the sun.
+
+Run the coat?
+
+And, yes, indeed, we get 15.
+
+Great job.
+
+Let's move on.
+
+Okay, so we are ready to build the logic of our blackjack game.
+
+Now, let's have a look at how blackjack works before we try to formulate this in JavaScript.
+
+So, the point with the blackjack is to get a hand that sums up to exactly 21.
+
+And if you don't get 21, at least you want to get as close to 21 as possible, but never above 21.
+
+Because if so, you're out of the game.
+
+So, here are three scenarios, one where you have two cards on your hand, that's your starting hand, and they amount to 15.
+
+So you're still in the game.
+
+No big reason to either cry or celebrate.
+
+Then there's the other case where you have a king and an ace.
+
+And since the ace here equals 11, and the king equals 10, you've got blackjack.
+
+So, woo hoo.
+
+And the third scenario, you started out with a 10 and a 6, and then you ask for a new card, but damn, you ended up at 22.
+
+So you're over 21, and sadly, you've lost your money.
+
+So, now the question is, how do we translate these things into JavaScript?
+
+Sadly, JavaScript isn't as smart as you are who can understand this by just hearing me talk about it.
+
+JavaScript is kind of stupid, and it needs you to describe the logic 100% correct.
+
+So, let's just do that, so you get to see it in action.
+
+We start out with writing if, and then open close parentheses, and then XD, some of our cars that we're going to check.
+
+So we say, if some is less than 21.
+
+Just like we were doing here.
+
+So this crocodile mouth is something you might recognize from your maths class?
+
+At school, and it kind of makes sense, because here on the right hand side, you can see that's where the gap between the teeth of the alligator is the largest, whereas at the left hand side, here, the gap between the teeth is the smallest.
+
+So small value here, large value here.
+
+If this condition is true, meaning that sum is less than 21, well, then we add two curly brackets and tell JavaScript that we want to execute the piece of code inside of those curry brackets.
+
+Which will do.
+
+Looks all lucky.
+
+Do you want to go on a new card?
+
+Since that's what you can do in this scenario, you are still in the game, and you can draw another card if you want to, but there are cases where this isn't true.
+
+And we need to account for those as well.
+
+We do that by writing LSF.
+
+An open and close parenthesis.
+
+Here, we write some, eco, eco, eco, 21.
+
+This is, else, if some equals 21.
+
+Then we want.. This code could be executed.
+
+And this triple equal operator is different from this one right here.
+
+Here we are saying that we want the sum to become first card plus second card.
+
+The tear we're asking is the sum strictly equal to 21?
+
+And you say strictly equal when you see three equal marks.
+
+And don't worry about why it's three, and not necessarily two.
+
+We're going to get back to that later.
+
+For now on, just use three equal marks when you write LSI statements, where you are checking if a variable is exactly some kind of value.
+
+So, if the sum is 21, what is the case then?
+
+Well, woo hoo.
+
+The player has blackjack.
+
+How old you?
+
+Tall log?
+
+Ooh.
+
+You've.. Got.. Backpack, like that.
+
+And then the third scenario will do, else if, yet again, some.
+
+What you think we'll use here?
+
+Of course.
+
+We'll use this one right here, because if the sum is larger than 21, then the user has lost.
+
+Some, it's greater than 21.
+
+Open and closed, curly brackets, console, log.
+
+You're out of the game.
+
+Like that.
+
+Actually, let's add these emojis as well.
+
+There we go.
+
+Now, one little thing I wanted to notice here is that here, I have to use double quotes to wrap this, as I'm using single quotes to create this yuv and your words.
+
+Because if I was using...
+
+Ingle books here, it could be completely off, because JavaScript could have thought that I was intending to close off this ring right here, when I'm not intending that.
+
+I was just writing you instead of you have.
+
+So, just a little digression there.
+
+Now, let's run this code and see how it works.
+
+Will it run?
+
+And yes, do you want to draw a new card?
+
+We triggered this, which seems correct, since I'm plus 6 is 15, and that is indeed less than 21, let's try to do N and 11.
+
+So this is blackjack.
+
+Yes.
+
+Jobscript triggered line eight, which is what we wanted.
+
+And finally, let's say that we got 17 on the first two cards, and we really wanted a new card.
+
+We wanted to take the can, but we bummed out by getting six.
+
+If so, or some would be 23 and what do you think will happen?
+
+Yes.
+
+This line of code should be run.
+
+I'm gonna run the code, and boom, you're out of the game.
+
+Now, a final thing I want to tell you about, before we move on, is that could actually skip all of this code, if we wanted to, and do like that.
+
+Because if some is not less than 21, and it's not exactly 21 either, meaning we've jumped to the 3rd clause in our AFL's clause, then it must be over 21.
+
+I mean, there's no other alternative in the entire universe.
+
+So there's no point specifying that some hair should be over 21 for this block of code to be executed, meaning we can just skip it, but we have, if some is less than 21, execute this, If sum is exactly 21, execute that and in all other cases, execute this.
+
+This will work, as you see, by running a cold in the exact same way.
+
+Okay, now that you know that, let's move on.
+
+Now, it is your turn to write an F false statement.
+
+You are to check if a person is old enough to enter the nightclub, which has a lower age limit at 21.
+
+And then you are to log a suitable message to control in both cases.
+
+And by that, I mean, if the user is less than 21, or if the user is 21 or older.
+
+So, I have defined the H variable here, and also written pseudocode, if less than 21, then a suitable message would be, for example, you cannot enter the club.
+
+Elf, meaning all other cases, 'cause if they're not less than 21, well, they have to be 21 or above, then you are to log something like welcome.
+
+Go ahead and give this a shot.
+
+And if you have forgotten how to write an A false statement, just go back and rewatch the previous lesson.
+
+I notice here that I don't have an else if statement in between here.
+
+I only have the first, if, and the final, else, not the, else, if, which we had in the previous lesson.
+
+And that is because I want you to think for yourself and try to figure out, well, how do you write this with only an if and an else, and not the if else in between?
+
+Give it a shot, and I will show you the solution, as well, when you return back to the screen cast. Okay, hopefully that went well.
+
+Let's do this.
+
+If less than 21, we have to do age is less.
+
+Remember this alligator mouth hair.
+
+And 21 like that.
+
+This means a person is maximum 20 years old.
+
+Then we are to do following, well, console.log.
+
+You cannot enter the pub.
+
+And then, we simply do else, and then, we open and close early brackets.
+
+And here, we can console, log, welcome.
+
+Running the code, we get welcome.
+
+That's correct.
+
+Trying to lower the apes to 20.
+
+We get you cannot enter the club.
+
+Now, a final thing I want to point out is that he could also solve this by using another comparison operator, which is the less than or equal to.
+
+That means a slightly different thing, though, because it checks that this value is less than or equal to 21.
+
+So if we take this back to 21 and run it, you can see, you get, you cannot enter the club. Which obviously is wrong.
+
+They should be able to enter the club at this point.
+
+At this point.
+
+So if we're using the smaller than or equal to operator, we have to use 20, because then we include 20.
+
+That is an upper range that is inclusive of that number.
+
+So now, it works.
+
+Whether you prefer using less than or equal to, or just the less than, is up to you.
+
+You just need to keep in mind how that changes the entire expression.
+
+With that, let's move on. 
+
+
+
+Speaker
+Let's practice if all statements a bit more.
+Speaker
+Because in Norway, we have this super cool tradition where...
+Speaker
+When you reach 100 years old?
+Speaker
+You get a personal birthday card from the king. This is the king. King Harrell the 5th of Norway.
+Speaker
+And in this challenge, we are going to call the logic for this.
+Speaker
+Here it is in pseudocode.
+Speaker
+If less than 100 and here I'm talking about the age variable of course.
+Speaker
+Then you are to log something like not eligible to the console.
+Speaker
+else if
+Speaker
+H variable is exactly 100.
+Speaker
+You are to log something like "Here is your birthday card from the king."
+Speaker
+And else, in all other cases, meaning they're over 100 years old, you get not eligible. You have already gotten one. Because if they're 105 years old, they got their birth, they carded from the king five years ago.
+Speaker
+Okay, go ahead and give this one a shot.
+Speaker
+and then I will show you the solution afterwards as well.
+Speaker
+Let's do this.
+Speaker
+If
+Speaker
+Peace.
+Speaker
+It's less than 100.
+Speaker
+We'll console log.
+Speaker
+Like it all.
+Speaker
+And then we have to do the...
+Speaker
+else with.
+Speaker
+specify the condition.
+Speaker
+- Thanks, everybody.
+Speaker
+It's exactly 100.
+Speaker
+when we control log.
+Speaker
+Here is your birthday card from the king.
+Speaker
+and else in all other cases.
+Speaker
+The person is over 100 years old.
+Speaker
+They have already gotten their card.
+Speaker
+the previous buffet, so not eligible.
+Speaker
+Let's run the code.
+Speaker
+Yes, 100 you are getting the card and
+Speaker
+45.
+Speaker
+You are not eligible.
+Speaker
+At 145, you are...
+Speaker
+not a legible either.
+Speaker
+Finally, before you leave, let's take a closer look at this triple equals here, because it might seem like a little bit of an overkill to have it. Three equal signs after each other.
+Speaker
+That is a valid point you could use to.
+Speaker
+If we run the cold.
+Speaker
+It still works with 145 and actually with 100 as well.
+Speaker
+It would still work.
+Speaker
+You are getting your birthday card.
+Speaker
+However, the thing with two equals.
+Speaker
+so-called double equals, is that it's a little less strict.
+Speaker
+So let's say that you buy mistake passed in a
+Speaker
+string here as well.
+Speaker
+which has the same value of 100, but it's a string and not a number.
+Speaker
+If we run the code...
+Speaker
+can see it still works.
+Speaker
+However,
+Speaker
+With the triple equals...
+Speaker
+Running the cold.
+Speaker
+then it doesn't work now.
+Speaker
+It says not eligible, even though a
+Speaker
+100 is here as a number and 100 is here as a string.
+Speaker
+to
+Speaker
+double equals ignores the fact that
+Speaker
+that this is a string.
+Speaker
+And this is a number.
+Speaker
+basically converts this
+Speaker
+to a number if it's a number on the left hand side as well.
+Speaker
+so that this entire thing would be true.
+Speaker
+However, that's not what we want.
+Speaker
+We actually want to be strict in our code.
+Speaker
+which is why I would recommend you to...
+Speaker
+only use triple equals.
+Speaker
+ignore double equals.
+Speaker
+This forces you as a developer to be a bit more mindful about how you are checking your conditionals.
+Speaker
+need to make sure that
+Speaker
+If you're starting out with a number up here, you're also
+Speaker
+appearing it with a number down in the conditional?
+Speaker
+But that's just good practice being thoughtful as to what kind of...
+Speaker
+data types you are using in your code.
+Speaker
+just stick with triple equals and you'll be just
+Speaker
+just fine.
+Speaker
+With that.
+Speaker
+Let's move on.
+Speaker
+Okay, so now we're back at our Blackjack game and you might have noticed that we've lost the code that we previously had.
+Speaker
+That's the point of Scrimba, you are going to write the code, not me.
+Speaker
+I want you to rewrite the conditional that I created previously.
+Speaker
+but with a slightly different take.
+Speaker
+We have to follow the logic that I lay out in the pseudo-code here.
+Speaker
+So you have to use in the first if clause.
+Speaker
+Less than or equal to operator.
+Speaker
+So you have to set it to less than or equal to 20.
+Speaker
+Then in the else if clause.
+Speaker
+You can use the strictly equal to check if the sum is exactly 21. Finally, you are going to use the else clause and not an else if on the third conditional, which I did previously. So go ahead and do this, and if you can't do it, or want to see my solution, just return back to the screencast, and I will show you how to do the
+Speaker
+Let's do this.
+Speaker
+There's the, some is...
+Speaker
+Listen.
+Speaker
+We're equal to 20.
+Speaker
+Then we are console
+Speaker
+logging out this string right here.
+Speaker
+And then we do else if.
+Speaker
+The same as we did last time, some...
+Speaker
+Triple equals 21.
+Speaker
+That's the Blackjack case.
+Speaker
+And here I'm lazy, so I'll just copy.
+Speaker
+paste this one.
+Speaker
+And then...
+Speaker
+this one in here and then finally
+Speaker
+Mark's doing else if?
+Speaker
+and checking for the condition.
+Speaker
+just doing the else.
+Speaker
+to all other cases.
+Speaker
+And then pasting in this, you are out of the game.
+Speaker
+String like that.
+Speaker
+Good stuff, Lex, run the code, and yes.
+Speaker
+We have 17 here and we rightfully so.
+Speaker
+logged out, do you want to draw a new card?
+Speaker
+If we try to pick one more time.
+Speaker
+With another 10.
+Speaker
+We are out of the game.
+Speaker
+good stuff.
+Speaker
+And how about a four?
+Speaker
+Black dock!
+Speaker
+[MUSIC PLAYING]
+Speaker
+Great job, let's move on.
+Speaker
+You've already worked with some different types of data in JavaScript.
+Speaker
+you've seen numbers.
+Speaker
+And you've seen strings.
+Speaker
+Now, I want to add one more data type to this list. Because often, we don't really need the almost infinite possibilities of numbers and strings of letters. We actually just need two options, like a light switch on or off. Yes or no. True?
+Speaker
+or false.
+Speaker
+And that brings us to the Boolean.
+Speaker
+The boolean is a value that can be either true or false.
+Speaker
+Let's see one in action.
+Speaker
+Imagine we're developing a site from online food retailer. We've collected some information about our customers' eating habits, so we know what food items to show them.
+Speaker
+Often times when storing a boolean, we will choose a name with a verb. So let's come in here, I'm going to delete all of this and I'm going to set up a let with the name is vegan.
+Speaker
+And I'm going to set that to true.
+Speaker
+So the verb here is...
+Speaker
+makes this read like a question.
+Speaker
+Is the customer vegan?
+Speaker
+Yes, that's true. And of course it could also be false.
+Speaker
+Let's just load that out quickly.
+Speaker
+And when we save down in the console, we get false. Let's change this to true.
+Speaker
+OK, so that's working as expected and having a boolean that you can flip to true or false is really, really useful and you're going to see it a lot.
+Speaker
+Let's just dig a little bit deeper.
+Speaker
+Now, site could also allow users to use a special code to get a discount for their food order.
+Speaker
+Let's set up a Boolean to see if they've got a discount code or not.
+Speaker
+And here, the verb could be "has."
+Speaker
+So the question here is, has the user got a discount code? And at the moment the answer is yes, that is set to true.
+Speaker
+Now, let's start to see the real power of a Boolean by using this in a function. And I'm just going to delete our earlier example.
+Speaker
+and I'm going to set up a function here called process order.
+Speaker
+In the body of the function, let's use an if to check if the user has a discount code.
+Speaker
+And if they do, let's just log out that the discount has been applied.
+Speaker
+Okay, now if I call this function...
+Speaker
+And we hit save.
+Speaker
+Down in the console we get discount applied to food order. So this is working because the if is checking if this is true and we know that it is true. We've got it set to true right here.
+Speaker
+If we set this to false,
+Speaker
+We hit save and nothing happens. This code does not run and we can see that a little bit better if we add an else.
+Speaker
+So if this is false, this code doesn't run, this code will run, let's just log out no discount applied.
+Speaker
+Again, we'll save, and I've misspelled console.
+Speaker
+There we are no discount applied.
+Speaker
+Okay, now let's do something a little bit more ingenious. So if this is set to true,
+Speaker
+Then we process an order the discount is applied, now the discount code has been used, so we should set this boolean to false.
+Speaker
+Now, I'm going to call this function not once, but twice. Let's see what happens.
+Speaker
+Okay, so the first time we call the function, we get discount applied to food order. So what's happening there is that has discount code is true. The process order function checks that it finds it's true, so it logs out discount applied to food order. Then it flips that Boolean to false. The second time we run process order has discount code is false, so this code here does not run, but this code does run, so we log out no discount applied.
+Speaker
+So the Boolean is working like a kind of gate. It's letting you through when it's true and not when it's false. It's a really, really useful data type. And I think you're going to see it again very, very soon. Now, just to clarify, it might be a little bit strange that all we need to do is put the variable has discount code in here. You might have expected that we need to ask if has discount code is triple equals.
+Speaker
+To true.
+Speaker
+But actually that is not necessary. In JavaScript, the if statement evaluates the expression inside these parentheses, i.e. all of this code right here, and coerces it to a boolean value. What does that mean? It means it converts it to a boolean value true or false. It does this part for you under the hood. And that is why this works. So actually all we need in here is the variable. And if we were to come in here and replace it with something like an empty string,
+Speaker
+Well, in JavaScript, an empty string is a falsy value, and that means that the if statement will coerce this to false.
+Speaker
+And this code right here.
+Speaker
+will never run. Let's hit save.
+Speaker
+and we see no discount has been applied twice, so this code never ran.
+Speaker
+So just remember that JavaScript is going to do that part for you. It's going to take has discount code.
+Speaker
+and it's going to evaluate it to true or false without you needing to do anything else. Okay, hopefully that has tidied up any confusion. Now let's get back to the project where you're going to see a few more booleons and get a chance to practice with them.
+Speaker
+Okay, so our game is coming along really nicely here.
+Speaker
+However, there's a big problem.
+Speaker
+And that is, let's say that you are playing this game and you get black guys.
+Speaker
+You're 10 and an ace and boom.
+Speaker
+You've got blackjack.
+Speaker
+Down here at Line 13, you've course want to cash out your money.
+Speaker
+I'm going to get the top on the table. However, at this point down on line 13, JavaScript has no way of knowing which console log it logged out.
+Speaker
+It doesn't remember that.
+Speaker
+So what we need to do then is introduce a new variable that keeps track of this step.
+Speaker
+You can call it the state of the game.
+Speaker
+like has the user
+Speaker
+or maybe has a user lost.
+Speaker
+or whatever it is.
+Speaker
+So what we then wanna do?
+Speaker
+is
+Speaker
+for this scenario.
+Speaker
+Have a variable that reflects whether or not the player has blackjack.
+Speaker
+And when I say weather or not.
+Speaker
+Yes or no?
+Speaker
+Is there a date of type and JavaScript that you think might be suitable for describing such a state?
+Speaker
+If you guessed a boolean, a true or fault.
+Speaker
+That is correct!
+Speaker
+So do let.
+Speaker
+Blackjack like that!
+Speaker
+and set that initial value, of course, through false because...
+Speaker
+And default you don't have Blackjack?
+Mic
+(clears throat)
+Speaker
+Then here in
+Speaker
+Tied of the...
+Speaker
+It's close.
+Speaker
+that describes the Blackjack case.
+Speaker
+We're simply going to reassign the Has Blackjack value.
+Speaker
+True instead.
+Speaker
+Now!
+Speaker
+down at line 16.
+Speaker
+If we log this out...
+Speaker
+We have a black check value and then run this code.
+Speaker
+Boom, you can see that.
+Speaker
+We're both logging out online.
+Speaker
+and we have persisted the state. So the line 16, for example, can start writing the code for taking the cache. That's on the table that now is rightfully yours and then deposit it into your account.
+Speaker
+So now we have an app that keeps track of the data of the state in a much more sensible way.
+Speaker
+Now I want you, of course, to write this kind of logic yourself. So in the next cast, I'm going to give you another challenge so that we can keep track of even more of the state of this game.
+Speaker
+I'll see you there.
+Speaker
+Okay, so now it's your turn.
+Speaker
+and you are going to make the state of our game a little bit more robust.
+Speaker
+Because...
+Speaker
+At this point, we're only tracking if the player actually gets blackjack.
+Speaker
+If the player busts out and gets 22 or more...
+Speaker
+We're not tracking it.
+Speaker
+And obviously, we have to do that.
+Speaker
+I want you to create a variable.
+Speaker
+alive.
+Speaker
+and start by assigning it to true, and then you're going to flip
+Speaker
+that value.
+Speaker
+false.
+Speaker
+inside of the appropriate code block.
+Speaker
+So there's three cold blocks.
+Speaker
+the if block.
+Speaker
+Else if block?
+Speaker
+and the else block.
+Speaker
+And you of course don't have to pick the correct code block.
+Speaker
+And then write that line of code.
+Speaker
+flips the value to false.
+Speaker
+And finally, log it out to check that you're doing everything correctly.
+Speaker
+So good luck, go ahead and do this, and then I will show you this solution afterwards as well.
+Speaker
+Let's do this.
+Speaker
+Starting up here.
+Speaker
+We're going to create a look variable called S-alive.
+Speaker
+And assign that to true.
+Speaker
+when you're starting out, the player is still alive, and at which point is the player no longer alive, meaning "out of the game"?
+Speaker
+Well, that's obviously here in the else block because that's the key.
+Speaker
+case if the sum is 22 or more. So here we'll do.
+Speaker
+And then finally, we'll come full.
+Speaker
+It's my life.
+Speaker
+got true because actually we have to like check and rightfully so. The player is not bad.
+Speaker
+about if we
+Speaker
+pretend that we add a third card here.
+Speaker
+really stupid idea because they're a card off.
+Speaker
+after you've got them blackjack, but just pretend that.
+Speaker
+We run the code and boom, fuck.
+Speaker
+equals.
+Speaker
+22 or more?
+Speaker
+So here we'll do.
+Speaker
+It's alive.
+Speaker
+Because
+Speaker
+Force.
+Speaker
+And then finally...
+Speaker
+We'll come full.
+Speaker
+Long.
+Speaker
+It's alive.
+Speaker
+We got true because actually we had blackjack and rightfully so.
+Speaker
+Play your smart bed.
+Speaker
+How about if we...
+Speaker
+pretend that we add a third card here.
+Speaker
+It's really stupid idea because they're a card art.
+Speaker
+After you've got some blackjack, let's just pretend that.
+Speaker
+We'll run the code and boom, false, no longer alive.
+Speaker
+Great job solving this challenge.
+Speaker
+Let's keep up the pace and move on.
+Speaker
+Now that you've learned about Booleans,
+Speaker
+take a look back at the
+Speaker
+the conditional erote.
+Speaker
+Because one thing you probably didn't think too much about when you wrote your conditionals is that the expressions inside of the parentheses would be translated by JavaScript eventually into a boolean.
+Speaker
+So it would be either.
+Speaker
+Or false, that's always the case with expressions passed into conditionals.
+Speaker
+here. We are
+Speaker
+pairing two numbers and one of them are either larger than the other or they are two equal numbers.
+Speaker
+So the claim you come with has to be either true or false.
+Speaker
+Let's try to play this out using an example.
+Speaker
+For example, when you've got two cards, a 10 and an 11, meaning you have blackjack, in that case, some will be 21.
+Speaker
+and a claim you come with inside of the first if statement, obviously that is...
+Speaker
+Hey, you like?
+Speaker
+Meaning it gets evaluated to force.
+Speaker
+In the second condition, though, you're saying that's some.
+Speaker
+is equal to 21.
+Speaker
+we know we are going to translate some into 21 because that's what it is.
+Speaker
+So here you're saying 21, triple equals 21.
+Speaker
+Well, yes, that is a...
+Speaker
+true statement, so that becomes the true Boolean.
+Speaker
+And here.
+Speaker
+You can read through it if false, well then we're going to skip this.
+Speaker
+the body of this statement.
+Speaker
+else if true.
+Speaker
+Yes, we like true.
+Speaker
+then we are going to X.
+Speaker
+that piece of code.
+Speaker
+So this is essentially what happens.
+Speaker
+when you run the code with specific values for these variables.
+Speaker
+We're winding it back.
+Speaker
+What I want to do now is stress test your comparison.
+Speaker
+and Boolean skills.
+Speaker
+So I'm going to paste in a bunch of control logs here.
+Speaker
+And then...
+Speaker
+Comment out or black back game.
+Speaker
+Now your job?
+Speaker
+is to look at each of these expressions.
+Speaker
+and predict whether true or false is logged to the console.
+Speaker
+So, write either true or false after these two slashes.
+Speaker
+on each of the lines from 1 to 7.
+Speaker
+And then of course, when you've given it a shot, run the code and see how it went.
+Speaker
+and then I will do the same thing afterwards as well.
+Speaker
+Go ahead and do this.
+Speaker
+right now.
+Speaker
+Okay, let's do this.
+Speaker
+triple equals three.
+Speaker
+Obviously, that's wrong. It's going to log out to false.
+Speaker
+than two.
+Speaker
+That is true.
+Speaker
+12 is greater than 12, no 12 is not
+Speaker
+than 12, it's exactly the same, so this will be a false statement.
+Speaker
+We is less than zero, again, that's also false.
+Speaker
+3 is larger than
+Speaker
+or equal to three.
+Speaker
+Yes, that will be a true statement.
+Speaker
+It's not larger than, but it is equal to.
+Speaker
+11 is less or equal to 11.
+Speaker
+Again, it's not less than 11, but it is equal to 11, so it's true.
+Speaker
+And 3 is less or equal to 2, no, 3 is actually larger than 2.
+Speaker
+meaning that this is going to be forced.
+Speaker
+this is my prediction.
+Speaker
+Let's
+Speaker
+Run the code.
+Speaker
+Bring up the control.
+Speaker
+And yes, few.
+Speaker
+I was right.
+Speaker
+Very good.
+Speaker
+Let's move on.
+Speaker
+Welcome back my friend. I hope you are ready for a new challenge because that is exactly what I have in store for you now. Actually, it's a three-part challenge.
+Speaker
+because you are going to make our program a little bit more robust in the sense that.
+Speaker
+It might be at least...
+Speaker
+console looks here that we're just throwing out into the void, logging to the console and forgetting all about.
+Speaker
+can be used later on down line or at
+Speaker
+of some reason.
+Speaker
+I want to keep track of them. Maybe we want to render it out.
+Speaker
+locations in the app, maybe there's a notification and there's text, there's a log of messages you've gotten.
+Speaker
+Maybe we want to repeat it? I don't know. There's tons of reasons for keeping this data in very few reasons for just logging it out.
+Speaker
+We want to keep it in a variable, just like we've done here.
+Speaker
+with the Houseback Jack and Israel.
+Speaker
+Your three-part challenge is to first declare.
+Speaker
+a variable.
+Speaker
+message.
+Speaker
+And then assign its value to an industry, and then you're going to reassign the message variable.
+Speaker
+To the screen, we're logging out.
+Speaker
+Notice here that I'm using some fancy words like I'm saying.
+Speaker
+clear instead of creative variable.
+Speaker
+I'm saying assign instead of set value.
+Speaker
+because I think you're now ready to hear some of these fancy JavaScript words because there are subtle differences between these words.
+Speaker
+like here we are actually
+Speaker
+they are in the variable.
+Speaker
+And then we are...
+Speaker
+Signing it when we set the value to true.
+Speaker
+This is, after all, called to the assignment operator in JavaScript.
+Speaker
+then naturally so when we
+Speaker
+change a variable, or assign it yet again, we
+Speaker
+reassign it.
+Speaker
+So I just want to use the correct terminology here.
+Speaker
+But I think it's important that you don't get put off by all of these words and think that you have to remember them all, you do not.
+Speaker
+It's perfectly fine to talk about this.
+Speaker
+using your own words.
+Speaker
+create change, set the value, whatever.
+Speaker
+just want you to also.
+Speaker
+be exposed to these technically correct.
+Speaker
+a waste of expressing it.
+Speaker
+Anyway.
+Speaker
+talk.
+Speaker
+As I said, step two, you are going to...
+Speaker
+reassign
+Speaker
+message variable to the string that we're logging out.
+Speaker
+I don't want any more control logs inside of these.
+Speaker
+Three cold blocks.
+Speaker
+because the only cold block is...
+Speaker
+the one you're going to create in part three of the challenge when you are going to log out the message variable.
+Speaker
+So go ahead and give this your best chart and then return back to this screencast when you want to see my solution.
+Speaker
+Okay, hopefully that went well.
+Speaker
+If not, no worries, let's do this together.
+Speaker
+First, we'll start by declaring this.
+Speaker
+Let variable call it message and we'll set it to an empty string.
+Speaker
+Then, online 11, 13,
+Speaker
+16.
+Speaker
+We need to replace the control log with a message.
+Speaker
+equals like that and also remove this.
+Speaker
+close parentheses.
+Speaker
+We'll be the same thing here.
+Speaker
+Move this one.
+Speaker
+and the close parentheses and then write message.
+Speaker
+equals.
+Speaker
+Finally.
+Speaker
+Here as well.
+Speaker
+And then we are ready to log it out.
+Speaker
+down here at Line 21.
+Speaker
+I'll log out to message, run the code.
+Speaker
+And as you can see, we're logging you out of the game.
+Speaker
+That is correct because we...
+Speaker
+have this really stupid move where we go.
+Speaker
+Blackjack would be asked for new card.
+Speaker
+So, remove this, run the code. Yes, you have black guys.
+Speaker
+But again, with for example 14, and yes, I can now go a new cart.
+Speaker
+Great job reaching this far, let's move on.
+Speaker
+Okay, now it's time to fix our biggest flaw in our black jacket, which is that it has no user interface.
+Speaker
+If we want this to be a hugely successful online Blackjack game,
+Speaker
+has to use HTML and CSS.
+Speaker
+so that users can play it via a browser.
+Speaker
+And I've actually set up the basics for you here, you can see a
+Speaker
+an HTML file with a head and a body, and then inside of the body, we have an H1 with a text blackjack.
+Speaker
+And also we are linking to the JavaScript file here on line eight.
+Speaker
+And as you can see, if we bring up the Mini-Brouser.
+Speaker
+This just renders out the atrial attack.
+Speaker
+So, your job now is to link this HTML file.
+Speaker
+to the CSS file.
+Speaker
+You can see I've created just one CSS rule in this file.
+Speaker
+And it will be applied.
+Speaker
+changing the color of the title.
+Speaker
+when you manage to.
+Speaker
+add a link to
+Speaker
+Here's the file here.
+Speaker
+on mine.
+Speaker
+So almost every single time you have to search on Google for how to link to CSS from HTML.
+Speaker
+I end up at something like this.
+Speaker
+I want you to do the same thing.
+Speaker
+And one tip would be to find this W3 schools. I'd hear as they often pop up on Google and contain the necessary information.
+Speaker
+Go ahead and figure this out on your own, and then I will show you the solution afterwards as well.
+
+Speaker
+Hopefully you nailed that one.
+Speaker
+If not, no worries, let's first check out Google.
+Speaker
+And then if we click...
+Speaker
+into the W3 school site. You'll see the following.
+Speaker
+And it tells us that there are three ways to insert CSS, external, internal, and inline. And we are using an external CSS file, so we want to
+Speaker
+Scroll down to external CSS.
+Speaker
+If we do that, we see the code here and the line we're looking for is this one link, rel equals title sheet.
+Speaker
+a draft equals.
+Speaker
+MiceVile.cs.
+Speaker
+Link.
+Speaker
+Row.
+Speaker
+And that is short for it, relation.
+Speaker
+So what is the relation between this HTML file and the current file you're going to point to now? Well, it is that the file you are pointing to
+Speaker
+We say, "Spile sheet."
+Speaker
+Because as you remember, CSS is short for cascading style sheets.
+Speaker
+And then it's the Adref.
+Speaker
+Our case is index.cs.
+Speaker
+We are in the same biorectary, so we don't need to navigate into a folder or anything like that.
+Speaker
+We'll just write index.css.
+Speaker
+And the age-ref attribute is something you should be familiar with by now, as that's also what we're used when we are creating links.
+Speaker
+Now let's run this code boom you can see
+Speaker
+The colon has changed.
+Speaker
+meaning we are indeed importing this style sheet.
+Speaker
+Great job.
+Speaker
+Now it's time for you to spy all this up.
+Speaker
+Because as you can see, it looks kind of bad.
+Speaker
+I've added a few more paragraphs here as you can see one which is
+Speaker
+says you want to play around and has an idea of
+Speaker
+and then just two other paragraphs that will display the cards and the sum eventually.
+Speaker
+And your job now is to take this HTML and make it look like this.
+Speaker
+If we head into the index.css file, you can see it has complete the CSS styling according to the provided design.
+Speaker
+And here I've created two.
+Speaker
+new selectors for you, the body and the message out.
+Speaker
+And the thing is, you can create this entire design.
+Speaker
+by only using.
+Speaker
+to selectors.
+Speaker
+So that's why I have them here for you.
+Speaker
+Also, add it to a table about PNG.
+Speaker
+inside of an images folder.
+Speaker
+That is for the seasonal background that we are using here.
+Speaker
+And you've learned all about how to do this styling in previous modules of the career path. So if you struggle, you can go back and rewatch some of those lectures if you want.
+Speaker
+Now, before you start solving this challenge...
+Speaker
+I'm going to add the font family for you because.
+Speaker
+We're using the treble shape font here, and you haven't really learned how to do that, so I'm going to do it for you.
+Speaker
+We do folks on the body.
+Speaker
+And be well, specify.
+Speaker
+- Cebu Shade.
+Speaker
+And as you notice, what happened now was that the editor
+Speaker
+made me a bunch of other fonts as well.
+Speaker
+And this is called a "phonstack".
+Speaker
+And the reason we use font stacks, because if your operating system doesn't have trebuchet MS installed,
+Speaker
+Well, then your browser can't show that font, unless you've also imported it from Google fonts, for example, or included it in your project. Neither of which we have done right now.
+Speaker
+So, if your operating system can show troubleshade MS,
+Speaker
+Then we're telling you to look for a new CSM's unicorn then.
+Speaker
+And if you don't have that, either well look for it with the agr And so on and so on. So it's kind of ensures that at least we'll find a somewhat similar form as it moves downwards in the stack. At least find a sans sary fault here, which is our final choice.
+Speaker
+But let's stop with Fonts there, I don't want to get deeper into it.
+Speaker
+And now we have the AAA font visible.
+Speaker
+hopefully it's visible on your end as well because trebuchet is
+Speaker
+One of those funds that are so-called web safe, meaning that almost all operating systems have them installed.
+Speaker
+So it's safe to use.
+Speaker
+Now I want you to...
+Speaker
+Take a look at this design and add whatever CSS you need to the body and the message out.
+Speaker
+So that you turn this boring page into what looks much more like a real black jacket.
+Speaker
+So go ahead and do this.
+Mic
+(grunting)
+Mic
+(mumbles)
+Speaker
+Okay, hopefully that went well.
+Speaker
+I'm going to start with the background image.
+Speaker
+which then affects this table.png here. I can do URL, open and close parentheses.
+Speaker
+and navigate into the images folder, grab a hold of the table dot
+Speaker
+Y'all?
+Speaker
+Now we can see, we have the nice background.
+Speaker
+However, if I drag this wide, you can see that...
+Speaker
+some point.
+Speaker
+reach the end of the image and CSS adds the image to get again after that. Do we get this?
+Speaker
+I'll be looking.
+Speaker
+language you don't want.
+Speaker
+We instead of when you use the background size property.
+Speaker
+and set that to cover.
+Speaker
+No matter how wide you make it, these image still covers the full width.
+Speaker
+Okay, next up is to center this text and make it white.
+Speaker
+A line center to center everything.
+Speaker
+And...
+Speaker
+Alert.
+Speaker
+White, like that.
+Speaker
+So with this, we are turning everything into white.
+Speaker
+except for the atron.
+Speaker
+which you can see here we have specifically specified that the H1 should be color golden rub and that overrides.
+Speaker
+the color right on the body element.
+Speaker
+You can see here the text is a bit bolder, so we want to do that as well. We want to do fun.
+Speaker
+wait.
+Speaker
+Bold like that.
+Speaker
+Starting to look good.
+Speaker
+There's just one final thing to start you can see the message element, which is the message for the user is in italic.
+Speaker
+Here, it's still just normal.
+Speaker
+In the message out, we'll do it.
+Speaker
+File and set back to you.
+Speaker
+And there we have it, neat looking black back game.
+Speaker
+So without a letter move on.
+Speaker
+Okay, so now we're
+Mic
+(dog barking)
+Mic
+Off!
+Mic
+Yeah.
+Mic
+(upbeat music)
+Mic
+(doorbell rings)
+Speaker
+to enable our user.
+Speaker
+click them up.
+Speaker
+play the game.
+Speaker
+And we're going to do this through.
+Speaker
+a challenge, of course.
+Speaker
+I'm really excited about this one because it includes both HTML.
+Speaker
+CSS.
+Speaker
+and JavaScript.
+Speaker
+So this is the first time where you'll use all three languages.
+Speaker
+to solve the problem.
+Speaker
+And the reason I did it so cool
+Speaker
+is because this is how it works in real life when you get a job as a professional developer.
+Speaker
+you'll juggle between HTML, CSS and JavaScript.
+Speaker
+all the time.
+Speaker
+And this is an opportunity to start practicing exactly that.
+Speaker
+So it's a three-part challenge.
+Mic
+(laughing)
+Speaker
+starting here in the HTML where you are going to create a button.
+Speaker
+Let's start the game.
+Speaker
+And it should call a start game function.
+Speaker
+when it's clicked.
+Speaker
+So, obviously, then you also need to create that Start Game Function.
+Speaker
+You'll do that in the index.js.
+Speaker
+Here we are to create the Start Game function.
+Speaker
+and move the condition will be low.
+Speaker
+Line 11 to 20.
+Speaker
+these lines into the body of the function. So that
+Speaker
+This code?
+Speaker
+run when the button is clicked.
+Speaker
+You have to make the button, look good for the user.
+Speaker
+You are going to style it according to the provided design.
+Speaker
+That is exactly here. You can see the start button.
+Speaker
+So just click to open this slide whenever you need to take another look at it.
+Speaker
+doing this.
+Speaker
+translating a design into CSS is something the frontend developers do.
+Speaker
+every single day, so it's great practice.
+Speaker
+I've given you three.
+Speaker
+for properties here?
+Speaker
+There's the color of the text.
+Speaker
+should have this hex value, the width should be 150 pixels.
+Speaker
+and the background should be golden-robed.
+Speaker
+same as the text color on the atron.
+Speaker
+This is a big one.
+Speaker
+So I can totally understand if you'll struggle a bit going through this one.
+Speaker
+But give it your best shot and then return to the screencast when you want to see my solution.
+Mic
+(clicking)
+Mic
+Thank you.
+Speaker
+Okay, hopefully that's went well.
+Speaker
+Let's do this.
+Speaker
+Here we'll do it.
+Speaker
+that opening tag, and then I'll do the closing tag as well.
+Speaker
+And, inside of all right, start game.
+Speaker
+Let's run the code and it looks.
+Speaker
+not particularly good, but it's at least there and it's actually centered.
+Speaker
+The reason for that is because...
+Speaker
+Here on the body, we
+Speaker
+We are centering.
+Speaker
+All of our tips.
+Speaker
+and that also centers the button.
+Speaker
+Next up, we
+Speaker
+>>
+Speaker
+the start game function.
+Speaker
+when it's clicked, and if you remember how that was.
+Speaker
+Then you'd write.
+Speaker
+on quick.
+Speaker
+equals.
+Speaker
+Then we start
+Speaker
+game.
+Speaker
+open close parentheses.
+Speaker
+inside of a screen right here. So when the button is clicked, we're going to call or invoke.
+Speaker
+the Start Game Function.
+Speaker
+Then we need to create that function.
+Speaker
+And if you remember how to do that, it is through the function keyword.
+Speaker
+function and
+Speaker
+Open a closed parentheses and then...
+Speaker
+curly brackets for the body of the function.
+Speaker
+So out of here, we are going to take this code.
+Speaker
+Copy it.
+Speaker
+Easton.
+Speaker
+we get it a top so that it looks better.
+Speaker
+like that and remove the
+Speaker
+And the lines, now we have this.
+Speaker
+So let's rerun the code and see if it works. Yes.
+Speaker
+Previously, we got this console log just by refreshing the page.
+Speaker
+But that doesn't happen now. I have to actually click the start game.
+Speaker
+Then we run this, then we come solo out the message.
+Speaker
+the
+Speaker
+Now let's move on to the CSS.
+Speaker
+This is how we want it to look.
+Speaker
+Let's take the first three provided the sign hints and see how close we get just by implementing them.
+Speaker
+Text color, not as the...
+Speaker
+Color property.
+Speaker
+Hardly see it, since the text is so thin, but that's okay for now.
+Speaker
+Let's just set the width.
+Speaker
+With 150 pixels like that, okay, looks
+Speaker
+a little bit better.
+Speaker
+and the background.
+Speaker
+Golden Run.
+Speaker
+Okay, so.
+Speaker
+Looking a little bit better?
+Speaker
+Not quite this design here.
+Speaker
+As you can see, it has some space above and below.
+Speaker
+The text.
+Speaker
+or it's just one, it's much more crammed.
+Speaker
+Let's add that.
+Speaker
+And if you remember from the CSS section.
+Speaker
+You could add that space by using the padding.
+Speaker
+That's padding top and padding bottom.
+Speaker
+I'm going to set five pixels.
+Speaker
+- About right.
+Speaker
+into five pixels there as well.
+Speaker
+Yeah, not too bad, however.
+Speaker
+I mentioned.
+Speaker
+This text is really thin.
+Speaker
+And here, it's much thicker.
+Speaker
+Let's actually do.
+Speaker
+- Pumped.
+Speaker
+Wait.
+Speaker
+Yes, that looks much better.
+Speaker
+Now the next thing I want to fix is the border around the button because you can see it's totally clean here and has no border.
+Speaker
+but the default styling that our browser provides has this little border.
+Speaker
+So we want to do it.
+Speaker
+Okay, now it actually.
+Speaker
+Pretty similar.
+Speaker
+or most identical.
+Speaker
+but only one thing separates them.
+Speaker
+Nice, you can see the edges are
+Speaker
+on this one.
+Speaker
+where's the edges?
+Speaker
+a bit rounder on our provided assignment.
+Speaker
+>> That's the end.
+Speaker
+order.
+Speaker
+Radius.
+Speaker
+And...
+Speaker
+pretty subtle.
+Speaker
+I'm gonna try.
+Speaker
+Two pixels.
+Speaker
+Yes.
+Speaker
+That looks...
+Speaker
+as far as I can see, identical.
+Speaker
+This was a huge challenge, and you had to contact Switch between HTML, CSS and JavaScript, so be really proud of yourself.
+Speaker
+for reaching this farm.
+Speaker
+If you struggled and didn't really manage to get to the finish line on your own.
+Speaker
+I think it should just go back and try it again, now that you've seen my solution.
+Speaker
+That's a great thing to do to reinforce what you've just learned.
+Speaker
+Whatever you do, I will see you in the next lesson.
+Speaker
+Okay, so now our player can click the start game button like this.
+Speaker
+However, we're only logging out the message. Obviously, we don't want to do that. We want to display that info.
+Speaker
+on the page.
+Speaker
+along with, of course, information about the cards and the sum.
+Speaker
+But starting with the message, I--
+Speaker
+I want you to solve a two-part challenge.
+Mic
+(laughs)
+Speaker
+First, you are going to store the message L paragraph.
+Speaker
+And that is this one right here.
+Speaker
+In a variable called "MessageL" using the Camel case, naming convention.
+Speaker
+You're going to display the message.
+Speaker
+using message.l.textcompet.
+Speaker
+Then of course you can remove the control of right here since we don't need it anymore.
+Speaker
+as the message will pop up here in our app instead.
+Speaker
+So go ahead and give this a shot and return back to me when you want to see my solution.
+Speaker
+Okay, so the way to do this
+Speaker
+is.
+Speaker
+If you remember, first by creating a variable with L that.
+Speaker
+message.
+Speaker
+And then using the document keyword.
+Speaker
+passing in the ID.
+Speaker
+which we can see from the...
+Speaker
+HDMI one just copy
+Speaker
+from there, actually?
+Speaker
+Paste then in here.
+Speaker
+That's always...
+Speaker
+Control-logging to see that we are on the right track.
+Speaker
+Running this code and yes, there we can see we are logging out to that element.
+Speaker
+Now it's just a matter of deleting this line.
+Speaker
+Being Message L
+Speaker
+Got the text content.
+Speaker
+And what do we want to set the text content to?
+Speaker
+We want to set it to message.
+Speaker
+If we now run the code.
+Speaker
+Hit the start game button. Yes, there we go. Do you want to draw a new card?
+Speaker
+Great job.
+
+Speaker
+Now there's one thing I want to do before we round off and that's actually to remove these emojis because
+Mic
+(camera clicks)
+Speaker
+when they are italicized, they don't look that good.
+Speaker
+And while that isn't the most complicated thing to fix, it's
+Speaker
+It's not something I think you should learn.
+Speaker
+right now.
+Mic
+(laughs)
+Speaker
+I want to keep up the pace. And also, when we see this text here rendered on the page,
+Speaker
+It's kind of our dealer speaking to us in italic text and I
+Speaker
+I don't think our dealer should show that much emotion, so it makes sense to remove these.
+Speaker
+More treats are like this.
+Speaker
+And also maybe make it a bit more neutral. Dealers, we'll just tell us that we have blackjack. Won't shout out.
+Speaker
+Thanks more, sense?
+Speaker
+on your car. Yeah.
+Speaker
+good if we get blackjack. Yep.
+Speaker
+I think that looks good.
+Speaker
+So with that, let's move on.
+Speaker
+Okay, so let's make our game a little bit more useful because now you can click this start game button and indeed
+Speaker
+We get the message from the dealer.
+Speaker
+But we have no idea what are some.
+Speaker
+cards are, so we obviously need to render that out.
+Speaker
+And we're going to start with the summer.
+Speaker
+So it's a three-part challenge where you first have to head into the HTML.
+Speaker
+And there give the some power graph that is...
+Speaker
+this one, an ID of some Dash L.
+Speaker
+You are to store the Sumpar Ref in a variable called Sumpar Ref.
+Speaker
+like
+Mic
+(bell dings)
+Speaker
+this in Camel case.
+Speaker
+Finally, render the sum out.
+Speaker
+So here I'm talking about the actual.
+Speaker
+numeric sum.
+Speaker
+on the page.
+Speaker
+using this format.
+Speaker
+So some.
+Speaker
+call on and then the given sum you have up here.
+Speaker
+So here you have to...
+Speaker
+keep this text which is already in the garm.
+Speaker
+But we have done that before, so hopefully you'll manage it. If that no worries, you can just revert back to the screencast and I will show you how to do it as well.
+Speaker
+But go ahead and give this your best shot.
+
+Speaker
+Let's do this. First, we'll give this an ID of...
+Speaker
+some gosh, El.
+Speaker
+Moving over to the JavaScript, we'll do "let some out with the..."
+Speaker
+Camel case at this time?
+Speaker
+document.
+Speaker
+Get element.
+Speaker
+by ID.
+Speaker
+open close parentheses and the quotes passing in the ID that we just added to the
+Speaker
+HTML Element, some BASHL.
+Speaker
+Now it just to be certain, let's just.
+Speaker
+be somewhere else.
+Speaker
+From the code, yes, indeed we are grabbing the element.
+Speaker
+And then we need to render out.
+Speaker
+String of.
+Speaker
+And then the actual sum, which in this case is 14.
+Speaker
+from this variable up here.
+Speaker
+care into the
+Speaker
+element itself.
+Speaker
+And the way I'll do that is
+Speaker
+use some L.
+Speaker
+And then text content, which you should see in a few times by now.
+Speaker
+And set that equal true.
+Speaker
+Not only the sum,
+Speaker
+because if
+Speaker
+We do that.
+Speaker
+Let's rerun the code and stop the game. Then we simply just clear out the existing text.
+Speaker
+we want to.
+Speaker
+Keep the sum there.
+Speaker
+And we can do that in multiple ways.
+Speaker
+But we all do it. It's simply just right sum.
+Speaker
+colon space.
+Speaker
+and then plus here.
+Speaker
+So we just reconstruct the default text as well, in addition to the sum. I think this is a nice way of doing it.
+Speaker
+See if we run the cold.
+Speaker
+Stop the game, yes, there we go.
+Speaker
+Now, before we move on...
+Speaker
+I want to teach you about another way of grabbing elements from the bomb.
+Speaker
+because we've used to get elements by ID a few times now, so I'm assuming you're comfortable with this technique and are ready to learn another one.
+Speaker
+And that is something called the query selector.
+Speaker
+to learn that.
+Speaker
+comment out this one.
+Speaker
+and copy it to a new line where we can change it.
+Speaker
+And here, instead of get element by ID, we'll do...
+Speaker
+query.
+Speaker
+Select her, like that.
+Speaker
+Since this is a more dynamic method, we have to be a bit more specific in the value we pass into it. So here, we actually have to pass in a hashtag in front of the Somal to
+Speaker
+to tell the query selector, it's actually the element with the ID of some well that we're looking for.
+Speaker
+because unlikely get element by ID.
+Speaker
+We're not specifying that it's an ID.
+Speaker
+In the method name.
+Speaker
+It's just called
+Speaker
+where we select her, which is kind of a broader expression.
+Speaker
+So, query, that's another word for question.
+Speaker
+and selector that refers to CSS selectors. So we're kind of...
+Speaker
+asking for an element by
+Speaker
+by its selector.
+Speaker
+then we specify the given selector inside of the parentheses.
+Speaker
+So here, if we run this.
+Speaker
+Starkey.
+Speaker
+the exact same thing happens.
+Speaker
+Now if you've forgotten what a CSS selector is.
+Speaker
+We can head over to the CSS and it's these guys.
+Speaker
+right here. The body, that's just selecting the body element.
+Speaker
+this one.
+Speaker
+And then there's D.
+Speaker
+ID selector right here, you can see we are using the hashtag.
+Speaker
+Grab the message "L".
+Speaker
+Because...
+Speaker
+This paragraph?
+Speaker
+has an ID of message-l.
+Speaker
+Likewise.
+Speaker
+has an idea as well.
+Speaker
+So we're using the hashtag #T
+Speaker
+cell-corous lecture.
+Speaker
+This sum dash L comes in the form of an ID.
+Speaker
+Now, this means that.
+Speaker
+We could change this.
+Speaker
+a class instead.
+Speaker
+However, then we also have to change this hashtag and replace it with a dot.
+Speaker
+Hopefully you remember it that way to select CSS classes is by using the dot.
+Speaker
+free run this
+Speaker
+It still works.
+Speaker
+And actually, we could even pass in just the element name as well.
+Speaker
+It's with BreakoutApp since we're now.
+Speaker
+Okay.
+Speaker
+layering out the entire body.
+Speaker
+when we are running this piece of code down here on line 11.
+Speaker
+because now, somehow, actually.
+Speaker
+refers to this entire body.
+Speaker
+So as you probably understand, Queer's Lecture is very powerful and you will see it used in a lot of tutorials here on Screenma.
+Speaker
+best for right now.
+Speaker
+I just wanted to show it to you so that you are prepared once you see it in other tutorials and out in the wild.
+Speaker
+in the near future.
+Speaker
+I am going to stick with.
+Speaker
+the document.getElementByID as that does the job for us, and it's also a very simple method to understand.
+Speaker
+So I'd like to avoid the added complexity of jumping between get element by ID and queries lecture if we can.
+Speaker
+With that, let's just move on.
+
+Speaker
+Okay, let's continue building that muscle memory of yours. You are going to do almost the exact same thing as you did with the sum, but
+Speaker
+this time with the carbs. Because obviously...
+Speaker
+When you start the game, you can see you're somehow, but you can't see your cards.
+Speaker
+has to be fixed. So it's the same 3-part challenge.
+Speaker
+starting in the HTML where you are to give the cards paragraph an ID of card cell.
+Speaker
+Then in the JavaScript, you are to store the cards paragraph in a
+Speaker
+valuable called
+Speaker
+So, with Camel case.
+Speaker
+and then finally, run grid out in this format right here.
+
+Speaker
+So go ahead and do this right now, and then I will show you how I would do it when you revert back to the screen.
+Speaker
+screencast as well.
+Speaker
+Okay, let's do this.
+Speaker
+giving this an ID of
+Speaker
+Cartel?
+Speaker
+storing the card paragraph in a variable called also cartel let's
+Speaker
+cards.
+Speaker
+Elle, in Camel case this time.
+Speaker
+Document stop getting
+Speaker
+element.
+Speaker
+ID.
+Speaker
+Haunting in.
+Speaker
+Parks.l like
+Speaker
+that. Now I'm just going to jump straight to this line here and do
+Speaker
+cards l dot
+Speaker
+Thanks to content.
+Speaker
+equals.
+Speaker
+constructing the entire contents of the pyre raft this time, so we're clearing out the text that's already there and replacing it with a new
+Speaker
+Cards cool on.
+Speaker
+This will be actually cleared out and we'll
+Speaker
+you can place using JavaScript.
+Speaker
+Then plus the first card.
+Speaker
+And then I have to add a space between the first card and the second card.
+Speaker
+And then the...
+Speaker
+card like that.
+Speaker
+If I run this code.
+Speaker
+start the game.
+Speaker
+And there we go, we have both of the cards rendered out.
+Speaker
+Great job.
+Speaker
+Let's move on.
+Speaker
+So our game really starts taking shape now. We hit the start game button and we get the message the cards in the sum. However, it creates a
+Speaker
+The critical part of Blackjack is the ability to grow a new card from the deck. So we need to start building that feature and we are going to, first, begin with creating the new card button that you can see on the slide here.
+Speaker
+So this three-part challenge.
+Speaker
+You are going to first head into the HTML and create that new card button.
+Speaker
+and then make it run a new card function.
+Speaker
+When it's clicked.
+Speaker
+And then in the JavaScript, you have to create.
+Speaker
+Yate that new card function?
+Speaker
+And for now, it should just log out, join a new card from the deck.
+
+Speaker
+the CSS. You need to make sure that
+Speaker
+when these two buttons are rendered out vertically?
+Speaker
+like this, so above each other.
+Speaker
+You'll need to make sure that this...
+
+Speaker
+small space between them is added because it won't be added by default.
+Speaker
+Now, if you--
+
+Speaker
+In large in this browser, make it wider, they will render out besides each other.
+Speaker
+But you are not too worried about that.
+Speaker
+So make sure to keep this browser window a little bit narrow so that they are rendered out under each other.
+
+Speaker
+and then make sure you get this little gap here.
+Speaker
+This is again, A.
+
+Speaker
+Very holistic challenge, you're to write JavaScript HTML.
+
+Speaker
+and CSS, just like it is out in the real world.
+
+Speaker
+So go ahead and give this your best shot right now.
+
+Speaker
+Okay, hopefully that went well.
+Speaker
+not no worries, let's do this together.
+Speaker
+In the HTML, we are starting with the...
+Speaker
+open closing tag.
+Speaker
+new card like this
+Speaker
+that.
+Speaker
+just render it out.
+Speaker
+And here we got it, actually.
+Speaker
+got them beside each other, we want them vertically like this, so they're already ready to see.
+Speaker
+That we are missing in the gap that we wanted?
+Speaker
+If that's the CSS part of the challenge, let's continue on with the HTML and get that wrapped up.
+Speaker
+Quick equals.
+Speaker
+and then run this new card function, which we haven't created yet.
+Speaker
+which we are going to create right now.
+Speaker
+function
+Speaker
+new card, open and close parentheses.
+Speaker
+And then the curly brackets for the body of a function.
+Speaker
+find here.
+Speaker
+logging out.
+Speaker
+this spring.
+Speaker
+We got provided in the comments.
+Speaker
+Like that.
+Speaker
+I'll run this code.
+Speaker
+new card and we are
+Speaker
+or logging it out.
+Speaker
+final step.
+Speaker
+is to add this gap right here. We need to head into the CSS.
+Speaker
+And there are multiple ways to do this. One way is to just say that we want any button.
+Speaker
+to have a little bit of margin below them.
+Speaker
+So this is about four pixels, so we can do.
+Speaker
+like that, there we see that our button works. Alternatively, let's say that we in some case end up with a situation where something comes too close to the button.
+Speaker
+on the top side of it.
+Speaker
+Maybe we need...
+Speaker
+margin on top of it as well.
+Speaker
+If I now add margin bottom
+Speaker
+margin top.
+Speaker
+And four pixels here.
+Speaker
+Martin top four pixels, which you'll see is that.
+Speaker
+The gap here became twice as wide because it has the top margin that pushes it down.
+Speaker
+And also the start game button that uses its margin bottom to get the gap even larger.
+Speaker
+So what we then instead can do...
+Speaker
+Just take it.
+Speaker
+pixels on each.
+Speaker
+Now.
+Speaker
+something that looks very much like this.
+Speaker
+and we have creator buttons so that they always have some space below and above themselves.
+Speaker
+And I think that makes a lot of sense, as buttons usually want a little bit of space around them.
+Speaker
+With that, let's move on.
+Speaker
+Okay, let's make our new card function a bit more useful.
+Speaker
+because now it's just rendering out this string.
+Speaker
+What we wanted to do is to...
+Speaker
+Actually draw a new card.
+Speaker
+And then add that new card to the sum.
+Speaker
+And then rerun the code that is inside of the start game function so that the
+Speaker
+some is added to the page.
+Speaker
+Actually, later down the line, we also want to show the new part, of course, but as for now, we're just going to worry about the summer.
+Speaker
+This is a three-part challenge, where you are to first create a
+Speaker
+hard variable.
+Speaker
+And we're still just working with hard coded card variables.
+Speaker
+You're just going to code it to a number between 2 and 11.
+Speaker
+Then you are going to add this new card.
+Speaker
+to the sun variable.
+Speaker
+And this is some variable as the one up here, of course.
+Speaker
+which currently is the first card plus the second card.
+Speaker
+And in this case, it will be plus the third card of swaths you need to.
+Speaker
+plus equal to the sum variable.
+Speaker
+And then finally, you are going to just call the StartGame function.
+Speaker
+Because what does this start game function actually do?
+Speaker
+Well, first, it's not the same.
+Speaker
+renders out the two
+Speaker
+In our case now,
+Speaker
+have added a third card.
+
+Speaker
+This will still be wrong.
+]
+Speaker
+Line 13 will render out actually the new sum because
+Speaker
+because at this point, some will have changed, since we'll have modified it down here.
+Mic
+(laughing)
+Speaker
+show the message based upon
+Speaker
+new update at some.
+Speaker
+Actually.
+Speaker
+It seems that we can use this start game function.
+Speaker
+even after we've drawn a new card.
+Speaker
+And thus we're going to rename it a bit later, but as for now, let's just keep it how it is, and your job is just to call the start game function here.
+Speaker
+You're online, 33.
+Speaker
+So go ahead and give this challenge your best shot and then I will show you the solution as well afterwards.
+Speaker
+Okay, let's do this.
+Speaker
+here. We'll set that to a random number between two and eleven. I'll do seven and then we're going to add the new card to the sum variable.
+Speaker
+remember how we add numbers to an existing variable xv other plus equal operator. So we'll do some plus equal card.
+Speaker
+And then we'll call start game.
+Speaker
+I can't even like that.
+Speaker
+Let's rerun the code. First, do start game.
+Speaker
+Okay, you wanna draw new card? I happen to wanna do that, so I'll hit new card. And boom, I drew the seven card, which then made the sum reach 21, which then again made our dealer tell us that we got blackjack.
+Speaker
+So that is exactly what we want.
+Speaker
+Now, let's see what happens if we, instead of a seven, got an eight.
+Speaker
+For now, rerun the entire code, start game, and then hit new card.
+Speaker
+Then we're out of the game since we have.
+Speaker
+some equals 22.
+Speaker
+And if we got a six instead,
+Speaker
+We're in the code, start game, you card. Then we still get the do you want to draw a new card? Texts since we'll still be low 21.
+Speaker
+Now I can actually hit the new card yet again, and then we are out of the game, now we're at 26.
+Speaker
+So this works for multiple cards.
+Speaker
+Of course, it's only the sum that's reflected right now, not the card, so we'll have to fix that in a bit.
+Speaker
+For now, let's just move on and first fix this little problem that the start game function name doesn't really make sense anymore since we're
+Speaker
+calling start game here at a point where the game has already started, so...
+Speaker
+It doesn't really add up.
+Speaker
+So let's move on to the next cast.
+Speaker
+The problem now is that the start game function is triggered both when we hit the start game button, which makes a lot of sense. But
+Speaker
+Also, when we click the new card button,
+Speaker
+Even though the new card button triggers the new card file.
+Speaker
+I'm sure.
+Speaker
+This one right here.
+Speaker
+that function itself.
+Speaker
+goals start game as well.
+Speaker
+And while this makes sense, because we want to run this code.
+Speaker
+The fact that start game still is called start game.
+Speaker
+Doesn't really make sense because if another developer comes in here.
+Speaker
+And looks at that code.
+Speaker
+It'll be like, "Why are we starting the game all over again when clicking a new card?"
+Speaker
+I
+Speaker
+So what do we want to do here? It's actually just
+Speaker
+change the name of the start game function.
+Speaker
+For example, too.
+Speaker
+vendor game.
+Speaker
+that, essentially what we're doing. We're rendering out to the current state of the game.
+Speaker
+Render Game does rename this one.
+Speaker
+And this one to that.
+Speaker
+So far so good.
+Speaker
+But then the problem becomes that we're actually
+Speaker
+Stark Game here.
+Speaker
+[BLANK_AUDIO]
+Speaker
+render game like this, but
+Speaker
+Actually, I want to keep this start game function.
+Speaker
+Because down the line, there might be some other things you want to do in this game initialization function.
+Speaker
+So I want you now to...
+Speaker
+Create function.
+Speaker
+You're just the name.
+Speaker
+Start game, and then just call for invokes render game. That's all it should do.
+Speaker
+So that this start game button.
+Speaker
+will work.
+Speaker
+next now.
+Speaker
+You can see it doesn't work when I click it. We're actually getting a reference error saying that start game is not the fine because we're
+Speaker
+trying to call the function that no longer exists.
+Speaker
+Go ahead and create.
+Speaker
+the Start Game function here on line 12 and make it just call this render game function right here. Go ahead and do this right now.
+Speaker
+Okay, hopefully that went well.
+Speaker
+The way to do it is through
+Speaker
+and close parentheses.
+Speaker
+I'm gonna close currently brackets.
+Speaker
+inside here, just cool.
+Speaker
+Render Game.
+Speaker
+Hit Start Game, and yes, now it works again.
+Speaker
+Great job!
+Speaker
+Okay, so now we need to fix up the rendering of the carts.
+Speaker
+Because if I hit Start Game...
+Speaker
+And I get the two cards out and then hit new card.
+Speaker
+Indeed, our sum increases, but our cards paragraph are displaying only two of the three cards, with pulled from the deck.
+Speaker
+Because we have a 10 and a 4.
+Speaker
+And a six.
+Speaker
+Whereas we're only showing the 10 and the 4.
+Speaker
+in the browser because that is hard coded here.
+Speaker
+only do that.
+Speaker
+no matter how many cars we pulled from the back.
+Speaker
+This line 16 will always just render out the first card and the second card.
+Speaker
+So this line here.
+Speaker
+In critical access.
+Speaker
+Render out.
+Speaker
+First card.
+Speaker
+And second.
+Speaker
+But what we instead need is something that says,
+Speaker
+Render out.
+Speaker
+All the cards.
+Speaker
+Regardless of how many cards, if we have five cards, it should run about five cards. If we have two cards, it should run about two cards.
+Speaker
+but that's not possible with the current implementation. And what we need is a central way of storing all of our cards. We need to store all of our cards in one variable, regardless of how many cards it is.
+Speaker
+And the way to do this is actually to use what's called an array.
+Speaker
+which is essentially a list of items.
+Speaker
+I'm going to create an array here, and it's totally okay if you now feel confused. I just want to give you a little sneak peek at it before we take a deep dive and give you some practice.
+Speaker
+I'm going to do let cards equals.
+Speaker
+and then open and close to square brackets. That's the notation for creating a race. And inside of these square brackets,
+Speaker
+I'm going to paste the first card.
+Speaker
+gonna comment?
+Speaker
+And then, the second card.
+Speaker
+But this is not a card array.
+Speaker
+That includes both cards or...
+Speaker
+by the first card first and the second card second.
+Speaker
+You can call this an order.
+Speaker
+List of items.
+Speaker
+No?
+Speaker
+down at the baseline 18 now and replace the first card.
+Speaker
+by referring to the array instead?
+Speaker
+and doing.
+Speaker
+open close square bracket and
+Speaker
+zero.
+Speaker
+Don't worry about that, you understand that in a minute.
+Speaker
+just now do the same things for the second part.
+Speaker
+And with the cards open.
+Speaker
+closed.
+Speaker
+Square brackets.
+Speaker
+and one.
+Speaker
+So this is referring to...
+Speaker
+This one right here.
+Speaker
+And one is referring to...
+Speaker
+This item right here, and that is because arrays are so-called zero indexed. They start at zero and one and...
+Speaker
+If you add a third card here.
+Speaker
+That would be in next number two.
+Speaker
+But we don't have a third card, so let's remove that.
+Speaker
+Now, even though you might feel a little bit confused now, let's just run the code.
+Speaker
+hit the start game and see, yes, that it still works. So this way of doing it was the exact same with what we had previously when you just hard-coded in first card and second card.
+Speaker
+this. Now this opens the possibility later down the line.
+Speaker
+to render out all of our cards in a dynamic way inside of the cards element. Regardless of how many cards we
+Speaker
+have inside work.
+Speaker
+So that was a lot of information.
+Speaker
+Now we're going to take a step back, work with race, get your hands dirty, so don't worry if you didn't quite understand this, as you will surely do that after the next few lessons.
+Speaker
+Okay, so erase our ordered lists of items. However, that's a little bit abstract.
+Speaker
+So let's instead look at a real world product.
+Speaker
+see if we can recognize any components that most likely use arrays as
+Speaker
+data structure.
+Speaker
+So here we have a LinkedIn profile.
+Speaker
+This is Justin, he's a previous Grimba student.
+Speaker
+And looking at this, there's immediately multiple components that most likely use arrays.
+Speaker
+vendor stuff out.
+Speaker
+You can see here on the right hand side there's some promotions actually
+Speaker
+three of them, and that's basically a list of items. And while their order might be a little bit random, they still have a specific order.
+Speaker
+Likewise, with the people also viewed here.
+Speaker
+That's a list of four people.
+Speaker
+Let's also scroll a bit down.
+Speaker
+Here we can see, even in the main section, there's this component that says featured. That is featured posts.
+Speaker
+And that's basically just a list of items. So LinkedIn probably uses an array to describe this data in JavaScript.
+Speaker
+So actually, let's just
+Speaker
+you
+Speaker
+Relax.
+Speaker
+Featured.
+Speaker
+Post, just like that.
+Speaker
+equals open closed air brackets. The first one is actually just in sharing the Netflix clone he built.
+Speaker
+through a course here on Scrumble. And he actually deployed it as well, so he's going above and beyond soon.
+Speaker
+Check out my
+Speaker
+flex.
+Speaker
+Low like that.
+Speaker
+Three second one.
+Speaker
+It's actually a link just in a shared to source code he's pushed to get up.
+Speaker
+ourselves would create to do it.
+Speaker
+you want to track employers?
+Speaker
+Cheers!
+Speaker
+Cool before my
+Speaker
+Projects.
+Speaker
+I'm simplifying, of course.
+Speaker
+The data here because.
+Speaker
+There are multiple parts of this. There's an image, there's text, there's comments and so forth. But as for now, we're just simplifying it into strings.
+Speaker
+The third item here is actually just in sharing the portfolio. He has built through his screen, of course, as well.
+Speaker
+We launched.
+Speaker
+portfolio like that. There we have an array with
+Speaker
+I can't wait to read items.
+Speaker
+Outlistline is pretty long, so sometimes you'll see an array.
+Speaker
+We're not it.
+Speaker
+This, that's a bit easier to see that.
+Speaker
+it is indeed three items. And a key thing to observe here is that we add commas after the items, but not after the final item.
+Speaker
+for only between items basically.
+Speaker
+So, going back to LinkedIn, there.
+Speaker
+There are tons of components here.
+Speaker
+that's probably utilized as a race.
+Speaker
+For example, the work experience, that's a list of previous jobs or licenses and certifications, that's a list of licenses.
+Speaker
+You can see the front and path right here.
+Speaker
+and skills and endorsements.
+Speaker
+a ton of examples.
+Speaker
+And now what I want you to do is to create an array that lists your...
+Speaker
+experience or education or
+Speaker
+license or skills.
+Speaker
+or something similar. You are to choose what you want this array to
+Speaker
+But try to think, how can you best describe your either-experience education skills or whatever in a way that would make your LinkedIn profile?
+Speaker
+Look tempting for recruiters.
+Speaker
+That's a smart thing to think a little bit about already, even though you're very early in your coding journey.
+Speaker
+So go ahead and do that and remember that the items should just be strings just as I've done.
+Speaker
+Go ahead and do this right now.
+Speaker
+Okay, hopefully that went well. Now I'm going to do this well, which I'll do less than experience.
+Speaker
+That's what I want to create my array about, my work experience, and I'm currently at the CEO app, Scrumba.
+Speaker
+Before that, I was able to...
+Speaker
+Frontened.
+Speaker
+>> Developer app sonero.
+Speaker
+That's a Oslo-based company for C-Fraid Analytics.
+Speaker
+And also as you probably remember from our subway counter app, I worked as a
+Speaker
+People counter out in the cold.
+Speaker
+The company called.
+Speaker
+That is my experience.
+Speaker
+Now, before you move on to the next cast,
+Speaker
+I want to highlight the importance of actually
+Speaker
+be
+Speaker
+actually lost his job in the patrol him industry.
+Speaker
+to the coronavirus pandemic. And less than one year later, he now works as a professional software developer.
+Speaker
+And as I said, he did that mostly through Scrimba.
+Speaker
+And it was a super engaged student at our Discord channel. And what's so cool about how he did it is that he said
+Speaker
+that over 100 job applications?
+Speaker
+without getting much luck.
+Speaker
+But then went into optimizing this LinkedIn.
+Speaker
+And then suddenly he got...
+Speaker
+job offers.
+Speaker
+And the job he got actually came through a recruiter that
+Speaker
+found his LinkedIn profile as a result of keyword searches.
+Speaker
+Actually, he ended up twang.
+Speaker
+We can just link it in profile, so that-
+Speaker
+attracted.
+Speaker
+right for cruder?
+Speaker
+got him an amazing job.
+Speaker
+I think developer.
+Speaker
+I wanted to share this with you.
+Speaker
+If you click on this image, you'll be taken to the page for the podcast interview with Did With Justin.
+Speaker
+so that you can listen to his story if you want to.
+Speaker
+For example, when you're riding the bus or out walking or cleaning or whatever, I don't want you to interrupt the course and listen to this.
+Speaker
+Instead of coding, it's more important that you code.
+Speaker
+But you can keep it in mind for the next time that you have half an hour or something.
+Speaker
+because I think you'll learn a ton about Justin who at the age of 33 did his career shift.
+Speaker
+So with that little plug out of the way, let's move on.
+Speaker
+An important thing to know about race is that they are so cold.
+Speaker
+zero.
+Speaker
+And that means that you want to grab the f*ck.
+Speaker
+First item.
+Speaker
+the array.
+Speaker
+You do it through using the zero index.
+Speaker
+not the first index.
+Speaker
+And let me show you what that means in practice.
+Speaker
+featured posts, that's our array.
+Speaker
+And I want to grab the first item.
+Speaker
+Let me check out my Netflix call.
+Speaker
+I'll do that through Open and Close Square brackets.
+Speaker
+and then passing in the number 0.
+Speaker
+by now console address.
+Speaker
+And we run the code.
+Speaker
+You can see, yes, that we are indeed logging out.
+Speaker
+That string. So this isn't entirely intuitive since we as humans normally start counting at one.
+Speaker
+But in the race, you start counting at zero.
+Speaker
+If this is the serial index...
+Speaker
+which index does
+Speaker
+this item has.
+Speaker
+Take a guess.
+Speaker
+has the index of two.
+Speaker
+Even though it is the...
+Speaker
+I can.
+Speaker
+Now see that passing into logs out I've just relaunched my portfolio.
+Speaker
+here.
+Speaker
+Is the serial index?
+Speaker
+This is the first.
+Speaker
+And here is the second.
+Speaker
+with this in mind.
+Speaker
+I want you to practice this.
+Speaker
+So you are to take my experience array here.
+Speaker
+and log out the
+Speaker
+following to the console.
+Speaker
+and in this order.
+Speaker
+So you are to start with the front-end developer in the Sennetta, then the people counter, and then CEO with Scrimbo.
+Speaker
+So first this one.
+Speaker
+then this one.
+Speaker
+and then the first one.
+Speaker
+So you have to write three console logs.
+Speaker
+And place them in order here.
+Speaker
+Starting from line 18.
+Speaker
+so that I'm sure that you actually understand the concept of a race being zero indexed.
+Speaker
+I'm gonna comment out this one right here so it doesn't disturb you.
+Speaker
+Now, go ahead and solve this challenge.
+Speaker
+Okay, hopefully that went well.
+Speaker
+Let's do this together.
+Speaker
+We're going to do console log.
+Speaker
+I won't be front-end developer, absolutely not on bad, is.
+Speaker
+not the first, but the second item and in terms of indexes,
+Speaker
+the zeroth and then the
+Speaker
+first in Texas.
+Speaker
+than I need to do.
+Speaker
+experience.
+Speaker
+I'm gonna copy this one, paste it in again, now I'm gonna log out the third item, which is the second index.
+Speaker
+So that is experience.
+Speaker
+And finally, I'm going to log out this item right here.
+Speaker
+that has the index of.
+Speaker
+If I run this code.
+Speaker
+You can see in the console that we are indeed logging out.
+Speaker
+the items in this order.
+Speaker
+Now, before we move on, I'm going to confuse you a little bit.
+Speaker
+Because that's actually delete all of this.
+Speaker
+this.
+Speaker
+Remove the console and just go back to this featured post.
+Speaker
+If I now...
+Speaker
+featured posts.
+Speaker
+Links.
+Speaker
+And then, console.log this out.
+Speaker
+Which number do you think?
+Speaker
+we'll see printed to the console.
+Speaker
+Take a guess.
+Speaker
+Well, the answer.
+Speaker
+And that might be a little bit confusing because I've just taught you that.
+Speaker
+the race R0 index. So the first is zero, the second is one, the third is two.
+Speaker
+So it would be natural to believe that the dot length property of this feature post
+Speaker
+because the final index is true.
+Speaker
+But where is...
+Speaker
+and Xs are zero indexed.
+Speaker
+The length is not zero in next.
+Speaker
+count the length of an array in just the same way you'd count anything in life, which is starting at the number one.
+Speaker
+So that also means that.
+Speaker
+The length property of
+Speaker
+is always one larger than the final index.
+Speaker
+So this is one of those things that are
+Speaker
+a little bit unintuitive and confusing when learning JavaScript.
+Speaker
+and you probably will mix it up a couple of times.
+Speaker
+That's not a problem.
+Speaker
+just trust me when I say that eventually, this will become a second nature for you.
+Speaker
+Let's move on.
+Speaker
+Until now.
+Speaker
+Are you ready?
+Speaker
+either included only strings or only numbers.
+Speaker
+They're not limited to that.
+Speaker
+It actually puts any data type you want into an array, and you can mix as much as you want.
+Speaker
+So you can think of an erase as kind of a composition of
+Speaker
+multiple data types and their values.
+Speaker
+So this is why race are what we call a composite data type.
+Speaker
+You can say it's composed by its items if you need it to make thematically sense.
+Speaker
+And you'll often hear this also referred to as complex data types.
+Speaker
+That is Erase and also for example objects which you are going to learn about later.
+Speaker
+They stand in contrast to the...
+Speaker
+primitive data types you've worked with up until now.
+Speaker
+The three primitives you have learned are strings.
+Speaker
+Numbers.
+Speaker
+and billions.
+Speaker
+because they are more primitive than arrays. They are not composed of many other data types, which are arrays of an R.
+Speaker
+So one analogy you can use is that.
+Speaker
+Primitive data types are the Lego blocks.
+Speaker
+Where is the array, the composite data types?
+Speaker
+It's kind of like the full Lego model, for example, after you've built a little house with your Lego blocks.
+Speaker
+But anyway, you shouldn't worry too much about this if you find it a little bit abstract and complex.
+Speaker
+as a developer, you don't go around thinking about, oh,
+Speaker
+the
+Speaker
+complex data type, it just becomes second nature and you don't even think about it.
+Speaker
+So you shouldn't be put off by this even though it's a little bit theoretical.
+Speaker
+Instead, I think you should just practice.
+Speaker
+Now I want you to create an array that describes yourself as
+Speaker
+and use all the three primitive data types that you've learned so far.
+Speaker
+So, which would contain your name?
+Speaker
+is a screen.
+Speaker
+your age, which is a number, and whether or not you like pizza.
+Speaker
+which should be a boolean.
+Speaker
+So go ahead and do this right now.
+Speaker
+Okay, hopefully that went well.
+Speaker
+Let's do it together.
+Speaker
+I'm going to create an array called Care.
+Speaker
+And my name is Pierre Harold.
+Speaker
+Morgan.
+Speaker
+I am 35 years old.
+Speaker
+And I do happen to like pizza and I especially like pizza with pineapple. It's the best.
+Speaker
+I know that a lot of you don't agree with me, so let's not get into a discussion about that. Let's just move on with the course.
+Speaker
+One of the most common operations you'll perform on a race is adding items to the end of it.
+Speaker
+That's for example what you're going to do.
+Speaker
+In our black technique, where you start with two cards and then you draw a new card.
+Speaker
+that'll naturally then be put at the end of the array, for example.
+Speaker
+6.
+Speaker
+However, the way to do that is not through actually changing it by rectly, which I did now.
+Speaker
+You use a method.
+Speaker
+which is called push.
+Speaker
+Which I'll ask you to, well...
+Speaker
+push things into the array.
+Speaker
+So you do Carx?
+Speaker
+and then open close parentheses.
+Speaker
+And inside of these parentheses, you place whatever you want to push.
+Speaker
+So for example, six.
+Speaker
+If we now.
+Speaker
+The full log of the call.
+Speaker
+March underneath.
+Speaker
+Our push operation?
+Speaker
+You can see, we have added 6 to the array.
+Speaker
+So this here is actually called a method, which is just a fancy way of seeing a function on an object.
+Speaker
+And you haven't really learned about objects yet, so don't worry about if you think they sound so little bit abstract.
+Speaker
+But this operation here is pretty similar to us.
+Speaker
+Be controlled.
+Speaker
+brought log, then asking for a sample hello.
+Speaker
+Don't you think?
+Speaker
+We have the first object.
+Speaker
+cards or consult.
+Speaker
+Then we have the methods.
+Speaker
+Just either log or push.
+Speaker
+Then we have...
+Speaker
+whatever we pass into these methods when we call them.
+Speaker
+So this here, cards push, and it's conceptually very similar to what you've been doing all along.
+Speaker
+It's now make sure that you build muscle memory on this by solving a challenge.
+Speaker
+So I want you to imagine that you are building a chat application. For example, the one I showed you here on LinkedIn and
+Speaker
+And the data structure we'll use is, of course, a race, and we'll pretend that each of these messages
+Speaker
+as an item in the array.
+Speaker
+So when someone types in a new message and sends it.
+Speaker
+Well, you want to push that new message to the array.
+Speaker
+So here you are to push the new message variable. That's this one down here.
+Speaker
+into
+Speaker
+the message is arrayed.
+Speaker
+That's this one here.
+Speaker
+And then you are to log out.
+Speaker
+the array to just verify that you actually succeed in pushing the item.
+Speaker
+Go ahead and do that right now, and then I will show you the solution afterwards as well.
+Speaker
+Okay, hopefully that went well.
+Speaker
+Now, let's do this.
+Speaker
+- Messages.
+Speaker
+and inside of the parentheses will pass in new.
+Speaker
+Message like that.
+Speaker
+referring to the variable and not the hard-coded value, which we did up here when we passed in six.
+Speaker
+a little bit different, but still the same concept.
+Speaker
+Now let's console.log.
+Speaker
+Messages?
+Speaker
+And then run this code.
+Speaker
+If we bring up the console, we have pushed.
+Speaker
+the new message to the array because we're logging out the array with same here at the end.
+Speaker
+a little mini challenge before you leave.
+Speaker
+Let's say that you.
+Speaker
+Why don't you regret sending this message? Same here.
+Speaker
+And you wanted to remove it.
+Speaker
+from the message of the rate.
+Speaker
+How can you do that?
+Speaker
+You haven't learned this yet?
+Speaker
+This is a golden opportunity for you to be
+
+Speaker
+How can you remove the last item in an array?
+Speaker
+So just see if you can find the answer on Google and then try to remove the last item of the messages array here on line 18.
+Speaker
+Go ahead and do that right now.
+Speaker
+Okay, maybe that works, maybe not if not no worries at all. This is just a bonus.
+Speaker
+What you do is do mess address.
+Speaker
+and then open-clock parentheses.
+Speaker
+No?
+Speaker
+If we log the messages,
+Speaker
+again.
+Speaker
+And then run the code.
+Speaker
+Open up the control.
+Speaker
+You see?
+Speaker
+We are logging two versions.
+Speaker
+of this array.
+Speaker
+One from line 15, where the...
+Speaker
+same hair string is included as the last item.
+Speaker
+Once again,
+Speaker
+from line 19, where the array is back to how it originally was.
+Speaker
+like this.
+Speaker
+kind of the opposite of push.
+Speaker
+and not the askamily used.
+Speaker
+But I just wanted to give you a sneak peek at it as you might come across it here and there in your development journey.
+Speaker
+move on.
+Speaker
+Okay, now it's time for some repetition. You are going to do the exact same thing as I did before.
+Speaker
+before we had our little erase deep dive.
+Speaker
+So you're first going to create a new rate.
+Speaker
+continue the first part.
+Speaker
+I'm the second card.
+Speaker
+And then in the render game, you are going to change line 18.
+Speaker
+So that refers to the cards array.
+Speaker
+rendering them out.
+Speaker
+So not referring to first card and second card this way, but doing it via our freshly created card.
+Speaker
+
+Speaker
+So go ahead and do this right now.
+Speaker
+Let's do this together.
+Speaker
+First, we'll do let cards equals.
+Speaker
+All be closed.
+Speaker
+square brackets and then we'll set the first card.
+Speaker
+That's the first item in the array and the second.
+Speaker
+card as the second item.
+Speaker
+as you. Hopefully remember, we can now refer to these values by doing
+Speaker
+Thanks.
+Speaker
+Zero.
+Speaker
+We'll run the code.
+Speaker
+Quickstore game, and yes, indeed, it works.
+Speaker
+Great job.
+Speaker
+Let's move on.
+Speaker
+Now that we have the first card and the second card in the card survey,
+Speaker
+We also have to, of course, add the...
+Speaker
+New card to the card to rate.
+Speaker
+quick little challenge after this card has been created and it has been
+Speaker
+Add it to the sum.
+Speaker
+You also need to push the card.
+Speaker
+the cards array.
+Speaker
+So go ahead and do this right now.
+Speaker
+All right, the way to do this is
+Speaker
+by writing cards.
+Speaker
+Open close parentheses.
+Speaker
+and then pass in the newly created card.
+Speaker
+and in order to verify that this actually works, we can't only mix line.
+Speaker
+Console log out, the...
+Speaker
+Cards are ready, like that.
+Speaker
+run this again.
+Speaker
+Start game.
+Speaker
+- You caught?
+Speaker
+And there we can see in the console now the card survey has been logged out.
+Speaker
+with all the three cards, 10.
+Speaker
+for
+Speaker
+So we still aren't rendering out the third card though.
+Speaker
+And to achieve that, you have to learn how to count in JavaScript.
+Speaker
+or strictly speaking, you have to learn how to write for loops.
+Speaker
+So over the next few casts, we are going to take a deep dive into four loops.
+Speaker
+And then later, return back to the Blackjack game so that we can fix it up.
+Speaker
+Let's move on.
+Speaker
+Okay, so now you're going to learn how to count with JavaScript.
+Speaker
+But might sound really silly. I mean, counting is so easy if you ask a human to count. For example, if you say, "Pear, count to 10."
+Speaker
+I'm sorry.
+Speaker
+on to 3 4 5 6 7 9 10. However.
+Speaker
+JavaScript is like that annoying person who then replies and said
+Speaker
+Well, where exactly do you want me to start counting?
+Speaker
+By counting to 10 you mean including 10 or should I stop before 10?
+Speaker
+And also should I count every single number? Or do you want to make the whole, for example, only count the odd numbers or the even numbers or...
+Speaker
+Whatever.
+Speaker
+So JavaScript is really like that annoying person that takes everything. You say 100% literal.
+Speaker
+When you ask JavaScript account, you have to be super specific. We need to specify where we start counting, where the fringe line is, and what the step size is. Here, I've already written the code
+Speaker
+for you, so let's just dissect it.
+Speaker
+We start with the four.
+Speaker
+keyword. That's because this is so called for loop.
+Speaker
+But don't worry about that, let's now look after the...
+Speaker
+things that are inside of the parentheses here.
+Speaker
+Here, you can see our starting condition.
+Speaker
+Let's count.
+Speaker
+equals one.
+Speaker
+So we're going to start our count at one.
+Speaker
+Let me have a semi-colon.
+Speaker
+and then we specify our finished condition.
+Speaker
+Works as count.
+Speaker
+less than 11.
+Speaker
+So we want count to always be less than 11, so maximum 10 in other words. We're never going to count.
+Speaker
+over this number.
+Speaker
+And finally, the step size is...
+Speaker
+It's not.
+Speaker
+For each counting, you're going to increment.
+Speaker
+plus equals one. Now these three conditions together describe to JavaScript.
+Speaker
+How many times we want to run the code inside of the curly brackets?
+Speaker
+And what the value of count will be?
+Speaker
+at every single iteration.
+Speaker
+So here we are going to run this code 10 times and the variable.
+Speaker
+will change its value in every single iteration, starting at one in
+Speaker
+going up to.
+Speaker
+Jumping one number at a--
+Speaker
+We will count to them. Let's run this code.
+Speaker
+And there you can see in the console we get the numbers from 1 and up to 10.
+Speaker
+If we now changed.
+Speaker
+Are this here?
+Speaker
+What do you think will happen?
+Speaker
+Well then, we get.
+Speaker
+1, 3, 5, 7, 9, because we still start at 1, we're going to end before 11, so maximum 10.
+Speaker
+And we're going to jump with two.
+Speaker
+So in the first iteration,
+Speaker
+Count = 1
+Speaker
+It's what we said we wanted to start with.
+Speaker
+But then in the second iteration, we've told JavaScript that I want to increase by two every single time.
+Speaker
+then it's 3 and then it's 5 and then it's 9 and
+Speaker
+at the last iteration.
+Speaker
+It's like, okay, now I'm going to be 11.
+Speaker
+That doesn't work.
+Speaker
+That violates our finished condition here. So JavaScript stops the loop
+Speaker
+for that happens.
+Speaker
+continues on.
+Speaker
+with whatever it has to do underneath the loop.
+Speaker
+So let's take this back to one.
+Speaker
+Can you modify this one?
+Speaker
+So that it counts from...
+Speaker
+one.
+Speaker
+to 20.
+Speaker
+How would you do that?
+Speaker
+Hopefully, you identified that, what you want to change is the finished condition.
+Speaker
+and set that to less than 21.
+Speaker
+Will you run this?
+Speaker
+Goodie!
+Speaker
+in the console that we're logging out to 1 to 20.
+Speaker
+Now.
+Speaker
+How would we change this if we want to count?
+Speaker
+From 10.
+Speaker
+220. Go ahead and try that right now.
+Speaker
+Hopefully you figured out that it is the starting condition you want to modify you want to write 10 here.
+Speaker
+So, let's start at 10.
+Speaker
+and before 21.
+Speaker
+And counts of one at a time.
+Speaker
+We run the code, you can see we get from 10 to 20 logged out to the console. So.
+Speaker
+Hopefully.
+Speaker
+gained a little bit of intuition on this now, let's move on to the next cast.
+Speaker
+Let's first walk through how to create a loop from scratch.
+Speaker
+And then I want you to create your own loop or at least try, according to the specifications here on line three and four.
+Speaker
+But to begin with, we'll create a loop that counts from zero.
+Speaker
+So to do that, we'll do four.
+Speaker
+Open close parentheses and then inside of the parentheses we have to define.
+Speaker
+Our starting point.
+Speaker
+finish line and
+Speaker
+how big our steps will be.
+Speaker
+This is done through a counter variable, so we could do "let".
+Speaker
+equals zero and then semicolon to end.
+Speaker
+the starting statement?
+Speaker
+Because zero is where we want to start.
+Speaker
+Where's count is a very semantically good?
+Speaker
+Word.
+Speaker
+for this variable.
+Speaker
+A common convention in JavaScript is to use the letter "I" instead.
+Speaker
+I could have named it.
+Speaker
+whatever we want.
+Speaker
+And you can use Count if you think that's easier, but I'm going to use I from now on.
+Speaker
+There's the finish line, which we also need to define.
+Mic
+[BLANK_AUDIO]
+Speaker
+We want to count to five, so...
+Speaker
+Bye.
+Speaker
+Less than six.
+Speaker
+And then, semicolon again.
+Speaker
+So this finds that I should always be less than six and obviously then
+Speaker
+last point where it will stop when counting upwards is
+Speaker
+And then finally, we have to define.
+Speaker
+How big our steps should be?
+Speaker
+And I'm going to do i plus equals.
+Speaker
+And here we don't have to use a semicolon.
+Speaker
+to end because this is the last condition.
+Speaker
+space it up a little bit, you follow the same structure for all of our conditions.
+Speaker
+And then the open and closed square brackets for the body of our board group.
+Speaker
+Then inside of here, we'll do console.
+Speaker
+Got logs.
+Speaker
+the code.
+Speaker
+Have a good day.
+Speaker
+012345
+Speaker
+Okay, now that you've seen this.
+Speaker
+I want you to try to create a for loop.
+Speaker
+accounts.
+Speaker
+From 10.
+Speaker
+Up to 100.
+Speaker
+in steps of 10.
+Speaker
+Switched count 10, 20, 30, 40, 50, and so on.
+Speaker
+including 100.
+Speaker
+And I want you to use Ctrl+Log as I am doing here to log out the counts at each step of the iteration.
+Speaker
+Go ahead and do this right now.
+
+Speaker
+Okay, hopefully that went well.
+Speaker
+It's not noise.
+Speaker
+Let's do this together.
+Speaker
+We'll do it for you.
+Speaker
+And here, you might wonder if, while we've already used the iVirable, can we reuse it down here?
+Speaker
+And the answer is yes.
+Speaker
+I is only defined in
+Speaker
+side of the curly brackets.
+Speaker
+of the foregroup when you do it like this.
+Speaker
+So outside of it, for example, down here at Line 8.
+Speaker
+JavaScript won't remember this iViredable, so whatever you've configured it to mean up here inside of the curly brackets.
+Speaker
+It doesn't affect whatever you set I to down here.
+Speaker
+So we can do let i again equals 10. That's where everyone is start.
+Speaker
+I should be this time less than 100.
+Speaker
+because then it was stopped at 99.
+Speaker
+It needs to be less than 101.
+Speaker
+Finally.
+Speaker
+I should not be plus equals one.
+Speaker
+I'll show you the class equals.
+Speaker
+because I said each step.
+Speaker
+In the duration, you want to increase i with 10.
+Speaker
+So, long.
+Speaker
+Bye.
+Speaker
+Comment this one out.
+Speaker
+Run the code.
+Speaker
+And there we see.
+Speaker
+20, 30, 40, 50 and so on, all the way up to 100.
+Speaker
+Great job.
+ 
+
