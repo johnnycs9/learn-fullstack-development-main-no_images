@@ -3586,4 +3586,7946 @@ Speaker
 Speaker
 Great job.
  
+Speaker
 
+Okay, this is so cool because now you are going to combine.
+
+Speaker
+
+you've learned about race and for loops with what you know about manipulating the DOM.
+
+Speaker
+
+So we're going to pull the strings together and have you render out the
+
+Speaker
+
+this sentence inside of this greeting L.
+
+Speaker
+
+So you can see we have in our HTML just an empty paragraph which has the ID of greeting L.
+
+Speaker
+
+We have fetched that element from the HTML and stored it in this greeting-l variable.
+
+Speaker
+
+your job is to render the samples, Lias Lee.
+
+Speaker
+
+right here.
+
+Speaker
+
+You are to render all of these items inside of the array.
+
+Speaker
+
+in the greeting El Parabas.
+
+Speaker
+
+And the way to do that is to use a for loop.
+
+Speaker
+
+to loop through it and render each of them into the greeting L.
+
+Speaker
+
+using dot text content.
+
+Speaker
+
+a lot of stuff you have to keep track of here.
+
+Speaker
+
+give it your best shot and then I of course will show you the solution.
+
+Speaker
+
+and then you return back to the screencast.
+
+Speaker
+
+back at our black guy.
+
+Speaker
+
+Okay, this is so cool because now you are going to combine.
+
+Speaker
+
+you've learned about race and for loops with what you know about manipulating the DOM.
+
+Speaker
+
+So we're going to pull the
+
+Speaker
+
+Trinks together and have you
+
+Speaker
+
+Okay, this is so cool because now you are going to combine what?
+
+Speaker
+
+you've learned about race and for loops with what you know about
+
+Speaker
+
+manipulating the DOM.
+
+Speaker
+
+So we're going to pull the strings together and have you render out this sentence inside of this greeting L.
+
+Speaker
+
+So you can see we have in our HTML just an empty paragraph, which has the ID of greeting L.
+
+Speaker
+
+We have fetched that element from the HTML and stored it in this greeting El variable.
+
+Speaker
+
+And your job is to render the sentence, laissez-de-de.
+
+Speaker
+
+right here to
+
+Speaker
+
+You are to render all of these items inside of the array.
+
+Speaker
+
+in the greeting El Paragraph.
+
+Speaker
+
+And the way to do that is to use a for loop.
+
+Speaker
+
+to loop through it and render each of them.
+
+Speaker
+
+the greeting L using dot text content.
+
+Speaker
+
+a lot of stuff you have to keep track of here.
+
+Speaker
+
+give it your best shot and then I of course will show you the solution.
+
+Speaker
+
+and then return back to the screencast.
+
+Speaker
+
+Okay, hopefully that would fall.
+
+Speaker
+
+Now let's do this.
+
+Speaker
+
+for it.
+
+Speaker
+
+Let's eye.
+
+Speaker
+
+equals zero because we want to start at the zero index NRA.
+
+Speaker
+
+Do I is less than?
+
+Speaker
+
+sent and stopped.
+
+Speaker
+
+links.
+
+Speaker
+
+And then we do i plus plus plus plus
+
+Speaker
+
+comment one time
+
+Speaker
+
+We need to grab a hold of the greeting out.
+
+Speaker
+
+And then do text content.
+
+Speaker
+
+And here, you might have been tempted to do equal.
+
+Speaker
+
+sentence.
+
+Speaker
+
+Open call square brackets and passing in the index.
+
+Speaker
+
+That will just end up with rendering pair, because first it renders low.
+
+Speaker
+
+And then it clears out all of the text content and renders the second word, but then...
+
+Speaker
+
+For every single time in this loop, it clears out all the text content.
+
+Speaker
+
+And we end up with just the result after the last iteration.
+
+Speaker
+
+And that was
+
+Speaker
+
+last word in the array. So what we have to do, we have to keep the
+
+Speaker
+
+previous content intact inside of the paragraph, and as you might remember, we do that with plus equals.
+
+Speaker
+
+running the code again. Yes, now it works. Now though, I have
+
+Speaker
+
+have a bonus challenge for you.
+
+Speaker
+
+Which is the following.
+
+Speaker
+
+How do you keep the spaces between the words if I remove these spaces from the array?
+
+Speaker
+
+That is if I do like this like
+
+Speaker
+
+like this and like this.
+
+Speaker
+
+And we render it out. You can say, "Ah."
+
+Speaker
+
+We have no more spaces. It looks like one long, weird word.
+
+Speaker
+
+How can we, on this line 7, modify it so that we get spaces between the works?
+
+Speaker
+
+Go ahead and try that.
+
+Speaker
+
+What would we'll do?
+
+Speaker
+
+It will simply
+
+Speaker
+
+at the end here.
+
+Speaker
+
+I'm plus.
+
+Speaker
+
+and captanate.
+
+Speaker
+
+or given item.
+
+Speaker
+
+in the array.
+
+Speaker
+
+With
+
+Speaker
+
+Now we add a space after each of the words. If we're into this,
+
+Speaker
+
+you can see.
+
+Speaker
+
+Yes.
+
+Speaker
+
+We get now.
+
+Speaker
+
+exactly how we want it.
+
+Speaker
+
+Great job, let's move on.
+
+Speaker
+
+back at our black guy game, it's time for you to create a for loop.
+
+Speaker
+
+that renders out all the cards in the cards array instead of just the two first ones, which we are doing up here.
+
+Speaker
+
+So you are going to start your for loop down here at line 19.
+
+Speaker
+
+I'm going to help you out a little bit because we are going to.
+
+Speaker
+
+Keep this first.
+
+Speaker
+
+setting of the text content here, so that we have the default text inside of the paragraph.
+
+Speaker
+
+And then you are going to render out the cards.
+
+Speaker
+
+after this text inside of the paragraph.
+
+Speaker
+
+Go ahead and create that for looped.
+
+Speaker
+
+So that our black black beam.
+
+Speaker
+
+any number of cards.
+
+Speaker
+
+inside of the cartridge ray and will render all of them out.
+
+Speaker
+
+regardless of how many it is. So give it your best shot.
+
+Speaker
+
+and return back to me when you want to see my solution.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+not, nor is we'll do it together.
+
+Speaker
+
+We'll start with four and then open close parentheses, of course, inside of the parentheses. We need to define that we want to start our
+
+Speaker
+
+incrementer at zero and we want to stop it before it reaches the length of the card's array.
+
+Speaker
+
+How do we do that? Well, by i is less than...
+
+Speaker
+
+cards
+
+Speaker
+
+Length.
+
+Speaker
+
+I'm going to send a call on.
+
+Speaker
+
+And we want to increment i at
+
+Speaker
+
+every iteration.
+
+Speaker
+
+the body of the four loop with curly brackets here.
+
+Speaker
+
+We are going to plus equal onto this paragraph.
+
+Speaker
+
+So we'll do Carx.
+
+Speaker
+
+text content.
+
+Speaker
+
+plus equals.
+
+Speaker
+
+Let's start by just adding the cards.
+
+Speaker
+
+And then passing in the current value of i, our iterator.
+
+Speaker
+
+which will start at zero and
+
+Speaker
+
+Do begin with...
+
+Speaker
+
+And before too.
+
+Speaker
+
+So it'll be 0, 1, and then run the code.
+
+Speaker
+
+Okay, and yes, it works.
+
+Speaker
+
+However,
+
+Speaker
+
+It looks like it says,
+
+Speaker
+
+for here.
+
+Speaker
+
+because we haven't added a space between our numbers.
+
+Speaker
+
+So the way to do that is simply by concatenating.
+
+Speaker
+
+Be space after a car.
+
+Speaker
+
+Now if you run it.
+
+Speaker
+
+start
+
+Speaker
+
+Now we can see.
+
+Speaker
+
+Both of some?
+
+Speaker
+
+the card.
+
+Speaker
+
+are now correct according to the state of our game.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, so our blackjack game is actually turning out pretty good now.
+
+Speaker
+
+You can start the game, you can hit a new card.
+
+Speaker
+
+20. I can even hit yet another card. Oh, I'm out of the game.
+
+Speaker
+
+It's almost fun to play though.
+
+Speaker
+
+You'll get pretty tired of it as you played multiple times since you, every single time, get the exact same parts.
+
+Speaker
+
+So not exactly an exciting black jacket.
+
+Speaker
+
+And of course that is because we have hardcoded the variables for our first card and second card here.
+
+Speaker
+
+also hard coded.
+
+Speaker
+
+value for our third and fourth in every preceding card here on line 40.
+
+Speaker
+
+So always get 10, 4, 6, 6, 6, 6, 6, 6, 6, and so forth.
+
+Speaker
+
+So, what do we need to do is instead create a function?
+
+Speaker
+
+Get around them card.
+
+Speaker
+
+that returns a random number.
+
+Speaker
+
+So that we instead of hard coding the number 10 up here on line 1
+
+Speaker
+
+Thank you.
+
+Speaker
+
+random.
+
+Speaker
+
+and call that function.
+
+Speaker
+
+function will then return a random card that the first card variable will be set to.
+
+Speaker
+
+We can do the same.
+
+Speaker
+
+with the second card?
+
+Speaker
+
+And also,
+
+Speaker
+
+here in the new card function, you can do get random card there as well.
+
+Speaker
+
+This way, we'd get a functional black jacket.
+
+Speaker
+
+However, there's a few things you haven't learned yet, which you need to learn in order to create this Get Random Card Function.
+
+Speaker
+
+So let's rewind a little bit here.
+
+Speaker
+
+Get back to the hard coded numbers.
+
+Speaker
+
+And over the next few casts, you're going to learn how to--
+
+Speaker
+
+return values in functions and also how to generate random numbers inside of a function.
+
+Speaker
+
+Let's go ahead and do exactly that.
+
+Speaker
+
+Let's return back to our racing game example in order to learn about returning values in functions.
+
+Speaker
+
+So here we have two players who've raced through the game and player one.
+
+Speaker
+
+got the time 102 and player 2 got the time 107.
+
+Speaker
+
+And our job is to create a function that returns the fastest race time.
+
+Speaker
+
+So in order to do that, we first have to do function.
+
+Speaker
+
+Now we call this "get".
+
+Speaker
+
+fast this.
+
+Speaker
+
+Fine.
+
+Speaker
+
+Quite a long word, but at least it's the script.
+
+Speaker
+
+And inside of the body of the function, we have the first text.
+
+Speaker
+
+which of these times were fastest.
+
+Speaker
+
+will do an if statement and say.
+
+Speaker
+
+If player one time.
+
+Speaker
+
+It's less than player 2 time.
+
+Speaker
+
+All then.
+
+Speaker
+
+We are going to adjourn.
+
+Speaker
+
+Play your one time.
+
+Speaker
+
+Because it's less than player 2.
+
+Speaker
+
+Then it's the fastest grace time.
+
+Speaker
+
+and we are going to return it.
+
+Speaker
+
+Now, this return keyword here might now seem to be too weird and you probably don't understand yet what it means, but don't worry about that right now. It'll be clearer as we move on.
+
+Speaker
+
+And then we're going to do else if.
+
+Speaker
+
+The next condition is if player 2 was faster than player 1.
+
+Speaker
+
+Bye, guys.
+
+Speaker
+
+to time is less than player one time.
+
+Speaker
+
+If so, we are going to return.
+
+Speaker
+
+Bye, here.
+
+Speaker
+
+Truth, time, like that.
+
+Speaker
+
+else.
+
+Speaker
+
+Actually, these two are equal. So none of these expressions evaluate the truth.
+
+Speaker
+
+Well, then the fastest time is
+
+Speaker
+
+players' time because they had the exact same time.
+
+Speaker
+
+Could either return playable in time or play a two time, it doesn't matter.
+
+Speaker
+
+I'm just going to return to here one time.
+
+Speaker
+
+Okay.
+
+Speaker
+
+Now what we can do is we can do.
+
+Speaker
+
+Ask this race, I'm gonna call this variable act.
+
+Speaker
+
+Now I'm going to define that, declare that variable.
+
+Speaker
+
+as the result.
+
+Speaker
+
+of invoking this function.
+
+Speaker
+
+So I'm gonna do get
+
+Speaker
+
+past this grace time.
+
+Speaker
+
+Like that?
+
+Speaker
+
+Now?
+
+Speaker
+
+The value of fastest race time will be...
+
+Speaker
+
+whatever this function has returned.
+
+Speaker
+
+And if we console log.
+
+Speaker
+
+That's the trace time.
+
+Speaker
+
+We can see.
+
+Speaker
+
+Forget.
+
+Speaker
+
+100
+
+Speaker
+
+That's quick because...
+
+Speaker
+
+This function complete.
+
+Speaker
+
+player 1 and player 2. And, rightfully, recognize that player 1 was faster than player 2.
+
+Speaker
+
+and thus return to player one time.
+
+Speaker
+
+What you might think now is, well.
+
+Speaker
+
+We're just consulting out the value here. What's the point? Why couldn't we just...
+
+Speaker
+
+instead of these recurrence.
+
+Speaker
+
+do control.
+
+Speaker
+
+Log.
+
+Speaker
+
+I do not directly inside of the function.
+
+Speaker
+
+Do that first.
+
+Speaker
+
+And run it.
+
+Speaker
+
+Is he? Yes.
+
+Speaker
+
+We are now indeed running this line 6 here, we're going to be logging out the value.
+
+Speaker
+
+But if we down here...
+
+Speaker
+
+try to see.
+
+Speaker
+
+This is the value of fastest race at this point.
+
+Speaker
+
+And run the code.
+
+Speaker
+
+You can see us getting 102 first.
+
+Speaker
+
+From this line.
+
+Speaker
+
+But then we're getting undefined from line 16.
+
+Speaker
+
+Because now, the fastest race, are you?
+
+Speaker
+
+simply isn't defined because this function
+
+Speaker
+
+didn't return anything, and it's actually quite valuable to have stored the fastest race time inside of this value as a
+
+Speaker
+
+supposed to just having console or get out appear.
+
+Speaker
+
+'Cause now we can use this variable for something else.
+
+Speaker
+
+So, let's...
+
+Speaker
+
+like this and return.
+
+Speaker
+
+are an
+
+Speaker
+
+and move over and.
+
+Speaker
+
+remove the parentheses as well.
+
+Speaker
+
+I'm wondering how I got the cursor to be on multiple lines.
+
+Speaker
+
+the same time.
+
+Speaker
+
+It's a click where you first select a word.
+
+Speaker
+
+And then do command.
+
+Speaker
+
+Or if you're not on a Mac.
+
+Speaker
+
+Control + D
+
+Speaker
+
+Looks like a word. Come on to me.
+
+Speaker
+
+One, two times, and now I have selected.
+
+Speaker
+
+all of the return networks so that I can.
+
+Speaker
+
+Delete them or...
+
+Speaker
+
+We'll be back then.
+
+Speaker
+
+That was a good, quick little tip. Now it's time for talent.
+
+Speaker
+
+So you are going to write a function that returns the total race time.
+
+Speaker
+
+Then you are going to call or invoke the function and then store the return value in a new variable.
+
+Speaker
+
+You have to decide for yourself what you want to call that variable.
+
+Speaker
+
+And what you're going to call this function?
+
+Speaker
+
+And finally, you are going to log your variable out just to check that everything has worked.
+
+Speaker
+
+So go ahead and do this right now.
+
+Speaker
+
+Okay, hopefully this one's well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+function.
+
+Speaker
+
+Portal Race!
+
+Speaker
+
+And the way to do that is simply to return.
+
+Speaker
+
+Layer one time plus
+
+Speaker
+
+Then we can create a new variable called Lex.
+
+Speaker
+
+Total time.
+
+Speaker
+
+equals.
+
+Speaker
+
+- Poodle?
+
+Speaker
+
+race time.
+
+Speaker
+
+Now we can control Logit Total Time.
+
+Speaker
+
+Anything like that?
+
+Speaker
+
+the code.
+
+Speaker
+
+We
+
+Speaker
+
+get 209 in the console, which sounds just about right.
+
+Speaker
+
+So great job!
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+It's time to take what you've learned about returning values and functions and implement that technique in Trav app.
+
+Speaker
+
+This is a three-part challenge.
+
+Speaker
+
+First, you're going to create a function, get around them card.
+
+Speaker
+
+always return to the number five.
+
+Speaker
+
+And then you're going to use get random card.
+
+Speaker
+
+to set the values of the first card.
+
+Speaker
+
+and the second code.
+
+Speaker
+
+and then use it to set the value of the card variable down here in the new card function as well.
+
+Speaker
+
+So you are going to write your function.
+
+Speaker
+
+a drum and card.
+
+Speaker
+
+starting online 14
+
+Speaker
+
+And now you might think, well,
+
+Speaker
+
+That doesn't make sense because we have previously learned that if you defined a variable down here on line 14, we can't use it up on line two and three.
+
+Speaker
+
+That's at least how it is with variables you define using the "let's keyword."
+
+Speaker
+
+That is exactly right.
+
+Speaker
+
+But when you create functions in the way we do, there's an exception.
+
+Speaker
+
+So I want you to just...
+
+Speaker
+
+this in saved works, and then I'm going to explain afterwards why it works.
+
+Speaker
+
+Go ahead and give this your best job, and then I will show you the solution as well afterwards.
+
+Speaker
+
+Hopefully that went well.
+
+Speaker
+
+We'll do function.
+
+Speaker
+
+Get to random.
+
+Speaker
+
+Hard like that.
+
+Speaker
+
+Then inside of the body of the function, we'll simply...
+
+Speaker
+
+return five.
+
+Speaker
+
+We need to use this.
+
+Speaker
+
+or pair at line two.
+
+Speaker
+
+Get around them, part.
+
+Speaker
+
+What's happening here? It's up.
+
+Speaker
+
+calling this function.
+
+Speaker
+
+It will return five and thus, second card and first card will be initialized with a value five.
+
+Speaker
+
+Ask Will our part down here?
+
+Speaker
+
+If we do, get random.
+
+Speaker
+
+card and call it.
+
+Speaker
+
+on the wisely won't work.
+
+Speaker
+
+with them?
+
+Speaker
+
+Card will now have the value of five.
+
+Speaker
+
+So let's run our Blackjack game.
+
+Speaker
+
+Stop again, ooh, we got two fives!
+
+Speaker
+
+Yeah, yet another five.
+
+Speaker
+
+What's the chance?
+
+Speaker
+
+Obviously it is 100% at the moment, but
+
+Speaker
+
+But that doesn't matter.
+
+Speaker
+
+'Cause we now have these set up.
+
+Speaker
+
+inside of this function.
+
+Speaker
+
+writing the logic for getting an actual random card back.
+
+Speaker
+
+So that's great.
+
+Speaker
+
+Finally, I promise to talk a little bit about the fact that we're creating the function down here on line 14 and then using it up on line two.
+
+Speaker
+
+That seems to go against what we learned about variables early on.
+
+Speaker
+
+However, when you write functions like this,
+
+Speaker
+
+which is called function declarations.
+
+Speaker
+
+The function gets so cold.
+
+Speaker
+
+to the top.
+
+Speaker
+
+Meaning that it's accessible even at line 1, regardless of how far down you define the function.
+
+Speaker
+
+We could have written this function online.
+
+Speaker
+
+$10,000.
+
+Speaker
+
+could still be accessible online more.
+
+Speaker
+
+Now there are other ways of creating functions.
+
+Speaker
+
+I don't give the function this extra bit of it, but as for now, we're only going to write functions in this way, so don't worry about that.
+
+Speaker
+
+Because now you have another thing to worry about.
+
+Speaker
+
+How do we actually modify this get-random function so that it actually returns a random card?
+
+Speaker
+
+So from the next lesson on...
+
+Speaker
+
+We are going to dive into exactly how to do that.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+So I remember when I was learning this, it's like the clunky way of generating random numbers in JavaScript and thinking,
+
+Speaker
+
+Why do I really need to generate random numbers? Is that really such a common thing to do for developers? Actually, it is.
+
+Speaker
+
+Of course, there's our use case where we're
+
+Speaker
+
+building a card game, obviously we need to have some kind of randomness in which card you get.
+
+Speaker
+
+otherwise it would be meaningless, but also imagine all games that use DICE. A DICE is basically a physical randomness function.
+
+Speaker
+
+gives you random number between one and six, but randomness isn't only important in these kind of casino-ish games,
+
+Speaker
+
+all computer games, right?
+
+Speaker
+
+and this place some kind of role.
+
+Speaker
+
+For example, in this
+
+Speaker
+
+I'm
+
+Speaker
+
+across a road as a duck without getting hit by a car.
+
+Speaker
+
+surely there's some randomness underneath here, which
+
+Speaker
+
+decides which cars appear on the road and also when they appear. But it doesn't stop there with games.
+
+Speaker
+
+Cybersecurity random numbers is a key component.
+
+Speaker
+
+to authenticate yourself and generate keys as with encryptocurrencies. So for example, Bitcoin uses random numbers as well.
+
+Speaker
+
+For random numbers, place a role in the crypto economy as well. And most importantly, we used random numbers in order to generate the
+
+Speaker
+
+suggested tweet text in our JavaScriptmas advent calendar.
+
+Speaker
+
+So, that's you can understand random numbers are everywhere. And you need to learn the most basic way of generating that in JavaScript.
+
+Speaker
+
+that is through something that we call the math object.
+
+Speaker
+
+And that's something that's already provided to you in JavaScript or by the browser to be specific.
+
+Speaker
+
+You can type math wherever you want with a key.
+
+Speaker
+
+capital N.
+
+Speaker
+
+Then do dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot
+
+Speaker
+
+random and then open close parentheses so that you call this function or method.
+
+Speaker
+
+And don't worry if you don't quite understand what's going on under the hood here. You're not meant to do that right now.
+
+Speaker
+
+All you're meant to know is that that will return a number to you.
+
+Speaker
+
+which I've now stored in a variable called random number, and then I'm logging out this random number.
+
+Speaker
+
+What I want you to do now?
+
+Speaker
+
+this screencast and run this code a few times so that you get to see a few of
+
+Speaker
+
+the values that our random number variable can take.
+
+Speaker
+
+and try to.
+
+Speaker
+
+succinctly and specifically as possible.
+
+Speaker
+
+Write your answer at what you think.
+
+Speaker
+
+ask.random.dust.
+
+Speaker
+
+So what does it return?
+
+Speaker
+
+to formulate that and write it down, then return back to the screencast.
+
+Speaker
+
+when you think you have the answer.
+
+Speaker
+
+No way, I would write this as that.
+
+Speaker
+
+Goodenerates.
+
+Speaker
+
+It random.
+
+Speaker
+
+zero.
+
+Speaker
+
+And one.
+
+Speaker
+
+And the parentheses.
+
+Speaker
+
+not inclusive of one. So we can write to the random number, including zero.
+
+Speaker
+
+and one.
+
+Speaker
+
+not including one. So from 0.00000.
+
+Speaker
+
+to 0.9999999 and a bunch of lines after that.
+
+Speaker
+
+So if we were to...
+
+Speaker
+
+Visualize this slightly.
+
+Speaker
+
+See that mask off random?
+
+Speaker
+
+gives you a number from 0.000 and a bunch of zeros after that. I just couldn't bother writing all of them.
+
+Speaker
+
+0.
+
+Speaker
+
+[MUSIC PLAYING]
+
+Speaker
+
+and I'm basically a bunch of nines as well.
+
+Speaker
+
+That is the range you are given when you...
+
+Speaker
+
+Give JavaScript this command.
+
+Speaker
+
+So if we run this.
+
+Speaker
+
+You can see we get 0.68 and a bunch of numbers.
+
+Speaker
+
+0.95 and a bunch of numbers.
+
+Speaker
+
+0.8a, 0.001. Yeah, as you can see, we've already been almost
+
+Speaker
+
+I'm very close to zero.
+
+Speaker
+
+Be very close to one.
+
+Speaker
+
+Now before we go, there's one thing I need to point out, which is that the random is here while it looks completely
+
+Speaker
+
+completely random for us humans?
+
+Speaker
+
+There was some deterministic variables going on under the hood here.
+
+Speaker
+
+And it's actually a really hard problem.
+
+Speaker
+
+and computer science to generate.
+
+Speaker
+
+truly random numbers. But for our use cases, we're not going to worry about that.
+
+Speaker
+
+As far as we hear, these numbers regenerate with math.random or more than random enough.
+
+Speaker
+
+are use cases. This is not a PhD in cybersecurity, but rather getting you started with the development.
+
+Speaker
+
+God, let's move on.
+
+Speaker
+
+Okay, so now we know how to create a random number between 0 and up.
+
+Speaker
+
+to be an including one.
+
+Speaker
+
+However, it's not entirely clear how we use Lysmath.random in order to create something useful.
+
+Speaker
+
+like for example a dice function.
+
+Speaker
+
+Let's take this one step at a time.
+
+Speaker
+
+towards creating such a function.
+
+Speaker
+
+And the first step we're going to take is simply by multiplying.
+
+Speaker
+
+Math or random with six.
+
+Speaker
+
+Now I want you to do the same thing that you did previously, which is to
+
+Speaker
+
+the screencast, run this code a few times and see what we log to the console.
+
+Speaker
+
+and then answer the following question.
+
+Speaker
+
+which range will around the number be now.
+
+Speaker
+
+from which number?
+
+Speaker
+
+to which other number.
+
+Speaker
+
+It used to be from zero to 0.99999.
+
+Speaker
+
+It's something else, and you have to figure that out.
+
+Speaker
+
+So go ahead and do that right now.
+
+Speaker
+
+Okay, the answer is that it's still start at zero.
+
+Speaker
+
+Now
+
+Speaker
+
+all the way up to 5.9999 and a bunch of mines. I'm not going to type all of them.
+
+Speaker
+
+So if math dot random gave it a number from 0 to 0.999 math dot random time 6, we'll give it a number from 0.
+
+Speaker
+
+because zero time six is still zero.
+
+Speaker
+
+5.999.
+
+Speaker
+
+because 0.9 times 6 is not entirely 6, but it's almost 6. So it's 5.9 times 5.
+
+Speaker
+
+So now we have kind of expanded our range, roughly speaking, from being between 0 and 1.
+
+Speaker
+
+to being between 0 and 6.
+
+Speaker
+
+We did that by multiplying it with 6. Let's move on to the next step.
+
+Speaker
+
+Okay, so now we need to learn another method on the Math object.
+
+Speaker
+
+And that is math.
+
+Speaker
+
+floor.
+
+Speaker
+
+Florida's is it takes some input, a number, and then does something with that number.
+
+Speaker
+
+In return sets, so that you can store that in a new variable.
+
+Speaker
+
+For example, like, "Flored" number right here. That is the "Flored" version of...
+
+Speaker
+
+this number. So I want you to pause the screencast, run this code a few times.
+
+Speaker
+
+And answer the question, what does math floor do?
+
+Speaker
+
+to positive numbers.
+
+Speaker
+
+And the reason I'm saying positive numbers is I
+
+Speaker
+
+don't want you to add negative numbers in here because the mental model is slightly easier if you only think about positive numbers and it's a bit easier to write a concise answer to it in my opinion. Finally, I've never used math floor on negative numbers anyway.
+
+Speaker
+
+It's usually used on positive numbers.
+
+Speaker
+
+Try this, feel free to add a few different numbers in here and run the code. And once you're ready, just...
+
+Speaker
+
+about your personal explanation, what do you think math floor does? Go ahead and do this right now.
+
+Speaker
+
+Now, the way I think of Math Floor is that it's simply...
+
+Speaker
+
+removes.
+
+Speaker
+
+But that's most, as if we run this.
+
+Speaker
+
+You see, return to three.
+
+Speaker
+
+12.4.
+
+Speaker
+
+Even 12.99,99,99,99.
+
+Speaker
+
+Still 12.
+
+Speaker
+
+Hey, so.
+
+Speaker
+
+with that knowledge in mind, let's move on to the next lesson.
+
+Speaker
+
+just as a quick recap, math.random gave us a number between 0 and almost 1.
+
+Speaker
+
+and math around them times six.
+
+Speaker
+
+Then give us a number between 0 and...
+
+Speaker
+
+almost six. And now we are going to combine this with a math dot floor, which you've learned in the previous lesson.
+
+Speaker
+
+I'm going to add it here.
+
+Speaker
+
+I'm going to write mass dot
+
+Speaker
+
+floor.
+
+Speaker
+
+And then wrap our entire previous expression.
+
+Speaker
+
+the parentheses of
+
+Speaker
+
+math floor. Now what I want you to do is run this code a few times.
+
+Speaker
+
+Right now.
+
+Speaker
+
+Also, values.
+
+Speaker
+
+The random number now can hold.
+
+Speaker
+
+So there's a limited number of them?
+
+Speaker
+
+And your job is to figure out exactly which ones.
+
+Speaker
+
+Go ahead and do this right now.
+
+Speaker
+
+Hopefully, that went well.
+
+Speaker
+
+Now, let's run this together.
+
+Speaker
+
+And see you next time.
+
+Speaker
+
+For zero.
+
+Speaker
+
+1, 4, 0, 2.
+
+Speaker
+
+Five.
+
+Speaker
+
+Hmm.
+
+Speaker
+
+So it seems we are getting the numbers between 0 and 5.
+
+Speaker
+
+That actually makes a lot of sense because if we...
+
+Speaker
+
+Take this range here between 0 and...
+
+Speaker
+
+Almost six and shove it into the math.floor function.
+
+Speaker
+
+basically remove all of the decimals and if we remove the decimals from
+
+Speaker
+
+from this entire range, which numbers are within left with.
+
+Speaker
+
+It's just a whole numbers from zero.
+
+Speaker
+
+all the way up to five.
+
+Speaker
+
+So right answer was 0, 1, 2, 3, 4, 5 like that.
+
+Speaker
+
+Okay, hopefully you're still hanging on. Let's move on.
+
+Speaker
+
+to the final step of our dice function.
+
+Speaker
+
+Okay, now we are going to complete our dice feature.
+
+Speaker
+
+Because we know that with this expression.
+
+Speaker
+
+Currently, get a whole number from 0 up to 5.
+
+Speaker
+
+So the question then remains how do we turn this range into rather a range between 1 and 6?
+
+Speaker
+
+essentially the same as advice and I want you to try this for yourself.
+
+Speaker
+
+Try to modify the expression.
+
+Speaker
+
+so that we get a range from 1 to 6 instead of 0 to 5.
+
+Speaker
+
+Go ahead and give that a shot.
+
+Speaker
+
+Hopefully that went well.
+
+Speaker
+
+To understand what we need to do, we can compare each of the numbers here.
+
+Speaker
+
+see that first number here is
+
+Speaker
+
+1 and the first number there is 0.
+
+Speaker
+
+How do we go from 0 to 1?
+
+Speaker
+
+We add one.
+
+Speaker
+
+And the same goes for all of the numbers here. How to go from 1 to 2? Well, we add 1, and from 5 to 6, we add 1.
+
+Speaker
+
+So basically,
+
+Speaker
+
+What we can do is just do.
+
+Speaker
+
+plus one at the very end.
+
+Speaker
+
+And then if we run the code.
+
+Speaker
+
+You see, we got two.
+
+Speaker
+
+We get six.
+
+Speaker
+
+3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+6 to
+
+Speaker
+
+Yes, we indeed get the entire range of a dice, so...
+
+Speaker
+
+Really good job reaching this far. Now I only have one last challenge for you.
+
+Speaker
+
+Nice.
+
+Speaker
+
+Create a function called roll-bys that returns a random number between 1 and 6.
+
+Speaker
+
+So basically, you're going to take what we've done here.
+
+Speaker
+
+and wrap it into a function and then return the result. Go ahead and do that.
+
+Speaker
+
+I'll do function.
+
+Speaker
+
+roll dice, opening close parentheses, or
+
+Speaker
+
+open and close, right?
+
+Speaker
+
+inside of here, I'm just going to copy.
+
+Speaker
+
+this line.
+
+Speaker
+
+Easton?
+
+Speaker
+
+Return.
+
+Speaker
+
+Round a number, like that.
+
+Speaker
+
+Now I have to remove it from up here because our tear-on-line to random number isn't even defined, so we can't log it out.
+
+Speaker
+
+Random number is now only defined inside of the roll-by function, and the value of it gets returned.
+
+Speaker
+
+If we.
+
+Speaker
+
+Thanks all.
+
+Speaker
+
+Uplog and inside of the parentheses we call the roll dice function.
+
+Speaker
+
+Like that?
+
+Speaker
+
+Did get.
+
+Speaker
+
+Yes, a random number between...
+
+Speaker
+
+And six.
+
+Speaker
+
+Really good job reaching this far. This was complicated stuff. So if you feel a little bit shaky with this, that's totally okay. You can go back and rewatch it and retry all of the challenges if you want to. And then when you feel ready, we'll move on and use this knowledge to make our blackjack game
+
+Speaker
+
+much better.
+
+Speaker
+
+at our blackjack game and we are going to fix up this Get Random Card function.
+
+Speaker
+
+but we'll do it step by step.
+
+Speaker
+
+begin with, I want you to
+
+Speaker
+
+take a return, a random number between one.
+
+Speaker
+
+and 13.
+
+Speaker
+
+So here you can pretend that we are working with the regular values that a deck of cards usually has.
+
+Speaker
+
+So with the ace being the one, the numbers from 2 to 10 of course being their respective numbers, then the jack being 11, queen being 12, and king being 13.
+
+Speaker
+
+from one to 13.
+
+Speaker
+
+Go ahead and give this your best shot.
+
+Speaker
+
+And then of course, I will show you how to do it afterwards as well.
+
+Speaker
+
+Okay, now let's do this. We know that if we do math.
+
+Speaker
+
+random.
+
+Speaker
+
+We are going to generate a number between 0.000 and a bunch of decimals after that, until 0.999 and a bunch of lines after that as well.
+
+Speaker
+
+So the first thing we need to do in order to get this range to look more like this one is to multiply this entire thing with 30. 0.0000 times 13 is still 0.
+
+Speaker
+
+0.0000.
+
+Speaker
+
+It's still zero.
+
+Speaker
+
+And 0.999 times 13 is actually just 12 points.
+
+Speaker
+
+999, or we have a bunch of lines after that as well. So we're getting to something remotely similar. It's just a matter of how many nines we have after the dot.
+
+Speaker
+
+But this is roughly the range we're working with with this expression right here.
+
+Speaker
+
+We want to remove the decimals.
+
+Speaker
+
+And how do we do that? Well, if you remember from previously, we can use the math dot floor function.
+
+Speaker
+
+and wrap the entire thing.
+
+Speaker
+
+inside of the parentheses of math.
+
+Speaker
+
+Now we take this expression here.
+
+Speaker
+
+This one.
+
+Speaker
+
+and we then floor it, which gives you
+
+Speaker
+
+like that and
+
+Speaker
+
+like that.
+
+Speaker
+
+0 to 12.
+
+Speaker
+
+That's what we're returning here.
+
+Speaker
+
+Now the question remains, how do we go from 0 to 12 to...
+
+Speaker
+
+1 to 13? Well, that's only a matter of adding a 1.
+
+Speaker
+
+to any given number.
+
+Speaker
+
+Just do like that. That should return in number between one and 13. Let's try to start this game and pull a bunch of cards to see if we actually hit the entire range.
+
+Speaker
+
+7-4, looking good so far, 10. Okay, 13, yes.
+
+Speaker
+
+Five bunch of other numbers.
+
+Speaker
+
+Getting way too many numbers here. Let's get that one. Yes, there we got it.
+
+Speaker
+
+one. Do we have the entire range from 13 to 1? And just about everything in between. This was not a normal blackjack round, but at least prove the point that.
+
+Speaker
+
+This generates random number between 1 and 2.
+
+Speaker
+
+Great job reaching this far. Of course, we have to modify it because in Blackjack, we're not following the usual value sequence for cards. So we need to modify our function a little bit, but we'll do that in the next test.
+
+Speaker
+
+Now we need to change our Get Random Card.
+
+Speaker
+
+Because in Blackjack, the Jack
+
+Speaker
+
+in King are all worth 10 and the ace is worth 11. Or strictly speaking, the ace can be worth both 1 and 11. You get to choose as a player. What suits you best is the value you use. However, for the sake of simplicity, we are just going to treat
+
+Speaker
+
+the ace as 11 in our case. As having a dual value for this card would add a lot of complexity to our game and it's not something I want to focus on.
+
+Speaker
+
+rather something you can, for example, do as a stretch goal later, if you want to modify the game at the end of this course.
+
+Speaker
+
+So for now, we're going to treat our ACE as 11.
+
+Speaker
+
+So this means we need to modify art.
+
+Speaker
+
+Get to random code function.
+
+Speaker
+
+If the number 8 return is 1,
+
+Speaker
+
+then we should change it to 11. And likewise, if the number returns is either
+
+Speaker
+
+11, 12, or 13, we should rather return 10.
+
+Speaker
+
+So go ahead and modify this function so that these exceptions are followed.
+
+Speaker
+
+You're going to have to define and variable that.
+
+Speaker
+
+this random number is stored in and also have some kind of conditional that checks for these conditions.
+
+Speaker
+
+and returns the appropriate value. So go ahead and give this a shot, and then I will of course show you the solution afterwards as well.
+
+Speaker
+
+Hopefully that went well.
+
+Speaker
+
+No worries, we'll do it together.
+
+Speaker
+
+First, I'm going to instead of returning this directly.
+
+Speaker
+
+turn it into our random numbers.
+
+Speaker
+
+In fact, then we need to write our conditional to account for these special cases.
+
+Speaker
+
+I'm going to start from the very top.
+
+Speaker
+
+check if random number is more than 10, meaning that card is either the Jackie Queen or the King.
+
+Speaker
+
+So if...
+
+Speaker
+
+Random number is more than 10.
+
+Speaker
+
+What are we going to return then? Well, then we are going to return 10.
+
+Speaker
+
+because that is the value of the Jack Queen and King.
+
+Speaker
+
+And I'm going to do L-CIF.
+
+Speaker
+
+And now I'm going to count for the ace itself, and for that I'm going to use the...
+
+Speaker
+
+Triple equals, random number.
+
+Speaker
+
+Triple equals, one.
+
+Speaker
+
+And I'm going to return.
+
+Speaker
+
+11, many all other cases.
+
+Speaker
+
+Just do else like that. No other cases it must mean that we have drawn in the R2 3 4 5 6 7 8
+
+Speaker
+
+9 or 10.
+
+Speaker
+
+And if so...
+
+Speaker
+
+just going to return that value.
+
+Speaker
+
+We're just gonna return.
+
+Speaker
+
+Round a member directly.
+
+Speaker
+
+Let's run the code.
+
+Speaker
+
+It's dark game, okay, five five.
+
+Speaker
+
+It's hit a bunch of cards to see that we get the entire range, and indeed, it seems that we have a two here, we have an 11 here, and
+
+Speaker
+
+have almost every single word in between.
+
+Speaker
+
+I'm 100% sure that if we continue hitting the new card in the long run, we'll just get random numbers cross.
+
+Speaker
+
+or entire defined range.
+
+Speaker
+
+Great job.
+
+Speaker
+
+We're almost reaching the end of our Blackjack game. You should really be proud of yourself for reaching this far. This is starting to get a
+
+Speaker
+
+advanced, there's even more to learn, so let's just keep up the pace and move on.
+
+Speaker
+
+Okay, there's one really weird thing with our black jacket and that's easily exposed if we...
+
+Speaker
+
+Control them out of the cards.
+
+Speaker
+
+here at Line 12.
+
+Speaker
+
+and then refresh the page.
+
+Speaker
+
+There we can see I got two and seven.
+
+Speaker
+
+And the reason that's weird is because I haven't even clicked the Start Game button.
+
+Speaker
+
+I kind of just entered the casino and the casino was already decided what?
+
+Speaker
+
+I am to be dealt.
+
+Speaker
+
+That's fishy, we don't want that.
+
+Speaker
+
+I will the cards will be generated as I click on the start game button.
+
+Speaker
+
+So the first card and the second card should be generated inside of the Start Game function.
+
+Speaker
+
+And thus the
+
+Speaker
+
+and the sum also needs to be a reassigned inside of the Start Game function.
+
+Speaker
+
+And also, the EZ-Alive shouldn't be said to true by default.
+
+Speaker
+
+Before I've even clicked the start game button, I'm not alive. I'm not even playing the game.
+
+Speaker
+
+I'm going to use that as an example.
+
+Speaker
+
+Instead of the false first.
+
+Speaker
+
+Then, inside of the start game from truth.
+
+Speaker
+
+I'm going to do this.
+
+Speaker
+
+Alive.
+
+Speaker
+
+equal true.
+
+Speaker
+
+So now we have the...
+
+Speaker
+
+Correct starting state before I enter the game, or parent mind six.
+
+Speaker
+
+and the correct value once I've started the game down on line 26.
+
+Speaker
+
+What I want you to do is make it so that the same thing happens when it cards right because...
+
+Speaker
+
+it should not be set here.
+
+Speaker
+
+And the first and second card shouldn't even be defined up here and the sum should be
+
+Speaker
+
+0 by default.
+
+Speaker
+
+This is how.
+
+Speaker
+
+the state of the game is before I've started playing the game.
+
+Speaker
+
+Now
+
+Speaker
+
+So you need to do down here at Line 23 and 24. It's generated between random numbers.
+
+Speaker
+
+then reassign the cards and the some variables so that the game can start.
+
+Speaker
+
+You might find this a bit tricky.
+
+Speaker
+
+Do your best? There's no shame in truth.
+
+Speaker
+
+trying and failing, because I will of course also show you how to do it when you return back to this cast.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+We'll start by defining first card and second card.
+
+Speaker
+
+And they should be defined by running the get random card function.
+
+Speaker
+
+I will give them, you get to random card function.
+
+Speaker
+
+Second card equals
+
+Speaker
+
+And then card as well, now we can set B.
+
+Speaker
+
+Part 3.
+
+Speaker
+
+First card.
+
+Speaker
+
+And second card.
+
+Speaker
+
+Andy, some too.
+
+Speaker
+
+First card.
+
+Speaker
+
+And also, actually.
+
+Speaker
+
+Get this control log back in again.
+
+Speaker
+
+And re-run the voucher, you can see now it's empty.
+
+Speaker
+
+because Sino hasn't decided which car I am to get. Very good. So it started game and there I got my blackjack! Oh my god!
+
+Speaker
+
+That's amazing.
+
+Speaker
+
+And with that, I have.
+
+Speaker
+
+Nothing more to say. I'll see you in the next cast.
+
+Speaker
+
+The next thing I want to fix is our new card button because it's kind of broken. Let's see why.
+
+Speaker
+
+If I now start the game, and I get two cards and I draw a third card and a fourth card and a... I'm out of the game.
+
+Speaker
+
+At this point, I shouldn't be able to draw more cards, but actually I am. I can
+
+Speaker
+
+hit it and I got another 10 so I'm at 34.
+
+Speaker
+
+shouldn't be possible to get to that number in Blackjack.
+
+Speaker
+
+So we need to stop it when the game is over and
+
+Speaker
+
+Also, feel refreshed the browser.
+
+Speaker
+
+able to, I shouldn't be able to start with just one card either, but I actually can.
+
+Speaker
+
+So there's two conditions we need to check.
+
+Speaker
+
+If I'm still in the game?
+
+Speaker
+
+basically if the is alive is true and also I can't have blackjack either.
+
+Speaker
+
+Now, this requires us to learn something called logical operators, which lets you combine multiple conditions inside of an if statement, so that a piece of code should only be wrong if multiple conditions are satisfied. So let's take a little detour and learn about logical operators in the next cast.
+
+Speaker
+
+Okay, let's learn about logical operators. Here, we have a little bit of boilerplate code.
+
+Speaker
+
+Namely two variables and a function. And the imagine scenario here is a course platform, much like Scrimba. And what we're trying to solve is to figure out whether or not a user should get a certificate. That is, whether or not we should call this
+
+Speaker
+
+certificate function.
+
+Speaker
+
+because of the dealies, we
+
+Speaker
+
+only want to call this function.
+
+Speaker
+
+two conditions are true.
+
+Speaker
+
+And that is,
+
+Speaker
+
+the user.
+
+Speaker
+
+completed 100% of the course, and secondly,
+
+Speaker
+
+gives certificate. That is whether or not this is the type of course, makes the user eligible for a certificate.
+
+Speaker
+
+you can imagine that very short courses doesn't give you a certificate. The course has to be of a certain size to
+
+Speaker
+
+award you with a certificate.
+
+Speaker
+
+What we need to do is figure out
+
+Speaker
+
+how we can check this.
+
+Speaker
+
+both of these conditions are true because
+
+Speaker
+
+So then and only then do we want to call this generate certificate function.
+
+Speaker
+
+You could actually achieve this with the concepts you've learned so far by simply nesting if statements.
+
+Speaker
+
+For example, you could do
+
+Speaker
+
+We had a course.
+
+Speaker
+
+equals to true.
+
+Speaker
+
+Then add the body over the if statement.
+
+Speaker
+
+that inside of the body, you could nest a mother.
+
+Speaker
+
+If statement.
+
+Speaker
+
+Give us.
+
+Speaker
+
+Certificate.
+
+Speaker
+
+equals true.
+
+Speaker
+
+Thank you, so get to
+
+Speaker
+
+>>
+
+Speaker
+
+inside of each other.
+
+Speaker
+
+that, inside of the.
+
+Speaker
+
+Enter if.
+
+Speaker
+
+you do generate.
+
+Speaker
+
+certificate.
+
+Speaker
+
+We run this code.
+
+Speaker
+
+You see, yes, we are indeed generating the certificates.
+
+Speaker
+
+If we flip one of them to false,
+
+Speaker
+
+not been rating certificates because here.
+
+Speaker
+
+This condition was not fulfilled.
+
+Speaker
+
+So neither of the cold lines inside of the body was run.
+
+Speaker
+
+JavaScript just jumped over at the entire if statement.
+
+Speaker
+
+However,
+
+Speaker
+
+And this is a very clunky way of doing it.
+
+Speaker
+
+Better way would be to...
+
+Speaker
+
+actually remove the inner if statement.
+
+Speaker
+
+For now, let's just comment out.
+
+Speaker
+
+And then inside of the...
+
+Speaker
+
+parentheses here.
+
+Speaker
+
+can add another condition.
+
+Speaker
+
+by writing a double ampersand?
+
+Speaker
+
+And then the next condition.
+
+Speaker
+
+Give us.
+
+Speaker
+
+Super good.
+
+Speaker
+
+equals
+
+Speaker
+
+This line.
+
+Speaker
+
+This line and by the way,
+
+Speaker
+
+comment this one.
+
+Speaker
+
+Run this code.
+
+Speaker
+
+We see nothing happens because...
+
+Speaker
+
+This condition here is false.
+
+Speaker
+
+and with the AND operator.
+
+Speaker
+
+Both.
+
+Speaker
+
+of the expressions.
+
+Speaker
+
+Before and after the operator need to evaluate the true
+
+Speaker
+
+for this entire expression to evaluate the truth.
+
+Speaker
+
+So if we flood this to true.
+
+Speaker
+
+And run this.
+
+Speaker
+
+Now it works.
+
+Speaker
+
+But it's much better to have it on one line.
+
+Speaker
+
+And a little extra thing we can do is actually omit the
+
+Speaker
+
+these triple equals true.
+
+Speaker
+
+Now?
+
+Speaker
+
+What was this and this evaluate to?
+
+Speaker
+
+simply.
+
+Speaker
+
+and true and true equals false true.
+
+Speaker
+
+But that's for now.
+
+Speaker
+
+in order to be explicit about what the condition we are checking for.
+
+Speaker
+
+I actually want to keep these.
+
+Speaker
+
+Cripal equals here as well.
+
+Speaker
+
+So one way to read this in plain English is...
+
+Speaker
+
+If...
+
+Speaker
+
+This is true.
+
+Speaker
+
+And?
+
+Speaker
+
+This is true.
+
+Speaker
+
+Then run this code.
+
+Speaker
+
+Hopefully that makes sense.
+
+Speaker
+
+you get your hand to dirty with this as well.
+
+Speaker
+
+Okay, let's continue on.
+
+Speaker
+
+Okay, the way to solve this is almost similar to what we did in the previous cast will do F and
+
+Speaker
+
+going to close parentheses.
+
+Speaker
+
+And here we need to use a logical and operator.
+
+Speaker
+
+because we're going to check if both.
+
+Speaker
+
+for the challenge.
+
+Speaker
+
+Triple equals
+
+Speaker
+
+tools.
+
+Speaker
+
+And...
+
+Speaker
+
+Double ampersand?
+
+Speaker
+
+Hoss, hint's left.
+
+Speaker
+
+All so false.
+
+Speaker
+
+If the user...
+
+Speaker
+
+Hasn't sold the challenge.
+
+Speaker
+
+and has no hints left, it's time to give her some slack and show this solution.
+
+Speaker
+
+So then it will trigger solution like that.
+
+Speaker
+
+Let's run the code.
+
+Speaker
+
+And indeed.
+
+Speaker
+
+This triggers the code because...
+
+Speaker
+
+Both of them are false if we try to flip one to two.
+
+Speaker
+
+Then the code is not triggered, we're not logging anything to the console, meaning that our logical operator that governs our if statement actually works.
+
+Speaker
+
+Great job.
+
+Speaker
+
+So now that you've learned the AND operator, let's take a look at its close relative.
+
+Speaker
+
+operator.
+
+Speaker
+
+What does that do? Well...
+
+Speaker
+
+It allows you to check if...
+
+Speaker
+
+Either this condition is true.
+
+Speaker
+
+Or this condition is true.
+
+Speaker
+
+And if so...
+
+Speaker
+
+The body of the if statement will be executed.
+
+Speaker
+
+So if you're in a situation where we
+
+Speaker
+
+only need one of two cases to be valid, well then you want to use the OR operator.
+
+Speaker
+
+That's for this example, it doesn't really make sense.
+
+Speaker
+
+It will now run since actually both of these are true.
+
+Speaker
+
+But if the gimme certificate is false,
+
+Speaker
+
+It will also run.
+
+Speaker
+
+But that doesn't make any sense, because if the course doesn't give any certificates at all, you're not supposed to generate any certificates regardless of the user having completed the course. So let's use another example instead.
+
+Speaker
+
+Imagine here that you're building Netflix and you've just launched this amazing new documentary, the Fire Festival. I don't know if you've seen this, but it's truly amazing.
+
+Speaker
+
+about a guy who creates a festival that aims to be the celebrity hotshot festival of the world that just becomes a disaster. It's really good.
+
+Speaker
+
+After this has been launched,
+
+Speaker
+
+You probably want to recommend it to a ton of your users. And what you want to do is you want to check if the user
+
+Speaker
+
+Like documentaries?
+
+Speaker
+
+Or if the user likes startups.
+
+Speaker
+
+They don't have to like both, but they're like one of these themes, then most likely they will enjoy the fire festival documentary.
+
+Speaker
+
+So I want you now.
+
+Speaker
+
+You can copy them if you want. If you don't know how to get them from your keyboard and you're going to use this to cool.
+
+Speaker
+
+all recommend movie if either of the variables,
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+I'm pushing me out on thin ice here, I haven't written a complete or statement for you, but it works in just the same way as the end statement, so I think you can do it if you just give a shot, and if you don't, no worries, I will show you the solution afterwards as well.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+Let's like.
+
+Speaker
+
+Documentaries.
+
+Speaker
+
+Set back to true.
+
+Speaker
+
+and we'll do let lies.
+
+Speaker
+
+Startups.
+
+Speaker
+
+about your full story example.
+
+Speaker
+
+And if...
+
+Speaker
+
+Like Documentaries?
+
+Speaker
+
+That's true.
+
+Speaker
+
+Word.
+
+Speaker
+
+likes.
+
+Speaker
+
+startups is true.
+
+Speaker
+
+Well...
+
+Speaker
+
+Then we want to recommend this movie.
+
+Speaker
+
+running the code.
+
+Speaker
+
+We can see we are recommending the movie, even though...
+
+Speaker
+
+This one is false.
+
+Speaker
+
+Flipping both of them to force.
+
+Speaker
+
+Now, if I run the code, nothing happens because...
+
+Speaker
+
+At least one of them needs to be true.
+
+Speaker
+
+This or this?
+
+Speaker
+
+If we make.
+
+Speaker
+
+Both true.
+
+Speaker
+
+And run the code.
+
+Speaker
+
+And of course, if both are true, then one or the other is also true.
+
+Speaker
+
+So that would satisfy the condition.
+
+Speaker
+
+great job doing this challenge.
+
+Speaker
+
+keep out the pace and move on.
+
+Speaker
+
+Now you are going to take what you've learned about the logical and operator and modify this new card function.
+
+Speaker
+
+so that you only allowed a player to get a new card.
+
+Speaker
+
+Is alive?
+
+Speaker
+
+and does not have blackjack.
+
+Speaker
+
+So those are the two conditions that need to be filled.
+
+Speaker
+
+for you to actually run this code.
+
+Speaker
+
+So give this a shot.
+
+Speaker
+
+And I will of course show you the solution afterwards as well.
+
+Speaker
+
+Okay, so the way you can do this is if
+
+Speaker
+
+open close parentheses, and then open
+
+Speaker
+
+I'm actually just...
+
+Speaker
+
+Open the body of the conditional and...
+
+Speaker
+
+Paste in this code.
+
+Speaker
+
+And when are we going to run this code?
+
+Speaker
+
+She has to be alive.
+
+Speaker
+
+I'm gonna do this alive.
+
+Speaker
+
+And then if that equals to true,
+
+Speaker
+
+That's a first convention.
+
+Speaker
+
+And the second condition.
+
+Speaker
+
+which we also want to be drew since we're using this logical and operator should be that the pass.
+
+Speaker
+
+back.
+
+Speaker
+
+Should be cool.
+
+Speaker
+
+force.
+
+Speaker
+
+Like that.
+
+Speaker
+
+It's a live is true.
+
+Speaker
+
+And #AskBlackjack is false, then the dealer should be willing to give the player a new card.
+
+Speaker
+
+So let's try this. We'll start the game.
+
+Speaker
+
+15 new card 25 you're out of the game. Let's try to ask the dealer if you can please get one more card.
+
+Speaker
+
+Nothing happens.
+
+Speaker
+
+It works really, it's a really good job doing this challenge.
+
+Speaker
+
+Okay, so our black guy game is almost complete. There's just a
+
+Speaker
+
+a little feature I would like to add as well, because if you've ever played online Blackjack or Poker, what you normally see is your own name and your credits or your tips somewhere on the screen.
+
+Speaker
+
+But what I mean by that is something along the lines of this.
+
+Speaker
+
+So you see your name and how many credits you have.
+
+Speaker
+
+or whatever. And this is nice because then it's possible to later implement the concept of winning of increasing your chips and of losing as you are betting.
+
+Speaker
+
+or playing rounds or critical components of any black decade.
+
+Speaker
+
+However, I wouldn't want to hard-coded in the HTML like this. We, of course, want to represent this data in R.
+
+Speaker
+
+JavaScript.
+
+Speaker
+
+that gives us the ability to change it. Now I'm going to just show you how we could do this to begin with.
+
+Speaker
+
+by first giving this an idea of...
+
+Speaker
+
+Clear Bosch Bell.
+
+Speaker
+
+removing the confidence of it.
+
+Speaker
+
+Then in the JavaScript we could do let.
+
+Speaker
+
+Please leave your name equals peer.
+
+Speaker
+
+Play here.
+
+Speaker
+
+Chips?
+
+Speaker
+
+Equals.
+
+Speaker
+
+145, for example, and then we could grab the element.
+
+Speaker
+
+Clear L.
+
+Speaker
+
+by ID.
+
+Speaker
+
+Passing in the ID we just created?
+
+Speaker
+
+Then do the player L.Px content, which you know by now.
+
+Speaker
+
+Your name?
+
+Speaker
+
+Pull on in space and then a dollar sign.
+
+Speaker
+
+And then plus the player tips like that. If we now run this.
+
+Speaker
+
+You can see, yes, that we render it in the exact same way, however.
+
+Speaker
+
+Now we've come into a situation where...
+
+Speaker
+
+Two values that are inherently connected together, like...
+
+Speaker
+
+the player and his chips, which could
+
+Speaker
+
+currently live into different variables.
+
+Speaker
+
+What would make more sense in this situation?
+
+Speaker
+
+would be to somehow combine this into a single unity.
+
+Speaker
+
+that is where so called
+
+Speaker
+
+objects come into play.
+
+Speaker
+
+That is another data type.
+
+Speaker
+
+resembles a race a little bit, but they are also different in fundamental ways. But they are kind of
+
+Speaker
+
+Also,
+
+Speaker
+
+it's where you store it.
+
+Speaker
+
+So in our case,
+
+Speaker
+
+would perhaps want to create a player object.
+
+Speaker
+
+in which we can store both the player's name and the chips.
+
+Speaker
+
+So I'm going to show you how to do this. You might feel a little bit confused as you see it.
+
+Speaker
+
+But over the next few casts, you're going to practice.
+
+Speaker
+
+Well, dude.
+
+Speaker
+
+Clear.
+
+Speaker
+
+Equals.
+
+Speaker
+
+Open and close to curly brackets.
+
+Speaker
+
+And you've seen these before, they're used often in JavaScript.
+
+Speaker
+
+But when you see them in a context like this, after the assignment operator, they mean that we are creating an object.
+
+Speaker
+
+And inside of here.
+
+Speaker
+
+What I essentially want to do is
+
+Speaker
+
+this beta right here. However, you can see that something is wrong here with all these red lines. And that's because the syntax for
+
+Speaker
+
+creating items inside of our object.
+
+Speaker
+
+It's different from how we define variables.
+
+Speaker
+
+First of all...
+
+Speaker
+
+We don't use.
+
+Speaker
+
+the left keyword, bump of the names.
+
+Speaker
+
+And secondly, we replace the...
+
+Speaker
+
+assignment.
+
+Speaker
+
+And thirdly...
+
+Speaker
+
+Just as we have in a race.
+
+Speaker
+
+We separate the items.
+
+Speaker
+
+with commas.
+
+Speaker
+
+But we don't do that on the last item.
+
+Speaker
+
+Finally.
+
+Speaker
+
+Here it would make sense to omit the player as we've already used that name as the name of the entire object.
+
+Speaker
+
+So we can just...
+
+Speaker
+
+Rather do.
+
+Speaker
+
+name.
+
+Speaker
+
+I'm not going to capitalize it.
+
+Speaker
+
+And chips.
+
+Speaker
+
+Now we have taken our two variables.
+
+Speaker
+
+and group them together in this little bucket, which we are calling Player.
+
+Speaker
+
+And the way we now can...
+
+Speaker
+
+refer to these values.
+
+Speaker
+
+and 145 is by using the first the optic name.
+
+Speaker
+
+Clear?
+
+Speaker
+
+and then the given key.
+
+Speaker
+
+Nice and name.
+
+Speaker
+
+This is called a key.
+
+Speaker
+
+And it's a value.
+
+Speaker
+
+So name is the key and pair is the value.
+
+Speaker
+
+Also, chips is a key and 145 is a value.
+
+Speaker
+
+So to replace player chips with reference to the chips inside of the player object, we'll instead do player.
+
+Speaker
+
+Chips.
+
+Speaker
+
+If I run this code.
+
+Speaker
+
+You can see we get the exact same result.
+
+Speaker
+
+You're probably a little bit confused now.
+
+Speaker
+
+Don't worry if you think this was hard or...
+
+Speaker
+
+over the next few casts, you are going to practice objects for yourself.
+
+Speaker
+
+so that this becomes muscle memory and second nature to you.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+One way to think of objects is that they give you the ability to store data in depth.
+
+Speaker
+
+And with that in mind, we'll know that objects are so-called complex data types.
+
+Speaker
+
+- What is it called?
+
+Speaker
+
+composites data types.
+
+Speaker
+
+because we use numbers, strings, Boolean, even a race in order to compose objects.
+
+Speaker
+
+the office store quite a lot of data.
+
+Speaker
+
+and they can even store objects within objects.
+
+Speaker
+
+That kind of missed the data structure. It's not something you're going to think about now.
+
+Speaker
+
+So now just think of it as key value pairs.
+
+Speaker
+
+And let's look this through the lens of a real world example.
+
+Speaker
+
+That's always easier.
+
+Speaker
+
+So here on Scrimbar.
+
+Speaker
+
+We represent our courses as objects.
+
+Speaker
+
+As here you can see, the CSS Grid Course
+
+Speaker
+
+the very first course we launched back in the days and it has a bunch of different data.
+
+Speaker
+
+For example, it has in the title.
+
+Speaker
+
+Any number of lessons?
+
+Speaker
+
+and the creator of the course.
+
+Speaker
+
+the length of the course and the level of it.
+
+Speaker
+
+So let's actually translate this course into JavaScript into how the data structure actually looks. So
+
+Speaker
+
+black course.
+
+Speaker
+
+equals opening closed curly brackets.
+
+Speaker
+
+start with the title.
+
+Speaker
+
+Like that title, Kola.
+
+Speaker
+
+Learn, see you guys as grid for free.
+
+Speaker
+
+Now we have one key value pair.
+
+Speaker
+
+Title is the key, and the string here is the value.
+
+Speaker
+
+Then the lessons that is not told to represent as a number, so over 60 lessons.
+
+Speaker
+
+We create her.
+
+Speaker
+
+But again, it's a string.
+
+Speaker
+
+That's...
+
+Speaker
+
+And then we have the length, which while it says one hour here, it's actually not how we represent that data.
+
+Speaker
+
+and our database on this object.
+
+Speaker
+
+Break it down in two minutes. So perhaps this course is actually 63 minutes.
+
+Speaker
+
+But ask for it.
+
+Speaker
+
+The user interface we don't go into detail that much we rounded to the closest hour.
+
+Speaker
+
+And finally, there's the...
+
+Speaker
+
+level and here it says intermediate, but that's also one of those cases where the data in the user interface differs slightly from the data in the database.
+
+Speaker
+
+Our levels are represented from 0 to 3, where 0 is from the
+
+Speaker
+
+complete moves and we are the advanced courses.
+
+Speaker
+
+So the intermediate course.
+
+Speaker
+
+You can see here, we type out intermediate here.
+
+Speaker
+
+If this value is at two.
+
+Speaker
+
+Now, you don't have to worry about how our design.
+
+Speaker
+
+from the underlying data.
+
+Speaker
+
+world called basis.
+
+Speaker
+
+Now, it looks like we're kind of done here, but we're actually not because there's a lot more data for a course actually than we'll represent it here, for example.
+
+Speaker
+
+whether or not it's free or paid. That's a boolean, so you see they're true or false. Like that.
+
+Speaker
+
+is free, true, and
+
+Speaker
+
+With course, SMD3 and we also have tags for courses.
+
+Speaker
+
+And that's an array because we want to have the ability to add multiple times.
+
+Speaker
+
+to one course.
+
+Speaker
+
+So we need a complex data type here as well as the value of this type.
+
+Speaker
+
+So for example, this
+
+Speaker
+
+is a great coursehouse at PAX HTML.
+
+Speaker
+
+CSS.
+
+Speaker
+
+So this is a very real world example of a
+
+Speaker
+
+object.
+
+Speaker
+
+Now, if we want to access any of these values here, for example, the length, we do that through something we call the dot notation.
+
+Speaker
+
+worse.
+
+Speaker
+
+Thanks.
+
+Speaker
+
+Control log out this.
+
+Speaker
+
+run the code, you can see that we log out.
+
+Speaker
+
+63.
+
+Speaker
+
+Of course, dot length gives us back 63.
+
+Speaker
+
+And you've used this dot notation quite a lot actually, up until now, and even though you probably haven't been aware of it.
+
+Speaker
+
+you have been using objects all along, like...
+
+Speaker
+
+What are we doing here?
+
+Speaker
+
+dot log.
+
+Speaker
+
+What kind of data type do you think the console is?
+
+Speaker
+
+It's an object.
+
+Speaker
+
+And just to give you one more example, let's say we want to log out to this array here.
+
+Speaker
+
+So let me simply do course.
+
+Speaker
+
+Tunks!
+
+Speaker
+
+when we open the control, we can post objects.
+
+Speaker
+
+the composites data types.
+
+Speaker
+
+One way to think of objects is that they give you the ability to store data in depth.
+
+Speaker
+
+And with that in mind, we'll know that objects are so-called complex data types.
+
+Speaker
+
+- Well, it's okay.
+
+Speaker
+
+comp us at the data types.
+
+Speaker
+
+because we use numbers, strings, boolean, even arrays in order to compose objects.
+
+Speaker
+
+So the oven store quite a lot of data.
+
+Speaker
+
+and they can even store objects within objects.
+
+Speaker
+
+That kind of missed the data structure. It's not something you're going to think about now.
+
+Speaker
+
+now just think of it as key.
+
+Speaker
+
+value pairs.
+
+Speaker
+
+And let's look this through the lens of a real world example.
+
+Speaker
+
+That's always easier.
+
+Speaker
+
+So here on Scrimba.
+
+Speaker
+
+We represent our courses as objects.
+
+Speaker
+
+Here you can see the CSS grid course, actually the very first course we launched back in the days, and it has a bunch of different data.
+
+Speaker
+
+For example, the house in the title.
+
+Speaker
+
+Read a number of lessons.
+
+Speaker
+
+and the creator of the course.
+
+Speaker
+
+the length of the course and the level of it.
+
+Speaker
+
+So let's actually translate this course into JavaScript into how the data structure actually looks.
+
+Speaker
+
+to do that course.
+
+Speaker
+
+equals opening closed curly brackets.
+
+Speaker
+
+start with the title.
+
+Speaker
+
+Like that title, Kola.
+
+Speaker
+
+Learn CSS grid for free.
+
+Speaker
+
+Now we have one key value pair.
+
+Speaker
+
+Vitaly Sakhi.
+
+Speaker
+
+the string here is the value.
+
+Speaker
+
+then the lessons.
+
+Speaker
+
+That is not true to represent as a number, so it was 60 lessons.
+
+Speaker
+
+creator.
+
+Speaker
+
+But again, it's a string.
+
+Speaker
+
+And then we have the length, which while it says one hour here, it's actually not how we represent that data.
+
+Speaker
+
+in our database and thus in this object.
+
+Speaker
+
+Break it down in two minutes. So perhaps this course is actually 63 minutes.
+
+Speaker
+
+But ask for it.
+
+Speaker
+
+The user interface we don't go into detail that much we rounded to the closest hour.
+
+Speaker
+
+And finally, there's the...
+
+Speaker
+
+level and here it says intermediate, that's also one of those cases where the data in the user interface differs slightly from the data in the database.
+
+Speaker
+
+Our levels are represented from 0 to 3, where 0 is complete moves and 3 are the advanced quarters.
+
+Speaker
+
+the intermediate course.
+
+Speaker
+
+Good to see you here. We type out intermediate here.
+
+Speaker
+
+if this value is set to 2.
+
+Speaker
+
+Now, you don't have to worry about how our design.
+
+Speaker
+
+And what we say to the user differs from the underlying data. It's just something I wanted to give you a little heads up about.
+
+Speaker
+
+because it's very normal in.
+
+Speaker
+
+real world code basis.
+
+Speaker
+
+Now, it looks like we're kind of done here, but we're actually not because there's a lot more data for a course actually than we'll represent it here. For example...
+
+Speaker
+
+whether or not it
+
+Speaker
+
+free or paid. That's a boolean so it's either true or false. Like that is free, true, and...
+
+Speaker
+
+This course isn't a dream, and we also have tags for courses.
+
+Speaker
+
+And that's an array because we want to have the ability to add multiple tags.
+
+Speaker
+
+One course.
+
+Speaker
+
+So we need a complex data type here as well as the value of this.
+
+Speaker
+
+So for example, this
+
+Speaker
+
+to use a squid or toss the tags HTML.
+
+Speaker
+
+CSS. So this is a very real world example of an object.
+
+Speaker
+
+Now if we want to access any of these values here, for example, the length, we do that through something we call the dot notation.
+
+Speaker
+
+- Horse.
+
+Speaker
+
+Links, like that.
+
+Speaker
+
+Control log office.
+
+Speaker
+
+run the code, you can see that we log out 63.
+
+Speaker
+
+course.
+
+Speaker
+
+length gives us back 63.
+
+Speaker
+
+And you've used this dot notation quite a lot actually, up until now, and even though you probably haven't been aware of it,
+
+Speaker
+
+you have been using objects all along.
+
+Speaker
+
+What are we doing here?
+
+Speaker
+
+dot log.
+
+Speaker
+
+What kind of data type do you think to console this?
+
+Speaker
+
+It's an object.
+
+Speaker
+
+And just to give you one more example, let's say we want to log out to this array here.
+
+Speaker
+
+Well, then we simply do course dot.
+
+Speaker
+
+Thanks.
+
+Speaker
+
+And when we open the console, we can see that we're logging out in a array.
+
+Speaker
+
+This entire array is the value that we get back.
+
+Speaker
+
+when we ask for the tags. Now.
+
+Speaker
+
+One thing I'm going to point out before we move on.
+
+Speaker
+
+If you can replace this stock with
+
+Speaker
+
+and open square racket.
+
+Speaker
+
+and then add a closing square bracket.
+
+Speaker
+
+And then...
+
+Speaker
+
+turn the key name into a string.
+
+Speaker
+
+They just called the bracket notation.
+
+Speaker
+
+If we run the code, we get the exact same thing back. Now, there are reasons for why you sometimes want to use bracket notation, but we're not going to get into that right now, because in the foreseeable future, you are not going to end up in a situation where you have to do that.
+
+Speaker
+
+So I'm just going to tell you now to use the dot notation.
+
+Speaker
+
+It's simpler.
+
+Speaker
+
+Let's go to read, let's go to write, it's very understandable, and it's actually what most developers prefer to use if they get to choose.
+
+Speaker
+
+So now I've been talking for...
+
+Speaker
+
+far too long.
+
+Speaker
+
+I want you to write code, of course, this is squimble, that's what we roll about.
+
+Speaker
+
+So in the next cast, you are going to write your own object.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+One thing I like to do if I'm bored is to search for epic places to live on Airbnb.
+
+Speaker
+
+For example, Castles. Like this wishlist I came across right here, which contains a bunch of more or less affordable Castles to rent a crime.
+
+Speaker
+
+Europe.
+
+Speaker
+
+So for example, this.
+
+Speaker
+
+really neat looking castle right here.
+
+Speaker
+
+cost $119.
+
+Speaker
+
+I mean, that's what people pay for, like, 10 square meters in a hotel room in central London.
+
+Speaker
+
+So pretty cool that you can rent the castle for that same price. But anyway,
+
+Speaker
+
+point being that these listings here on Airbnb most likely take advantage of the object data structure in order to store all of the data that they
+
+Speaker
+
+they need to percent to the user.
+
+Speaker
+
+So this can also be a great exercise for you so that we can build up that object muscle memory of yours.
+
+Speaker
+
+So I want to basically create an object that
+
+Speaker
+
+sense an Airbnb Castle listing.
+
+Speaker
+
+It should contain at least one billion.
+
+Speaker
+
+One stream.
+
+Speaker
+
+one number and one or eight.
+
+Speaker
+
+It can contain a bunch of money if you want to, if you want to go above and beyond. However, that's the minimum requirement.
+
+Speaker
+
+And at the end, I want you to log out at least two of the keys using the dot notation. So.
+
+Speaker
+
+Go ahead and do this right now.
+
+Speaker
+
+Okay, hopefully that one's well, let's do this together.
+
+Speaker
+
+I'll do that.
+
+Speaker
+
+Hustle equals
+
+Speaker
+
+Open close brackets.
+
+Speaker
+
+We can use the title.
+
+Speaker
+
+Live like that.
+
+Speaker
+
+and Mike.
+
+Speaker
+
+That's all I got.
+
+Speaker
+
+That's for the number, I think the price is very natural to use.
+
+Speaker
+
+Price.
+
+Speaker
+
+$100, $90.
+
+Speaker
+
+And what about the Boolean?
+
+Speaker
+
+which components here naturally lend themselves well to using boolean data type under the hood.
+
+Speaker
+
+to this being a suitable piece of data for the Boolean data type.
+
+Speaker
+
+because you're either super host or you're not.
+
+Speaker
+
+Superhost.
+
+Speaker
+
+And this one happened to be true.
+
+Speaker
+
+And then finally, they're to the array.
+
+Speaker
+
+What kind of data here would it make sense to place inside of an rate?
+
+Speaker
+
+It could be that these kind of bullet points here are arrays that are pulled out of the underlying data on.
+
+Speaker
+
+kind of the featured selling points that Airbnb wants to list out.
+
+Speaker
+
+actually you can see that there's multiple images here if you see this carousel indicator.
+
+Speaker
+
+So the images
+
+Speaker
+
+very natural to have inside of an array.
+
+Speaker
+
+And also the reviews, that's definitely a list of many items.
+
+Speaker
+
+That's no matter what you choose.
+
+Speaker
+
+If you choose something completely different.
+
+Speaker
+
+point is just that I wanted you to write and array inside of an object.
+
+Speaker
+
+I'm gonna choose.
+
+Speaker
+
+immigrants like that.
+
+Speaker
+
+Make that an array.
+
+Speaker
+
+we probably have URLs to the specific images. So it might be I am g/
+
+Speaker
+
+- Castle, one, God.
+
+Speaker
+
+P&G.
+
+Speaker
+
+I am Geez, lah.
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+Two DopP and D-N-S-O-1 and so on. I won't bother writing anymore.
+
+Speaker
+
+Now, let's log out to release using the documentation.
+
+Speaker
+
+Control-Log.
+
+Speaker
+
+Castle, Dark Price.
+
+Speaker
+
+Assault, Log.
+
+Speaker
+
+Gospel.
+
+Speaker
+
+This is super.
+
+Speaker
+
+We'll run this.
+
+Speaker
+
+And indeed.
+
+Speaker
+
+We print out 190.
+
+Speaker
+
+and true to the console.
+
+Speaker
+
+Meaning we have complete of the talent.
+
+Speaker
+
+Great job solving this one.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, welcome back. Now it's your time to render.
+
+Speaker
+
+I'll put your name.
+
+Speaker
+
+And it is her chips.
+
+Speaker
+
+So it's a four-part challenge.
+
+Speaker
+
+first you are to create a paragraph with an ID of
+
+Speaker
+
+your health.
+
+Speaker
+
+Then you are to move over to the JavaScript and create the player object.
+
+Speaker
+
+here at the very top and you are to give it two keys, name and check.
+
+Speaker
+
+tips.
+
+Speaker
+
+Then you are to move down to where you are grabbing elements from the DOM.
+
+Speaker
+
+then grab hold of the player L-Fire graph and store it in a variable called player L.
+
+Speaker
+
+Then you are to render the player's name and chips inside of PlayRel.
+
+Speaker
+
+Pretty big challenge.
+
+Speaker
+
+But you've seen me do it before and you've practiced how to work with objects, so I think you're going to nail this one.
+
+Speaker
+
+Give it your best shot, and then I will show you how to do it as well afterwards.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+If not, no worries, let's do it together.
+
+Speaker
+
+First, we'll do a paragraph here.
+
+Speaker
+
+And we'll give it the ID of...
+
+Speaker
+
+that you're not sure.
+
+Speaker
+
+Nothing happens because it's empty.
+
+Speaker
+
+Moving over to the JavaScripts, we are to create the player object.
+
+Speaker
+
+Player equals.
+
+Speaker
+
+I'll put in close curly brackets.
+
+Speaker
+
+Our defined needs.
+
+Speaker
+
+name.
+
+Speaker
+
+In my case, pair.
+
+Speaker
+
+Use a comma to separate the items and then.
+
+Speaker
+
+tips
+
+Speaker
+
+See, I have...
+
+Speaker
+
+$200 in chips right now.
+
+Speaker
+
+Three, grab a hold of the player L paragraph and store it in a variable called player L.
+
+Speaker
+
+Okay, we know how to do that.
+
+Speaker
+
+Play your L.
+
+Speaker
+
+equals
+
+Speaker
+
+element.
+
+Speaker
+
+by ID.
+
+Speaker
+
+Housing in the player.l
+
+Speaker
+
+Created right here.
+
+Speaker
+
+At this point, let's console log out.
+
+Speaker
+
+Play your L.
+
+Speaker
+
+And indeed, we are affecting it from the DOM.
+
+Speaker
+
+Finally, we are to render the player's name on tips inside of Playwr.
+
+Speaker
+
+We know how to do that as well.
+
+Speaker
+
+Click on the "click content".
+
+Speaker
+
+equals
+
+Speaker
+
+And here we have to concatenate the screen.
+
+Speaker
+
+I'm...
+
+Speaker
+
+dig into the object to find the correct values, so we'll start with the...
+
+Speaker
+
+player.
+
+Speaker
+
+name.
+
+Speaker
+
+Us.
+
+Speaker
+
+have a colon and a space and then the dollar sign in front of the tips.
+
+Speaker
+
+And then do plus again.
+
+Speaker
+
+you're
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+This is all set up, let's run the project and there we go.
+
+Speaker
+
+We have rendered it out, great job solving this challenge.
+
+Speaker
+
+how we can dynamically target an element style with JavaScript using element
+
+Speaker
+
+dot style.
+
+Speaker
+
+So until now, if we wanted something to appear in the DOM or disappear from the DOM or be updated in some way, we've grabbed the element, we've probably set it in HTML property or it's in a text property.
+
+Speaker
+
+There's absolutely nothing wrong with that at all.
+
+Speaker
+
+But if the change we want to make is basically stylistic, i.e.
+
+Speaker
+
+things that could be done with CSS.
+
+Speaker
+
+We can actually use JavaScript to access an element style properties
+
+Speaker
+
+and change them dynamically from within our app.
+
+Speaker
+
+I'm building an animal trivia site here and I want a user to be able to read a question.
+
+Speaker
+
+and then see the answer when they click on reveal.
+
+Speaker
+
+So the question I've got is how many whiskers
+
+Speaker
+
+the average rabbit half.
+
+Speaker
+
+Well, we can see the onset right here in index.html.
+
+Speaker
+
+the average rabbit has 24 whiskers 12 on each side.
+
+Speaker
+
+No two whiskers are the same length.
+
+Speaker
+
+you learn a lot at Scrimber.
+
+Speaker
+
+Now, I want to be able to see that in this app when I hit this reveal button and
+
+Speaker
+
+And at the moment I can't, this div with the answer.
+
+Speaker
+
+class and ID of answer.
+
+Speaker
+
+Let's have a look in index.cs.
+
+Speaker
+
+And if we go to the Arms of Selector,
+
+Speaker
+
+answer has a display of none.
+
+Speaker
+
+If we took that away,
+
+Speaker
+
+answer.
+
+Speaker
+
+peace.
+
+Speaker
+
+So that's basically what we want to do with JavaScript.
+
+Speaker
+
+We want to change display num to display.
+
+Speaker
+
+something else.
+
+Speaker
+
+display.
+
+Speaker
+
+That would do the trick.
+
+Speaker
+
+Okay, so in index.js.
+
+Speaker
+
+I have got an event listener already set up on this button right here. So every time I click the button, this event listener is going to fire.
+
+Speaker
+
+What I'm going to do now is I'm going to target...
+
+Speaker
+
+answer element. So it's this element with the ID of answer.
+
+Speaker
+
+Now I've gone that inside this event listener I can take answer and now I can access the style
+
+Speaker
+
+properties of answer. So answer is the element among
+
+Speaker
+
+We are going for element dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot dot
+
+Speaker
+
+style.
+
+Speaker
+
+So I'm going to say, "I'm sir."
+
+Speaker
+
+style.
+
+Speaker
+
+display because it is the display property that we want to change.
+
+Speaker
+
+And I'm going to set that display.
+
+Speaker
+
+property.
+
+Speaker
+
+equals to now inside this string, I'm basically going to write whatever I would put in the CSS right here.
+
+Speaker
+
+So let's try going for display.
+
+Speaker
+
+out when I press answer.
+
+Speaker
+
+Well, there we are, the answer.
+
+Speaker
+
+This.
+
+Speaker
+
+And as you
+
+Speaker
+
+picture of a rabbit, it's just one an artist made.
+
+Speaker
+
+Okay, so let's just refresh the page and go back to our original state.
+
+Speaker
+
+And now I've got a challenge for you.
+
+Speaker
+
+So firstly, when the button is clicked and the answer is revealed, which we've already done here,
+
+Speaker
+
+I want you to change the background color.
+
+Speaker
+
+And the text color just on the question, Dave.
+
+Speaker
+
+So that is this div right here in gray. I want you to change the background color.
+
+Speaker
+
+and you've got the hex here and the text color to this hex.
+
+Speaker
+
+just on that date.
+
+Speaker
+
+Now I've put a little warning here, you're going to run into a problem with the background color.
+
+Speaker
+
+See if you can find the solution by Googling. It's a really quick 22nd Google.
+
+Speaker
+
+Secondly, when the answer is revealed, we don't need this reveal answer button anymore.
+
+Speaker
+
+So how about we make that button?
+
+Speaker
+
+Okay, pause now.
+
+Speaker
+
+I've got that, and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+So firstly, we need to take control of one more element.
+
+Speaker
+
+So let's just copy answer and I'm going to set this one up as question and we'll say document dot get element by ID and the ID we're looking for.
+
+Speaker
+
+is
+
+Speaker
+
+question and we have got that one.
+
+Speaker
+
+right here.
+
+Speaker
+
+Okay, so now we want to target question.
+
+Speaker
+
+And we are going to access questions style properties.
+
+Speaker
+
+And we want to deal with two things.
+
+Speaker
+
+Let's deal with the text color first because that one is a little bit easier so I'm just going to copy that text.
+
+Speaker
+
+I will just say.
+
+Speaker
+
+Question dot style dot color is equals to
+
+Speaker
+
+And there we are, there's that hex.
+
+Speaker
+
+Now let's hit reveal.
+
+Speaker
+
+And you see, we change to a shade of dark blue.
+
+Speaker
+
+Okay, now let's deal with the...
+
+Speaker
+
+So...
+
+Speaker
+
+Here we've got a bit of a problem because we're just using a dot notation here. So if I come in here and I say,
+
+Speaker
+
+background, hive and color, well, we get that red underline which already tells us we have got problems. Let's just copy and paste the hex.
+
+Speaker
+
+Okay, now if I hit save, yeah, we're getting errors all over the place.
+
+Speaker
+
+what we actually need to do with this one, and hopefully you found out when you googled it.
+
+Speaker
+
+I'm OK, Sitt.
+
+Speaker
+
+So when you've got a CSS property with a dash in it,
+
+Speaker
+
+JavaScript doesn't accept that.
+
+Speaker
+
+Normally, it's a straightforward case of camel casing it, but it's only ever a very quick Google search away. Let's just see if this has worked.
+
+Speaker
+
+And there we are, we're getting the background color to a blue, which matches this rabbit.
+
+Speaker
+
+and the background text of it.
+
+Speaker
+
+dark blue.
+
+Speaker
+
+Next, we want to make this button disappear. We've already taken control of the button. We've got it right here. It's called Revealed button.
+
+Speaker
+
+that's what the event listeners set up on.
+
+Speaker
+
+So let's come in here and we'll say, "Review a button."
+
+Speaker
+
+And we want to have the opposite to what we've got here, really. So again, it's the...
+
+Speaker
+
+style property.
+
+Speaker
+
+We display.
+
+Speaker
+
+And we can set that to, well, we know already.
+
+Speaker
+
+So none in there.
+
+Speaker
+
+Okay, now let's hit save.
+
+Speaker
+
+with the Alancer.
+
+Speaker
+
+where we are the button has gone, the div has changed its background colour.
+
+Speaker
+
+and the text color, said that is working exactly how I want it.
+
+Speaker
+
+really useful skills, you're going to use element.style to dynamically change pages all the time.
+
+Speaker
+
+Now that you've learned about the objects, I want to tell you about a specific coding pattern that we've actually been using quite a lot here.
+
+Speaker
+
+but that we aren't going to implement from scratch ourselves.
+
+Speaker
+
+in this module. But since we still are exposed to it, I want you to understand what's going on under the hood. And that pattern
+
+Speaker
+
+is to create functions inside of objects.
+
+Speaker
+
+something which we also call methods. Because let's say that, for example, we create another key here, which is, say,
+
+Speaker
+
+Hello, and that'll call one, and then as the value will actually write a function.
+
+Speaker
+
+You won't give it a name.
+
+Speaker
+
+It'll just be an anonymous function.
+
+Speaker
+
+And inside.
+
+Speaker
+
+We'll control our.
+
+Speaker
+
+That's how it is in the region.
+
+Speaker
+
+And now if we want to invoke this function,
+
+Speaker
+
+Will do play your.
+
+Speaker
+
+See you.
+
+Speaker
+
+Hello, and then opening close parentheses.
+
+Speaker
+
+If we run the code now,
+
+Speaker
+
+see, indeed we are logging high sum to the console.
+
+Speaker
+
+And now the reason I wanted to show this to you is because...
+
+Speaker
+
+Don't you think this syntax looks a little bit familiar?
+
+Speaker
+
+first, a variable.
+
+Speaker
+
+that he dot.
+
+Speaker
+
+And then a function that you are calling with the parentheses at the end.
+
+Speaker
+
+That's the exact same thing we're doing here when we're saying "document."
+
+Speaker
+
+get element by ID.
+
+Speaker
+
+parentheses.
+
+Speaker
+
+And here we're also passing in a value, but it's essentially the same thing. And also here.
+
+Speaker
+
+down at
+
+Speaker
+
+Math.
+
+Speaker
+
+All for the same thing.
+
+Speaker
+
+path is an object.
+
+Speaker
+
+random is a function on that object.
+
+Speaker
+
+also called a method.
+
+Speaker
+
+and even our good old friend, console.log.
+
+Speaker
+
+Just the exact same thing.
+
+Speaker
+
+with a method.
+
+Speaker
+
+This is not something we are going to implement ourselves.
+
+Speaker
+
+in this module.
+
+Speaker
+
+I just wanted you to be aware of that.
+
+Speaker
+
+So that when I speak about methods,
+
+Speaker
+
+you know that they are simply functions that are attached to
+
+Speaker
+
+So with that,
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Hey, it's Tom here, and I'm just dropping by to talk about AI.
+
+Speaker
+
+AI tools like chat GPT have taken the world by storm.
+
+Speaker
+
+the peak of the hype.
+
+Speaker
+
+I was going to replace humans in many skilled jobs and there were even lurid clickbaity claims that humans could disappear altogether.
+
+Speaker
+
+from the face of the earth.
+
+Speaker
+
+So, certainly no point in learning to be a web developer then.
+
+Speaker
+
+Well, you're still watching this, so you didn't believe that any more than I did.
+
+Speaker
+
+But AI is here to stay and it does have implications for the industry and for you as a learner.
+
+Speaker
+
+In this scrim, I want to investigate what AI means to the coding student.
+
+Speaker
+
+because there are some good uses of AI for you as a coder, but also some potential missteps and problems.
+
+Speaker
+
+Take this fairly typical squimmer challenge. In fact, it's one you've already seen.
+
+Speaker
+
+I could solve this myself, but I can't be bothered, so I'm going to copy it and
+
+Speaker
+
+and paste it into chat GPT.
+
+Speaker
+
+I'll hit the magic button.
+
+Speaker
+
+And look, we've got an answer, and it's given me some explanation. And explanation is good, if I read it,
+
+Speaker
+
+But the temptation is strong just to take the code it's prepared for me right here.
+
+Speaker
+
+and paste it in.
+
+Speaker
+
+to the editor and solve the challenge.
+
+Speaker
+
+And when I save that and we open up the console, well, I can see that it is working.
+
+Speaker
+
+But obviously, if I were a new aspiring developer that couldn't solve this challenge in the first place, in five minutes time, I would have absolutely no idea what this code does or how it works, because all I've done is glance to the bit of explanation and then copied and pasted some code from chat GPT.
+
+Speaker
+
+I haven't really progressed myself at all. I'm no more knowledgeable.
+
+Speaker
+
+And that is pretty silly.
+
+Speaker
+
+So remember, when learning to code, you need to understand what a piece of code does. You need to know its use cases, so what it's good for and what its limitations are. And you need to be building muscle memory. Your hereteachers and instructors talking a lot about muscle memory, that only comes with the practice of actually writing code, not looking at it, not watching somebody else write it on YouTube,
+
+Speaker
+
+And of course not watching AI churn it out.
+
+Speaker
+
+And although theory and explanation are great, we've code you're not really learning until you're doing.
+
+Speaker
+
+So, going back to our previous example,
+
+Speaker
+
+unless you read the explanation thoroughly,
+
+Speaker
+
+write this code out yourself.
+
+Speaker
+
+and perhaps experiment with it a bit to verify that what the AI told you is true.
+
+Speaker
+
+you're actually doing yourself a disservice.
+
+Speaker
+
+And yes, I said verify what the AI told you is true.
+
+Speaker
+
+And that brings us to a key fact.
+
+Speaker
+
+and chat GPT is honest about it right here.
+
+Speaker
+
+minutes for
+
+Speaker
+
+AI is not always right. Chat GPT can make mistakes.
+
+Speaker
+
+check important info.
+
+Speaker
+
+And you need to know that.
+
+Speaker
+
+Remember how AI is trained. It learns in most cases from code which is openly available on the internet.
+
+Speaker
+
+and there is a lot of bad code on the internet.
+
+Speaker
+
+If you blindly use AI-generated code without understanding what it does, sooner or later things will go horribly wrong.
+
+Speaker
+
+you will not make it far as a professional developer
+
+Speaker
+
+you don't understand the code you're writing.
+
+Speaker
+
+But if you choose to use AI to generate code, that a several take-homes I want you to know about.
+
+Speaker
+
+Make sure you understand the code that's been generated.
+
+Speaker
+
+Verify that it's true from non-AI sources if at all possible, and whenever you use code that came from AI or indeed from Stack Overflow or any other source, write out the code yourself.
+
+Speaker
+
+this will build muscle memory.
+
+Speaker
+
+And lastly, keep asking yourself why.
+
+Speaker
+
+Why does this code work?
+
+Speaker
+
+following these rules will help you grow as a developer.
+
+Speaker
+
+much faster.
+
+Speaker
+
+and remember AI should enhance your skills and not replace them.
+
+Speaker
+
+So my last bit of friendly advice on this topic is that at this stage in your learning where you are right now, it's probably best to avoid using AI to simply generate code for you.
+
+Speaker
+
+But I'm not saying never use AI. So let's examine some of the use cases for AI and highlights some pitfalls to avoid.
+
+Speaker
+
+You can use AI as a code explainer.
+
+Speaker
+
+If you don't understand what some code does and why you can drop it into your AI helper,
+
+Speaker
+
+This can certainly be very useful, but it does come with a caveat. And this is basically a continuation of what I was just saying about accuracy.
+
+Speaker
+
+AI always sounds confident in its reply, but don't let that fool you. It can be misleading or just plain wrong.
+
+Speaker
+
+This is what is known as hallucinating.
+
+Speaker
+
+and it can sound very plausible.
+
+Speaker
+
+We all know that person, right? Or perhaps a politician we've seen interviewed. They've got all of the confidence in the world.
+
+Speaker
+
+but that doesn't mean that they're not speaking rubbish.
+
+Speaker
+
+So while AI can be great for explaining code,
+
+Speaker
+
+Think of it as a friendly, helpful colleague who potentially knows more than you.
+
+Speaker
+
+but is not
+
+Speaker
+
+fallible.
+
+Speaker
+
+not perfect.
+
+Speaker
+
+I also want to add the, while the more traditional ways of finding answers and more time consuming,
+
+Speaker
+
+by our time well spent.
+
+Speaker
+
+reading blog posts or discussions on the problem or asking a question on Scrimber's discord and forum,
+
+Speaker
+
+might
+
+Speaker
+
+which you then have to customize to apply to your code.
+
+Speaker
+
+fine-tuning your coding skills even more. So while AI is a good explainer, it should really be considered a last resort.
+
+Speaker
+
+AI can be useful for debugging again if you're really stuck.
+
+Speaker
+
+And if you're working professionally and are against the clock, then this is a great time saving tool. But this also comes with a bit caveat. As a new developer, you should do everything you can to debug the code yourself without relying on AI.
+
+Speaker
+
+That means, thinking for yourself, rewatching scrims, searching online for the meaning behind error codes, you do have to be able to understand the problem and the solution to
+
+Speaker
+
+to consider it a success.
+
+Speaker
+
+So don't get into the lazy habit of relying on AI. Probably one of the best users is as a research tool and I'm thinking here more on the high level. So you could ask it some pretty general questions.
+
+Speaker
+
+For example, what are the main considerations for making a website accessible to users with visual impairments?
+
+Speaker
+
+or what is the best way to empty an HTML element?
+
+Speaker
+
+Of course, you'll still need to use background knowledge and traditional research to weed out responses that are inaccurate or wrong,
+
+Speaker
+
+it can really speed up the reset process and give you a ton of ideas.
+
+Speaker
+
+AI can be a great time saver.
+
+Speaker
+
+I want to finish up with a word about ethics because there are some downsides to AI which don't get enough of a mention.
+
+Speaker
+
+From an environmental perspective, AI is a huge consumer of power. AI involves crunching data and that means service a working hard using electricity and needing to be called.
+
+Speaker
+
+we do need to be cutting our carbon footprints and not expanding them.
+
+Speaker
+
+Also, the source content AI is trained on was made by real people who have mostly not consented and are not getting a cart of the
+
+Speaker
+
+So these are two things to bear in mind, not least because they will influence the evolution of AI.
+
+Speaker
+
+from here on in.
+
+Speaker
+
+and you should definitely be keeping an eye on this field.
+
+Speaker
+
+Let's go back to the course.
+
+Speaker
+
+So you have built your very first JavaScript game. Congrats with that. This is perhaps the first of many games you're going to build. Perhaps a start of a--
+
+Speaker
+
+I don't know, anyway, give yourself a pat on the back.
+
+Speaker
+
+you have learned.
+
+Speaker
+
+And actually, let's do a little recap.
+
+Speaker
+
+simply remind yourself about all the awesome things you've learned throughout this section.
+
+Speaker
+
+One thing.
+
+Speaker
+
+which was key to our app and is key to basically every web app out there is the erase. We defined a card array.
+
+Speaker
+
+And also, you reassign the array down in the start game function where you defined it with items.
+
+Speaker
+
+And then all the way down is the new card button. You also pushed to the array.
+
+Speaker
+
+you are starting to get some serious array skills.
+
+Speaker
+
+Also, we worked with objects.
+
+Speaker
+
+here we created our player object.
+
+Speaker
+
+the object as you remember contains key value pairs.
+
+Speaker
+
+And it's also a data type that is used in basically every single web app out there.
+
+Speaker
+
+The third data type you learned was Booing.
+
+Speaker
+
+Namely the true and false for the house blackjack and is alive at variables.
+
+Speaker
+
+We flip them around.
+
+Speaker
+
+So we said, "It's alive to true down here."
+
+Speaker
+
+has blackjack set to true down here and thus creating kind of a state-through game.
+
+Speaker
+
+This brings us to the next important concept you learned, which is
+
+Speaker
+
+the if-else statements that wrapped.
+
+Speaker
+
+these bullying and so many other things. This is key. You cannot build apps without these kinds of conditional statements.
+
+Speaker
+
+Both the F, the L's F and the L's are absolutely key in any programming language.
+
+Speaker
+
+And in order to make these FL statements, we used comparison operators.
+
+Speaker
+
+these guys in here, less than or equal to or triple equal.
+
+Speaker
+
+help us.
+
+Speaker
+
+the conditions as to when we wanted to render the blocks of cold in the
+
+Speaker
+
+if else statement.
+
+Speaker
+
+Moving on, we also did logical operators.
+
+Speaker
+
+The AND operator, which
+
+Speaker
+
+check that.
+
+Speaker
+
+both this condition and this condition was true.
+
+Speaker
+
+in order for us to
+
+Speaker
+
+run this code
+
+Speaker
+
+block of the if statement.
+
+Speaker
+
+And something we also learned was the for loops.
+
+Speaker
+
+It was here in the Render Game function, where we used the for loop to loop through our cards array and render out each of the cards.
+
+Speaker
+
+Again, for a loop is just one of those foundational things in programming because so much of programming is evolved around
+
+Speaker
+
+looping through data and doing things based upon the data.
+
+Speaker
+
+whether that's rendering it out to making calculations, sending it off from a server to a client or just summing it together, for example, it doesn't matter. It's just something you'll do again and again. So I'm really happy that you've learned it as a
+
+Speaker
+
+early as now.
+
+Speaker
+
+Another useful tool you've learned is the Math Object.
+
+Speaker
+
+That allowed us to.
+
+Speaker
+
+create the skip random card function.
+
+Speaker
+
+by using math.random, which gives us a number between 0 and 1, and math.floor, which basically floors the numbers with the nearest whole number moving downwards.
+
+Speaker
+
+And you built upon your further knowledge of functions and learned how to use return statements in functions. Because in this get random card, we had to return values, and that's something you didn't know before this section.
+
+Speaker
+
+There's still more things to learn about functions, so we'll definitely continue on with functions. In the Chrome extension, we're going to build a bit later, but for now, just be proud about the fact that you've
+
+Speaker
+
+Please come to the point where you can return values in function. That's a big, important step.
+
+Speaker
+
+With all of these things learned, I completely understand. If you feel that you're a little bit on shaky ground here and at all these names, basically just confuse you even more. I don't think you should
+
+Speaker
+
+I would have never remembered the difference between comparison operators and logical operators when I learned JavaScript.
+
+Speaker
+
+what they are called doesn't really matter. The important thing is that you know how to complete
+
+Speaker
+
+here to variables for example, or that you know how to create a true or false variable, whether that you call them Boolean or true false. This is something you should be too worried about right now. So even though this might look scary, try to not let it scare you.
+
+Speaker
+
+focus on coding as much as you can.
+
+Speaker
+
+over time, these concepts will mature in your mind and become a second nature.
+
+Speaker
+
+on that note, you are going to get some practice right away because before we jump onto the final project, the Chrome extension, I'm going to throw a few challenges on you just so that we are sure that you really understand these concepts and that you build out that ever so important muscle memory. So let's go ahead and do that.
+
+Speaker
+
+Okay, in this challenge, you are going to practice objects and functions.
+
+Speaker
+
+So first you are going to create a person object that contains three keys.
+
+Speaker
+
+name, age, and country.
+
+Speaker
+
+And the values of those keys should be set by using yourself as an example, so your name, your age, and your country.
+
+Speaker
+
+And then you're to create a function called logData.
+
+Speaker
+
+that uses this person object, it just grabs it from the global scope to then create a string.
+
+Speaker
+
+in the following format.
+
+Speaker
+
+Pierre is 35-year-old and lives in Norway.
+
+Speaker
+
+Obviously, pear.
+
+Speaker
+
+35 Norway.
+
+Speaker
+
+are pulled from the person object directly?
+
+Speaker
+
+First, the rest is a string that is hard-coded inside of the function.
+
+Speaker
+
+Finally, call logdata in order to verify that it works.
+
+Speaker
+
+So go ahead and do this right now, and then I will show you this literature as well when you return back.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+Here.
+
+Speaker
+
+data like that and you can see the first value is that person plus.
+
+Speaker
+
+Yes, Dr.
+
+Speaker
+
+in lives.
+
+Speaker
+
+We'll function.
+
+Speaker
+
+Log Data.
+
+Speaker
+
+run the code.
+
+Speaker
+
+Yes, we can see.
+
+Speaker
+
+Here is 35 years old and lives in Norway.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Okay, now you are going to practice conditional statements.
+
+Speaker
+
+So that is the if, else, if, and else statements. And the problem you are going to solve is a very common one for train companies or a bus service.
+
+Speaker
+
+which is at the price of the ticket
+
+Speaker
+
+based on the passengers age.
+
+Speaker
+
+For example, if the passenger is less than six years old, there's a free pass.
+
+Speaker
+
+6 to 17 gives a child discount.
+
+Speaker
+
+18 to 26 gives a student discount.
+
+Speaker
+
+27 and up to 66, that's the age range that pays the full price.
+
+Speaker
+
+And the people over 66 get
+
+Speaker
+
+at the senior citizen discount.
+
+Speaker
+
+So your job is then to create a...
+
+Speaker
+
+Additional statement.
+
+Speaker
+
+accounts for all of these scenarios.
+
+Speaker
+
+And based upon the age variable up here,
+
+Speaker
+
+logs out which discount the passenger will get.
+
+Speaker
+
+So go ahead and give this shot and return back to me when you want to see my solution.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+of thought with the F.
+
+Speaker
+
+And if H is--
+
+Speaker
+
+Less than six, wall then.
+
+Speaker
+
+Google for Log.
+
+Speaker
+
+Else, if.
+
+Speaker
+
+Next condition.
+
+Speaker
+
+Honest that each is less than...
+
+Speaker
+
+We keep them.
+
+Speaker
+
+Because.
+
+Speaker
+
+Godwin practice mean from 6 to 17 here because it's less than 18. Yeah, that's 17 and below
+
+Speaker
+
+whether it was already accounted for up until five.
+
+Speaker
+
+So the cold?
+
+Speaker
+
+We'll be triggered from 6 to 17.
+
+Speaker
+
+Control.log.
+
+Speaker
+
+I'll have this count.
+
+Speaker
+
+Okay, next one. Else if.
+
+Speaker
+
+Here, we'll do.
+
+Speaker
+
+age is less than.
+
+Speaker
+
+27.
+
+Speaker
+
+- Total log.
+
+Speaker
+
+You didn't discount because this one kind of starts at 18 since this one stopped right before 18.
+
+Speaker
+
+And it should be up until including 26. That is, in other words, less than 27.
+
+Speaker
+
+Then we have...
+
+Speaker
+
+The
+
+Speaker
+
+Full price.
+
+Speaker
+
+Or just for people now, left in the group who are...
+
+Speaker
+
+less than
+
+Speaker
+
+67.
+
+Speaker
+
+Or in other words,
+
+Speaker
+
+2666.
+
+Speaker
+
+Control, log.
+
+Speaker
+
+Thanks.
+
+Speaker
+
+And finally, then we have the else.
+
+Speaker
+
+We don't need to specify an if, because in all other cases, the passenger should get the senior citizen discounts.
+
+Speaker
+
+like that.
+
+Speaker
+
+Let's run the code.
+
+Speaker
+
+15 yes, we're getting the trial discount correct
+
+Speaker
+
+at 55.
+
+Speaker
+
+We're getting the full price very good.
+
+Speaker
+
+75.
+
+Speaker
+
+We are getting the senior citizen discount.
+
+Speaker
+
+So it seems to be working for--
+
+Speaker
+
+at least these three scenarios and I hope it works for the rest. So let's move on.
+
+Speaker
+
+Okay, it's time to practice your for loop skills and your geography skills.
+
+Speaker
+
+because I've created this large country's array here, which
+
+Speaker
+
+contains a five largest countries in the world by population size. So it's China, India, USA, Indonesia, and Pakistan.
+
+Speaker
+
+And what you are to do is to use a for loop to log out the following to the world.
+
+Speaker
+
+First, A sentence, the five largest countries in the world.
+
+Speaker
+
+and then each of the countries on a new line with a dash on a space in front of the country name.
+
+Speaker
+
+You are to use a for loop.
+
+Speaker
+
+loop through this right here.
+
+Speaker
+
+You can't simply hard-code out all of the console logs.
+
+Speaker
+
+to serve any purpose. So try to remember how to use a for loop.
+
+Speaker
+
+If you can't remember it, you can look back at previous casts as we surely have gone through it. Or of course, I will also show you the solution afterwards as well.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+I'll start with the foregroup.
+
+Speaker
+
+because that's the meat of this challenge.
+
+Speaker
+
+for let i equals 0, start at 0 because.
+
+Speaker
+
+As you remember, rate R0 index, and we want to use the index in order to fetch out each of the items.
+
+Speaker
+
+So starting there and stopping before.
+
+Speaker
+
+I reach us.
+
+Speaker
+
+Large.
+
+Speaker
+
+- [Concreece, dot]
+
+Speaker
+
+Link.
+
+Speaker
+
+length of this is five, so before it reaches five.
+
+Speaker
+
+That is 4, and indeed, Pakistan is the 4th in the XO that should be right.
+
+Speaker
+
+and we want to increment upwards.
+
+Speaker
+
+Here we'll be "Control Log" and then first the...
+
+Speaker
+
+graph in the space.
+
+Speaker
+
+like that.
+
+Speaker
+
+I'm calculating this with large.
+
+Speaker
+
+countries.
+
+Speaker
+
+passing in in the school.
+
+Speaker
+
+square brackets.
+
+Speaker
+
+Greater variable, I, and I'll let's run this code.
+
+Speaker
+
+and bring up the console, and indeed, it looks to be working.
+
+Speaker
+
+Now, we only need to control log out.
+
+Speaker
+
+You five largest countries in the world.
+
+Speaker
+
+This.
+
+Speaker
+
+running the code, and yes, it works.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Okay, now I need your help because I have messed up our large countries array. As you can see, in first place I have two Volu and in fifth place I have Monaco.
+
+Speaker
+
+However, neither of those countries are large enough to deserve a spot in this large country's array. Actually, Tuvalu is a
+
+Speaker
+
+By any island state, far out in the Pacific Ocean, with just over 10,000 inhabitants.
+
+Speaker
+
+and Monica
+
+Speaker
+
+Go as a tiny state in Europe, that's
+
+Speaker
+
+smaller than Central Park in New York. So surely it does not belong in this array.
+
+Speaker
+
+The first and fifth place belongs to
+
+Speaker
+
+Try not and Pakistan.
+
+Speaker
+
+So I need you to help me fix up this large country's rate so that China and Pakistan are added back into their respective places.
+
+Speaker
+
+And to for this.
+
+Speaker
+
+You are going to use...
+
+Speaker
+
+the fort following tools.
+
+Speaker
+
+First push and pop, which you've learned earlier in this course.
+
+Speaker
+
+and then there are counterparts on shift and shift. Pakistan.
+
+Speaker
+
+So I need you to help me fix up this large country's rate, so that China and Pakistan are added back into their respective places.
+
+Speaker
+
+And to fold this.
+
+Speaker
+
+You are going to use the four following tools.
+
+Speaker
+
+First push and pop which you've learned earlier in this course.
+
+Speaker
+
+And then there were counterparks.
+
+Speaker
+
+shift and
+
+Speaker
+
+shift.
+
+Speaker
+
+which I haven't talked to you about.
+
+Speaker
+
+But that is intentional because I want you.
+
+Speaker
+
+to Google how to use on Shift and Shift.
+
+Speaker
+
+And what I will disclose to you is
+
+Speaker
+
+that they are kind of a mirror image of.
+
+Speaker
+
+Push 'em pop.
+
+Speaker
+
+because it was push and pop.
+
+Speaker
+
+Will work with the end of the array?
+
+Speaker
+
+Unshift and shift,
+
+Speaker
+
+works with the beginning of the array.
+
+Speaker
+
+will remove the item at the end like this.
+
+Speaker
+
+where's push? We'll push an item into the end like that.
+
+Speaker
+
+And likewise,
+
+Speaker
+
+shift more.
+
+Speaker
+
+Removing item from
+
+Speaker
+
+from the beginning of the array, like
+
+Speaker
+
+this.
+
+Speaker
+
+and unshift will.
+
+Speaker
+
+show the night.
+
+Speaker
+
+into the array at the start.
+
+Speaker
+
+like that.
+
+Speaker
+
+So, with that short explanation and Google, you should be able to, I want you to try to solve this challenge.
+
+Speaker
+
+And of course, I will show you the solution when you return back to the screencast.
+
+Speaker
+
+Okay, hopefully that went well. Let's do this.
+
+Speaker
+
+I'll start at the end, so I want to replace Monaco with Pakistan.
+
+Speaker
+
+Then I'll do large concrete.
+
+Speaker
+
+- Please drop.
+
+Speaker
+
+in order to.
+
+Speaker
+
+Pop away, Mongo.
+
+Speaker
+
+And then large.
+
+Speaker
+
+countries.
+
+Speaker
+
+Asking in.
+
+Speaker
+
+It's now a console log.
+
+Speaker
+
+Large countries to see if this works.
+
+Speaker
+
+Any of the code? Any yes, there we go.
+
+Speaker
+
+Remove this first item here, Kovalu. I'm going to have to use Shift.
+
+Speaker
+
+And here, I quickly understand, if you're confused as to why shift is named shift and unshift is named unshift, it's about the two most unintuitive method names in JavaScript, in my opinion. And one way to think of this is that unshift is a longer word than shift.
+
+Speaker
+
+So on shift makes...
+
+Speaker
+
+the array longer.
+
+Speaker
+
+And that's just us.
+
+Speaker
+
+Push is a longer word than
+
+Speaker
+
+So push makes the array longer.
+
+Speaker
+
+Anyway.
+
+Speaker
+
+Let's just do this.
+
+Speaker
+
+March.
+
+Speaker
+
+Countries?
+
+Speaker
+
+Dr.
+
+Speaker
+
+Let's see if we've removed the volume by running the code now.
+
+Speaker
+
+Yes, to Valuizagon.
+
+Speaker
+
+That means I need to do large countries.
+
+Speaker
+
+Unshift.
+
+Speaker
+
+passing.
+
+Speaker
+
+Running the code? Yes, we have fixed up the large countries array.
+
+Speaker
+
+Great job!
+
+Speaker
+
+Now it's time for a scary challenge because you are going to check Iveris.
+
+Speaker
+
+Friday the 13th and if so, you're going to log out this spooky face because as you might know
+
+Speaker
+
+Friday the 13th is kind of a scary date if you've seen the Friday the 13th horror movies.
+
+Speaker
+
+So you have two variables, date of month, which is
+
+Speaker
+
+meant to be from either one to 31 depending on which day of
+
+Speaker
+
+the month for this and then a weekday variable, which is meant to be Friday or Tuesday or Wednesday or any of the days in the week.
+
+Speaker
+
+And if...
+
+Speaker
+
+It is both Friday and the 13th, and only if both of those conditions are satisfied, you are to log out the spooky face. So just remind you, you have to use the logical
+
+Speaker
+
+and operator.
+
+Speaker
+
+which we learned is some lies to where these two.
+
+Speaker
+
+2.
+
+Speaker
+
+So go ahead and give this a shot right now.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+open and close parentheses.
+
+Speaker
+
+And here's a good day of months.
+
+Speaker
+
+Crypto equals
+
+Speaker
+
+13 if it's the 13th day.
+
+Speaker
+
+If it is the week day.
+
+Speaker
+
+of triple equals.
+
+Speaker
+
+Friday.
+
+Speaker
+
+Then we are going to log out.
+
+Speaker
+
+The spooky emoji.
+
+Speaker
+
+like that.
+
+Speaker
+
+Running the goal, nothing happens because it's Friday the 31st.
+
+Speaker
+
+Flipping this around Friday the 13th.
+
+Speaker
+
+Yes, we are logging out of the spooky face and if we change this to Q state
+
+Speaker
+
+Nothing works out because of this time.
+
+Speaker
+
+The first condition was satisfied. It evaluated to true.
+
+Speaker
+
+But the second one was not satisfied, so it evaluated to false.
+
+Speaker
+
+and operator requires that both the first
+
+Speaker
+
+And the second, evaluate to true.
+
+Speaker
+
+in order to execute the code in the body of the if statement.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Okay, now you're going to press.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+We'll call the function get_hand.
+
+Speaker
+
+And, in fact,
+
+Speaker
+
+First, we need to generate a random index.
+
+Speaker
+
+we're going to use in order to fetch out rock
+
+Speaker
+
+or scissor.
+
+Speaker
+
+So we'll do let around them.
+
+Speaker
+
+And next like that.
+
+Speaker
+
+equals
+
+Speaker
+
+I'll just do math dot random like that.
+
+Speaker
+
+And then actually I'm going to return.
+
+Speaker
+
+Round them.
+
+Speaker
+
+And thanks.
+
+Speaker
+
+And then debug along the way, just to be sure that I understand each step.
+
+Speaker
+
+I'm taking.
+
+Speaker
+
+So here I'll console log the result of running the get.
+
+Speaker
+
+So now if we run this, we're logging out.
+
+Speaker
+
+0.05.
+
+Speaker
+
+or 0.1 or 0.0 or 7 or...
+
+Speaker
+
+0.97, so.
+
+Speaker
+
+a value between 0 and 1, not including 1, so 0.999 is the top value. Okay.
+
+Speaker
+
+First, then what we need to do is multiply this with 3.
+
+Speaker
+
+Now, if we run it, you see that I'm getting a value.
+
+Speaker
+
+Between?
+
+Speaker
+
+Zero.
+
+Speaker
+
+and 2.9999.
+
+Speaker
+
+zero to zero.
+
+Speaker
+
+Point 999 is my.
+
+Speaker
+
+[Music]
+
+Speaker
+
+The value I want is either a 0.
+
+Speaker
+
+One.
+
+Speaker
+
+Or a two?
+
+Speaker
+
+So I'm not too far from this.
+
+Speaker
+
+The way I can get that is by...
+
+Speaker
+
+stripping away the decimals?
+
+Speaker
+
+by flooring it, in other words.
+
+Speaker
+
+Math, galt.
+
+Speaker
+
+Like that.
+
+Speaker
+
+You're good, you're true.
+
+Speaker
+
+Zero.
+
+Speaker
+
+One, yes, now we are.
+
+Speaker
+
+Then, rating your random numbers between 0 and 2.
+
+Speaker
+
+How can we use that to?
+
+Speaker
+
+Get back, you random.
+
+Speaker
+
+hand either rock paper or scissors.
+
+Speaker
+
+Well, that's simply by doing hams.
+
+Speaker
+
+And then using the...
+
+Speaker
+
+Random index as the index.
+
+Speaker
+
+Now let's run this.
+
+Speaker
+
+We're getting scissor.
+
+Speaker
+
+We're getting paper, and we're getting rock.
+
+Speaker
+
+Brilliant.
+
+Speaker
+
+Great job.
+
+Speaker
+
+If you, like me, grew up in the 90s, you might remember this game Street Fighter II on Super Nintendo. It was really a cool. So now, I want to create a copy of this game called "Monkey Fighter".
+
+Speaker
+
+We're actually, we won't do any fighting here. We'll just set the stage.
+
+Speaker
+
+for two emojis to challenge each other.
+
+Speaker
+
+So the way it works is that
+
+Speaker
+
+When the user
+
+Speaker
+
+on the pick fighter spot. I want two random emojis to appear side by side.
+
+Speaker
+
+with a VS between them for versus.
+
+Speaker
+
+As you can see, I've coded up the skeleton for you here by creating this fighters array, which contains all of our
+
+Speaker
+
+different fighters.
+
+Speaker
+
+and also fetching references.
+
+Speaker
+
+to the state?
+
+Speaker
+
+and to the button.
+
+Speaker
+
+And the stage is where I want you to render out the emojis. And the button is the one right here.
+
+Speaker
+
+As you can see in the index.js, I've hooked it up with an event listener so that we listen for clicks, which we can verify by inside of this callback function, trigger out click.
+
+Speaker
+
+So that now if we run the code and click on the button, you can see it is allowed to do the console.
+
+Speaker
+
+So your job then is to inside of this function write the code needed in order to pick
+
+Speaker
+
+two random emojis from this rate?
+
+Speaker
+
+and then display them in the stage L.
+
+Speaker
+
+Now as a little hint, if you don't know how to pick a random item from this array, do remember that you know how to generate a random number in JavaScript. And then you can use that random number as an index, which you again use to
+
+Speaker
+
+fetch out one of these emojis, as you hopefully know how to get a hold of items within race using the IM's index.
+
+Speaker
+
+So just do that twice and then render it out.
+
+Speaker
+
+If you struggle, don't worry, as always, I will show you the solution when you return back to me.
+
+Speaker
+
+Okay, let's do this. So now what I want to do first is generate a number that is between 0 and whatever length this fighter's array is.
+
+Speaker
+
+So let's just get started and do some trial and error.
+
+Speaker
+
+index equals
+
+Speaker
+
+mass dot random.
+
+Speaker
+
+If we now console log that out, you see that?
+
+Speaker
+
+One week click on the pick fighters we get.
+
+Speaker
+
+Round number between zero and...
+
+Speaker
+
+one, so this range is two narrow at the moment, we need something between zero and
+
+Speaker
+
+the final index here. So what I'll do is I'll multiply math random with.
+
+Speaker
+
+fighters.
+
+Speaker
+
+click "click fighters" you can see if we get 12 points something, "group points something, 4 points something, 3 points something."
+
+Speaker
+
+However, we don't want these decimals. So what I'll actually do, I'll floor this entire expression down to the closest whole number.
+
+Speaker
+
+by doing math.
+
+Speaker
+
+wrapping this entire expression within the parentheses of the floor method.
+
+Speaker
+
+If we now run this again.
+
+Speaker
+
+We get eight, nine, three, five.
+
+Speaker
+
+Yes, this is actually really promising. So now if I instead of logging out just to do random index, actually log out fighters, square bracket, and then random index,
+
+Speaker
+
+What do you think will happen then?
+
+Speaker
+
+As you can see, we are logging out a random emoji.
+
+Speaker
+
+So now what we need to do is...
+
+Speaker
+
+Duplicate this line here because we want two random emojis.
+
+Speaker
+
+I'll go around them index 1 and around them index 2 like that, and then let's actually console out.
+
+Speaker
+
+The first mode read plus VS.
+
+Speaker
+
+space before and after, and then plus.
+
+Speaker
+
+fighters, where brackets, round them in next two.
+
+Speaker
+
+We run the code and pick fighters then we get an error.
+
+Speaker
+
+I've done a mistake, it says random index is not defined.
+
+Speaker
+
+That is because I forgot to change this variable into random index one.
+
+Speaker
+
+when I rename this one because I want to do them.
+
+Speaker
+
+So, a little live debugging session right there.
+
+Speaker
+
+That's one again.
+
+Speaker
+
+Big fighters? Yes, now it works.
+
+Speaker
+
+dinosaur against a seal we get to the console.
+
+Speaker
+
+Meaning that the final thing we need to do is just replace the console log.
+
+Speaker
+
+stage L dot.
+
+Speaker
+
+And then set that equal to...
+
+Speaker
+
+the same expression that we just logged to the control.
+
+Speaker
+
+If we run the code.
+
+Speaker
+
+Click Big Fighters. Yes, there we go. Robot against crab. Click again. We get a spider against a dragon.
+
+Speaker
+
+And finally, a robot against a dragon.
+
+Speaker
+
+So great job solving this challenge.
+
+Speaker
+
+for you.
+
+Speaker
+
+you can see this fruits right here, which contains a
+
+Speaker
+
+Thank you, folks.
+
+Speaker
+
+Basically.
+
+Speaker
+
+three apples and two oranges mixed together.
+
+Speaker
+
+you are going to take these fruits and sort them onto the apple shelf or the orange shelf. The apple shelf is the you want to top here and the orange shelf is the one at the bottom.
+
+Speaker
+
+They are just simply "divs" I've given a little bit of styling.
+
+Speaker
+
+So you are to create a function
+
+Speaker
+
+not win cold.
+
+Speaker
+
+puts the apples onto the apple shelf.
+
+Speaker
+
+and the oranges onto the orange shelf.
+
+Speaker
+
+And you should use a...
+
+Speaker
+
+A conditional statement.
+
+Speaker
+
+and the text content property to achieve this.
+
+Speaker
+
+Now, one thing you might be wondering is, how do you work with Emojis in JavaScript?
+
+Speaker
+
+Actually, you can treat these as normal strings.
+
+Speaker
+
+It's just as if it said.
+
+Speaker
+
+here instead of having the emoji. So, wait
+
+Speaker
+
+with that, I wish you good luck, and I'll see you later when I'll show you my solution.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+the function.
+
+Speaker
+
+I'm gonna call it short.
+
+Speaker
+
+like that.
+
+Speaker
+
+And then inside of the function, we first need to loop through all of the fruits.
+
+Speaker
+
+For let i equals zero i equals less than
+
+Speaker
+
+And I should implement it upwards.
+
+Speaker
+
+Now, I'm excited of this.
+
+Speaker
+
+You need to check every step in iteration, are we dealing with an apple, or are we dealing with an orange?
+
+Speaker
+
+- I'll do this.
+
+Speaker
+
+I, that's the current route.
+
+Speaker
+
+Quickly equals.
+
+Speaker
+
+Then I can just copy this Apple here.
+
+Speaker
+
+If it's an apple.
+
+Speaker
+
+Well, then we are going to do.
+
+Speaker
+
+Apple shelf.
+
+Speaker
+
+And here, we're not going to do just equal.
+
+Speaker
+
+the apple, we're going to plus equal because we want to gather all of our apples here.
+
+Speaker
+
+and not wipe them out every time we're on this code.
+
+Speaker
+
+I'm going to do an L's if.
+
+Speaker
+
+Bye.
+
+Speaker
+
+Cripple equals.
+
+Speaker
+
+This time.
+
+Speaker
+
+And orange.
+
+Speaker
+
+All then we are going to head over to the.
+
+Speaker
+
+Word and shelf.
+
+Speaker
+
+Thanks to conference!
+
+Speaker
+
+But equals the orange.
+
+Speaker
+
+It could have worked perfectly fine.
+
+Speaker
+
+We just omitted this as well, like that, because...
+
+Speaker
+
+NRA.
+
+Speaker
+
+If it isn't an apple, we know that it's an orange.
+
+Speaker
+
+But we might be getting other erase, which I'll have bananas in them as well.
+
+Speaker
+
+And if so, we don't want to put any bananas in the orange shelf. We want to check explicitly that we are dealing with an orange before we put the
+
+Speaker
+
+route up on the shelf.
+
+Speaker
+
+So finally, we
+
+Speaker
+
+I guess need to sort of fit.
+
+Speaker
+
+If you were run to court?
+
+Speaker
+
+And there we go.
+
+Speaker
+
+We got three apples and two oranges.
+
+Speaker
+
+neatly sorted on both of these shelves.
+
+Speaker
+
+great job.
