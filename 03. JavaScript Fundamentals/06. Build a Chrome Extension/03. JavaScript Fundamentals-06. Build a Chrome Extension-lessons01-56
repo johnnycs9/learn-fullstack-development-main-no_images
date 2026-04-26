@@ -1,0 +1,8103 @@
+Hey, and welcome to this section where we are going to build a Chrome extension, which is just so freaking cool.
+Because Chrome extensions, if you haven't seen them, are programs that can enhance your browser experience in Chrome.
+This is an example called Grammarly, I use it all the time.
+For example, when I write tweets, it sits on top of Chrome and checks my spelling because it has access to what I do on the page, and then suggests how I should improve my spelling and my writing in general.
+This one right here is a lifesaver, it's motion, and it saves me hours every single day by stopping me right before I try to enter, for example, Facebook, and it does this with a ton of other distracting sites as well, so that I can focus on what matters, Like for example, creating courses on Scrimba, or writing code, or doing productive stuff.
+So, so cool.
+If you want to check out more extensions, you can head over to chrome dot dot Google dot com slash webstore.
+There you can search through all of them, and also if you want to open your extensions in Chrome, just click this puzzle icon in the top right corner, and you'll see all of your extensions.
+And here you can see Leads Tracker, what's that?
+Well, that is the one we are going to build in this section.
+It is based on an insight I had when I worked as a developer in a company called Seneta, which is a provider of price information for people who are shipping containers, because what I saw there was that the sales team at that company spent countless hours tracking down leads or sourcing leads as they also call it, and that is looking for people online who might be interested in your product.
+So what they do is like browse through a bunch of pages and look at people and like, no, this guy is probably not interested in our product, this one neither ah, yes, here we have a potential customer.
+Let's save this one to our system.
+Moving on, this person does not look like a potential customer, but this one does.
+Yeah, and this one does as well, but this one does not look like a potential customer.
+So what they then had to do is take these three potential customers and store them somewhere so that they could reach out to them in the next phase.
+This is something that basically every single sales representative does, because you need people to sell to, so you need to find them somewhere.
+So our leads tracker will be a tool for these kinds of people.
+The way it works is that you visit a website, for example a profile on LinkedIn, and then you open up the extensions, click on the leads tracker, and there you can see you get the ability to save input, that is any URL that you pass into this input field, or hit save tab.
+If you hit save tab, our extension heads over to this tab, grabs the URL, and saves it in a list.
+Then you can move on to another page, for example my LinkedIn page, and then hit save tab again, and boom, there we have the URL to my profile.
+And then moving on, this is Syndra, our CTO in Skrimba.
+Yet again, we click save tab, and his profile URL is saved.
+And this data is persistent, so you can close down the app or Chrome, turn off your computer, and when you come back, it's still there.
+So that you as a sales representative, and then grab these leads and do something else with it.
+So this is actually a pretty useful tool for sales representatives, and it's actually deployed in the browser so that you can use it in the real world.
+And the point with this is to give you the powers to do this, to actually create Chrome extension that has value, and also give you the skills you need to deploy it to someone's browser.
+So once you've learned this, I would really recommend you to look for opportunities, look for problems you see out in the world, maybe there's a problem you have, or or someone you study with, or someone you work with, or just a problem someone tells you about.
+When you come across problems people have, I want you to think, can I build a Chrome extension to help solve this problem?
+Because if you can do that, you truly have a superpower, and that'll manifest itself in opportunities that you will get throughout your career if you're just willing to use that superpower, which JavaScript and web development is.
+So this was a long introduction.
+I hope you are as excited as me.
+Let's just move on and build your very first Chrome extension.
+
+
+Okay.
+In this challenge, you are going to create the basic markup we need in order to start building our app.
+So you are to create a an input element, is of type text and has the ID of input dash l.
+And then you're gonna create a save input button, that is one the user will click in order to save the input.
+And it should have the ID of input dash b t n.
+And here, save input should be the text inside the button.
+So go ahead and do this right now.
+do Okay.
+Let's do this.
+I'll start with the input and give it a type of text give and ID of input l.
+And the input element is a so called void or empty tag, meaning it only has an opening tag, so you're not supposed to create closing tag because you're not meant to write anything in between input tags.
+not It's the user that is meant to add the input.
+So this is how you create an input tag, which as mentioned, often called void or empty tags or you'll also hear them referred to as self closing tags.
+Anyway, let's move on to the button.
+New button.
+That is not a void tag.
+It should have a closing tag and an opening tag.
+And in between, we are going to write save input, and the ID is set here as input dot v t n.
+and If we now run this code, you can see, yes, indeed, have an input field and a button.
+Great job.
+yes, indeed, we have an input field and a button.
+Great job.
+
+
+
+Okay.
+Now you are going to style our app according to this design.
+So in the CSS file, which is where you're going to work, you'll see that I've already styled the body tag a little bit.
+Specifically, I've cleared out the margin since browsers often add a default margin to the body tag.
+I had to set that to zero to neutralize that because I don't want any margin on the body.
+However, I've set the padding to ten because I do want a little bit of padding.
+You can see here on the body element that there's some space between the edges and where our elements start, that is the padding that is provided.
+And here I've also set a font of Arial, and that is a web safe font.
+So that one should work without, for example, using Google fonts in our project as well.
+So just click on the slide here when you wanna see the design, and click outside of the slide when you wanna go back to the code.
+And I've also added a little helper text here which is the hexadecimal code of the green color which you can see on the button and on the borders of the input field.
+Now you can see on the bottom image here that I've added some text to the input field.
+The slightly bluish color in the background here is not something you are to configure, that's just default styling that is added by the browser, so you don't have to think about that.
+As far as you know, the background of the input element will be white.
+Now I'm going to get you started here with making the input element full width because that's a little bit unintuitive and I wanna show it to you.
+Because as you can see, here on the input element when we enter text into it, we have a little gap between the text and the edge of it.
+However, in our app now, if I do it like that, you will see that there is basically no gap.
+So we have to add a little bit of padding on the left side, let's say ten pixels, and there you can see we got the gap.
+We want the same gap on the right hand side as well, so I'll do padding right of ten pixels as well.
+So now we have that, and you might wonder why I started there.
+It's a little bit weird, but let's say that we now want to provide the styling for making this input field be full width.
+Well, then I'll do width and then set it to a hundred percent.
+That means take up all the available space I have inside of my container.
+And for the input field, the kind of container it lives inside of, is the body tag.
+So that means that a hundred percent should make the input field take up the entire body, and the body has a little bit of padding as you know, so I would expect this to actually stop at the right ten pixels before the end of our browser, but actually it doesn't do that, it continues on, and actually goes past our browser, which is a little bit weird.
+The reason is that the true width of this element now is hundred percent plus ten pixels plus ten pixels because it includes the padding left and the padding right and adds that on top of this width.
+So that's a problem, and it results in our input field being wider than our body tag, and we don't want that.
+So the trick I'll use to avoid that is something called box sizing.
+And here I say, I want you to size the box along its borders.
+I'll write border box, and there you can see.
+Now full width includes the paddings as well.
+The hundred percent now takes into account the paddings, and just makes sure that the entire thing spans across the entire body tag, but not overflowing it.
+I wanted to show you that because it's not entirely intuitive.
+Now you have what you need.
+Your job is to use only these two selectors, the input and the button selector, and make it look like the design you can see here on the slide.
+So go ahead and give that a shot right now.
+Okay.
+Hopefully, that went well.
+Now let's do this together.
+I'm going to continue with our input element, because here, you'll see that it's very crammed above and below the text we have written in the input field.
+So what I can do is padding bottom also of ten pixels, and padding top also of ten pixels.
+Now we have something that looks much more like what we have here.
+Next up, we also need the color on the border.
+So we'll do border, one pixel, solid, and then use this green color here like that.
+It look good.
+Now we can actually continue with the button.
+The first thing is the background color, which is green.
+Hold the background and use this green color again like that.
+Okay.
+Also, the text is white.
+Color white like that.
+Indeed, there's also padding here as well, which we need to add.
+There's a little bit more padding on the left and right hand side.
+Let's try padding top of ten pixels and padding bottom of ten pixels.
+And then padding left of twenty pixels.
+Yeah.
+Starting to look good.
+Padding right of twenty pixels.
+And now I actually wanna clean up our code a little bit because you can see we're using this very verbose way of writing paddings both here and here.
+Whereas in the body, as you have learned previously in this career path, you can use the shorthand.
+And if all of the top, bottom, left, right are of the same value, we can just use padding.
+So I can remove all of these and do padding ten pixels.
+Here, it's a little bit more complex, but the top and bottom are identical and the left and right are identical.
+What we then can use is adding and then ten pixels for the top and bottom, and then twenty pixels for the left and right.
+So the first value kind of becomes the y axis, above and below, and the second value becomes the x axis, to the left and to the right.
+If I remove this, you can now see that it looks identical as how we had it previously, but we've removed a ton of lines, which is good.
+Now, uh, another thing on the button is that it has these default borders.
+We don't want that according to our design.
+So we'll do border none like that.
+Now it's really starting to look similar, but there's two things.
+We wanna bold the text, and we need a little gap between the input field and the button.
+So font weight, set it to bold.
+Yes.
+And the gap between the button and the input can be added to either of the elements.
+I'm gonna add it to the input field.
+You do use a margin button and set it to, for example, four pixels.
+There we go.
+Now we have something that looks pretty much like what we have, and it's also responsive.
+So we are ready to move on.
+
+
+
+
+Okay, now we are going to move from the CSS over to the JavaScript.
+Because we have to make our input button work.
+And while you won't make it useful in this cast, you will at least have it log out button clicked when the user clicks it.
+user So you know how to do this.
+You're going to have to modify both some HTML and write a function in the JavaScript file.
+So go ahead and do it so that when I click the save input button, the console will log out button clicked.
+And once you are done, return back to the screencast and I will show you the solution as well.
+Good luck.
+show Okay.
+Hopefully, you remembered that the way to do this is to create an onClick handler on the button.
+There, you wanna type the name of the function you want to trigger.
+Let's call this function save lead, for example, open and close parenthesis.
+call Then we'll head over to the index dot j s file and create that function.
+Function, save lead, like that.
+And inside of it, we'll do console log save button clicked like that.
+We'll run the code, click the button, and indeed, we are logging out button clicked.
+Great job.
+the code, click the button.
+And indeed, we are logging out button clicked.
+Great job.
+
+
+
+
+So while this way of writing event listeners, where we define a function and trigger it via the onClick attribute in the HTML works perfectly fine, out in the wild, you'll most likely see professional developers use a slightly different technique.
+So it's important that you learn that one as well.
+And the way we do that is by first grabbing a hold of the ID of the element we want to hook an event listener onto.
+So I'll do let input btn equals document dot get element by ID, passing in the input b t n.
+And then what I'll do is input b t n dot add event listener.
+Like that.
+Inside of the add event listener function or method, which it's also called, I'll first specify what kind of event I want to listen for.
+And here, it is the click event.
+And then, I'll write a comma and do something which might look a little bit weird, because now we are going to define what are we going to do when someone clicks on this input button.
+Well, are going to invoke a function, and in order to invoke that function, we first have to write it.
+So I'll do function.
+Open and close parenthesis, and then the curly brackets, and break it onto a new line, And inside of this function, we can write whatever code we want to be executed when the user clicks on this input button.
+So here, we'll do console dot log button clicked from add event listener, like that.
+And let's change this to button clicked from on click attribute.
+button Now if we run this code, hit the button, you can see both this line and this line is executed.
+However, now we can actually remove this onClick event listener from our HTML, and some would say that this results in a cleaner separation of concerns where the HTML doesn't worry about any event listeners, as that's all gathered in the JavaScript.
+So of course, then we should also remove the save lead function.
+And we're left with this, running the code, clicking the button, and only this line triggers.
+So in the next cast, you are going to get some practice writing this type of event listeners, so let's dive into it.
+the button and only this line triggers.
+So in the next cast, you are going to get some practice writing this type of event listeners.
+So let's dive into it.
+
+
+
+So in this challenge, you are going to practice writing event listeners using the technique you just learned.
+So it's a three part challenge where you first are to grab the box from the DOM and store it in a variable.
+Here you can see the box, it's just a rectangle that says open the box.
+You can imagine that this is some kind of easter egg on a e commerce website, where if you open the box you get a coupon or something like that.
+And as for HTML, it's just a very simple dev with an ID of box, and of course I've styled it a little bit in the CSS file, but we're not going to worry about that.
+So when you have grabbed the box from the DOM and stored it in a variable, you are to add a click event listener to it, and then finally log out, I want to open the box when the box is clicked.
+So So if you struggle to remember how to add an event listener using JavaScript, you can go back and rewatch how I explained that, or even better, Google it out and you should find the solution as well.
+With that, go ahead and solve this challenge right now.
+Okay, Okay.
+Hopefully that went well.
+Let's do this.
+So we'll do let box equals document dot get element by ID, passing in box, And then to add the event listener, it's box dot add event listener, passing in first the event we want to listen for.
+That is the click.
+And then what do we want to trigger when the user clicks?
+Well, it's this function right here, clicks?
+and inside of it, we're going to console dot log.
+I want to open the box like that.
+Let's run the code.
+Click the box, and yes, it works.
+Great job.
+code.
+Click the box.
+And yes, it works.
+Great job.
+
+
+
+
+#YOUR TURN TO REFACTOR
+Okay.
+We are back at our lead tracking app.
+Now, of course, you are going to do what I showed you before you learned about add event listener, which is to refactor our app so that it uses the dot add event listener when you click on the save input button.
+Because this is Scribble, I'm not supposed to write the code.
+So even though I've already done it, now it's your turn.
+So go ahead and do this right now.
+Okay.
+Hopefully, that went well.
+Now, I will quickly do it as well.
+First, we need to grab a hold of the button.
+I'm gonna grab the ID here and do let input b t n equals document dot get element by ID, passing in the ID.
+Now that we have that, we can do input b t n dot add event listener.
+We're going to listen for clicks.
+we're And the code we want to run, when users click the button, is inside of the body of this function right here.
+the So I'm gonna copy this console log, paste it in there.
+this And now I can remove the save lead function, and I can also remove the on click attribute in the HTML like that.
+I'll rerun the code, click save input, and indeed it works.
+Great job.
+Let's move on.
+And indeed, it works.
+Great job.
+Let's move on.
+
+
+#Create the myLeads array and inputEl
+Now we need to set up the infrastructure for being able to actually save the leads that we enter into our input field.
+And for that, we need two variables.
+First, a my leads variable, which should be assigned to an empty array.
+Secondly, the input l variable which should be assigned to the text input field.
+With that, I mean the input field right here.
+So go ahead and create these two variables right now.
+two Okay.
+The way to do this is let my leads equals an empty array like that.
+an And for the input l, you probably did let input l equals document let at element by ID passing in the input l.
+However, what I'm going to do is swap out this let with const.
+That's weird.
+Why am I doing that?
+You might wonder.
+And that is because in modern JavaScript, developers use both let and const to declare variables.
+And now I think it's about time that you learn both of these methods.
+So we're going to set the inputL as a const and also the inputbtn.
+Now the main difference between const and let is that const cannot be reassigned.
+And the name kind of hints to that.
+It says const which is short for constant.
+So whatever you assign it to should be constant, meaning you can't reassign it.
+And if you don't remember what reassignment is, it's when you do input l, for example, equals constant, hello.
+This won't work.
+If I run this code, you can actually see assignment to constant variable.
+I try to assign the input l, however, it's a constant, so JavaScript is saying, uh-uh, code, not allowed.
+Now you might ask why do we need this?
+This seems to be something that just makes it more difficult for us to code because it gives us less freedom.
+Well, that is a very good question, so in the next cast we'll dig into exactly that so that you properly understand why you wanna use both let and const, and actually get some practice using both of these variable types.
+next cast, we'll dig into exactly that so that you properly understand why you want to use both let and const, and actually get some practice using both of these variable types.
+
+
+
+
+
+#When to use let and const
+Okay.
+Let's say that we are back at our blackjack game, and we have two variables, player name and credits.
+The first one is a const, whereas the second one is a let.
+Now immediately upon seeing these two variables, a developer will understand that player name is not to be reassigned, however, this developer wouldn't only think that credits can be reassigned, it would actually assume that credits are to be reassigned further down in the code.
+So the developer would expect something like credits equals credits minus ten for example.
+And the reason for that is that developers often use the following to decide whether or not they should use const or let.
+So if possible, default to using const.
+If not, use let.
+If these two lines follow this methodology, it would mean that it simply wasn't possible to write credits as a const, because it is going to be reassigned later down in the code, and thus we skip the default of const and used let instead.
+And this is actually the biggest benefit with const.
+It gives us a way to quickly signalize to anyone who are reading the code what we want to do with the variables.
+So in addition to expecting that something like this here would happen, the developer would also be very suspicious if she saw something like player name equals something else down here, because that would mean that the person writing this code mixed up their let and consts, or perhaps didn't even understand it.
+As we know, this will give us an error.
+So with all of this knowledge, and following this methodology, I want you to do a challenge.
+Which of the variables below should be changed from let to const?
+Here, the situation is an e commerce shop, where you have a base price, a discount, a shipping cost, and shipping time.
+At some point though, the details of the shipping changes, and then you calculate the full price, and finally notify the customer.
+So go ahead and change some of these variables to const, and then I will show you the solution afterwards as well.
+Okay.
+Let's do this.
+I'm gonna start down here on where things are reassigned.
+It's easy to see that these are reassignments since we're starting a new line with just the variable name not let in front of it.
+So here we are reassigning shipping cost and shipping time, meaning these two can be let.
+And this is a new variable, so actually here's the end of our code, and base price and discount, they haven't changed.
+So they could be consts, and it says here, if possible, use consts, so default to consts.
+So then I'll do const, and const, like that.
+And the code works perfectly fine, I haven't broken anything.
+Is there anything else we can do?
+Yep, actually it is.
+Here at full price, we see that this variable is only assigned once, it's not reassigned further down, just used here in the console log, meaning that this one also should be a const.
+So hopefully you now understand why we want to use const and let, and if it's still a bit confusing, don't worry about it.
+We're going to continue using these variables throughout this course, so eventually, it'll be completely natural for you to switch between these two variable types.
+With that, let's return back to our lead tracker app.
+
+
+
+
+
+#Push to the myLeads array
+Okay.
+We are back in our lead tracker app, and now we need to make sure that when the user hits the save input button, a lead is pushed to the my leads array.
+For now, you're just going to use a hard coded lead, so w w w dot awesomelead dot com for example, and that value should be pushed to my array when the input button is clicked.
+So go ahead and give this a shot right now.
+this Okay.
+Hopefully, what you did was to here inside of the body of this function, write my leads dot push, and then pass in w w w dot awesome lead dot com.
+Like that.
+If we now also console log out the my leads array, like that, we will actually verify that it works.
+I'll hit the save input button, and there you can see we now have one lead in the my leads array.
+If I hit it again, we have two, and three, and four.
+my However, it's pretty useless because we're just pushing the exact same thing to the array, so let's fix up that in the next cast.
+exact same thing to the array.
+So let's fix up that in the next cast.
+
+
+
+#Push the value from the input field
+Okay.
+So now we are going to take whatever the user enters into the input field right here and push that value into the my leads array when the save input button is clicked.
+clicked.
+So push the value from the input L into the my leads array instead of the hard coded w w w dot awesome leads dot com value right here.
+However, I haven't taught you how to actually get the value from the input L.
+That is for example, this w w w dot example value right here.
+So you need to Google that.
+And that's great practice because googling is as you know something professional developers do every single day.
+something So here is what I recommend you to Google.
+Try to find, for example, a Stack Overflow question and see if you can figure it out on your own.
+If you don't, no worries.
+I will solve this for you when you return back to this cast.
+So go ahead and do this right now.
+Okay, hopefully this went well.
+Let's take a look at how we can find the answer to this by googling.
+how So we'll take the get value from input field JavaScript, which is my suggested string and just paste it into Google.
+There you can see we are getting a ton of results.
+The first one is w three schools.
+I wanna go to stack overflow dot com, so I'll click here.
+Go into Stack Overflow, then here we can see the question being asked.
+It seems super relevant for us, and it's been viewed two and a half million times, so super relevant for a lot of other people as well.
+Let's scroll down a little bit to the answers because that's where the juice is.
+Here we can see there are various methods to get an input text box value directly.
+And here, method one, that's probably what we want.
+You can see document dot get element by ID passing in an ID and doing dot value.
+Oh, that's pretty handy.
+So how do we go about doing that?
+Well, we already have the document get element by ID, and we have stored that in the input l variable, so perhaps we simply can do And input l dot value then.
+Let's now refresh this and do w w w dot sample lead dot com.
+Save input.
+And yes, we can see in our console that we have pushed the value we entered into the input field.
+Save Lead two dot com, save input, and that works as well.
+Great job.
+Let's move on.
+we entered into the input field.
+Lead to dot com, give input.
+And that works as well.
+Great job.
+Let's move on.
+
+
+
+#Use a for loop to log out leads
+Okay.
+Now that we're able to take the input value and push it into the my leads array so that we store our data, it's time to set the stage for going the other way around as well, meaning rendering out the leads.
+And as you might remember, when you want to render all of the items of an array out, you first need to loop through that array and grab each of the items, and that's exactly what you're going to do in this challenge.
+challenge.
+However, to begin with, you are going to work with some dummy data just to make it a little bit easier for you.
+So I've pasted in three dummy leads in the my leads array here.
+So that down here starting on line twelve, you can simply write out a for loop that logs out the items in the my leads array.
+Hopefully, you remember how to do this, and if not, no worries.
+I will of course show you the solution afterwards as well.
+Go ahead and give this your best shot right now.
+right Okay.
+Hopefully, this went well.
+Let's do this.
+We'll do four.
+do Let I equals zero because we wanna start at the zero index of the myLeads array.
+I should be less than the length of the array.
+That's my leads dot length, and we wanna increment I upwards with one for each step.
+Then the inside of the body of the for loop will simply console log out of the my leads using the I r iterator as the index.
+Now we're on this code.
+You can see in the control, yes, we are indeed logging out all three of our dummy leads.
+Great job.
+are indeed logging out all three of our dummy leads.
+Great job.
+
+
+
+#Create the unordered list
+Next up, we are going to transform this for loop from simply logging out the leads to actually rendering them out on the page.
+However, in order to do that, we have to actually create that unordered list where we are to render the leads out.
+out.
+So you are going to do that through a two part challenge.
+The first part is to create the unordered list element, the ul with an ID of ul dash l, that's for unordered list element.
+And then after you've done that, return back to the JavaScript and grab this unordered list and store it in a const variable that's called oll.
+A little bit of a weird name there, but of course also short for unordered list element with the camel case convention we're using in JavaScript.
+case So once we've done that, we have set the stage for actually rendering the data out instead of just logging it so that we can do that in the following lessons.
+So go ahead and solve this two part challenge right now.
+ahead Okay.
+Hopefully, that went well.
+Let's do this together.
+Okay.
+Starting in the HTML, we need to create the unordered list, u l, we and closing the tag, giving it an ID of u l dash l.
+That, if we run the code, nothing happens in the browser because the element is empty.
+nothing So let's just move on to the next part.
+Here we are to create a const, call it u l l, and set it to document dot get element by ID, passing in u l dash e l like that.
+Now just to make sure that we've done everything correctly, let's console log out this element to from the code and there we can see it is being logged to the console.
+Good job solving this one.
+Let's move on.
+it is being logged to the console.
+Good job solving this one.
+Let's move on.
+
+
+
+
+
+#Render the leads in the unordered list
+Now you are going to render the leads out in the unordered list we just created using the dot text content property which we've used in previous sections.
+So you are to replace the console log here with the rendering of each item into the unordered list.
+Now what will happen here is that you'll simply render out plain text inside of an unordered list.
+For example, w w dot auth delete dot com.
+If we run this, this is how it'll look.
+And as you hopefully know, this is not how we write list items inside of an unordered list.
+The way to do it originally is to use li elements like that.
+You run the code so that we get this dot signaling that it's a list item.
+However, for now, you are simply going to render out plain text inside of the unordered list.
+So we're kind of doing it wrong first and then we'll fix it up later.
+So just go ahead and render all the leads as plain text inside of the unordered list using dot text content even though that's not the correct way to do it.
+But I wanted to do that first because the most important thing is to make it work, and then we make it better.
+That's the philosophy here.
+So I'm gonna rerun this page so that we don't have any leftovers from when we looked at the HTML.
+Now we just have an empty unordered list.
+Go ahead and do this right now.
+Okay.
+Hopefully, this went well.
+To do it, you do ULL.
+You'd grab a hold of the unordered list dot text content.
+And here you might have been tempted to say equal my leads and then the index.
+Let's see what happens if you try that.
+Ah, it only renders out great lead, is the final one.
+The reason for that is that at each step in the iteration of the for loop, you cleared out the entire text and assigned it to whatever lead you were looking at at that step in the iteration.
+So for a split second, the value of the text content was awesome lead.
+For another split second, it was epic lead.
+And then finally, it was cleared out yet again and sat to great lead.
+And that is what we are seeing in the browser now since the for loop then stopped.
+It had looped through the entire loop and it then broke out of the loop.
+So what we rather need to do is plus equals, something we also did in our poker game if you remember that.
+That'll take the previous value and then concatenate it with the current lead we are looking at.
+So if we run this, you can see now we have all three leads rendered out, but it looks horrible.
+We wanna add at least a space in between them.
+So if you remember that, you can do that with plus and then a space.
+Now it looks slightly better if we shrink in the screen, actually break out on separate lines, but if we enlarge in the screen, they are just rendered out in one line.
+So this is still the wrong way of doing it since we've just added plain text inside of the unordered list.
+We wanna add list items.
+Now we at least know how to take the data in my leads and render it out on the page, and we also know how to take whatever the user inputs into the input field and push that value into the lead.
+So we kind of have a very simple implementation of each part of the app that we simply need to put together so that we at least have a working first version.
+So let's continue on.
+
+
+#How to render <li> elements with innerHTML
+Okay.
+Now we need to fix the fact that we are simply rendering out plain text strings like this inside of the unordered list.
+If that's not what we want, we want to wrap them in list tags, of course, like this.
+list So in order to do that, let's first just try to add, for example, an li opening tag before the lead and an LI closing tag after the lead.
+To run this, you can see, oh, we simply rendered out the HTML tags as plain strings.
+That's not what we want.
+We want our browser to parse this as HTML so that it can really turn them into list items.
+And the way to do that actually is simply replacing this text content property with something called inner HTML.
+that, If we do that and run the code, you can see there.
+Now we have them as proper list items with these bullets that are included on the default styling of list items.
+So this means that the browser actually looked at this string right here and understood, oh, okay, this is actually the starting of a list element.
+I'm gonna avoid rendering that out as a plain string and instead convert this entire thing to a list item.
+So this opens up a whole new world of manipulating the DOM.
+Suddenly, can create HTML elements with JavaScript.
+So let's take a closer look at inner HTML and give you some practice on how to use it.
+elements with JavaScript.
+So let's take a closer look at inner HTML and give you some practice on how to use it.
+
+
+
+#Write your first innerHTML
+So to help you learn inner HTML, I have a really silly example for you here.
+Because let's say that you are working on a ecommerce website, somehow your colleague, the HTML developer has forgotten to add the buy button inside of the div container.
+That is a crisis because your customers now can't buy your product.
+So you as the JavaScript developer have to do that instead.
+So you're going to use the dot inner HTML property to render out a by button inside of the div container.
+You have to grab a hold of the div container first and then use the inner HTML.
+And the text inside of the button should be by with an exclamation mark.
+So go ahead and give this your best shot right now.
+and Okay.
+Let's do this.
+So first, I'll look at the HTML.
+The ID of the container is indeed container, so I'll use that.
+The const container equals document dot get element by ID passing in container.
+Now that we have that, we can do container dot inner HTML equals.
+And here we'll create the button, button, buy inside of the button, and then the button closing tag.
+If we run this, yes, we can see that we have a really neat button already styled because our CSS developer had indeed did their job, and so have you.
+So give yourself a pat on the back for doing this, and let's move on.
+And so have you.
+So give yourself a pat on the back for doing this, and let's move on.
+
+
+#More innerHTML practice
+Okay.
+Let's continue on with our ecommerce website.
+Because let's say that you wanna thank the user after she's made a purchase.
+That's not a nice thing to do.
+So what we wanna do is that when the user has clicked the button, we are to render a paragraph under the button but still inside of the same container.
+So this container right here in which the button is rendered inside of.
+button And the paragraph should say thank you for buying.
+say So I'm going to help you a little bit on the way here by creating an onClick event listener inside of the button that will try to invoke a function called buy when the button is clicked.
+So your job then is of course to create that by function and have it render a paragraph inside of this container using dot inner HTML so that the user is thanked.
+And one thing, we don't want to remove the button.
+one When you render this paragraph, it should be under the button.
+So go ahead and give this your best shot right now.
+go Okay.
+Let's do this.
+We'll do function by, and then inside of the body of the function, we need to target the container yet again.
+Container and its inner HTML.
+to However, if we try now to just render out a paragraph like this if and run the code, click the buy button, then we lost our button because here we just cleared out the inner HTML and say we want whatever's inside of the container right now, we don't care about it.
+We wanna set it equal to this paragraph and this paragraph only.
+What we instead have to do is use our good old friend plus equals.
+So now if we run this call again, hit buy, and there we go.
+Thank you for buying neatly placed underneath the button.
+Great job.
+And there we go.
+Thank you for buying neatly placed underneath the button.
+Great job.
+
+
+#Render the <li> elements with innerHTML
+Okay.
+We are back at our Chrome extension app and now your job is to do exactly what I did a few casts ago.
+I replaced the text content with the inner HTML so that we could render proper LI tags instead of just plain text inside of our unordered list.
+That is this element right here.
+So go ahead and use your freshly acquired knowledge about inner HTML to solve this challenge.
+solve Okay.
+Hopefully, that went well.
+The way to do it would be to first add a opening tag before our leads is rendered out.
+We'll do that with a double quote and l I and then of course a plus.
+Now we already had this empty space previously, we don't need that anymore, but we do need a closing l I tag.
+If we now run this, you can see, oh, it doesn't work.
+Well, that is because we're still using dot text content.
+We have to change it to inner HTML like that.
+Running the code.
+There we go.
+Three list tags rendered out exactly how we want them.
+Let's move on.
+exactly how we want them.
+Let's move on.
+
+
+
+#Use createElement() and append() instead of innerHTML
+Now that you've finally managed to work with inner HTML, I'm going to be a little bit annoying and teach you an alternative way of solving this that doesn't use inner HTML.
+Because while I prefer to make a lot of the choices for you as to which technologies you should use to build apps, especially as a beginner, in this case, it makes sense that you learn it in two different ways even though we're only going to proceed with one way in this app, and that is the dot inner HTML.
+But you will see this other method being used both in Scrimbus front end developer career path and out in the world.
+So I'm gonna teach it to you.
+The way to understand it is to break this line of code into three steps.
+Because let's have a look at what's actually happening here.
+So first, we are kind of creating the LI element.
+So create element, and then we are setting the text content of that element.
+Finally, we are taking that expression and kind of appending it to the unordered list because appending means to add something at the end of a document.
+So append to unordered list.
+So with this, we have the pseudocode for our solution.
+Let's now comment out the the original way of doing it, and then write out the new way.
+So the first thing we need to do, create the element.
+That is done by document dot create element.
+It looks almost like this document dot get element by ID here.
+However, now we are creating something, not fetching.
+And what are we creating?
+Well, whatever we place inside of the parentheses.
+Naturally, in our case, this would be an element, and this is how we specify it.
+We don't need to wrap it in these HTML tag symbols.
+Now we have created the list element, so we need to store it in a variable.
+I'm gonna use const l I.
+And next up, we gotta set the text content.
+So we'll do l I dot text content equals
+my leads I.
+Okay.
+Final step, appending it to the UL element.
+Well, then we'll do ULL dot append.
+And what do you think will append?
+Well, the LI, of course.
+So we'll take this and pass it in there.
+Now if I run this code, you can see it works.
+However, in my opinion, this is easier to understand intuitively than these three lines.
+Because here we get to see at least the HTML element in a more humanly readable way.
+But you will come across this method as well.
+So now what I want you to do is basically do the same thing as I did.
+Try to make this work with the new method and with this line of code commented out.
+And if you need help, you can use this pseudocode to Google your way to the solution, or you can of course go back and watch how I did it.
+But after you've done it, I'm not gonna go through it again because I've already done exactly that.
+This is just a little digression for you to get this practice of doing it another way, and then when you're done, we are going to return back to this dot inner HTML method here from the next cast and work a little bit on the performance of our solution.
+So give this a shot right now and then I'll see you in the next cast.
+
+
+
+Speaker
+
+Now it's time to improve the performance of our rendering.
+
+Speaker
+
+My first creating a variable list item to hold.
+
+Speaker
+
+all of the HTML.
+
+Speaker
+
+then concatenating the HTML elements onto that variable so that you after the loop has finished can render all of them in one goal.
+
+Speaker
+
+So just to go through this, this is a three-part challenge where you first create the empty variable, which is called list items.
+
+Speaker
+
+And that should eventually hold all the HTML for the list items. But to begin with, you are going to assign it to an empty string, then inside of the for loop, instead of manipulating the DOM, every single time the loop runs, in every iteration of the loop, you're going to rather add the item, this one right here, to the list items variable, instead of using the inner HTML on the unordered list itself.
+
+Speaker
+
+that finally, after the for loop has completed, then you can take the list items, which not contain all of the HTML you need, then render it inside the unordered list using inner HTML. The list weight will make our code more performance and faster.
+
+Speaker
+
+So go ahead and give this a shot right now.
+
+Speaker
+
+Okay hopefully this one's well.
+
+Speaker
+
+Now, let's do this. First, I'll start with the list items.
+
+Speaker
+
+I'm going to have to use a lecture on...
+
+Speaker
+
+but it's going to be reassigned as you know.
+
+Speaker
+
+for that we cannot use const.
+
+Speaker
+
+So, to begin with, it should be an empty string like that. And here, we're going to add the items.
+
+Speaker
+
+Please guys.
+
+Speaker
+
+Instead of setting the NRHTML directly, so this is simply replacing this here with list by
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+And now after this code has been running three times one for each lead NRA.
+
+Speaker
+
+This list items are already issued contain all of the HTML we need, so then we can render it out by doing well.
+
+Speaker
+
+HTML.
+
+Speaker
+
+equals.
+
+Speaker
+
+At least I am. I got.
+
+Speaker
+
+Let's try this run code and as you can see we get the exact same result in that works.
+
+Speaker
+
+still a little bit confused of what's going on here. I would recommend you, for example, console log out the value of list items so that you get to see what the value of that string is in every iteration throughout the loop.
+
+Speaker
+
+And once you feel you have a good grasp of this, we'll move on to the next lesson.
+
+Speaker
+
+If you find yourself struggling to remember and ask you whether or not the performance weight was to
+
+Speaker
+
+dot inner HTML inside of the loop or outside of the loop.
+
+Speaker
+
+you can remember it this sentence.
+
+Speaker
+
+Dom manipulation comes with a cost.
+
+Speaker
+
+And with that, you can ask, well, if it comes with a cost, is it best to manipulate the DOM, mainly using inner HTML, three times inside of the for loop?
+
+Speaker
+
+course it bested just with one time outside of the for loop.
+
+Speaker
+
+Well, it has a cost you'd prefer to do it one time, then three times.
+
+Speaker
+
+So just remember that Dom manipulation has a cost.
+
+Speaker
+
+and look at your code in the light of that.
+
+Speaker
+
+Now finally, if you are confused about what's really going on under the hood with this string that we are constructing by running through our loop,
+
+Speaker
+
+which you can do is log out list items.
+
+Speaker
+
+down here under line 16 just to inspect how it looks in every duration of the loop.
+
+Speaker
+
+So feel free to jump in and do that right now, and when you are ready, I will see you in the next lesson.
+
+Speaker
+
+Okay, now that we have many of the pieces of our app working, let's stitch them together so that when a user enters the lead and hits the save input button, it'll actually be rendered out. It's supposed to us having to actually add the dummy data from the get go part coding in here online. So I'm going to remove these lines and your job is split into two.
+
+Speaker
+
+You are to wrap the code below. That is from line 13 to 17. Nate render leads function. And then you are to call render leads function inside of the event handler for the button.
+
+Speaker
+
+And I'm going to remove this controller right here to make it cleaner. But just to talk through the logic here, what will happen is that when the user adds something into the field.
+
+Speaker
+
+And hits the same input.
+
+Speaker
+
+this epically, as you know, will be pushed to the My leads array, and then if we call the render leads and have this wrapped inside of that render leads function, it should, according to our plan, render out wherever items there are inside of the My leads array, which would be much better than what we have now, where simply I can hit the saving button as much as I want, but nothing happens. My lead just stays in the infield, not good.
+
+Speaker
+
+So go ahead and try to knock this one out.
+
+Speaker
+
+Okay, hopefully that went well. Now, let's do this. All right, function.
+
+Speaker
+
+Render leads.
+
+Speaker
+
+And then the body of the function inside of that, I will copy.
+
+Speaker
+
+Please call it.
+
+Speaker
+
+top out so that it's easier to read.
+
+Speaker
+
+like this, looking good, and then you have to call the render date function. We do that by doing render leads and adding the open close parentheses. Now, if we run the code.
+
+Speaker
+
+www.bop.bop.bop.com. Save a book. Yes, it works.
+
+Speaker
+
+Awesomely with that. Whoa, it actually works really good job. Now we have stitch together the various pieces of our app. We have it looks like a functional prototype.
+
+Speaker
+
+be really proud of yourself reaching this far, to give yourself a pat on the back, and when you are ready, let's move on.
+
+Speaker
+
+So while our app now works, it has a little bit of a usability issue, because if I now try to add a lead here.
+
+Speaker
+
+I'm hit safe, see you at hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit hit
+
+Speaker
+
+still persists in the input field as well. Most likely we'd want to clear out this input field. But that is what I now want you to do here online. Eight clear out the input field, though I haven't told you how to do that.
+
+Speaker
+
+And that is intentional because now I want you to Google it. And even better, I want you to try to figure out on your own what you want to write into Google to try to solve this issue.
+
+Speaker
+
+I'm not going to give you the text you are to paste into Google this time. You just have to configure that out on your own and see if you can find the answer because that's a critical skill as a developer.
+
+Speaker
+
+You'll come across problems out in the wild every single day, and you won't have me there to tell you what to Google. So you obviously have to learn how to think of a phrase to Google yourself.
+
+Speaker
+
+So go ahead and do that, try to figure out how you can clear the input field, write the code you think works, test it out, and then, of course, return back to the screencast when you want to see my solution.
+
+Speaker
+
+Okay, hopefully that would roll. Not knowing, let's do this together.
+
+Speaker
+
+So I would for example Google Clear input value with JavaScript. Here you can see it, we get a ton of results. I normally jump to the Stack Overflow question, so let's click into that one. You can see HTML how to clear input using JavaScript. So this user is using a slightly different technique than us with a function.
+
+Speaker
+
+something called a target. Or, also, the time I hardly even read this, I just quickly scroll down to the first answer to see if there's some kind of hint there as to what we are to do. And here, you can almost ignore all of it.
+
+Speaker
+
+for the line in the middle here that says target.value equals an empty string. That's interesting. That looks like something we can use.
+
+Speaker
+
+Perhaps we can do inputL.value and set that to an empty string.
+
+Speaker
+
+value equals
+
+Speaker
+
+I found a call. We'll do.
+
+Speaker
+
+Leave Breeze.com, save it, and indeed, it works.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Hey there, it's Gil from Scrimba.
+
+Speaker
+
+So currently, each time you add a new lead.
+
+Speaker
+
+The Render Leets function is rebuilding or re-rendering the entire list, even though most of the list hasn't changed.
+
+Speaker
+
+While this works fine for small arrays like my leads, this can be inefficient, slowing down your application as the list grows larger and larger. So how might we improve this? Well, instead of re-rendering the entire list every time you add a new lead, I'll modify the code only to add the new lead to the list. This way we're only updating what's necessary, which can make our application faster and more efficient in the long run. So first, I'll update the function name to render lead, since it will render a single lead. And in the function, I'll update this variable name to list item, and assign it this concatenated string that creates the lead list item.
+
+Speaker
+
+And to insert the new lead using the input field value, I'll update this part to inputl.value.
+
+Speaker
+
+Now I can go ahead and delete this for loop entirely. Then update this line to ul.interhtml plus equals list item.
+
+Speaker
+
+and this will append the newest lead to the existing list.
+
+Speaker
+
+Okay, so now I'll update the function call in the event listener to render lead. And I also want to move this line that clears the input field below the function call to make sure that we don't clear the value before trying to render the HTML. There we go.
+
+Speaker
+
+Overall, this approach is more efficient, as it doesn't need to loop over the entire array and only deals with the new element. I'll test my changes.
+
+Speaker
+
+And as you can see, it works just like before.
+
+Speaker
+
+Now, our original Render Leads function is still useful, and we're still going to be pushing new leads into the My Leads array here. In fact, soon you'll learn about a browser feature called Local Storage to store the leads across page refreshes. So you'll want a way to retrieve and display the leads after refreshing or restarting the browser. In that case, rendering the entire list using a loop will make perfect sense. So we're not necessarily discarding our original function, but rather enhancing the application with an additional more efficient method. And hey, you might even simplify this further by not even using a separate function, like Render LEAD. And instead, in the event listener, update the inner HTML of the list to the new lead, like so.
+
+Speaker
+
+Alright, so that's it from me, let's keep going.
+
+Speaker
+
+Okay, now our job is to make art leads list clickable because as you can see here on the Li item over in the browser This is just plain text. Where so we want it to be a link
+
+Speaker
+
+So that after a sales representative has gathered all of the leads, she can click and check them out again at a later stage if she wants to.
+
+Speaker
+
+So in order to do that, we need to map the lead and anchor tag. That's the attack inside of the list item.
+
+Speaker
+
+need to change this expression here, so that my leads is also wrapped in an anchor tag.
+
+Speaker
+
+And then you need to use the Href attribute to point to the specific URL, just the same as the text you are entering out.
+
+Speaker
+
+And I also want you to make the link open in a new tab.
+
+Speaker
+
+And if you don't remember how to do that, it's super easy to forget. We'll just have to Google it out and figure it out on your own.
+
+Speaker
+
+So go ahead and knock this one out, and then return back when you want to see my solution.
+
+Speaker
+
+Okay, hopefully that went well. If not, no worries, let's do this together.
+
+Speaker
+
+So we want the anchor tag on the inside of the LITike.
+
+Speaker
+
+So I'm going to add in the same strings as we're creating the elements and add a problem as well.
+
+Speaker
+
+Works at the A-Tref now.
+
+Speaker
+
+to
+
+Speaker
+
+The hashtag symbol right here.
+
+Speaker
+
+And then I'm going to close the anchor tag on this side.
+
+Speaker
+
+Add also lead to the input and say that there we indeed can see that we get the default link styling. So our link works. Now at this point you might wonder, well, why am I using single quotes for the value of the atref? Why isn't it wrapped in double quotes as you might have seen people do other places?
+
+Speaker
+
+when writing HTML.
+
+Speaker
+
+So that is because here we are using the double quotes to tell JavaScript that we're working with a string. And if we then use a double quotes here as well, then we're actually ending the string here as opposed to ending it here. So this is a little bit complicated. We started having strings that need quotes inside them. Then you have to use either single quotes on the inside and double quotes on the outside or the opposite. And now this actually becomes even more complex because what we need to do is inside of here replace this hash tag.
+
+Speaker
+
+with the My Leads because it's going to point to that URL as well.
+
+Speaker
+
+How do we do that? Well, now we actually need to close off the string before we hashtag it because we're going to add a JavaScript variable. So then we will add the double quote.
+
+Speaker
+
+plus sign.
+
+Speaker
+
+And then he plus again, and then he double quote, "Get again, start this thing right here."
+
+Speaker
+
+Of course then, this hashtag now serves no purpose. It's just an invalid character in JavaScript. We need to replace that with the My Leads.
+
+Speaker
+
+So, you can remove the space right here.
+
+Speaker
+
+Now, we actually...
+
+Speaker
+
+And follow out!
+
+Speaker
+
+At least I can.
+
+Speaker
+
+You run the code?
+
+Speaker
+
+and try to save any put as well again.
+
+Speaker
+
+Then you can see we are getting an expression which looks like a valid HTML.
+
+Speaker
+
+One more thing we need to do is to make the link open in a new tab, and I told you to Google that, so let's just do that as well.
+
+Speaker
+
+And here I'll just Google A-Tref open in YouTube, and actually Google is smart enough to just give us the answer at the top here.
+
+Speaker
+
+You can see it's pulled up from this rapidtables.com article. And here you can see in order to open a link in a new window where tab at target equals underscore blank inside of the ATAK.
+
+Speaker
+
+Well, I'll do a target equals.
+
+Speaker
+
+and kind of crux do we need to use now on the inside of the street? Well, we need to use single crux.
+
+Speaker
+
+And record blank.
+
+Speaker
+
+Otherwise, we would have escaped out of the string again and into JavaScript land. And we don't want to do that. This is just a string, and we don't need any JavaScript variables to express it.
+
+Speaker
+
+Now one thing is that when you try to click these links in the screen browser even though you're using target length.
+
+Speaker
+
+If you won't work properly, open up a new time. It just has a super weird URL. That's just a screen record. So don't worry about that. If you're on this code from your local computer, this anchor tag will indeed work.
+
+Speaker
+
+And wait, now we have all this.
+
+Speaker
+
+And it works.
+
+Speaker
+
+This string is really long.
+
+Speaker
+
+and, in my opinion, it's a complicated expression.
+
+Speaker
+
+And I would like us to simplify and avoid using these.
+
+Speaker
+
+of single and double quotes and all of this plus signs. And maybe we also want to write this expression on multiple lines, as you normally do in HTML. However, that won't work. As you can see, breaks our entire code and syntax highlighting, seen by the fact that the syntax highlighting is completely off at this point. So in the next cast, I'm going to teach you about templates rings, which will solve exactly that. So just stay tuned, and I'll see you there.
+
+Speaker
+
+So in order to make this expression a lot simpler, we'll use what's called template strings. And to make it super clear for you, the benefit of template strings, I'm actually going to comment out.
+
+Speaker
+
+This current string and then on a new line create a template string so that you can compare the two.
+
+Speaker
+
+turn a normal string into template string by replacing the quotes that wrap the string with backticks instead. So let's do that and pay attention to what happens with
+
+Speaker
+
+This impacts highlighting of my leads and the plus operators when we do that.
+
+Speaker
+
+I'm gonna do that.
+
+Speaker
+
+As you can see.
+
+Speaker
+
+all just became blue.
+
+Speaker
+
+just as we
+
+Speaker
+
+we are of course going to fix that, I've really looked at the first huge benefit with templates strings, which is you can break it into multiple lines.
+
+Speaker
+
+something we couldn't do with the normal double-coats ring up here.
+
+Speaker
+
+So this gives us the opportunity to write our HTML, looks like our HTML looks like an HTML file like this.
+
+Speaker
+
+This is a much easier expression for us humans to parse than this one up here.
+
+Speaker
+
+So now we have that, it's time to take these sections here which previously rendered out the leads, but now just our plane trains and simply delete them and replace them with a dollar sign, open and close, curly brackets.
+
+Speaker
+
+then passing in whatever JavaScript expression we want inside there.
+
+Speaker
+
+This is how you kind of escape out of the string.
+
+Speaker
+
+and show the JavaScript expression into the string. In my opinion, much easier than what we have here with the quote.
+
+Speaker
+
+Plus, and the expression
+
+Speaker
+
+another plus, any quote?
+
+Speaker
+
+to be replaced all that.
+
+Speaker
+
+and I wish you one very even further, we can.
+
+Speaker
+
+Add the contents of the anchor tag in your line.
+
+Speaker
+
+So that we get this really nicely formatted.
+
+Speaker
+
+looks just like it would write it in the HTML file.
+
+Speaker
+
+Now run this code.
+
+Speaker
+
+See you in the book, it works just as it previously.
+
+Speaker
+
+Now we have removed all the ugly pluses, all this wrestling we had to do between single quotes and double quotes and make sure that we used each of them in proper order.
+
+Speaker
+
+Here we can do whatever we want, but the name and replace is here with a double quote and use single quotes there. Well, that's not a good practice. This just shows the power of the template string. But now I've been writing code for far too long. Point here is that user write the code. That's what Scrimba is all about. So over the next few lessons, you are going to get your hand study with the template strings.
+
+Speaker
+
+Now you are going to practice templates rings.
+
+Speaker
+
+template literals, as people also call it.
+
+Speaker
+
+I prefer template strings though, as that's just an easier expression.
+
+Speaker
+
+Your job is to pick this string, which is a concatenation of two hard-coded strings and a variable, and turn it into...
+
+Speaker
+
+8th Temple Street.
+
+Speaker
+
+I'm going to be looking at down here on line 8 so you can see results. If you run up, you can see that it says, "Hey James, how's it going?" "Cheers, Pierre."
+
+Speaker
+
+So go ahead and change this from standard double quote string into a template.
+
+Speaker
+
+And of course, I will show you the solution when you're done.
+
+Speaker
+
+Okay, hopefully this went well. Let's do this. I'll start by simply replacing the first double quote where they back text and the last double quote with the back text. Then the entire thing is a string. So now if we run this it'll say, hey, plus recipient, how's it going?
+
+Speaker
+
+Obviously not what we want James to be logged out as well, so we can remove all of this clutter, all of these plus quotes and do the dollar sign.
+
+Speaker
+
+open up close curly brackets.
+
+Speaker
+
+and then type in recipients.
+
+Speaker
+
+Yes, it's not a template string.
+
+Speaker
+
+Great job.
+
+Speaker
+
+Let's make our email variable even more dynamic so that it also can take a sender value, which is the person sending the email.
+
+Speaker
+
+So you are to create a new variable and call it sender. And set its value to your name. Then in the email template string, you are to use your center variable instead of pair. You're going to replace
+
+Speaker
+
+this text with your variable.
+
+Speaker
+
+Then just run the code and you will verify that it works through the console lock.
+
+Speaker
+
+Okay, let's do this. We'll create a const called sender.
+
+Speaker
+
+And I'll actually set it to my company.
+
+Speaker
+
+So you can see that actually works when we log out.
+
+Speaker
+
+Faping out of the string and do sender like that run this. Yes, now we are logging out my entire name at the end of the string. Great job.
+
+Speaker
+
+Big benefit with template strings is that you can break them into multiple lines, which is really handy. For example, in our email case here, you'd most likely want to write this on multiple lines, like have the "Hey" in one line and another text.
+
+Speaker
+
+and online and then the...
+
+Speaker
+
+Share this in the final line.
+
+Speaker
+
+And this is possible, unlike with regular strings, like
+
+Speaker
+
+we're using here for my name.
+
+Speaker
+
+prove that, let's actually try to break this into another line. What you see here is that we get these red underlines and these syntax highlighting has been completely broken.
+
+Speaker
+
+If we try to run this, see that we get a syntax error.
+
+Speaker
+
+So obviously not something we can do. You have to get it back online.
+
+Speaker
+
+Before our template strings, it will work, and that is the challenge as well. I want you to break the email string into multiple lines, however you think it makes sense to do that. Then you are to run the code to see that it works. However, there's a gacha here, which is that in the scrimble console.
+
+Speaker
+
+You will only see one line regardless of how many lines the string actually consists.
+
+Speaker
+
+Here is an example where I created this random spring, which is on three different lines. You can see that in the Grimma console, we're logging it out on a single line.
+
+Speaker
+
+Whereas in the DevTools, which I've opened here, in the console that lives in the DevTools,
+
+Speaker
+
+is indeed logged out over three lines. So this is a quick, with the scrim, console is not as robust as the Chrome console, basically. So for this challenge, you'll have to open up the original browser console in order to verify that you've done it correctly.
+
+Speaker
+
+And if you don't know how to open the developers, I will show you now.
+
+Speaker
+
+when you're in the screen.
+
+Speaker
+
+Move your cursor up to the header area.
+
+Speaker
+
+the screen, then right click so that you open this menu, click on inspect.
+
+Speaker
+
+that will open up the developers. Make sure you are on the console tab.
+
+Speaker
+
+Now, of course, this is how it works in Chrome and I'm on a Mac computer myself. So if you are on a different operating system and using a different browser, it might be slightly different ways of opening up the console, but
+
+Speaker
+
+That shouldn't be a problem if so, you just need to Google it out, how to open the console on Windows using Firefox, for example.
+
+Speaker
+
+So go ahead now.
+
+Speaker
+
+the email string into multiple lines.
+
+Speaker
+
+log it out and then open the control and verify that you've done correctly.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+So we can do this super simple, just make this into a new line, this into a new line, and so we can even do this, and sometimes I even like to format it.
+
+Speaker
+
+We're writing a function body or HTML, so they're tabbed out so we see it like this.
+
+Speaker
+
+You can do like this.
+
+Speaker
+
+I mean, point here wasn't--
+
+Speaker
+
+exactly, for not at the way I would get. The point was just to break into new lines.
+
+Speaker
+
+see that in the criminal control is still just one line. Hopefully you saw all that.
+
+Speaker
+
+When you log out, the original console became multiple lines.
+
+Speaker
+
+Okay, we are back at our Chrome extension app, and now you are going to do the same thing I did before we went on our little tangent about templates.
+
+Speaker
+
+We'll just take this list, and I'm sorry.
+
+Speaker
+
+and turn the string here into template string.
+
+Speaker
+
+you can get rid of all of these pluses, all of these. I'll quote and also break into multiple lines if you want. Go ahead and do that, right now.
+
+Speaker
+
+Okay, hopefully this one's well.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+What might be replacing the outer quotes?
+
+Speaker
+
+With back takes for them.
+
+Speaker
+
+just go ahead and break into multiple lines, get better readability.
+
+Speaker
+
+Like, that's not easy to see that it's a list item, which wraps an anchor tag.
+
+Speaker
+
+There's something in your line, and here we still have these.
+
+Speaker
+
+What signs are we?
+
+Speaker
+
+remove all of those.
+
+Speaker
+
+wrap the JavaScript expression here.
+
+Speaker
+
+And they're
+
+Speaker
+
+Sign and the
+
+Speaker
+
+Accepting thing.
+
+Speaker
+
+Let's bring this into yet another line so now it looks much better.
+
+Speaker
+
+And if we run this.
+
+Speaker
+
+It still works exactly how we want it.
+
+Speaker
+
+So, let's move on.
+
+Speaker
+
+Hey, it's Gil from Scrumba. Let's spend a little time talking about a common scenario you'll likely face in your front end web development journey, and that is converting strings to numbers. This is particularly important when dealing with form inputs, as the data or values you get from
+
+Speaker
+
+But it's typically in string format, even if you're expecting numbers. So imagine you've created a form where users can enter numbers. They might be entering the price of an item they're selling, their age, or maybe the amount of time they spent on a task. While retrieving the value from an input field using JavaScript is always returned as a string. But what if you need to do calculations with these numbers? That might create some problems. So this is where the number function in JavaScript comes in handy. Number is a built in JavaScript function that can convert strings into numbers. So let's see how this works with a simple calculator demo.
+
+Speaker
+
+So in this little calculator, we have a form with two input fields where users can enter numbers. And you can see what it looks like here in the browser.
+
+Speaker
+
+Over an index.js, we are selecting the two input fields here and assigning them to the variables, num1 input, and num2 input. Then here in this form event listener, when the form is submitted, we are assigning the values of those input fields to the variables num1 value and num2 value respectively. And then we're logging the two variables here to the console. Notice how we're using the type of operator to log the value type of each variable. And here we're displaying the two values on the page and adding them together. So that's going to be the final result we see here towards the bottom of the calculator. So notice what happens when we enter these two numbers. So I'll set the first number to two and the second number to three. Then I'll click the button to retrieve the values
+
+Speaker
+
+All right, so to fix this, we can use the number function.
+
+Speaker
+
+What we need to do here to convert the strings into numbers is
+
+Speaker
+
+call the number function like so, and then pass it the string value, just like that.
+
+Speaker
+
+There we go, and now the two numbers should add up correctly. So again, this number function will take our string values and convert them to actual numbers. Let's have a look. Again, I'll take two for the first number in three for the second number, then click add numbers, and great after the conversion, we see that the type of value one is number, and the type of value two is also number. And we get the result we expect, two plus three equals five. Fantastic. All right, and just like that, with a little bit of JavaScript, our calculator app now correctly adds two numbers together. And from here, you can enhance this calculator by including subtraction, multiplication, and division operations with the number function. It's always going to convert your input values
+
+Speaker
+
+And this might happen if the string, for example, contains characters other than numerical digits. So be sure to experiment with the code, try different inputs, and see how number helps ensure your calculations are accurate, preventing the string concatenation that typically occurs when you try to add the values of strings. And to learn more, you can always visit the MDN docs helpful reference on number. Click right on this image, the head over to the docs.
+
+Speaker
+
+Now, let's take a little break from JavaScript and head over to our index.cs file. Because I want you to style our list according to the provided design. And here is the provided design. You can see the links have the same color as the rest of our app. We don't have the bullet points.
+
+Speaker
+
+which you can see are here in the current example.
+
+Speaker
+
+So I want you to fix that and the three selectors you are to use are the UL.
+
+Speaker
+
+- Bye, bye.
+
+Speaker
+
+the anchor tag.
+
+Speaker
+
+I've set them up for you.
+
+Speaker
+
+So you just have to write a few.
+
+Speaker
+
+and values inside of these.
+
+Speaker
+
+And then once you're done, return back to the screencast because then I also will show you my solution.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+The first obvious thing is that's our list.
+
+Speaker
+
+the design doesn't have these books.
+
+Speaker
+
+and wait to remove those part to list.
+
+Speaker
+
+And then none. Let's go see where they are going.
+
+Speaker
+
+Now, that is the space on the left hand side, namely the padding, which we have here, which you also want to abaticate through loop padding, left.
+
+Speaker
+
+And set that to zero. All right, next up, the most obvious thing is the.
+
+Speaker
+
+color of the anchor tags.
+
+Speaker
+
+It should be the green one we have already in our app.
+
+Speaker
+
+So let's fix that.
+
+Speaker
+
+And this one right here, and I'm just
+
+Speaker
+
+I'm
+
+Speaker
+
+Thank you, Craig.
+
+Speaker
+
+to be not the yes.
+
+Speaker
+
+Pretty good. Let's compare the two now.
+
+Speaker
+
+What I think is that we have some more spacing here. There's more spacing between the list items and also a little bit more spacing above the unordered list.
+
+Speaker
+
+starting with the unordered list, I think we can give them margin.
+
+Speaker
+
+top of like 20 pixels?
+
+Speaker
+
+slightly down and for the L.I. elements.
+
+Speaker
+
+we can give them also a modern top.
+
+Speaker
+
+Maybe not five pixels. Yeah, now they have a little bit more space in between them.
+
+Speaker
+
+I think this looks pretty good.
+
+Speaker
+
+So this challenge is done.
+
+Speaker
+
+But before we move on, there's one thing I want to point out.
+
+Speaker
+
+And that is that we are using very broad selectors for RCS S.
+
+Speaker
+
+basically selecting any unordered list or any list item or any anchor tag on the page. And this comes with a consequence of that.
+
+Speaker
+
+If for example, want to add other anchor tags in our app, they're outside of this list of leads, for example.
+
+Speaker
+
+Let's see, we added in.
+
+Speaker
+
+an anchor tag in the very top of our app, kind of like a navigation.
+
+Speaker
+
+We run this.
+
+Speaker
+
+You can see it says home and...
+
+Speaker
+
+We add ultimately it's in the same styling as ultimately.
+
+Speaker
+
+This might not be what we want.
+
+Speaker
+
+anchor tags and links will look slightly different depending on the context they were shown in. What we could do to solve this problem.
+
+Speaker
+
+down here.
+
+Speaker
+
+when we are flipping the color.
+
+Speaker
+
+specified.
+
+Speaker
+
+that we only want to do that, if the anchor tag lives inside of a list item.
+
+Speaker
+
+And which's all not by doing L-I?
+
+Speaker
+
+and then space and then the A.
+
+Speaker
+
+And now you can see the home link cast the standard styling.
+
+Speaker
+
+whereas the anchor tag in our list has our green styling. So this is a way of saying only target anchor tags that lives inside of list items.
+
+Speaker
+
+However, in this case, we can get away by just targeting our anchor tags.
+
+Speaker
+
+That's when I'm planning to add any other anchor tags across the page.
+
+Speaker
+
+So we can remove our home tag.
+
+Speaker
+
+And then just target this link.
+
+Speaker
+
+item.
+
+Speaker
+
+in the easiest possible way, which is what we have here, as that's perfectly fine to do, as long as we're understanding the future possible consequences of doing that. And now I think we do that. So,
+
+Speaker
+
+Let's just move on.
+
+Speaker
+
+So even though we haven't completed our app yet, there's still a
+
+Speaker
+
+I want to go ahead and deploy it right away.
+
+Speaker
+
+because I just think it's so much fun to actually see your app out in the wild. And that gives me a ton of motivation to continue on, which is why I often like to deploy my projects early as possible. So in this cast, we're going to prepare our first deployment. So that means the next cast actually can do the deployments and try our app out in the Chrome browser.
+
+Speaker
+
+As you can see on the left hand side here, I've added a couple of new files, namely the icon dot PNG. That's just a PNG image, which will
+
+Speaker
+
+looks like this little icon right here. Pretty suitable for our app with this dollar sign as our sales representatives are to be reminded that this app will bring in more dollars for their commissions.
+
+Speaker
+
+So you'll see a manifested.json file at the bottom here. You might wonder, "Well, what is JSON? I've never seen that before." And you're right, so we haven't talked about that earlier. But don't worry, it's nothing dangerous.
+
+Speaker
+
+JSON is short for JavaScript.
+
+Speaker
+
+object notation and it's a way for us developers to store and send data. And it's often used 24 example when to send a piece of data from a server to a client, nice to a browser.
+
+Speaker
+
+And in our case, we are using this manifest.json file to configure our app and to provide metadata about it.
+
+Speaker
+
+Google Chrome will read through this and look at the name, oh, it's called leadstracker, well then Google Chrome will give our app the name leadstracker.
+
+Speaker
+
+It'll also see that the version is 1.0, so that the next time we deploy and we change this to for example 1.1, it'll know that, oh, we have updated our version, and that's information that's definitely useful to know for Google Chrome.
+
+Speaker
+
+One thing you might wonder here is why these key value pairs, as you can see, which you hopefully recognize from JavaScript objects.
+
+Speaker
+
+Have keys that are wrapped in quotes, because if you remember from when we worked with JavaScript objects previously, we didn't use quotes around our keys, but that's something you have to do when writing JSON.
+
+Speaker
+
+So don't be tempted to think that this actually is a JavaScript object right now. It's not it's just plain text, but using the JavaScript object notation. So it's mimicking JavaScript object and later learn how to turn a JSON object into a JavaScript object.
+
+Speaker
+
+If this is a little bit confusing, don't worry about it, it'll sort itself out.
+
+Speaker
+
+as we look more into this.
+
+Speaker
+
+Let's just move on and look at the two final key value pairs here. We have manifest version, and that's just telling Chrome
+
+Speaker
+
+which version of this JSON file we are using, there used to be a version number one that people used in the version number two, but now we have a version number three, so that's version number three. Finally, there's the action.
+
+Speaker
+
+and that's kind of the meat of our application.
+
+Speaker
+
+It configures what happens in the user clicks on our application from the Google Chrome Extensions toolbar.
+
+Speaker
+
+Make sure we got it.
+
+Speaker
+
+Here we have Twitter.
+
+Speaker
+
+And if I click on the extensions button up here in the top right corner of this little puzzle piece,
+
+Speaker
+
+You can see it opens up all of my extensions and when I click that, for example, Grammarly for Chrome, it opens up the Grammarly extension.
+
+Speaker
+
+As you can see, it uses a little icon here as well.
+
+Speaker
+
+So in the action.
+
+Speaker
+
+the default icon that you provide.
+
+Speaker
+
+This icon PNG here, which points to this image file we've provided.
+
+Speaker
+
+We'll pop up.
+
+Speaker
+
+Here besides this puzzle piece button.
+
+Speaker
+
+And also the default pop up, the index.html that we provide inside of our action, well, it's our pop up.
+
+Speaker
+
+And in our case.
+
+Speaker
+
+It'll simply be HTML we have been building all along.
+
+Speaker
+
+Now, there's one thing we need to fix just that a Chrome extension will only be as wide as it needs to be and strictly speaking our app doesn't need to be any wider than this because that's the way that button needs. So we need to set a min with on the index.css and I'm just going to go ahead and do that.
+
+Speaker
+
+with 400 pixels for example.
+
+Speaker
+
+Now you can see.
+
+Speaker
+
+If we go below 400 pixels.
+
+Speaker
+
+or in but field, it's now outside of the app.
+
+Speaker
+
+Google Chrome will understand that. We don't want that. We want to have to be like this. This is the minimum size.
+
+Speaker
+
+So now we finally have everything in place. Your next step is to download this code.
+
+Speaker
+
+You do that by clicking on the settings icon in the bottom right corner and download As zip.
+
+Speaker
+
+I'll download the zip folder. You can then open that zip folder, for example, in your dev directory.
+
+Speaker
+
+call it wherever you want.
+
+Speaker
+
+Here you can see all of the files that you recognize along with a read-by file which you can safely ignore or delete. That's up to you.
+
+Speaker
+
+And when you have that, we are ready to deploy our Chrome extension.
+
+Speaker
+
+So let's just move on to the next step.
+
+Speaker
+
+call it whatever you want.
+
+Speaker
+
+It's a folder, for example, in your desk.
+
+Speaker
+
+That's the directory.
+
+Speaker
+
+it whatever you want.
+
+Speaker
+
+Here you can see all of the files that you recognize along with a read-by file which you can safely
+
+Speaker
+
+For their commission, it didn't use quotes around our keys, but that's something you have to do when writing case on.
+
+Speaker
+
+So don't be tempted to think that this actually is a JavaScript object right now, but as we look more into this, something Google Chrome extensions toolbar.
+
+Speaker
+
+the extensions button up here in the top right corner of this little puzzle piece. You can see it opens up all of my extensions. And when I click that, for example, Grammarly for Chrome.
+
+Speaker
+
+opens up the Grammarly Extension.
+
+Speaker
+
+As you can see, it uses a little icon here as well.
+
+Speaker
+
+So in the action.
+
+Speaker
+
+default I can let you provide.
+
+Speaker
+
+I can PNG here which points to this image file we've provided.
+
+Speaker
+
+We'll pop up.
+
+Speaker
+
+Here besides this puzzle piece.
+
+Speaker
+
+And also the default pop up, the index.html that we provide inside of our action, well, it's our pop up.
+
+Speaker
+
+And in our case.
+
+Speaker
+
+It'll simply be HCMO, we have been building all along.
+
+Speaker
+
+Now, there's one thing we need to fix, just that's a Chrome extension. So it will only be as wide as it needs to be. And strictly speaking, our app doesn't need to be any wider than this, because that's the width or button needs. So we need to set eight min was for example.
+
+Speaker
+
+or input field. It's not gonna have to be likely to have every that by clicking on it.
+
+Speaker
+
+You do that by clicking on the settings icon in the bottom right corner and download As a Zip.
+
+Speaker
+
+I'll download the zipped folder. You can then open that zipped folder, for example, in your desktop.
+
+Speaker
+
+the directory.
+
+Speaker
+
+call it wherever you want.
+
+Speaker
+
+Here you can see all of the files that you recognize along with a read-by file which you can safely ignore or delete. That's up to you.
+
+Speaker
+
+And when you have that, we are ready to deploy our Chrome extension. So let's just move on to the next cast to do exactly that.
+
+Speaker
+
+So even though we haven't completed our app yet, there's still many features left to build, I want to go ahead and deploy it right away.
+
+Speaker
+
+I just think it's so much fun to actually see your app out in the wild. And that gives me a ton of motivation to continue on, which is why I often like to deploy my projects early as possible. So in this cast, we're going to prepare our first deployment. So that means the next cast actually can do the deployment and try our app out in the Chrome browser.
+
+Speaker
+
+As you can see on the left hand side here, I've added a couple of new files, namely the icon.png.
+
+Speaker
+
+That's just a PNG image, which looks like this little icon right here.
+
+Speaker
+
+suitable for our app with this dollar sign as our sales representatives, or to be reminded that this app will bring in more dollars for their commissions.
+
+Speaker
+
+So you'll see eight manifested.json file at the bottom here, and you might wonder, well, what is JSON? I've never seen that before. And you're right, so we haven't talked about that.
+
+Speaker
+
+or you don't worry, it's enough to look more into this.
+
+Speaker
+
+The meat of our application.
+
+Speaker
+
+that a Chrome extension will only be as wide as it needs to be, and strictly speaking, our app doesn't need metadata about it.
+
+Speaker
+
+So for example 1.1, one thing to remember from the right now, it's not, it's just plain text, but using the JavaScript object notation, so it's a mimic JavaScript object.
+
+Speaker
+
+this is to move on and look at the two final key value pairs here. We have manifest version, that's just a version number one that people put in the user clicks on our application from the Google Chrome extensions toolbar.
+
+Speaker
+
+Make sure we got it.
+
+Speaker
+
+Here we have Twitter
+
+Speaker
+
+And if I click on the extensions button up here in the top right corner of this little
+
+Speaker
+
+- Have a peace.
+
+Speaker
+
+see it opens up all of my extensions and when I click that for example Grammarly for Chrome it opens up the Grammarly extension.
+
+Speaker
+
+As you can see, it uses a little icon here as well.
+
+Speaker
+
+So in the action.
+
+Speaker
+
+the default icon that you provide.
+
+Speaker
+
+This icon PNG here which points to this image file we've provided.
+
+Speaker
+
+We'll pop up.
+
+Speaker
+
+Here besides this puzzle piece button.
+
+Speaker
+
+And also the default pop up, the index.html that we provide inside of our action, well, it's our pop up.
+
+Speaker
+
+And in our case, it'll be a little bit more difficult.
+
+Speaker
+
+simply be HTML, we have been building all along.
+
+Speaker
+
+Now, there's one thing we need to fix, just that a Chrome extension will only be as wide as it needs to be, and strictly speaking, our app doesn't need to be any zip.
+
+Speaker
+
+I'll download this and when you have that, we are ready to deploy our Chrome extension. So let's just move on to the next task to do exactly that.
+
+Speaker
+
+So even though we haven't completed our app yet, there's still many
+
+Speaker
+
+Okay, it is time to deploy our application.
+
+Speaker
+
+And thanks for excited about this.
+
+Speaker
+
+I just love seeing products move out into the world and start solving problems for people. So let's just jump into this.
+
+Speaker
+
+The first thing you need to do is to head over to chrome-slash-extensions. That will bring up this UI you can see right here, which lists out all of your extensions.
+
+Speaker
+
+Now this address here is a little bit funky, so you can just copy it from the file right here and paste it into your address bar if you want to do that.
+
+Speaker
+
+And once you're there, I want you to trigger the developer mode on.
+
+Speaker
+
+So just to click up here in the top right corner.
+
+Speaker
+
+And then you'll see these three buttons appear, load unpacked, pack extension and update. And you are going to load an unpacked extension, so click that button.
+
+Speaker
+
+That'll bring up the file trusser menu. There you are to navigate to the Elites tracker folder that we downloaded from Scuba in the previous cast.
+
+Speaker
+
+choose that folder and hit select. Once you've done that, boom, your lead tracker is now in the extensions interface. And actually, that's it. Now, if we open up another tab, for example, I'll open up the link in profile of a folder, one of the co-founders of Squimber. And then I can click on the puzzle icon here in the top right corner.
+
+Speaker
+
+that will bring up all my extensions and there we can see our lead tracker.
+
+Speaker
+
+- That is just,
+
+Speaker
+
+Cool, you see the little icon here. If we click it, it brings up the user interface for our app.
+
+Speaker
+
+That's amazing.
+
+Speaker
+
+I can for example write in the URL or app at the moment and hit save and good and there it is saved
+
+Speaker
+
+Actually, now we have something that you can take with you on every website you visit and save information.
+
+Speaker
+
+but RAP has a critical flaw.
+
+Speaker
+
+Because if I now pull through this app, if I click outside of our HTML file, and it closes automatically, and then I open it up again.
+
+Speaker
+
+actually or leads have been deleted because that's just as if we were
+
+Speaker
+
+Saving something through the input here.
+
+Speaker
+
+And then seeing it in the list and then refreshing the page and boom, it's gone again.
+
+Speaker
+
+every time we open up our
+
+Speaker
+
+extension to full refresh, so we need to learn how we can store data across age refresh.
+
+Speaker
+
+How would you do that?
+
+Speaker
+
+That's not something you've learned yet, but it's not that hard to over the next few casts. I'm going to teach you exactly that so that our app becomes truly useful for salespeople who need to traverse the web and gather leads. So let's just move on and get that sorted out.
+
+Speaker
+
+So in order to fix a problem of storing leads across page refresh, let's actually open up a browser window and see if we can find a way to do this by playing around with the developer tools.
+
+Speaker
+
+for the
+
+Speaker
+
+we open these developers.
+
+Speaker
+
+Here, we're starting out at the elements, so we see the HTML elements of the page.
+
+Speaker
+
+But where our action happens is over in the application top.
+
+Speaker
+
+If you haven't, you can see the new list of fancy words here on the left-hand side of the Service Workers Storage.
+
+Speaker
+
+some of these names you might have already heard before and they're probably a bit scary and to be honest you don't need to know about any of them at this point. What we want to look at is this one right here called local storage.
+
+Speaker
+
+- 'Cause when we click that.
+
+Speaker
+
+you can see it says, "We can't."
+
+Speaker
+
+and if we click into that item as well, it opens up this table here on the right hand side where we have keys and
+
+Speaker
+
+values and that's something you probably recognize from JavaScript objects. For example, even the JSON notation, here you can see that Wikipedia has created three, we're looking, yes, and given them some values. So it seems as if Wikipedia is trying to store some value about me because these values here in local storage will only be available for me. They are local.
+
+Speaker
+
+me when I visit this domain. This data isn't shared by default with all other user service at Wikipedia at this point.
+
+Speaker
+
+For example, you can see portal session ID some weird long string. That's probably totally unique to me, but
+
+Speaker
+
+without getting into it too many details here, what's important is that this is kind of like a local database that we can use. So let's try to do that.
+
+Speaker
+
+if we hit on the console tab.
+
+Speaker
+
+open up the console, which you've previously seen, and then type in, for example, local storage dot.
+
+Speaker
+
+open close parentheses to call that function, then navigate back to the application.
+
+Speaker
+
+time you can see that we have cleared out all of the key value pairs in our local storage, so we were able to interact with these values using JavaScript.
+
+Speaker
+
+Going back to the console. We can get again for
+
+Speaker
+
+and we'll do local storage.
+
+Speaker
+
+as in first my leads at the string and then comma and then I'm gonna pass in the string of the URL that we visited previously, that is Frodo's LinkedIn profile.
+
+Speaker
+
+And then hit enter, we now go back to Abler.
+
+Speaker
+
+Again, you can see that we have a key value here in our local storage.
+
+Speaker
+
+He is my leads, the value is the URL to throw this LinkedIn profile. I'm not so cool about this.
+
+Speaker
+
+if
+
+Speaker
+
+And again, Wikipedia adds back these three key value pairs, but the Myleads key and its value persists, and that is exactly the feature we're looking for.
+
+Speaker
+
+or assisting data across age refresh.
+
+Speaker
+
+So with this in mind, let's move on and try to interact with the local storage from our index.js file.
+
+Speaker
+
+in the next cast, so I'll see you there.
+
+Speaker
+
+So now we are going to use local storage in our app. And we do that in the exact same way as we did it using the console on Wikipedia.org.
+
+Speaker
+
+whether we're writing it in our JavaScript file.
+
+Speaker
+
+That means that we can simply use the local.
+
+Speaker
+
+storage.
+
+Speaker
+
+That's accessible.
+
+Speaker
+
+the
+
+Speaker
+
+We're everywhere you are.
+
+Speaker
+
+them open and close parentheses, and then we'll first write the name of our item. We'll call it my leads.
+
+Speaker
+
+and it will specify the value.
+
+Speaker
+
+Here, I'll just do it.
+
+Speaker
+
+example.
+
+Speaker
+
+lead.com.
+
+Speaker
+
+Well, this is the key.
+
+Speaker
+
+And this is the value.
+
+Speaker
+
+If I now run this code, nothing seems to have happened, but...
+
+Speaker
+
+So we actually delete this entire line and even re-run the browser again so that we know that the only way to get a hold of that data would be if it is persisted in local storage.
+
+Speaker
+
+and then try to do exactly that by doing local storage.
+
+Speaker
+
+get item passing into the name of our item, the key, and that was my leads, and then we console log
+
+Speaker
+
+That out.
+
+Speaker
+
+Running the code, oh, there we go. Example lead.com is logged to the console because our browser remembers that we previously saved a lead under this name, and now we can get it.
+
+Speaker
+
+That is pretty cool, it opens up so many possibilities!
+
+Speaker
+
+Now I want you to try this. You're going to solve a three-part challenge. First, you are to save a key value pair in local storage in the exact same way as I did, and then you are to refresh the page, then get the value and log it out to the control.
+
+Speaker
+
+And, Lee, I want you to clear out the local storage as well, and as a little hint, I have asked.
+
+Speaker
+
+I added the three methods you are to use down here, local storage without set item.
+
+Speaker
+
+in key value.
+
+Speaker
+
+Get item, passing in key, and clear, which clears out the entire local storage.
+
+Speaker
+
+So you need to use all of these three and one little gacha before you take a start with this.
+
+Speaker
+
+both the key and the value that you pass in here and here.
+
+Speaker
+
+need to be screens. That's a limitation with local storage, meaning you can only store strings. So it is a very primitive database, but it's what we got.
+
+Speaker
+
+So give this your best shot, and then return back to the screencast if you want to see me do it yet again.
+
+Speaker
+
+Okay, let's do this. First, we do local search.set item.
+
+Speaker
+
+I'm gonna call this one my name and set it to their Herald organ like that.
+
+Speaker
+
+Run the code so that now?
+
+Speaker
+
+Hopefully this has been saved, meaning I can actually calm it down because we don't need it anymore.
+
+Speaker
+
+I can do local storage.
+
+Speaker
+
+And then, that might name like that.
+
+Speaker
+
+Actually, I'm going to store this.
+
+Speaker
+
+a valuable cold name, just as a little bonus here.
+
+Speaker
+
+And then I can so look out to the name.
+
+Speaker
+
+instead of just controlling out on this expression.
+
+Speaker
+
+And around this, we are logging out to my name.
+
+Speaker
+
+Good stuff, let's move on to the final part of the challenge. I'm gonna comment this out and then I'm going to localstoreage.
+
+Speaker
+
+Clear?
+
+Speaker
+
+Now, if I...
+
+Speaker
+
+Run the code, everybody, nothing has happened, but if we now.
+
+Speaker
+
+in comment these two lines again
+
+Speaker
+
+And, ready? Oh, no.
+
+Speaker
+
+So my name no longer exists. Well, that's great because that's exactly what we try to do by clearing out.
+
+Speaker
+
+local storage here on line 11. So as far as I can see, local storage really seems to do the job. Let's move on and learn how to use this properly with our My Leads array, so that it's implemented into our app, gives us that ever so important to persistence feature for our leads.
+
+Speaker
+
+Now, there is one issue with storing our leads in local storage as an array. And that's something we'd be aware about if we, for example, were to head over to Mozilla developer docs to read a little bit about local storage. Here you can see the window.local storage page.
+
+Speaker
+
+The reason it says window here is because local storage actually exists on this.
+
+Speaker
+
+window object, but you can also use the local storage variable directly. And when writing code in general, I would say that less is more so that if I can write less code, I will do that.
+
+Speaker
+
+That's why I'm committing the window dot syntax. Anyway, here we can read that the local storage read only property of the window interface allows you to access a storage object.
+
+Speaker
+
+for the documents origin on the call.
+
+Speaker
+
+That's just really complicated in my view, especially for a beginner.
+
+Speaker
+
+scroll it down and read about what it actually does down in the description.
+
+Speaker
+
+The keys in the value store with local stores are always in the UTF-16 downstream for it. What the hell does that mean? UTF-16 downstream?
+
+Speaker
+
+Not just some hardcore stuff.
+
+Speaker
+
+But we are not going to worry about all that. The only thing that matters is...
+
+Speaker
+
+at least know what that is.
+
+Speaker
+
+as you can see here as with objects in the
+
+Speaker
+
+Okay, so it seems like, actually,
+
+Speaker
+
+everything that is stored inside of local storage has to be strings. Well, that's a problem because--
+
+Speaker
+
+We were expecting to store this array here. So how do we do this? Well, to get someone to explain this was in an easier way, I would just Google out our problem, store array in local storage, and look for the first Stack Overflow question. How do I store an array in local storage? OK, that's our problem as well.
+
+Speaker
+
+And instead of fine reading the question, I just jump to the answer immediately because I'm impatient. And there you can see a very straightforward explanation. Local storage only supports strings. Use JSON dot string if I and JSON dot parse.
+
+Speaker
+
+We can see some code and we recognize this local storage.set.ite.
+
+Speaker
+
+and then passing in the key.
+
+Speaker
+
+And then instead of just passing in the value, which here should be the names array, they are doing JSON dot stringify and passing in the names array in that. So it seems as if this JSON dot stringify takes the array and turns it into string. And likewise,
+
+Speaker
+
+the other side.
+
+Speaker
+
+they are to fetch data from local storage, they use local storage.get item names, but then wrapping that in.
+
+Speaker
+
+higher expression into JSON.parse. So that seems to go the other way around, from string to array.
+
+Speaker
+
+Okay, so actually.
+
+Speaker
+
+Let's just try.
+
+Speaker
+
+this.
+
+Speaker
+
+Let's pretend that this is our array in local storage. We have
+
+Speaker
+
+Lead here and as we read in local source everything is strings so we have to turn this into a string and we can use that with the back ticks like
+
+Speaker
+
+Now this is a string and the problem here would be that.
+
+Speaker
+
+Let's say that we fetch this from local storage and we want to push another lead to the array.
+
+Speaker
+
+try to do that with my leads.
+
+Speaker
+
+I think we'd not come.
+
+Speaker
+
+From this.
+
+Speaker
+
+We get in there.
+
+Speaker
+
+Myleads.com
+
+Speaker
+
+It's not a function.
+
+Speaker
+
+And it's because the push method doesn't exist on strings. It only exists as a method you can use on erase. So what we then have to do first, here we've gotten the data from local storage.
+
+Speaker
+
+Now we need to do what our friend over at Stack Overflow did.
+
+Speaker
+
+course.
+
+Speaker
+
+entire thing.
+
+Speaker
+
+We can do my leads.
+
+Speaker
+
+equals based on dot bars.
+
+Speaker
+
+And then pass in my lead scare.
+
+Speaker
+
+Now, after.
+
+Speaker
+
+You push.
+
+Speaker
+
+Log out, my leads.
+
+Speaker
+
+Yes, now we can see, now it worked.
+
+Speaker
+
+How about if we wanted to go the other way around?
+
+Speaker
+
+here where we're actually stringifying the array.
+
+Speaker
+
+so that we can save it in local storage.
+
+Speaker
+
+This will be the situation here.
+
+Speaker
+
+We do my leads equals JSON dot springify and then passing in my leads.
+
+Speaker
+
+Run this code.
+
+Speaker
+
+in the console, it kind of looks like a race. So maybe not the best example. But what we can do here is we can do the type.
+
+Speaker
+
+Oh, before my leads.
+
+Speaker
+
+Then we'll ask JavaScript to tell us which type.
+
+Speaker
+
+It's this variable here.
+
+Speaker
+
+If we run this, easy, we get string. So by using the so-called JSON methods, that is the stringify and the parse, and passing in our data, we can flip back and forth between strings and arrays.
+
+Speaker
+
+And also, obviously, if we used a JSON object like this with the curly brackets,
+
+Speaker
+
+It would turn it into a JavaScript object and the other way around. And that's actually a more common use case.
+
+Speaker
+
+But in our case, we have an array to work with and it does the job perfectly well for
+
+Speaker
+
+or erase as well.
+
+Speaker
+
+Okay, now it's your turn to practice.
+
+Speaker
+
+I'm going to...
+
+Speaker
+
+turn this back into a string.
+
+Speaker
+
+and give you a set of instructions.
+
+Speaker
+
+Okay, you are going to do these four steps. First, turn.
+
+Speaker
+
+the My Lead String into an array.
+
+Speaker
+
+then push a new value to that rate.
+
+Speaker
+
+Then turn the array into string again.
+
+Speaker
+
+And finally, console of the string using the type of that you just learned to verify that it's actually a string. So go ahead and give this a shot right now.
+
+Speaker
+
+Okay, hopefully this one's well, let's do this.
+
+Speaker
+
+We'll do my leads equals based on.
+
+Speaker
+
+based on
+
+Speaker
+
+passing in my leads.
+
+Speaker
+
+Not to turn it into a proper array again.
+
+Speaker
+
+Now that we have it as an array, we can do my lead stop push.
+
+Speaker
+
+Okay, we have to turn it into a string again, we do.
+
+Speaker
+
+My leads.
+
+Speaker
+
+resigning it to the sound of a string nearby, my audience.
+
+Speaker
+
+And finally...
+
+Speaker
+
+and so on out.
+
+Speaker
+
+type of my leads.
+
+Speaker
+
+We're going to code and we get a screen in our console just as we wanted. We have gone from string to
+
+Speaker
+
+array back to string again.
+
+Speaker
+
+Now, you are going to implement the first part of our local storage feature, and that consists of saving the Myleads array through local storage. So that should happen here on line 11.
+
+Speaker
+
+right after you've pushed the
+
+Speaker
+
+the new lead to the My leads array.
+
+Speaker
+
+cleared out the input field, then we are ready to actually save it to local storage.
+
+Speaker
+
+And you have to remember to use the JSON dot stringify when saving it, even though the browser we're using might be kind to us and actually do this for us if it notices that we haven't done it.
+
+Speaker
+
+We want to be explicit about this so that we remind ourselves that we know the difference between working with just plain text or a proper JavaScript array. So remember to do that and once you've written your solution,
+
+Speaker
+
+You should run the code by filling out the input field and hitting the TAV1 button because this line at the bottom of the function will
+
+Speaker
+
+also be run and it heads into local storage and get
+
+Speaker
+
+That's the item that is called Myleads. So if your implementation has worked, this console log should log out whatever you've saved to local storage as well, because Myleads is actually the key we want to use in order to save our array.
+
+Speaker
+
+use this as the key.
+
+Speaker
+
+So go ahead and do this, and I will, of course, show you the solution when you return back to this test.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+first we'll do local storage.
+
+Speaker
+
+here, we first need to specify what.
+
+Speaker
+
+key, we want to save our item under.
+
+Speaker
+
+That is...
+
+Speaker
+
+As I said here, my leads.
+
+Speaker
+
+So that my lyrics and
+
+Speaker
+
+comment.
+
+Speaker
+
+And then what we actually want to say now, we might have attempted to simply do my leads like that, grabbing the variable called my leads, but
+
+Speaker
+
+As I said, we need to use JSON stringify.
+
+Speaker
+
+Turn this into a text string.
+
+Speaker
+
+So we'll do JSON dot.
+
+Speaker
+
+springify and
+
+Speaker
+
+array inside of the parentheses.
+
+Speaker
+
+string if I method.
+
+Speaker
+
+There we have it.
+
+Speaker
+
+Let's run the code.
+
+Speaker
+
+Try to add a lead, hit same input.
+
+Speaker
+
+And there we go.
+
+Speaker
+
+As you can see in the console we are indeed logging out something that looks very much like an array with one item of
+
+Speaker
+
+also lead, which is exactly what we want.
+
+Speaker
+
+Great job, let's move on.
+
+Speaker
+
+So now we are able to set items in local storage, aka we are saving leads to local storage.
+
+Speaker
+
+awesome lead and
+
+Speaker
+
+epic lead and then see
+
+Speaker
+
+that yes they are indeed logged out.
+
+Speaker
+
+We have a
+
+Speaker
+
+see w zero dot scream dot com. And there you will see my leads as the key and the values as well.
+
+Speaker
+
+And the reason it's cw0.screen.com is because that's actually the domain for this mini browser under the hood. However, that's a screen by magic. Don't worry about that right now. Just know that you can access it by
+
+Speaker
+
+choosing that domain.
+
+Speaker
+
+Now there's one big problem here though, which is that if we now refresh this page again, boom.
+
+Speaker
+
+leads are gone. Or actually they're not gone, they still exist down in local storage.
+
+Speaker
+
+However, we haven't written the code for heading into local storage, fetching out the leads, and then displaying them when we are refreshing the entire page.
+
+Speaker
+
+actually not doing anything, we're just setting them my leads array to an empty array and we're not even triggering render leads.
+
+Speaker
+
+There's multiple things we need to fix up here.
+
+Speaker
+
+We're going to start small as usual.
+
+Speaker
+
+you are going to basically just try to get to the leads from local storage.
+
+Speaker
+
+and store that in a variable, which I
+
+Speaker
+
+our call leads from local storage.
+
+Speaker
+
+and then log out to this variable.
+
+Speaker
+
+So now I'm going to...
+
+Speaker
+
+close to console and before you go, I want to remind you about
+
+Speaker
+
+the JSON.par method that you learned earlier.
+
+Speaker
+
+because you want to use that.
+
+Speaker
+
+parse the string, you get from local storage, so you turn it back into an array. This might be a little bit difficult, but just give it your best job, and then I will show you how to do it as well.
+
+Speaker
+
+Okay, hopefully that went wrong.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+We're going to do more or less the exact same thing we're doing here to begin with.
+
+Speaker
+
+Which is basically...
+
+Speaker
+
+>> Local.
+
+Speaker
+
+Storage, I'll get to buy them.
+
+Speaker
+
+passing in my leads, whatever we need to parse this.
+
+Speaker
+
+So I'll do JSON.
+
+Speaker
+
+And then...
+
+Speaker
+
+parentheses around this in-rexression right here, and then store this in a variable called
+
+Speaker
+
+Please.
+
+Speaker
+
+Storage, like that.
+
+Speaker
+
+Now
+
+Speaker
+
+You can control it out.
+
+Speaker
+
+leads from local storage.
+
+Speaker
+
+Sweet, run the cold.
+
+Speaker
+
+In the video, there we are logging out the array with the leads that we know that we have here in our local storage.
+
+Speaker
+
+If I now do...
+
+Speaker
+
+local storage documents.
+
+Speaker
+
+right above.
+
+Speaker
+
+If it's line and run it, we get null, and now you're probably wondering, well, what the hell is null mean?
+
+Speaker
+
+And as you learn in the next lesson, no is a so called false value that we
+
+Speaker
+
+developers use to singleize emptiness.
+
+Speaker
+
+And here, the developers behind local storage, that is the people over at Google who have implemented local storage into Chrome,
+
+Speaker
+
+made it so that it returns more when we ask for a key.
+
+Speaker
+
+doesn't exist. And actually, this is the case where all browsers, because they have followed the same specification.
+
+Speaker
+
+However, this means that we'll end up in a situation where this variable leads from local storage is either null,
+
+Speaker
+
+which as I said is a 40 value.
+
+Speaker
+
+It isn't a rate.
+
+Speaker
+
+today's so called truthy value.
+
+Speaker
+
+So we're in a situation where we have to act upon a variable that is either truthy or falsy.
+
+Speaker
+
+not the same as true and false.
+
+Speaker
+
+meaning we have to dig deeper into exactly truthy and falsy means.
+
+Speaker
+
+And we'll do that in the next lesson.
+
+Speaker
+
+Okay, so let's learn about truthy and false values.
+
+Speaker
+
+So let's say that B for example, have a slot machine up.
+
+Speaker
+
+We have a constant.
+
+Speaker
+
+Critic, not so many credits you have to play with.
+
+Speaker
+
+I'm going to check if critics
+
+Speaker
+
+is more than zero, well, then you're allowed to play this law between.
+
+Speaker
+
+So we'll log out, let's play with a slot machine emoji.
+
+Speaker
+
+And then else.
+
+Speaker
+
+It means that your credits isn't over zero, so that means that you have to be at zero.
+
+Speaker
+
+Then we'll control the out.
+
+Speaker
+
+Sorry you.
+
+Speaker
+
+have no critics.
+
+Speaker
+
+Like that.
+
+Speaker
+
+Now, if we run this one time.
+
+Speaker
+
+Sorry, you have no credit. It's locked out.
+
+Speaker
+
+We've also created a zero, this would evaluate two.
+
+Speaker
+
+False, credits is not more than zero.
+
+Speaker
+
+meaning JavaScript would jump to the else class.
+
+Speaker
+
+If we change this to...
+
+Speaker
+
+This expression, 12.
+
+Speaker
+
+greater than 0 with the value x true.
+
+Speaker
+
+True and this what I've called would be rum.
+
+Speaker
+
+Now JavaScript isn't really that strict about what you shove into the condition here, actually.
+
+Speaker
+
+If we only shove them,
+
+Speaker
+
+like that, and try to run this again.
+
+Speaker
+
+You can see that we're still logging out. Let's play.
+
+Speaker
+
+So even though this would be evaluated 12, when it's shoved into a...
+
+Speaker
+
+conditional statement as this, JavaScript will then again translate 12 to 12.
+
+Speaker
+
+Likewise, if...
+
+Speaker
+
+>>
+
+Speaker
+
+We're on the code, you can see.
+
+Speaker
+
+Sorry you have no credit, it's locked out, because...
+
+Speaker
+
+And this would be translated to 0 first.
+
+Speaker
+
+And then JavaScript would say, "Oh, that's a full C value, so I'm going to translate that to false."
+
+Speaker
+
+Actually,
+
+Speaker
+
+We only shall
+
+Speaker
+
+like that, and try to run this again.
+
+Speaker
+
+You can see that we're still logging out. Let's play.
+
+Speaker
+
+So even though this would be evaluated 12, when it's shoved into a...
+
+Speaker
+
+conditional statement as this, JavaScript will then again.
+
+Speaker
+
+Translate 12 to 12.
+
+Speaker
+
+Likewise, if...
+
+Speaker
+
+Credit to zero.
+
+Speaker
+
+And we're on the code, you can see.
+
+Speaker
+
+Sorry you have no credit, it's locked out because...
+
+Speaker
+
+This would be translated to 0 first.
+
+Speaker
+
+And then JavaScript would say, "Oh, that's a full C value, so I'm going to translate that after false."
+
+Speaker
+
+So where do you before learn about true and false values? You now have to understand.
+
+Speaker
+
+Truthy.
+
+Speaker
+
+and false values. Let's try another one, for example.
+
+Speaker
+
+Yolo.
+
+Speaker
+
+with a screen.
+
+Speaker
+
+What do you think that will be?
+
+Speaker
+
+when I run this code, what will be logged out?
+
+Speaker
+
+Just take a guess.
+
+Speaker
+
+Okay, let's run it.
+
+Speaker
+
+Let's play Is Log Out.
+
+Speaker
+
+In other words,
+
+Speaker
+
+Yolo or the string right here is a truthy value because JavaScript.
+
+Speaker
+
+Turn to this Intrusion in the Commission.
+
+Speaker
+
+as well if we...
+
+Speaker
+
+and array.
+
+Speaker
+
+Around my kids.
+
+Speaker
+
+From the cold?
+
+Speaker
+
+That is also a true value.
+
+Speaker
+
+Let's run along.
+
+Speaker
+
+Let's do an end-by-string.
+
+Speaker
+
+From the code? Oh no, that's a falsy value.
+
+Speaker
+
+because
+
+Speaker
+
+It got translated into false, meaning this Markov code didn't run, JavaScript jumped to the next block.
+
+Speaker
+
+else clause and blog down sorry you have no crits.
+
+Speaker
+
+Let's go back to the starting credits here, so there already felt it makes sense.
+
+Speaker
+
+And at this point, you might feel that truthy and faulty values is really complex because how will you keep track of all of these truthy and faulty values? It seems like there's a ton of things to remember.
+
+Speaker
+
+It's not that hard.
+
+Speaker
+
+You essentially have to remember.
+
+Speaker
+
+these six values. They are the full C values in JavaScript.
+
+Speaker
+
+Force.
+
+Speaker
+
+Zero.
+
+Speaker
+
+And I'm disring.
+
+Speaker
+
+No.
+
+Speaker
+
+I'm the find.
+
+Speaker
+
+And this weird thing right here, nam.
+
+Speaker
+
+for not a number.
+
+Speaker
+
+And out in the real world, inside of conditionals, in most cases you'll work with either false, null, or undefined. So actually, this man here is rarely ever used to just why I'm not going to talk anymore about it.
+
+Speaker
+
+More on the find though, it deserves a little bit of time.
+
+Speaker
+
+because a lot of developers are confused about these two and they mix them together. Now let's look at the similarity first.
+
+Speaker
+
+both primitive data types that just like strings, numbers, and booleans. And they're also both ways to signalize emptiness. However, on high level, the core difference is that null.
+
+Speaker
+
+How USA Developer at Singalise, emptiness?
+
+Speaker
+
+What's undefined is...
+
+Speaker
+
+How JavaScript signalizes emptiness.
+
+Speaker
+
+So you will use null as a developer. It's a useful tool, where it's undefined is something you'll be exposed to because JavaScript will tell you from time to time that what you're looking for is undefined.
+
+Speaker
+
+Now, let's see this through the lens on the sample. As I'll help, I'll see the difference between the two.
+
+Speaker
+
+like you'll sometimes see developers into clear variables and assign them as null.
+
+Speaker
+
+With AR creating a live streaming app and you have current viewers and that's set to know, meaning that no people are watching the live streams at the moment.
+
+Speaker
+
+However, a bit later, a few viewers might pop up when you might wanna do.
+
+Speaker
+
+for your equals and then I'm ready of Jane and Nick.
+
+Speaker
+
+The reason this can be a useful way of describing the situation in terms of how many people who are watching the stream is because you might want to act upon whether or not there are people in the stream.
+
+Speaker
+
+So if current yours.
+
+Speaker
+
+And you might want to do something, for example, know if I -- the live streamers -- that people are watching, so go ahead and turn on your live stream.
+
+Speaker
+
+With all of we have.
+
+Speaker
+
+Viewers like that.
+
+Speaker
+
+Now, this block of code will only fire.
+
+Speaker
+
+If current viewers has been set to an array.
+
+Speaker
+
+So now you can see it'll be logged out and let's say you're a bit later.
+
+Speaker
+
+Lose all of yours and you said it at all.
+
+Speaker
+
+We run the code.
+
+Speaker
+
+Nothing happens because no, it's a false value, meaning that this will be false.
+
+Speaker
+
+The array here is a truthy value.
+
+Speaker
+
+So when current viewers equal slots array,
+
+Speaker
+
+sector true?
+
+Speaker
+
+this type of course run.
+
+Speaker
+
+Now, here you can see that null is a useful way of singleizing emptiness because...
+
+Speaker
+
+And the array wouldn't do the trick if we run this code. You can see we are indeed logging this code because current viewers
+
+Speaker
+
+It's an empty array.
+
+Speaker
+
+Which then I'm gonna value it's the truth.
+
+Speaker
+
+So it's better to use.
+
+Speaker
+
+Know here.
+
+Speaker
+
+That was how you as developer can signalize emptiness.
+
+Speaker
+
+and act upon whether or not a variable is empty.
+
+Speaker
+
+Let's now look at undefined and see how JavaScript uses that.
+
+Speaker
+
+so you can like, emptiness as well.
+
+Speaker
+
+And we can do that by simply removing everything.
+
+Speaker
+
+Let's current viewers.
+
+Speaker
+
+For now, try to console log.
+
+Speaker
+
+current viewers, which has been declared but not assigned to a value.
+
+Speaker
+
+When we run this.
+
+Speaker
+
+Who gets under fire? The JavaScript tells us that this variable is undefined or kind of like empty.
+
+Speaker
+
+Likewise, if this is for example wasp.
+
+Speaker
+
+an object and you try to.
+
+Speaker
+
+I'll get you key that doesn't exist.
+
+Speaker
+
+on them.
+
+Speaker
+
+You think that?
+
+Speaker
+
+thoughts and facts.
+
+Speaker
+
+We'd also get undefined. JavaScript tried to look for this. It was completely empty.
+
+Speaker
+
+If that's an array.
+
+Speaker
+
+with one item.
+
+Speaker
+
+And you try.
+
+Speaker
+
+to look for the item at index five.
+
+Speaker
+
+Run this, again, JavaScript says undefined.
+
+Speaker
+
+So this way, when you see either null or undefined in your codebase, it should provide you with a hint as to whether this is JavaScript trying to signalize emptiness, or if there's a developer who's written that code and is trying to signalize emptiness.
+
+Speaker
+
+So that was a long walkthrough of the differences between null and undefined. There's some more to it also, but I don't think we need to dig deeper than this. Let's wrap up this cast and in the next one, I'm going to teach you a neat little trick to check.
+
+Speaker
+
+check if a value is true to the portfolio, which you can use whenever you are in doubt. Then I'm going to stress test your true to the Mfulsace skills.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+If you ever wonder whether a value is truthy or falsy, you can check it through.
+
+Speaker
+
+- Right.
+
+Speaker
+
+boolean.
+
+Speaker
+
+open close parentheses, and then pass in whatever value you want to take inside of those parentheses.
+
+Speaker
+
+So here we'll do it. Hello?
+
+Speaker
+
+Score this in a variable called true or false.
+
+Speaker
+
+Now, for this whole log.
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+On the call, you can see that we get true meaning that hello evaluates to true.
+
+Speaker
+
+removing the content of the string.
+
+Speaker
+
+We'll be back in the morning again. Be good force.
+
+Speaker
+
+as you hopefully remember, an empty string is a full seat value.
+
+Speaker
+
+Now, with this in mind, you are going to do a set of calendars, which I said in the previous cast.
+
+Speaker
+
+Here they are.
+
+Speaker
+
+six console logs, and inside of them, we are taking a bunch of values for their Boolean value. So each of these lines will log out either true or false.
+
+Speaker
+
+And your job is to hear.
+
+Speaker
+
+After these two flashes?
+
+Speaker
+
+Right, either two or fours.
+
+Speaker
+
+depending on what you think will be logged out.
+
+Speaker
+
+Go ahead and give this a shot right now.
+
+Speaker
+
+But let's do this.
+
+Speaker
+
+an empty string, as we remember, that is a false value, so this will log false.
+
+Speaker
+
+Here, I'm trying to trick you, because 0 is indeed a full-sea value.
+
+Speaker
+
+This is a string which contains one character, it's not zero, so this will be true.
+
+Speaker
+
+Here, 100, that's a truthy number.
+
+Speaker
+
+Hopefully you remember it in a fantasy 40 value, so this will be false.
+
+Speaker
+
+And here, I'm also ranked for you.
+
+Speaker
+
+Zero wrapped in slime and array.
+
+Speaker
+
+While zero is a faulty value?
+
+Speaker
+
+And array is a truthy value.
+
+Speaker
+
+So this will be true.
+
+Speaker
+
+Here, minus zero.
+
+Speaker
+
+0 is a false value, and whether it's minus or plus 0 doesn't change that, so this should be false.
+
+Speaker
+
+And that's one of the cool.
+
+Speaker
+
+And we get false true true.
+
+Speaker
+
+False truth, false correct.
+
+Speaker
+
+Now we'll return back to the Chrome extension, and you'll use these truthy and falsey skills in order to build a conditional for the leads we have stored or not stored in local storage.
+
+Speaker
+
+So let's move on.
+
+Speaker
+
+So now that we're able to check if we have any leads in our local storage and if so, we-
+
+Speaker
+
+the
+
+Speaker
+
+JavaScript array, we are ready to act upon wherever data we get here.
+
+Speaker
+
+And first, let's look at what kind of data we can get.
+
+Speaker
+
+because there's essentially two situations we need to account for.
+
+Speaker
+
+One is this one right here where the my array in local storage gives us back some data. For example, this array right here.
+
+Speaker
+
+You have something to work with and you can render it out instantly.
+
+Speaker
+
+But under the other situation.
+
+Speaker
+
+Which is the one right here where actually there's no data in the my leads key in local storage and actually the key doesn't even exist.
+
+Speaker
+
+So
+
+Speaker
+
+We know that we get back in the mold.
+
+Speaker
+
+So that is a falsie value, and this is a truthy value.
+
+Speaker
+
+So then the question is, what are we going to do in these two cases?
+
+Speaker
+
+Well, if the value is null, meaning that there's no leads stored in local storage, well, we're not going to do anything, because there's no point trying to render out any leads.
+
+Speaker
+
+or just going to ignore it, not do anything.
+
+Speaker
+
+But if we find a couple of leads, if we get in a way back.
+
+Speaker
+
+from this expression right here, then we need to first.
+
+Speaker
+
+Set my leads.
+
+Speaker
+
+To whatever leads we are returning back.
+
+Speaker
+
+And then...
+
+Speaker
+
+call the render leads function, because the render leads function takes the leads in the my leads array and renders them up.
+
+Speaker
+
+Because of course, that's what we want to do. We want to show the user whatever we found in local storage.
+
+Speaker
+
+Here is the challenge for related.
+
+Speaker
+
+check if leads from local storage is truthy.
+
+Speaker
+
+That's this round of gold right here.
+
+Speaker
+
+If so.
+
+Speaker
+
+set the Myleads variable.
+
+Speaker
+
+This one up here.
+
+Speaker
+
+This one up here, two, it's value.
+
+Speaker
+
+And by that, I mean the value of this variable right here.
+
+Speaker
+
+leads we have fictional from local
+
+Speaker
+
+call render leads. So this might be a little bit of a difficult challenge, but give me
+
+Speaker
+
+your best shot, and then I will show you the solution as well when you return back to the screencast.
+
+Speaker
+
+Okay, hopefully this one's well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+leads for
+
+Speaker
+
+local search.
+
+Speaker
+
+That's actually everything we need to do.
+
+Speaker
+
+because this evaluates to either recruit the orthonophons the expression.
+
+Speaker
+
+Have it to truthy?
+
+Speaker
+
+This called will be run.
+
+Speaker
+
+If it's a full C, then JavaScript will just jump over all these lines and continue down here on line 16.
+
+Speaker
+
+So inside here, we're first going to set my leads.
+
+Speaker
+
+through this newly valued, we've just fetched out.
+
+Speaker
+
+My leads equals.
+
+Speaker
+
+leads from local storage.
+
+Speaker
+
+And then we're going to render.
+
+Speaker
+
+Leagues, like that.
+
+Speaker
+
+Sweet, run this now.
+
+Speaker
+
+You could see nothing happens, and that's because at this point.
+
+Speaker
+
+Local storage is most likely null.
+
+Speaker
+
+Let's just log out to verify that.
+
+Speaker
+
+Yes, we'll be logging out below.
+
+Speaker
+
+What we then can do instead is actually add awesome lead.
+
+Speaker
+
+To our list?
+
+Speaker
+
+And now both of these should be saved in local storage.
+
+Speaker
+
+We should be in this situation right now.
+
+Speaker
+
+So if I refresh,
+
+Speaker
+
+Yes!
+
+Speaker
+
+Now we have persisted, our leads across refresh.
+
+Speaker
+
+That is so cool. So give yourself a pat on the back. You should be so proud of yourself reaching this far. You're now working with a small database, basically. And that's a huge step towards becoming a professional developer.
+
+Speaker
+
+Now, we need to fix the fact that we can't delete our leads.
+
+Speaker
+
+Because obviously that's a feature we need. Let's say that I make sales development representative and I'm gathering leads like this I have four
+
+Speaker
+
+leave at this point and I want to go ahead and contact these people or maybe move this data over into a spreadsheet, for example.
+
+Speaker
+
+so that I, again, can go out to the World Wide Web and turn through leads on LinkedIn and save them to my Chrome extension.
+
+Speaker
+
+Well then, I obviously need to...
+
+Speaker
+
+of these existing leads.
+
+Speaker
+
+to get clean slate to start with.
+
+Speaker
+
+But now that's not possible, I can refresh this as many times as I want.
+
+Speaker
+
+I'll just continue to store my leads. So we need a delete button.
+
+Speaker
+
+Need something that looks like this.
+
+Speaker
+
+And that is what you are going to do in this challenge. You are going to style this bleed button. And then later on, we're going to write the code for its functionality as well.
+
+Speaker
+
+We have to create the button in the HTML and I'm just going to do that for you.
+
+Speaker
+
+like that.
+
+Speaker
+
+Don't leave us all.
+
+Speaker
+
+And as you can see, if we render this out, you can see that.
+
+Speaker
+
+Actually, looking pretty good already.
+
+Speaker
+
+It has the default button styling that we have added.
+
+Speaker
+
+or CSS here.
+
+Speaker
+
+But we want to be kind of the inverse of the save input.
+
+Speaker
+
+so as you probably see that it's something different.
+
+Speaker
+
+And in order to target to that button, we need to give an ID.
+
+Speaker
+
+of the leaks, and I should be TN, like that.
+
+Speaker
+
+before you start writing your quote inside of the.
+
+Speaker
+
+Delete the BTN selector right here. I am going through.
+
+Speaker
+
+Do one change on the button as a whole.
+
+Speaker
+
+Actually, this button which you can see in the slide has a slightly different styling than this one here. That is that the border is actually not numb.
+
+Speaker
+
+It's actually one.
+
+Speaker
+
+and then the screen color.
+
+Speaker
+
+You can see both buttons got one pixel added to its border.
+
+Speaker
+
+If I remove this, you'll see that the buttons become slightly smaller, they shrink and slightly like that.
+
+Speaker
+
+with zero.
+
+Speaker
+
+a bit larger if I do one.
+
+Speaker
+
+And let's just try a different color here. Red, there you look clearly. See it.
+
+Speaker
+
+with one pixel and with zero pixels.
+
+Speaker
+
+We want one pixels.
+
+Speaker
+
+of green color.
+
+Speaker
+
+that's needed to get this green border around the Stellit obit.
+
+Speaker
+
+So now we are ready. You are to style a button according to the provider sign and you're only going to apply the styles inside of this delete Btn ID selector.
+
+Speaker
+
+So go ahead and do this, and therefore I will show you this solution as well, when you return back to this green cast.
+
+Speaker
+
+Okay, hopefully in that regard, let's start.
+
+Speaker
+
+The first obvious thing is the background should be white, not green.
+
+Speaker
+
+Right, right. Okay.
+
+Speaker
+
+And now we also seemingly lost the text, but that's not the case, it's just...
+
+Speaker
+
+So it blends in with the background.
+
+Speaker
+
+So we need to change the color as well.
+
+Speaker
+
+And for that, we're going to use this green color up here.
+
+Speaker
+
+I'm patient and there we go.
+
+Speaker
+
+Because he just, without the let him roll.
+
+Speaker
+
+Now we are going to make our delete all of them actually worth.
+
+Speaker
+
+So you'll do that through a three-part challenge. Pretty big one actually, but first, we're going to give you a little mini challenge. And that is, this leads from local store chair.
+
+Speaker
+
+Shouldn't that be defined as a letter?
+
+Speaker
+
+What do you think we should change it to a cost?
+
+Speaker
+
+Just look at what we're doing with it down here on line eight and line nine where we are using it and take your best guess as to whether we should change it or not.
+
+Speaker
+
+And the answer is that, yeah, actually we do want to claim this to a comment.
+
+Speaker
+
+because we're not reassigning it here.
+
+Speaker
+
+And if you remember from previously, it's a good practice too, if you can use const, then use const because it enforces a strictness throughout your codebase. When another developer comes in here or you in two months and looks at this leads from local storage and see, oh, it's a const, then I know that this will not be reassigned further down in the code.
+
+Speaker
+
+So that was just a little like rational so that we got to clean up this little variable inconsistency here.
+
+Speaker
+
+Now let's move on to the major challenge.
+
+Speaker
+
+And it's 3 part.
+
+Speaker
+
+First, you are going to grab a hold of the delete button and store it in a delete Btn variable.
+
+Speaker
+
+then you are going to listen for...
+
+Speaker
+
+double-hicks on the delete button.
+
+Speaker
+
+And if you don't know how to listen for it, double clicks, you should just Google it.
+
+Speaker
+
+Finally, when the button has been clicked, that is dumb.
+
+Speaker
+
+They are the local storage.
+
+Speaker
+
+should clear out the Myleast variable.
+
+Speaker
+
+That is this one up here.
+
+Speaker
+
+and you should also clear out the DOM so that the user doesn't see any more leads on this on ordered list.
+
+Speaker
+
+You're pretty big one.
+
+Speaker
+
+But give this one a shot.
+
+Speaker
+
+return back to me when you want to see my solution.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+I'll start up here. We'll define a const.
+
+Speaker
+
+We jump like that.
+
+Speaker
+
+your documents.
+
+Speaker
+
+Elements by ID.
+
+Speaker
+
+Thank you for watching.
+
+Speaker
+
+BTN.
+
+Speaker
+
+Start it, indeed.
+
+Speaker
+
+Hope we have the right character.
+
+Speaker
+
+Let's move on. We are going to listen for double clicks on D-Billy. And how to do that? Well,
+
+Speaker
+
+Let's googled. I think it's a great idea to Google Add Event Listener, and then just double click.
+
+Speaker
+
+because as you know, it's the ad event listener we are using.
+
+Speaker
+
+By doing this, we get the Mozilla Developer docs as the first result.
+
+Speaker
+
+Clicking into that, and I always scroll as fast as I can to the example. I think it's a lot easier to learn from that rather from textural explanations.
+
+Speaker
+
+Okay, we can see part of event listener.
+
+Speaker
+
+DBL coach.
+
+Speaker
+
+So simply.
+
+Speaker
+
+You can.
+
+Speaker
+
+Other than Twitter.
+
+Speaker
+
+and leave evil.
+
+Speaker
+
+Let's then also do the function.
+
+Speaker
+
+Let's just control it.
+
+Speaker
+
+Double quick, like that.
+
+Speaker
+
+We'll run the code.
+
+Speaker
+
+Double click on the little and yes it worked.
+
+Speaker
+
+If I try single click?
+
+Speaker
+
+nothing happens.
+
+Speaker
+
+Go ahead.
+
+Speaker
+
+Yes, okay.
+
+Speaker
+
+3, 1, click.
+
+Speaker
+
+clear local search, the Miley Terrible?
+
+Speaker
+
+And the dawn.
+
+Speaker
+
+Okay, let's do this one by one.
+
+Speaker
+
+Local search, if you remember, we'd clear that was.
+
+Speaker
+
+local.
+
+Speaker
+
+storage.
+
+Speaker
+
+Clear?
+
+Speaker
+
+My leads, how do we clear that one?
+
+Speaker
+
+We actually reassign it by doing
+
+Speaker
+
+My leeks.
+
+Speaker
+
+to set it to
+
+Speaker
+
+and then finally clearing out the DOM.
+
+Speaker
+
+How do we do that?
+
+Speaker
+
+Actually, the trick is to simply...
+
+Speaker
+
+render out.
+
+Speaker
+
+leads.
+
+Speaker
+
+not our just
+
+Speaker
+
+that empty rate.
+
+Speaker
+
+So we just trigger the render leads function.
+
+Speaker
+
+render.
+
+Speaker
+
+It's like that.
+
+Speaker
+
+We run this, and now.
+
+Speaker
+
+Try to double click on the delete all.
+
+Speaker
+
+Yes!
+
+Speaker
+
+Now we remove everything in the DOM.
+
+Speaker
+
+And we have clear the local storage.
+
+Speaker
+
+arrays empty, we have a working delete button.
+
+Speaker
+
+We can delete this.
+
+Speaker
+
+Now that we have an app, that actually works pretty well.
+
+Speaker
+
+to do something, we have it done a lot throughout this course, we'll just do refactor our code.
+
+Speaker
+
+not only refactric based on a current need,
+
+Speaker
+
+We're going to refactor it based on a hypothetical future use case.
+
+Speaker
+
+For this, we're not going to use the mini browser, so I'm just going to minimize that one. And actually, I'm also going to take this function render leads.
+
+Speaker
+
+Move it up here.
+
+Speaker
+
+right below this conditional.
+
+Speaker
+
+Because it is the render leads function, we're mainly going to refactor.
+
+Speaker
+
+And the reason for that is the following. This function now currently has a very low degree of what we would call
+
+Speaker
+
+usability.
+
+Speaker
+
+It is hard-coded, not whenever it's cold.
+
+Speaker
+
+always going to look at the My Leads variable.
+
+Speaker
+
+the one we've created up here, or global variable.
+
+Speaker
+
+and render out whatever exists in that.
+
+Speaker
+
+at that point in time.
+
+Speaker
+
+Now, let's say that we want time in the future.
+
+Speaker
+
+also have another array, for example, let all the leads.
+
+Speaker
+
+Perhaps just a bunch of slightly unimportant leads that you've shoved into this array that you don't want to render out at any given time, but you want to perhaps have the opportunity to bring them up from time to time.
+
+Speaker
+
+So
+
+Speaker
+
+we would struggle to render them out.
+
+Speaker
+
+because, as I said, in our render leads function, we only care about the My leads array.
+
+Speaker
+
+we can do instead.
+
+Speaker
+
+to make this function a bit more dynamic and have it render out whatever array we tell it to render out.
+
+Speaker
+
+And the way we do that.
+
+Speaker
+
+to pass in a variable as a so-called argument when we call it.
+
+Speaker
+
+We could take my leads here.
+
+Speaker
+
+in.
+
+Speaker
+
+like this in between the parentheses.
+
+Speaker
+
+that would be.
+
+Speaker
+
+possible for us to use it inside of the body of our function, but without
+
+Speaker
+
+referring to my leads directly like this.
+
+Speaker
+
+Now, let's just pause here for a minute before we rewrite the value of the function.
+
+Speaker
+
+Just in case this.
+
+Speaker
+
+because you might feel you're walking on thin eyes here, but actually you've been passing in arguments into functions when you have called them for quite a while now.
+
+Speaker
+
+Because that is exactly what you're doing up here, for example.
+
+Speaker
+
+get element by ID function, which
+
+Speaker
+
+If you are calling and giving it to the string of input L, so that this function, when it does its magic,
+
+Speaker
+
+walks through the HTML file in the search of its evident.
+
+Speaker
+
+knows when it hits this point. Ah, here it is. This is the element I'm looking for.
+
+Speaker
+
+Pier told me so many wrote this code told me that this is indeed the ID he wants.
+
+Speaker
+
+Haven't we done that? Well, the function within, like, blind to whatever it was looking for.
+
+Speaker
+
+We wouldn't be able to recognize this element.
+
+Speaker
+
+course, give it that value.
+
+Speaker
+
+That is also what we're doing here now.
+
+Speaker
+
+telling render leads that we want you to render out this data right here. And then we make this work, we also have to.
+
+Speaker
+
+Here, write something like...
+
+Speaker
+
+Leats.
+
+Speaker
+
+side of the parentheses here as well. The way this works is that
+
+Speaker
+
+when this function is called with this data passed in, this data on this array will become this variable here, which is accessible inside of the value of the function.
+
+Speaker
+
+Now?
+
+Speaker
+
+We can replace
+
+Speaker
+
+my leads.
+
+Speaker
+
+with leads.
+
+Speaker
+
+and we can replace it here.
+
+Speaker
+
+This point.
+
+Speaker
+
+the body of this function?
+
+Speaker
+
+has no idea and no relation to it.
+
+Speaker
+
+And this might lead to a global variable up here.
+
+Speaker
+
+It only cares about what you entered into function.
+
+Speaker
+
+when you called it.
+
+Speaker
+
+And I'll actually make sense is to skip the usage of the word leads in the name of the function. Because actually the function at this point doesn't even know that it's rendering out leads.
+
+Speaker
+
+be rendering out a bunch of names of soccer teams or at least of fruits or whatever. It renders out whenever you pass into it.
+
+Speaker
+
+So actually what we want to do is remove this lead tear and simply call it render.
+
+Speaker
+
+Now, this of course.
+
+Speaker
+
+requires us to do the same thing.
+
+Speaker
+
+on the delete button.
+
+Speaker
+
+Here, we'll use the mutine.
+
+Speaker
+
+Render.
+
+Speaker
+
+Just to clear it out, the MyLeeds Erase, which is an empty range.
+
+Speaker
+
+- What we'll do.
+
+Speaker
+
+simply passing my leads here as well. And finally.
+
+Speaker
+
+on the "In" button when we add new leads, we have also modified my leads array, so we'll take that.
+
+Speaker
+
+and paste it into the parentheses of the function invocation.
+
+Speaker
+
+Then.
+
+Speaker
+
+Of course, use the updated name as well.
+
+Speaker
+
+So now...
+
+Speaker
+
+We have a function called render.
+
+Speaker
+
+You can take any array, you give it.
+
+Speaker
+
+and then render it out.
+
+Speaker
+
+So potentially, you could give it the old leads array as well, and it's a much more dynamic.
+
+Speaker
+
+and reusable function.
+
+Speaker
+
+Let's try this.
+
+Speaker
+
+Will we run the code?
+
+Speaker
+
+See you all's on weed.
+
+Speaker
+
+I think lead, it works.
+
+Speaker
+
+Yes, the elite button also works.
+
+Speaker
+
+And just as I find a lot is.
+
+Speaker
+
+It doesn't matter what we call this parameter here. Could have called it.
+
+Speaker
+
+You'll know if we want to.
+
+Speaker
+
+However,
+
+Speaker
+
+that would require us to also change.
+
+Speaker
+
+Do you know?
+
+Speaker
+
+This to your low and this to your low.
+
+Speaker
+
+Can we run the code?
+
+Speaker
+
+It works.
+
+Speaker
+
+We can delete it.
+
+Speaker
+
+works in the exact same way.
+
+Speaker
+
+We actually want to use semantically meaningful names.
+
+Speaker
+
+>> Thanks.
+
+Speaker
+
+use leads instead like that.
+
+Speaker
+
+You're probably a little bit confused right now.
+
+Speaker
+
+That's totally okay. Let's take a closer look at how to use arguments in functions over the next few casts.
+
+Speaker
+
+Now that we have an app that actually works pretty well, we're going to do something. We haven't done a lot throughout this course, which
+
+Speaker
+
+refactor our quote.
+
+Speaker
+
+not only refactored based on a current need, we're going to refactored based on a hypothetical future use case.
+
+Speaker
+
+for this, we're not going to use the mini browser, so I'm just going to minimize that one. And actually,
+
+Speaker
+
+also going to take this function render leads.
+
+Speaker
+
+Move it up here.
+
+Speaker
+
+right below this conditional.
+
+Speaker
+
+Because it is the render leads function, it will remain refactor. And the reason for that is the following.
+
+Speaker
+
+And this function now currently has a very low degree of what we would call reusability.
+
+Speaker
+
+It is hard-coded, that whenever it's cold, it's
+
+Speaker
+
+always going to look at the My Leads variable.
+
+Speaker
+
+the one we've created up here, our global variable.
+
+Speaker
+
+and render out whatever exists leads instead like that.
+
+Speaker
+
+You're probably a little bit confused right now.
+
+Speaker
+
+Okay, let's return back to the example of greeting our users, which we've looked at earlier in the course. So on screen, but we have this welcome back, parallel Borg and text, which is visible on the dashboard.
+
+Speaker
+
+And here I have the basics set up for such a feature using a function.
+
+Speaker
+
+Starting from the top of the file, you can see that we are heading into the DOM and fetching a welcome element.
+
+Speaker
+
+That is the HTML you can see right here this paragraph, which is completely empty at the moment. And here in the Greet user function, we take that welcome element.
+
+Speaker
+
+And we said it's text content to welcome back a pair of Harold Borgon with an emoji at the end.
+
+Speaker
+
+If we run this, nothing happens, of course, because we also have to call the function.
+
+Speaker
+
+Greek user like that. Now, if we run it.
+
+Speaker
+
+It's either this rendered out on the page.
+
+Speaker
+
+And this is a very typical use case for a function.
+
+Speaker
+
+rendering out a specific thing.
+
+Speaker
+
+However, it's a really bad function because it can only render out the
+
+Speaker
+
+this ring right here. It can only run rod my name, which is pretty silly.
+
+Speaker
+
+And it should actually rather be cold something like, greek pear.
+
+Speaker
+
+But that would definitely be stupid.
+
+Speaker
+
+use the Greek username and rather modify the function so that it can greet whoever enters the app.
+
+Speaker
+
+And we should do that as to add a so-called parameter to a function. And I can do that by writing a variable.
+
+Speaker
+
+inside of the parentheses.
+
+Speaker
+
+of the function decoration.
+
+Speaker
+
+So here, for example, right?
+
+Speaker
+
+- Me, we're fine.
+
+Speaker
+
+expected that we are to use this name variable inside of the body of the function.
+
+Speaker
+
+And indeed, we are going to do that. We are going to--
+
+Speaker
+
+Name like that.
+
+Speaker
+
+on how we are.
+
+Speaker
+
+constructing the string.
+
+Speaker
+
+using the first ring.
+
+Speaker
+
+then the name variable and then the final string.
+
+Speaker
+
+If we run this code.
+
+Speaker
+
+you'll see, welcome back, undefined.
+
+Speaker
+
+That is because name is now undefined. And can you take a guess at why?
+
+Speaker
+
+Well, that is because when we call the function, we haven't passed in any names, and our function expects us to do that.
+
+Speaker
+
+So here in between the parentheses, we'll simply type a name.
+
+Speaker
+
+Let's type here for example.
+
+Speaker
+
+I'm going to go, and now you can take, welcome back here.
+
+Speaker
+
+So here, we are passing in a value into the function when we are invoking it.
+
+Speaker
+
+value becomes the name variable.
+
+Speaker
+
+inside of the body of the function.
+
+Speaker
+
+And this is then changed to appear on the flight when it is called.
+
+Speaker
+
+Now I have a challenge for you.
+
+Speaker
+
+to be a function 8 parameter.
+
+Speaker
+
+which you are to call greeting, that replaces the welcome back.
+
+Speaker
+
+It'll always greet me, but the greeting itself can be "houty" or "low" or "nice to see" or basically whatever.
+
+Speaker
+
+because you will define it as the parameter in the function.
+
+Speaker
+
+And then you, of course, will call it with a value so that you verify for yourself that it actually works.
+
+Speaker
+
+Go ahead and give this shot.
+
+Speaker
+
+Okay, hopefully not one 12.
+
+Speaker
+
+way to do this is
+
+Speaker
+
+Everything here.
+
+Speaker
+
+removing this.
+
+Speaker
+
+rather writing.
+
+Speaker
+
+We've been here, and then I plus.
+
+Speaker
+
+And here, when we call it.
+
+Speaker
+
+Thank you.
+
+Speaker
+
+Harry Para, Harold Borden.
+
+Speaker
+
+Great job, let him go.
+
+Speaker
+
+Okay, so our function is now pretty dynamic, since it can use whatever greeting value you want.
+
+Speaker
+
+So you can kind of set the tone, however you want when calling the function, but...
+
+Speaker
+
+We need to get back to the same type of feature for the name as well.
+
+Speaker
+
+So the way we can do that is by adding a second parameter.
+
+Speaker
+
+because you can have as many parameters as you want.
+
+Speaker
+
+So actually, here.
+
+Speaker
+
+name
+
+Speaker
+
+Please listen.
+
+Speaker
+
+I mean, we're good.
+
+Speaker
+
+If we're on this, you'll see.
+
+Speaker
+
+Howdy undefined again.
+
+Speaker
+
+because we've only given this function one argument when we call it.
+
+Speaker
+
+Actually, it expects to.
+
+Speaker
+
+the greeting and the name.
+
+Speaker
+
+So here we have to do it. Come on, and then.
+
+Speaker
+
+Thanks for coming.
+
+Speaker
+
+You run the code now?
+
+Speaker
+
+- Howdy dreams.
+
+Speaker
+
+So now we have a really dynamic function here. So it's a pretty good function, in my opinion.
+
+Speaker
+
+But there's one issue which is not related to parameters but related to the cold quality of the function body.
+
+Speaker
+
+'Cause as you can see,
+
+Speaker
+
+While it made sense to use double quotes for strings when we started out,
+
+Speaker
+
+But this point, the expression has become a little bit clunky. We have three plus signs here, and we might even get more of them.
+
+Speaker
+
+to continue on improving this function. So at this point, it's time to refactor this expression into using template literals.
+
+Speaker
+
+So I want you to do that now, and then we are ready to add a third parameter to our function.
+
+Speaker
+
+go ahead and change this into template literals right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Don't wait to do it.
+
+Speaker
+
+beat i-temple-glural to begin with, and then we'll move all these clunky
+
+Speaker
+
+science and.
+
+Speaker
+
+Brooks, and here we have.
+
+Speaker
+
+two variables greeting and name which we need to
+
+Speaker
+
+escape out from the screen.
+
+Speaker
+
+All right, all right.
+
+Speaker
+
+I'm currently bracketed.
+
+Speaker
+
+Close and curly brackets.
+
+Speaker
+
+dollar sign open.
+
+Speaker
+
+I hope yes.
+
+Speaker
+
+This looks better, much more readable.
+
+Speaker
+
+If we run it again, you see we get the exact same result.
+
+Speaker
+
+And what I'm out is to add the ability to choose the emoji as well.
+
+Speaker
+
+meaning you should be able to run the function and
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+third parameter, which decides what kind of emoji that
+
+Speaker
+
+be rendered to the page.
+
+Speaker
+
+Go ahead and try that right now.
+
+Speaker
+
+the way to do it would be the same as we've done.
+
+Speaker
+
+here.
+
+Speaker
+
+replacing the hard-coded emoji.
+
+Speaker
+
+Lots of valuable.
+
+Speaker
+
+I'll just keep out from this ring, of course.
+
+Speaker
+
+like not.
+
+Speaker
+
+here, we'll need to also now add an emoji when we are calling the function.
+
+Speaker
+
+Let's try the fire one.
+
+Speaker
+
+Run the cold 10.
+
+Speaker
+
+Nice.
+
+Speaker
+
+You now have a
+
+Speaker
+
+super dynamic function.
+
+Speaker
+
+that we can use to create greetings of all sorts.
+
+Speaker
+
+And it's so much better than what we started out with. Let's move on.
+
+Speaker
+
+Okay, up until now, we've only passed in strings.
+
+Speaker
+
+As arguments,
+
+Speaker
+
+However, you can force passing whatever data type you want.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+Open close parentheses and then the square brackets.
+
+Speaker
+
+And inside of the parentheses, we need to define our two parameters.
+
+Speaker
+
+We'll call the first one, one.
+
+Speaker
+
+second one, number two.
+
+Speaker
+
+And here, I'm going to return number one.
+
+Speaker
+
+Listen, I'm true. We got it.
+
+Speaker
+
+If we're not ready.
+
+Speaker
+
+We're gonna see in our console we are logging out to 7 and 111.
+
+Speaker
+
+Great job, let's move on.
+
+Speaker
+
+But until now, you've heard me say the words parameter when I've talked about defining variables in between the parentheses when we
+
+Speaker
+
+a clearer function.
+
+Speaker
+
+I've also set arguments when we pass in values into the function when we invoke the function. And this is probably a little bit confusing, like why am I using two different words? They're basically the same thing.
+
+Speaker
+
+And to be honest, in my experience, most developers mix up the words parameter and arguments all the time. And that's totally okay, even I actually hope up until this point where I decided to actually explain the difference in this course would mix the two up all the time.
+
+Speaker
+
+meaning, mixing up these here values that you pass in when you call the function and these variables that you define when you write the original function.
+
+Speaker
+
+The wait works, it's not.
+
+Speaker
+
+These are parameters.
+
+Speaker
+
+And these arguments.
+
+Speaker
+
+And in order to remember the difference between these two, I found a really cool comic on the web.
+
+Speaker
+
+pictures to people arguing in a bar and the bounty are coming to say, "Hey, take your argument outside."
+
+Speaker
+
+And that gives us the hint.
+
+Speaker
+
+Arguments?
+
+Speaker
+
+are created.
+
+Speaker
+
+outside of the function.
+
+Speaker
+
+parameters then, naturally, have to be on the inside of the function.
+
+Speaker
+
+So greeting a name as
+
+Speaker
+
+you know are only defined here on the inside of the function.
+
+Speaker
+
+and touty and james, they come from kind of the outside of the function, the outer scope.
+
+Speaker
+
+This would perhaps be even more clear if we...
+
+Speaker
+
+variable here which was cold.
+
+Speaker
+
+Hi, Ann, we said it to you.
+
+Speaker
+
+probably like that and then we pass in.
+
+Speaker
+
+High here.
+
+Speaker
+
+Surely, that's high variable.
+
+Speaker
+
+It's on the...
+
+Speaker
+
+Outside.
+
+Speaker
+
+of the function.
+
+Speaker
+
+because in this case that is this function, line two to four. This is on line seven and line eight. So they are on the outside. Likewise here, num one, num two are the parameters.
+
+Speaker
+
+verse 3 and 4.
+
+Speaker
+
+or the arguments.
+
+Speaker
+
+With us.
+
+Speaker
+
+I want you to answer these four questions with either arguments or parameters. So the answer is one or the other.
+
+Speaker
+
+And you are right that here.
+
+Speaker
+
+after the question mark.
+
+Speaker
+
+So go ahead and do this for right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+What are greeting in name?
+
+Speaker
+
+reading and name will
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+What are greeting a name?
+
+Speaker
+
+reading and name, well that is.
+
+Speaker
+
+On the inside of the function, that means that they are predators.
+
+Speaker
+
+about how he invaints. Well, last we've talked about these, live on the outside.
+
+Speaker
+
+When you're outside of the function, you are an argument.
+
+Speaker
+
+So they are arguments.
+
+Speaker
+
+I'll number one in number two.
+
+Speaker
+
+Okay, let's start to find in the function declaration and live in the inside of the function.
+
+Speaker
+
+The organizers.
+
+Speaker
+
+Green fort.
+
+Speaker
+
+are on the outside of this function here.
+
+Speaker
+
+So, Lee Arton.
+
+Speaker
+
+Are you just like that?
+
+Speaker
+
+from that one.
+
+Speaker
+
+whenever you wonder whether you should say "herometer or argument" just to think about this, epic cartoon created by tight alias,
+
+Speaker
+
+And actually,
+
+Speaker
+
+clicking on this link so you get to check out the
+
+Speaker
+
+blog post, which is really good. And then to be honest, you will probably meet a lot of professional developers who can't even remember this difference, but you will.
+
+Speaker
+
+So far, we've only passed in numbers and screens into functions that we've practiced with in this little minisection on function parameters. However, you can pass whatever variable you want, actually, into a function as expiramir. So now I want you to create a function, which is called getFirst.
+
+Speaker
+
+And it takes an array as it's only parameter, and that's why I'm writing it as ARR.
+
+Speaker
+
+And this function went called
+
+Speaker
+
+should return the first item in the array. So I want you to create this function and make a return the first item.
+
+Speaker
+
+I want you to call it.
+
+Speaker
+
+passing in an array as an argument so that you verify that works.
+
+Speaker
+
+You can do that by using for example, Control-Log to.
+
+Speaker
+
+verified.
+
+Speaker
+
+I'm not going to give you any starter code here. You got to write the entire thing because that helps you get the muscle memory. So go ahead and give this a shot right now.
+
+Speaker
+
+Okay, hopefully that went well.
+
+Speaker
+
+If not, no worries, let's do this.
+
+Speaker
+
+We'll do it again first, like that.
+
+Speaker
+
+And then the body of the function?
+
+Speaker
+
+Then we take this R variable.
+
+Speaker
+
+and return the first item we do.
+
+Speaker
+
+Open a closeware brackets and zero inside of it. Now we can do the get first.
+
+Speaker
+
+parentheses and pass in and array. Let's say this was a blackjack game. So we're passing in values on my cards.
+
+Speaker
+
+But Matt...
+
+Speaker
+
+If we run this.
+
+Speaker
+
+nothing seemingly will happen since we've only returned to this value, we haven't logged it out.
+
+Speaker
+
+Let's actually
+
+Speaker
+
+and store that value in a first card variable and then.
+
+Speaker
+
+Control-Look Out for the Card.
+
+Speaker
+
+If you're on this?
+
+Speaker
+
+card is going to look as 10 and that is indeed correct. Great job!
+
+Speaker
+
+We are back at our lead striker app and now you are going to do what I did previously.
+
+Speaker
+
+And it was to refactor the
+
+Speaker
+
+vendor leads function.
+
+Speaker
+
+So that it takes a parameter, which I should just use, recall, leads.
+
+Speaker
+
+that it uses instead of the global mind-reading variable.
+
+Speaker
+
+So hopefully you remember how I did this or able to wing it on your own. Anyway, please also remember to update all of the function invocations across the file as well.
+
+Speaker
+
+It is a good idea to update the name as well, but it's not strictly needed, so I'll leave it up to you to decide whether or not you want to do that.
+
+Speaker
+
+Let's go ahead and give this a shot right now.
+
+Speaker
+
+Okay, hopefully this one's well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+We are going to...
+
+Speaker
+
+So that rather takes in a parameter here, which we are calling leads, instead of referring to the global My leads variable.
+
+Speaker
+
+We simply need to.
+
+Speaker
+
+Replace my leads with what we've called our parameter, like this in these three places.
+
+Speaker
+
+that's it.
+
+Speaker
+
+I also want to remove leads.
+
+Speaker
+
+from the name and then.
+
+Speaker
+
+Go up here.
+
+Speaker
+
+Thanks for the name.
+
+Speaker
+
+and also passing the MyLeeds variable.
+
+Speaker
+
+Do the same thing here.
+
+Speaker
+
+And we've cleared all of the My Leads' Readable.
+
+Speaker
+
+I'll see you next time.
+
+Speaker
+
+which is always just an empty rate.
+
+Speaker
+
+And finally, come here.
+
+Speaker
+
+Pass in.
+
+Speaker
+
+My leads, like that.
+
+Speaker
+
+Let's run this to verify that it works.
+
+Speaker
+
+Save input, delete all, yes.
+
+Speaker
+
+Great job, let's move on.
+
+Speaker
+
+In this challenge, we are going to set the stage for the save tab button.
+
+Speaker
+
+I'm going to write the HTML for you first, and then you are going to take over and do the JavaScript product.
+
+Speaker
+
+called "save Tom".
+
+Speaker
+
+Run this.
+
+Speaker
+
+You can see that we get to the save tab button and let's give it my B of
+
+Speaker
+
+I'm gonna have to begin like that.
+
+Speaker
+
+Now, you are first going to grab the save tab button and then store it in a top beacon variable.
+
+Speaker
+
+And then you are going to hook up an event listener with this button so that you listen for clicks.
+
+Speaker
+
+And when it's clicked, you are to log out my LinkedIn URL to the control.
+
+Speaker
+
+And the way you grab a hole in that ring in your arrow is through navigating into this time.
+
+Speaker
+
+actually has
+
+Speaker
+
+an object as it's only item.
+
+Speaker
+
+on the Tessa Key value pair of URL and
+
+Speaker
+
+and the actual string value of the URL to my LinkedIn profile.
+
+Speaker
+
+So this might sound a little bit weird, like why am I forcing you to do all this complex stuff of...
+
+Speaker
+
+navigating into this array and into this object and fetching out this value right here. Well, you'll understand this when we implement this with the Chrome API that actually gives us access to
+
+Speaker
+
+the current tab we're on.
+
+Speaker
+
+any given point, because then we actually have to do so.
+
+Speaker
+
+So I'm just prepping you for that.
+
+Speaker
+
+you have to remember how to work with arrays and objects. That's great to get some practice on. If you struggle, I will of course show you the solution as well afterwards.
+
+Speaker
+
+Go ahead now and just give this your best shot.
+
+Speaker
+
+Okay, hopefully this one's well.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+We'll create a const.
+
+Speaker
+
+on
+
+Speaker
+
+document.getElementByID.
+
+Speaker
+
+@bttn.
+
+Speaker
+
+That is the idea.
+
+Speaker
+
+We gave it over in the HTML ES.
+
+Speaker
+
+We need to listen for a little bit on the comment video.
+
+Speaker
+
+We'll do add event listener.
+
+Speaker
+
+For a thought, good, this is quick.
+
+Speaker
+
+Second, it's a function that will be run when the button is picked.
+
+Speaker
+
+here, let's control log out just this entire expression.
+
+Speaker
+
+when you are to navigate into complex expressions like this.
+
+Speaker
+
+It's a good idea to just take one step of time and log out the results.
+
+Speaker
+
+Let's run this.
+
+Speaker
+
+Hit the save tab and bring up the console. Okay, we can see now that we have our URL rack inside of both square brackets and curly brackets.
+
+Speaker
+
+One thing we at least need to do is navigate into the first item.
+
+Speaker
+
+of this array right here. And how do we navigate into the first item, which also happens to be the only item? Well,
+
+Speaker
+
+particular.
+
+Speaker
+
+where brackets is zero.
+
+Speaker
+
+for these ery oath index.
+
+Speaker
+
+Let's run this, it saved time.
+
+Speaker
+
+And there we contain our console. We're now just logging out an object. So this is an object with a key URL.
+
+Speaker
+
+value.
+
+Speaker
+
+points to my LinkedIn profile.
+
+Speaker
+
+How do we get a hold of that value? Well...
+
+Speaker
+
+use the dot notation dot URL like that.
+
+Speaker
+
+I'm the core again.
+
+Speaker
+
+We'd say that. And there we go. We have logged out.
+
+Speaker
+
+I'm Mike LinkedIn, you are up.
+
+Speaker
+
+Let me know.
+
+Speaker
+
+Next step is to actually save the URL instead of just logging it out. Because obviously this doesn't do the trick for our app. We need to save it to local storage. We need to add it to the My Leads array. And we also need to trigger a render so that the fictional lead here actually will be rendered on the page when the user hits the tab button.
+
+Speaker
+
+So to achieve this, you basically need to do more or less the same thing that you're doing inside of the input button. So hopefully you've got this.
+
+Speaker
+
+If not, more worries, I will of course show you the solution when you return back to the screencast.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+So the first thing I want to do is.
+
+Speaker
+
+Push it to the Myleads array.
+
+Speaker
+
+will do my leads dot push, then pass in this expression right here.
+
+Speaker
+
+Comment down, please, comment down, please, comment down.
+
+Speaker
+
+Next up, we need to save the Myleads array to local storage.
+
+Speaker
+
+Look, we know how to do this. That's the exact same line as we have down here.
+
+Speaker
+
+Local storage.setItem.
+
+Speaker
+
+the My Leads, which is a key.
+
+Speaker
+
+Should be set to a...
+
+Speaker
+
+Stringified version.
+
+Speaker
+
+of the Miley Terrier.
+
+Speaker
+
+So let's just remember how this looks and rewrite it up here.
+
+Speaker
+
+What are we writing? Because it's a little bit of a complex expression.
+
+Speaker
+
+So it's good to get that practice.
+
+Speaker
+
+local story.
+
+Speaker
+
+rich.
+
+Speaker
+
+which I think is the My Leads key, which is what it's called. Here we are going to...
+
+Speaker
+
+- I'm excited to.
+
+Speaker
+
+my leads value.
+
+Speaker
+
+However, we need to stringify this value first.
+
+Speaker
+
+So we'll do case on dot.
+
+Speaker
+
+string me a phi open parentheses.
+
+Speaker
+
+Cool, parentheses.
+
+Speaker
+
+a lot of spaces here so thank you.
+
+Speaker
+
+Understand what happens?
+
+Speaker
+
+This is the array, and this is the stringified version of that array.
+
+Speaker
+
+array turned into a string.
+
+Speaker
+
+like this I think.
+
+Speaker
+
+Okay, looking pretty good.
+
+Speaker
+
+One thing we need to do is actually trigger a re-render.
+
+Speaker
+
+So we have pushed something to the My leads rate, and now we want to render it out with the render function and pass in My leads as the argument.
+
+Speaker
+
+So we actually get to see it on our page.
+
+Speaker
+
+I'll run this code.
+
+Speaker
+
+Bring up the mini browser and hit the saved app and there you go!
+
+Speaker
+
+We got our URL vendor to the page.
+
+Speaker
+
+that's combined with a lead as well, also lead. Yeah, there we go, and delete all.
+
+Speaker
+
+Nice, it works!
+
+Speaker
+
+Really good job.
+
+Speaker
+
+So we now have a working dummy version of our tab button.
+
+Speaker
+
+However, it's kind of useless because if I hit the save tab here once, twice, three times, you can see we're just running out our hard-coded tab URL.
+
+Speaker
+
+which we
+
+Speaker
+
+here.
+
+Speaker
+
+What we, of course, rather want to do is the following. We want to be able to open up our Chrome extension on any URL, and then when we hit the Save tab button, the extension should head over to the address bar here, grab a hold of this URL, and then boom.
+
+Speaker
+
+save it in our list of leads.
+
+Speaker
+
+So my question for you here is,
+
+Speaker
+
+where in our code that is on which line.
+
+Speaker
+
+Go ahead and try to talk with the Chrome API to ask it for the current tab URL. Just take a guess at where in this file, we need to do that.
+
+Speaker
+
+The place you want to do it is right here when the user has clicked on the top button and
+
+Speaker
+
+And this function has been triggered.
+
+Speaker
+
+here on my 20, we wanna.
+
+Speaker
+
+grab the URL of the current time.
+
+Speaker
+
+Basically, what we are doing here, but we want to do it in the real world, not just using the made up hard coded array I've written up here on line 14.
+
+Speaker
+
+So, that's the question, well, how do we?
+
+Speaker
+
+Ask the Chrome browser for this URL.
+
+Speaker
+
+And yet again, we will resort to...
+
+Speaker
+
+We'll simply write Chrome extension, get to Current's tab.
+
+Speaker
+
+That gives us a bunch of results.
+
+Speaker
+
+And on first place, you can see the developer.chrome.com, so the documentation.
+
+Speaker
+
+If we head into that, you'll see Chrome dot tabs.
+
+Speaker
+
+use the Chrome dot tabs API to interact with the browser's tabs system.
+
+Speaker
+
+about right.
+
+Speaker
+
+scroll down, we'll see you manifest.
+
+Speaker
+
+turns out that we have to do some changes on our manifest file. Mainly, we have to add this permissions and then.
+
+Speaker
+
+fill in tabs. Okay, that's fine. Not really what we're looking for. We're looking for the JavaScript code in
+
+Speaker
+
+In order to actually grab hold of the tab URL itself, if we continue scrolling down, we get to this really discouraging list of a bunch of methods of this API. And this is so typical. When you're searching through documentation, it's very often difficult to find the answer as a beginner.
+
+Speaker
+
+So actually what I would do is go back to the...
+
+Speaker
+
+We got on Google.com.
+
+Speaker
+
+because there we can find a stack overflow question.
+
+Speaker
+
+It looks much more humanly understandable.
+
+Speaker
+
+can I get the current time URL for a Chrome extension? Okay.
+
+Speaker
+
+Let's click into that one. You can see there's a person.
+
+Speaker
+
+that has a problem that looks like ours. And that person has even provided some code of how they're trying to solve this today, chrome.tabs.getselected.
+
+Speaker
+
+Let's scroll a bit down and find an answer because that's normally where we find a piece of code we can use.
+
+Speaker
+
+So here you can see, just an FYI for your info for people from Google. The method the original poster uses is deprecated.
+
+Speaker
+
+get the top of the user's viewing and only in the window of the viewing. Use this!
+
+Speaker
+
+chrome.tabs.query, okay, and then we pass it in an object.
+
+Speaker
+
+with some data and we get this function with tabs and oof.
+
+Speaker
+
+A lot of code.
+
+Speaker
+
+But actually, it looks very promising. So what I'll do then is what all developers do, almost every single day.
+
+Speaker
+
+copy code.
+
+Speaker
+
+directly from Stack Overflow.
+
+Speaker
+
+I'll copy this.
+
+Speaker
+
+Face it in here.
+
+Speaker
+
+Because this is where we want to talk with a chrome API.
+
+Speaker
+
+And remove this comment.
+
+Speaker
+
+Now we suddenly have this hairy.
+
+Speaker
+
+You can also see that it's not following our conventions for writing code, for example, and use a semicolons, which is the same.
+
+Speaker
+
+We don't like it.
+
+Speaker
+
+And it also uses the var keyword, which we don't use either. It's the old way of writing variables in JavaScript. We want to replace that with Lex or const. Now I'm just going to use Lex.
+
+Speaker
+
+because I'm not really sure what the point with these variables is at this point. I just want to clean it up, and storing them as letter variables will definitely work, so let's just do that.
+
+Speaker
+
+However, not to at least have the colds according to our conventions, it's time to break this down and really understand it.
+
+Speaker
+
+and we'll do that in the next cast.
+
+Speaker
+
+Okay, now that we have this little snippet of code which we copied from
+
+Speaker
+
+from Stack Overflow, it would be really tempting to actually try to run it and just console log out.
+
+Speaker
+
+Tops at this point, for example, just to figure out what's going on here.
+
+Speaker
+
+this function is being triggered.
+
+Speaker
+
+Actually, if we try to do that...
+
+Speaker
+
+From this cold, hit the button.
+
+Speaker
+
+the safe tab.
+
+Speaker
+
+We'll see that we get an error. Cannot read property query of undefined. That's because Chrome dot tabs, that's a so-called API application programming interface. Sounds really scary. I know. Don't worry about that now. What I want to say is that this is an API that is only available to us when we're running the code in the context of
+
+Speaker
+
+a chrome extension like this, which you can see here.
+
+Speaker
+
+Now we are running the code in the context of this screen.
+
+Speaker
+
+in
+
+Speaker
+
+we don't have access to the...
+
+Speaker
+
+Chrome.tabs, meaning it's undefined as our error message is saying, because it's trying to read the properly query of something that is undefined.
+
+Speaker
+
+So we actually just have to...
+
+Speaker
+
+try to make sense of this code and try to configure it to how we think it could be.
+
+Speaker
+
+and then deploy it to see if it works out in the wild.
+
+Speaker
+
+So, what am I going to do?
+
+Speaker
+
+I'll delete this control of Cabs.
+
+Speaker
+
+Actually.
+
+Speaker
+
+I want to delete everything inside of this function because
+
+Speaker
+
+we are going to figure out what we'll do inside of this function on our own by looking back at Stack Overflow.
+
+Speaker
+
+I actually want to.
+
+Speaker
+
+out of these lines of code.
+
+Speaker
+
+Because while it's all k to copy to get it into a code base, I want to write it with you to break it down step by step so that you understand it properly.
+
+Speaker
+
+With this in the background, let's rewrite it and see if we can make sense of it.
+
+Speaker
+
+The first thing we write is Chrome, which is a variable that we'll have access to when we are running the Chrome extension.
+
+Speaker
+
+an object and it has eight.
+
+Speaker
+
+and the tabs, that is an object as well and that object has a
+
+Speaker
+
+That's where we method.
+
+Speaker
+
+Here we're kind of saying, hey, Chrome, I want to grab ahold of your tops, or more specifically, I want to query you for some of the tops.
+
+Speaker
+
+which tabs is the next question, and we'll specify that inside of the query using an object.
+
+Speaker
+
+Good with.
+
+Speaker
+
+I'm going to say, well, I want thee.
+
+Speaker
+
+Because I'm specifying active has to be true. And which tab is not? Well, if I look back at our slide here.
+
+Speaker
+
+You can see that in the situation. We have one browser window.
+
+Speaker
+
+that has three tops.
+
+Speaker
+
+but it's the LinkedIn tab, there's the active one.
+
+Speaker
+
+So, it will give us this time.
+
+Speaker
+
+However, here we can also say that we ought to specify current window to be true as well, which is a little bit weird. What does that mean?
+
+Speaker
+
+Imagine this case, if you actually had another browser window in the background, well, the Chrome API would know about this.
+
+Speaker
+
+So naturally, you'd have to specify which one of the two windows are you looking for. And in this case, the active window is the one in the front right here. And that is where the linked in tab is located.
+
+Speaker
+
+where we have our Chrome extension open.
+
+Speaker
+
+Also, we have to specify well.
+
+Speaker
+
+Current window, so we need that to be true as well.
+
+Speaker
+
+So here we are calling the query method and passing in an object that describes which of the tabs we want.
+
+Speaker
+
+And then as we did up here, we're
+
+Speaker
+
+start with a specification and then write a function as the second argument.
+
+Speaker
+
+We'll do the exact same thing.
+
+Speaker
+
+query functions well.
+
+Speaker
+
+We'll write function.
+
+Speaker
+
+Like that.
+
+Speaker
+
+And this function will be triggered.
+
+Speaker
+
+win crew!
+
+Speaker
+
+has found the tab we have told Chrome to look for.
+
+Speaker
+
+And when Chrome triggers this function, it'll give us
+
+Speaker
+
+It's a parameter in this function.
+
+Speaker
+
+We will get access to the cops.
+
+Speaker
+
+And it's control over the work if we were running this in the context of a Chrome extension.
+
+Speaker
+
+Let's now bring down the control.
+
+Speaker
+
+Great to stop a little bit.
+
+Speaker
+
+because the question is here, what do we want to do?
+
+Speaker
+
+side of this function.
+
+Speaker
+
+Well, it's through this tab, keyword here, that we will actually get a hold of the URL, the string in the address bar.
+
+Speaker
+
+So it's inside of here that we actually have to.
+
+Speaker
+
+pushed toward my lead to Ray.
+
+Speaker
+
+save to a local storage and call the render function.
+
+Speaker
+
+I'm actually going to...
+
+Speaker
+
+I'll be this cold.
+
+Speaker
+
+Thanks, didn't hear.
+
+Speaker
+
+And now the question is, well, what does this tab spreadable include? How do we navigate to the URL value inside of this variable?
+
+Speaker
+
+It just so happens to be that it's constructed in this exactly. And how did I know that?
+
+Speaker
+
+Well, because.
+
+Speaker
+
+Here on.
+
+Speaker
+
+It's not going to overflow on our question.
+
+Speaker
+
+We could see that on the question below that a person got it to work by doing VAR-TAB equals TAPS 0.
+
+Speaker
+
+which is exactly what we're doing here.
+
+Speaker
+
+on the next line.
+
+Speaker
+
+www.tob.url.
+
+Speaker
+
+Essentially, it's our Delta URL here.
+
+Speaker
+
+So it turns out that this is the way to get a hold of the URL. But at this point, there's a little problem.
+
+Speaker
+
+Since we have defined tops here,
+
+Speaker
+
+also up here.
+
+Speaker
+
+These two variables will be in conflict with each other.
+
+Speaker
+
+Obviously, we don't need this hard-coded variable anymore.
+
+Speaker
+
+We want to use whatever value we get directly from Chrome. So we can keep this and just leave this how it is.
+
+Speaker
+
+Now let's click.
+
+Speaker
+
+lean up this a little bit.
+
+Speaker
+
+And then finally, head over to manifest dot tracing because we saw in the Chrome extensions documentation that we had to add the following.
+
+Speaker
+
+to our Memphis tile.
+
+Speaker
+
+So permissions and then that is an array and here we specify tabs. So now we are telling Chrome that we want to be able to work with the tabs in the Chrome extension. Otherwise,
+
+Speaker
+
+These chrome dot tops simply wouldn't work.
+
+Speaker
+
+So in the next class, we'll go ahead and deploy this, so that we finally get to try our entire application out in the while.
+
+Speaker
+
+So let's deploy the final version of our app.
+
+Speaker
+
+First, you have to download the zip from the swim.
+
+Speaker
+
+you can do that by clicking on the settings icon in the bottom right corner and then download Ask Zip, which we did the last time around as well.
+
+Speaker
+
+And then make sure that you take these files and.
+
+Speaker
+
+update the lead tracker folder that we also created in a previous cast, or if you haven't working locally alongside me, you of course can skip this up.
+
+Speaker
+
+But what's important is that the same folder gets the new updated files.
+
+Speaker
+
+Because then we head over to the Chrome/Extensions page, there we can see our lead tracker from previously.
+
+Speaker
+
+and hit details so as we open up the page for our extension.
+
+Speaker
+
+They're really tough.
+
+Speaker
+
+by doing that, Chrome will grab hold of the new files and update your extension.
+
+Speaker
+
+Once that's done, we can open a new tab for example and head over to a lead we want to track.
+
+Speaker
+
+Here I've opened up scrimbus CTOs, get the profile, that's centred, let's say you wanna track this URL as a lead, then I'll hit the Chrome extension button.
+
+Speaker
+
+I'll choose my lead tracker.
+
+Speaker
+
+And here I can try save time and boom, or Chrome extension.
+
+Speaker
+
+head it over to a top.
+
+Speaker
+
+grab the URL and display it for us.
+
+Speaker
+
+are
+
+Speaker
+
+the
+
+Speaker
+
+So far so good.
+
+Speaker
+
+Let's open up a whole new tab now.
+
+Speaker
+
+For example, the Anz LinkedIn profile, you probably recognize Leanne from the Scrima community. She's our community manager. Let's open up the Chrome extension again and try the saved tab button. Yes, it worked.
+
+Speaker
+
+Really good.
+
+Speaker
+
+And if you're not going to try this, you'll need to eat all. And I'll hit that. And there we go. We have deleted all of our leads. This is so cool with now.
+
+Speaker
+
+created a real world product that can give value to
+
+Speaker
+
+sales development representatives, or basically any person collecting leads online, which is an activity that people in almost all companies do.
+
+Speaker
+
+So we have really created something of value that you can share with the world.
+
+Speaker
+
+or JavaScript skills, or starting to become dangerous.
+
+Speaker
+
+Congratulations, you have reached the end of the section and actually built your own browser extension.
+
+Speaker
+
+How cool is that? You should be gutant brought to yourself or achieving that.
+
+Speaker
+
+and just enjoy the fact that you've learned all of these awesome concepts that we now are going to recap.
+
+Speaker
+
+What did we learn? Well, we started out with a const variable. That is a critical part of JavaScript. And as you can see, once we learned it, we started using it much more than we used let's for all of these DOM elements that we stored in variables, we used const.
+
+Speaker
+
+as we were not going to reassign these. And to speak of Dom, we learned a lot of new things about the document object model.
+
+Speaker
+
+First of all, mostly the ad event listed down here at line 14, we hook
+
+Speaker
+
+up in a ventilistener with the thumb button, for example.
+
+Speaker
+
+This gave us the benefit of not having to write the event listeners in our HTML. We controlled everything in the JavaScript file.
+
+Speaker
+
+And then also, we learn about inner HTML.
+
+Speaker
+
+Down here at line 33, we had to use this because the dot text content property.
+
+Speaker
+
+Just didn't do the trick when we want to render out list items like this.
+
+Speaker
+
+And finally, we also learn input value.
+
+Speaker
+
+which is another part of working with a Dom.
+
+Speaker
+
+And that goes down here when we fetch down to the value.
+
+Speaker
+
+which to use.
+
+Speaker
+
+entered into the input field.
+
+Speaker
+
+Another thing we did is take one more step into the world of functions, namely learn about parameters.
+
+Speaker
+
+Which is what we defined here, we defined a leads parameter in the render function.
+
+Speaker
+
+And that gave us the ability to use this variable inside the body of the function.
+
+Speaker
+
+And also, it requires us to pass in the argument of my leads when we invoke this function. This is a crucial concept to understand if you are to make functions really reusable. So I'm really happy that we went through this.
+
+Speaker
+
+Next up, a typical thing we also learned was template strings.
+
+Speaker
+
+Because that gave us the ability to write. Strings on multiple lines, which looks much better. It's easier for humans to parse.
+
+Speaker
+
+And also we could use this dollar sign and square
+
+Speaker
+
+brackets in order to escape out of the spring instead of having to use these plus signs, which quickly became a
+
+Speaker
+
+maintainable and confusing to work with.
+
+Speaker
+
+And then a super cool thing we learned was local storage. Here we saved things in local storage so that we could work across page refresh. This is kind of your first exposure to make database. A very simple database, of course, but it's still very much the same concept.
+
+Speaker
+
+And that forces us also to learn about Desan, which is a very
+
+Speaker
+
+common way of storing data in web development. You were forced to deal with this since you had to turn your array into a JSON array.
+
+Speaker
+
+using JSON.stringify and also we had to use JSON.par to go the other way around when we fetched a string from local storage.
+
+Speaker
+
+And that string just happened to be a JSON array.
+
+Speaker
+
+And we can parse it and turn it into a JavaScript array using the JSON dot part.
+
+Speaker
+
+Don't worry if you are confused about the days on pause and days on string fights, totally okay to search for which one does what, every single time you do it. I've done it again and again and again.
+
+Speaker
+
+But JSON is core. And one testament of that's the fact that you were exposed to JSON. Also, in another way, mainly with the manifest.json file. Here we have to configure our app. And I'm actually glad that the Chrome extension required this because you will see JSON in many different scenarios as you work as a web developer.
+
+Speaker
+
+Finally, one of the last things we looked into was objects in a race.
+
+Speaker
+
+Namely, this web is array here where you actually have an array where it's first an only item, what's an object.
+
+Speaker
+
+So you have the first factor of these zeros index and then to dot URL to
+
+Speaker
+
+the URL value of that object.
+
+Speaker
+
+And this is very common. Objects show it inside of a race.
+
+Speaker
+
+So I hope we shouldn't scare you that much the next time you come across that.
+
+Speaker
+
+Look at this list. It is really comprehensive. Now, let's do a little far experiment, which might help you feel less overwhelmed of all the things you don't know anything about in web development and all these fancy words, because let's say that you were two weeks ago.
+
+Speaker
+
+Ask a developer like
+
+Speaker
+
+how you create the Chrome extension and then you develop or arrogantly reply to you, well, it's not hard. You're just add an event listener to a button, then fetch out the input.value, take that value stored in an object and convert it to a JSON using JSON.stringify, shoving it into local storage, no big deal. You just fetch it out later, and use JSON.py to get it back into a JavaScript array. And then render it out in function, and shoving it as a parameter, and just use a template string and enter HTML to its way down the screen.
+
+Speaker
+
+We'll be right.
+
+Speaker
+
+I mean, the margin.
+
+Speaker
+
+you would probably feel that you would never ever learn all of this because there's so many concepts you didn't understand.
+
+Speaker
+
+But actually, that reply from the developer is actually the exact thing we have done.
+
+Speaker
+
+you have gone through it.
+
+Speaker
+
+even though in and of themselves, these names sound scary. You know that if you follow the right course, you can learn them and you don't have to be afraid of any of the concepts you have yet to learn because whilst they sound super fancy from the outside like JSON, actually, they're not that complicated when you look into them.
+
+Speaker
+
+So try to just have that confidence in yourself that you know you can learn confidence.
+
+Speaker
+
+to be afraid of because that will calm you down and serve you well as you progress on this journey into web development.
+
+Speaker
+
+With that, let's actually put your skills to the test now because we need some more repetition on these things. You need tons of repetition. These things take a lot of time to really get into your muscle memory.
+
+Speaker
+
+And we'll start with that in the next section where you will do some quick challenges back in.
+
+Speaker
+
+In this challenge, we are going to do some left and
+
+Speaker
+
+and constant repetitions. Because I've created this fictional
+
+Speaker
+
+In this challenge, we are going to do some let-and-const repetitions.
+
+Speaker
+
+because I've created this fictional game here.
+
+Speaker
+
+which has a player and opponent, the name of the game, points variable and has one variable. After it's been set up, the game is played down here at line 9 and 10, the player gets some points and the has one variable is flipped and
+
+Speaker
+
+And then based upon this, we log out to the winners in this conditional statement down here.
+
+Speaker
+
+Now, if you try to run this code, you'll see that it actually doesn't work because I've mixed up a little bit in terms of using
+
+Speaker
+
+post.
+
+Speaker
+
+So you need to fix that, you need to go through all variables and decide if they should be, let her const.
+
+Speaker
+
+Finally, I want you to change the console logs here from using double quotes to
+
+Speaker
+
+using templates rings. So
+
+Speaker
+
+Go ahead and do this right now.
+
+Speaker
+
+Okay, hopefully this went well, let's go through this. Now what I want to start with is actually by looking at which variables that are re-assigned. And that is actually just the two ones down here points and has one. There's no reassignment below and neither above. That's just the initial assignments. So that means that the points and has one are the ones that must be literals. Because remember, literals can be re-assigned
+
+Speaker
+
+the
+
+Speaker
+
+So let's...
+
+Speaker
+
+and these need to be so.
+
+Speaker
+
+That means that these three variables point to the same value throughout our entire program. It'll work perfectly fine with using Lett.
+
+Speaker
+
+And if you prefer that.
+
+Speaker
+
+That's also okay, but it is a good practice to use const when you can to enforce a bit more strictness in the code and to hint to people who are potentially reading your code down the line that these variables won't be reassigned.
+
+Speaker
+
+So actually, I'm going to--
+
+Speaker
+
+news const.
+
+Speaker
+
+these three variables.
+
+Speaker
+
+Now we can run the golden yet, we can see that it actually works.
+
+Speaker
+
+I've got 100 points, and won the amazing fighter again.
+
+Speaker
+
+comes from this string right here, which we want to turn into a template string.
+
+Speaker
+
+And we've got to do that. It's now wrapped in tire.
+
+Speaker
+
+tire expression in.
+
+Speaker
+
+Back text and here we're starting off with a JavaScript variable.
+
+Speaker
+
+So we'll escape out of the string.
+
+Speaker
+
+like that.
+
+Speaker
+
+We remove all of these.
+
+Speaker
+
+Plus and quotes, get again.
+
+Speaker
+
+All our signed curly brackets.
+
+Speaker
+
+And then we also need the...
+
+Speaker
+
+Maybe here as well.
+
+Speaker
+
+Let's run the code.
+
+Speaker
+
+works just as it did previously, but now we have this a much more neatly packed expression.
+
+Speaker
+
+Doing the same here.
+
+Speaker
+
+And that's it, great job doing the challenge, let's move on.
+
+Speaker
+
+In this challenge, you are going to create a function that takes a single parameter,
+
+Speaker
+
+be an array, and that logs out all the items of the
+
+Speaker
+
+your aid to the console.
+
+Speaker
+
+And I've created this in my courses array here so that you can test your function.
+
+Speaker
+
+Go ahead and write this function starting here on line seven, and then return back to me when you want to see my solution.
+
+Speaker
+
+Okay, let's do this.
+
+Speaker
+
+I'll call it log icons.
+
+Speaker
+
+I got a name that parameter R.
+
+Speaker
+
+Then inside of the function, I need to write my for loop for let i equal zero.
+
+Speaker
+
+It's less than R.
+
+Speaker
+
+Thanks.
+
+Speaker
+
+and i++.
+
+Speaker
+
+And in the body of the photo, we'll simply do console.log or buy like that.
+
+Speaker
+
+Let's try around the code.
+
+Speaker
+
+log items.
+
+Speaker
+
+That's in my courses.
+
+Speaker
+
+And we get to...
+
+Speaker
+
+Learn CS animations, UI design fundamentals, and intro to clean code logged to the console.
+
+Speaker
+
+And these are old courses.
+
+Speaker
+
+you can take in the future when your web development skills are a little bit further down the line and you're ready to truly level up your design skills and your software craftsmanship.
+
+Speaker
+
+But enough for that for now, let's just move on.
+
+Speaker
+
+Okay, now we are going to verify that you actually know how to use local storage.
+
+Speaker
+
+So you're going to do three things. First, save a value to local storage.
+
+Speaker
+
+It could be any value, simple string, and array, that doesn't matter, just choose whatever you want, and give it whatever key you want as well.
+
+Speaker
+
+Then I want you to delete that code.
+
+Speaker
+
+refresh the page. So you start with a clean slate again because this highlights the power of local storage. The fact that you can come back fetch values from local storage in a context which is completely unrelated to the time when you saved to local storage.
+
+Speaker
+
+So your third step is to fetch the value from local storage and log out.
+
+Speaker
+
+ahead and give this a shot right now.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+First, we're going to do local.
+
+Speaker
+
+storage.
+
+Speaker
+
+Open close parentheses.
+
+Speaker
+
+And let's do my.
+
+Speaker
+
+critics.
+
+Speaker
+
+this good for example, be in an e-commerce shop where you gifted credits to people who came to your website on a certain day and saved it in their local search.
+
+Speaker
+
+You got 100 credits this time?
+
+Speaker
+
+I'll run the code.
+
+Speaker
+
+seemingly nothing happens, but let's hope it works.
+
+Speaker
+
+Now I'm going to delete this.
+
+Speaker
+
+And also rerun the code again.
+
+Speaker
+
+coming back on a later date.
+
+Speaker
+
+And now I want to do local stuff.
+
+Speaker
+
+the
+
+Speaker
+
+I'll get to item.
+
+Speaker
+
+Griddance, like that.
+
+Speaker
+
+but store that in a variable.
+
+Speaker
+
+my credits.
+
+Speaker
+
+local storage, and then.
+
+Speaker
+
+Control look out my.
+
+Speaker
+
+great as well.
+
+Speaker
+
+Running to code, and yes, we are logging out 100, meaning that our local storage implementation works, so give yourself a pattern to back and let's move on.
+
+Speaker
+
+In this challenge, we are going to repeat at
+
+Speaker
+
+event listener.
+
+Speaker
+
+and how to fetch out values for
+
+Speaker
+
+objects that live inside of a race.
+
+Speaker
+
+So to three-part challenge,
+
+Speaker
+
+you are to fetch the button from the DOM and store it in a variable.
+
+Speaker
+
+The button I'm talking about is this one right here. You can see it says log James score.
+
+Speaker
+
+It's defined here in the HTML, so maybe you have to modify that as well to give it an ID. I don't know. Then once you have that button stored in the variable, you are to use
+
+Speaker
+
+event listener to listen for button clicks.
+
+Speaker
+
+And when the button is clicked, you are to log out to Jane's score.
+
+Speaker
+
+You gotta do it.
+
+Speaker
+
+V up the data array. So you got head into data.
+
+Speaker
+
+find Jane's object and log out to the value of her score.
+
+Speaker
+
+Go ahead and give this your best shot right now.
+
+Speaker
+
+Let's do this.
+
+Speaker
+
+So first we have to fetch the button and as we saw the button didn't have any IDs so it'll be hard to grab it.
+
+Speaker
+
+I'll get an IV, call it drain-btn.
+
+Speaker
+
+And then I'll do it const drain btn equals document start get elements by
+
+Speaker
+
+ID.
+
+Speaker
+
+passing in J&B/BTM, okay, so far, so good.
+
+Speaker
+
+Now, we need to use the drain button to add an event listener onto it. What kind of events are we listening for? Well, it's click events.
+
+Speaker
+
+So that's the first argument. The second one is the function we want to trigger when the button is clicked.
+
+Speaker
+
+But let's verify that this works.
+
+Speaker
+
+I'll run the code.
+
+Speaker
+
+click the button and yes indeed it works.
+
+Speaker
+
+Now we have to head into data and data is an array.
+
+Speaker
+
+So let's actually log it out.
+
+Speaker
+
+Okay, so we got into Ray.
+
+Speaker
+
+with
+
+Speaker
+
+objects.
+
+Speaker
+
+How do we get the first object of those two? Well, we know that we can use the square
+
+Speaker
+
+brackets and tags and put in the index of the item we're looking for, if I'll put in zero.
+
+Speaker
+
+run the code.
+
+Speaker
+
+Yes, we're only logging out.
+
+Speaker
+
+James object, how do we get the value of 52? Well, we need to use the dot notation and use dot key or about score in our case.
+
+Speaker
+
+You remember the cold?
+
+Speaker
+
+Log and boom, we are logging out.
+
+Speaker
+
+the score.
+
+Speaker
+
+So great job getting this far.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+In this challenge, we are going to repeat ad event listener and how to fetch out
+
+Speaker
+
+are logging out.
+
+Speaker
+
+So, great job getting this far, let's move on.
+
+Speaker
+
+Okay, now I have a really cool challenge for you because you're going to create a sentence generator.
+
+Speaker
+
+So it's this function right here. It's called a generator sentence and it takes
+
+Speaker
+
+two parameters, desk and art.
+
+Speaker
+
+It is a description and an array.
+
+Speaker
+
+and it should return a string, actually it's a full sentence based upon the description you pass in and the array you pass in.
+
+Speaker
+
+and it's best to be understood through the lens of the call.
+
+Speaker
+
+examples. If you pass in largest countries,
+
+Speaker
+
+the description.
+
+Speaker
+
+The array China and give USA as the array that is the second parameter.
+
+Speaker
+
+Then, function should return.
+
+Speaker
+
+3 largest countries are China.
+
+Speaker
+
+And yeah, you will see.
+
+Speaker
+
+Another example, if you pass in.
+
+Speaker
+
+best fruits, ask the description, and Apple's bananas as the array. It should return.
+
+Speaker
+
+The two best fruits are applespananas, so we actually have to construct the structure.
+
+Speaker
+
+out each of the items and also the length of the array.
+
+Speaker
+
+So, a little bit tricky.
+
+Speaker
+
+give it your best shot, use a for loop and also a template string to solve this. And if you're stuck or want to see my solution just return back to the screencast and I will of course show you how to do it.
