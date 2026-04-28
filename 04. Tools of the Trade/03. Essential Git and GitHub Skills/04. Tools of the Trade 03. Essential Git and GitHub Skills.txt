@@ -1,0 +1,467 @@
+Speaker
+
+Hello, students. My name is Treacher, and today I'm going to be talking to you about making branches and pull requests with GitHub Desktop.
+
+Speaker
+
+Last time you learned a little bit about setting up a local dev environment using VS Code and GitHub Desktop, VS Code for editing and GitHub Desktop to publish and sync your local repositories with GitHub. Today, I'd like to help you expand your knowledge even further by learning the basic workflow of how teams or developers use GitHub to manage code. So far, you've learned how to manage code on a single branch, the main branch of your code base. You can think of a branch as a copy or a version of your code base. And as your coding projects change and get larger, GitHub can actually keep track of many versions or branches.
+
+Speaker
+
+So how do we better collaborate on code? How do we keep track of the changes that our team is making? The answer to that is branching and pull requests. A pull request is a collaborative feature on GitHub that gives teams a way to review each other's changes before introducing the new code back into the main branch. Here's a simplified example of what this might look like. So a dev spins a feature branch off the main branch.
+
+Speaker
+
+Does some work or fixes a bug, makes a poll request, and then that poll request is reviewed by a fellow team member or multiple team members and is merged eventually back into the main branch. In the next few scrims, this is what we will learn how to do. Make branches and create brs. You obviously won't be doing this as part of a team, but you will gain practice and familiarity with the process for when you are working as part of a team. So join me in the next scrim and let's get started.
+
+Speaker
+
+Before we can practice branching and pull requests, we're going to need an issue to solve. So your first challenge will be to go to GitHub and create an issue. To do that, I would like you to first pick a solo project. It can be any of the solo projects that you've completed so far. And you're going to choose a very small, very simple emphasis on simple change that you would like to make. And that can be modifying a small piece of text, changing the color of something, adjusting a font size, just keep it simple.
+
+Speaker
+
+And once you've decided what you want to do, I'd like you to create an issue and get out of the title, and a description or comment describing the change and why it's needed.
+
+Speaker
+
+To create an issue, you're going to go to the repo of the solo project that you've chosen, and then you can click on this issues tab here, and then you'll click on new issue. So go ahead and pause the scrim now, create an issue in GitHub, and when you come back, I will show you the issue that I've created.
+
+Speaker
+
+Okay, we're back. Hopefully you didn't have a lot of problems choosing a small modification to make. I will show you what I've decided to do.
+
+Speaker
+
+I'm going to be using the scoreboard project and I'm going to be again modifying the text of the headers. I'll go ahead and click on new issue, and then I will add a descriptive title, and I will add a description that gives a little more information. There are a ton of ways that you can do this and how to create an issue is going to depend a lot on the process of the company that you work for. But for our purposes today, we just need something simple.
+
+Speaker
+
+So I'm going to click on submit new issue. Now we have an issue, and if I go up to the issues tab and click it again, you can see that we can have a whole list of issues here.
+
+Speaker
+
+and we can label our issues and filter them by all sorts of parameters. So I encourage you to kind of check this out. Feel free to create as many issues as you'd like. And also note that each issue has an assigned number. So this is issue number one.
+
+Speaker
+
+We're gonna need that number later, so keep that in mind.
+
+Speaker
+
+Great, now that we have an issue, meet me in the next scrim so we can make a branch.
+
+Speaker
+
+To create a new branch, you'll need to open up GitHub Desktop and make sure that you're in the repository that you've chosen to work with. If that's all good, you can go to this branch menu here and choose New Branch. Before you pause the scrim, though, here's what I would like you to do. You're going to create a new branch, and keep in mind that there are a ton of ways to name branches. This is another thing that will vary from workplace to workplace. You're going to create a branch with the issue number from the issue that we created in the last scrim, followed by a short but descriptive name for the branch. The name should describe the work that you'll be doing on it.
+
+Speaker
+
+So it doesn't have to be complicated. For example, if you're going to change the font color, your branch name can be changed font color.
+
+Speaker
+
+Once you've created a new branch, GitHub Desktop will automatically switch you over to that branch. So then on that branch, I would like you to open up your project in VS Code and make the change that you outlined in your issue. And finally, don't worry yet about publishing your branch.
+
+Speaker
+
+So go ahead and pause your scrim now and give this a try.
+
+Speaker
+
+Okay, we're back.
+
+Speaker
+
+Hopefully that went well, but no matter how it went, I just want to let you know that you're doing great. This is a ton of new steps to learn. It's a lot of new jargon. And I promise you that with practice, it will start to make sense. So just keep at it. Now I'll show you the branch and the changes that I made. I'm going to go to GitHub Desktop and click on New Branch. And like I said, there are a ton of ways to name a branch. Here I'm showing you a naming convention that we used at my last company. So we have an abbreviated name for the project or code base that I'm working in. So SB stands for scoreboard,
+
+Speaker
+
+followed by the issue number, followed by a name for the branch that describes what the branch is for.
+
+Speaker
+
+So I'm modifying some headers.
+
+Speaker
+
+Now that my branch has a name, I'll click on create branch. And now we have this highlighted option to publish the branch, but I'm not going to do that yet. First, I want to make the change to my code. So I want to actually modify the headers. So instead I'm going to go down to open up individual studio code. Then in the index, I will change those headers, then I will save and go back to GitHub desktop where you can see those changes have been added. Remember, we still need to commit these changes and it
+
+Speaker
+
+The submit is like making a record of the changes so that we can publish or push to our branch. So I'm going to come down here and write a commit message.
+
+Speaker
+
+And notice that I'm committing to my feature branch and not my main branch. We want all of our changes to be on this feature branch.
+
+Speaker
+
+So now I can commit, and it says by publishing it to GitHub, you can share it, open a pull request, and collaborate with others. That's exactly what we want to do. So I'll click on publish branch.
+
+Speaker
+
+to create a pull request.
+
+Speaker
+
+We're not going to do that yet. First, let's come down here and view on GitHub. Now on GitHub, if I click on this ranch menu here, you'll see
+
+Speaker
+
+See that I have two branches. We're going to create a pull request by comparing these two branches and how they differ and choosing to accept the changes and merge them into the main branch.
+
+Speaker
+
+One more thing I would like to mention, you may see this your main branch isn't protected warning message. Clicking this will take you to a page of rules that you can set for things that need to happen for someone can merge into your main branch. You don't need to worry about this too much right now, but feel free to take a look if you'd like. And now we're ready to make a pull request. So join me in the next scrim and we will do just that.
+
+Speaker
+
+The pull request is called a pull request because it's basically like saying, "Hey, I'd like to pull my changes into your branch." In our case, we're requesting to pull changes from a feature branch into a main branch, but you can actually make a pull request between any two branches. So let's jump right in and create a pull request. From GitHub desktop, you can use the create pull request button to get things started, and then I'd like YouTube write a short description of the change that you've decided to make and the reason for the change. So you'll be writing a message that's pretty similar to the issue message that you wrote before. For example, you might say something like,
+
+Speaker
+
+Hopefully you found creating a pull request pretty straightforward from the GitHub desktop screen. I'm going to click on create pull request, and then I will add a descriptive comment. Keeping it pretty simple, this PR modifies the scoreboard headers to read team one and team two. Notice up here we have a base branch, which is main and a compare branch,
+
+Speaker
+
+which is our feature branch. So we're gonna be pulling the changes
+
+Speaker
+
+from our future branch into our main branch.
+
+Speaker
+
+I could actually click on these menus and choose any branches that we had available, but this is what we want to go with. So I can come down here and click on Create a Pull Request.
+
+Speaker
+
+I'll be able to create a pull request I could go over here and request reviewers.
+
+Speaker
+
+If this were a group project, we could search for other GitHub users and ask them to review our PR. We also have this Files Change tab. And this is where you can view what's known as a diff. We've seen a diff before in GitHub Desktop, and that's where the additions are highlighted in green, and the deletions are highlighted in red. And this is showing us the difference between the base branch and the branch that we're trying to merge. This tab can be super helpful when you're reviewing somebody else's PR, because you can easily see and concentrate only on the parts of the code base that they've changed. Really helpful if you are working in a larger code base.
+
+Speaker
+
+And finally to the right, there are some options for conducting a review. So what you might do if asked to review somebody's PR.
+
+Speaker
+
+is you would go through their changes and make line by line comments and compliments and suggestions, and then you might leave a summarizing comment here, and you have the option to just comment, to approve the poll request, or to request changes that would need to be done to the PR before it can be merged.
+
+Speaker
+
+Now I'm going to go back to the Conversation tab.
+
+Speaker
+
+and I can confirm that I do in fact want to merge this PR. There we go, our PR has been successfully merged, so now I can delete the branch because we don't need it anymore. And now I can scroll back up to the code tab.
+
+Speaker
+
+click on index and see that those changes are now part of my main branch. Now I'm going to go to the Issues tab.
+
+Speaker
+
+and close this issue because we have completed it.
+
+Speaker
+
+If I wanted to delete my branch locally, I could go back to GitHub Desktop, choose the branch menu, and right click on the
+
+Speaker
+
+branch to delete it.
+
+Speaker
+
+And those are the basics of creating a branch and making a poll request. Congratulations, you've learned a ton today. This is a huge part of any developer's day to day workflow. So it's really important to continue to get familiar and practice by following this process for any features that you might add to your projects in the future. Please join me in the next and final scrim to talk about a potential issue you might run into while making poll requests, especially if you're working as part of a team. I will see you there.
+
+Speaker
+
+A pull request is called a pull request. I could go over here and review our PR because you can easily, there's some option make line by line, gust, comment, or before it can merge. So now I can delete the branch because we don't can be merged or to request changes that would need to be merged.
+
+Speaker
+
+Now I'm going to go back to the Conversation tab.
+
+Speaker
+
+And I can confirm that I do in fact want to merge this PR. There we go. Our PR has been successfully merged. So now I can delete the branch because we don't need it anymore.
+
+Speaker
+
+And now I can scroll back up to the code tech. Hopefully I could go back to branch and making a poll request. Congratulations!
+
+Speaker
+
+You've learned a ton today. This is a huge part of
+
+Speaker
+
+any developer's day to day workflow.
+
+Speaker
+
+especially if you're working as part of a team. I will see you there.
+
+Speaker
+
+Someday when you make a pull request, you will probably run into what's called a merge conflict. And a merge conflict is when two people try to make different changes to the same line of code in a file. When this happens, it doesn't know what to do and it won't allow you to merge your pull request. So it's kind of a problem. In this scrim, we're going to learn how to resolve merge conflicts. But first, let me give you a quick example of how a merge conflict might happen. Let's say that you and your coworker, each create a branch off the main branch. You create a branch to change the headers again, and your coworker creates a branch to increase the heading
+
+Speaker
+
+Your coworker goes in and changes these heading three tags to heading two tags. Then your coworker makes a pull request, which is approved, and their changes are merged back into the main branch. Their change, making the header three tags header two tags are now part of the main branch.
+
+Speaker
+
+Meanwhile on your own branch you're completing your own ticket, which is to change the headers from Team 1 and Team 2, the best team and worst team. But the ticket doesn't say anything about changing the headings, so you leave them as H3s. Now you go to GitHub Desktop, commit your changes, and publish your branch.
+
+Speaker
+
+But when you go to create pull requests, uh oh, you get this message. Can't automatically merge.
+
+Speaker
+
+So what happened here?
+
+Speaker
+
+Well, when your coworker merged in their branch, it created a new version of the main branch with different code on it. So when you make a pull request and try to merge your branch, the code is too different and Git doesn't know what to do. The first step to seeing exactly what happens and resolving the merge conflict is to create a pull request. So I'll click on create pull request. You'll see if you get this message that says this branch has conflicts that must be resolved. This is GitHub saying, "I don't know what you want me to do, so you're going to have to show me." Resolving merge conflicts can get incredibly complicated. I'm going to show you one of the quickest and easiest ways to resolve conflicts,
+
+Speaker
+
+So this is actually a little editor that GitHub provides for us. And what we need to do here is make a code look how we want it to look.
+
+Speaker
+
+the way that we can do that is by changing these heading 3s to heading 2s. And now I can delete the base branch code.
+
+Speaker
+
+Once this code is correct and how it should look, I can go up and click "mark result" and then commit "merge". Now GitHub says "Yay, the merge conflict was resolved". I will now scroll down and merge this pull request and confirm and now I can delete the branch.
+
+Speaker
+
+If we look at the index.html file, you can see that both changes are reflected in the main branch. And that is how you solve a merge conflict. Merge conflicts are bound to arise, especially when you're working as part of a team, and now you know one of the most straightforward ways to resolve them. You may want to learn other methods as your projects and teams get larger, but this is probably all you're going to need for now. Remember that this and get in general is really hard, so you're likely going to need a lot of exposure and practice before everything starts to click, and that's totally normal.
+
+Speaker
+
+I have one more topic that I'd like to discuss with you today. Maybe you've noticed that we actually using the merge conflict editor made a change to our remote code without
+
+Speaker
+
+updating our local code. So how can we remedy that?
+
+Speaker
+
+And that's what we'll discuss in the next scrim, so I will see you there.
+
+Speaker
+
+someday when you make a poll request, you will probably run into what's called a merge conflict.
+
+Speaker
+
+So far, we've mostly talked about pushing as in pushing your local code from your computer up
+
+Speaker
+
+on to GitHub. But when you start working as part of a team, multiple people can push to GitHub, which means that your remote code is constantly changing. As the remote code changes, how do you make sure that your local code stays up to date? The answer to that is pulling as in pulling down the code from the remote repo into your local repo on your machine. Remember the merge conflicts we talked about in the last room? One of the ways to prevent that from happening is to pull down the most up to date code from the remote before you get started on your work. We won't be covering that today because it can get really complicated, but understanding how to pull is the first step.
+
+Speaker
+
+So that's a change that we made to the remote repo, and because we made that changed, our local repo is now out of date. Let me show you. If I go to GitHub Desktop and switch back to the main branch, and then open and visual studio code, you'll see that we still have these heading three tags. Whereas on the remote main branch, these have been changed to heading two tags. So what we need to do is hold down the changes from the remote. Returning to GitHub Desktop, I can use this "Speck Origin" button. An origin here refers to the remote version of whatever branch we're on.
+
+Speaker
+
+So, we're currently on the main branch locally. If I fetch origin, that's going to go out to GitHub and fetch any commits that are on the remote main branch that we do not have on our local main branch.
+
+Speaker
+
+So I'll click fetch origin.
+
+Speaker
+
+And it says the current branch has commits on GitHub that do not exist on your machine. We can pull those changes in by clicking pull origin. Now we've pulled those changes down. They are now part of our local main branch. So if I open again in Visual Studio code, you can see we've got those heading tos and everything is up to date. So now I have a challenge for you. I would like you to pull down a remote change. So I'm going to ask you to choose a solo project repo, probably the one that you've already been working with. And you'll go to GitHub and make a simple edit to the readme file, which I will show you how to do in a second. You'll commit that change to
+
+Speaker
+
+If you go to your repo on GitHub, you can click this pencil icon, and that will allow you to edit the readme directly. Give this a try, and I will be right back.
+
+Speaker
+
+back. Hopefully you found that to be pretty straightforward. Here is how I went about it.
+
+Speaker
+
+I will go to my GitHub repo, scroll down, and I'm going to change this auto-generated title to something else. So I will click on the pencil, and I've changed it to read my scoreboard project. Once I've made the change, I will scroll down, write a commit message, then I have the option to commit directly to the main branch, or create a new branch, and start a pull request. I will leave it as is, and click commit changes, and now you can see those changes are reflected on the remote repo. Going back to GitHub Desktop, I could click that origin, and it is found that commit that we just made, and I will pull that in by clicking pull origin.
+
+Speaker
+
+title has been updated. You have learned the basics of everything you need to know to start using Git, branching, making pull requests, pushing, pulling, and solving merge conflicts. So try to practice the pull request workflow as much as you can. This is a subject that requires practice, practice, practice to really stick. So keep practicing. It's been a pleasure. I will see you later and happy coding.
+
+Speaker
+
+Hi there, I'm Bob Zorol, I'm another teacher here on Scrimba. I wanted to spend just a second and talk about SSH and GPG keys in GitHub. Now don't let these acronyms scare you away, going to keep it really light and at a very high level here. Now SSH and GPG use something called public key cryptography. And my goal isn't for us to dive deep into public key cryptography at this point, but instead to give us a really high level overview of the concept of public and private keys. In the early days of computing and especially dealing with the Internet and the web, the ability to securely pass data from one source to another has always been an issue on people's minds.
+
+Speaker
+
+not only that, and perhaps an even more important benefit of using public key cryptography, is that it provides a super high level of confidence that the data being sent is actually coming from the place that it claims to be coming from.
+
+Speaker
+
+In terms of dealing with GitHub, using an SSH key gives us the ability to authenticate with GitHub so that GitHub has confidence that we are the real one connecting with their system as we push code up and pull code down.
+
+Speaker
+
+Alternatively, we can use HTTPS, but it's a little less convenient because we have to provide our username and password periodically to GitHub in order to authenticate.
+
+Speaker
+
+Similarly, GPG keys with GitHub allow us to verify that the commits we're making to repositories on GitHub are actually coming from us.
+
+Speaker
+
+Again, both of these are ways that GitHub is using to give a very high level of confidence to GitHub that as we are interacting with our accounts on GitHub, it's the real us that's doing so.
+
+Speaker
+
+That's about as deep as I'm going to get into public and private keys, so rest assured that it won't get too much more complicated than that. I do have some action items for you, though. First of all, I would like you to go and create a new SSH key on your machine, and then add it to your GitHub account.
+
+Speaker
+
+Fortunately, GitHub has a really thorough and easy to follow document on doing exactly this. You can click the screenshot to go directly to the GitHub docs on how to add a new SSH key. And as a part of this article, it will send you to another article that shows you how to first create the public and private keys on your own machine. I'll have all of those links for you in a slide just a minute.
+
+Speaker
+
+Then once you're done with that, I want you to go create a GPG key and also add that to your GitHub account. Again, click on the screenshot here to go directly to this article. And just like with SSH keys, it will have a tangential article that shows you how to first create the GPG key on your machine.
+
+Speaker
+
+Once you've done so, you'll be able to go into the settings of your account, go over to SSH and GBG keys, this by the way is where you'll be adding the new SSH and GBG keys with these green buttons, and once you've done so, you'll see the keys listed right there in your account.
+
+Speaker
+
+When it comes time to clone down a repository, especially a repository from somebody else that isn't one that you own, you'll be able to click on this green code button, and instead of having HTTPSB the URL that you use, you can click over to SSH and use that URL instead.
+
+Speaker
+
+Doing so isn't strictly required, but it is a combination of more convenient because you won't have to periodically provide your username and password, and it's just generally more secure.
+
+Speaker
+
+Here's a list of some resources that I think could be helpful. First of all, all four of those articles are right here inside of this GitHub section. And I also found a YouTube video from a channel called Computer File. They have tons of amazing content. They do a great job of taking complex topics and simplifying them, clicking on this link will specifically take you to a lesson of theirs on public key cryptography.
+
+Speaker
+
+Now you know a bit about Git and GitHub. I'm dropping in here to suggest something you can start doing right away to increase your chances of getting a job in the future. Now you're working on projects whether they're part of a scrimper course or not. You should frequently push your code to GitHub.
+
+Speaker
+
+This is a really good habit to get into. But why is it important?
+
+Speaker
+
+Well, when you're applying for jobs, it's good to be able to show that you've been coding consistently for a prolonged period of time.
+
+Speaker
+
+and GitHub makes that information readily available on your profile. If you open GitHub in the browser and you click on your avatar, then go to your profile and scroll down. You'll see this funky box where each square represents a date in the year.
+
+Speaker
+
+And you can see the years right here, and I'm showing you my contribution from a few years ago when I was working freelance and not yet employed at Scrimber. Obviously, when you code professionally, you make fewer contributions to your own personal repository. So right now, if you've been implementing the GitHub advice you've already been given, you should see at least one of the squares in this box on your profile.
+
+Speaker
+
+green.
+
+Speaker
+
+these green squares show that there has been a contribution to your GitHub.
+
+Speaker
+
+So this contribution activity box to give it its full name is a really easy way for hiring managers to see how active you've been.
+
+Speaker
+
+But there's a setting you need to know about. If you're keeping your repositories private, then those contributions won't show up as green squares. But you can change that with this drop down right here. Just click on it and make sure private contributions is selected.
+
+Speaker
+
+strongly recommend you do this. It will maximize the activity that's shown and GitHub make sure that your private repository stay private so there is no risk.
+
+Speaker
+
+Now you've probably noticed that we've got different shades of green here.
+
+Speaker
+
+the darker the shade, the more times you contribute it on that day.
+
+Speaker
+
+It is good, of course, to have some darker shades, but don't stress about it or try to make it all dark, which is actually impossible, by the way, because the shades of green are not based on a specific number of contributions,
+
+Speaker
+
+are actually relative to your normal activity. So what a darker shade shows is a heightened period of activity.
+
+Speaker
+
+And obviously, as a general rule, more is better and you definitely want to avoid prolonged white spaces, this big white space in February would look a bit bad if the rest of the year wasn't great. It was actually a period of ill health as I recall, 2021 being the pandemic time. Things like that happen.
+
+Speaker
+
+And there's no need to commit seven days a week just to show a long streak of green, pushing code every single day, employees recognize that people have a life outside of code.
+
+Speaker
+
+So this should not be a stick to beat yourself with, but a healthy amount of green like this looks pretty good.
+
+Speaker
+
+And I should also point out quickly that there are various activities that count as contributions, not just you pushing code to a repository, but at this stage you don't need to worry about the others, but you can check out the GitHub docs if you're interested. The screenshot is a link to that page.
+
+Speaker
+
+Let's think quickly about what you should commit, because often beginners push their project to get up when it's finished. So you see a repository with one single commit, which is the full project. This is not a good idea.
+
+Speaker
+
+Instead, do something like this, make an initial commit as soon as you've started project. This is not a good idea.
+
+Speaker
+
+Instead did the screenshot is a link to that page. Let's think quickly about what you should commit because often beginners push their project to get up when it's finished. So you see a repository with one single commit, which is the full project. This is not a good idea.
+
+Speaker
+
+Instead, do something like this, make an initial commit as soon as you've started the project and push it to get up. Then frequently push code as your code base grows, so that could be when a specific feature or component is finished.
+
+Speaker
+
+or perhaps at the end of a coding session, or at any other time when it feels relevant, remember GitHub is version control. So if you've done something you found quite tricky and you want to experiment with some other solutions, that might be a good time to push your code to GitHub. So you've got that version to fall back on.
+
+Speaker
+
+Now, later on in your career, when you're using GitHub in a professional environment and contributing to a code base, which is being maintained by a whole bunch of developers, how and when you push your code will change.
+
+Speaker
+
+But you don't need to worry about that at these early stages. Just get used to pushing code to GitHub.
+
+Speaker
+
+building up your
+
+Speaker
+
+And that is letting the foundations of a healthy attractive looking GitHub profile.
+
+Speaker
+
+that will shine when you start applying for jobs.
