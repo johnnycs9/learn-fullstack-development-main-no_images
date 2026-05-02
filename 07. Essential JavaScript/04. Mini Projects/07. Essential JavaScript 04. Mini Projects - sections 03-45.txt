@@ -10747,3 +10747,3887 @@ Okay, so that is short-circuiting and now is a great time to take a break.
 Speaker
 
 and come back to the next section when you're feeling refreshed and ready to move on.
+
+Speaker
+
+an if, and if else, and multiple else ifs.
+
+Speaker
+
+But all of that can get kind of messy and a switch statement makes the whole thing neater and more readable.
+
+Speaker
+
+Let's take a look at the switch statement, which can be used when there are multiple possible code blocks you might want to execute.
+
+Speaker
+
+We already know that if we want code to run if a condition is met, we can use an if, and if else, and multiple L-CIFs.
+
+Speaker
+
+But all of that can get kind of messy and a switch statement makes the whole thing neater and more readable.
+
+Speaker
+
+When ifs and lc's get complex, they actually take quite a high cognitive load to disentangle.
+
+Speaker
+
+So let's see a switch statement in action.
+
+Speaker
+
+By making an app for a vending machine allows you to buy one item of food or drink in a given transaction.
+
+Speaker
+
+Here's my price list. All we want this app to do is to log out, for example, you selected salad that will be $4.
+
+Speaker
+
+So I'm going to come down here and set up a function called select item.
+
+Speaker
+
+And this function will take in an item as a parameter.
+
+Speaker
+
+And inside the body of the function, the first thing I want to do is set up a let to
+
+Speaker
+
+Hold our price.
+
+Speaker
+
+And I'm going to initialize that to zero.
+
+Speaker
+
+Okay, now let's set up the switch statement.
+
+Speaker
+
+So I'm going to say switch.
+
+Speaker
+
+and switch takes in the item as a parameter.
+
+Speaker
+
+And then we give it curly braces.
+
+Speaker
+
+and each item on our price list,
+
+Speaker
+
+become a case.
+
+Speaker
+
+So we use the case keyword.
+
+Speaker
+
+And for each case, we need something to match against, so we'll put a menu item in a string and add a colon.
+
+Speaker
+
+If the case, in this case, coffee matches the item that came in as a parameter and is passed into switch right here.
+
+Speaker
+
+The code we write here will execute.
+
+Speaker
+
+So here we'll set the price to the price of a coffee, which is $2.
+
+Speaker
+
+Now if the case matches, we want the switch statement to end, so we use the break keyword.
+
+Speaker
+
+This breaks us out of the switch statement
+
+Speaker
+
+any other cases we might have in the switch statement
+
+Speaker
+
+will not be looked at.
+
+Speaker
+
+And then outside of the switch statement,
+
+Speaker
+
+function can just return our string.
+
+Speaker
+
+And note the double dollar sign is not accidental. The first one here is just to actually denote the currency of the prices.
+
+Speaker
+
+Okay, this is a switch statement with just one case, but let's come down here and we'll try it.
+
+Speaker
+
+So in a console.log, then I'm calling
+
+Speaker
+
+select item and I'm passing in the string coffee.
+
+Speaker
+
+We hit save and down in the console, you selected coffee that will beat $2. So it's working. Now let's try passing in something else.
+
+Speaker
+
+And we get you selected biscuits and that will be not dollars. Well that's something that we don't want to happen so we will need to handle the situation where it gets past an item that doesn't exist.
+
+Speaker
+
+But before we do that, let's get the other price list items into our Switch Statement as K.
+
+Speaker
+
+places.
+
+Speaker
+
+But firstly, I just want to sort out our formatting here.
+
+Speaker
+
+That's better when those two are tabbed in, it makes it much, much clearer that that's the code that's going with this case.
+
+Speaker
+
+Okay.
+
+Speaker
+
+there with me when I paced in a challenge.
+
+Speaker
+
+And there's your challenge at the remaining price list items as cases.
+
+Speaker
+
+Now that is a pretty easy challenge. You've got this template right here to work from, but this is great for building up muscle memory. So just pause now and
+
+Speaker
+
+get this sorted.
+
+Speaker
+
+Okay, hopefully that wasn't too hard at all.
+
+Speaker
+
+So I'm going to come in here and I'll set up the second case. So that is the case for sandwiches.
+
+Speaker
+
+So we've got the case keyword, sandwiches, the colon, and then we'll set the price equal to five.
+
+Speaker
+
+And then if sandwich is match, we need to break out of the switch statement.
+
+Speaker
+
+Okay, just bear with me while I speed type the rest.
+
+Speaker
+
+Okay, that's how finished switch statement, although it's not actually quite finished because we still have the issue of what happens when the parameter doesn't match any case. And for that, I'm going to come down right to the bottom after the last case.
+
+Speaker
+
+and add the default keyword.
+
+Speaker
+
+And here we can put code to execute to cover the scenario that the item inputted
+
+Speaker
+
+doesn't match any case.
+
+Speaker
+
+So I'm just going to return the phrase, "Sorry, we don't sell that item."
+
+Speaker
+
+And this red line is just reminding me that I've forgotten my colon after default.
+
+Speaker
+
+Okay, let's do some testing. At the moment, we're calling Select Item with Biscuits. We don't have Biscuits on our price list. Let's hit Save and see what we get.
+
+Speaker
+
+And down in the console, sorry, we don't sell biscuits. So that is working. Let's just try a few things that we do sell.
+
+Speaker
+
+So we've got salad.
+
+Speaker
+
+It says you selected salad that will be $4.
+
+Speaker
+
+And let's just check Lemon Cake.
+
+Speaker
+
+You selected Lemoncake that will be $3.
+
+Speaker
+
+Now I should just point out a couple of things. After this default, we don't have the break keyword.
+
+Speaker
+
+And that's because it's coming right at the end.
+
+Speaker
+
+And the default doesn't have to beat the end of the Switch statement.
+
+Speaker
+
+But just to clarify whether you have a case or a default at the end of the Switch statement,
+
+Speaker
+
+you will not need the break keyword on that last item.
+
+Speaker
+
+And the last thing that I want to point out is that the comparison that happens between the item and the case
+
+Speaker
+
+is actually a strict comparison.
+
+Speaker
+
+So it's equivalent to saying, for example,
+
+Speaker
+
+Item.
+
+Speaker
+
+Triple equals.
+
+Speaker
+
+So look out for that because it could cause issues if for example you were comparing a number and a string.
+
+Speaker
+
+Okay, so there we are, that's the switch statement and is really good for some situations where else and else if would be less easy to understand.
+
+Speaker
+
+Let's take a look at JavaScript constructors and we're going to start by looking at an inbuilt constructor.
+
+Speaker
+
+Now, I'm sure you've noticed that down at the bottom of websites, we often have the copyright message and it has the year.
+
+Speaker
+
+For example, copyright 2023.
+
+Speaker
+
+Now, obviously, web devs don't spend the 31st of December sitting in front of their PCs updating these manually. There are actually plenty of ways that you could automate this, but probably the easiest way in JavaScript is to use the date command.
+
+Speaker
+
+So, what actually is a constructor?
+
+Speaker
+
+Well, the most important thing to know about constructors
+
+Speaker
+
+is that what they actually give you, what they construct.
+
+Speaker
+
+is an
+
+Speaker
+
+object.
+
+Speaker
+
+So, a constructor is a kind of machine that has a template or a blueprint for an object, so it can supply us with as many instances of that object as we want.
+
+Speaker
+
+So here we've got a machine, it's a date constructor and we can ask it for a date object.
+
+Speaker
+
+And it will do some processing.
+
+Speaker
+
+and it will provide us with a date object.
+
+Speaker
+
+And now we can ask it for a
+
+Speaker
+
+another date object.
+
+Speaker
+
+And it has no limit, it can keep giving us new objects all day long.
+
+Speaker
+
+So let's see how that works with code.
+
+Speaker
+
+I need a place to store the object I'm about to create, so I'm going to set up a const
+
+Speaker
+
+date snapshot.
+
+Speaker
+
+And to create the date object, we need the new keyword.
+
+Speaker
+
+And what this new keyword does is it says to the constructor
+
+Speaker
+
+Give me a new...
+
+Speaker
+
+date object. And you'll often hear this referred to as getting a new instance of
+
+Speaker
+
+Now we need the constructor itself, and that's just the word date with an uppercase first letter.
+
+Speaker
+
+And just to be clear, it has to be an uppercase first letter. This will not work with a lowercase D. Now a constructor is a special type of function, so it does need brackets to invoke it.
+
+Speaker
+
+Okay, let's log date snapshot and see what we get.
+
+Speaker
+
+And to be honest, I think I've given you a bit of a spoiler by calling it date snapshot.
+
+Speaker
+
+you're probably not that surprised to see a date snapshot down in the console.
+
+Speaker
+
+What might confuse you, though, is that I said the date constructor would give us an object.
+
+Speaker
+
+and what we see down in the console.
+
+Speaker
+
+is clearly a string.
+
+Speaker
+
+Or is it? Well, let's use type of to check.
+
+Speaker
+
+It is actually an object, although it doesn't look anything like a normal object.
+
+Speaker
+
+And if we look at it closely,
+
+Speaker
+
+We'll see that we've got today's date and we've got a time in hours, minutes, and seconds.
+
+Speaker
+
+which is actually one hour out.
+
+Speaker
+
+And then we've got three other digits and the letters Z.
+
+Speaker
+
+Now what we're seeing here is a bit of a quirk of the Scrimber console.
+
+Speaker
+
+because the consoles and browsers like Chrome or Firefox, for example, go the extra mile to make the output more human readable, and they do that under the hood using the two string method.
+
+Speaker
+
+So we can mimic that here by just calling two string on this object.
+
+Speaker
+
+And now when I save...
+
+Speaker
+
+we see something much more human readable in the console.
+
+Speaker
+
+And what's more, the data has been extracted in such a way that now we have the correct time.
+
+Speaker
+
+So what you see in the console is
+
+Speaker
+
+is the exact date and time when I'm recording this. And it's got the time zone I am indeed in GMT plus one British summer time.
+
+Speaker
+
+Now as I keep saving this, we start to see the value of a constructor.
+
+Speaker
+
+It's giving us a fresh object each time it runs.
+
+Speaker
+
+You'll notice that the seconds...
+
+Speaker
+
+and minutes are updating each time.
+
+Speaker
+
+What I want to do now is set up several instances, but use settimeout.
+
+Speaker
+
+space them out at
+
+Speaker
+
+one second intervals.
+
+Speaker
+
+Okay, so now we're creating several new instances of date.
+
+Speaker
+
+And this first one should run immediately.
+
+Speaker
+
+The second one is going to run a second later and the third one will run two.
+
+Speaker
+
+seconds after the first. Let's hit save!
+
+Speaker
+
+And there we are, we've got our three instances, they're fundamentally the same thing, but...
+
+Speaker
+
+with different data. In this case, the timestamp of
+
+Speaker
+
+when the object was created is slightly different. And we can create objects with this constructor as many times as we like.
+
+Speaker
+
+Right, let me just put that back to how it was.
+
+Speaker
+
+Now I want my sites footer to have a copyright message and I want it to fetch the current year each time the page loads.
+
+Speaker
+
+So, let's just log that out right now.
+
+Speaker
+
+And now when I hit save.
+
+Speaker
+
+I get my copyright message, but that's way too long. I don't need all of this detail.
+
+Speaker
+
+I just want the year.
+
+Speaker
+
+So, let me just paste in a mini challenge for you.
+
+Speaker
+
+So I want you just to pause quickly and Google how I can get the date constructor to
+
+Speaker
+
+just give me a year, then come back and update this code.
+
+Speaker
+
+pause now and do that.
+
+Speaker
+
+Okay, hopefully you found we can just chain on the Get Full Year Method.
+
+Speaker
+
+There we are, we're getting copyright.
+
+Speaker
+
+2023.
+
+Speaker
+
+Okay, so that is just a really quick intro to the date constructor.
+
+Speaker
+
+And I'm sure you noticed when you were searching.
+
+Speaker
+
+There's a ton you can do with date. There's loads of methods. It really is a vast topic.
+
+Speaker
+
+And there are also some commonly used packages like Luxon.
+
+Speaker
+
+which make working with dates and times in JavaScript much easier.
+
+Speaker
+
+So do check them out if you're doing something complicated.
+
+Speaker
+
+Okay, now that we've seen an inbuilt constructor in action in the next grim,
+
+Speaker
+
+Let's look at why it's sometimes a good idea to build our own constructors.
+
+Speaker
+
+Let's talk about the other in-built constructors in JavaScript. There are loads of them, and far more than we can list out here.
+
+Speaker
+
+But one that you will definitely be seeing as you progress is the Eric constructor.
+
+Speaker
+
+We hate errors, but they are a fact of life encoding, and error detection is obviously really important and makes debugging a whole lot easier.
+
+Speaker
+
+when
+
+Speaker
+
+It can be a long and frustrating process to get it working.
+
+Speaker
+
+So the error construct that gives us a number of features which can help.
+
+Speaker
+
+And one of those is the ability to create a custom error message.
+
+Speaker
+
+Now here we've got a function that expects a username as a parameter
+
+Speaker
+
+and logs it out.
+
+Speaker
+
+And it's working, we're logging out Yummy Coder 64.
+
+Speaker
+
+But what happens if we don't pass in a username?
+
+Speaker
+
+Well, we log out undefined.
+
+Speaker
+
+So let's use the error constructor to come up with our own custom error message.
+
+Speaker
+
+So I'm going to say if the username exists, log it out.
+
+Speaker
+
+And then I'll say else.
+
+Speaker
+
+And here we'll log out a new instance of error.
+
+Speaker
+
+So we'll take the new keyword.
+
+Speaker
+
+and then error with an uppercase E for the constructor.
+
+Speaker
+
+The constructor needs its brackets and we can pass in our custom error message.
+
+Speaker
+
+Okay, let's hit save now.
+
+Speaker
+
+And in the console, we see our custom error message. Now, I could also have done this with the throw keyword, which I think is a little bit neater.
+
+Speaker
+
+So let's delete the console.log.
+
+Speaker
+
+And let's save again.
+
+Speaker
+
+And that works just fine.
+
+Speaker
+
+But just be aware that when we use the throw keyword, it will stop any code after it from being executed.
+
+Speaker
+
+Let's just prove that with a couple of console.logs.
+
+Speaker
+
+So I've added I execute and I do not execute. Let's hit save
+
+Speaker
+
+And we see I execute in the console, but not I do not execute. So this throw keyword actually ends the execution.
+
+Speaker
+
+Okay, so that's a really shallow dive into the Erika instructor.
+
+Speaker
+
+And something to be aware of because you will see it.
+
+Speaker
+
+quite often.
+
+Speaker
+
+Now I'm just going to delete all of this and list out some constructors for the common data types.
+
+Speaker
+
+Okay, those are the data types that we've seen so far.
+
+Speaker
+
+and notice how each one has got an uppercase first letter.
+
+Speaker
+
+and the brackets, that's because these are constructors. So we could, for example, take the object constructor and do something like this.
+
+Speaker
+
+That will store a new object in the const person.
+
+Speaker
+
+And we could then add properties and values using. notation.
+
+Speaker
+
+And down in the console, we've got an object, it's got one property name and the value Tom.
+
+Speaker
+
+So that does work, but it's so rare to see that and we do not advise using it.
+
+Speaker
+
+It's much better just to use the object literal.
+
+Speaker
+
+So that does exactly the same thing, but that is the more normal way of doing it.
+
+Speaker
+
+Now, you can do something similar with all of these data types, and by all means pause and see what they do if you want to, but I want to stress again.
+
+Speaker
+
+very rarely used, so we won't be spending more time on them.
+
+Speaker
+
+I just wanted to draw them to your attention.
+
+Speaker
+
+So you know they're there.
+
+Speaker
+
+Okay, now that we've seen in built constructors in action and learned a bit about them,
+
+Speaker
+
+In the next grim, let's look at why it's sometimes a good idea to build our own constructors.
+
+Speaker
+
+I've got an object here holding some details for a gamer, and I'm sure you're pretty comfortable working with objects by now, so this should probably look quite familiar.
+
+Speaker
+
+We've got a name property holding the string Dave.
+
+Speaker
+
+and the score holding the number zero.
+
+Speaker
+
+Now here.
+
+Speaker
+
+we've got a property holding a function.
+
+Speaker
+
+And a function that's stored on an object and can be used by that object is called a method.
+
+Speaker
+
+And this method increments score
+
+Speaker
+
+that
+
+Speaker
+
+increments the game of score.
+
+Speaker
+
+Bye-bye, one.
+
+Speaker
+
+Now let's just log out this game of object twice.
+
+Speaker
+
+And in the middle, I'm going to call the increment score method.
+
+Speaker
+
+So to call the method, we take the "GameObject".
+
+Speaker
+
+And then we access increment score and because a method is a type of function, we need to invoke it with
+
+Speaker
+
+Okay, let's hit save and open up the console.
+
+Speaker
+
+And we can see that the method is working, so the first time that we've logged out,
+
+Speaker
+
+We've got the name Dave and the score of zero.
+
+Speaker
+
+The second time we log out, we've got the name Dave and the score of one.
+
+Speaker
+
+So this method here, increment score,
+
+Speaker
+
+has incremented Dave's score by one.
+
+Speaker
+
+Now let's take a closer look at how this increment score works. We're accessing the score property on
+
+Speaker
+
+on the game object.
+
+Speaker
+
+And that's not the end of the world, but there is a better way of doing this.
+
+Speaker
+
+And imagine if the name of the object changed, we would have to update the code into places.
+
+Speaker
+
+So that gives us a really good opportunity to
+
+Speaker
+
+talk about the THIS keyword.
+
+Speaker
+
+Now, this is something which can often seem quite confusing.
+
+Speaker
+
+Let's just start by looking it out inside this method and see what it is.
+
+Speaker
+
+And before we save that and to stop us getting confused, I'm just going to comment out the code that we don't need right now.
+
+Speaker
+
+Okay, so when I hit save, we're going to access the increment score method on the gamer object.
+
+Speaker
+
+And all that method is going to do is log out.
+
+Speaker
+
+Let's sit safe.
+
+Speaker
+
+And look, what we get down in the console is the object.
+
+Speaker
+
+So now, inside this object, anywhere inside these curly braces,
+
+Speaker
+
+when we need to refer to the object.
+
+Speaker
+
+We can use.
+
+Speaker
+
+This.
+
+Speaker
+
+So let's uncomment this line of code, but instead of accessing the score property using Gamer,
+
+Speaker
+
+Let's use this.
+
+Speaker
+
+I'm just going to comment out the console.log here.
+
+Speaker
+
+and uncomment these console.logs.
+
+Speaker
+
+So we're back to our original experiment when I hit save.
+
+Speaker
+
+We see gamer locked out twice.
+
+Speaker
+
+in the second one.
+
+Speaker
+
+the score has been incremented
+
+Speaker
+
+from zero.
+
+Speaker
+
+to one.
+
+Speaker
+
+So this...
+
+Speaker
+
+is working with
+
+Speaker
+
+managing to access the properties
+
+Speaker
+
+on this object using the vist.
+
+Speaker
+
+Now, at the moment, you might not be that impressed by the ability to use this here.
+
+Speaker
+
+But that is about to change.
+
+Speaker
+
+I'm going to make a second gamer obit.
+
+Speaker
+
+And I'm just going to call it...
+
+Speaker
+
+Game of Wong.
+
+Speaker
+
+Okay, so here's the Gamer 1 object and it's basically the same as the Gamer object, but
+
+Speaker
+
+The name property is now holding the string "sera".
+
+Speaker
+
+The score is still 0 in each case.
+
+Speaker
+
+And we've got the increment score method.
+
+Speaker
+
+So down here.
+
+Speaker
+
+I'm calling the increment score method on each of the objects
+
+Speaker
+
+and we're just logging out those objects.
+
+Speaker
+
+Let's hit save!
+
+Speaker
+
+And we can see that that has been successful in both cases.
+
+Speaker
+
+So the scores are now at one because we've called the increment score method before logging out the object.
+
+Speaker
+
+So that's great, but if we have a look at these objects,
+
+Speaker
+
+This is not dry at all.
+
+Speaker
+
+the name properties need to hold different strings.
+
+Speaker
+
+The school properties will need to hold different scores at some point in the future.
+
+Speaker
+
+But the increment score method will always be exactly the same.
+
+Speaker
+
+for each object.
+
+Speaker
+
+So, if we wanted say 50 gamer objects, we'd be repeating ourselves 50 times and
+
+Speaker
+
+that code would be a nightmare to maintain, so wouldn't it be great if we could make some kind of template?
+
+Speaker
+
+and then have a machine which uses that template.
+
+Speaker
+
+to provide us with objects that
+
+Speaker
+
+have the same methods and properties.
+
+Speaker
+
+but different values stored in those properties.
+
+Speaker
+
+Well, we've already seen how JavaScript's in-built constructors, like the date constructor,
+
+Speaker
+
+Give us an object each time we need one.
+
+Speaker
+
+So, it's starting to sound a bit like we need to build our own constructor function.
+
+Speaker
+
+And when we do that...
+
+Speaker
+
+This.
+
+Speaker
+
+is going to be very, very important.
+
+Speaker
+
+So we're going to check that out in the next scrim.
+
+Speaker
+
+Now just before we do that, I want to quickly tidy up another common source of confusion.
+
+Speaker
+
+I've used an anonymous function here.
+
+Speaker
+
+but I'm declaring it with the function keyword. But you might be tempted to use an arrow function. Well,
+
+Speaker
+
+arrow functions use this
+
+Speaker
+
+this in a different way to function declarations, and if we change this method to an arrow function.
+
+Speaker
+
+This
+
+Speaker
+
+would no longer refer to the object.
+
+Speaker
+
+It would actually refer to the context surrounding the object, which in this case is the window object.
+
+Speaker
+
+Now, that's a whole load of complexity that we don't need to get into right now.
+
+Speaker
+
+But just be aware that we don't normally use an arrow function as a method on an object because arrow functions handle this.
+
+Speaker
+
+differently.
+
+Speaker
+
+Okay.
+
+Speaker
+
+Let's move on to the next grim.
+
+Speaker
+
+and look at creating our own.
+
+Speaker
+
+We're going to build our own constructive function.
+
+Speaker
+
+So instead of repeating ourselves like we're doing here using this object syntax
+
+Speaker
+
+over and over again.
+
+Speaker
+
+We are going to have a constructor function to
+
+Speaker
+
+do the heavy lifting.
+
+Speaker
+
+of creating objects.
+
+Speaker
+
+So how do constructive functions work?
+
+Speaker
+
+Well, if we go back to our machine analogy,
+
+Speaker
+
+We're going to give the machine the properties and methods that each object will need.
+
+Speaker
+
+Then,
+
+Speaker
+
+We can come in.
+
+Speaker
+
+and pass it specific data for a new object.
+
+Speaker
+
+It will process that.
+
+Speaker
+
+it will give us a new object with all of the properties and methods we specified.
+
+Speaker
+
+And because it's a constructor, we only need to set it up once, and it will give us as many objects as we want.
+
+Speaker
+
+Okay, so in the editor, I am going to delete Gamel 1.
+
+Speaker
+
+And I'll comment out Gamer.
+
+Speaker
+
+And let's set up a constructor called Gamer, which will make us as many gamers as we want.
+
+Speaker
+
+So the constructor is going to be a function.
+
+Speaker
+
+But unlike other functions, we're going to name it with an uppercase first letter.
+
+Speaker
+
+Now, the upper case first letter is not absolutely necessary, but it's a very, very strong convention.
+
+Speaker
+
+and you definitely should stick to it.
+
+Speaker
+
+Now, just like any other function declaration, we can open up the curly braces, and here we need to tell the constructor which properties we want our objects to have.
+
+Speaker
+
+And to do that,
+
+Speaker
+
+We use...
+
+Speaker
+
+This
+
+Speaker
+
+Now we've got two properties name and score.
+
+Speaker
+
+So I'm going to come in here and say this.name and
+
+Speaker
+
+and this dot score.
+
+Speaker
+
+And what we need to do now is assign the values that those properties will hold.
+
+Speaker
+
+But what are those values going to be?
+
+Speaker
+
+Well, we need to give our constructor a parameter for each property.
+
+Speaker
+
+So we need name.
+
+Speaker
+
+and school.
+
+Speaker
+
+And then we can assign these parameters to our properties.
+
+Speaker
+
+So whatever is passed in as name will be assigned to this.name and whatever is passed in a score will be assigned to this.score.
+
+Speaker
+
+OK, we're not quite done, but let's call a new instance of this gamer constructor and see where we are.
+
+Speaker
+
+So I'm going to set up a const
+
+Speaker
+
+Dave.
+
+Speaker
+
+And we can set Dave Equals to a new instance of Gamer.
+
+Speaker
+
+And let's just log out Dave.
+
+Speaker
+
+And down in the console, we've got an object, so the constructor is working, but the object is empty because we haven't passed in any data.
+
+Speaker
+
+So right here where we're setting up the new instance of gamer, let's pass in the
+
+Speaker
+
+name in the school.
+
+Speaker
+
+So the name is Dave and the score is zero.
+
+Speaker
+
+And now when we hit save.
+
+Speaker
+
+Look at that, we've got our object. It's got two properties named Dave.
+
+Speaker
+
+score zero.
+
+Speaker
+
+Okay, next up.
+
+Speaker
+
+need a method.
+
+Speaker
+
+And the method will also be set up on this.
+
+Speaker
+
+So it's this dot increment score.
+
+Speaker
+
+And we'll set that equals to an anonymous function.
+
+Speaker
+
+And this function can just have the same logic as the method on our object.
+
+Speaker
+
+And now we can test this by calling the method on Dave.
+
+Speaker
+
+I'll just come down here and I'll say Dave dot
+
+Speaker
+
+increments score.
+
+Speaker
+
+And of course it's a method, so I need to add the brackets. Let's hit save.
+
+Speaker
+
+And Dave's score is now one.
+
+Speaker
+
+Now, let's set up a few new instances of gamer with different data.
+
+Speaker
+
+So I'll go with Sarah and Kerry.
+
+Speaker
+
+And we'll log them out, but just to prove that each object is independent,
+
+Speaker
+
+I'm going to call the increment score function more times on some objects than others.
+
+Speaker
+
+We're going to build our own constructor function.
+
+Speaker
+
+So instead of repeating ourselves like we're doing here using this object syntax over and over again,
+
+Speaker
+
+We are going to have a constructor function to
+
+Speaker
+
+to do the heavy lifting.
+
+Speaker
+
+of creating objects.
+
+Speaker
+
+So how do constructive functions work?
+
+Speaker
+
+Well, if we go back to our machine analogy, we're going to give the machine the properties and methods that each object will need.
+
+Speaker
+
+Then, we can come in and pass it specific data for a new object.
+
+Speaker
+
+It will process that.
+
+Speaker
+
+And it will give us a new object with all of the properties and methods we specified.
+
+Speaker
+
+And because it's a constructor, we only need to set it up once, and it will give us as many objects as we want.
+
+Speaker
+
+Okay, so in the editor, I am going to delete Gamel1.
+
+Speaker
+
+And I'll comment out again.
+
+Speaker
+
+And let's set up a constructor called Gamer, which will make us as many gamers as we want.
+
+Speaker
+
+So the constructor is going to be a function.
+
+Speaker
+
+But unlike other functions, we're going to name it with an uppercase first letter.
+
+Speaker
+
+Now, the uppercase first letter is not absolutely necessary,
+
+Speaker
+
+But it's a very, very strong convention.
+
+Speaker
+
+and you definitely should stick to it.
+
+Speaker
+
+Now, just like any other function declaration, we can open up the curly braces, and here we need to tell the constructor which properties we want our objects to have.
+
+Speaker
+
+And to do that, we're
+
+Speaker
+
+We use
+
+Speaker
+
+this.
+
+Speaker
+
+Now we've got two properties name and score.
+
+Speaker
+
+So I'm going to come in here and
+
+Speaker
+
+say
+
+Speaker
+
+This is the name.
+
+Speaker
+
+and this dot score.
+
+Speaker
+
+And what we need to do now is assign the values that those properties will hold.
+
+Speaker
+
+But what are those values going to be?
+
+Speaker
+
+Well, we need to give our constructor a parameter for each property.
+
+Speaker
+
+So we need name.
+
+Speaker
+
+school.
+
+Speaker
+
+And then we can assign these parameters to our property.
+
+Speaker
+
+Peace.
+
+Speaker
+
+So whatever is passed in as name will be assigned to this dot name and whatever is passed in a score will be assigned to this dot score.
+
+Speaker
+
+OK, we're not quite done, but let's call a new instance of this gamer constructor and see where we are.
+
+Speaker
+
+So I'm going to set up a const Dave.
+
+Speaker
+
+And we can set Dave Equals to a new instance of Gamer.
+
+Speaker
+
+And let's just log out Dave.
+
+Speaker
+
+And down in the console, we've got an object, so the constructor is working.
+
+Speaker
+
+the object is empty because we haven't passed in any data.
+
+Speaker
+
+So right here where we're setting up the new instance of gamer,
+
+Speaker
+
+Let's pass in the name and the score.
+
+Speaker
+
+So the name is Dave and the score is zero.
+
+Speaker
+
+And now when we hit save.
+
+Speaker
+
+Look at that, we've got our object. It's got two properties named Dave.
+
+Speaker
+
+score zero.
+
+Speaker
+
+Okay, next up, we need a method.
+
+Speaker
+
+And the method will also be set up on this.
+
+Speaker
+
+So it's this dot increment score.
+
+Speaker
+
+And we'll set that equals to an anonymous function.
+
+Speaker
+
+And this function can just have the same logic as the method on our object.
+
+Speaker
+
+And now we can test this by calling the method on Dave, so I'll just come down here and I'll say Dave dot
+
+Speaker
+
+increments score.
+
+Speaker
+
+And of course it's a method, so I need to add the brackets. Let's hit save.
+
+Speaker
+
+And Dave's score is now one.
+
+Speaker
+
+And now that set up a few new instances of gamer with different data.
+
+Speaker
+
+So I'll go with Sarah and Kerry.
+
+Speaker
+
+And we'll log them out, but just to prove that each object is independent,
+
+Speaker
+
+I'm going to call the increment score function more times on some objects than others.
+
+Speaker
+
+Okay, so what we've done here is we've called increment score once on Dave.
+
+Speaker
+
+and twice on Sarah.
+
+Speaker
+
+and three times on Kerry.
+
+Speaker
+
+So when we log out Dave Sarah and Kerry,
+
+Speaker
+
+we should see scores of 1, 2, and 3 respectively.
+
+Speaker
+
+Let's give it a go.
+
+Speaker
+
+And look, it works. David's got a score of one, Sarah two.
+
+Speaker
+
+and carry three.
+
+Speaker
+
+So we've got independent individual objects for each of our gamers.
+
+Speaker
+
+But the important thing is we've bought it all down to this one constructor
+
+Speaker
+
+and this method is only written once. So if we want to make any change, all we need to do is update the code in this constructor.
+
+Speaker
+
+Now, we could actually do that right now because each of the gamers is starting with a score of zero.
+
+Speaker
+
+So there would actually be nothing wrong.
+
+Speaker
+
+we have taken this parameter away.
+
+Speaker
+
+And then hard coding this dot score to zero.
+
+Speaker
+
+And now I'll quickly update the new instances of the constructor.
+
+Speaker
+
+I'm when I save.
+
+Speaker
+
+We get exactly the same results.
+
+Speaker
+
+So whether you choose the hard code or property or not, just depends on your use case.
+
+Speaker
+
+Okay, take a moment to examine this syntax because in the next room.
+
+Speaker
+
+is time for a challenge.
+
+Speaker
+
+It's challenge time!
+
+Speaker
+
+And this challenge is a little bit tricky,
+
+Speaker
+
+I think you'll figure it out.
+
+Speaker
+
+We're building a constructor to create characters in a game, which is wizards, goblins, etc.
+
+Speaker
+
+So I want you to create a constructor function called
+
+Speaker
+
+character.
+
+Speaker
+
+I want you to give it name and collect it items array properties.
+
+Speaker
+
+name should hold the character's name.
+
+Speaker
+
+collected items array should hold an array of items, and you can initialize it to an empty array.
+
+Speaker
+
+So when we talk about collected items,
+
+Speaker
+
+I'm imagining that as the character goes through the game,
+
+Speaker
+
+They're picking things up, like maps, magic ones, health potions, etc.
+
+Speaker
+
+Now you can actually initialize this property to an empty array. There's no need to take that one in.
+
+Speaker
+
+as a parameter.
+
+Speaker
+
+Now when you've set up the properties, you can create an add item method.
+
+Speaker
+
+which takes in an item as a parameter
+
+Speaker
+
+and adds it to the collected items array.
+
+Speaker
+
+Add item method.
+
+Speaker
+
+should look out a sentence like, "Mirling now has
+
+Speaker
+
+wand map.
+
+Speaker
+
+and you can choose whichever name you want.
+
+Speaker
+
+and whichever items you want.
+
+Speaker
+
+And for number four, you get bonus points if you use an array method to
+
+Speaker
+
+to make it look neater.
+
+Speaker
+
+And I won't say any more about that.
+
+Speaker
+
+I'll leave you to figure that one out as a mini stretch goal.
+
+Speaker
+
+When you're done, check it's working by creating several instances of character and adding items to their arrays.
+
+Speaker
+
+Okay, quite a lot to do there, and I have up the complexity just a little bit.
+
+Speaker
+
+by giving you a bit more complex logic in the method.
+
+Speaker
+
+But I think if you take some time,
+
+Speaker
+
+be able to figure it out just fine.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+and get that challenge sorted.
+
+Speaker
+
+Okay, congratulations if you manage to do that without too many problems.
+
+Speaker
+
+a tough challenge, so really well done for getting through it.
+
+Speaker
+
+Okay, let's start off with number one. We'll create a constructor function called character.
+
+Speaker
+
+and we've got the uppercase first letter for character.
+
+Speaker
+
+Now we need to give it name and collected items array properties. So I'm going to set those up on this.
+
+Speaker
+
+and collected items array is going to be initialized to an empty array.
+
+Speaker
+
+And before we forget, name should come in as a parameter.
+
+Speaker
+
+Okay, now let's create the AddItem method.
+
+Speaker
+
+And it says, "It needs to take in an item as a parameter, an
+
+Speaker
+
+add it to the collected items array. So we can put this parameter right in here.
+
+Speaker
+
+You might have been tempted to try and add the parameter right there next to the name parameter. But that's going to cause you problems. We want to call this method separately to creating a new instance of character.
+
+Speaker
+
+We only want to create a new instance of character once for each character,
+
+Speaker
+
+that we might want to call this AddItem method many times.
+
+Speaker
+
+So, let's take the parameter item in here.
+
+Speaker
+
+And this method needs to add the item to the collected items array. So we can access that with this.
+
+Speaker
+
+And we can just push the item.
+
+Speaker
+
+And now we want to look out this phrase that has the name of the character
+
+Speaker
+
+and a list of the items they hold.
+
+Speaker
+
+And we can start with this dot name.
+
+Speaker
+
+Now has.
+
+Speaker
+
+This dot collected items array.
+
+Speaker
+
+Okay, we're pretty much done with that. Let's check its working by creating a couple of new instances.
+
+Speaker
+
+So for Wizard, I'm going to set up a new character and I'm going to give it the name Merlin.
+
+Speaker
+
+And that's not especially creative, but it doesn't matter.
+
+Speaker
+
+Now, we only need to give one parameter name.
+
+Speaker
+
+So let's come down here.
+
+Speaker
+
+And we'll call the Add Item Method on Wizard.
+
+Speaker
+
+And what uses a wizard without a wand? So let's give the wizard a wand.
+
+Speaker
+
+And when we hit save...
+
+Speaker
+
+Look down in the console, we've got the sentence "Murlin' Now Has WON'T."
+
+Speaker
+
+Let's give the wizard a few more items.
+
+Speaker
+
+And when I save that,
+
+Speaker
+
+Now we're getting this comma separated list and we could make that a little bit neater for a start I think I'll add a colon.
+
+Speaker
+
+But also, let's use the Join method.
+
+Speaker
+
+And join allows us to join the elements of an array into a string at
+
+Speaker
+
+and we can choose how they're separated.
+
+Speaker
+
+Now it will separate by commerce as default, but what we want is probably a comma and a space. So let's just pass that in as a string.
+
+Speaker
+
+And now when I save, there we are, we've got a nice comma separated list.
+
+Speaker
+
+And let's set up one more character.
+
+Speaker
+
+It's a witch and I'll call her Hermione.
+
+Speaker
+
+Again, not that creative, and let's give Hermione some items.
+
+Speaker
+
+And when we say that...
+
+Speaker
+
+Look, we've got all of our sentences.
+
+Speaker
+
+Hermione now has sword.
+
+Speaker
+
+and then cloak of invisibility as well.
+
+Speaker
+
+So the constructor is working. And again, congratulations if you figured out all of that, because as I say, it was quite a tricky challenge as a
+
+Speaker
+
+a little bit of logic to think about as well.
+
+Speaker
+
+your first time creating your own constructor function.
+
+Speaker
+
+really, really well done for getting that sorted.
+
+Speaker
+
+Now in the next grim, we're going to look at another way of creating objects using the class syntax.
+
+Speaker
+
+So that's quite similar in outcome to the constructor function.
+
+Speaker
+
+but with quite different syntax.
+
+Speaker
+
+So when you're ready for that,
+
+Speaker
+
+move on to the next scrim.
+
+Speaker
+
+In this scrim, we're going to rebuild our constructor function as a class.
+
+Speaker
+
+But first, let's answer the question, what are classes?
+
+Speaker
+
+Well, the class syntax gives us another way of doing what constructive functions do.
+
+Speaker
+
+producing an infinite number of objects with the same properties and methods.
+
+Speaker
+
+So, a class is exactly the same as constructor functions.
+
+Speaker
+
+Well, no, there are differences under the hood.
+
+Speaker
+
+But for now, it's absolutely enough to know that a class is a special kind of function.
+
+Speaker
+
+that works as a template for creating objects.
+
+Speaker
+
+And the output that we're going to see in this scrim.
+
+Speaker
+
+an object.
+
+Speaker
+
+will be exactly the same as the output we got from the constructor function.
+
+Speaker
+
+Over in the editor, I'm going to move this constructor function out of the way into its own file.
+
+Speaker
+
+But I'm not going to delete it because I want to refer to it later.
+
+Speaker
+
+Okay, let's get started on building the class. So I'm going to start with the class keyword.
+
+Speaker
+
+And we're going to call this class "get".
+
+Speaker
+
+And just like with the constructor function, I've used an uppercase first letter.
+
+Speaker
+
+Now I'm going to open up the curly braces.
+
+Speaker
+
+And notice how we've gone straight from the name of the class to the curly braces. There are no brackets. Now inside the body of the class, I want to introduce a new concept.
+
+Speaker
+
+We're going to have a constructor method.
+
+Speaker
+
+And we create that.
+
+Speaker
+
+with the constructor keyword.
+
+Speaker
+
+Now a method is a function, so we need the brackets and then we can open up the curly braces. And just to be clear, constructor is a key word, it's fixed.
+
+Speaker
+
+it cannot be called anything else.
+
+Speaker
+
+So, what do we do with this constructor method?
+
+Speaker
+
+Well, this is where we initialize the objects that we're creating with their properties.
+
+Speaker
+
+And just like a constructor function,
+
+Speaker
+
+classes can have one or more methods, but anything that we might later use in one of our own methods,
+
+Speaker
+
+needs to be set up first in the constructor method.
+
+Speaker
+
+Let's just pop back to the constructor function.
+
+Speaker
+
+and we've got these two properties name and score.
+
+Speaker
+
+So I'm going to take both of them.
+
+Speaker
+
+And we can just paste them in right here.
+
+Speaker
+
+Now, in the constructor function, we took in the data to initialize these properties as parameters, name and score.
+
+Speaker
+
+And we're going to do exactly the same thing.
+
+Speaker
+
+with this constructor.
+
+Speaker
+
+They're going to go right here.
+
+Speaker
+
+in these brackets.
+
+Speaker
+
+Now, underneath the constructor, we can add our method.
+
+Speaker
+
+The syntax for this again is a little bit different. We don't need to use this as
+
+Speaker
+
+and we don't need to use the function keyword.
+
+Speaker
+
+All we need to do is to care a function name, which in this case is increment score.
+
+Speaker
+
+And then we need the brackets.
+
+Speaker
+
+and the curly braces.
+
+Speaker
+
+The logic in this method will be exactly the same as the logic we had before in the constructor function, so let's just borrow that.
+
+Speaker
+
+And now I can hit save and see what we get.
+
+Speaker
+
+And if we look down in the console, we have got
+
+Speaker
+
+name Dave and
+
+Speaker
+
+school of one.
+
+Speaker
+
+because we kept this code from before in
+
+Speaker
+
+In exactly the same way, we're setting up a new instance of gamer.
+
+Speaker
+
+passing in Dave, we're passing in the score.
+
+Speaker
+
+And then we're calling the increment score method.
+
+Speaker
+
+So it's working, and it does look a little bit different to a constructor function.
+
+Speaker
+
+But it's doing essentially the same thing.
+
+Speaker
+
+Let's set up another instance of Gamer and we're going to call this one Sarah.
+
+Speaker
+
+Our logout Sarah as well, and when we hit save, we
+
+Speaker
+
+We see two objects in the console.
+
+Speaker
+
+Dave has got a score of one because we've called increment score.
+
+Speaker
+
+Sarah has got a score of zero.
+
+Speaker
+
+because we have not incremented her score.
+
+Speaker
+
+And that is the class syntax.
+
+Speaker
+
+Now, the biggest difference that you're likely to notice between constructor functions and classes
+
+Speaker
+
+is this.
+
+Speaker
+
+If we take these two lines of code right here,
+
+Speaker
+
+And I cut them.
+
+Speaker
+
+and paste them
+
+Speaker
+
+above where we've declared the class.
+
+Speaker
+
+Let's see what happens when we save.
+
+Speaker
+
+We get an era reference era cannot access gamer
+
+Speaker
+
+for initialization.
+
+Speaker
+
+Now, that doesn't happen with a constructor function,
+
+Speaker
+
+Because a constructor function is a type of function declaration and function declarations are hoisted.
+
+Speaker
+
+which means it doesn't matter if you call them before or after they've been declared.
+
+Speaker
+
+Now classes are not hoisted, which means you have to call them after they've been declared.
+
+Speaker
+
+So let's put that back where it belongs.
+
+Speaker
+
+Now, whether you prefer to use a constructor function or a class is mostly a matter of personal taste.
+
+Speaker
+
+or in professional circumstances, it depends on the how style that your team is using.
+
+Speaker
+
+But actually, and this is quite important, most developers don't use constructor functions or classes in vanilla JavaScript very much.
+
+Speaker
+
+A lot of what used to be done with classes and constructor functions is now done much more easily with frameworks like React.
+
+Speaker
+
+And that's why we're only taking this relatively quick look at constructor functions and classes.
+
+Speaker
+
+There is a lot more you can do with classes.
+
+Speaker
+
+You can create classes that inherit properties and methods from other classes, for example.
+
+Speaker
+
+But as I say, you really write this code in the real world, and from our experience of speaking to hiring managers and developers,
+
+Speaker
+
+The deeper understanding of classes
+
+Speaker
+
+is really not necessary at this stage.
+
+Speaker
+
+It's much better to have a deeper understanding of the aspects of JavaScript and the frameworks like React.
+
+Speaker
+
+which are used on a day-to-day basis.
+
+Speaker
+
+So, by all means, do some googling around classes and inheritance if you'd like to.
+
+Speaker
+
+Background knowledge is always a good thing.
+
+Speaker
+
+but I wouldn't recommend spending too long on it.
+
+Speaker
+
+Okay, with that said, in the next grim,
+
+Speaker
+
+Let's have a class-based challenge.
+
+Speaker
+
+Here's the constructor function from the scrim before last.
+
+Speaker
+
+your challenge is to rebuild it.
+
+Speaker
+
+as a class.
+
+Speaker
+
+Feel free to go back to the previous grim if you need to check the class syntax.
+
+Speaker
+
+In fact,
+
+Speaker
+
+is very likely that you'll need to do that the first time.
+
+Speaker
+
+But don't copy and paste.
+
+Speaker
+
+make sure you type everything by hand.
+
+Speaker
+
+build up that muscle memory.
+
+Speaker
+
+It's the only way to learn use in tax and make it stick.
+
+Speaker
+
+Okay, pause now, take all of the time you need.
+
+Speaker
+
+and we'll have a look together.
+
+Speaker
+
+just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that just fine.
+
+Speaker
+
+So I am going to come in here.
+
+Speaker
+
+Fine, so I am going to come in here.
+
+Speaker
+
+And I'll use the class keyword.
+
+Speaker
+
+And we're going to keep the same name character.
+
+Speaker
+
+With the uppercase C
+
+Speaker
+
+And then I'll open up the curly braces.
+
+Speaker
+
+Now we need our constructor method.
+
+Speaker
+
+And this is where we will initialize the properties. So I'm just going to take these two right here.
+
+Speaker
+
+And this first one, name, needs to come into the constructor as a parameter.
+
+Speaker
+
+Okay, under "n" if the constructor, we can set up our own method. So remember, we don't need this and we don't need the function keyword. Let's just take the name of the method, add item.
+
+Speaker
+
+and then give it the brackets and the curly braces. Now remember this method also took in a parameter in the constructor function and
+
+Speaker
+
+And it's no different here.
+
+Speaker
+
+And again, we can keep the same logic.
+
+Speaker
+
+Okay, let's delete this constructor function.
+
+Speaker
+
+And check if everything's working. And in the console, we've got Merlin now has a wand.
+
+Speaker
+
+So that
+
+Speaker
+
+working.
+
+Speaker
+
+Let's give Merlin a few new items.
+
+Speaker
+
+And that is working just fine. Let's just create one more instance.
+
+Speaker
+
+So now we've got a new instance called which and I'm just adding a map and a rope to the witches collected items.
+
+Speaker
+
+Let's save that.
+
+Speaker
+
+And there we are, it is working just fine.
+
+Speaker
+
+Okay, that is the last challenge of this module, so congratulations on making it through to the end.
+
+Speaker
+
+Really good job.
+
+Speaker
+
+Let's just take a couple more scrims to wrap things up.
+
+Speaker
+
+Let's talk about what happens when it all goes wrong.
+
+Speaker
+
+When there are problems with our code, we can get some error messages in the console, but they can sometimes be quite confusing. Here's an app which takes in your age.
+
+Speaker
+
+tells you if you're old enough to buy alcohol or drive a car in a country or jurisdiction.
+
+Speaker
+
+So you can come in here to line 6 and 7 and this is where you can set the ages for a given jurisdiction. So at the moment this is set to parts of the USA where the minimum drinking age is 21 and the minimum driving age is 16.
+
+Speaker
+
+But you can change these to values relevant to the country you're in at any given time.
+
+Speaker
+
+Let's look at how the app should work with some screenshots.
+
+Speaker
+
+So I come in here with my age 14. I hit check.
+
+Speaker
+
+And it says, "I'm sorry you cannot drink or drive."
+
+Speaker
+
+Well, let's see what happens if I put in say 17.
+
+Speaker
+
+Now it tells me you can drive but you cannot drink.
+
+Speaker
+
+And if I go for 22, it says you can drink and drive.
+
+Speaker
+
+not of course at the same time.
+
+Speaker
+
+So that is how it should work.
+
+Speaker
+
+And if we just scroll down here,
+
+Speaker
+
+We've got the logic which deals with all of these situations.
+
+Speaker
+
+If your age is below the minimum drink age and the minimum drive age, you get the message, "I'm sorry you cannot drink or drive."
+
+Speaker
+
+The first El Cif here is relevant to countries where the minimum drink age is less than the minimum drive age.
+
+Speaker
+
+So in some countries like Luxembourg, you can drink alcohol at 16, but you can't drive until you're 18.
+
+Speaker
+
+The next El Cif is relevant to countries where the minimum drive age is less than the minimum drink age.
+
+Speaker
+
+That's true for countries like the USA and the UK, and then lastly, we deal with the situation where you're old enough to both drink.
+
+Speaker
+
+and drive.
+
+Speaker
+
+Now there's a problem with this app.
+
+Speaker
+
+And the problem is, it doesn't work.
+
+Speaker
+
+In fact, as soon as I load the app,
+
+Speaker
+
+actually getting an error down in the console.
+
+Speaker
+
+Now, if you'd like some debug practice, a really good idea to just pause now and see if you can make this app work.
+
+Speaker
+
+And afterwards we'll go through it step by step.
+
+Speaker
+
+and discuss the errors.
+
+Speaker
+
+Okay, let's investigate the errors we get.
+
+Speaker
+
+Firstly, we're getting the syntax error missing
+
+Speaker
+
+closing bracket after argument list.
+
+Speaker
+
+So this one is fairly clear and if we scroll down,
+
+Speaker
+
+we can see that we've got the red line under this function keyword. So that's giving us a clue as to roughly where the error is located.
+
+Speaker
+
+Now there's no problem with this function keyword, so it's actually directing us to what comes directly before the function keyword.
+
+Speaker
+
+And if we scroll up,
+
+Speaker
+
+We've got this event listener and we've got the opening bracket here.
+
+Speaker
+
+but we never actually closed that bracket.
+
+Speaker
+
+Now if we come down here and close off the bracket and the red line disappears.
+
+Speaker
+
+Now, when we save that, we're going to get the next error. So before we do that, I'll just quickly show you that if we had, for example, too many closing brackets,
+
+Speaker
+
+We would actually see another type of syntax error.
+
+Speaker
+
+It says syntax error.
+
+Speaker
+
+unexpected token and then we've got the closing bracket with the red line underneath, that's the one we don't want.
+
+Speaker
+
+Okay, that should solve that error. Let's hit save and see what we get next.
+
+Speaker
+
+And we actually get a type error.
+
+Speaker
+
+It's saying check button dot value dot add event listener is not a function.
+
+Speaker
+
+So these errors that tell you something is not a function can be really frustrating.
+
+Speaker
+
+But what it essentially means is that JavaScript was expecting to get a value from a function or a method that failed to do so.
+
+Speaker
+
+Now we're not actually getting a red line in this one to point us in the right direction.
+
+Speaker
+
+So what we need to do is just check that error. It says check button dot value dot ad event listener is not a function.
+
+Speaker
+
+So we've got that code right here.
+
+Speaker
+
+And actually, we can see we don't want to be listening for an event on the value.
+
+Speaker
+
+And indeed we can't, we need the event listener to be on an element or the document.
+
+Speaker
+
+So that is what's causing this method to fail and to generate this error.
+
+Speaker
+
+And that's a great example of an error message that is actually not too clear in its help.
+
+Speaker
+
+Okay, let's delete value.
+
+Speaker
+
+I will hit save.
+
+Speaker
+
+And we don't get any errors, so maybe we've solved all of the problems.
+
+Speaker
+
+Let's come in here.
+
+Speaker
+
+And I'm going to put my age as 22.
+
+Speaker
+
+I click check.
+
+Speaker
+
+And look, we've got reference error, age input is not defined.
+
+Speaker
+
+Okay, let's deal with that one.
+
+Speaker
+
+Erasmich tells us something is not defined are really, really common. And I can actually see the problem right here. We've got age input.
+
+Speaker
+
+And we haven't got normal camel case here. We're actually starting with an uppercase first letter.
+
+Speaker
+
+Let's just scroll up a second.
+
+Speaker
+
+And here we're declaring the const age input, but here we've got proper camel case.
+
+Speaker
+
+So
+
+Speaker
+
+has got lowercase a but
+
+Speaker
+
+input has got an uppercase i. So this is a straightforward typo.
+
+Speaker
+
+So when we save that...
+
+Speaker
+
+the error disappears. Now it's worth remembering that you get a very similar error when you try and use a variable that doesn't exist.
+
+Speaker
+
+Let's just log out marrying age.
+
+Speaker
+
+And when I hit save, I get meringue age is not defined, and that makes absolute sense because we haven't defined it anywhere.
+
+Speaker
+
+Okay, so it looks like we've cleared all of the errors. Now let's try using the app again. So I'll put in my age 22, which is actually not my real age.
+
+Speaker
+
+And it says, "I'm sorry."
+
+Speaker
+
+You cannot drink or drive.
+
+Speaker
+
+What at age 22?
+
+Speaker
+
+Well, it says here the minimum drink age is 21 and the minimum drive age is 16.
+
+Speaker
+
+So I should be able to.
+
+Speaker
+
+Let's see what happens when I put in 10.
+
+Speaker
+
+So, obviously, in any sane country a ten-year-old cannot drink and cannot drive a car.
+
+Speaker
+
+But it says here you can drink and drive.
+
+Speaker
+
+Okay, we are getting some pretty weird results.
+
+Speaker
+
+Now here's a problem, you see, the errors that we've looked at already have been syntax errors.
+
+Speaker
+
+Our code was syntactically incorrect and that stopped it working.
+
+Speaker
+
+Now, we're not getting any errors, so we have to assume our code is syntactically correct.
+
+Speaker
+
+But what's happened is, we've asked it to do the wrong thing.
+
+Speaker
+
+And that's why we're not getting the results we expect.
+
+Speaker
+
+Now, if you didn't manage to debug this one before, or you didn't notice it wasn't working, pause and have a go now.
+
+Speaker
+
+I click check.
+
+Speaker
+
+And look, we've got reference error, age input is not defined.
+
+Speaker
+
+Okay, let's deal with that one.
+
+Speaker
+
+Erasmich tells us something is not defined are really, really common and I can actually see the problem right here. We've got age input.
+
+Speaker
+
+And we haven't got normal camel case here, we're actually starting with an uppercase first letter. Let's just scroll up a second.
+
+Speaker
+
+And here we're declaring the const age input, but here we've got proper camel case.
+
+Speaker
+
+So
+
+Speaker
+
+has got a lowercase a but input has got an uppercase i. So this is a straightforward that you get a very similar varying age is not defined and save I get not marrying a
+
+Speaker
+
+And when I hit save, I get meringage is not defined, and that makes absolute sense because we each...
+
+Speaker
+
+And it says, "I'm sorry."
+
+Speaker
+
+You cannot drink or drive, it's too.
+
+Speaker
+
+1 and the minimum dr not drink. Now here's a problem. You see, the errors that we've looked at already have been syntax errors.
+
+Speaker
+
+Our code was syntactically incorrect and that stopped it working.
+
+Speaker
+
+Now, we're not getting any errors, so we have to assume our code is syntactically correct.
+
+Speaker
+
+But what's happened is we've asked it to do the wrong thing.
+
+Speaker
+
+And that's why we're not getting the results we expect.
+
+Speaker
+
+Now if you didn't manage to debug this one before or you didn't notice it wasn't working,
+
+Speaker
+
+and have a go now.
+
+Speaker
+
+Okay, so hopefully you noticed that the problem that we've got here is that we've got greater than here.
+
+Speaker
+
+And here,
+
+Speaker
+
+and these actually want to be less than.
+
+Speaker
+
+Okay, let's hit save and try that. I'll put in age 10.
+
+Speaker
+
+That works. I'll go for age 17, which is between the minimum drive age and
+
+Speaker
+
+the minimum drink cage.
+
+Speaker
+
+And it tells us we can drive, but we cannot drink, which is correct.
+
+Speaker
+
+age 22.
+
+Speaker
+
+And we can do both.
+
+Speaker
+
+Now let's flip these round, so I'm going to go for a minimum drinkage of 16.
+
+Speaker
+
+A minimum drive age of 18.
+
+Speaker
+
+When we save that, I'll come in here and I'll put in 17.
+
+Speaker
+
+And we get the last possible outcome you can drink.
+
+Speaker
+
+but you cannot drive.
+
+Speaker
+
+So the app is fully working, and that last era was a good example of what's called a logic era.
+
+Speaker
+
+The code was syntactically correct. It was working as it was told to work, but it was being asked to do the wrong thing.
+
+Speaker
+
+Okay, that is as deep as we're going to go into error messages.
+
+Speaker
+
+If you'd like to dig a bit deeper into errors, this screenshot is linked through to the MDN.doc on JavaScript errors.
+
+Speaker
+
+Now we've got a few more debugging concepts to look at.
+
+Speaker
+
+So let's continue this in the next scrim.
+
+Speaker
+
+Let's take
+
+Speaker
+
+more advanced look at
+
+Speaker
+
+debugging and how we can avoid errors. Here's an app I'm making for a hotel booking website.
+
+Speaker
+
+Have you noticed that whenever you go on holiday these days, there seems to be some kind of surcharge.
+
+Speaker
+
+Whether it's taking extra bags onto a plane or a single person search, when you check into a hotel,
+
+Speaker
+
+like everybody wants to make money from tourists.
+
+Speaker
+
+Well, this function right here is doing exactly that.
+
+Speaker
+
+is part of a hotels website and adds a $10 tourist surcharge to every hotel booking.
+
+Speaker
+
+It's fairly simple, it takes in a payment as a parameter and just adds 10 to the payment and logs it out.
+
+Speaker
+
+And we're calling it here with the number 60. So $60 is the price of one night at this hotel.
+
+Speaker
+
+And of course, we're managing to log out 70. But what would happen if the argument that we pass in is not a number?
+
+Speaker
+
+Imagine we pass in 60, but it's a string.
+
+Speaker
+
+Well, now look what we log out. We get 6010.
+
+Speaker
+
+And that figures, because JavaScript has concatenated 60 and 10 together. Remember, the plus sign in JavaScript can be two things. It can be a mathematical operator.
+
+Speaker
+
+adding 2+2 and getting 4.
+
+Speaker
+
+or it can concatenate. And in this case, following the rules of type coercion,
+
+Speaker
+
+The number 10 has been coerced into a string.
+
+Speaker
+
+and the two strings have been concatenated to
+
+Speaker
+
+Okay, so let's refactor this function to fix the problem.
+
+Speaker
+
+we could just come in here with a conditional.
+
+Speaker
+
+Okay, so now we're checking the type of the payment. If it's triple equals to number, then this code will run. But if it's not, then nothing should happen. Let's hit save.
+
+Speaker
+
+And look, nothing happens. We'll change this to a number, so we'll just delete the inverted commas. So that works, but there's something much more sophisticated I want to show you.
+
+Speaker
+
+What I'm going to do is come in here and set up a tri-block.
+
+Speaker
+
+I will paste this logic inside the tri-blower.
+
+Speaker
+
+So now the app will try to run this code. Now we're going to add an else.
+
+Speaker
+
+And here, if payment is not a number, then what we want to do is use the error constructor. So we'll take the keyword throw.
+
+Speaker
+
+And what we're going to throw is a new instance of the reference error object.
+
+Speaker
+
+And we can pass in a string containing our error, and that might as well just be payment is not a number.
+
+Speaker
+
+Okay, you can tell from the red line here that we're not quite done.
+
+Speaker
+
+We've got this tri-block and what we need next is the catch block.
+
+Speaker
+
+Now the catch block will take in an error as a parameter and I'm just going to abbreviate this to E-double R.
+
+Speaker
+
+Now we'll open up the brackets and here what do we want to do with that error? Well, we can use console.error.
+
+Speaker
+
+And let's just say, "era."
+
+Speaker
+
+colon space and then we can concatenate on the error that we're taking in as the parameter.
+
+Speaker
+
+Okay, let's get safe and see if it's working.
+
+Speaker
+
+So that's working just fine, but we're passing in a number. Now let's pass this in as a string.
+
+Speaker
+
+I'm when I hit save.
+
+Speaker
+
+We get our error. Reference error, payment is not a number.
+
+Speaker
+
+So using tri-catch in this way is a really, really good way of
+
+Speaker
+
+try and code and dealing with what happens if it doesn't work as expected. As you go on to learn to work with APIs because you're incorporating say the open AI API into your app
+
+Speaker
+
+then you're going to use Tri-Catch blocks a lot.
+
+Speaker
+
+Now there are some more advanced debugging concepts I want to look at quickly. If you open up the console in a browser like Firefox or Chrome and you go to the sources tab, you're going to see some really useful debugging tools over on the right hand side.
+
+Speaker
+
+and I just want to bring your attention to two of the most commonly used. So we have got...
+
+Speaker
+
+Using breakpoints is a powerful way to inspect and understand how your code executes.
+
+Speaker
+
+Basically, you set a breakpoint in your code and you run that code until it hits that breakpoint, allowing you to see what happens up to that point. So really, really useful in complex code bases to discover what is going on.
+
+Speaker
+
+You can also use breakpoints to execute your code step-by-step.
+
+Speaker
+
+until you find the bug that's causing you problems.
+
+Speaker
+
+Now another great advanced debugging option is Watchers.
+
+Speaker
+
+and watches monitor the value of your variables or expressions.
+
+Speaker
+
+over time as you step through your code.
+
+Speaker
+
+So that's really useful when you need to observe how and when a value changes during the execution of your program. Now advanced debugging is beyond the scope of this course, but if you'd like to read up on the topic, this slide is a link to the Firefox debugging docs.
+
+Speaker
+
+similar docs are available for the common browsers like Chrome and Safari, etc.
+
+Speaker
+
+do check that out, a really interesting and useful topic.
+
+Speaker
+
+Okay.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Congratulations on completing those challenges. That is such a big achievement.
+
+Speaker
+
+These concepts are really tough, and now you've got them under your control, you're well on your way to becoming a JavaScript genius.
+
+Speaker
+
+Let's check back on what we did.
+
+Speaker
+
+So we looked up object destructuring two more easily extract values from objects with less code.
+
+Speaker
+
+We use the map method to iterate over an array and
+
+Speaker
+
+call a function on each element in the array.
+
+Speaker
+
+and provide us with a new array.
+
+Speaker
+
+and we used the join method chained on to the map method to concatenate the elements of an array into a string.
+
+Speaker
+
+Next up, we looked at function expressions, which gave us non-hoysted functions.
+
+Speaker
+
+and arrow functions, which are ultra-concise function expressions, which are great for passing to methods.
+
+Speaker
+
+We took a deeper dive into import and export and looked at named versus default exports.
+
+Speaker
+
+and using the ASCII word
+
+Speaker
+
+to rename an import.
+
+Speaker
+
+We studied the dot-red juice method, which is one of the more difficult methods in JavaScript.
+
+Speaker
+
+And we used it to iterate over an array and reduce it down to one value.
+
+Speaker
+
+Next, we saw default parameters and
+
+Speaker
+
+And we use default parameters to give a default value to a function
+
+Speaker
+
+to control what happens when an expected parameter.
+
+Speaker
+
+doesn't get passed to it.
+
+Speaker
+
+Then we use the "Turnerie" operator for writing more concise conditional logic.
+
+Speaker
+
+Rest parameters gave us the ability to collect up any number of arguments that are passed to a function.
+
+Speaker
+
+in one parameter.
+
+Speaker
+
+and we used the spread operator to expand arrays into their elements.
+
+Speaker
+
+We looked at short circuiting using the AND and OR operators to execute code under certain conditions.
+
+Speaker
+
+And finally, we saw some inbuilt JavaScript constructors like the date constructor
+
+Speaker
+
+And then we built our own constructor functions.
+
+Speaker
+
+which we then converted to classes, they both do a similar thing in creating objects from a template.
+
+Speaker
+
+Wow, that is quite some list.
+
+Speaker
+
+me very proud of yourself for getting that done, you absolutely nailed it.
+
+Speaker
+
+And now, after a well-deserved rest.
+
+Speaker
+
+move on to the solo project
+
+Speaker
+
+this module.
+
+Speaker
+
+Now it's time for you to build a new solo project.
+
+Speaker
+
+And this time you're going to build a mobile ordering app for you.
+
+Speaker
+
+a restaurant.
+
+Speaker
+
+And this is it.
+
+Speaker
+
+Now, this app has got several features, so let's explore it.
+
+Speaker
+
+And then we'll look at the requirements that you need to meet.
+
+Speaker
+
+to successfully complete the solo project.
+
+Speaker
+
+So the four stages of the app.
+
+Speaker
+
+are these. We have got three items on the menu, a pizza and
+
+Speaker
+
+hamburger and a beer.
+
+Speaker
+
+and these are rendered using JavaScript.
+
+Speaker
+
+Now, we've given you the data that you need right here in data.js.
+
+Speaker
+
+It's an array of objects.
+
+Speaker
+
+and each object has got one menu item.
+
+Speaker
+
+Just with its name.
+
+Speaker
+
+ingredients in an array.
+
+Speaker
+
+an ID
+
+Speaker
+
+price and an emoji.
+
+Speaker
+
+Now when a user clicks on the plus button,
+
+Speaker
+
+A new section called Your Order should appear at the
+
+Speaker
+
+bottom.
+
+Speaker
+
+This should show whatever they've added to that order with its price.
+
+Speaker
+
+the option to remove it.
+
+Speaker
+
+A total price of everything they've ordered
+
+Speaker
+
+and a complete order button.
+
+Speaker
+
+And when they click on the complete order button,
+
+Speaker
+
+They should be presented with this
+
+Speaker
+
+>>
+
+Speaker
+
+modal.
+
+Speaker
+
+Now, this has got three input fields and a button.
+
+Speaker
+
+and they all exist inside an HTML form.
+
+Speaker
+
+These inputs are compulsory.
+
+Speaker
+
+If a user clicks pay and one of these fields is empty,
+
+Speaker
+
+the user should get a prompt from the browser that looks like this.
+
+Speaker
+
+Now when the user has completed the form and they click "Pay"
+
+Speaker
+
+The "your order" section is replaced by this message, which tells them that that order is on the way.
+
+Speaker
+
+Okay, quite a lot going on, so let's recap.
+
+Speaker
+
+the requirements are the
+
+Speaker
+
+that you should follow this design spec.
+
+Speaker
+
+You should render the menu options using JavaScript.
+
+Speaker
+
+A user should be able to add an item to the order with this plus button.
+
+Speaker
+
+and remove it from the order
+
+Speaker
+
+with this remove button that is right down here next to the item in the menu.
+
+Speaker
+
+The payment model that we just saw should hold an HTML form.
+
+Speaker
+
+and the input fields should be compiled.
+
+Speaker
+
+Now, if you feel ready for a bigger challenge,
+
+Speaker
+
+How about some stretch goals?
+
+Speaker
+
+Only take these on if you're really ready for it. The important thing is that you complete the solo project.
+
+Speaker
+
+This is an optional end.
+
+Speaker
+
+You could change the theme.
+
+Speaker
+
+This does not have to be a restaurant ordering app.
+
+Speaker
+
+If it has this functionality, it
+
+Speaker
+
+could be almost anything.
+
+Speaker
+
+And obviously, if you do this, you're allowed to change the style. So one of the requirements is
+
+Speaker
+
+is to follow this design spec.
+
+Speaker
+
+If you're changing the theme, of course you'll need to change the style.
+
+Speaker
+
+but do be aware that working with a Figma design spec
+
+Speaker
+
+is a key web developer skill.
+
+Speaker
+
+So do
+
+Speaker
+
+Practice it.
+
+Speaker
+
+Another idea might be to add a meal deal discount.
+
+Speaker
+
+So perhaps if a food item and a drink is bought together?
+
+Speaker
+
+There's a 15% reduction in price.
+
+Speaker
+
+Also, you could allow users to rate their ordering experience at the end of the process,
+
+Speaker
+
+perhaps by giving it zero to five.
+
+Speaker
+
+stars.
+
+Speaker
+
+Okay, so those are the stretch goals.
+
+Speaker
+
+only take them on if you really feel ready.
+
+Speaker
+
+Now to get to the Figma file, you can come onto this slide and click on this image and
+
+Speaker
+
+And as always, when you're in Figma,
+
+Speaker
+
+click this down arrow.
+
+Speaker
+
+and select duplicate.
+
+Speaker
+
+and that will give you your own files to work with.
+
+Speaker
+
+Now, if you need to brush up on Figma,
+
+Speaker
+
+that is a link to a figmat tutorial right here.
+
+Speaker
+
+Just click that.
+
+Speaker
+
+will take you straight there.
+
+Speaker
+
+Now, we want this solo project to be a challenge,
+
+Speaker
+
+Don't tie yourself in knots and get frustrated.
+
+Speaker
+
+If you get stuck.
+
+Speaker
+
+Come onto this slide.
+
+Speaker
+
+click through to this help section.
+
+Speaker
+
+and we will give you some hints and tips.
+
+Speaker
+
+tips that will get you going.
+
+Speaker
+
+Okay, I'm going to leave you with this reminder of the requirements.
+
+Speaker
+
+You can click on this image to get to the Figma files.
+
+Speaker
+
+and remember you have got that help document if you need it.
+
+Speaker
+
+When you're done, move onto the next grim and we'll talk about what to do when you finish the solo project.
+
+Speaker
+
+But for now, get to work.
+
+Speaker
+
+and I wish you the very best of luck.
+
+Speaker
+
+Learn so much and built me.
+
+Speaker
+
+Now it's time
+
+Speaker
+
+And for you to build a new
