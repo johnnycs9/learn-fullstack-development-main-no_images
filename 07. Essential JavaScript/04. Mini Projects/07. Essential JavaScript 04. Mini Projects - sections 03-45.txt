@@ -1,0 +1,10749 @@
+
+In this section, we're going to explore a lot of new JavaScript concepts.
+
+Speaker
+
+that won't be one unifying project as you've seen in the other sections of this module.
+
+Speaker
+
+Instead,
+
+Speaker
+
+We're going to work on various mini projects.
+
+Speaker
+
+a mixture of tutorial scrims.
+
+Speaker
+
+challenges.
+
+Speaker
+
+Sometimes we'll be working with the mini browser creating apps like these.
+
+Speaker
+
+and other times we'll be working just with the console.
+
+Speaker
+
+There's a lot to get through, so let's check what we're going to study.
+
+Speaker
+
+We are going to look at object destructuring.
+
+Speaker
+
+We'll be using the map method.
+
+Speaker
+
+The Join method.
+
+Speaker
+
+We'll be going beyond function declarations to look at function expressions and arrow functions and we'll take a deeper dive into import and export.
+
+Speaker
+
+Then, we'll look at the reduce method, which is one of the more difficult array methods.
+
+Speaker
+
+But we're not done, we've also got default parameters.
+
+Speaker
+
+the TANORI operator.
+
+Speaker
+
+Rest parameters.
+
+Speaker
+
+the Spread Operator.
+
+Speaker
+
+Short-circuiting.
+
+Speaker
+
+instructor functions.
+
+Speaker
+
+and JavaScript classes, and even that is not the complete list.
+
+Speaker
+
+Now that is a lot of JavaScript.
+
+Speaker
+
+So, let's take a deep breath.
+
+Speaker
+
+And dive in!
+
+Speaker
+
+Let's take a look at object destructuring.
+
+Speaker
+
+which is going to make your coding life.
+
+Speaker
+
+much easier.
+
+Speaker
+
+What exactly is it?
+
+Speaker
+
+Well, object destructuring enables us to extract properties from objects
+
+Speaker
+
+into distinct variables.
+
+Speaker
+
+And if that doesn't immediately make sense to you, don't worry. Let's head straight into a practical example.
+
+Speaker
+
+Can you recognize my favourite film from this picture?
+
+Speaker
+
+It is top gun of course.
+
+Speaker
+
+course.
+
+Speaker
+
+absolute classic, you've got to love Tom Cruise.
+
+Speaker
+
+No?
+
+Speaker
+
+Well, anyway, I've created an object called "favorite film".
+
+Speaker
+
+And I've stored some data in there about Top Gun.
+
+Speaker
+
+Now if I wanted to extract these and save them as individual variables that I could use throughout the app,
+
+Speaker
+
+As we already know, I would have to do something like this.
+
+Speaker
+
+And now say I wanted to log out a sentence which looks something like this.
+
+Speaker
+
+But instead of hard coding all of these details like the film name,
+
+Speaker
+
+I wanted to take the data from this object.
+
+Speaker
+
+Well, I'm going to have quite a bit more typing to do.
+
+Speaker
+
+Let me just do it quickly.
+
+Speaker
+
+Okay, that was boring and obnoxious to do, and there were only five properties in the object.
+
+Speaker
+
+Imagine if there had been 50, but at least now I can log out my sentence. So if I hit save,
+
+Speaker
+
+We can see that down in the console,
+
+Speaker
+
+We're getting the sentence, so it works.
+
+Speaker
+
+But this is only a small object.
+
+Speaker
+
+And we have written out the word const
+
+Speaker
+
+five times.
+
+Speaker
+
+And we've written out favorite film.
+
+Speaker
+
+five times. And all of these other words, Thai, tall, year is genre, we've had to write
+
+Speaker
+
+twice.
+
+Speaker
+
+Now, I'm sure you've heard the acronym DRY.
+
+Speaker
+
+Do not repeat yourself.
+
+Speaker
+
+Well, this is not dry. It's actually really annoying.
+
+Speaker
+
+And if there were 50 properties in here that we wanted to use,
+
+Speaker
+
+That would take forever.
+
+Speaker
+
+Luckily,
+
+Speaker
+
+That is another way.
+
+Speaker
+
+Let me comment out all of this code.
+
+Speaker
+
+Now I'm going to come in here and I'm going to write const just once.
+
+Speaker
+
+And then, and this is the new bit, I'm going to immediately open up curly braces.
+
+Speaker
+
+And inside the curly braces, I'm going to list as many property names from the object as I want.
+
+Speaker
+
+And in this case, I'm going to take them all.
+
+Speaker
+
+So I'll say,
+
+Speaker
+
+Bye, talk, yay, genre, star and director.
+
+Speaker
+
+And there they are in a comma separated list.
+
+Speaker
+
+And now I'm going to set this equals to the name of the object and destructuring.
+
+Speaker
+
+So that is favorite film.
+
+Speaker
+
+Let's hit save and see what happens.
+
+Speaker
+
+And it looks like it is working.
+
+Speaker
+
+down in the console, we have got exactly the same sentence.
+
+Speaker
+
+And the code we've written is so much drier.
+
+Speaker
+
+easier to write, and it's so much quicker.
+
+Speaker
+
+Const and favourite film have gone from being written five times to
+
+Speaker
+
+being written just once each.
+
+Speaker
+
+And all of these property variable names here, like title, year, these were written twice in the first example, and now have also been written
+
+Speaker
+
+Only once.
+
+Speaker
+
+Now, if you'll geeky enough to count, in this more example, we've gone from using
+
+Speaker
+
+20 words here.
+
+Speaker
+
+Two just seven words.
+
+Speaker
+
+I just checked that and it is a pretty impressive saving.
+
+Speaker
+
+So from now on, when you want to get data from an object and store it in its own console, let...
+
+Speaker
+
+You can use this technique.
+
+Speaker
+
+In the next grim,
+
+Speaker
+
+Let's take a challenge.
+
+Speaker
+
+It's time for a challenge and I want to talk holidays.
+
+Speaker
+
+This is a picture of the Fessity of Austin, Texas, and I want to go there.
+
+Speaker
+
+I don't want to mess around on the water like these people.
+
+Speaker
+
+I just want to spend my holidays at
+
+Speaker
+
+the Tesla factory.
+
+Speaker
+
+Doesn't sound like your idea of fun?
+
+Speaker
+
+No problem.
+
+Speaker
+
+Right here, I have given you an object populated with empty strings.
+
+Speaker
+
+Your challenge is this.
+
+Speaker
+
+I want you to complete the object dream holiday with whatever information is true for you.
+
+Speaker
+
+and feel free to add extra properties or change the existing ones as much as you want.
+
+Speaker
+
+When you've done that,
+
+Speaker
+
+I want you to destructure the object and use the individual variables to log out one or more sentences.
+
+Speaker
+
+about your dream holiday.
+
+Speaker
+
+And I've put an example right here for me.
+
+Speaker
+
+I'd love to go to Austin, Texas to visit the Tesla HQ.
+
+Speaker
+
+I'll sleep in a luxury ranch.
+
+Speaker
+
+and hang out with Elon Musk all day.
+
+Speaker
+
+Now you've probably got other ideas.
+
+Speaker
+
+For now, complete this object.
+
+Speaker
+
+and give this your best shot.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+and we'll have a look together.
+
+Speaker
+
+Okay, hopefully you got that working just fine.
+
+Speaker
+
+I'm going to come in here and speed type my dream holiday data.
+
+Speaker
+
+And now I'm going to destructure that object.
+
+Speaker
+
+So I'll say const.
+
+Speaker
+
+And I'll open up the curly braces and I'm going to list out all of these properties separated by a comma.
+
+Speaker
+
+So we've got destination activity accommodation and companion.
+
+Speaker
+
+and I'll set that equals to the object name.
+
+Speaker
+
+And that is all I need to do.
+
+Speaker
+
+Now I'll log out my sentence.
+
+Speaker
+
+So I'll take what I've written in my example and bring it into the console.log.
+
+Speaker
+
+And I'm going to put it of course between back ticks.
+
+Speaker
+
+And now I'll use the dollar sign in the curly braces to bring in these variables.
+
+Speaker
+
+And let's just open up the console. I'll hit save.
+
+Speaker
+
+And there we are, we have successfully destructure this object and looked out my sad holiday idea.
+
+Speaker
+
+In this scrim, we're going to look at another JavaScript method for iterating over arrays.
+
+Speaker
+
+This is the map method.
+
+Speaker
+
+And mapping over arrays is a core frontend developer skill, so let's jump straight into the code and have a look.
+
+Speaker
+
+I'm tracking my exercise, and this array here shows the number of miles I've walked during each of the last six months.
+
+Speaker
+
+I want to share this on my social media, but most of my friends are from countries that use kilometers, and anyway, kilometers sound much more impressive, because the number is always higher.
+
+Speaker
+
+Now, I've got the conversion factor right here.
+
+Speaker
+
+It's 1.6.
+
+Speaker
+
+So all we need to do is multiply these figures in miles by
+
+Speaker
+
+1.6
+
+Speaker
+
+to get the figure in kilometers.
+
+Speaker
+
+So we're going to do that using the matte method, which is going to iterate over the array and
+
+Speaker
+
+it's going to convert each number for
+
+Speaker
+
+me. And this should be kind of familiar because we've seen something similar before with the
+
+Speaker
+
+for each.
+
+Speaker
+
+The map method is going to call a function
+
+Speaker
+
+on each element in the array in turn.
+
+Speaker
+
+Now the first thing to remember about the map method is that it gives us a new array.
+
+Speaker
+
+and we're going to store that array in a const.
+
+Speaker
+
+So I'm just going to come down here and set up a new array called Distance Walked Kilometers Array.
+
+Speaker
+
+And I'm going to set that equals to the original array, the array we're going to map over, and I'll call the map method directly on the end.
+
+Speaker
+
+And because map is a method, it needs its brackets, or parentheses if you prefer the longer word.
+
+Speaker
+
+Now here inside these brackets we're going to pass map the function that's going to be called on each element in the array in turn.
+
+Speaker
+
+And we can build that function right here as an anonymous inline function.
+
+Speaker
+
+So I'll declare it using the function keyword.
+
+Speaker
+
+and give it its brackets.
+
+Speaker
+
+And then this function that we're passing to the map method receives a parameter and this parameter is really important.
+
+Speaker
+
+it's the element in the array that is currently being worked on.
+
+Speaker
+
+And of course, it's a good convention to give it a name that makes it clear that it represents one item of the items in the array. So if this was an array of bikes, we might call this parameter
+
+Speaker
+
+Well, this isn't a ray of distances in miles, so I'm going to call this parameter
+
+Speaker
+
+distance miles.
+
+Speaker
+
+Now inside the body of this function, let's just experiment by logging out what this parameter distance miles actually is.
+
+Speaker
+
+So I'll save that and if we open up the console what we see is that we're getting everything that was in the original array except that what's in the console is not on array. We're just getting it logged out element by element
+
+Speaker
+
+So we can see really clearly that as the map method iterated over the array,
+
+Speaker
+
+distance miles the parameter that we passed into this function,
+
+Speaker
+
+was just the first element in the array 140, then the second element, then 161, etc, etc, until we reached the end of the array. Now let's do the calculation, so all we need to do is multiply distance in miles by
+
+Speaker
+
+the conversion factor.
+
+Speaker
+
+And then in the console we can see that we've converted our distances in miles to our distances in kilometers.
+
+Speaker
+
+Now, at the moment, we're not using the map methods for potential because we're just logging out these figures.
+
+Speaker
+
+the MAC method gives us this new array. That's what's so useful about it. And in fact, if we're not going to use this array, we shouldn't be using the MAC method.
+
+Speaker
+
+So instead of logging something out right here,
+
+Speaker
+
+Let's just return this line of code.
+
+Speaker
+
+And what that will do is return each converted distance to the new array that we're storing in this const.
+
+Speaker
+
+So, let's just come down here and log out this array.
+
+Speaker
+
+And now when I say, "Look what we get in the console."
+
+Speaker
+
+We've got an array, it's the same length as the original array, and each element in the original array has had this function called on it in turn.
+
+Speaker
+
+and each distance in miles has been converted to a distance in kilometers.
+
+Speaker
+
+And the map method has returned this array, which we're logging out.
+
+Speaker
+
+down here.
+
+Speaker
+
+Now there's one last thing that I want to show you. Just like with the four-each method, we can include a second parameter here.
+
+Speaker
+
+and we'll call it index.
+
+Speaker
+
+And if we use it, we can see that it gives us the index of the item as it maps through the array. So that would be index 0, index 1, index 2, etc. So let's just update what we've got here to make use of the index.
+
+Speaker
+
+And now if I hit save...
+
+Speaker
+
+we can see that we've still got an array, we've converted what's inside the array to strings, and for each one we've got the month and the distance in kilometers. And in fact, we could just whack kilometers on the end.
+
+Speaker
+
+And that makes it a little bit clearer. Now, I'm not saying that's a very useful thing to do here in this example, but this index parameter
+
+Speaker
+
+be very, very useful.
+
+Speaker
+
+It's worth remembering.
+
+Speaker
+
+that we do have access to the index of each element with this parameter
+
+Speaker
+
+if we need it.
+
+Speaker
+
+Now just before we finish, I want to point out that just because the map method gives us a new array, we don't necessarily need to store it in a const.
+
+Speaker
+
+Although it is quite common to do so.
+
+Speaker
+
+And that's exactly what we've done here.
+
+Speaker
+
+If, for example, all of this were happening inside a function,
+
+Speaker
+
+We could just return it directly.
+
+Speaker
+
+And I'll just show you quickly what that might look like.
+
+Speaker
+
+I've just put all of that logic inside a function and we're calling the function down here.
+
+Speaker
+
+And if we hit save.
+
+Speaker
+
+We get exactly the same thing.
+
+Speaker
+
+Now what I want to do is delete the const that we've got right here.
+
+Speaker
+
+And instead, we're just going to return this entire block of code, which contains the map method. And what you'll see is that we've now got these two returns, and that is absolutely fine. This return is working with this function, and that's going to return this string to the new array.
+
+Speaker
+
+And then this return statement right here is returning everything for
+
+Speaker
+
+from this convert miles to kilometers function.
+
+Speaker
+
+So now we've done that.
+
+Speaker
+
+Let's delete this console.log.
+
+Speaker
+
+And we'll log out whatever gets returned when we call this function. So let's just wrap this in a console.log.
+
+Speaker
+
+And when I hit save.
+
+Speaker
+
+There we are, we're getting exactly the same thing.
+
+Speaker
+
+So what that demonstrates is that we're using the map method to create a new array, but we're not actually storing that array in a const. We're just returning it from this function, and then we can see it when we call that function
+
+Speaker
+
+and log out what it returns.
+
+Speaker
+
+So you'll commonly see the map method used to create a new array and store it to a const.
+
+Speaker
+
+but you'll also see it used to create an array, which is then instantly returned.
+
+Speaker
+
+And both of those are perfectly legitimate uses for
+
+Speaker
+
+the map method.
+
+Speaker
+
+Okay, I think I've talked quite a lot and it's definitely time for you to get hands-on with the code. So I've got a challenge waiting for you.
+
+Speaker
+
+in the next grim.
+
+Speaker
+
+It is challenge time!
+
+Speaker
+
+You are going to map over and array of objects and use data from those objects.
+
+Speaker
+
+create some HTML to render.
+
+Speaker
+
+And here we've got the array of objects and each object is a track from my Spotify playlist. So I've got something for everybody. I've got some classic Led Zeppelin and Billy Ilish and Queen and Harry Styles.
+
+Speaker
+
+a nice mixture of music.
+
+Speaker
+
+Now, over in index.js,
+
+Speaker
+
+We've got an old fashioned
+
+Speaker
+
+look at that remember them
+
+Speaker
+
+And what this for loop is doing is looping over the array from playlist.js
+
+Speaker
+
+which we're importing right here.
+
+Speaker
+
+and for each object in that playlist, so for each track.
+
+Speaker
+
+It's creating some HTML string.
+
+Speaker
+
+And if we hit save,
+
+Speaker
+
+We're actually rendering out my playlist with some nice cover art, which is just coming from these images up here in this images folder.
+
+Speaker
+
+Now at the moment the 4 loop is just pushing each chunk of HTML to
+
+Speaker
+
+to this array right here that we're storing in the const playlist HTML.
+
+Speaker
+
+And we are rendering out.
+
+Speaker
+
+Playlist HTML.
+
+Speaker
+
+Now, what you might notice is that over here,
+
+Speaker
+
+We've got these strange commas separating each track.
+
+Speaker
+
+Now, we don't want those comments to be there.
+
+Speaker
+
+But I need to warn you right now that when you implement the map method in this challenge, the commerce will still
+
+Speaker
+
+be there.
+
+Speaker
+
+don't worry about them for now.
+
+Speaker
+
+specific problem and we're going to look at how to fix it in the next scrim.
+
+Speaker
+
+So, here is your challenge.
+
+Speaker
+
+I want you to refactor the code below to
+
+Speaker
+
+use the.mat method instead of this for loop.
+
+Speaker
+
+And I've just put a reminder.
+
+Speaker
+
+Don't worry about the commerce for now.
+
+Speaker
+
+And if you need a reminder of the syntax for the map method,
+
+Speaker
+
+Do feel free to look back at the previous scrim, but try to do this challenge from memory first and definitely don't cut and paste anything.
+
+Speaker
+
+course now, give this your best shot, take all of the time you need, because there's quite a lot of work to be done, and quite a lot of co-teats runtangle.
+
+Speaker
+
+and then we'll have a look together in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that without too much trouble.
+
+Speaker
+
+So the Matt method gives us a new array and I'm actually going to store that array in this concept that we've already got playlist HTML.
+
+Speaker
+
+So our set of equals to playlist array.
+
+Speaker
+
+and call the map method right here on the end.
+
+Speaker
+
+We'll pass map method the anonymous function.
+
+Speaker
+
+Remember, this function needs a parameter and
+
+Speaker
+
+And that parameter is going to represent each element in the array in turn. And because in this array, each object holds a track from my playlist.
+
+Speaker
+
+I'm going to call this parameter.
+
+Speaker
+
+And now inside the body of this function,
+
+Speaker
+
+We need to return some HTML string.
+
+Speaker
+
+So let's just kind of paste it from here.
+
+Speaker
+
+And before we forget, let's just get rid of this for loop.
+
+Speaker
+
+Now we need to update this template string at the moment we're using the index i from the for loop.
+
+Speaker
+
+and using that with the bracket notation to access playlists array, we don't need to do that anymore. All of this just comes from track. Remember that track will represent each object in this array
+
+Speaker
+
+in turn.
+
+Speaker
+
+So I can just come in here and delete all of this.
+
+Speaker
+
+and replace it with track.
+
+Speaker
+
+So we've got track.abamart, track.title and track.artist. Now let's hit save and see if it's working.
+
+Speaker
+
+And it is, so we've used the map method to iterate over an array of objects, and we've created some HTML template string for
+
+Speaker
+
+for each object.
+
+Speaker
+
+and successfully.
+
+Speaker
+
+render it out.
+
+Speaker
+
+down here.
+
+Speaker
+
+So that is really, really good, really, really useful. You're going to use the map method like that a lot in your career.
+
+Speaker
+
+So really fantastic job if you manage to complete that challenge. It's going to be a really useful skill.
+
+Speaker
+
+for the future.
+
+Speaker
+
+Now, as I said before, we're not quite done, we have got these strange comers still interrupting the flow of our HTML and just spoiling the look of our site, not to worry when you're ready to deal with them, move on to the next scrim,
+
+Speaker
+
+and we'll have a look at how we can get rid of those commerce.
+
+Speaker
+
+I want to show you the Join method.
+
+Speaker
+
+which is a really useful accompaniment to the map method.
+
+Speaker
+
+Join is an inbuilt JavaScript method for creating strings from arrays.
+
+Speaker
+
+Let's just be clear about exactly what it does.
+
+Speaker
+
+So the join method concatenates the elements of an array into a string.
+
+Speaker
+
+It lets you choose how those elements are separated within the string.
+
+Speaker
+
+And it then returns the new string it has created.
+
+Speaker
+
+OK, let's jump straight over to the editor and see the join method in action.
+
+Speaker
+
+So up here I've got an array called guests array.
+
+Speaker
+
+And that holds a basic list of names no other information.
+
+Speaker
+
+I want this array of names as a string and I'm going to use the join method to do that and I'm going to do it all in
+
+Speaker
+
+the console.
+
+Speaker
+
+So let's just log out guests array.
+
+Speaker
+
+And I'll call the join method on the end.
+
+Speaker
+
+And it is a method so it needs parentheses.
+
+Speaker
+
+Let's just save and see what the join method gives us straight away.
+
+Speaker
+
+So in the console you'll see that we've got a list of names just like we've got up here.
+
+Speaker
+
+but now they are a string.
+
+Speaker
+
+and we can prove that using type of.
+
+Speaker
+
+And that confirms we have indeed got a string.
+
+Speaker
+
+And let's just go back to that stream.
+
+Speaker
+
+Now, you'll notice in the console that the elements of the original array are separated with
+
+Speaker
+
+We don't want those commas to be there, and luckily the join method gives us a great way of deciding how we want the different elements to be separated.
+
+Speaker
+
+All we need to do is pass in a separator.
+
+Speaker
+
+And we put the separator between inverted commas.
+
+Speaker
+
+The default separator is the comma that we see at the moment.
+
+Speaker
+
+But imagine we want to change that to a dot.
+
+Speaker
+
+well, we just put a dot between the inverted commas.
+
+Speaker
+
+And there we are, now we've got the name separated by dots.
+
+Speaker
+
+Now, it's actually very flexible as to what you can use as a separator.
+
+Speaker
+
+Imagine you wanted to use a dog emoji.
+
+Speaker
+
+Let's try it.
+
+Speaker
+
+And it works, now we have a puppy separating each name. I have no idea why that would ever be a good idea,
+
+Speaker
+
+But it would work.
+
+Speaker
+
+Now, perhaps more importantly, we could just leave a space.
+
+Speaker
+
+So by enclosing a space in the inverted commas, the
+
+Speaker
+
+list is now separated out.
+
+Speaker
+
+just by spaces.
+
+Speaker
+
+Now, sometimes we don't want any separator. We just want whatever is in the array to be joined together in
+
+Speaker
+
+one continuous stream.
+
+Speaker
+
+And we can do that by passing the join method.
+
+Speaker
+
+an empty string.
+
+Speaker
+
+And that means we have the inverted comers still, but nothing between them.
+
+Speaker
+
+not even a space.
+
+Speaker
+
+Let's hit save.
+
+Speaker
+
+And all of those names are joined together.
+
+Speaker
+
+That is completely useless for this particular case, but
+
+Speaker
+
+I think we're going to use something like that.
+
+Speaker
+
+really very soon.
+
+Speaker
+
+Okay, now you've seen the join method, so let's head on to the next scrim, where we will be back with our playlist, which is being rendered with annoying commas.
+
+Speaker
+
+I've got a challenge waiting for you there, and you can probably guess what it is.
+
+Speaker
+
+We used the map method to help us render this neat playlist component, but it has an issue in that these
+
+Speaker
+
+ruining it.
+
+Speaker
+
+So your challenge is this.
+
+Speaker
+
+I want you to use the join method to
+
+Speaker
+
+remove those annoying commas.
+
+Speaker
+
+And I've just put a warning here. You'll need to chain two methods together to complete this challenge.
+
+Speaker
+
+Now, chaining is something that you've seen before, but you might not have heard it called chaining before.
+
+Speaker
+
+Let me just put a line of code in here from a previous project.
+
+Speaker
+
+So what's going on in this line of code is
+
+Speaker
+
+is the a method,
+
+Speaker
+
+the toggle method in this case has been chained on to the class list property.
+
+Speaker
+
+And the class list property has been chained on to the get element by ID right here.
+
+Speaker
+
+So that is chaining in action and chaining two methods together is
+
+Speaker
+
+exactly the same principle.
+
+Speaker
+
+you just put a dot and add the method on the end.
+
+Speaker
+
+OK, pause now and get this challenge sorted.
+
+Speaker
+
+Okay, hopefully you got that sorted, so let's just save and see where we are.
+
+Speaker
+
+So we've got the commas right there.
+
+Speaker
+
+I'm going to come down here to the end of the map method and I'm going to chain on the join method.
+
+Speaker
+
+And we need to pass join a separator and
+
+Speaker
+
+And in this case, we don't want the separator to be anything.
+
+Speaker
+
+We don't want a space, we don't want a dot, we don't want a comma.
+
+Speaker
+
+So I'm just going to pass it.
+
+Speaker
+
+empty string.
+
+Speaker
+
+So that is nothing but
+
+Speaker
+
+those inverted commas, not even a space.
+
+Speaker
+
+Let's hit save.
+
+Speaker
+
+And there we are, the commerce have gone and that is looking.
+
+Speaker
+
+beautiful.
+
+Speaker
+
+Now there is actually another way of doing this. We could take this join method.
+
+Speaker
+
+And we could paste it over here.
+
+Speaker
+
+So instead of chaining the join method on the end of the map method, we could just add it.
+
+Speaker
+
+to this array,
+
+Speaker
+
+which is the array that we're building with the map method.
+
+Speaker
+
+Let's just save that.
+
+Speaker
+
+And again, it works perfectly.
+
+Speaker
+
+I think this way is a little bit clunky.
+
+Speaker
+
+I much prefer to do it right here.
+
+Speaker
+
+Okay, in the future you are going to find it really useful to use the join method and the map method together.
+
+Speaker
+
+So the join method is a really good addition to your skills.
+
+Speaker
+
+Now we're almost done talking about the map method.
+
+Speaker
+
+But there's one issue I want to deal with, and we'll talk about that in the next scrim.
+
+Speaker
+
+OK, so we've had some practice with the map method, and you might be saying, now I know how to iterate over arrays and call a function on each element in the array.
+
+Speaker
+
+And that is true, but wait a moment.
+
+Speaker
+
+Is that an elephant in the room?
+
+Speaker
+
+And if so, what is this elephant saying?
+
+Speaker
+
+Well,
+
+Speaker
+
+saying what about for each?
+
+Speaker
+
+because that's face it for each map seem kind of similar.
+
+Speaker
+
+So if you found yourself thinking, well, we can do everything that the map method does with the four each, you're definitely not alone.
+
+Speaker
+
+The benefit of using the map method is not always apparent and actually it
+
+Speaker
+
+can be hard to decide which method to use in any given situation.
+
+Speaker
+
+So let's do an experiment and turn this map.
+
+Speaker
+
+into a forage.
+
+Speaker
+
+And I'll hit save.
+
+Speaker
+
+And of course, it doesn't work. We've got an error down in the console. We've got a blank page right here.
+
+Speaker
+
+Why is that?
+
+Speaker
+
+And what would we have to do to make it work?
+
+Speaker
+
+Well, if you're up for a challenge, pause now and figure out how you could make a forage work here.
+
+Speaker
+
+And while you're doing it...
+
+Speaker
+
+Notice the problems you have.
+
+Speaker
+
+and what the solutions are.
+
+Speaker
+
+So, have a go at that and I'll take you through it in just a moment.
+
+Speaker
+
+Okay, so hopefully you did everything you needed to get it working.
+
+Speaker
+
+Now you've probably seen in the console the error is referring to the join method.
+
+Speaker
+
+So I'm just going to close down the Mini Browser.
+
+Speaker
+
+We'll come down here to the Join method.
+
+Speaker
+
+And let's just try moving it to the other position.
+
+Speaker
+
+And again, I'll save.
+
+Speaker
+
+And we have the same problem.
+
+Speaker
+
+So for now, I'm just going to delete this join method.
+
+Speaker
+
+And we'll come back to it later.
+
+Speaker
+
+Okay, let's try again without the join method.
+
+Speaker
+
+And look what happens, we render the word undefined, and this brings us to the key difference between 4 each and map.
+
+Speaker
+
+Forage does not return a new array.
+
+Speaker
+
+Let's just prove that by trying to log out the array that we create right here.
+
+Speaker
+
+Look what we get in the console.
+
+Speaker
+
+undefined.
+
+Speaker
+
+So while the map method returns a new array, 4 each actually returns undefined.
+
+Speaker
+
+And that is why when we try to render our array from here.
+
+Speaker
+
+We actually get
+
+Speaker
+
+undefined rendered into the mini browser.
+
+Speaker
+
+So if we want this to work, we're going to have to manually create a new array and push some items to it.
+
+Speaker
+
+So, let's give that a go.
+
+Speaker
+
+I'll come up here and we'll take this array then.
+
+Speaker
+
+And I'm going to move this down onto a new line.
+
+Speaker
+
+And I'm just going to initialize this to...
+
+Speaker
+
+an empty array.
+
+Speaker
+
+And then instead of this function for ridge calls on each element in the array returning something, we're going to make it push.
+
+Speaker
+
+to our new array.
+
+Speaker
+
+Okay, let's try that.
+
+Speaker
+
+And look, that works. And if we scroll down, we're still logging that out. We don't need to do that anymore. But we can see we've got our cards rendered out and the commerce are back.
+
+Speaker
+
+Let's come in here and see if we can chain on the join method.
+
+Speaker
+
+I'll hit save.
+
+Speaker
+
+And we're back to errors and it is exactly the same error.
+
+Speaker
+
+So that's not going to work and we're back to exactly the same problem.
+
+Speaker
+
+4-H does not return a new array, it returns undefined.
+
+Speaker
+
+And that means you cannot chain onto it.
+
+Speaker
+
+You can only chain onto an array method in
+
+Speaker
+
+if it returns a new array.
+
+Speaker
+
+If it returns undefined, then the array method you chain on to it will have nothing to work with.
+
+Speaker
+
+So what we need to do then is take this join method.
+
+Speaker
+
+And come down here.
+
+Speaker
+
+and put it on the end right here.
+
+Speaker
+
+And there we are. Now we've got it working with the four each without the commerce. But what we've ended up with is code which works, but which is inferior to the map version we had before.
+
+Speaker
+
+it's longer, it's more complex and honestly,
+
+Speaker
+
+It's a bit clunky.
+
+Speaker
+
+So, I'm going to put this back.
+
+Speaker
+
+to how it should be.
+
+Speaker
+
+Okay, there we are, that is much better.
+
+Speaker
+
+So how do you decide which to use map?
+
+Speaker
+
+or forage.
+
+Speaker
+
+Well, all of the problems we faced when converting this map to a forage came down to the fact that the forage doesn't return a new array.
+
+Speaker
+
+And then we found that if there's no new array, there's nothing to change the join method onto.
+
+Speaker
+
+So in summary, we can say this.
+
+Speaker
+
+Use the map method if you need to make use of the new array it returns.
+
+Speaker
+
+Use a 4-inch if you don't need to create a new array.
+
+Speaker
+
+So you might think to make life easier, why don't I just use the map method every time?
+
+Speaker
+
+Well, no, that is a bad idea.
+
+Speaker
+
+We should use array methods for the purpose they were designed for.
+
+Speaker
+
+If you use the map method, but you don't make use of the array it returns,
+
+Speaker
+
+That is what's called an anti-pattern.
+
+Speaker
+
+It's bad practice.
+
+Speaker
+
+So if you need to iterate over an array and do something with each element in the array,
+
+Speaker
+
+don't need to return a new array.
+
+Speaker
+
+Use the forage.
+
+Speaker
+
+And if you do need the new array, use the Mac method.
+
+Speaker
+
+We've now seen multiple ways of iterating over arrays.
+
+Speaker
+
+And you might well be forgiven for thinking that the original one, the for loop,
+
+Speaker
+
+is now dead and never used.
+
+Speaker
+
+But actually, you'd be wrong.
+
+Speaker
+
+The array methods like map are, of course, really, really useful, but you'll probably come across some situations where a full loop is the simplest solution to a given problem.
+
+Speaker
+
+and you're bound to see them in code bases you work on anyway.
+
+Speaker
+
+For that reason, I want to show you a bit more for loop functionality,
+
+Speaker
+
+specifically how we can break out of them early or skip one element and continue looping.
+
+Speaker
+
+Let me show you what I mean.
+
+Speaker
+
+Here we've got an array of expenses and refunds.
+
+Speaker
+
+Now it's an array of object and each object has got a description and amount under year.
+
+Speaker
+
+The amounts can be either positive numbers like 50 or negative like -30 and these negative numbers are actually refunds. They are not expenses.
+
+Speaker
+
+Imagine we want to iterate over this array and get the total amount we spent
+
+Speaker
+
+just in the year 2023. We're not interested in refunds and we're not interested in 2024.
+
+Speaker
+
+So what we want to do then is iterate over this array. We want to skip any element in the array that has a minus number for the amount
+
+Speaker
+
+And we also want to ignore...
+
+Speaker
+
+all of the elements from the year.
+
+Speaker
+
+2024.
+
+Speaker
+
+Now, a ray methods like map and forage are designed to iterate over the entirety of the array.
+
+Speaker
+
+So if we wanted to actually skip an element in the array or break out of it early, well, then you'd have to create your own workaround or possibly do something more complex with the filter method.
+
+Speaker
+
+but the for loop actually has that functionality built in.
+
+Speaker
+
+So, let's give it a go.
+
+Speaker
+
+I've already got a let's set up to hold the total spent and that is initialized to zero.
+
+Speaker
+
+and I've got a const holding the cut off date, which is 2024. So we're only interested in what happens before 2024.
+
+Speaker
+
+So let's come in here and we'll set up the basics of the for loop and I'm sure you're pretty familiar with this by now.
+
+Speaker
+
+So first, let's let i = 0.
+
+Speaker
+
+Then we're going to check if I is less than the length of our array, expenses, and refunds.
+
+Speaker
+
+And if it is less increment i.
+
+Speaker
+
+Inside the body of the foreloop, let's keep things clear by using a const to hold the current expense object, and that will be at the element of this array with the index
+
+Speaker
+
+Now, let's use an if to check if the year of our expense.
+
+Speaker
+
+is greater than or equal to our cut off date.
+
+Speaker
+
+And if it is, that means we've iterated through all of our 2023 expenses and because we're not interested in the 2024 expenses,
+
+Speaker
+
+We can actually stop this loop.
+
+Speaker
+
+We can break out of it.
+
+Speaker
+
+And we do that using the break keyword.
+
+Speaker
+
+And just to make it clear what's happening, let's just log out a message.
+
+Speaker
+
+So we'll just say, "Wrench cutoff date exiting loop."
+
+Speaker
+
+Now, we want to deal with a situation where we have a refund and not an expense.
+
+Speaker
+
+So let's say if...
+
+Speaker
+
+And then we'll check if the "count expense or refund amount" is less than zero.
+
+Speaker
+
+And if that is the case, if we're dealing with a refund, we can actually skip that element, and we do that using the
+
+Speaker
+
+continue keyword.
+
+Speaker
+
+And again, let's just log out a message to make it clear what's happening.
+
+Speaker
+
+So what that continue keyword will do is it will say there's nothing to see here, just skip this element and start the next iteration.
+
+Speaker
+
+Finally, all we need to do is update total spent.
+
+Speaker
+
+So we can do that with plus equals, can't expense or refund dot amount.
+
+Speaker
+
+Okay, down here, we are already ready to log out the result of the loop.
+
+Speaker
+
+So let's hit save and open up the console.
+
+Speaker
+
+And what we'll see is that we're skipping electronics due to a refund.
+
+Speaker
+
+Well, we've got electronics right here, it's minus 30, that is a refund, it's good to skip it.
+
+Speaker
+
+And then we've reached the cut off date, so we're exiting the loop.
+
+Speaker
+
+and the total amount spent on items in 2023 is $175.
+
+Speaker
+
+So that is the total of adding.
+
+Speaker
+
+50.
+
+Speaker
+
+and 40, which is 90 plus 60, which makes 150 plus 25, which makes 175. So that is working and we have successfully used
+
+Speaker
+
+the break statement.
+
+Speaker
+
+and the fall loop when we wanted to and we've used the continue statement.
+
+Speaker
+
+to skip an element in the array and continue with the next iteration.
+
+Speaker
+
+So as I said, you could do this with an array method, but they don't have the concepts of break and continue built into them.
+
+Speaker
+
+So for this use case, a for loop is a really neat way of doing it and you don't have to mess around with building your own work around.
+
+Speaker
+
+Now there is just one potential pitfall here I want to warn you about.
+
+Speaker
+
+In this array, the data is actually in chronological order.
+
+Speaker
+
+If it wasn't, then this method wouldn't work. It would break out of the loop when it first encountered the cutoff date, potentially missing data. So just make sure when you use the break keyword, you know the style of the data you're working with.
+
+Speaker
+
+and that there's no risk of missing something that you wanted to include.
+
+Speaker
+
+That's all useful stuff to note.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Throughout this course, you've seen in HTML multiple times, and it's a great way of sticking some HTML.
+
+Speaker
+
+into the dome.
+
+Speaker
+
+But it's far from perfect. In fact...
+
+Speaker
+
+It has a dark side.
+
+Speaker
+
+Let's just check out this app, which I'm using to create a watch list for all of those movies people recommend to me, which hopefully I'll get around to watching one day.
+
+Speaker
+
+All I do to use it is type a movie name in here.
+
+Speaker
+
+And here, add film.
+
+Speaker
+
+There we are, the film appears on my list. Let's add one more.
+
+Speaker
+
+And if we're going to have Barbie, we need to have Oppenheimer.
+
+Speaker
+
+Okay, you get the idea, so let's check out the code.
+
+Speaker
+
+We're taking control of three elements here. We've got the film input, which is the text area right here.
+
+Speaker
+
+the button.
+
+Speaker
+
+which is this ad film button.
+
+Speaker
+
+and film list, which is the duve where the list of films are rendered.
+
+Speaker
+
+Then we've got this event this in the setup on the button and
+
+Speaker
+
+And inside this function, we're using in the HTML to render out
+
+Speaker
+
+this HTML string.
+
+Speaker
+
+And here of course we're taking the FilmInput.value which will be whatever text has appeared in this text area.
+
+Speaker
+
+The app's working well, but a hacker could actually take control of the sites because
+
+Speaker
+
+the name suggests.
+
+Speaker
+
+Html is actually setting HTML and HTML can include malicious code.
+
+Speaker
+
+Up here, I've got a file called badbutton.html.
+
+Speaker
+
+And in here, I've just got this one pretty long ugly line of code.
+
+Speaker
+
+It's an HTML button with an on-click attribute and on-click we've got a load of JavaScript in here. What this JavaScript is doing is taking control of the film list app div
+
+Speaker
+
+and index.html.
+
+Speaker
+
+we can see that that is this section right here.
+
+Speaker
+
+which is basically
+
+Speaker
+
+entire app.
+
+Speaker
+
+Now when this bad button is clicked...
+
+Speaker
+
+This code here
+
+Speaker
+
+is going to replace everything on the screen
+
+Speaker
+
+with my own message.
+
+Speaker
+
+Okay, let's just copy this code.
+
+Speaker
+
+And you're going to see exactly what I mean.
+
+Speaker
+
+I'm going to run the app.
+
+Speaker
+
+And in fact, I'll just refresh it so we're starting from scratch.
+
+Speaker
+
+And I'm going to paste my malicious code right in here.
+
+Speaker
+
+There it is, and I'll click "Add Film".
+
+Speaker
+
+And look, we've rendered a button and it's the click me button.
+
+Speaker
+
+with this biohazard emoji, which is not a good sign.
+
+Speaker
+
+And when I click that button,
+
+Speaker
+
+Look, now I own your site the hacker has taken over.
+
+Speaker
+
+And as you know, when you can run some JavaScript on a site, the possibilities are pretty much endless. So this is to be avoided. This is why you have to avoid using in HTML
+
+Speaker
+
+when whatever's being inserted into the DOM,
+
+Speaker
+
+comes from a user input or anything else which is outside your control.
+
+Speaker
+
+So, what can we do in this situation instead?
+
+Speaker
+
+Well, I think this calls for a Google challenge, so just bear with me while I paste it in.
+
+Speaker
+
+So here's your challenge.
+
+Speaker
+
+I want you to find a way of adding an inputted film to the list, which does not allow malicious JavaScript to be executed.
+
+Speaker
+
+And for number two, I've just put "implement it."
+
+Speaker
+
+And what I mean is, don't just read about it theoretically.
+
+Speaker
+
+I want you to actually put it into practice.
+
+Speaker
+
+in this app.
+
+Speaker
+
+Okay, take all of the time you need, enjoy experimenting and searching, and I'll see you back here when you're ready, and we'll have a look together.
+
+Speaker
+
+Okay, so hopefully you found a solution.
+
+Speaker
+
+And I think the best way to deal with this.
+
+Speaker
+
+is actually to manually build the element.
+
+Speaker
+
+So let me just delete all of this challenge text to give us some space.
+
+Speaker
+
+And now I'm going to set up a const new film.
+
+Speaker
+
+And that is going to store a new element that I'm going to create using document.cribe.
+
+Speaker
+
+create
+
+Speaker
+
+And we need to tell it what type of element we want to create and we're creating a div.
+
+Speaker
+
+So I just pass that in right there.
+
+Speaker
+
+Now we need to add a class to that div.
+
+Speaker
+
+So I'll say newfilm.classlist.
+
+Speaker
+
+So we'll take new film.
+
+Speaker
+
+and then say.classlist.
+
+Speaker
+
+ad.
+
+Speaker
+
+And the class that we want this diff to have is right here. It's
+
+Speaker
+
+film-item.
+
+Speaker
+
+Now we need to make sure the div has the correct color.
+
+Speaker
+
+10th, so again it's new film.
+
+Speaker
+
+.Text Content
+
+Speaker
+
+And that is going to equals whatever we get from the text area.
+
+Speaker
+
+And now we've got everything that we need from this line of code, so I'm going to delete almost all of it.
+
+Speaker
+
+We'll keep film-list because that is where we want to append our new diff.
+
+Speaker
+
+So I'm just going to say, append child.
+
+Speaker
+
+And you could just use a pen here whichever you prefer, and what we want to append is new film.
+
+Speaker
+
+Now this is going to work because text content is just going to pass text.
+
+Speaker
+
+It's not going to allow any HTML or JavaScript to
+
+Speaker
+
+be interpreted as HTML or JavaScript.
+
+Speaker
+
+It's just going to appear.
+
+Speaker
+
+text.
+
+Speaker
+
+Let's save it and see if it works.
+
+Speaker
+
+Okay, it looks like it's working. Now let's add the button.
+
+Speaker
+
+I've pasted in the malicious code and I'll press Add Film.
+
+Speaker
+
+And look what's happening.
+
+Speaker
+
+are rendering out this ugly line of code.
+
+Speaker
+
+but it's not being passed as JavaScript, it cannot be executed. So we can safely say, "Mission across."
+
+Speaker
+
+accomplished.
+
+Speaker
+
+Now, sanitizing user input is a big topic and there are other ways of doing this.
+
+Speaker
+
+And of course, in a full blown app, a lot can be done on the back end too. But I just want this grim to serve as a warning of the dangers of in HTML.
+
+Speaker
+
+Okay.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+In this scrim, I want to introduce you to function expressions, which differ from the functions we've seen so far in both syntax and behavior.
+
+Speaker
+
+Let's take a look at some code.
+
+Speaker
+
+So, right here, I've got a function from a finance security app.
+
+Speaker
+
+and it alerts you every time your credit card is used.
+
+Speaker
+
+We're calling the function right here.
+
+Speaker
+
+and passing in and amount, and when the function runs.
+
+Speaker
+
+We're logging out a warning.
+
+Speaker
+
+Now this type of function has a name.
+
+Speaker
+
+is called a function declaration. But you might well just think of it as a normal function.
+
+Speaker
+
+Now I can call a function declaration right here like I'm doing now underneath the function
+
+Speaker
+
+Or I can call it before the function has been declared.
+
+Speaker
+
+So let's change this to 200.
+
+Speaker
+
+I'm when I hit save.
+
+Speaker
+
+It works just fine.
+
+Speaker
+
+so it doesn't matter whether I call the function, but before it's been declared,
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+after it's been declared.
+
+Speaker
+
+Now, the reason for that is that function declarations are hoisted.
+
+Speaker
+
+And if you haven't heard of hoisting before,
+
+Speaker
+
+It means that function declarations are moved to the top of their scope before code execution.
+
+Speaker
+
+And what that means in this example is that we can call this function
+
+Speaker
+
+anywhere in this file.
+
+Speaker
+
+and it will work just fine.
+
+Speaker
+
+Okay, let's compare and contrast that with function expressions.
+
+Speaker
+
+So to create a function expression,
+
+Speaker
+
+I declare a const.
+
+Speaker
+
+I'll give it a name and I'm going to take the same name as we used for this function.
+
+Speaker
+
+And this const is going to hold an anonymous function.
+
+Speaker
+
+So I'm just using the function keyword, the parentheses, and of course the curly braces.
+
+Speaker
+
+And that is very similar to the anonymous functions that we've passed to methods in previous projects.
+
+Speaker
+
+Now I'll take the logic that we've got from here.
+
+Speaker
+
+And of course it needs to take in amount as a parameter.
+
+Speaker
+
+Now, let's bring this console.log underneath.
+
+Speaker
+
+this function expression.
+
+Speaker
+
+And I'm just going to comment out this code right here.
+
+Speaker
+
+Now let's change this amount to 150.
+
+Speaker
+
+And I'll hit save.
+
+Speaker
+
+And there we are.
+
+Speaker
+
+that function works just fine.
+
+Speaker
+
+And the end result is exactly the same as the function declaration.
+
+Speaker
+
+And that brings us to the question.
+
+Speaker
+
+Why would you want to use a function expression?
+
+Speaker
+
+Well, firstly, what's interesting about these function expressions is that
+
+Speaker
+
+then not hoisted.
+
+Speaker
+
+we can prove that by trying to call it before it's being expressed.
+
+Speaker
+
+So I'm just going to move this console.log.
+
+Speaker
+
+above the function expression.
+
+Speaker
+
+I'm when I hit save, we get an error.
+
+Speaker
+
+cannot access get spend alert before initialization. So this function expression is not hoisted in the same way that this function declaration was.
+
+Speaker
+
+Now the fact that function expressions are not hoisted
+
+Speaker
+
+is generally seen as an advantage. The ability to call function declarations like this one
+
+Speaker
+
+anywhere in their scope.
+
+Speaker
+
+can cause confusion.
+
+Speaker
+
+and lead to bugs.
+
+Speaker
+
+Secondly,
+
+Speaker
+
+Function expressions are cleaner and easier to read.
+
+Speaker
+
+I put here.
+
+Speaker
+
+arguably that is of course a matter of
+
+Speaker
+
+And finally, because of the above, function expressions are the chosen style of
+
+Speaker
+
+some development teams.
+
+Speaker
+
+So they're definitely something that you need to know.
+
+Speaker
+
+Okay, make a mental note of this syntax.
+
+Speaker
+
+because in the next
+
+Speaker
+
+We'll have a challenge with function expressions when you're ready for it.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+It's time for a challenge.
+
+Speaker
+
+We're adding a new feature to our financial security app.
+
+Speaker
+
+This function
+
+Speaker
+
+get theft alert.
+
+Speaker
+
+takes in the number of transactions recorded on a credit card.
+
+Speaker
+
+in a one-hour period.
+
+Speaker
+
+If the number of transactions is greater than 5 in a given hour,
+
+Speaker
+
+It returns this warning.
+
+Speaker
+
+This challenge is pretty predictable.
+
+Speaker
+
+I want you to convert this function declaration to
+
+Speaker
+
+a function expression.
+
+Speaker
+
+Okay.
+
+Speaker
+
+course now, look at the last scrim to check this syntax if you need to, but don't cut and paste
+
+Speaker
+
+and do try to do this from memory first.
+
+Speaker
+
+And when you're ready, we'll have a look together in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to get that working just fine.
+
+Speaker
+
+Let's just take this function
+
+Speaker
+
+And I'm just going to comment it out.
+
+Speaker
+
+And then I'll set up my const.
+
+Speaker
+
+We'll keep the same name.
+
+Speaker
+
+And now here's my anonymous function.
+
+Speaker
+
+We'll borrow the parameter
+
+Speaker
+
+And of course, the logic.
+
+Speaker
+
+And to keep things tidy, I'm just going to delete all of this.
+
+Speaker
+
+Let's save and see if it's worked.
+
+Speaker
+
+And it has, we're getting the warning logged out down in the console.
+
+Speaker
+
+So that is our function expression.
+
+Speaker
+
+And of course, if we move up this line of code right here,
+
+Speaker
+
+We hit save.
+
+Speaker
+
+I'm
+
+Speaker
+
+cause get theft alert.
+
+Speaker
+
+not hoisted, so we can't call it
+
+Speaker
+
+before it's being expressed.
+
+Speaker
+
+So we need to move that line of code right back to
+
+Speaker
+
+to where it was.
+
+Speaker
+
+I'm there we are.
+
+Speaker
+
+And to be honest, six transactions an hour is not bad for me. I can probably manage 10 times that amount, and sometimes I wish my credit card.
+
+Speaker
+
+have been stolen.
+
+Speaker
+
+Anyway, we're not quite done talking about functions.
+
+Speaker
+
+Next, let's look at a super concise function expression called
+
+Speaker
+
+the arrow function.
+
+Speaker
+
+When you're ready for that.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+It's time to talk about arrow functions, which are an ultra-consized type of function.
+
+Speaker
+
+Let's go back to Get Spend Alert, a function expression that we're really familiar with by now.
+
+Speaker
+
+And we're going to see how this would look.
+
+Speaker
+
+as an arrow function.
+
+Speaker
+
+So I'm going to comment out all of this code and because an arrow function is a function expression,
+
+Speaker
+
+We're going to declare a const and give it a name just
+
+Speaker
+
+just like we did with this regular function expression.
+
+Speaker
+
+And this is where things start to get weird. I'm going to set this equals to some brackets.
+
+Speaker
+
+There's no function keyword inside.
+
+Speaker
+
+Now we know this function takes in a parameter, so I'm going to put that in right now.
+
+Speaker
+
+and it lives inside the brackets like a parameter in any other function.
+
+Speaker
+
+Next we need the arrow and this is of course the arrow that gives the arrow function its name.
+
+Speaker
+
+and we make it with the equal sign and an angle bracket.
+
+Speaker
+
+Right after the arrow, we can open up the curly braces. So now we've got the body of the function and we can return exactly the same logic that we were returning in the old function.
+
+Speaker
+
+And that's it, we can hit save.
+
+Speaker
+
+And we can see that it works. We have an arrow function. It looks strange at first, but you do really quickly get used to that rather.
+
+Speaker
+
+Cutea syntax.
+
+Speaker
+
+Okay, there's a little bit more to arrow functions, or perhaps I should say,
+
+Speaker
+
+a little bit less.
+
+Speaker
+
+actually we have written code here that is not strictly speaking necessary and we can make this arrow function even more concise.
+
+Speaker
+
+I'm going to start off by removing these brackets.
+
+Speaker
+
+And we'll just let that parameter sit there.
+
+Speaker
+
+Let's hit save.
+
+Speaker
+
+And it still works in arrow functions when you have one parameter you do not need the brackets.
+
+Speaker
+
+Now some developers think this is harder to read. There's just a bit more cognitive processing needed to
+
+Speaker
+
+recognize that what you're looking at here is a function.
+
+Speaker
+
+We've got no brackets and we've got no function keyword.
+
+Speaker
+
+And this parameter is just
+
+Speaker
+
+sitting there all on its own.
+
+Speaker
+
+effectively between two equal signs.
+
+Speaker
+
+So opinions on this do vary.
+
+Speaker
+
+Now, let's just see what happens if we have a function with no parameters.
+
+Speaker
+
+So I'm going to take away the parameter from here.
+
+Speaker
+
+And I'll take away the parameter from the function call.
+
+Speaker
+
+And
+
+Speaker
+
+Instead of saying, "You just spent and then having the amount,"
+
+Speaker
+
+I'm going to change this to you just spent some money.
+
+Speaker
+
+Now we can see already that we've got a red line. It's a bad omen, let's save.
+
+Speaker
+
+And of course, we get an error.
+
+Speaker
+
+Now if we put back empty brackets...
+
+Speaker
+
+The red line disappears.
+
+Speaker
+
+And it works.
+
+Speaker
+
+So that tells us that if it's a function with no parameters, we do need these brackets.
+
+Speaker
+
+Now imagine we actually have two parameters.
+
+Speaker
+
+Let's take in name.
+
+Speaker
+
+and amount.
+
+Speaker
+
+And I'm just going to speed type those variables into this template string.
+
+Speaker
+
+And now let's call the function, so for the name I'll give my name.
+
+Speaker
+
+And for the amount, we can put 100.
+
+Speaker
+
+That's it, save!
+
+Speaker
+
+And it works. Hey, Tom, you just spent 100.
+
+Speaker
+
+And it looks like I forgot the pound symbol right here.
+
+Speaker
+
+But that doesn't matter at all.
+
+Speaker
+
+Now let's try removing these brackets again.
+
+Speaker
+
+And look, we're getting a red line here underneath the arrow.
+
+Speaker
+
+So again, I think we're going to get an error.
+
+Speaker
+
+Yes, we do.
+
+Speaker
+
+So when we have two or more parameters, we do need the brackets.
+
+Speaker
+
+Now that is quite a lot to take in, so let's just recap.
+
+Speaker
+
+when to use brackets. Well, if you have one parameter,
+
+Speaker
+
+brackets are not needed.
+
+Speaker
+
+If you have zero,
+
+Speaker
+
+or two.
+
+Speaker
+
+or more parameters.
+
+Speaker
+
+brackets are needed.
+
+Speaker
+
+So the exception
+
+Speaker
+
+is one parameter.
+
+Speaker
+
+When you've got one parameter, you can omit.
+
+Speaker
+
+Now, we're not quite done making this arrow function concise because we can actually get rid of these curly braces.
+
+Speaker
+
+Now, when we do that, you'll see that we've got the red line underneath the return keyword. Well, let's get rid of the return keyword as well.
+
+Speaker
+
+And now the red line has gone, let's hit save.
+
+Speaker
+
+And it's working!
+
+Speaker
+
+So what you might well see is an arrow function, which is all on one line.
+
+Speaker
+
+And that is a really concise function.
+
+Speaker
+
+And if we take that down to just one parameter,
+
+Speaker
+
+And then of course we can remove these brackets.
+
+Speaker
+
+Well, that
+
+Speaker
+
+is the most concise you can make an arrow function.
+
+Speaker
+
+Let's just save to see it in action.
+
+Speaker
+
+And there we are.
+
+Speaker
+
+a really, really concise
+
+Speaker
+
+one line function.
+
+Speaker
+
+Now it's not always possible to remove the curly braces and the return keyword.
+
+Speaker
+
+What we're doing here is returning just one line of code.
+
+Speaker
+
+Let's make this a little bit more complex by adding some more logic.
+
+Speaker
+
+Imagine we only want to alert customers when they spend a minimum of £50.
+
+Speaker
+
+Well, let's try adding an if statement to this function.
+
+Speaker
+
+And you can already see that we've got red lines here and...
+
+Speaker
+
+here. So this is not going to work. We get our error. Let's just return this string here.
+
+Speaker
+
+It's still not going to work.
+
+Speaker
+
+But if we have the curly braces back...
+
+Speaker
+
+Then the red lines disappear and it works again. So again, let's just quickly recap.
+
+Speaker
+
+So when do we need to use the curly braces and the return keyword?
+
+Speaker
+
+Well, you can return one line of code without curly braces or the return keyword, but more complex logic requires the curly braces and the return keyword.
+
+Speaker
+
+Assuming you want the function to return something.
+
+Speaker
+
+So what you really need to remember is if you've got more than one line of code, you're going to need the curly braces.
+
+Speaker
+
+Now the syntax for arrow functions is a bit strange.
+
+Speaker
+
+I'm going to stick in your head with
+
+Speaker
+
+So when you're ready,
+
+Speaker
+
+move on to the next grim
+
+Speaker
+
+And I have got your first arrow function challenge waiting for you there.
+
+Speaker
+
+It is "Arrow Functions Challenge Time."
+
+Speaker
+
+Elon Musk himself.
+
+Speaker
+
+has called us.
+
+Speaker
+
+and he has asked us to write him a function for his Tesla software.
+
+Speaker
+
+that warns drivers when they are going.
+
+Speaker
+
+Too fast.
+
+Speaker
+
+We can't say no to Elon.
+
+Speaker
+
+We have done that.
+
+Speaker
+
+Right here.
+
+Speaker
+
+This function declaration
+
+Speaker
+
+takes in a driver's speed.
+
+Speaker
+
+and warns them that they are going to.
+
+Speaker
+
+fast.
+
+Speaker
+
+It works fine.
+
+Speaker
+
+Elon is not happy.
+
+Speaker
+
+once this.
+
+Speaker
+
+to be an arrow function.
+
+Speaker
+
+So here is your challenge.
+
+Speaker
+
+refactor this function to use an arrow function.
+
+Speaker
+
+Make sure you write the least cut.
+
+Speaker
+
+possible.
+
+Speaker
+
+Do not let it on down.
+
+Speaker
+
+pause now.
+
+Speaker
+
+and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that.
+
+Speaker
+
+Let's see how this would look.
+
+Speaker
+
+So...
+
+Speaker
+
+I'm going to comment out all of this code up here.
+
+Speaker
+
+and I'm going to declare a const and we'll keep the same name.
+
+Speaker
+
+Speed warning.
+
+Speaker
+
+and we will set that equals to our single parameter,
+
+Speaker
+
+we're going to emit the brackets.
+
+Speaker
+
+And then we're going to have the arrow.
+
+Speaker
+
+And we will return this string.
+
+Speaker
+
+Right here.
+
+Speaker
+
+And now, if we hit save...
+
+Speaker
+
+And we are, so we've used the most concise form here.
+
+Speaker
+
+We don't have any brackets, we don't have the return keyword.
+
+Speaker
+
+and we don't have the curly braces.
+
+Speaker
+
+Okay, it's pretty good if you manage to do that.
+
+Speaker
+
+Elon has been back on.
+
+Speaker
+
+on the phone.
+
+Speaker
+
+He's realized that this function sucks
+
+Speaker
+
+pretty badly.
+
+Speaker
+
+because it's warning all drivers not just those breaking the speed limit.
+
+Speaker
+
+Okay, here is your new challenge.
+
+Speaker
+
+I've increased the complexity of this just a little bit.
+
+Speaker
+
+Now, I want you to refactor this function.
+
+Speaker
+
+so it only wants drivers if they're going over the speed limit.
+
+Speaker
+
+The function is now going to take in two parameters.
+
+Speaker
+
+The first is the speed limit in this case 30.
+
+Speaker
+
+and the second is the driver's actual speed in this case.
+
+Speaker
+
+40.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Have a go at this.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hopefully you figured out what you need to do.
+
+Speaker
+
+So we're now going to bring in two parameters.
+
+Speaker
+
+We have got the first one as the speed limit.
+
+Speaker
+
+And the second one is the speed.
+
+Speaker
+
+So let's come right in here and we will say speed limit.
+
+Speaker
+
+and a comma between the parameters.
+
+Speaker
+
+We're immediately getting the red line, which reminds us that we now need to put these inside brackets because we have two
+
+Speaker
+
+Herometers.
+
+Speaker
+
+Right, we only want to give out a warning if the driver is doing.
+
+Speaker
+
+more than the speed limit.
+
+Speaker
+
+So we need an if statement.
+
+Speaker
+
+Let's come in here. I'm going to say, "If..."
+
+Speaker
+
+Speed.
+
+Speaker
+
+is greater than speed limit.
+
+Speaker
+
+Then we want to use this string right here.
+
+Speaker
+
+Now, again, we've got the red squiggly line and that is reminding us that because we've increased the complexity, it's no longer just one line of code we're returning.
+
+Speaker
+
+We need to open up the curly braces.
+
+Speaker
+
+and we will cut and paste all of that logic right in there. I'm just going to format it.
+
+Speaker
+
+And of course, we need to return that statement if we want to see it in the console.log.
+
+Speaker
+
+Let's hit save.
+
+Speaker
+
+And it's warning us you are going at 40 miles per hour.
+
+Speaker
+
+Okay, now let's try with a different speed limit, say 60.
+
+Speaker
+
+And we hit save.
+
+Speaker
+
+And we're looking out undefined.
+
+Speaker
+
+And that's because obviously the code inside this if statement is not running, so we're not really returning.
+
+Speaker
+
+anything.
+
+Speaker
+
+We've got a tiny bit more to do with arrow functions.
+
+Speaker
+
+When you're ready, I'll...
+
+Speaker
+
+I'll see you.
+
+Speaker
+
+in the next screen.
+
+Speaker
+
+The good news is
+
+Speaker
+
+Elon loves your work.
+
+Speaker
+
+He's got one last request.
+
+Speaker
+
+This array
+
+Speaker
+
+over here.
+
+Speaker
+
+holds the distances at
+
+Speaker
+
+has
+
+Speaker
+
+for needing to recharge.
+
+Speaker
+
+the distances are listed in miles.
+
+Speaker
+
+But now
+
+Speaker
+
+long wants them in.
+
+Speaker
+
+kilometers.
+
+Speaker
+
+We've got a
+
+Speaker
+
+dot_matt_methods set up here which is iterating over this array and
+
+Speaker
+
+turning it into an array.
+
+Speaker
+
+of kilometers, and we're just rounding to the nearest integer with this math dot round here.
+
+Speaker
+
+Here's your challenge.
+
+Speaker
+
+Can you swap out this inline function?
+
+Speaker
+
+and replace it.
+
+Speaker
+
+with an arrow function.
+
+Speaker
+
+I'm be sure to write as
+
+Speaker
+
+little code.
+
+Speaker
+
+as possible. Now, I haven't demonstrated how to do this because I think you can work it out.
+
+Speaker
+
+We've looked at several examples of our functions already.
+
+Speaker
+
+and using one as an inline function does not require any extra skill or knowledge.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Give this to your best shot.
+
+Speaker
+
+Search online if you need to and when you're done.
+
+Speaker
+
+I'll see you back here in just a moment and we'll have a look together.
+
+Speaker
+
+Okay, hopefully you managed to work that out. So all we need to do is
+
+Speaker
+
+get rid of this
+
+Speaker
+
+function keyword.
+
+Speaker
+
+And now we're only returning one line of code here.
+
+Speaker
+
+So let's delete.
+
+Speaker
+
+These curly braces?
+
+Speaker
+
+We're going to bring it all up onto one line and we're going to delete the return keyword as well.
+
+Speaker
+
+And of course we need our arrow.
+
+Speaker
+
+We've only got one parameter here with the dot map method, so let's delete those brackets.
+
+Speaker
+
+How's that looking if we just space it out a little bit?
+
+Speaker
+
+It's getting quite long here across the page, that's just save.
+
+Speaker
+
+And there we are, it is working.
+
+Speaker
+
+But look, we've got a little bit of a problem because we've got one bracket hanging down onto the next line.
+
+Speaker
+
+That's looking a bit tidier.
+
+Speaker
+
+So
+
+Speaker
+
+there we are. You can do it with a very concise arrow function.
+
+Speaker
+
+Now, I've been encouraging you to write the least amount of code possible.
+
+Speaker
+
+just to get used to this really concise syntax.
+
+Speaker
+
+you don't necessarily have to use it.
+
+Speaker
+
+And you might actually think it's easier to read if you do include the brackets or perhaps you return this inside the curly braces.
+
+Speaker
+
+on a new line.
+
+Speaker
+
+Okay, we're done with learning our functions now. Let's go back to the app
+
+Speaker
+
+and we will put them to good use in our code.
+
+Speaker
+
+When you're ready to move on.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+OK, let's take a deeper dive into import and export.
+
+Speaker
+
+Now what we've seen already in previous projects is a named export.
+
+Speaker
+
+And that is exactly what I've got right here.
+
+Speaker
+
+It's called a named export because when we import it, which we're doing in index.js,
+
+Speaker
+
+We have to import it by whatever name it was given in its original file.
+
+Speaker
+
+So the array that we're exporting here
+
+Speaker
+
+called interplanetary destinations array.
+
+Speaker
+
+And that is exactly what we're calling it when we import it.
+
+Speaker
+
+Let's just log that out to check it's working.
+
+Speaker
+
+And down in the console, we can see that we are logging out that.
+
+Speaker
+
+array.
+
+Speaker
+
+And what we're actually logging out
+
+Speaker
+
+is this data for an interplanetary travel firm that runs trips to exotic places all around the universe.
+
+Speaker
+
+So, we've got trips to Nova Prime,
+
+Speaker
+
+Luna Outpost Alpha.
+
+Speaker
+
+Titan Oasis.
+
+Speaker
+
+and each trip is an object.
+
+Speaker
+
+And inside the object, we've got the destination.
+
+Speaker
+
+the distance in kilometers, which is normally a very long way, the travel time in days, which is normally a very long time.
+
+Speaker
+
+The price in US dollars, which is extremely high,
+
+Speaker
+
+and a description of what you can do on that.
+
+Speaker
+
+Now, although we have to import it using its original name,
+
+Speaker
+
+We don't have to keep that name.
+
+Speaker
+
+We can change it.
+
+Speaker
+
+right here in the import using the As keyword.
+
+Speaker
+
+So I could say import
+
+Speaker
+
+interplanetary destinations array.
+
+Speaker
+
+As
+
+Speaker
+
+And then perhaps I prefer something much shorter like,
+
+Speaker
+
+destinations.
+
+Speaker
+
+Now, when I hit save...
+
+Speaker
+
+We're going to get an error.
+
+Speaker
+
+And down in the console, it says interplanetary destinations are a is not defined.
+
+Speaker
+
+Well, we're still logging it out by its original name.
+
+Speaker
+
+But we can't do that now, we have to use destinations.
+
+Speaker
+
+And that works!
+
+Speaker
+
+Now back in data.js, I have actually got.
+
+Speaker
+
+more than one data set.
+
+Speaker
+
+If we scroll down,
+
+Speaker
+
+I've got another const here.
+
+Speaker
+
+called Short Space Trips Array.
+
+Speaker
+
+and these trips are much shorter.
+
+Speaker
+
+The travel time is normally just a couple of days or even one day, and you can do things like
+
+Speaker
+
+the moon or orbit the earth.
+
+Speaker
+
+the prices are much more reasonable.
+
+Speaker
+
+Although $10,000 US dollars is not exactly cheap.
+
+Speaker
+
+Now, it's no problem at all to import two entities for
+
+Speaker
+
+from one file to index.js.
+
+Speaker
+
+So let's take this array.
+
+Speaker
+
+And over in index.js, I'm just going to add it to this import list.
+
+Speaker
+
+coming from the same file.
+
+Speaker
+
+to.js. All I need is a comma.
+
+Speaker
+
+And I'll paste in the name of the array.
+
+Speaker
+
+Now, let's just log that one out.
+
+Speaker
+
+And when I hit save,
+
+Speaker
+
+I get an error.
+
+Speaker
+
+So this is a quick debug challenge.
+
+Speaker
+
+What's gone, Rum, here?
+
+Speaker
+
+Just take a moment to troubleshoot it.
+
+Speaker
+
+Okay, all we needed to remember is the over-indator.js
+
+Speaker
+
+if we scroll up.
+
+Speaker
+
+to the very top, we're using the export keyword with this const.
+
+Speaker
+
+We need to do exactly the same thing.
+
+Speaker
+
+everything we want to export.
+
+Speaker
+
+needs to have the export keyword.
+
+Speaker
+
+Now let's hit save.
+
+Speaker
+
+And there we are, we can see that it is working.
+
+Speaker
+
+Now as I say,
+
+Speaker
+
+Every export needs to have the export keyword.
+
+Speaker
+
+but we don't have to do them all individually.
+
+Speaker
+
+Let's just delete export from here.
+
+Speaker
+
+And...
+
+Speaker
+
+from here.
+
+Speaker
+
+And then we're going to come right down to the bottom.
+
+Speaker
+
+And I'm going to say export.
+
+Speaker
+
+And then, in curly braces...
+
+Speaker
+
+would have the names of our arrays.
+
+Speaker
+
+And of course, those are separated by a comma.
+
+Speaker
+
+Now let's hit save.
+
+Speaker
+
+And there we are, that looks like that is working. Let's just go back to index.js and we'll just check that destinations is working.
+
+Speaker
+
+And it is.
+
+Speaker
+
+Now this line of code that we've got across here is
+
+Speaker
+
+is pretty long.
+
+Speaker
+
+So we could actually break this up onto a couple of lines.
+
+Speaker
+
+And that still works. So that could look a bit neater if you're bringing in a lot of imports and
+
+Speaker
+
+And actually, it has broken these syntax highlighting.
+
+Speaker
+
+previously as was colored in orange.
+
+Speaker
+
+Now I'm just going to put this back as it was.
+
+Speaker
+
+And I'm just going to delete this code here.
+
+Speaker
+
+which will just make it a little bit more manageable.
+
+Speaker
+
+Okay, that's it for the named export, but we're not quite done with this. There's another type of export, which we're going to take a look at in the next scrim.
+
+Speaker
+
+Now, there is another way of exporting, which is called the default export.
+
+Speaker
+
+And I'm going to come over here and set up a new file called search function.js.
+
+Speaker
+
+and just bear with me while I paste a function into this new file.
+
+Speaker
+
+Okay, so what we've got here is a function called get matching trips array.
+
+Speaker
+
+And it takes in two parameters, an array,
+
+Speaker
+
+and a keyword.
+
+Speaker
+
+And then we're using the filter method to
+
+Speaker
+
+to iterate over the array.
+
+Speaker
+
+And what it's going to do is return us a new array.
+
+Speaker
+
+which includes trips where the description
+
+Speaker
+
+includes the keyword.
+
+Speaker
+
+So, if, for example, we go back to the data, we could search through our interplanetary destinations array.
+
+Speaker
+
+And
+
+Speaker
+
+We could find all of the trips, which include the word exotic.
+
+Speaker
+
+Now, in order to use this function, get matching trips array in index.js, of course,
+
+Speaker
+
+course we need to import it.
+
+Speaker
+
+And for this, I'm going to use export default.
+
+Speaker
+
+So ill it's function.
+
+Speaker
+
+I'm going to come up here.
+
+Speaker
+
+and say export.
+
+Speaker
+
+Default
+
+Speaker
+
+Now, over in index.js, I need a similar line of code to the one we've got here.
+
+Speaker
+
+But I'm actually going to delete all of this because we don't need the curly braces.
+
+Speaker
+
+What we do need is the file the function is being exported from.
+
+Speaker
+
+And then in here, we need to give it a name.
+
+Speaker
+
+Now, we could use the name of the function.
+
+Speaker
+
+And let's try using that. So I'm going to come in here.
+
+Speaker
+
+our delete interplanetary destinations array.
+
+Speaker
+
+And let's try running this function.
+
+Speaker
+
+Now, we know the function is expecting two parameters and array and a keyword.
+
+Speaker
+
+I'm going to give this the array interplanetary destinations array.
+
+Speaker
+
+And the keyword I'll choose is exotic.
+
+Speaker
+
+Now that's hit save.
+
+Speaker
+
+And down in the console we've got an array and it's got to
+
+Speaker
+
+objects in it. You can see that each of them contains the keyword exotic.
+
+Speaker
+
+So how does a default export differ from a named export?
+
+Speaker
+
+Well, we can call this one whatever we want.
+
+Speaker
+
+So I could change its name to filter function.
+
+Speaker
+
+Let's just try it and see if it works.
+
+Speaker
+
+And it does, we get exactly the same result.
+
+Speaker
+
+Okay, so let's just consider the pros and cons of this.
+
+Speaker
+
+We've got the advantage that we can call this function whatever we want.
+
+Speaker
+
+And that's useful if we've got no control over the name of the original function.
+
+Speaker
+
+and the name that it's got is likely to cause confusion by making the code less readable.
+
+Speaker
+
+But this ability to change the name is also a disadvantage.
+
+Speaker
+
+in that it can cause confusion.
+
+Speaker
+
+If a team is using the same function,
+
+Speaker
+
+under different names in different files.
+
+Speaker
+
+So here's a convention for you.
+
+Speaker
+
+Let's use the functions name in the file name and in the import name.
+
+Speaker
+
+And to be honest, I
+
+Speaker
+
+gave this a pretty silly vague name deliberately to demonstrate how problematic it could be.
+
+Speaker
+
+So let's just go back to this file. We're going to take get matching trips array.
+
+Speaker
+
+and I'm actually going to change the name of this file.
+
+Speaker
+
+And you can't see that in Scrimber, but if you write Cricke file, you have an option to change its name.
+
+Speaker
+
+Now, let's update index.js.
+
+Speaker
+
+And there we are, it's working, everything has the same name, so it's hard to get complete.
+
+Speaker
+
+Now, one thing to be clear about
+
+Speaker
+
+You can only have one default X.
+
+Speaker
+
+sport from a file.
+
+Speaker
+
+If you try to add another one with the default keyword, you're just going to get an
+
+Speaker
+
+And the last thing to point out is that we could just declare the function normally here.
+
+Speaker
+
+And then come down underneath.
+
+Speaker
+
+and say export default
+
+Speaker
+
+the name of the function right there.
+
+Speaker
+
+And that will also work. Okay, so quite a lot there to remember about import and export and you'll be seeing it and working with it again later in this module.
+
+Speaker
+
+Now is a really good time to take a break because next up we're going to be looking at the reduce method and that is one of the more complex array methods. So come back and get going with that when you feel rested.
+
+Speaker
+
+Let's take a moment to look at a really cool, inbuilt feature of JavaScript called the.reduce method.
+
+Speaker
+
+I've subtied to this.
+
+Speaker
+
+give me just one thing.
+
+Speaker
+
+because that is what the dot-reduce method does.
+
+Speaker
+
+like a stingy father Christmas.
+
+Speaker
+
+It gives you
+
+Speaker
+
+just one thing.
+
+Speaker
+
+What does that mean?
+
+Speaker
+
+Well...
+
+Speaker
+
+As the name suggests, this is all about reducing
+
+Speaker
+
+Let's take a practical example.
+
+Speaker
+
+Now, I'm recording this right here in the UK, a country where it rains.
+
+Speaker
+
+A lot.
+
+Speaker
+
+One month, I recorded all of the rain that fell on my garden
+
+Speaker
+
+and I have the weekly totals saved here in an array.
+
+Speaker
+
+So in the first week, we had 10 millimeters of rain.
+
+Speaker
+
+then 20.
+
+Speaker
+
+And the third week it was completely dry.
+
+Speaker
+
+But in the last week it reigned a lot, we had 122 millimeters.
+
+Speaker
+
+Now, reducing these four numbers down to one number,
+
+Speaker
+
+the total
+
+Speaker
+
+is a really good use case for
+
+Speaker
+
+or the dot reduce method.
+
+Speaker
+
+And the process goes...
+
+Speaker
+
+like this.
+
+Speaker
+
+So firstly, the dot-reduce method will take the first element in the array.
+
+Speaker
+
+It will then take the second element in the array, and because our aim here is to get the total, it adds the first element to the second element
+
+Speaker
+
+And it returns the total, which is of course...
+
+Speaker
+
+30. It then takes that total.
+
+Speaker
+
+onto the next element.
+
+Speaker
+
+and adds it to the value of that element. Well, that element's value is zero, so 30 plus zero is, of course, still 30.
+
+Speaker
+
+Now it moves on, it takes that total with it.
+
+Speaker
+
+and it goes to the last element of the array.
+
+Speaker
+
+which contains the value 122.
+
+Speaker
+
+it adds the running total to 122
+
+Speaker
+
+And because that is the last element in the array, it returns the number 152.
+
+Speaker
+
+And you can check with a calculator if you want to, but I can assure you that 152 is the sum of these four.
+
+Speaker
+
+numbers.
+
+Speaker
+
+Okay, let's go to the editor and see how we would do the exact same thing with code.
+
+Speaker
+
+So here's the same array of rain data from January.
+
+Speaker
+
+Now the first thing we need to remember is that the one number that the dot reduce method is going to give us needs to be saved somewhere.
+
+Speaker
+
+So I am going to set up a const.
+
+Speaker
+
+and I am going to call this "Corns".
+
+Speaker
+
+It's how it's all.
+
+Speaker
+
+rainfall.
+
+Speaker
+
+January.
+
+Speaker
+
+And I'm going to set that equals to this original array that we're working on.
+
+Speaker
+
+And I will call the dot reduce method onto the end of the because it's a method.
+
+Speaker
+
+I will give it, it's right.
+
+Speaker
+
+gets.
+
+Speaker
+
+Now the dot reduce method takes in a function, so let's use an anonymous inline function just like we've done before.
+
+Speaker
+
+And...
+
+Speaker
+
+I'll give it his brackets and open up.
+
+Speaker
+
+curly braces. Now this function takes in two parameters.
+
+Speaker
+
+If you do some googling on this, you'll see that there are various conventions people follow when naming these parameters.
+
+Speaker
+
+I'm going to start off with names which are descriptive of what these parameters do.
+
+Speaker
+
+because that's really key to...
+
+Speaker
+
+understanding how the dot reduce method works.
+
+Speaker
+
+The first parameter I'm going to call "c"
+
+Speaker
+
+>>
+
+Speaker
+
+because it stores the running.
+
+Speaker
+
+of the numbers as we work our way through the
+
+Speaker
+
+process.
+
+Speaker
+
+The second one I'm going to call
+
+Speaker
+
+elements.
+
+Speaker
+
+because it represents the element in the array, which is currently being worked on.
+
+Speaker
+
+So what will happen here?
+
+Speaker
+
+is that when the method starts, the first element in the array
+
+Speaker
+
+become.
+
+Speaker
+
+Total.
+
+Speaker
+
+And the second element in the array will become...
+
+Speaker
+
+Current.
+
+Speaker
+
+The dot-reduce method is going to apply the logic from the body of this function and it's going to store whatever is returned in
+
+Speaker
+
+in the total.
+
+Speaker
+
+And we're adding the elements of the array. So what logic do we want to do? What calculation do we want to do?
+
+Speaker
+
+We want to add the total, which is currently 10.
+
+Speaker
+
+to the current element.
+
+Speaker
+
+which is currently 20.
+
+Speaker
+
+So let's just return.
+
+Speaker
+
+us.
+
+Speaker
+
+Current Element
+
+Speaker
+
+Now if you'll remember from our diagram when that has completed,
+
+Speaker
+
+It's just going to start again on the next element.
+
+Speaker
+
+with the new total.
+
+Speaker
+
+30 will be carried forward.
+
+Speaker
+
+and then it will work its way along the array.
+
+Speaker
+
+Let's log out.
+
+Speaker
+
+go to rainfall January.
+
+Speaker
+
+and see what we get.
+
+Speaker
+
+And if I open up the console, you can see we are getting the number 152, so it is working.
+
+Speaker
+
+Now to make this really clear, let's add a console.log
+
+Speaker
+
+here inside the body of the function, so we can see what is happening with the total
+
+Speaker
+
+I'm the current element.
+
+Speaker
+
+each stage in the
+
+Speaker
+
+process.
+
+Speaker
+
+Now, if I hit save...
+
+Speaker
+
+And down in the console, you can see something really interesting. So I'm just going to cut and paste all of this into here just so we can see it really clearly.
+
+Speaker
+
+So...
+
+Speaker
+
+On the first pass, the total is the number 10 and the current element is 20. As it moves along the array, it's added 10 and 20 together to get the new total of 30
+
+Speaker
+
+And the next element contains zero.
+
+Speaker
+
+It adds them together and
+
+Speaker
+
+and it updates the total, which is of course still 30.
+
+Speaker
+
+But now the current element is 122 and
+
+Speaker
+
+And this is the last element in the array.
+
+Speaker
+
+So when it's been added to the 30 in the total, the dot-reducemethered finishes
+
+Speaker
+
+and we can use this console.log here on line eight.
+
+Speaker
+
+to log out.
+
+Speaker
+
+absolute total.
+
+Speaker
+
+100.
+
+Speaker
+
+I'm 52.
+
+Speaker
+
+Just before we move on to a challenge, I just want to quickly point out...
+
+Speaker
+
+that we've used the dot-reduce method here to sum the total numbers in an array.
+
+Speaker
+
+And that is a really good use case for the dot-reduce method.
+
+Speaker
+
+but it is definitely not all it is used for.
+
+Speaker
+
+you'll actually see it used in many ways.
+
+Speaker
+
+finding the most recent date in an array of dates or eliminating duplicates in an array, it's really quite a powerful method.
+
+Speaker
+
+Okay, I just wanted to make you aware of that now when you're ready for a challenge.
+
+Speaker
+
+I'll see you in the next room.
+
+Speaker
+
+Let's do a challenge with the dot reduce method.
+
+Speaker
+
+A teacher has saved the individual grades of their students to this array.
+
+Speaker
+
+Now the head teacher wants to know that
+
+Speaker
+
+class.
+
+Speaker
+
+average.
+
+Speaker
+
+Now your challenge is to use the dot-reduce method to find the total of the grades
+
+Speaker
+
+and I'll leave it to you to work out.
+
+Speaker
+
+What maths do you need to do?
+
+Speaker
+
+to convert that to a class average.
+
+Speaker
+
+When you're done, you can just update the template string that we've got here so that we can log out the class average.
+
+Speaker
+
+pause now
+
+Speaker
+
+Have a go at that.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that just fine.
+
+Speaker
+
+If you needed to pop back to the
+
+Speaker
+
+the previous scrim to check the syntax, that is absolutely fine.
+
+Speaker
+
+So let's come down here and I'm going to set up a new const called
+
+Speaker
+
+- It's how it's all.
+
+Speaker
+
+Grades.
+
+Speaker
+
+And I'm going to set back equal to our original array grades.
+
+Speaker
+
+And I'm going to call it the dot reduce method.
+
+Speaker
+
+and we'll give it the inline callback function.
+
+Speaker
+
+And we know this function needs two parameters.
+
+Speaker
+
+I'm going to call them total.
+
+Speaker
+
+and perhaps instead of calling them "current element"
+
+Speaker
+
+We'll call them.
+
+Speaker
+
+current.
+
+Speaker
+
+grade because we know that each of the figures in this array represents a student's grade.
+
+Speaker
+
+Now, let's open up the body of the function, and because our aim is to keep adding the elements of the array together and
+
+Speaker
+
+Until we get one final total.
+
+Speaker
+
+I am going to return.
+
+Speaker
+
+Okay, Joel.
+
+Speaker
+
+Class.
+
+Speaker
+
+Currents.
+
+Speaker
+
+Now down here we've got this console.log and
+
+Speaker
+
+and we've got this template string with these back ticks. And that means that we can use the dollar sign and the curly braces
+
+Speaker
+
+to do a little bit of logic right here inside the template string.
+
+Speaker
+
+So I'm going to take total grades.
+
+Speaker
+
+And to figure out the average.
+
+Speaker
+
+I am just going to divide it by
+
+Speaker
+
+by the number of the students in the class.
+
+Speaker
+
+And we can access that.
+
+Speaker
+
+by saying
+
+Speaker
+
+grades.
+
+Speaker
+
+Now if I save that and open up the console, it's telling us the class average is just over 71%.
+
+Speaker
+
+They are very good students, but you are a better student and now you understand the fundamentals of the dot reduce method. You can go back to the app and
+
+Speaker
+
+And we will put this knowledge to...
+
+Speaker
+
+good use.
+
+Speaker
+
+When you're ready to move on,
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, so far we've used the reduced method with relatively simple arrays. We've had an array of numbers and we've added them together.
+
+Speaker
+
+But life is often more complex than that.
+
+Speaker
+
+what if we wanted to work with an array of objects?
+
+Speaker
+
+Well, that is exactly what I've got here.
+
+Speaker
+
+It's an array of objects and each object is a student, they've got a name and a grade.
+
+Speaker
+
+And I've kept this really simple, we've just got three students. And our aim is to get an average of their grades.
+
+Speaker
+
+over in index.js, I've set up a function to do exactly that.
+
+Speaker
+
+So the function takes in the student array as a parameter and
+
+Speaker
+
+and I'm importing the student array right here.
+
+Speaker
+
+So let's use the reduce method to total these grades and then we'll divide them by the length of the array to get the average.
+
+Speaker
+
+So, I'll come in here and set up my const total grades.
+
+Speaker
+
+And then I'll set that equals to the array that we're bringing in students array.
+
+Speaker
+
+And I'll call the reduce method right here.
+
+Speaker
+
+Now I'm going to do this with an anonymous inline function and not an arrow function just for the first time.
+
+Speaker
+
+because the syntax is actually a little bit tricky and it's easier to demonstrate it this way.
+
+Speaker
+
+but we will convert it to an arrow function at
+
+Speaker
+
+the end.
+
+Speaker
+
+So I'll say function.
+
+Speaker
+
+And we know that the function we passed to reduce takes into parameters.
+
+Speaker
+
+The first is going to store the total.
+
+Speaker
+
+and the second will be the current students.
+
+Speaker
+
+And what we did before for an addition,
+
+Speaker
+
+was to return the total
+
+Speaker
+
+class these second parameter in this case, current students.
+
+Speaker
+
+Now is this going to work?
+
+Speaker
+
+Well, we'll uncomment this console.log.
+
+Speaker
+
+and save.
+
+Speaker
+
+And down in the console, we're getting undefined. And actually, that's my fault because we're not actually returning total grades.
+
+Speaker
+
+We'll try again.
+
+Speaker
+
+And we're failing because let me get Object Object Object Object Object Object.
+
+Speaker
+
+But to be honest, that figures, because at the moment, reduce starts
+
+Speaker
+
+The total is the first object in the array, this one right here.
+
+Speaker
+
+And current student is the second object in the array,
+
+Speaker
+
+Which is this one right here?
+
+Speaker
+
+So what we're actually doing at the moment
+
+Speaker
+
+is just adding two objects together.
+
+Speaker
+
+And that is not good. It's not possible just to add two objects.
+
+Speaker
+
+What we need to do is access the grade property in these objects so we can add these numbers together.
+
+Speaker
+
+How are we going to do that?
+
+Speaker
+
+Well, the obvious answer might be to come in here and say that we want to take total dot grades.
+
+Speaker
+
+There we are, we've got access to the grades property in the first object.
+
+Speaker
+
+Except we haven't, we've got this red line.
+
+Speaker
+
+And we're going to get exactly the same thing if I try to access the grade of subsequent objects in the array.
+
+Speaker
+
+When I hit save.
+
+Speaker
+
+syntax era.
+
+Speaker
+
+So that is not the way to do it.
+
+Speaker
+
+So how on earth do we go about accessing these specific numbers in this array with the reduced method?
+
+Speaker
+
+Well luckily, the reduced method has got an answer for us.
+
+Speaker
+
+So remember, this first parameter total.
+
+Speaker
+
+is the first element from the array, so this object
+
+Speaker
+
+by default.
+
+Speaker
+
+But it doesn't have to be that way, and we don't want it to be that way in this case.
+
+Speaker
+
+We actually want total here.
+
+Speaker
+
+to be a number.
+
+Speaker
+
+not an object.
+
+Speaker
+
+because then we can do some addition. And ideally, we want total to be the number 0.
+
+Speaker
+
+because if total is zero, as reduce iterates through this array, it can just add the numbers.
+
+Speaker
+
+0 + 75, would of course be 75.
+
+Speaker
+
+And then 75 plus 83.
+
+Speaker
+
+And then the total of those two will be added to SEF's 66.
+
+Speaker
+
+So we're going to achieve this by giving the reduced method a second parameter.
+
+Speaker
+
+Now this function has already got two parameters and we are not going to change that.
+
+Speaker
+
+those parameters will stay as they are.
+
+Speaker
+
+But remember,
+
+Speaker
+
+that this function is itself a parameter.
+
+Speaker
+
+The reduced method
+
+Speaker
+
+takes in a function as a parameter and this function is it.
+
+Speaker
+
+So what I'm going to do is come to the end of this function.
+
+Speaker
+
+between the closing curly brace and this bracket which closes the reduce method,
+
+Speaker
+
+and I'm going to put a comma.
+
+Speaker
+
+And I'm going to add another parameter right here.
+
+Speaker
+
+What this parameter is going to do
+
+Speaker
+
+is it's going to override the default value.
+
+Speaker
+
+of total.
+
+Speaker
+
+The first parameter
+
+Speaker
+
+in the function that we're passing the reduced method.
+
+Speaker
+
+And we want that to be the number zero.
+
+Speaker
+
+Now we're not quite done, if total is zero.
+
+Speaker
+
+what we want reduced to do is
+
+Speaker
+
+at the grade of each student.
+
+Speaker
+
+and we can access that by saying currentstudent.grade.
+
+Speaker
+
+Now let's hit save.
+
+Speaker
+
+And there we are, we have got a total of our students grades. Now we're looking for an average, so why don't we just return
+
+Speaker
+
+Grades divided by
+
+Speaker
+
+students array.
+
+Speaker
+
+And there we are, we've got our average grade.
+
+Speaker
+
+Okay, so let's just recap what this extra parameter is doing.
+
+Speaker
+
+So by default, total is the first element in the array, in this case it's an object.
+
+Speaker
+
+And come.
+
+Speaker
+
+Speaker
+
+starts as the second element in the array, and will then move on and be the third element, the fourth element, et cetera, et cetera.
+
+Speaker
+
+But now we've added the second parameter.
+
+Speaker
+
+Everything changes.
+
+Speaker
+
+Now, the starting value of total
+
+Speaker
+
+is zero.
+
+Speaker
+
+regardless of whatever is in this first element in the array.
+
+Speaker
+
+that no longer matters.
+
+Speaker
+
+because the first element in this array
+
+Speaker
+
+is now the business.
+
+Speaker
+
+of the second parameter in the function that we passed to the reduce method.
+
+Speaker
+
+So current student, instead of starting as the second element in the array, will now start as the first element in the array.
+
+Speaker
+
+and 75 will be added to zero.
+
+Speaker
+
+83 will be added to that.
+
+Speaker
+
+And then 66 will be added to the total of 75 plus 83.
+
+Speaker
+
+And what we then get.
+
+Speaker
+
+is the
+
+Speaker
+
+total.
+
+Speaker
+
+we're returning right here.
+
+Speaker
+
+Now we can express this with a one line arrow function.
+
+Speaker
+
+And if you'd like a bit of a challenge, why don't you just pause now
+
+Speaker
+
+and convert this function to an arrow function.
+
+Speaker
+
+Okay, let's go ahead and do that.
+
+Speaker
+
+I'll move the mini browser out of the way because it is going to be quite a long line of code.
+
+Speaker
+
+So we no longer need the function keyword.
+
+Speaker
+
+We are keeping two parameters in here, so we do need these parentheses.
+
+Speaker
+
+And of course we need the arrow.
+
+Speaker
+
+Now we've only got one line of logic in this function.
+
+Speaker
+
+So we don't need the return keyword.
+
+Speaker
+
+In fact, let's just bring it all onto one line and we can delete the curly braces.
+
+Speaker
+
+Now it's a little bit annoying, but this is too long for one line, so it's broken us down onto a second line.
+
+Speaker
+
+I think the best thing to do here is to bring all of this onto a new line.
+
+Speaker
+
+and that should do it. So we've got the arrow function right here
+
+Speaker
+
+And then we've got a comma.
+
+Speaker
+
+and the second parameter that we're passing to the reduce method.
+
+Speaker
+
+Let's just hit save and see if it works.
+
+Speaker
+
+And it does work.
+
+Speaker
+
+And you can argue that now that's a bit more difficult.
+
+Speaker
+
+And people will, of course, argue about which syntax is better in this situation.
+
+Speaker
+
+an anonymous inline function and arrow function.
+
+Speaker
+
+or possibly even a function declaration that you write elsewhere in this file and pass in.
+
+Speaker
+
+But as long as you're aware how they'll work,
+
+Speaker
+
+It doesn't matter which one you use for now.
+
+Speaker
+
+So this extra parameter which sets the initial value of the first parameter that we passed to the reduce method
+
+Speaker
+
+really useful for situations just
+
+Speaker
+
+just like these.
+
+Speaker
+
+So take a bit of time to digest this.
+
+Speaker
+
+And then in the next room,
+
+Speaker
+
+I've got a challenge for you.
+
+Speaker
+
+Okay, it is challenge time.
+
+Speaker
+
+Here I have an array of objects and each object is an item that's just been purchased.
+
+Speaker
+
+And we've got some pretty weird stuff here.
+
+Speaker
+
+We've got invisible milk, for example, and down at the bottom, we've got...
+
+Speaker
+
+glow in the dark eggs, which apparently make your breakfast an illuminating experience.
+
+Speaker
+
+Now, each object has got the name of the item, the price in US dollars and a description.
+
+Speaker
+
+And what we're going to be really interested in for this challenge
+
+Speaker
+
+is the price.
+
+Speaker
+
+because I want you to calculate a total cost of all of these four purchases.
+
+Speaker
+
+And over in index.js, I've got a function to
+
+Speaker
+
+do exactly that.
+
+Speaker
+
+It's taking in as a parameter the array we just looked at and I am importing that right here.
+
+Speaker
+
+And this is your challenge. Use the Reduce method to
+
+Speaker
+
+calculate the total cost of items which have been bought.
+
+Speaker
+
+And you can build your reduced method.
+
+Speaker
+
+right here.
+
+Speaker
+
+Okay, pause now, refer back to the previous screen if you need to.
+
+Speaker
+
+And I'm gonna have a look together when you've got this sorted in just a moment.
+
+Speaker
+
+Okay, hopefully you got that working. So let's take this array.
+
+Speaker
+
+And I'll call the Reduce method.
+
+Speaker
+
+And then I'll open up the brackets and we're going to pass the reduce method a function and
+
+Speaker
+
+And I'm going to use an arrow function.
+
+Speaker
+
+Now the arrow function is going to need brackets because we've got two parameters.
+
+Speaker
+
+I'm going to go for a total.
+
+Speaker
+
+And come.
+
+Speaker
+
+current item.
+
+Speaker
+
+Now I'll bring this onto a new line.
+
+Speaker
+
+And we don't need the return keyword, we've got just one line of logic.
+
+Speaker
+
+that's going to be total.
+
+Speaker
+
+And we want to add that to current item. Looks like I forgot the camel case.
+
+Speaker
+
+And then for each item, we need to access the price in US dollars.
+
+Speaker
+
+Now, is that going to work? No, not yet, because we need to add in the second parameter.
+
+Speaker
+
+And we can do that right here, we just need a comma.
+
+Speaker
+
+And then the second parameter is going to be zero.
+
+Speaker
+
+We're already returning the total, so let's hit save and see if it's worked.
+
+Speaker
+
+And down in the console, we're getting 73.
+
+Speaker
+
+So it has
+
+Speaker
+
+the
+
+Speaker
+
+we've successfully added.
+
+Speaker
+
+all of these together. We've got 40 and 10 makes 50.
+
+Speaker
+
+15 makes 65 and
+
+Speaker
+
+make 73.
+
+Speaker
+
+So that works.
+
+Speaker
+
+perfectly.
+
+Speaker
+
+Okay, so that is it for the reduce method, and it is one of the tricky methods. So congratulations on getting through this section.
+
+Speaker
+
+And don't feel bad if you found it a little bit tricky.
+
+Speaker
+
+It is worth taking the time to get the reduced method.
+
+Speaker
+
+firmly under your control.
+
+Speaker
+
+Now, just before we finish, I want to show you something that's going to lead us into the next lesson.
+
+Speaker
+
+And I just want to remove this challenge text and get it out of the...
+
+Speaker
+
+Now imagine we wanted to give each customer a discount.
+
+Speaker
+
+Let's add a parameter to this function.
+
+Speaker
+
+And then instead of returning the total, let's return the total minus the discount.
+
+Speaker
+
+And where we call this function,
+
+Speaker
+
+Let's pass in a discount of 10.
+
+Speaker
+
+Now I'll hit save.
+
+Speaker
+
+And down in the console, we get 63. Well, that figures we had 73 before.
+
+Speaker
+
+We've subtracted the discount and the discount was 10.
+
+Speaker
+
+But what would happen if there were no discounts? So we forgot to actually pass in this second argument.
+
+Speaker
+
+Now I'll hit save.
+
+Speaker
+
+And we get no.
+
+Speaker
+
+effectively broken the function.
+
+Speaker
+
+So in the next screen, I want to talk about what happens when we've got a parameter which we use in the logic.
+
+Speaker
+
+But we don't actually...
+
+Speaker
+
+pass in when calling the function.
+
+Speaker
+
+when you're ready to talk about that.
+
+Speaker
+
+see you
+
+Speaker
+
+in the next screen.
+
+Speaker
+
+Okay, so we know we have a problem here, which is that we're taking in a parameter, and we're using it in the logic, but sometimes that parameter
+
+Speaker
+
+might not exist.
+
+Speaker
+
+because we're not actually passing it in when we're calling the function.
+
+Speaker
+
+So what would be cool would be if there was a way to give this parameter a default value?
+
+Speaker
+
+And actually, we could come right in here and do that with some code.
+
+Speaker
+
+So let's say if,
+
+Speaker
+
+And then we can just see if discount exists.
+
+Speaker
+
+And then we can use the exclamation mark and discount.
+
+Speaker
+
+So what we're saying here is if discount is full C or effectively if discount doesn't exist for the purposes of this function,
+
+Speaker
+
+then let's set discount to zero.
+
+Speaker
+
+Now we've got issues here with red lines. We've made this arrow function a bit more complicated, so we need to actually add in the curly braces.
+
+Speaker
+
+And now of course we need the return keyword.
+
+Speaker
+
+Okay, let's hit save.
+
+Speaker
+
+And we're getting 73 down in the console.
+
+Speaker
+
+And that figures because the discount is zero.
+
+Speaker
+
+Let's set the discount to 10.
+
+Speaker
+
+Now we've got 63.
+
+Speaker
+
+So we've solved the problem, but in a somewhat in elegant way.
+
+Speaker
+
+Now luckily, JavaScript gives us a much easier way and is called
+
+Speaker
+
+D4 parameters. And as I've said here, it's a useful protection against bugs.
+
+Speaker
+
+just like the bug that we've got here.
+
+Speaker
+
+where if we take away this code.
+
+Speaker
+
+The function returns null because we forgot to pass in an argument.
+
+Speaker
+
+So, let's actually delete this if course.
+
+Speaker
+
+And what I'm going to do is come up here and add a default parameter. Now the syntax for default parameters is really, really simple.
+
+Speaker
+
+All I need to do is use the equal sign
+
+Speaker
+
+and then set the default parameter to whatever I want it to be.
+
+Speaker
+
+Now in this case, if no discount has been specified, let's assume the discount should be zero, so the customers don't get any discount at all.
+
+Speaker
+
+When I hit save,
+
+Speaker
+
+The function's working again, we're logging out 73.
+
+Speaker
+
+So this default of zero and that's just space it out a little bit.
+
+Speaker
+
+It comes into play.
+
+Speaker
+
+when no discount is specified.
+
+Speaker
+
+Let's add in a discount of 10.
+
+Speaker
+
+And we get to 63, so there the discount that we've added has overridden the default.
+
+Speaker
+
+The default is only going to come into play when we forget to pass in an argument when we're calling the function.
+
+Speaker
+
+So that is the default parameter.
+
+Speaker
+
+really, really simple to use. And we've used a number here.
+
+Speaker
+
+of course it doesn't have to be a number, it could be a string, but equally it could be a string.
+
+Speaker
+
+be another function, it could be an array, it could be an object.
+
+Speaker
+
+It just needs to be whatever can replace the missing argument and save the function from throwing an error or even worse breaking silently.
+
+Speaker
+
+Now, I don't think we need to challenge for this little bit of syntax right here, but in the next scrim, I've got a special super challenge for you where you're going to have the opportunity to use a default parameter anyway.
+
+Speaker
+
+So, when you're ready for that...
+
+Speaker
+
+Let's go.
+
+Speaker
+
+It's time for a super challenge.
+
+Speaker
+
+In this game, you're going to put some of what you've learned so far to the test.
+
+Speaker
+
+I'm going to set you a big challenge.
+
+Speaker
+
+And I'm not going to give you too much help or guidance.
+
+Speaker
+
+I want you to think for yourself.
+
+Speaker
+
+We are building this component.
+
+Speaker
+
+which is what we in the UK would call an estate agent and I believe in the United States, they call a "realtor"
+
+Speaker
+
+It's the people who buy and sell houses. This company wants to render out cards with the properties they're currently selling
+
+Speaker
+
+and each card has got an image of the property. It's got the properties location.
+
+Speaker
+
+The price.
+
+Speaker
+
+A brief description.
+
+Speaker
+
+and then the total area of the property
+
+Speaker
+
+square meters.
+
+Speaker
+
+So this is your challenge.
+
+Speaker
+
+I want you to render out a card for each of the properties in the property for sale array.
+
+Speaker
+
+And you've got that.
+
+Speaker
+
+right here.
+
+Speaker
+
+Each card should have an image of property location, a price, a cost.
+
+Speaker
+
+comment which is basically this little description.
+
+Speaker
+
+and the total property size in square meters.
+
+Speaker
+
+And each object has an array with the size and square meters of the individual rooms.
+
+Speaker
+
+So if we go back to that array, you can see that each property has got this array. So these are the individual square metre sizes of the rooms you are going to have to provide just a total.
+
+Speaker
+
+the
+
+Speaker
+
+square
+
+Speaker
+
+of the entire property.
+
+Speaker
+
+Now, there's a little bit more, if no array of properties is passed to get property HTML,
+
+Speaker
+
+the placeholder property stored in placeholder property object
+
+Speaker
+
+which again is this one right here in the properties folder.
+
+Speaker
+
+should be rendered instead.
+
+Speaker
+
+So then you're going to get something which looks like this.
+
+Speaker
+
+So instead of any real properties, we've got this placeholder image, a generic street name, a generic price. This is the description.
+
+Speaker
+
+and 50 meter squared.
+
+Speaker
+
+and all of that information
+
+Speaker
+
+saved right here in placeholder property object.
+
+Speaker
+
+And actually it says one Joe Block Street here.
+
+Speaker
+
+and anywhere street here, that doesn't really matter. Yours is going to say one-joe blog street.
+
+Speaker
+
+Okay, so there's quite a lot of JavaScript that I want you to use to complete this challenge.
+
+Speaker
+
+You're going to need to use import and export the map method, the join method, or
+
+Speaker
+
+subject destructuring.
+
+Speaker
+
+the reduced method, default parameters, you don't need to worry about the HTML and CSS. That's all been done for you.
+
+Speaker
+
+This is the HTML template string that you need.
+
+Speaker
+
+Of course, you're going to need to replace everything which is in upper case.
+
+Speaker
+
+And the last thing to mention is that down here, we're rendering out whatever is returned by this function, get property HTML.
+
+Speaker
+
+which I've already set up for you right here.
+
+Speaker
+
+the only way you're allowed to change this line down here is by adding an argument to the function call.
+
+Speaker
+
+Apart from that, this line should stay the same.
+
+Speaker
+
+Okay, I'm going to leave you to figure this out and in the next scrim I'm going to show you my way of doing it. Now of course you're welcome to go back to previous scrims and check for syntax or Google anything you want.
+
+Speaker
+
+There are only two things which you're completely forbidden from doing.
+
+Speaker
+
+And that is you're not allowed to copy and paste code.
+
+Speaker
+
+and you're not allowed to just skip ahead.
+
+Speaker
+
+to the answer.
+
+Speaker
+
+the best students will take their time.
+
+Speaker
+
+And figure this out.
+
+Speaker
+
+even if it's difficult.
+
+Speaker
+
+That is how you learn.
+
+Speaker
+
+Okay pause now.
+
+Speaker
+
+get to work on that and then when you've got it working, move on to the next scrim and I'll show you my solution.
+
+Speaker
+
+Hopefully you got that working, and even if it took you a long time, and even if you had to do a lot of searching and a lot of head scratching,
+
+Speaker
+
+really well done for doing that. It's really, really important that you put in the work to solve those challenges.
+
+Speaker
+
+And that is how you learn.
+
+Speaker
+
+So congratulations if you completed the challenge.
+
+Speaker
+
+Now before we make a start on this, I think I'm just going to delete all of this challenge text, so it's not text.
+
+Speaker
+
+up the entire page.
+
+Speaker
+
+And then the first thing to do is to import the
+
+Speaker
+
+the array that we need from this property is folder.
+
+Speaker
+
+So I'm going to come up here and use the import keyword.
+
+Speaker
+
+And we're going to be importing...
+
+Speaker
+
+property for sale array.
+
+Speaker
+
+And we've got the properties folder.
+
+Speaker
+
+and then property for sale array.
+
+Speaker
+
+Now, let's just love that out to check its working.
+
+Speaker
+
+I'm going to hit save.
+
+Speaker
+
+And of course we get an error.
+
+Speaker
+
+and the error is saying cannot use import statement outside a module, so we need to go over to index.html.
+
+Speaker
+
+and come in here to the script tag.
+
+Speaker
+
+and say type equals module.
+
+Speaker
+
+Is it going to work now?
+
+Speaker
+
+No.
+
+Speaker
+
+get an error.
+
+Speaker
+
+telling us we've got a problem with the export. So let's go back to this file and
+
+Speaker
+
+And we need to export this array.
+
+Speaker
+
+So at the moment, we've just got it stored in a const.
+
+Speaker
+
+I'm going to come down here and I'll do a default export on this.
+
+Speaker
+
+Now let's hit save.
+
+Speaker
+
+And there we are, we're looking out the array, so we know that is working.
+
+Speaker
+
+Now I'm going to delete this console.log and we'll come down here to where we're calling the function and
+
+Speaker
+
+And this is where we're going to pass in the array. And we need to take it in as a parameter.
+
+Speaker
+
+And I'm just going to call this parameter property array.
+
+Speaker
+
+And then inside the body of this function,
+
+Speaker
+
+we need to map over that array
+
+Speaker
+
+produce this HTML string.
+
+Speaker
+
+Now we could save all of our HTML string to a const, but we don't need to, so I'm just going to return it directly.
+
+Speaker
+
+So it's return and then property array.
+
+Speaker
+
+Don't map.
+
+Speaker
+
+Now we need to pass mapper function and hopefully you used an arrow function for this.
+
+Speaker
+
+So we just need one parameter to represent each object in the array. I'm going to call this parameter "pro-
+
+Speaker
+
+property.
+
+Speaker
+
+And because we've got one parameter, we don't need brackets, so I can just add the arrow.
+
+Speaker
+
+And let's go ahead with our any curly braces and return this HTML string.
+
+Speaker
+
+And I'm going to need to put that between back ticks and
+
+Speaker
+
+And I haven't used a return statement inside this arrow function.
+
+Speaker
+
+because at the moment, all we're doing is returning this HTML string.
+
+Speaker
+
+That's not really any logic going on in here.
+
+Speaker
+
+But maybe that's about to change because what we want to do next is update everything that we've got here in capital letters.
+
+Speaker
+
+and we can save ourselves some time by destructuring the object.
+
+Speaker
+
+So I'm going to actually add a curly brace here and another one at the end.
+
+Speaker
+
+And now we can put some more logic in here.
+
+Speaker
+
+But we are then going to need the return keyword. So let's put that right in here before we forget.
+
+Speaker
+
+Okay, now let's destruction the object that we've got here is this parameter property.
+
+Speaker
+
+So I'll say "const".
+
+Speaker
+
+I'll open up the curly braces.
+
+Speaker
+
+And I'm going to spread this out onto multiple lines because else it's just going to get way too big and stretch right across the page.
+
+Speaker
+
+So the properties we need are basically everything we see.
+
+Speaker
+
+right here.
+
+Speaker
+
+So, let's say property location.
+
+Speaker
+
+Price in GB pounds.
+
+Speaker
+
+Rims me to square it.
+
+Speaker
+
+Comments?
+
+Speaker
+
+and image.
+
+Speaker
+
+and where the structuring property.
+
+Speaker
+
+Okay, that looks fine, but I think we do need to just tidy up this template string a little bit.
+
+Speaker
+
+Okay, that is looking better. Now, let's see what happens when we hit save.
+
+Speaker
+
+Okay, we're getting something.
+
+Speaker
+
+Of course, it's not working yet because we haven't dealt with all of this uppercase text.
+
+Speaker
+
+but it's good to know that that's working.
+
+Speaker
+
+So let's just close that down.
+
+Speaker
+
+And now we're going to come in here and instead of image in uppercase, we just need...
+
+Speaker
+
+But of course, to get access to that variable, we need to use the dollar sign and curly braces.
+
+Speaker
+
+And we've got our images. Okay, so we can do the rest really quickly.
+
+Speaker
+
+Okay, so I've done most of them. Let's hit save.
+
+Speaker
+
+And that is looking pretty good. The only problem that we've got is that we're saying total size and square meters.
+
+Speaker
+
+I haven't tackled this one yet because of course we've got some more JavaScript we need to write before we can render that out.
+
+Speaker
+
+Now, just before we do that, let's just deal with the commerce that we've got here.
+
+Speaker
+
+know how to do that by now.
+
+Speaker
+
+we're going to chain on the join method, so it's dot join.
+
+Speaker
+
+and will pass in an empty string.
+
+Speaker
+
+Okay, that is better. Now we need to deal with this total size in square meters.
+
+Speaker
+
+So
+
+Speaker
+
+And let's come up here after we've restructured, but before the return statement.
+
+Speaker
+
+And this is where we're going to calculate the total size of the rooms. So we need to sum
+
+Speaker
+
+everything that we've got in these arrays.
+
+Speaker
+
+So some of them are quite long.
+
+Speaker
+
+One of them is actually really, really short. That is the one that just looks like a heart. And in fact, is a heart.
+
+Speaker
+
+Okay.
+
+Speaker
+
+So, what we're going to do then is set up a new const and I'm going to call it Total Room Size in square meters.
+
+Speaker
+
+And now we need to use the "Reduce" method on
+
+Speaker
+
+on
+
+Speaker
+
+this array. So it's this one called rums meter squared and actually we're destructuring it right here.
+
+Speaker
+
+from each property object.
+
+Speaker
+
+So I can come in here.
+
+Speaker
+
+and say, "Rums meter squared."
+
+Speaker
+
+And then we'll call the reduce method.
+
+Speaker
+
+And again, I'm going to use an arrow function and I hope you did too. Now for reduce, we need two parameters, so we need the brackets.
+
+Speaker
+
+And the first parameter I'm going to call total.
+
+Speaker
+
+And the second I'll call current.
+
+Speaker
+
+And then what we want to do then is return.
+
+Speaker
+
+The total added to the current.
+
+Speaker
+
+and we don't need the return keyword because we've just got one line of logic here.
+
+Speaker
+
+Okay, let's add this to the template string.
+
+Speaker
+
+And we'll hit save and there we are it is working so everything is being
+
+Speaker
+
+rendered.
+
+Speaker
+
+Now there's one more thing that we've got to do because we did say that if no array is passed to this function,
+
+Speaker
+
+Well, at the moment we get an error, but...
+
+Speaker
+
+But what we want to happen is that we render out this placeholder.
+
+Speaker
+
+So let's deal with that next.
+
+Speaker
+
+What we need to do then is have a default parameter and we need to put it right in here and as you'll recall for a default parameter all we need to do is use the equal sign
+
+Speaker
+
+And then whatever the default parameter is.
+
+Speaker
+
+Now at the moment our default parameter is over here, we've got this placeholder property object file.
+
+Speaker
+
+So we need to import that.
+
+Speaker
+
+So again, I'm going to do a default export.
+
+Speaker
+
+And let's import it right here.
+
+Speaker
+
+And I should just quickly point out that I'm not using the.js that we've got on the end of the file names.
+
+Speaker
+
+It's not actually necessary. You can use it if you want to, but it will work without.
+
+Speaker
+
+Okay, we've got this placeholder property object.
+
+Speaker
+
+So let's come in here and then the default parameter is...
+
+Speaker
+
+the equal sign
+
+Speaker
+
+And then whatever we want the default parameter to be. Now, is that going to work?
+
+Speaker
+
+Well.
+
+Speaker
+
+Let's hit save and find out.
+
+Speaker
+
+And we've got an error. It's saying down in the console.
+
+Speaker
+
+property array dot map is not a function
+
+Speaker
+
+that error might look a little bit confusing.
+
+Speaker
+
+But what's happening here
+
+Speaker
+
+is that we're taking this object and it is an object.
+
+Speaker
+
+Look, there's no array here. This is purely an object.
+
+Speaker
+
+and we're actually trying to map over it.
+
+Speaker
+
+right here.
+
+Speaker
+
+because the parameter here is property array.
+
+Speaker
+
+So now we're trying to map over an object and that doesn't work.
+
+Speaker
+
+However, all is not lost because all we need to do
+
+Speaker
+
+is wrap this in square brackets. Now we're taking in as our default parameter of
+
+Speaker
+
+an array.
+
+Speaker
+
+with our placeholder object from here.
+
+Speaker
+
+as the only element in that array.
+
+Speaker
+
+Let's just see if that works.
+
+Speaker
+
+And it does. Well, actually, I'm getting undefined here, and that tells me I've got a bit of a problem.
+
+Speaker
+
+Let's just check out what's going on. So we've got property location.
+
+Speaker
+
+If we check out the placeholder property of
+
+Speaker
+
+Ah, interesting, I've got area here.
+
+Speaker
+
+and property location here. I don't know how that happened, but let's just quickly change it.
+
+Speaker
+
+And there we are. Now it is working properly.
+
+Speaker
+
+So now if we go back to index.js, we can take our array.
+
+Speaker
+
+And let's just pass it in where we're calling the function.
+
+Speaker
+
+And when we hit save.
+
+Speaker
+
+There we are, we get all of our properties, and then when we take it away.
+
+Speaker
+
+We get the placeholder property.
+
+Speaker
+
+Okay, that was quite a lot to do. So again, congratulations if you work through all of that.
+
+Speaker
+
+I really, really hope you did.
+
+Speaker
+
+And now is definitely a good time to take a break.
+
+Speaker
+
+And when you come back, we're going to look at the ternary operator.
+
+Speaker
+
+which is really useful syntax, so make sure you're refreshed and feeling ready for that.
+
+Speaker
+
+In this grim, we're going to talk about JavaScript's ternary operator.
+
+Speaker
+
+which I've said here is an alternative to
+
+Speaker
+
+to the if-else.
+
+Speaker
+
+sometimes.
+
+Speaker
+
+So let's be clear, we're not replacing the FLs, but the ternary operator can be really useful in some situations.
+
+Speaker
+
+The syntax with the ternary looks peculiar at first.
+
+Speaker
+
+So let's take a look at an outline diagram.
+
+Speaker
+
+The tonery starts with a condition to be tested.
+
+Speaker
+
+And this should return either a truthy or falsy,
+
+Speaker
+
+value.
+
+Speaker
+
+Then we have a question mark.
+
+Speaker
+
+And now we have our first expression.
+
+Speaker
+
+And this expression will execute.
+
+Speaker
+
+if the condition is truthy.
+
+Speaker
+
+Now we have a colon.
+
+Speaker
+
+And then the second expression.
+
+Speaker
+
+And this expression will execute
+
+Speaker
+
+if the condition is full C.
+
+Speaker
+
+So that's an outline of the syntax.
+
+Speaker
+
+Now let's jump over to the editor and see this in action.
+
+Speaker
+
+So I've got some code here from one of those obnoxious health apps that
+
+Speaker
+
+Supposedly gives you encouragement or makes you do more exercise.
+
+Speaker
+
+So what we've got here is an exercise time in minutes, which at the moment is set to 20.
+
+Speaker
+
+And the FL down here is just checking if the exercise time in minutes is less than 30.
+
+Speaker
+
+If it is, it's saying you need to try harder.
+
+Speaker
+
+And if not,
+
+Speaker
+
+saying you're doing good.
+
+Speaker
+
+And in either case, we've got this message variable up here declared with a let.
+
+Speaker
+
+and that is what's being updated by this conditional.
+
+Speaker
+
+So let's just hit save and see if it's working.
+
+Speaker
+
+And it is, we're getting the message down in the console, you need to try harder, well, 20 is definitely less than 30. So that is working just fine.
+
+Speaker
+
+Now updating the value of a variable depending on whether a condition has been met is a great use case for a ternary. So let's comment out all of this and see if we can refactor this code
+
+Speaker
+
+as a ternary.
+
+Speaker
+
+So I'm going to start off by declaring a con.
+
+Speaker
+
+And I'll call this const message.
+
+Speaker
+
+And there we see the first benefit of using a ternary to set the value of a variable.
+
+Speaker
+
+We can use a const and assign it once. Remember a const is preferable to a lead because a lead can be unintentionally updated by other code and that of course can cause bugs.
+
+Speaker
+
+Okay, I'm going to set this equals to our condition.
+
+Speaker
+
+If you'll remember, the first thing that we need is the condition to test.
+
+Speaker
+
+And that will be exactly the same condition as we've got right here.
+
+Speaker
+
+Next, I need the question mark.
+
+Speaker
+
+and you can say this in your head as if you're asking a question.
+
+Speaker
+
+So it's like we're asking is the exercise time in minutes less than 30?
+
+Speaker
+
+And if it is, we want to execute our first expression.
+
+Speaker
+
+What we've got right here is
+
+Speaker
+
+is updating the message variable with this string.
+
+Speaker
+
+Well, we don't need to keep writing out message. We're just going to be assigning it to this const.
+
+Speaker
+
+So all we need is that string.
+
+Speaker
+
+So now, if this condition is true-fee,
+
+Speaker
+
+then the const message is going to store the
+
+Speaker
+
+this string.
+
+Speaker
+
+So now we need to deal with what happens if this is fulsi.
+
+Speaker
+
+And to introduce that, we need the colon.
+
+Speaker
+
+So, let's just put the colon right here.
+
+Speaker
+
+And then we'll have our final
+
+Speaker
+
+expression.
+
+Speaker
+
+And so this is what will execute if the condition is full C.
+
+Speaker
+
+And again, we just need this string right here.
+
+Speaker
+
+doing good.
+
+Speaker
+
+Let's hit save and see if it works.
+
+Speaker
+
+And it does, so we have got that.
+
+Speaker
+
+that
+
+Speaker
+
+working.
+
+Speaker
+
+Let's just whack up our exercise in minutes to 40.
+
+Speaker
+
+And again, I'll hit save.
+
+Speaker
+
+And now we're getting doing good. So this condition here is
+
+Speaker
+
+is
+
+Speaker
+
+assigned to the const message.
+
+Speaker
+
+And just look at how much cleaner it is when we compare this line of code here to
+
+Speaker
+
+all of this code we've got
+
+Speaker
+
+That is really quite a big saving.
+
+Speaker
+
+Now what we've done here is convert a fairly simple if else to
+
+Speaker
+
+to a ton of re
+
+Speaker
+
+What I want to talk about next is what happens when the conditional is
+
+Speaker
+
+a bit more complicated.
+
+Speaker
+
+So let's deal with that.
+
+Speaker
+
+in the next screen.
+
+Speaker
+
+Okay, so I've increased the complexity of this conditional logic.
+
+Speaker
+
+What we're doing now then, if exercise time in minutes is less than 30, and if that's true, the message is you need to try harder.
+
+Speaker
+
+If that's not the case, let's check if exercise time in minutes is less than 60, in which case the message should be doing good.
+
+Speaker
+
+And if exercise time in minutes is greater than 30 and greater than 60,
+
+Speaker
+
+We want the message to say.
+
+Speaker
+
+So can we do more complex conditional logic with a ternary?
+
+Speaker
+
+Yes, we can.
+
+Speaker
+
+Should we?
+
+Speaker
+
+Well,
+
+Speaker
+
+That's a really good question.
+
+Speaker
+
+Let's code this out and then we'll talk about it.
+
+Speaker
+
+So again, I'm going to comment out this if else.
+
+Speaker
+
+And the let.
+
+Speaker
+
+And then let's uncomment the ternary we've already got and we're just going to update this code.
+
+Speaker
+
+Now the first part stays the same. We've got the condition right here.
+
+Speaker
+
+And if that's true, the
+
+Speaker
+
+We'll execute this code right here.
+
+Speaker
+
+So this string will be stored in the const message.
+
+Speaker
+
+Now things need to change. After this colon...
+
+Speaker
+
+let's introduce a second condition.
+
+Speaker
+
+So I'm going to take the condition we've got here.
+
+Speaker
+
+But let's increase the number of minutes we're looking for to 60.
+
+Speaker
+
+Now here, we're asking another question.
+
+Speaker
+
+is exercise time and minutes less than 60, so we need a question mark.
+
+Speaker
+
+If that's true, the, then we need the string right here.
+
+Speaker
+
+doing good.
+
+Speaker
+
+And now we want to introduce the final expression, so we need the colon, and we're just going to have this string excellent.
+
+Speaker
+
+Okay, let's just see if it's working, so I'll hit save.
+
+Speaker
+
+And there we are, it says doing good.
+
+Speaker
+
+Now, we've got exercise time in minute set to f-
+
+Speaker
+
+40.
+
+Speaker
+
+I'm just going to delete this old code so we can see things a little bit more clearly.
+
+Speaker
+
+Now we've checked if it's less than 30.
+
+Speaker
+
+That would be full C.
+
+Speaker
+
+So it moves on over here.
+
+Speaker
+
+Exercise time in minutes is less than 60.
+
+Speaker
+
+Well, that would return Truffy.
+
+Speaker
+
+So message is storing doing good and
+
+Speaker
+
+And that is what we're seeing down in the console.
+
+Speaker
+
+Let's whack this up to 140.
+
+Speaker
+
+And there we are, now it says excellent.
+
+Speaker
+
+Take it down to 20.
+
+Speaker
+
+You need to try harder.
+
+Speaker
+
+So this is working.
+
+Speaker
+
+Now, it is a bit of a pain the way it stretched out across the screen so much.
+
+Speaker
+
+So one thing we can do is break this up onto new lines.
+
+Speaker
+
+And that looks a lot neater, let's just save
+
+Speaker
+
+And it still works.
+
+Speaker
+
+So by breaking this up onto multiple lines, we've made it easier to read, and that raises a question.
+
+Speaker
+
+just because you can do more complex conditional logic with turneries, it doesn't mean that
+
+Speaker
+
+that you should.
+
+Speaker
+
+What we've done here is not.
+
+Speaker
+
+awful.
+
+Speaker
+
+But just be aware that as ternaries become more complex, they become harder to read.
+
+Speaker
+
+So it's best to keep it simple.
+
+Speaker
+
+and revert to chained FL statements to improve readability.
+
+Speaker
+
+if necessary.
+
+Speaker
+
+And likewise, assigning a value to a variable is a great use case for a ternary.
+
+Speaker
+
+But when you need to perform more complex logic,
+
+Speaker
+
+likely that an if-else is going to be better just because it will be easier to read for you at a later date and for your colleagues.
+
+Speaker
+
+Okay, it's time for you to write some code, so in the next grim,
+
+Speaker
+
+And let's take on a challenge.
+
+Speaker
+
+It's time for a challenge and I have invented the new world all it's a game that's going to take the internet by storm and
+
+Speaker
+
+One make me rich. Here's the object of the game, a player is trying to guess a number between 1 and 10.
+
+Speaker
+
+And we've got the correct answer stored in a const right here at the moment it's set to six.
+
+Speaker
+
+And then this is the payers' guess, and it's set to three.
+
+Speaker
+
+And then down here, we've got some conditional logic, so if the payer guess is triple equals to the correct answer,
+
+Speaker
+
+this message is set to cracked.
+
+Speaker
+
+And if that's not the case, the message is set to wrong.
+
+Speaker
+
+And then we just log out the message.
+
+Speaker
+
+What do you think?
+
+Speaker
+
+exciting game, huh?
+
+Speaker
+
+this is really going to go viral.
+
+Speaker
+
+Anyway...
+
+Speaker
+
+Well, your challenge is to refactor this conditional logic that we've got right here. It looks a bit clunky to me.
+
+Speaker
+
+So I've just said here, refactor the FL statement to use a ternary operator.
+
+Speaker
+
+have a go at that.
+
+Speaker
+
+don't steal my idea for this amazing game and we'll have a look together.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that without too many problems. So I'm just going to start by commenting out this if else.
+
+Speaker
+
+And now I'm going to come up here to message.
+
+Speaker
+
+And I'm going to set that equals to a condition. And we've got the condition right here.
+
+Speaker
+
+And let's just ask the question, is the pay a guest triple equals to the correct answer?
+
+Speaker
+
+If it is, message should store the string cracked.
+
+Speaker
+
+Now we have the colon and if play I guess is not triple equals to the correct answer.
+
+Speaker
+
+then message should be wrong.
+
+Speaker
+
+And there's one more change we can make. We're not going to be reassigning any value to message anymore.
+
+Speaker
+
+so we can convert this let to a const.
+
+Speaker
+
+and using a const instead of a let is always a good idea if it's possible, so that is a good change to make.
+
+Speaker
+
+Okay, let's hit save.
+
+Speaker
+
+And down in the console, we're saying wrong, and that's correct. Play guesses three. The correct answer is six. Now let's change play against to six.
+
+Speaker
+
+Hit Save.
+
+Speaker
+
+And it says, "cranked, we got the right answer."
+
+Speaker
+
+So there is the game in action.
+
+Speaker
+
+Okay, we're not quite done. I thought of a way that we can improve this game. So I'm just going to paste another challenge right in here.
+
+Speaker
+
+Now I want you to improve the functionality of this code by letting the player know if their guess was too high, too low, or exactly right.
+
+Speaker
+
+So we just need to up the complexity of
+
+Speaker
+
+this ternary right here.
+
+Speaker
+
+pause now, get that sorted,
+
+Speaker
+
+and we'll have a look together in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to solve that one, so...
+
+Speaker
+
+We want to come in here then and let's ask the question,
+
+Speaker
+
+play a guess less than correct answer.
+
+Speaker
+
+If that's true, then this string should say "tullo".
+
+Speaker
+
+If that's not true, we need to ask another question.
+
+Speaker
+
+is play guess
+
+Speaker
+
+greater than
+
+Speaker
+
+And if that's the case, then message should be too high.
+
+Speaker
+
+And if that's not the case, we can have the colon as
+
+Speaker
+
+And then the only other possibility is not too low, it's not too high.
+
+Speaker
+
+It must be exactly right.
+
+Speaker
+
+Now what we've got here is a really long line of code. It's a bit hard to deal with.
+
+Speaker
+
+So I'm going to bring it down onto a couple of lines.
+
+Speaker
+
+Okay, let's hit save and see if it works.
+
+Speaker
+
+So, is looking out at the moment exactly right? Well, six and six are the same.
+
+Speaker
+
+Let's go too low.
+
+Speaker
+
+And let's go too high.
+
+Speaker
+
+And it is working, we just forgot the exclamation mark there, no problem.
+
+Speaker
+
+That is pretty good, so we've got a more complex tonery working, and just remember,
+
+Speaker
+
+Think about the complexity.
+
+Speaker
+
+Is it difficult to read if it is then refactor your code? Because complex ternaries really can be very hard to decipher.
+
+Speaker
+
+Okay, I've got one more challenge for you with Turneries in the next Grimm.
+
+Speaker
+
+When you're ready, let's move on.
+
+Speaker
+
+Okay, I have one last challenge for you and involve some code that should look familiar.
+
+Speaker
+
+I have bought back to...
+
+Speaker
+
+out-witter clone.
+
+Speaker
+
+You might remember that we are conditionally adding CSS classes to our template string
+
+Speaker
+
+based on whether or not a tweet has been liked.
+
+Speaker
+
+or retweeted.
+
+Speaker
+
+And if we go down to line up.
+
+Speaker
+
+131.
+
+Speaker
+
+We can see that right here.
+
+Speaker
+
+We have got like icon class and then down here.
+
+Speaker
+
+retweet icon class.
+
+Speaker
+
+And it's the CSS classes that change the colors based on the icons when they are clicked.
+
+Speaker
+
+If we come back up here.
+
+Speaker
+
+We can see that when we click on the like icon,
+
+Speaker
+
+tons red.
+
+Speaker
+
+And that's what this conditional is doing right here. It's assigning this class liked.
+
+Speaker
+
+to like icon class.
+
+Speaker
+
+And it's like icon class, which we just saw being rendered out.
+
+Speaker
+
+down here.
+
+Speaker
+
+on line 131.
+
+Speaker
+
+Now the code that handles all of that, this logic right here,
+
+Speaker
+
+on 985 down to 95.
+
+Speaker
+
+is using if else and assigning variables to let.
+
+Speaker
+
+And I think it's looking pretty clunky and I think we can improve on it.
+
+Speaker
+
+So here is your challenge.
+
+Speaker
+
+Refactor the two Let's and Conditionals on lines 85 to 95 to use ternary operators.
+
+Speaker
+
+And I've just, but here, you might need to do some research.
+
+Speaker
+
+Why?
+
+Speaker
+
+because in this case we have an if clause but no else.
+
+Speaker
+
+So you're going to have to decide what these second expression should be.
+
+Speaker
+
+You want a second expression that does nothing, because if a tweet has not been liked or retweeted,
+
+Speaker
+
+We don't need to add another CSS class.
+
+Speaker
+
+Okay, I'm going to let you figure that one out.
+
+Speaker
+
+So pause now and get this challenge sorted.
+
+Speaker
+
+Okay, congratulations if you got that working, so right.
+
+Speaker
+
+What we need to do here then is come in here and I'm going to keep like icon class.
+
+Speaker
+
+But I'm going to set it equals to our condition, which I'll just take from here.
+
+Speaker
+
+So we ask the question tweet.is like
+
+Speaker
+
+There's the question mark.
+
+Speaker
+
+If it is, we can take this string light.
+
+Speaker
+
+And that will be stored in like icon class. Now if the tweet has not been liked, we've got some possibilities here. I'm just going to put an empty string.
+
+Speaker
+
+But I'm going to say a little bit more about that in just a moment.
+
+Speaker
+
+And now we can delete that line of code we don't need anymore.
+
+Speaker
+
+Let's hit save.
+
+Speaker
+
+And we'll give it a test.
+
+Speaker
+
+And there we are, it is working, all of the tweets can be liked and un-liked.
+
+Speaker
+
+Let's do exactly the same thing with the Retreat icon class.
+
+Speaker
+
+And again, we can delete all of this unnecessary code.
+
+Speaker
+
+So we really are reducing the code quite a lot here.
+
+Speaker
+
+And also we can change the "let" to
+
+Speaker
+
+a constant.
+
+Speaker
+
+Let's just make sure it's working.
+
+Speaker
+
+So we can definitely like and we can retweet and
+
+Speaker
+
+And we're seeing the colors change each time on each tweet.
+
+Speaker
+
+So that is looking good. Now I did just want to say a little bit more about why I've used an empty string here.
+
+Speaker
+
+because if you did some research into this, you might well have found that when you don't really want to assign anything to a variable,
+
+Speaker
+
+You can use no.
+
+Speaker
+
+And often that is the case.
+
+Speaker
+
+But what we're dealing with here is CSS classes.
+
+Speaker
+
+So let's just save with no.
+
+Speaker
+
+And again, we'll test.
+
+Speaker
+
+And it does work with no.
+
+Speaker
+
+That's absolutely fine.
+
+Speaker
+
+But I just want to show you something from the dev tools. And I've got that in the slide right here.
+
+Speaker
+
+So
+
+Speaker
+
+This is the class.
+
+Speaker
+
+And we can see the CSS classes that we've added.
+
+Speaker
+
+And look here, at the moment we've got no.
+
+Speaker
+
+And that's because when a tweet is not liked,
+
+Speaker
+
+No.
+
+Speaker
+
+will actually be added to
+
+Speaker
+
+to the class list.
+
+Speaker
+
+Now, on the one hand, that doesn't matter at all,
+
+Speaker
+
+because it does still work and we haven't got a CSS class called null.
+
+Speaker
+
+What would happen if we leave that as unliked?
+
+Speaker
+
+And we just come in here somewhere.
+
+Speaker
+
+I'll come right down to the bottom.
+
+Speaker
+
+And I'll set up a new class and I'm going to call it no.
+
+Speaker
+
+And okay, that's pretty silly. Who calls the CSS class null?
+
+Speaker
+
+you never know.
+
+Speaker
+
+And there we are, I've added some CSS to this null class, and it's kind of made a mess of things.
+
+Speaker
+
+And okay, this is a pretty contrived example because that's very unlikely to happen.
+
+Speaker
+
+It just begs the question, why bother?
+
+Speaker
+
+polluting the class list with this unnecessary word.
+
+Speaker
+
+It could potentially cause you problems.
+
+Speaker
+
+So that's why I'm thinking it's much better to...
+
+Speaker
+
+Come in here with an empty string.
+
+Speaker
+
+and not know.
+
+Speaker
+
+And that works just fine, and actually if you look at the class list,
+
+Speaker
+
+you'll actually see is perhaps a tiny little space where there would have been this class.
+
+Speaker
+
+So that's just keeping the code neater and tidier.
+
+Speaker
+
+Okay, I just wanted to show you that and do a quick refactor of that app.
+
+Speaker
+
+And now we're done with the toneries.
+
+Speaker
+
+I want to take a look at the rest parameter.
+
+Speaker
+
+which is a way of catching the rest of the arguments.
+
+Speaker
+
+And rather than get caught up in theory, let's go straight to the editor where I've got a problem that the rest parameter is going to solve.
+
+Speaker
+
+So this function that we've got right here, set permission level allows a network administrator to
+
+Speaker
+
+with fine users.
+
+Speaker
+
+particular permission level.
+
+Speaker
+
+And it works like this.
+
+Speaker
+
+It's taking in for parameters.
+
+Speaker
+
+The first one is the position level.
+
+Speaker
+
+And when we call this function, we're passing in admin as the first argument.
+
+Speaker
+
+Then, we've just got name 1, name 2, name 3, and here I am passing in the usernames of the three users that I want to give the admin permission level 2.
+
+Speaker
+
+Okay, I'm going to hit save and if we open up the console, well, it's worked. We've set Dave, Sally and Mike and
+
+Speaker
+
+admin level access.
+
+Speaker
+
+But obviously this function is really nasty.
+
+Speaker
+
+It's hard-coded and is totally inflexible.
+
+Speaker
+
+So what would actually happen if I wanted to give more than three users admin level access?
+
+Speaker
+
+Well, let's add some reels on the end.
+
+Speaker
+
+Now I'll hit save.
+
+Speaker
+
+And look, Claire has just been ignored.
+
+Speaker
+
+So what if I want to give fewer than three people the admin access level?
+
+Speaker
+
+Well, let's delete Mike Antler.
+
+Speaker
+
+So now we're just going to add Dave and Sally.
+
+Speaker
+
+And look in the console.
+
+Speaker
+
+undefined now has admin level access and we really don't want that. So this function presents us with a classic problem.
+
+Speaker
+
+We've got a function that takes in parameters
+
+Speaker
+
+but we don't actually know how many arguments are going to be passed to it.
+
+Speaker
+
+So, what can we do about that?
+
+Speaker
+
+Well, the rest parameter is
+
+Speaker
+
+coming to the rescue.
+
+Speaker
+
+What the rest parameter will do is capture all of the arguments which don't explicitly match an existing parameter.
+
+Speaker
+
+Let's delete all of this, name one, name two, name three rubbish.
+
+Speaker
+
+which were horrible parameter names.
+
+Speaker
+
+And instead, let's introduce a rest parameter.
+
+Speaker
+
+And all we need to do that is......................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+Speaker
+
+Add the name of the REST parameter.
+
+Speaker
+
+And in examples, you might often just see it put as rest.
+
+Speaker
+
+But I actually want to give this a descriptive name.
+
+Speaker
+
+And what we're expecting here are strings of names.
+
+Speaker
+
+So I'm just going to call this names.
+
+Speaker
+
+So now we have the first parameter which will set the permission level.
+
+Speaker
+
+And then the other parameters can be names which we're going to pick up with this rest parameter.
+
+Speaker
+
+names.
+
+Speaker
+
+So now, hopefully, you get why it's called the rest parameter.
+
+Speaker
+
+It's nothing to do with sleeping.
+
+Speaker
+
+It's all about taking in the rest of the arguments.
+
+Speaker
+
+arguments that don't match directly to a parameter like admin matches to position level.
+
+Speaker
+
+And the syntax is dead easy, it's just the dot dot dot and then the name you want to give to this rest parameter.
+
+Speaker
+
+Okay, I'm going to comment out all of this for just a moment.
+
+Speaker
+
+And now, let's just log out this rest parameter.
+
+Speaker
+
+And that's safe.
+
+Speaker
+
+And let's just paste in here what we see down in the console.
+
+Speaker
+
+So, obviously, we've logged out the two names that we were passing in as arguments,
+
+Speaker
+
+Look what we've got here.
+
+Speaker
+
+We have got square brackets.
+
+Speaker
+
+And that tells us we've got an array.
+
+Speaker
+
+So now we can list as many arguments here as we want.
+
+Speaker
+
+And they are going to end up in
+
+Speaker
+
+this array.
+
+Speaker
+
+And as we know, arrays are iterable.
+
+Speaker
+
+We can use methods like the map and forage to iterate over them.
+
+Speaker
+
+and do things with their elements.
+
+Speaker
+
+So, let's do exactly that now.
+
+Speaker
+
+I'm going to add back another name, so we've got three, but we could have any number we wanted.
+
+Speaker
+
+And now I'm going to come in here and I'm going to take names.
+
+Speaker
+
+And then I'm going to use the "ForEach" method to iterate over that array.
+
+Speaker
+
+So we need to pass for each a function and I'll use an arrow function.
+
+Speaker
+
+And then each element in the array we can call name.
+
+Speaker
+
+And all we need to do now is return one of these lines right here.
+
+Speaker
+
+And we can do that all on one line.
+
+Speaker
+
+Now we do need of course to update this, we haven't got name one anymore, that will just be name.
+
+Speaker
+
+Now that's delete all of this code that we don't need.
+
+Speaker
+
+And I'll hit save.
+
+Speaker
+
+And there we are, down in the console, we can see that we're assigning admin level access to each of our
+
+Speaker
+
+names right here.
+
+Speaker
+
+And let's just add one more, we'll put Claire back in.
+
+Speaker
+
+And it doesn't matter how long or indeed how short we make this list of arguments, we can just log out one sentence for each argument.
+
+Speaker
+
+And that is quite a long line of code, so I think we might want to just bring that.
+
+Speaker
+
+onto a second line.
+
+Speaker
+
+There we are, that is a little bit neater.
+
+Speaker
+
+So to recap then, the rest parameter has scooped up the rest of the arguments that we've got here.
+
+Speaker
+
+The ones that were not explicitly matched to a parameter like permission level is matched to admin.
+
+Speaker
+
+These extra arguments then get stored in an array and we can iterate over that array.
+
+Speaker
+
+Now I just want to draw your attention to the positioning here.
+
+Speaker
+
+the explicitly listed parameter is first,
+
+Speaker
+
+on the REST parameter.
+
+Speaker
+
+is lost.
+
+Speaker
+
+And that's really important.
+
+Speaker
+
+If we swap them around.
+
+Speaker
+
+Look what happens.
+
+Speaker
+
+We get an error. It tells us the rest parameter must be the last formal parameter.
+
+Speaker
+
+So let's just put that back.
+
+Speaker
+
+So now we can pass in as many arguments as we want, but the rest parameter must go last. And of course there can be only one rest parameter.
+
+Speaker
+
+Okay, let's move on to the next scrim and tackle a challenge.
+
+Speaker
+
+Okay, it's time for a challenge.
+
+Speaker
+
+It's the end of the year at my company and as a generous boss, I want to give some of my workers a gift to thank them for all of their hard work.
+
+Speaker
+
+Now, this function, getlabels HTML, is going to print out labels for all of the gifts.
+
+Speaker
+
+And I've set up the function called down here.
+
+Speaker
+
+So whatever the function returns is going to be rendered out by this document.getElementByID right here.
+
+Speaker
+
+As we call this function, we're passing in at the moment six arguments.
+
+Speaker
+
+Firstly, we've got the text and we can see that right here.
+
+Speaker
+
+And we've also got the sender, which is me.
+
+Speaker
+
+And then we've got four objects and these are the staff members that are going to receive.
+
+Speaker
+
+Now just because there's four at the moment.
+
+Speaker
+
+It doesn't mean that number won't change. It might be three if I decide I don't like one of them.
+
+Speaker
+
+might be six if I'm feeling extra generous.
+
+Speaker
+
+Now what we want this function to do
+
+Speaker
+
+is this. It's going to render out.
+
+Speaker
+
+four labels, one for each of the objects we've got right here.
+
+Speaker
+
+All of the CSS and HTML needed for this has already been done.
+
+Speaker
+
+So you only need to worry about the JavaScript.
+
+Speaker
+
+Now I am upping the complexity here just a little bit because
+
+Speaker
+
+Because instead of passing in strings, we are passing in objects.
+
+Speaker
+
+And that doesn't matter at all.
+
+Speaker
+
+the same principal applies
+
+Speaker
+
+I'm absolutely sure that you are ready for this challenge.
+
+Speaker
+
+So what I want you to do...
+
+Speaker
+
+is this.
+
+Speaker
+
+I want you to add parameters to this function, get labels HTML.
+
+Speaker
+
+I want you to update the HTML template where you see the
+
+Speaker
+
+name.
+
+Speaker
+
+And we've got that right here.
+
+Speaker
+
+So this is the HTML template string.
+
+Speaker
+
+and this is the bit you need to change.
+
+Speaker
+
+And then lastly, we need to return HTML template for each list.
+
+Speaker
+
+label.
+
+Speaker
+
+So each label means each of the employees who's going to get a
+
+Speaker
+
+So this is quite an involved challenge. There are a few bits and pieces that you'll need to remember and
+
+Speaker
+
+And as long as you're using the REST parameter, you're welcome to use any other JavaScript you want to use as well.
+
+Speaker
+
+So I'm going to leave it to you to figure out, so hit pause and we'll have a look together.
+
+Speaker
+
+in just a few moments.
+
+Speaker
+
+Okay, hopefully you got that working just fine.
+
+Speaker
+
+So the first thing we need to do then.
+
+Speaker
+
+is add parameters to this function.
+
+Speaker
+
+So, we've got the two regular parameters, text and sender.
+
+Speaker
+
+And then we need to take in these objects.
+
+Speaker
+
+We don't know how many they're going to be.
+
+Speaker
+
+So I'll use the rest parameter, so it's triple dot.
+
+Speaker
+
+And then because these are objects of staff names, I'm just going to call this rest parameter.
+
+Speaker
+
+Staff Objects
+
+Speaker
+
+Now before we do anything else, let's just log out staff objects and see what we've got.
+
+Speaker
+
+So I'll hit save.
+
+Speaker
+
+down in the console.
+
+Speaker
+
+You can see that we've got a
+
+Speaker
+
+a ray of
+
+Speaker
+
+So the rest parameter is giving us an array, but instead of an array of strings,
+
+Speaker
+
+This time, it's an array of objects.
+
+Speaker
+
+That's pretty cool, because we've worked with arrays of objects before.
+
+Speaker
+
+So we kind of know what we're doing.
+
+Speaker
+
+So to create this HTML string,
+
+Speaker
+
+Let's map over staff objects.
+
+Speaker
+
+So I'm going to come in here and set up a const.
+
+Speaker
+
+And I'm going to call this const labels HTML.
+
+Speaker
+
+So, this function is called getlabelshtml.
+
+Speaker
+
+because it's going to be returning.
+
+Speaker
+
+labels HTML.
+
+Speaker
+
+I think that's quite a neat naming convention.
+
+Speaker
+
+and I'll delete the console.log before it gets annoying.
+
+Speaker
+
+OK, so let's set labels HTML equals to stuff objects.
+
+Speaker
+
+And now let's immediately map over staff objects.
+
+Speaker
+
+And remember, map takes in a function as a parameter. We'll use an arrow function to keep it nice and concise.
+
+Speaker
+
+I need to give that function a
+
+Speaker
+
+a parameter.
+
+Speaker
+
+And that parameter is going to be each object in the array in turn.
+
+Speaker
+
+This isn't a ray of stuff objects, so I'm just going to call it...
+
+Speaker
+
+stuff.
+
+Speaker
+
+Next, we need the arrow.
+
+Speaker
+
+And now I'm going to come down onto a new line and
+
+Speaker
+
+and we'll just take this template string right here.
+
+Speaker
+
+And we need to update the name, so we'll delete that.
+
+Speaker
+
+and let's use the dollar sign and the curly braces.
+
+Speaker
+
+And then it will be stuff object
+
+Speaker
+
+name.
+
+Speaker
+
+And we know that because down here we've got the name property on each object.
+
+Speaker
+
+What's going to happen now if I hit save?
+
+Speaker
+
+We open up the mini browser and we just see undefined.
+
+Speaker
+
+And that figures,
+
+Speaker
+
+Because down here we're rendering out whatever is returned by Get Labels HTML.
+
+Speaker
+
+And at the moment, we're not explicitly returning anything.
+
+Speaker
+
+And that's why, in fact, we're just returning.
+
+Speaker
+
+defined.
+
+Speaker
+
+What we need to do then is explicitly return.
+
+Speaker
+
+Labels HTML
+
+Speaker
+
+Oh, and we need to be careful that we don't put that inside the map.
+
+Speaker
+
+Okay, to make it clearer, I'm just going to delete this challenge text.
+
+Speaker
+
+So we've got the return statement at the end of the function.
+
+Speaker
+
+but obviously not inside the map method.
+
+Speaker
+
+Right, that's it, save.
+
+Speaker
+
+And there we are, we've got some labels.
+
+Speaker
+
+and they're rendered out in a long list, and we actually were expecting them to be next to each other.
+
+Speaker
+
+That could be a problem with these comers.
+
+Speaker
+
+So we need to deal with them using the join method.
+
+Speaker
+
+So let's join our array of template strings and the separator is just going to be an empty string.
+
+Speaker
+
+And there we are, that's looking a bit better. Now we can see each of our four labels.
+
+Speaker
+
+and each one is personalized.
+
+Speaker
+
+So that is it, good job if you got that sorted.
+
+Speaker
+
+quite a lot going on here with this code, with the rest parameter and the map method working together.
+
+Speaker
+
+So give yourself a pat on the back.
+
+Speaker
+
+getting that challenge sorted.
+
+Speaker
+
+Now, you might have done it a slightly different way.
+
+Speaker
+
+We don't need to set up this const.
+
+Speaker
+
+As we said earlier...
+
+Speaker
+
+The map method is going to give us a new array, and typically we've been saving that to a const.
+
+Speaker
+
+But we don't have to.
+
+Speaker
+
+we could actually just return that array directly.
+
+Speaker
+
+And then we can delete this return statement down here.
+
+Speaker
+
+And let's hit save.
+
+Speaker
+
+and it works just as well.
+
+Speaker
+
+So all we're doing there is saving ourselves the hassle of having to set up a new const and then return that const.
+
+Speaker
+
+Instead, we're just returning the array that the map method gives us.
+
+Speaker
+
+That array doesn't need to be stored in a const, it doesn't need to be named, we're returning it, and then it's being rendered by this code down here.
+
+Speaker
+
+Okay, so that is the rest parameter.
+
+Speaker
+
+And now, what can be quite confusing in JavaScript?
+
+Speaker
+
+is that the rest parameter
+
+Speaker
+
+is not the only syntax that uses the triple dot.
+
+Speaker
+
+So in the next grim, we're going to look at another use of this triple dot syntax.
+
+Speaker
+
+When you're ready for that.
+
+Speaker
+
+I'll see you there.
+
+
+Speaker
+
+Okay, let's take a look at the spread operator which is useful for expanding and joining arrays.
+
+Speaker
+
+And to be honest, it's kind of hard to describe what can be done with the spread operator in words alone. So let's go straight to the editor and look at some examples.
+
+Speaker
+
+I own a restaurant and for my restaurant I've got three arrays and each array is a menu. We've got the lunch menu, dinner menu and the sweet menu as well. Now a wedding planner has got in touch with me and they want a simple list of all of the dishes that we could supply for a wedding party.
+
+Speaker
+
+So I want to combine all of these into one array.
+
+Speaker
+
+We're going to use the spread operator to do that, and we're going to explore a little bit along the way as well.
+
+Speaker
+
+So let's just take one of these arrays.
+
+Speaker
+
+And I'm going to come down here and we'll start off inside the console.
+
+Speaker
+
+Now to use the spread operator on this array,
+
+Speaker
+
+All we need to do is use the same dot dot dot or triple dot syntax that we used with the rest parameter.
+
+Speaker
+
+Now, they do look very similar and yes, that can cause confusion.
+
+Speaker
+
+Now before we log this out, let's just delete the spread operator from this second console.log.
+
+Speaker
+
+And then we can compare what gets logged out when we're using the spread operator.
+
+Speaker
+
+I'm Webwindauts.
+
+Speaker
+
+And I'm just going to copy these into the editor so we can see them a little bit better.
+
+Speaker
+
+Okay, so when we log out the array without the spread operator, what we get down in the console is the array, which is exactly what you'd expect.
+
+Speaker
+
+We've got the opening bracket, the closing bracket, and then each of the elements in the array.
+
+Speaker
+
+Now when we use the Spread operator,
+
+Speaker
+
+We don't have the square brackets of the array.
+
+Speaker
+
+And that is because we've used the spread operator.
+
+Speaker
+
+to expand out the individual elements of the array.
+
+Speaker
+
+So it's no longer an array, it's just got all of the elements that were in the array.
+
+Speaker
+
+Now fair enough, if that doesn't look particularly exciting right now.
+
+Speaker
+
+But honestly, this is really powerful.
+
+Speaker
+
+and I'm going to show you why.
+
+Speaker
+
+So I'm just deleting the one with the regular array.
+
+Speaker
+
+And now let's continue with our mission.
+
+Speaker
+
+to join these three arrays into one big array.
+
+Speaker
+
+So I'm going to come down here and I'm going to set up a const to store this new array that we're going to create.
+
+Speaker
+
+And I'm going to call this array event menu.
+
+Speaker
+
+Now, what do we want in this array? Well, we want the expanded individual values from each of these three arrays.
+
+Speaker
+
+And we've just seen how to do that.
+
+Speaker
+
+So let's take in the first array.
+
+Speaker
+
+And of course we'll use the triple dot syntax.
+
+Speaker
+
+To spread it.
+
+Speaker
+
+Now I'm going to comment out this console.log.
+
+Speaker
+
+And then let's log out event menu.
+
+Speaker
+
+I'm well hit save.
+
+Speaker
+
+And down in the console, what do we see?
+
+Speaker
+
+Well firstly, we've got an array.
+
+Speaker
+
+And that figures because where we've spread lunch menu and expanded it into individual elements, we've put that.
+
+Speaker
+
+inside an array.
+
+Speaker
+
+So what we've actually achieved here, and this is the first really important take home.
+
+Speaker
+
+is that using the spread operator
+
+Speaker
+
+is a really good way of making a copy of an array.
+
+Speaker
+
+Now, I should just warn you that making copies of a race is a topic in itself.
+
+Speaker
+
+and it can be unintuitive. So if you're working on an app and you're getting strange results when you're copying an array,
+
+Speaker
+
+do stop and do some research.
+
+Speaker
+
+But that said, this is a good way of making a copy of an array.
+
+Speaker
+
+So now to join these three arrays together...
+
+Speaker
+
+All we need to do is add them in here.
+
+Speaker
+
+and of course spread them.
+
+Speaker
+
+Okay, let's hit save.
+
+Speaker
+
+Down in the console, we have successfully come...
+
+Speaker
+
+find these three arrays into one
+
+Speaker
+
+array. And do you see what's happened here? We have used the spread operator to expand each of these arrays into their individual values
+
+Speaker
+
+And we've stored those values
+
+Speaker
+
+in this new array.
+
+Speaker
+
+So where we logged out lunch menu, but it was not inside an array,
+
+Speaker
+
+We just got the individual values from that array listed out.
+
+Speaker
+
+Now we've done that.
+
+Speaker
+
+inside square brackets.
+
+Speaker
+
+And that's given us this new array with all of our menu items.
+
+Speaker
+
+Okay, so that's a demo of how the spread operator works. Let's move on to the next room and tackle a challenge.
+
+Speaker
+
+Okay, it is challenge time.
+
+Speaker
+
+Here's the situation.
+
+Speaker
+
+I've got the monthly average share prices for my company,
+
+Speaker
+
+their split over 4 arrays.
+
+Speaker
+
+So there's one array for each quarter.
+
+Speaker
+
+quarter one, quarter two, quarter three, and quarter four.
+
+Speaker
+
+And of course, there's three months data.
+
+Speaker
+
+in each quarter, so we've got 12 months data in total.
+
+Speaker
+
+Now underneath, I've got this function called findprice extremes.
+
+Speaker
+
+And it takes in a single array as a parameter.
+
+Speaker
+
+The purpose of this function is
+
+Speaker
+
+is to find the highest average price that we've got here and the lowest average price and just log them out.
+
+Speaker
+
+So it's going to log out these sentences.
+
+Speaker
+
+highest average share price was and then it will take the highest number of the 12 numbers here.
+
+Speaker
+
+And then the lowest average share price was.
+
+Speaker
+
+and it will take the lowest of the 12 numbers here.
+
+Speaker
+
+So your challenge is this and it comes in two parts.
+
+Speaker
+
+down here.
+
+Speaker
+
+This is the function call.
+
+Speaker
+
+And I want you to call this function with one array whole
+
+Speaker
+
+holding all of the data from the four arrays above.
+
+Speaker
+
+So what I'm talking about here is the argument that you're going to put in here.
+
+Speaker
+
+This argument will be one array holding all of the data from these four arrays.
+
+Speaker
+
+Now, when you've done that...
+
+Speaker
+
+you can come down inside the find price extremes function body.
+
+Speaker
+
+And then I want you to find the highest number
+
+Speaker
+
+from the array and store it in the Const highest.
+
+Speaker
+
+So you can write the logic to do that right here.
+
+Speaker
+
+And then you're going to do the same thing.
+
+Speaker
+
+the lowest number from the array and store it in the const lowest.
+
+Speaker
+
+So the logic for that could
+
+Speaker
+
+go right here.
+
+Speaker
+
+Now there are a couple of rules and a gotcha.
+
+Speaker
+
+Firstly, don't change this parameter. This function can only accept one parameter
+
+Speaker
+
+And it has to be
+
+Speaker
+
+on a ray.
+
+Speaker
+
+Secondly, to find the highest and the lowest numbers,
+
+Speaker
+
+I don't want you to do something really complicated with an array method.
+
+Speaker
+
+What I want you to use is one of the math methods that come with JavaScript.
+
+Speaker
+
+And if you're feeling rusty on the math object...
+
+Speaker
+
+just Google something like, how do I use math to find the highest number in JavaScript?
+
+Speaker
+
+and you're going to find the answer really quickly.
+
+Speaker
+
+Now, when you do this, there's a little gut you're waiting for you.
+
+Speaker
+
+And I've put a file up here called hint.md and
+
+Speaker
+
+And I've put a little bit of help in that in case you get stuck.
+
+Speaker
+
+Now, I'm not saying you will get stuck.
+
+Speaker
+
+Actually, I think you've got all of the skills you need to solve this challenge.
+
+Speaker
+
+definitely do do a little bit of Googling.
+
+Speaker
+
+That is absolutely fine. In fact, I encourage it. That is what learning is all about.
+
+Speaker
+
+Okay, pause now, take all of the time you need.
+
+Speaker
+
+it's not a race and in a few moments we'll have a look at it together.
+
+Speaker
+
+Okay, hopefully you've got that working. If you needed to do some Googling.
+
+Speaker
+
+that is absolutely fine.
+
+Speaker
+
+That is a really good way of learning in itself.
+
+Speaker
+
+So, let's start off down here and we're going to take the first array.
+
+Speaker
+
+And inside this function call,
+
+Speaker
+
+And this is where I'm going to join the arrays into one bigger array.
+
+Speaker
+
+So these arrays are just called Q1, Q2, Q3 and Q4 at the end, so I'll just update that quickly.
+
+Speaker
+
+And of course they need to be separated by commerce.
+
+Speaker
+
+And now, let's spread them all.
+
+Speaker
+
+And lastly, this needs to be an array, so we need the square brackets.
+
+Speaker
+
+Okay, let's move up into the body of the Find Price Extremes function.
+
+Speaker
+
+And before we do anything else, let's just log out the array that we're bringing in and make sure we've successfully combined these four arrays.
+
+Speaker
+
+And so we don't get an error. Let's just comment out these lines here.
+
+Speaker
+
+And if we open up the console, we've got an array with 12 numbers. So that is working.
+
+Speaker
+
+Now to find the highest number from that array, we
+
+Speaker
+
+You can come down here and say, "Muff.max."
+
+Speaker
+
+And we can pass in the array.
+
+Speaker
+
+And then let's do the same thing for lowest.
+
+Speaker
+
+But this time, we're using math.min.
+
+Speaker
+
+I'm passing in the array.
+
+Speaker
+
+Now, is this going to work? Let's hit save!
+
+Speaker
+
+If we look down in the console, we're getting the highest average share price
+
+Speaker
+
+was none.
+
+Speaker
+
+and the lowest average share price was Nan.
+
+Speaker
+
+and you're probably aware that Nan in JavaScript stands for not a number.
+
+Speaker
+
+So that is telling us.
+
+Speaker
+
+something has gone wrong.
+
+Speaker
+
+And the problem we face is that we've passed an array to the max method on the math object.
+
+Speaker
+
+And actually, this method does not take an array.
+
+Speaker
+
+It just takes a sequence of individual numbers.
+
+Speaker
+
+And of course the same applies to the "min" method.
+
+Speaker
+
+So, how can we expand this array into its individual values?
+
+Speaker
+
+Well of course, we spread it.
+
+Speaker
+
+And the same right here.
+
+Speaker
+
+Now let's hit save.
+
+Speaker
+
+And look what we've got down in the console.
+
+Speaker
+
+highest average share price was 126.1.
+
+Speaker
+
+The lowest average share price was 89.4.
+
+Speaker
+
+And if you look through this data, you can see that that is absolutely correct.
+
+Speaker
+
+Okay, that was quite a tricky challenge, so congratulations for getting
+
+Speaker
+
+getting that done.
+
+Speaker
+
+That is the end of the spread operator section.
+
+Speaker
+
+So now is a really good time to
+
+Speaker
+
+take a break and then come back.
+
+Speaker
+
+when you're feeding refreshed.
+
+Speaker
+
+Let's talk about short-circuiting.
+
+Speaker
+
+which is often used as a way of writing more concise code for conditional logic.
+
+Speaker
+
+Now for short-circuiting, we are going to use to...
+
+Speaker
+
+You'll be using the logical or operator.
+
+Speaker
+
+represented by these two vertical pipes.
+
+Speaker
+
+and the logical and operator represented by the double ampersand.
+
+Speaker
+
+Now, we'll look at both of these in turn, but we'll start off with the logical or operator.
+
+Speaker
+
+Now in the editor, I've got some code that comes from a job search site like LinkedIn.
+
+Speaker
+
+So we've got an object here which holds a job hunter.
+
+Speaker
+
+and it's got name and job search area properties.
+
+Speaker
+
+The job search area sets the geographical parameters of where the user is happy to work.
+
+Speaker
+
+So this is me and I'm keeping my job search.
+
+Speaker
+
+See you, Rob.
+
+Speaker
+
+Now underneath we've got a standard if L.
+
+Speaker
+
+And the if here is
+
+Speaker
+
+Just checking if job hunter dot job search area.
+
+Speaker
+
+exists if it's a true fee value.
+
+Speaker
+
+at the moment it does, it exists on this object and
+
+Speaker
+
+And so therefore, we should be able to log out.
+
+Speaker
+
+Jopunter.names work location
+
+Speaker
+
+is jobhunter.jobsearch area.
+
+Speaker
+
+Now of course if this was full C then the code in the else block would execute.
+
+Speaker
+
+We would log out.
+
+Speaker
+
+JoPunter.name's work location is worldwide.
+
+Speaker
+
+So worldwide becomes the default job search area effectively.
+
+Speaker
+
+Now, let's just see if that works.
+
+Speaker
+
+It's looking good down in the console. We've got Tom Chance work location is Europe.
+
+Speaker
+
+Let's comment this out.
+
+Speaker
+
+And Europe becomes worldwide.
+
+Speaker
+
+Now down here, I've got the same thing with a ternary, and I'm just going to bring it up to the top.
+
+Speaker
+
+And I'll uncomment it and comment out the if else.
+
+Speaker
+
+Now this ternary should do exactly the same thing.
+
+Speaker
+
+I've set up a const work location and
+
+Speaker
+
+And now we're checking
+
+Speaker
+
+Jopanta.JopSearchArea exists. Is that true, Thee? We're asking the question.
+
+Speaker
+
+if it is, then job hunter dot job search area
+
+Speaker
+
+is the value that will be assigned to work location.
+
+Speaker
+
+And if not,
+
+Speaker
+
+We'll assign the string worldwide.
+
+Speaker
+
+And then we're just logging out exactly the same sentence. Let's just check it.
+
+Speaker
+
+It's looking good, Tom Chance's work location is worldwide, let's uncomment that.
+
+Speaker
+
+and it changes to Europe.
+
+Speaker
+
+So both of these work, and now we're going to see how we can short circuit this to make it even more concise.
+
+Speaker
+
+So again, I'm going to set up my const work location.
+
+Speaker
+
+And I'll set it equals to japanter.jobsearcharea.
+
+Speaker
+
+And this is where we use the logical or
+
+Speaker
+
+operator.
+
+Speaker
+
+And then after that, all I need is the alternative to...
+
+Speaker
+
+to japanter.jopsearcharea.
+
+Speaker
+
+which is the string worldwide.
+
+Speaker
+
+Now we can log out exactly what we logged out down here, so let's just borrow that.
+
+Speaker
+
+And I'll hit save.
+
+Speaker
+
+And it looks like it's working, let's comment this out.
+
+Speaker
+
+and it changes to worldwide.
+
+Speaker
+
+Wow, it is working. But how does this work?
+
+Speaker
+
+Let's just break it down.
+
+Speaker
+
+So what's happening here is that all of this code is
+
+Speaker
+
+being evaluated from left.
+
+Speaker
+
+to write.
+
+Speaker
+
+Now this is the important bit.
+
+Speaker
+
+It's going to stop evaluating when it meets something truthy.
+
+Speaker
+
+So at the moment, japanata.jobsearcharea does
+
+Speaker
+
+does not exist, we've commented it out.
+
+Speaker
+
+So let's just log out job hunter dot job search area.
+
+Speaker
+
+And what we get down in the console is a
+
+Speaker
+
+course undefined.
+
+Speaker
+
+Now, with this having the value of undefined,
+
+Speaker
+
+Well undefined is a full C value.
+
+Speaker
+
+And that means that this code will continue evaluating
+
+Speaker
+
+it will move on to the right. Remember it will stop.
+
+Speaker
+
+when it meets something truthy.
+
+Speaker
+
+So this value over here
+
+Speaker
+
+is now going to be assigned to work location.
+
+Speaker
+
+And actually, what's on the right hand side of the all-operator is going to be assigned to work location,
+
+Speaker
+
+regardless of whether it's truthy or fulsi.
+
+Speaker
+
+This is a Truffy value, it's a string with some text in it.
+
+Speaker
+
+but it would be assigned to work location
+
+Speaker
+
+even if it was a falsie value.
+
+Speaker
+
+And so that's why when we save this code,
+
+Speaker
+
+We get Tom Chance's work location is worldwide logged out.
+
+Speaker
+
+Now, let's uncomment this line of code and save.
+
+Speaker
+
+and now it's changed to Europe.
+
+Speaker
+
+That is because we're evaluating from the left to right.
+
+Speaker
+
+we come in here, we get a truthy value. This property does exist. It's not undefined anymore.
+
+Speaker
+
+It's holding a string, the string's got text in it, that is a truth.
+
+Speaker
+
+See value
+
+Speaker
+
+And that means at this point, the code will stop.
+
+Speaker
+
+Executing.
+
+Speaker
+
+This value here will be assigned to work location.
+
+Speaker
+
+And this code here will never be.
+
+Speaker
+
+be
+
+Speaker
+
+executed.
+
+Speaker
+
+And that's why they call it short-circuiting.
+
+Speaker
+
+this or operator.
+
+Speaker
+
+short circuits this code, so this bit here.
+
+Speaker
+
+will never run.
+
+Speaker
+
+just like with a piece of wire, we're breaking the flow of
+
+Speaker
+
+the electricity so it's never going to get to
+
+Speaker
+
+this point.
+
+Speaker
+
+Okay, so that is short-circuiting with the logical or operator. It can be a little bit tricky to get used to.
+
+Speaker
+
+So in the next
+
+Speaker
+
+And let's move on to a challenge.
+
+Speaker
+
+Okay, it is challenge time.
+
+Speaker
+
+I have added a pro...
+
+Speaker
+
+property to this object.
+
+Speaker
+
+username.
+
+Speaker
+
+And down here I've got a const, job hunter name, and I'm just logging out, hey,
+
+Speaker
+
+job hunter name.
+
+Speaker
+
+Your challenge is this. I want you to make it so that if the job planter object does not have a name property,
+
+Speaker
+
+username is used instead.
+
+Speaker
+
+So by preference, we call a job hunted by their name.
+
+Speaker
+
+But if their name does not exist on the object, we use their username instead.
+
+Speaker
+
+Okay
+
+Speaker
+
+Now, look back to the previous scrim if you need to.
+
+Speaker
+
+and get this challenge sorted.
+
+Speaker
+
+Okay, hopefully you got that working without too much difficulty.
+
+Speaker
+
+So I'm going to come down here, we've got the const already set up for us.
+
+Speaker
+
+JoPunter name right here.
+
+Speaker
+
+So I'm going to set that equals to jobhunter.name.
+
+Speaker
+
+Now, if we hit save that will of course work.
+
+Speaker
+
+But what happens if there's no name property on that object?
+
+Speaker
+
+It says, "Hey, undefined." Well, that's no good.
+
+Speaker
+
+So we're going to come in here.
+
+Speaker
+
+and we're going to use the or operator.
+
+Speaker
+
+And now we'll put the alternative, which is jaupanta.username.
+
+Speaker
+
+And that's it, save!
+
+Speaker
+
+And it's looking pretty good, it says, "Hey, T-Chant 44."
+
+Speaker
+
+So this code has executed from left to right.
+
+Speaker
+
+Jopunter.name
+
+Speaker
+
+does not exist on the object.
+
+Speaker
+
+So that is giving us a full C value.
+
+Speaker
+
+the code continues executing.
+
+Speaker
+
+JoPantor.username is assigned to my const.
+
+Speaker
+
+your content.
+
+Speaker
+
+And just to be clear, we don't really need to set this up as a separate const.
+
+Speaker
+
+If I just clear all of this challenge text out of the way,
+
+Speaker
+
+We could
+
+Speaker
+
+all of this right here inside the console.log.
+
+Speaker
+
+All I'd need to do is take this code right here.
+
+Speaker
+
+and put it inside these curly braces.
+
+Speaker
+
+Let's comment out the comments.
+
+Speaker
+
+And look, that is working just as well. And if I uncomment the name...
+
+Speaker
+
+We're getting the name there as well. So those two ways of completing the challenge are
+
+Speaker
+
+both absolutely fine.
+
+Speaker
+
+Okay, that is the logical or operator in short circuiting. Now let's move on to the logical and operator.
+
+Speaker
+
+So, we've seen short-circuiting with the ore operator.
+
+Speaker
+
+Now let's see how we can short-circuit with the AND operate.
+
+Speaker
+
+In the editor, I've got an object holding a user and it's got properties for a username and a role, and at the moment the role is set to admin.
+
+Speaker
+
+Now if the user is an admin, I want to render out the dashboard.
+
+Speaker
+
+And if the user is not an admin,
+
+Speaker
+
+I don't need to do anything.
+
+Speaker
+
+So, let's come down here.
+
+Speaker
+
+And I'm just going to say user.role is triple equals to admin.
+
+Speaker
+
+And now I can use my AND operator to short circuit.
+
+Speaker
+
+Next, I'm going to put what I want to happen if the user.role is triple equals to admin.
+
+Speaker
+
+Now I'm not going to write code to render out a whole dashboard.
+
+Speaker
+
+Let's just log out dashboard displayed.
+
+Speaker
+
+And let's see if it works.
+
+Speaker
+
+And down in the console, we're logging out dashboard displayed.
+
+Speaker
+
+So again,
+
+Speaker
+
+Why does this work?
+
+Speaker
+
+Well, the And operator has got short-circuiting behaviour which is kind of the opposite to what we saw with the Or operator.
+
+Speaker
+
+Again, the code is read from left to right.
+
+Speaker
+
+And if what we have on the left hand side is true or a truthy value,
+
+Speaker
+
+code on the right hand side.
+
+Speaker
+
+will execute.
+
+Speaker
+
+Let's just quickly console.log.
+
+Speaker
+
+Use a dot roll is triple equals to admin.
+
+Speaker
+
+And when we run that, we get
+
+Speaker
+
+Let's comment this out.
+
+Speaker
+
+Now we got fools.
+
+Speaker
+
+Okay, so let's try running this code again.
+
+Speaker
+
+user.roll is triple equals to admin, that is false. So this code on the right hand side
+
+Speaker
+
+should not run.
+
+Speaker
+
+In fact, we should see absolutely nothing in the console.
+
+Speaker
+
+Let's save and try.
+
+Speaker
+
+And there we are, nothing happens.
+
+Speaker
+
+So if what we have on the left hand side is full-storeer-forcey value, the code on the right hand side will not exist.
+
+Speaker
+
+So this and operator will short circuit things right there.
+
+Speaker
+
+and the code will stop.
+
+Speaker
+
+And just to be clear, we've been working with the console.log and with strings a lot.
+
+Speaker
+
+This could actually be any code we wanted, it could be a function call.
+
+Speaker
+
+And let's just create that function quickly.
+
+Speaker
+
+So what do you think is going to happen when I hit save? Just think about that for two seconds.
+
+Speaker
+
+If you said absolutely nothing, you'd be quite right.
+
+Speaker
+
+because at the moment, the role property with the string admin is commented out. So this here will be false
+
+Speaker
+
+And this code will never run, so the function will never get called.
+
+Speaker
+
+Let's just prove that. I'll hit save.
+
+Speaker
+
+and nothing happens.
+
+Speaker
+
+Now let's just uncomment this code and I'll hit save.
+
+Speaker
+
+And we get...
+
+Speaker
+
+high admin. So this was true.
+
+Speaker
+
+And therefore...
+
+Speaker
+
+this expression right here.
+
+Speaker
+
+executed.
+
+Speaker
+
+call the function
+
+Speaker
+
+We looked out.
+
+Speaker
+
+Hi, admin.
+
+Speaker
+
+Okay, again, a little bit to get used to here.
+
+Speaker
+
+So let's go straight.
+
+Speaker
+
+and suit a challenge.
+
+Speaker
+
+Okay, it's time for you to put your AND operator short-circuiting skills to the test,
+
+Speaker
+
+with a challenge.
+
+Speaker
+
+Now, a Swiss bank account has given you a choice of four passcodes that you can use to access your account.
+
+Speaker
+
+You only need to use
+
+Speaker
+
+one of them.
+
+Speaker
+
+This function here.
+
+Speaker
+
+authentication check is going to receive a passcode as a parameter.
+
+Speaker
+
+And I'm calling that function right here and I'm passing in 3, 4, 3, 4, 1.
+
+Speaker
+
+which as it happens is one of the passcodes in this Swiss bank passcodes array.
+
+Speaker
+
+Now at the moment authentication check doesn't have any logic and that is your challenge.
+
+Speaker
+
+So this is what I want you to do.
+
+Speaker
+
+If the passcode passed into authentication check,
+
+Speaker
+
+exists in the Swiss bank passcodes array, this one right here.
+
+Speaker
+
+And then the authentication check function should log out the account balance in US dollars. And you've got that saved in a const right here.
+
+Speaker
+
+Now, if the passcode does not exist in Swiss bank passcode.array, then the authentication check function needs not to be
+
+Speaker
+
+do anything.
+
+Speaker
+
+Now to complete this challenge, make sure you short circuit with the AND operator.
+
+Speaker
+
+And also, because this challenge is a little bit tricky and we'll take a bit of figuring out.
+
+Speaker
+
+and I think you're going to need to use an array method.
+
+Speaker
+
+I've put a little bit of help up here in hint.md.
+
+Speaker
+
+That's just one tip that will get you started if you're feeling stuck.
+
+Speaker
+
+And also, of course, you can check back to the previous screen if you need to check these syntax for using the and operator to short circuit.
+
+Speaker
+
+Okay, take all of the time you need to puzzle this out.
+
+Speaker
+
+pause now and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, hopefully you got that working.
+
+Speaker
+
+So the first thing that we need to do
+
+Speaker
+
+is check if the passcode that comes into the function
+
+Speaker
+
+exists in this array.
+
+Speaker
+
+And we can do that with the includes method.
+
+Speaker
+
+We might just love that out to start with.
+
+Speaker
+
+So all we need to do then is take this array.
+
+Speaker
+
+Call the dot includes method.
+
+Speaker
+
+And pass in what we're looking for, which will be stored in the passcode parameter.
+
+Speaker
+
+Let's just hit save.
+
+Speaker
+
+And then down in the console, we're getting true.
+
+Speaker
+
+And that is because
+
+Speaker
+
+3/4, 3/4 does indeed exist in this array.
+
+Speaker
+
+And I think at this point,
+
+Speaker
+
+I'm just going to cut and paste the challenge out of the way, so we've just got a little bit more space.
+
+Speaker
+
+Now, let's change this argument to a random number.
+
+Speaker
+
+I'll hit save.
+
+Speaker
+
+And we're looking out false because 555 is not included in this array.
+
+Speaker
+
+Okay, so now we can take this code and we can do some short-circuiting.
+
+Speaker
+
+So let's just delete the console.log.
+
+Speaker
+
+Now, if this is true or a true value,
+
+Speaker
+
+We can say, "And..."
+
+Speaker
+
+And then give the code that we want to execute. And if this code passes the test, we'll
+
+Speaker
+
+We want to log out the account balance in US dollars.
+
+Speaker
+
+And as I said, down at the bottom of the challenge, if the passcode does not exist in the Swiss bank passcodes array, then this function need not do anything.
+
+Speaker
+
+Well, that looks like the case at the moment. We know that 555 does not appear in this array.
+
+Speaker
+
+So let's hit save.
+
+Speaker
+
+And nothing happens, the console is completely empty.
+
+Speaker
+
+Now let's put in one of the numbers we've got in here, one, two, three, four.
+
+Speaker
+
+I always think that's a really good bank passcode.
+
+Speaker
+
+That's it, save!
+
+Speaker
+
+And look, we're logging out our balance. We have got 45 bits.
+
+Speaker
+
+million
+
+Speaker
+
+dollars.
+
+Speaker
+
+Pretty good stuff.
+
+Speaker
+
+So let's just recap what's happening here.
+
+Speaker
+
+The Swiss bank pass codes are ready.
+
+Speaker
+
+includes the passcode that's been passed into this function
+
+Speaker
+
+And that means that this line of code continues to the other side of the and operator.
+
+Speaker
+
+and this code here gets executed.
+
+Speaker
+
+When we change this to something which doesn't exist?
+
+Speaker
+
+Nothing happens because what we have here is either false or a falsey value and that means that the AND operator is going to short-circuit.
+
+Speaker
+
+This code needs to be true for
+
+Speaker
+
+this code to execute.
+
+Speaker
+
+Okay, so that is short-circuiting and now is a great time to take a break.
+
+Speaker
+
+and come back to the next section when you're feeling refreshed and ready to move on.

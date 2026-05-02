@@ -1,0 +1,2539 @@
+Speaker
+
+As we will see, this takes the simply added inside the HTML text.
+
+Speaker
+
+That text is not visually displayed on page, but is hidden in the code to be accessed by screen readers and search engines like Google.
+
+Speaker
+
+So what is best practice when writing alternative text for images?
+
+Speaker
+
+This first example is way too worthy.
+
+Speaker
+
+We want to be as concise as possible and we also shouldn't start by writing an image of
+
+Speaker
+
+because the screen reader will say it's an image anyway.
+
+Speaker
+
+The second example is great.
+
+Speaker
+
+But you may wonder, do we have to add alternative text to all images?
+
+Speaker
+
+Well, yes and no.
+
+Speaker
+
+We should add the alt attribute to all the images in our HTML.
+
+Speaker
+
+But if an image is purely decorative, we don't need to write any descriptive text as the value for that attribute.
+
+Speaker
+
+In other words,
+
+Speaker
+
+We should simply add an empty alt at
+
+Speaker
+
+The reason we do this is because without a screen reader may read out the image file name instead, and that can be quite annoying.
+
+Speaker
+
+Alternative text mainly help those with little or no vision.
+
+Speaker
+
+to have turned off images to say data.
+
+Speaker
+
+and it also helps search engines find appropriate content.
+
+Speaker
+
+to practice this.
+
+Speaker
+
+We have a website displaying a collection of strange digital art.
+
+Speaker
+
+which currently isn't very accessible.
+
+Speaker
+
+Okay, time for a challenge.
+
+Speaker
+
+I want you to add the appropriate alternative text to all of the images on this web page.
+
+Speaker
+
+Have a look at the Batman Duck example.
+
+Speaker
+
+The second one.
+
+Speaker
+
+And trying to write your descriptive test.
+
+Speaker
+
+A good text needs to be concise, but still communicate the important part of what the image shows.
+
+Speaker
+
+pause here and give this a try.
+
+Speaker
+
+Okay, I hope you had a good time trying.
+
+Speaker
+
+Okay, I hope you had a good time trying to describe these weird images we have on our page.
+
+Speaker
+
+I know I had.
+
+Speaker
+
+Let me show you what I came up with.
+
+Speaker
+
+I will look at the first image.
+
+Speaker
+
+up here, the astronauts.
+
+Speaker
+
+And then go to our HTML.
+
+Speaker
+
+And here we find it. What I'm going to do is add the alt attribute and the descriptive text that I came up with.
+
+Speaker
+
+which was an astronaut suspended in mid-air by dark cloud over a field of purple grass.
+
+Speaker
+
+Next, we have this image, which we find here.
+
+Speaker
+
+And what I came up with was a chair with a small cloud hovering over it in the desert next to the dark rock.
+
+Speaker
+
+Next is this image.
+
+Speaker
+
+And we find it here.
+
+Speaker
+
+My description was dark cubes and cylinders floating in the air along with two glowing orbs.
+
+Speaker
+
+And finally, I don't know if you noticed, but we haven't image up here as well.
+
+Speaker
+
+And it's this, our hero image.
+
+Speaker
+
+which I described as a handmade of metallic liquid dripping upwards.
+
+Speaker
+
+Again, you might have described these images very differently, but the important thing is that you got practice in applying an old attribute to every image and writing a concise or as concise description as possible. One other thing that I tend to do when writing alternative text is to end with a period.
+
+Speaker
+
+This is not something you need to do, but it makes the screen reader do a brief pause, which can be helpful when listening to it describe all the content on a page. I have one last question for you, which is, what if this hero section had a background image like this one?
+
+Speaker
+
+Should we add an alternative text to this image?
+
+Speaker
+
+The answer is no. Like we talked about in the beginning of the lesson, not all images should have an alternative text, such as purely decorative images.
+
+Speaker
+
+Decorative images don't add informational content, but are purely for aesthetics.
+
+Speaker
+
+Examples include stylistic flourishes, background images, or images used for spacing.
+
+Speaker
+
+another very common type of decorative image that should have an empty alt attribute or icons combined with text. Think, for example, of the magnifying glass in a search field. But as a reminder, we still put an empty alt attribute in the image.
+
+Speaker
+
+This is a reason why it's preferable to add any decorative background images using CSS instead of an HTML image element, because we don't need to describe it with an alternative text. That could look something like this.
+
+Speaker
+
+Now this image applies to the whole body and not just the hero section, but I simply wanted to show you how you add this in CSS.
+
+Speaker
+
+Finally, on this topic, if the image, for example, has a label or an adherant text that describes the image, an alternative text also becomes redundant.
+
+Speaker
+
+Let's break our own image, shall we?
+
+Speaker
+
+This is how it will look like if our image here fails to load for whatever reason. Luckily, we have an alternative text that describes the content so that we don't miss out on any information the image conveys. If we remove it, we are left with merely a broken image icon.
+
+Speaker
+
+Before moving on from this website, we will also look at how we can make the links in here more accessible.
+
+Speaker
+
+See you in the next lesson.
+
+Speaker
+
+Labels for control elements like links and buttons.
+
+Speaker
+
+are very useful to all users.
+
+Speaker
+
+Getting them right is particularly important.
+
+Speaker
+
+to users with the
+
+Speaker
+
+disabilities.
+
+Speaker
+
+for
+
+Speaker
+
+links.
+
+Speaker
+
+You should use the
+
+Speaker
+
+tag in your HTML.
+
+Speaker
+
+And you
+
+Speaker
+
+your links should be recognizable as links and
+
+Speaker
+
+easy to find.
+
+Speaker
+
+And finally...
+
+Speaker
+
+They should have non-ambiguous text.
+
+Speaker
+
+What I mean by that is
+
+Speaker
+
+Anyone should be able to understand where the link will take them, even out of context the links are in.
+
+Speaker
+
+So don't just use
+
+Speaker
+
+click here or more for your labels as
+
+Speaker
+
+screen reader users.
+
+Speaker
+
+sometimes navigate through links without reading the context.
+
+Speaker
+
+Let's look at a few examples.
+
+Speaker
+
+The first link is
+
+Speaker
+
+not very accessible.
+
+Speaker
+
+Why?
+
+Speaker
+
+Because
+
+Speaker
+
+The color alone is not sufficient to indicate the presence of a link.
+
+Speaker
+
+Underlines.
+
+Speaker
+
+are a popular, commonly understood way to communicate the presence of linked content.
+
+Speaker
+
+However...
+
+Speaker
+
+The text here is still...
+
+Speaker
+
+And big use.
+
+Speaker
+
+We don't understand it outside of its context.
+
+Speaker
+
+This is much better.
+
+Speaker
+
+We can clearly see.
+
+Speaker
+
+It's a link.
+
+Speaker
+
+And we understand where the link will take us even out of context.
+
+Speaker
+
+Now I have a challenge for you.
+
+Speaker
+
+I want you to update all the links in the website.
+
+Speaker
+
+so that they meet the following requirements.
+
+Speaker
+
+They can be identified as links by more than just
+
+Speaker
+
+alone.
+
+Speaker
+
+And secondly, the link text is not ambiguous.
+
+Speaker
+
+As in, we understand where the link will take us.
+
+Speaker
+
+even out of context.
+
+Speaker
+
+pause here, give this your breast shot, and afterwards I will show you how I would do it.
+
+Speaker
+
+Okay, I hope that went well.
+
+Speaker
+
+So
+
+Speaker
+
+We have a link in each paragraph.
+
+Speaker
+
+Here's one.
+
+Speaker
+
+Here's one.
+
+Speaker
+
+And here is one.
+
+Speaker
+
+So we have three links to identify.
+
+Speaker
+
+And the A tags are currently only wrapping the here.
+
+Speaker
+
+What I would do is
+
+Speaker
+
+is to make sure that
+
+Speaker
+
+The ATAG is...
+
+Speaker
+
+wrapping this.
+
+Speaker
+
+whole last sentence, actually.
+
+Speaker
+
+like that.
+
+Speaker
+
+No.
+
+Speaker
+
+whole sentence is a link that can be understood outside of context.
+
+Speaker
+
+Next up.
+
+Speaker
+
+I'm going to apply the same principle to...
+
+Speaker
+
+The second paragraph.
+
+Speaker
+
+And make the whole last sentence.
+
+Speaker
+
+And for the third link.
+
+Speaker
+
+We do the very same thing.
+
+Speaker
+
+We transform the full sentences in two links.
+
+Speaker
+
+But it's still only communicated by
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+So we have to go into our CSS.
+
+Speaker
+
+And there are actually multiple ways of making the links more accessible.
+
+Speaker
+
+one could be to make the text more bold than the text around it.
+
+Speaker
+
+another way.
+
+Speaker
+
+As we saw in our example here,
+
+Speaker
+
+giving it an underline is a commonly understood
+
+Speaker
+
+way to communicate that something is a link.
+
+Speaker
+
+If we change text decoration, none.
+
+Speaker
+
+Underline.
+
+Speaker
+
+We achieve an appearance that definitely to me looks like a
+
+Speaker
+
+clickable link.
+
+Speaker
+
+text decoration underlying is the default for A elements. So we could actually just remove this.
+
+Speaker
+
+And the default styling is still there.
+
+Speaker
+
+Let's have a quick look at some less traditional links.
+
+Speaker
+
+Let me show you an example.
+
+Speaker
+
+Here, I've turned our section into a card, and now the whole card is a link to more work from the artist.
+
+Speaker
+
+When making an advanced link like this, we need to do a bit more to make sure the link is accessible because quite often accessibility issues arise from how they're built.
+
+Speaker
+
+commonly using the ATAG to wrap the whole component.
+
+Speaker
+
+like we have done here.
+
+Speaker
+
+This is totally understandable as an approach because it succeeds in making the whole thing clickable.
+
+Speaker
+
+but it negatively affects the screen reader experience. If we move to the card using a screen reader,
+
+Speaker
+
+The very long string of text content will be read out and only after this am I told the card is linked.
+
+Speaker
+
+which is a bit slow and maybe a bit confusing.
+
+Speaker
+
+Plus, elements like images included in the card might not be specifically announced as image either.
+
+Speaker
+
+any nest of structure is lost within the link.
+
+Speaker
+
+instead.
+
+Speaker
+
+the link should be positioned inside the card without wrapping any text.
+
+Speaker
+
+Now, we'll show you how to do this.
+
+Speaker
+
+We just improved accessibility greatly. And by cheating using either CSS or JavaScript, we can make the whole card clickable just like it was before.
+
+Speaker
+
+Feel free to pause and check out my CSS solution, which uses absolute positioning and the super selector. The CSS is a bit advanced and out of scope for this lesson. But as is in two links.
+
+Speaker
+
+But it's still only communicated by
+
+Speaker
+
+colors.
+
+Speaker
+
+wrapping this.
+
+Speaker
+
+whole land here is one.
+
+Speaker
+
+So we have three links to identify.
+
+Speaker
+
+And the A tags are currently only wrapping the
+
+Speaker
+
+What I would do is
+
+Speaker
+
+is to make sure that--
+
+Speaker
+
+The ATAG is wrapping this whole...
+
+Speaker
+
+whole rest sentence, actually.
+
+Speaker
+
+like that.
+
+Speaker
+
+No.
+
+Speaker
+
+This whole
+
+Speaker
+
+All sentence
+
+Speaker
+
+is a link that can be understood outside of context.
+
+Speaker
+
+Next up.
+
+Speaker
+
+I'm going to apply the same principle to...
+
+Speaker
+
+The second paragraph.
+
+Speaker
+
+and make the whole last sentence a link.
+
+Speaker
+
+And for the third link...
+
+Speaker
+
+We do the very same thing.
+
+Speaker
+
+We transform the full sentences in two links.
+
+Speaker
+
+But it's still only communicated by color.
+
+Speaker
+
+So we have to go into our CSS.
+
+Speaker
+
+And there are actually multiple ways of making the links more accessible.
+
+Speaker
+
+One could be to make the text more bold than the text around it, but another way.
+
+Speaker
+
+As we saw in our example here,
+
+Speaker
+
+giving it an underline is a commonly understood
+
+Speaker
+
+way to communicate that something is a link.
+
+Speaker
+
+If we change
+
+Speaker
+
+Next decoration, none.
+
+Speaker
+
+to
+
+Speaker
+
+Underline.
+
+Speaker
+
+We have she even appearance that definitely to me looks like a
+
+Speaker
+
+clickable link.
+
+Speaker
+
+In fact...
+
+Speaker
+
+Text decoration underline is the default for A elements. So we could actually just remove this.
+
+Speaker
+
+And the default styling.
+
+Speaker
+
+is still there.
+
+Speaker
+
+Let's have a quick look at some less traditional links.
+
+Speaker
+
+Let me show you an example.
+
+Speaker
+
+Here, I've turned our section into a card, and now the whole card is a link to more work from the artist.
+
+Speaker
+
+When making an advanced link like this, we need to do a bit more to make sure the link is accessible because quite often accessibility issues arise from how they're built.
+
+Speaker
+
+commonly using the ATAG to wrap the whole component.
+
+Speaker
+
+like we have done here.
+
+Speaker
+
+This is totally understandable as an approach because it succeeds in making the whole thing clickable.
+
+Speaker
+
+but it negatively affects the screen reader experience. If we move to the card using a screen reader,
+
+Speaker
+
+a very long string of text content will be read out and only after this, am I told the card is linked?
+
+Speaker
+
+which is a bit slow and maybe a bit confusing.
+
+Speaker
+
+Plus, elements like images included in the cape, that something is a link.
+
+Speaker
+
+If we change
+
+Speaker
+
+the text around her.
+
+Speaker
+
+So we have to go.
+
+Speaker
+
+one could be to make the text more bold than the text or saw in our example here, commonly understood.
+
+Speaker
+
+Uh, wait.
+
+Speaker
+
+If we change
+
+Speaker
+
+We achieve an appearance that definitely to me looks like a
+
+Speaker
+
+clickable link.
+
+Speaker
+
+In fact...
+
+Speaker
+
+text decoration underlie and the default styling is
+
+Speaker
+
+still there.
+
+Speaker
+
+Let me show you an example.
+
+Speaker
+
+Let me tell you a quick look at some.
+
+Speaker
+
+And the default styling is
+
+Speaker
+
+still there.
+
+Speaker
+
+Let's have a quick look at some less traditional links.
+
+Speaker
+
+Let me show you an example.
+
+Speaker
+
+Here, I've turned our section into a card, and now the whole card is linked to more work from the artist.
+
+Speaker
+
+When making an advanced link like this, we need to do a bit more to make sure the link is accessible.
+
+Speaker
+
+because quite often accessibility issues arise from how they're built.
+
+Speaker
+
+commonly using the ATAG to wrap the whole component.
+
+Speaker
+
+Like we have done here.
+
+Speaker
+
+This is totally understandable as an approach because it succeeds in making the whole thing clickable.
+
+Speaker
+
+but it negatively affects the screen reader experience. If we move to the card using a screen reader,
+
+Speaker
+
+a very long string of text content will be read out, and only after this, am I told the card is linked.
+
+Speaker
+
+which is a bit slow and maybe a bit confusing.
+
+Speaker
+
+Plus, elements like images included in the card might not be specifically announced as image either.
+
+Speaker
+
+any nested structure is lost within the link.
+
+Speaker
+
+instead.
+
+Speaker
+
+The link should be positioned inside the card without wrapping any text.
+
+Speaker
+
+Now, we'll show you how to do this.
+
+Speaker
+
+We just improved accessibility greatly. And by cheating using either CSS or JavaScript, we can make the whole card clickable just like it was before.
+
+Speaker
+
+Feel free to pause and check out my CSS solution, which uses absolute positioning and a suitors selector. The CSS is a bit advanced and out of scope for this lesson. But as you develop your skills, it's important for you to know what the correct approach is.
+
+Speaker
+
+It could also be a good idea to add a hover effect to the whole card like we did here.
+
+Speaker
+
+to make sure the cursor is a pointer and also to modify the call to action text so that the user understands that the whole card is now clickable.
+
+Speaker
+
+The card should also be focusable if we tap through the page.
+
+Speaker
+
+Since I mentioned modifying the call to action text, we should also.
+
+Speaker
+
+This is much better communication.
+
+Speaker
+
+Additionally, I added something called an
+
+Speaker
+
+The next lesson, we are going to return to our Skynet Eats website and apply our new skills.
+
+Speaker
+
+See you there.
+
+Speaker
+
+We are back with our drone food delivery app.
+
+Speaker
+
+And we have introduced a new section with some general info and statistics about the company.
+
+Speaker
+
+But the website lacks alternative text for its images.
+
+Speaker
+
+And some of its links are not accessible enough.
+
+Speaker
+
+This is where you will swoop in to save the day.
+
+Speaker
+
+Your task is simple.
+
+Speaker
+
+images so that they have appropriate altars.
+
+Speaker
+
+at the text.
+
+Speaker
+
+And...
+
+Speaker
+
+update any links that are either not
+
+Speaker
+
+recognizable as links.
+
+Speaker
+
+or
+
+Speaker
+
+they have
+
+Speaker
+
+and Big U S text.
+
+Speaker
+
+This requires you to
+
+Speaker
+
+have a look around and work both in our HTML and CSS.
+
+Speaker
+
+pause here and give this your best shot.
+
+Speaker
+
+Okay, I hope that went well.
+
+Speaker
+
+If you were still unsure about anything, I will now show you exactly how I would do this.
+
+Speaker
+
+Let's start with updating.
+
+Speaker
+
+are images with alternative text.
+
+Speaker
+
+The first image is...
+
+Speaker
+
+This one.
+
+Speaker
+
+Here we find the hero image.
+
+Speaker
+
+which is where I will add the alt tag.
+
+Speaker
+
+And the text that I chose to write reads food delivery drone saying I come with peace.
+
+Speaker
+
+And remember, when text is
+
+Speaker
+
+part of an
+
+Speaker
+
+A screen reader won't be able to read it.
+
+Speaker
+
+Therefore, if it conveys important information, which I think in this case, it does, because it communicates humor,
+
+Speaker
+
+we should add it to our alternative text.
+
+Speaker
+
+That's image one.
+
+Speaker
+
+For our new section, we have this image here of a drone.
+
+Speaker
+
+We find it right here.
+
+Speaker
+
+the alt-type.
+
+Speaker
+
+And I decided to simply and concisely call this a flying Skynet drone.
+
+Speaker
+
+maybe you just wrote a flying drone and that's okay. My thought was that this might be...
+
+Speaker
+
+Skynet's own unique design of a drone that this is an image of, and therefore it makes sense to be specific.
+
+Speaker
+
+Did you notice that I left out one thing?
+
+Speaker
+
+I didn't add any period to the end of the sentence.
+
+Speaker
+
+which I am a fan of.
+
+Speaker
+
+So I'm going to do that here.
+
+Speaker
+
+And also...
+
+Speaker
+
+I'm adding a period by the end.
+
+Speaker
+
+to give the screen reader some pause when reading the alternative text.
+
+Speaker
+
+Amazing.
+
+Speaker
+
+Now to the second part of the challenge,
+
+Speaker
+
+which involve our links.
+
+Speaker
+
+This link here isn't very accessible, so...
+
+Speaker
+
+First.
+
+Speaker
+
+I'm gonna take this ATAG and wrap it around.
+
+Speaker
+
+That's better.
+
+Speaker
+
+We still haven't done anything to the CSS and we will get there, but first...
+
+Speaker
+
+This is another link.
+
+Speaker
+
+And while it does a pretty good job communicating that it's a clickable link,
+
+Speaker
+
+The text is still ambiguous.
+
+Speaker
+
+So let's change that.
+
+Speaker
+
+We go down here.
+
+Speaker
+
+And here we have to
+
+Speaker
+
+It will take us to their ab--
+
+Speaker
+
+page.
+
+Speaker
+
+How about we just, right?
+
+Speaker
+
+about Skynet.
+
+Speaker
+
+I think that makes a lot of sense.
+
+Speaker
+
+Now we head into our CSS.
+
+Speaker
+
+to update this link right here.
+
+Speaker
+
+I want it to be underlined.
+
+Speaker
+
+So I'm going to go
+
+Speaker
+
+up to the info section.
+
+Speaker
+
+And this selects the link.
+
+Speaker
+
+I'm giving it a green color.
+
+Speaker
+
+Let's do.
+
+Speaker
+
+Recreation.
+
+Speaker
+
+And then we have it.
+
+Speaker
+
+Immediately recognizable as a link.
+
+Speaker
+
+But there's one more thing we can do.
+
+Speaker
+
+Remember everything we learned about text contrast.
+
+Speaker
+
+These small headlines.
+
+Speaker
+
+drones, customers, and cat conflicts, their fixed contrast is not great.
+
+Speaker
+
+We would love them to have a contrast value of seven or above.
+
+Speaker
+
+So let's see if we can identify these selectors.
+
+Speaker
+
+In the HTML.
+
+Speaker
+
+We see that.
+
+Speaker
+
+They have the class stat heading.
+
+Speaker
+
+which is right here in our CSS.
+
+Speaker
+
+And this is the color. If we change that to...
+
+Speaker
+
+A lighter.
+
+Speaker
+
+Then immediately it became much more readable and the contrast value is now 7.86 and you can check that yourself by going into the
+
+Speaker
+
+DevTools as we talked about in a previous lessons.
+
+Speaker
+
+And...
+
+Speaker
+
+hovering over these headlines.
+
+Speaker
+
+Give yourself a huge pat on the back for all the work that you've done.
+
+Speaker
+
+you know so much already and I'm really excited about our next lesson together.
+
+Speaker
+
+See you there.
+
+Speaker
+
+Labels in all forms are a hugely important part of...
+
+Speaker
+
+accessible development.
+
+Speaker
+
+Unfortunately.
+
+Speaker
+
+Elements like input fields often lack labels and are replaced by placeholder text.
+
+Speaker
+
+Let's look at two common designs of input fields.
+
+Speaker
+
+This first example has a placeholder.
+
+Speaker
+
+but has no label.
+
+Speaker
+
+And the second example has a label, but it's missing the placeholder text.
+
+Speaker
+
+According to the WCAG, the...
+
+Speaker
+
+Accessibility Guidelines.
+
+Speaker
+
+placeholder text is
+
+Speaker
+
+not.
+
+Speaker
+
+an accessible replacement for
+
+Speaker
+
+the label element.
+
+Speaker
+
+The placeholder should only be used as a brief example of the text to be entered.
+
+Speaker
+
+mainly because of inconsistent support.
+
+Speaker
+
+for screen readers.
+
+Speaker
+
+Best case scenario?
+
+Speaker
+
+An input field has both a label and an exemplary placeholder.
+
+Speaker
+
+Let's have a look at the sign up page for our SkyNet Eats app.
+
+Speaker
+
+Seeing this,
+
+Speaker
+
+you might think that this looks like a
+
+Speaker
+
+very standard sign up for them.
+
+Speaker
+
+And you're right.
+
+Speaker
+
+Unfortunately, it's commonplace to see forms like this out there.
+
+Speaker
+
+black labels.
+
+Speaker
+
+Your challenge should you choose to accept it.
+
+Speaker
+
+It's too first.
+
+Speaker
+
+Add an ID attribute to each input field.
+
+Speaker
+
+Secondly.
+
+Speaker
+
+Add labels for each input field in the form.
+
+Speaker
+
+I want you to search yourself.
+
+Speaker
+
+how to associate a label with an input field.
+
+Speaker
+
+when clicking the label.
+
+Speaker
+
+the input field gets focused.
+
+Speaker
+
+Alternatively...
+
+Speaker
+
+You could
+
+Speaker
+
+over to our HTML.
+
+Speaker
+
+And look at
+
+Speaker
+
+input radio buttons.
+
+Speaker
+
+Because
+
+Speaker
+
+They actually have.
+
+Speaker
+
+Labels.
+
+Speaker
+
+Finally, I want you to change the placeholder names to be exemplary user inputs, for example, Obama for a certain name field.
+
+Speaker
+
+pause now and make this sign up page accessible to everyone.
+
+Speaker
+
+Okay.
+
+Speaker
+
+If you manage to do this all on your own, I am super impressed.
+
+Speaker
+
+Either way.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+We solve this challenge in our HTML.
+
+Speaker
+
+And the first thing that I want to do...
+
+Speaker
+
+If you manage to do this all on your own, I am super impressed.
+
+Speaker
+
+Either way.
+
+Speaker
+
+Let's do it together.
+
+Speaker
+
+We solve this challenge in our HTML.
+
+Speaker
+
+And the first thing that I want to do...
+
+Speaker
+
+is add an ID attribute to each input field.
+
+Speaker
+
+Beautiful.
+
+Speaker
+
+Nothing has changed yet.
+
+Speaker
+
+Now let's add our label elements, and I want them to be on top of their associated input fields.
+
+Speaker
+
+And hopefully, you managed to figure out that way too associated.
+
+Speaker
+
+But an input field is to use the four attribute.
+
+Speaker
+
+and then write the ID of that specific input field as the for name.
+
+Speaker
+
+Here we have the label.
+
+Speaker
+
+And if you click on it,
+
+Speaker
+
+Make sure that it focuses the input field that you had in mind. Let's apply a label to all the
+
+Speaker
+
+input field.
+
+Speaker
+
+Let's save and have a look.
+
+Speaker
+
+Beautiful.
+
+Speaker
+
+Every single input field now.
+
+Speaker
+
+has a label.
+
+Speaker
+
+and it's associated with the correct input field.
+
+Speaker
+
+now for the final part of the challenge.
+
+Speaker
+
+It makes no sense to have the placeholder name be the exact color.
+
+Speaker
+
+I'll be off the label.
+
+Speaker
+
+So what we want instead is to write an example of a
+
+Speaker
+
+name here and here an example of an address and so on.
+
+Speaker
+
+So we are going to be...
+
+Speaker
+
+Share lock.
+
+Speaker
+
+Holmes.
+
+Speaker
+
+Let's try this.
+
+Speaker
+
+And voila!
+
+Speaker
+
+We have an accessible signup page.
+
+Speaker
+
+And if you noticed...
+
+Speaker
+
+We also have an image.
+
+Speaker
+
+and the image has an alt text, a woman seeing a drone approaching. Better yet!
+
+Speaker
+
+or button says send message.
+
+Speaker
+
+which is very non ambiguous and clear.
+
+Speaker
+
+This form featured input fields as well as radio buttons.
+
+Speaker
+
+Another common element you will see in forums are drop down selection lists.
+
+Speaker
+
+But do not fret because we make them accessible the same way we do input fields.
+
+Speaker
+
+Now the city input is a selection menu instead and we work with labels the same way here as within good fields.
+
+Speaker
+
+the four attributes matching.
+
+Speaker
+
+the ID attributes on the select tag.
+
+Speaker
+
+Finally, I want to mention that the text inside links and buttons actually acts as labels, providing an accessible name in the browser's accessibility layer. If, for whatever reason, we want to create a custom button without using the button element, we would need to add a so-called ARIA label attribute that substitutes the regular button label.
+
+Speaker
+
+I will show you the difference in code here quickly.
+
+Speaker
+
+This button is
+
+Speaker
+
+using the native HTML element.
+
+Speaker
+
+This button is our custom widget.
+
+Speaker
+
+making custom buttons.
+
+Speaker
+
+widget accessible includes not only providing an accessible name through ARIA labels.
+
+Speaker
+
+but also implementing keyboard accessibility and JavaScript functionality.
+
+Speaker
+
+It's often simpler and more accessible to use the standard button.
+
+Speaker
+
+an element when possible. As it inherently comes with many accessibility features built in, we will stop here because we will dedicate a whole lesson on audio labels later on in the course.
+
+Speaker
+
+for now.
+
+Speaker
+
+awesome work as always, see you in the next lesson.
+
+Speaker
+
+Here we go!
+
+Speaker
+
+We have the final section of our futuristic food delivery app in place.
+
+Speaker
+
+It's a signup form to get notified when the Skynet drones start.
+
+Speaker
+
+start delivering pizza to your window.
+
+Speaker
+
+When the Skynet drones start delivering pizza to your window.
+
+Speaker
+
+I myself want to be notified when that day comes, because I can't wait for such airborne glutinous delight.
+
+Speaker
+
+You probably already predicted what your challenge will be.
+
+Speaker
+
+I want you to make this form accessible in the same manner as you did in the previous lesson.
+
+Speaker
+
+We want to act.
+
+Speaker
+
+that labels for--
+
+Speaker
+
+each input field in the form.
+
+Speaker
+
+Then...
+
+Speaker
+
+We want to change the placeholder names to be as accessible and helpful as possible.
+
+Speaker
+
+And finally...
+
+Speaker
+
+We want to update the--
+
+Speaker
+
+button text.
+
+Speaker
+
+to be less ambiguous.
+
+Speaker
+
+Currently, it's just a checkmark symbol, which is quite poor communication.
+
+Speaker
+
+pause here and make this notification form accessible.
+
+Speaker
+
+Now let's do it together.
+
+Speaker
+
+We will go through our HTML and
+
+Speaker
+
+add the labels on top.
+
+Speaker
+
+like this.
+
+Speaker
+
+We need the four attributes, but
+
+Speaker
+
+what do we need to put in the four attributes?
+
+Speaker
+
+Now we need the ID of the input field that
+
+Speaker
+
+we're going to associate it too.
+
+Speaker
+
+which we don't have yet.
+
+Speaker
+
+make an idea.
+
+Speaker
+
+Oh, it may.
+
+Speaker
+
+And then write name up there.
+
+Speaker
+
+That should be it.
+
+Speaker
+
+And we have the labels, but now the placeholders need updating as well.
+
+Speaker
+
+Let's write an example here.
+
+Speaker
+
+Okay, much better.
+
+Speaker
+
+Now, we need to make the button much less ambiguous than this.
+
+Speaker
+
+So we remove the symbol.
+
+Speaker
+
+I'm gonna write.
+
+Speaker
+
+Notify me, because that's exactly what I want to happen when I press the button.
+
+Speaker
+
+Finally.
+
+Speaker
+
+I hope you also went into our CSS.
+
+Speaker
+
+and found this selector for the placeholder.
+
+Speaker
+
+And updated this color because
+
+Speaker
+
+Because currently, it's light gray and difficult to see. So let's...
+
+Speaker
+
+Make it a darker gray.
+
+Speaker
+
+Beautiful.
+
+Speaker
+
+wasn't that easy and pretty
+
+Speaker
+
+really effortless.
+
+Speaker
+
+Join me in our next lesson, where we will have a recap of semantic HTML.
+
+Speaker
+
+See you there!
+
+Speaker
+
+Now we need to dissymbol.
+
+Speaker
+
+I'm gonna write
+
+Speaker
+
+Notifying me, great.
+
+Speaker
+
+Find into our CSS.
+
+Speaker
+
+and found this selector for the placeholder.
+
+Speaker
+
+and updated this color because
+
+Speaker
+
+Before we move on from this form here, you should know that the radio buttons could have even more semantically correct HTML than they currently have.
+
+Speaker
+
+We should use the field set and legend tag.
+
+Speaker
+
+to group the set and provide a context for screen reader users.
+
+Speaker
+
+When a screen reader encounters a field set tag, it typically announces that the user has entered a new group or field set. This helps users understand that the following elements are related and should be considered as part of a group.
+
+Speaker
+
+and women screening reader encounters a legend tag, if you usually read sit out as title or description of the group.
+
+Speaker
+
+Time for a quick challenge.
+
+Speaker
+
+Pause here and look up how to apply the field set in legend tag.
+
+Speaker
+
+them.
+
+Speaker
+
+And back here, try to make the appropriate update to our code.
+
+Speaker
+
+You don't need to add any new elements you just need to update the tags we already have in place.
+
+Speaker
+
+this to try.
+
+Speaker
+
+Before we move on from this form here, you should know that the radio buttons could have even more semantically correct HTML than they currently have.
+
+Speaker
+
+we should use the field set and legend tags.
+
+Speaker
+
+to group the set and provide a context for screen reader users.
+
+Speaker
+
+When a screen reader encounters a field set tag, it typically announces that the user has entered a new group or field set.
+
+Speaker
+
+helps users understand that the following elements are related and should be considered as part of a group. And when a screening reader encounters a legend tag, it usually reads it out as title or description of the group.
+
+Speaker
+
+Time for a quick challenge.
+
+Speaker
+
+pause here and look up how to apply the field set in legend tag.
+
+Speaker
+
+Then come
+
+Speaker
+
+And back here, try to make the appropriate update to our code.
+
+Speaker
+
+You don't need to add any new elements, you just need to update the tags we already had in place.
+
+Speaker
+
+this to try.
+
+Speaker
+
+Okay, if you manage to do this, you
+
+Speaker
+
+You might have noticed that the styling of a form changed.
+
+Speaker
+
+That's because the field set and legend elements come within here in styling.
+
+Speaker
+
+Let me catch up to you.
+
+Speaker
+
+There.
+
+Speaker
+
+And this styling isn't very consistent with the rest of our form. If you want, take a moment to play around with styling the fieldset element, and then I'll do it too.
+
+Speaker
+
+Okay, if you manage to do this, you might have noticed that the styling of a form changed.
+
+Speaker
+
+That's because the field set and legend elements come with inherent styling.
+
+Speaker
+
+Let me catch up to you.
+
+Speaker
+
+And this styling isn't very consistent with the rest of our form.
+
+Speaker
+
+If you want, take a moment to play around with styling the field set element, and then I'll do it too.
+
+Speaker
+
+that was a fun little break from the accessibility work we've been doing.
+
+Speaker
+
+I myself came up with this.
+
+Speaker
+
+That's much more consistent.
+
+Speaker
+
+Now, let's get excited because it's time to return to our SkyNet EATS app.
+
+Speaker
+
+See you soon!
+
+Speaker
+
+Want to know an awesome fact?
+
+Speaker
+
+96.5% of websites
+
+Speaker
+
+accessibility issues that
+
+Speaker
+
+you can prevent by just knowing the fundamentals.
+
+Speaker
+
+the very same fundamentals that just
+
+Speaker
+
+learning here in this course.
+
+Speaker
+
+Next, we will have a brief recap of
+
+Speaker
+
+semantic HTML.
+
+Speaker
+
+which is the use of this
+
+Speaker
+
+descriptive tags in our HTML.
+
+Speaker
+
+You might wonder why descriptive tags are so important.
+
+Speaker
+
+After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in
+
+Speaker
+
+Whatever way you want.
+
+Speaker
+
+But it makes sense to use the correct element for the job.
+
+Speaker
+
+The major benefit is that certain assistive technologies will use different
+
+Speaker
+
+HTML tags to navigate through a website.
+
+Speaker
+
+semantic HTML doesn't take any longer to write than
+
+Speaker
+
+on semantic markup.
+
+Speaker
+
+if you do it consistently from the start of your project.
+
+Speaker
+
+Even better.
+
+Speaker
+
+semantic markup has another benefit beyond accessibility in that.
+
+Speaker
+
+search engines like Google.
+
+Speaker
+
+give more importance to keywords inside headings, links, etc.
+
+Speaker
+
+then keywords.
+
+Speaker
+
+included in non-semancic devs.
+
+Speaker
+
+Your content will be more findable by potential users.
+
+Speaker
+
+We have tags that are so-called landmark regions.
+
+Speaker
+
+And they can be a nav.
+
+Speaker
+
+A header.
+
+Speaker
+
+Mean.
+
+Speaker
+
+A section.
+
+Speaker
+
+and footer.
+
+Speaker
+
+And they help communicate the layout and--
+
+Speaker
+
+important areas of a page.
+
+Speaker
+
+and can allow quick access to these different regions.
+
+Speaker
+
+Because this is a bit of a recap for you.
+
+Speaker
+
+I will challenge you to apply what you know about semantic HTML.
+
+Speaker
+
+right on our homepage.
+
+Speaker
+
+Your task is to update our code with descriptive tags
+
+Speaker
+
+using the landmark regions, NAB.
+
+Speaker
+
+Main.
+
+Speaker
+
+Section
+
+Speaker
+
+and footer.
+
+Speaker
+
+Secondly, your task is to update our submit button.
+
+Speaker
+
+to be
+
+Speaker
+
+>> Thank you, Ellen.
+
+Speaker
+
+And I'm talking about...
+
+Speaker
+
+This submitt button in our form right here.
+
+Speaker
+
+pause here and show off your descriptive tag skills.
+
+Speaker
+
+Welcome back.
+
+Speaker
+
+I hope that semantic HTML is starting to make sense to you.
+
+Speaker
+
+Let's do the challenge together now.
+
+Speaker
+
+This
+
+Speaker
+
+is our nav currently coded as a div tag. So let's change that.
+
+Speaker
+
+Very simply.
+
+Speaker
+
+We'll right now.
+
+Speaker
+
+Next, we have the main content, which is always positioned between the nav and the footer.
+
+Speaker
+
+So we changed this to me.
+
+Speaker
+
+And this is the MTAG.
+
+Speaker
+
+Beautiful.
+
+Speaker
+
+Finally.
+
+Speaker
+
+Here's our footer.
+
+Speaker
+
+- Closing tag.
+
+Speaker
+
+Remember that our challenge was to also use sections.
+
+Speaker
+
+So this is a good start, bye!
+
+Speaker
+
+In our main content, we have several different sections.
+
+Speaker
+
+Here's one place where it makes sense to use.
+
+Speaker
+
+Landmark Readon section.
+
+Speaker
+
+And here.
+
+Speaker
+
+Here as well.
+
+Speaker
+
+Amazing.
+
+Speaker
+
+nothing changed on the surface, but behind the curtains, it's much more accessible.
+
+Speaker
+
+Finally.
+
+Speaker
+
+We have a submit button here.
+
+Speaker
+
+But...
+
+Speaker
+
+It's cool.
+
+Speaker
+
+voted as a div tag.
+
+Speaker
+
+It should be a button.
+
+Speaker
+
+Fantastic
+
+Speaker
+
+That's all we need to do for now.
+
+Speaker
+
+Our changes manifest in easier navigation using assistive technologies, like screen readers, because they can quickly identify these landmarks and provide shortcuts or navigation commands to jump directly to these sections.
+
+Speaker
+
+For example, a user can skip directly to the main content or quickly access the navigation menu.
+
+Speaker
+
+This reduces time and effort required to navigate through unnecessary content, enhancing the efficiency of the user experience. When Mark Regions also help users understand the layout and organization of a page, so when a screen reader enters a new section,
+
+Speaker
+
+It can announce the type of landmarks like
+
+Speaker
+
+navigation.
+
+Speaker
+
+main content.
+
+Speaker
+
+This contextual information is crucial for users who cannot officially perceive the page layout.
+
+Speaker
+
+Using standard landmarks across
+
+Speaker
+
+cross websites create a predictable browsing experience. Users become familiar with common landmarks, knowing where to expect certain types of content.
+
+Speaker
+
+like a footer for contact information.
+
+Speaker
+
+is just looking up screen reader demos online to get a better sense of the user experience with and without semantic HTML.
+
+Speaker
+
+Onwards and upwards, coders, you are doing amazingly, see you in the next lesson, where we will write accessible lists.
