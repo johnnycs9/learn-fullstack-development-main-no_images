@@ -1,0 +1,10351 @@
+Speaker
+
+Super stylish!
+
+Speaker
+
+NFT site. NFTs or non-fungible tokens have taken the world by storm
+
+Speaker
+
+and led to some insanely expensive JPEGs.
+
+Speaker
+
+Next, you're going to face a series of CSS challenges and
+
+Speaker
+
+as you build this portfolio site.
+
+Speaker
+
+And of course, every dev should be thinking about their portfolio sites.
+
+Speaker
+
+Finally, we'll be building this cool coworking space site.
+
+Speaker
+
+which finds coworking spaces for
+
+Speaker
+
+lazy devs to relax in.
+
+Speaker
+
+Your teacher for the NFT site and the co-working space site is me TomChans.
+
+Speaker
+
+and the challenges for the portfolio site are
+
+Speaker
+
+bought to you by none other than Kevin Powell.
+
+Speaker
+
+YouTube channel has got hundreds of thousands of followers.
+
+Speaker
+
+Now, before you start,
+
+Speaker
+
+I don't know how to do it.
+
+Speaker
+
+and need today I will channel.
+
+Speaker
+
+This slide is actually a clickable link and
+
+Speaker
+
+and it will take you straight over to that channel.
+
+Speaker
+
+on Scrimber's Discord server.
+
+Speaker
+
+I'm then when you're ready,
+
+Speaker
+
+And let's jump in.
+
+Speaker
+
+Okay, let's get started.
+
+Speaker
+
+We are going to build this NFT site with this super smart purple layout.
+
+Speaker
+
+And as we build it, we're going to explore a team.
+
+Speaker
+
+ton of CSS that you haven't come across yet.
+
+Speaker
+
+And of course, you'll get the chance to practice some of the skills you've already learned along the way.
+
+Speaker
+
+Now this layout
+
+Speaker
+
+has got sections with different background colors that go full width.
+
+Speaker
+
+and a fixed width content content.
+
+Speaker
+
+that centrally aligned. We've also got various styles of links and
+
+Speaker
+
+and different image layouts to think about.
+
+Speaker
+
+Under the hood, we'll be styling this as efficiently as we can.
+
+Speaker
+
+and this will involve plenty of refactoring.
+
+Speaker
+
+Our topic is the crazy world of overpriced NFTs.
+
+Speaker
+
+Non
+
+Speaker
+
+These uniquely identifiable blockchain digital files have been
+
+Speaker
+
+been grabbing headlines with their eye watering prices.
+
+Speaker
+
+It all strikes me.
+
+Speaker
+
+kind of crazy.
+
+Speaker
+
+What do I know?
+
+Speaker
+
+Apologies if you've just invested all of your life savings in.
+
+Speaker
+
+will are essentially insanely expensive JPEGs. Maybe you'll get the last laugh. Maybe they'll make you rich one day.
+
+Speaker
+
+My fingers.
+
+Speaker
+
+crossed for you.
+
+Speaker
+
+What are we going to study?
+
+Speaker
+
+Well, we'll be checking out Symantec HTML.
+
+Speaker
+
+We'll be putting hover and active states on links using pseudo-selectors.
+
+Speaker
+
+We'll take a dive into something called specificity.
+
+Speaker
+
+and CSS conflicts in action.
+
+Speaker
+
+We'll look at Compound Selectors, we'll use inline block.
+
+Speaker
+
+and much, much more.
+
+Speaker
+
+So why are we waiting?
+
+Speaker
+
+Let's take a deep breath.
+
+Speaker
+
+Straight in.
+
+Speaker
+
+Okay, so this is the layout we're going to be building.
+
+Speaker
+
+And as you can see, if we look at the Mini Browser,
+
+Speaker
+
+We have got a
+
+Speaker
+
+work to do.
+
+Speaker
+
+There's loads of HTML in this file.
+
+Speaker
+
+But right now, the only styling we've got is what the browser is giving us by default.
+
+Speaker
+
+So we've got larger font sizes on the H1.
+
+Speaker
+
+And if we scroll down a bit,
+
+Speaker
+
+We have got the blue and the underline on the links.
+
+Speaker
+
+But before we jump into the CSS and start styling,
+
+Speaker
+
+We need to do some work with this HTML.
+
+Speaker
+
+Now, if you look at this slide,
+
+Speaker
+
+You can see how this layout divides up really clearly.
+
+Speaker
+
+into four sections.
+
+Speaker
+
+We have got a header at the top.
+
+Speaker
+
+Then we've got two sections which have both got images and text.
+
+Speaker
+
+and then at the bottom.
+
+Speaker
+
+We've got a footer.
+
+Speaker
+
+Now...
+
+Speaker
+
+If we look at the HTML, you can see that we are using these
+
+Speaker
+
+to
+
+Speaker
+
+to divide up the HTML.
+
+Speaker
+
+Now you might think that's fine, right?
+
+Speaker
+
+That's what Div tags the four.
+
+Speaker
+
+Well, no.
+
+Speaker
+
+They do work!
+
+Speaker
+
+But they're not optimal.
+
+Speaker
+
+This is
+
+Speaker
+
+not
+
+Speaker
+
+best practice.
+
+Speaker
+
+Let's talk for a moment.
+
+Speaker
+
+about semantic.
+
+Speaker
+
+HTML.
+
+Speaker
+
+Symantic HTML tags allow us to be much more descriptive and
+
+Speaker
+
+the tags match much more closely.
+
+Speaker
+
+the content that they hold.
+
+Speaker
+
+Now.
+
+Speaker
+
+There are a lot of semantic HTML tags.
+
+Speaker
+
+many of which are rarely used.
+
+Speaker
+
+But there are some main ones that you should definitely know about.
+
+Speaker
+
+And today we're going to use four.
+
+Speaker
+
+more of them.
+
+Speaker
+
+The first one we're going to use is the header tag.
+
+Speaker
+
+This is for the site.
+
+Speaker
+
+high
+
+Speaker
+
+logo and navigation.
+
+Speaker
+
+The second one we're going to use is the section tag, so this is for standalone sections of content.
+
+Speaker
+
+The third one we'll use is the foot attack. This contains all of the footo information like the copyright and the terms and conditions.
+
+Speaker
+
+everything that you basically see right down at the bottom of the page.
+
+Speaker
+
+And the last one we're going to use is the main tag.
+
+Speaker
+
+Now the main tag holds the pages unique
+
+Speaker
+
+So for example, a main tag,
+
+Speaker
+
+might hold several section tags.
+
+Speaker
+
+But a main tag definitely shouldn't hold a header or a footer.
+
+Speaker
+
+because they are normally not unique content. They are the same on each page of the site.
+
+Speaker
+
+As for the syntax.
+
+Speaker
+
+You've got it right here.
+
+Speaker
+
+These work just like any other HTML tag, they are opened and closed in exactly the same way.
+
+Speaker
+
+You might be asking yourself, why does this matter? Who is going to look at my HTML?
+
+Speaker
+
+Well, actually, this matters quite a lot.
+
+Speaker
+
+If we use the correct semantic HTML, we
+
+Speaker
+
+going to be making our site more accessible.
+
+Speaker
+
+Speed readers and other assistive technologies use semantic HTML a lot.
+
+Speaker
+
+So that is really important and when you get it right, it's a big win.
+
+Speaker
+
+Also, semantic HTML makes our code more readable.
+
+Speaker
+
+This is really important when you're working as part of a team.
+
+Speaker
+
+your colleagues are going to find your code, March, easier, and quicker to interpret.
+
+Speaker
+
+Lastly, semantic HTML is used by search engines as a navigation aid when they are indexing sites.
+
+Speaker
+
+So it's really important for search engine.
+
+Speaker
+
+optimization.
+
+Speaker
+
+Now you might be asking yourself, "Well, what about the diff tag?"
+
+Speaker
+
+Well, we still use them a little bit.
+
+Speaker
+
+but we use them when a more specific tag.
+
+Speaker
+
+doesn't fit.
+
+Speaker
+
+And we will be using them later in this course, so you are going to see that in...
+
+Speaker
+
+Now we need to do some work on our HTML, so I've set you this challenge.
+
+Speaker
+
+I want you to convert all of the diff tags to semantic age.
+
+Speaker
+
+channel tags.
+
+Speaker
+
+Also,
+
+Speaker
+
+Think carefully about where to place the main tag.
+
+Speaker
+
+This is not going to result in
+
+Speaker
+
+any visible changes in the mini browser.
+
+Speaker
+
+This is just about getting the right HTML tag.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Have a go at this.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hi.
+
+Speaker
+
+Hopefully you did that just fine.
+
+Speaker
+
+So let's take a look at these divs which are just around the header right here.
+
+Speaker
+
+All we need to do is come in here and change "div"
+
+Speaker
+
+For Heather.
+
+Speaker
+
+And of course, we need to then close the tag.
+
+Speaker
+
+Okay, that's the first one gone.
+
+Speaker
+
+Next, we've got these two sections.
+
+Speaker
+
+So...
+
+Speaker
+
+All we need to do is come down here.
+
+Speaker
+
+And on this first one, we'll
+
+Speaker
+
+You're the lead, Dave.
+
+Speaker
+
+at section
+
+Speaker
+
+and close that section.
+
+Speaker
+
+And I'm going to do exactly the same thing on the second section.
+
+Speaker
+
+And then now down at the bottom we have got the footer, where we can see it right here, we've just got this copyright message.
+
+Speaker
+
+So let's change div to
+
+Speaker
+
+to Fitter.
+
+Speaker
+
+And likewise, close the tag.
+
+Speaker
+
+Now the last part of the challenge was to think about where to put the main tag.
+
+Speaker
+
+Well, we know that needs to go around the unique climate.
+
+Speaker
+
+So we're not going to include the header and the footer because they will be the same on every page.
+
+Speaker
+
+So that's coming here above the section.
+
+Speaker
+
+And we will add a main opening there.
+
+Speaker
+
+And if we scroll down to the bottom,
+
+Speaker
+
+Bob the Footer.
+
+Speaker
+
+We will close the main.
+
+Speaker
+
+Now, we need to do something about the formatting.
+
+Speaker
+
+So let's tab that in twice.
+
+Speaker
+
+And if I just scroll up, I'll tab that in twice.
+
+Speaker
+
+and then everything in between the main section.
+
+Speaker
+
+we can tab in once more.
+
+Speaker
+
+Now we've got the HTML
+
+Speaker
+
+looking nice and clean.
+
+Speaker
+
+tidy.
+
+Speaker
+
+Okay, that's a great start.
+
+Speaker
+
+Let's move on!
+
+Speaker
+
+Okay, so let's get going on the styling.
+
+Speaker
+
+We want to start off by defining some general rules that are going to apply to the whole layout and
+
+Speaker
+
+unless we override them.
+
+Speaker
+
+So it's common practice to set out a default font.
+
+Speaker
+
+font size and font color.
+
+Speaker
+
+And I've put all of the info that we need.
+
+Speaker
+
+right here.
+
+Speaker
+
+this slide.
+
+Speaker
+
+So, here's the challenge for you.
+
+Speaker
+
+I want you to create a
+
+Speaker
+
+body selector.
+
+Speaker
+
+And I want you to make it so that the default front size and color match the info that we've got in.
+
+Speaker
+
+in the slide.
+
+Speaker
+
+And I want you all so to go to Google fonts.
+
+Speaker
+
+And bring in this Roboto font.
+
+Speaker
+
+And that will be our default fund.
+
+Speaker
+
+for the whole act.
+
+Speaker
+
+Now, remember...
+
+Speaker
+
+If for any reason, roboto font is not available,
+
+Speaker
+
+We should fall back.
+
+Speaker
+
+on a sand-serif.
+
+Speaker
+
+Now I've also given you two front weights here, 400 and 40.
+
+Speaker
+
+500.
+
+Speaker
+
+And that is going to be useful info when you go to Google fonts.
+
+Speaker
+
+Lastly,
+
+Speaker
+
+Look at what's happening here!
+
+Speaker
+
+Our text is not touching the edge of the page, we've got this small margin.
+
+Speaker
+
+Now, of course, in the finished product,
+
+Speaker
+
+We don't want the text touching the very edge of the page, that would just look weird.
+
+Speaker
+
+but we want to take control of those margins and set it ourselves.
+
+Speaker
+
+So for now, let's get rid of...
+
+Speaker
+
+of this default margin.
+
+Speaker
+
+Okay.
+
+Speaker
+
+You've got all of the skills you need to do this.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Give it your best shot.
+
+Speaker
+
+and we'll have a look together.
+
+Speaker
+
+in just a minute.
+
+Speaker
+
+Okay, hopefully that didn't cause you.
+
+Speaker
+
+Okay, hopefully that didn't cause you too many problems.
+
+Speaker
+
+So let's go ahead here and we'll set up a box.
+
+Speaker
+
+Select her.
+
+Speaker
+
+And we're going to set a default front size.
+
+Speaker
+
+of 16.
+
+Speaker
+
+Now most browsers will use 16 pixels as they're default anyway, but it's a good idea to explicitly state that that is what we want.
+
+Speaker
+
+Further down the line, you will learn that there are other arguably better ways of setting a default font size, but for now,
+
+Speaker
+
+sticking to
+
+Speaker
+
+Okay, next let's deal with the default color of our text.
+
+Speaker
+
+So we can use the kind of property that's the one which is quite
+
+Speaker
+
+an intuitively named, it would be nice if it was called.
+
+Speaker
+
+font color or something like that.
+
+Speaker
+
+Anyway, we're going to give this color property this hex value, which is 2B, 2A, 3A.
+
+Speaker
+
+And this colour is not quite black, which just makes it a bit softer on the eyes while still having plenty of contrast against the light background.
+
+Speaker
+
+accessibility.
+
+Speaker
+
+Now we need our font.
+
+Speaker
+
+The nice people at Google can provide us with everything we need and even tell us what CSS rules we need.
+
+Speaker
+
+Hopefully, when you went to Google fonts, you came across something with
+
+Speaker
+
+which looks like this.
+
+Speaker
+
+And look.
+
+Speaker
+
+It's even dealt with the default fallback for us.
+
+Speaker
+
+If the brows are
+
+Speaker
+
+I can't work with Roboto for any reason.
+
+Speaker
+
+It's going to use a sunset riff.
+
+Speaker
+
+Let's just cut and paste that info in from Google.
+
+Speaker
+
+So that's going to go in index HTML right here in the header.
+
+Speaker
+
+And let's just tidy it up a little bit.
+
+Speaker
+
+And of course, we need to save index.html.
+
+Speaker
+
+And then...
+
+Speaker
+
+back in index.css.
+
+Speaker
+
+You can actually check with Google the precise CSS rules we need to follow, so it's saying the font family will be Roboto with a capital R.
+
+Speaker
+
+and we need to inside those inverted comms.
+
+Speaker
+
+And there we are, if we comment an uncomment that, you can see that the font is indeed
+
+Speaker
+
+changing.
+
+Speaker
+
+Now, the last thing that we need to do is deal with this margin, which is a bit of a relic from the early days.
+
+Speaker
+
+override that by setting the margin to
+
+Speaker
+
+zero.
+
+Speaker
+
+And there we are. Now we can see the text is touching the edge of the browser.
+
+Speaker
+
+And that is exactly what we want at this stage.
+
+Speaker
+
+Okay, we're done here.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, let's look at some pretty strange CSS behavior to do with margins.
+
+Speaker
+
+because sometimes CSS can
+
+Speaker
+
+I'm going to play a trick on a friend of mine.
+
+Speaker
+
+who love stocks.
+
+Speaker
+
+So I'm trying to create this clone of a BBC news story
+
+Speaker
+
+about a dog who inhaled helium
+
+Speaker
+
+and ended up stuck.
+
+Speaker
+
+to the ceiling.
+
+Speaker
+
+Now this is not a true story, okay?
+
+Speaker
+
+Don't give your dog helium
+
+Speaker
+
+It's not nice.
+
+Speaker
+
+and it's not safe.
+
+Speaker
+
+Now, as you can see, if I open the Mini Browser, I'm having some problems.
+
+Speaker
+
+I want the header to look like it does in the slide.
+
+Speaker
+
+So, what do I need to do to get rid of this weird white space at the top?
+
+Speaker
+
+and make the head a thicker.
+
+Speaker
+
+If we look back at the slide, there's no white space at the top and
+
+Speaker
+
+the head.
+
+Speaker
+
+is nice and thick.
+
+Speaker
+
+Well, let's just check the code.
+
+Speaker
+
+So over in index.html
+
+Speaker
+
+We have got a header section and inside we've got an H1.
+
+Speaker
+
+these links and that is where we need to be focusing and
+
+Speaker
+
+And then in the CSS.
+
+Speaker
+
+The H1 has got a...
+
+Speaker
+
+color and a front family and the header has just got this back.
+
+Speaker
+
+ground color that is all.
+
+Speaker
+
+Now I should also point out that on the body we have set the margin to zero.
+
+Speaker
+
+so there should be no default margin.
+
+Speaker
+
+So where then is this white space coming from?
+
+Speaker
+
+How about I try putting a margin top zero on the header?
+
+Speaker
+
+to bring the top of the header here,
+
+Speaker
+
+of the browser window.
+
+Speaker
+
+Let's go ahead and do that.
+
+Speaker
+
+That has had a...
+
+Speaker
+
+Absolutely no effect.
+
+Speaker
+
+Pretty strange, huh?
+
+Speaker
+
+Well, how about we try giving this H1 some space? So I'm going to come in here on H1 and I'm going to give it a margin or round.
+
+Speaker
+
+of 25 pixels.
+
+Speaker
+
+Oh, what's going on here?
+
+Speaker
+
+Dah!
+
+Speaker
+
+made a difference on the left.
+
+Speaker
+
+but the space at the top actually got
+
+Speaker
+
+How enough did that happen?
+
+Speaker
+
+Let's change this to 125 pixels. Wow, now it
+
+Speaker
+
+It's really big, but that is quite interesting, isn't it?
+
+Speaker
+
+The more we're adding margin to the H1,
+
+Speaker
+
+The bigger this white space is getting.
+
+Speaker
+
+Let's try taking that right down to zero.
+
+Speaker
+
+Ah ha! Now the header is flush with the top of the browser.
+
+Speaker
+
+So this is some really weird behavior that you should be aware of.
+
+Speaker
+
+When an element
+
+Speaker
+
+touches its parent, its top and bottom margin will merge with the margins of the parent element.
+
+Speaker
+
+Okay, that's a lot of words. Let's look at this
+
+Speaker
+
+in practice.
+
+Speaker
+
+If we pop over to the HTML file,
+
+Speaker
+
+we can see that we have got this H1,
+
+Speaker
+
+right here.
+
+Speaker
+
+inside the header.
+
+Speaker
+
+Now, this is the first thing in the header.
+
+Speaker
+
+And the header is the parent.
+
+Speaker
+
+and the H1 is touching.
+
+Speaker
+
+the parent.
+
+Speaker
+
+And when I say touching,
+
+Speaker
+
+I just mean there is nothing between it.
+
+Speaker
+
+and the parents.
+
+Speaker
+
+When the child element touches the parent element either at the top or the bottom but not the left or right,
+
+Speaker
+
+The margin converge with the top margin or bottom margin of
+
+Speaker
+
+header.
+
+Speaker
+
+So here, the margin of the H1 is merging
+
+Speaker
+
+with the margin.
+
+Speaker
+
+of the header.
+
+Speaker
+
+Now, it doesn't matter that we gave the header a
+
+Speaker
+
+margin top of zero.
+
+Speaker
+
+Now
+
+Speaker
+
+has a margin of zero plus the H1's margin.
+
+Speaker
+
+So if I put that
+
+Speaker
+
+back to say a margin of 50, well the header now has a margin top of 0 plus
+
+Speaker
+
+50. And more margin, we add to the H1.
+
+Speaker
+
+the bigger the margin on the header.
+
+Speaker
+
+That is pretty strange, but...
+
+Speaker
+
+Hey, that is CSS. Now let's just put that back to zero and I'm going to delete this margin top on the header because it's not doing anything anyway.
+
+Speaker
+
+Luckily, there's a really easy solution for this situation.
+
+Speaker
+
+prevent those margins merging, what we need to do is add padding to
+
+Speaker
+
+the
+
+Speaker
+
+parent element.
+
+Speaker
+
+That is going to create space.
+
+Speaker
+
+between the edge of the pattern.
+
+Speaker
+
+and the child.
+
+Speaker
+
+So they won't be touching anymore.
+
+Speaker
+
+the margin won't get
+
+Speaker
+
+Austin.
+
+Speaker
+
+So let's go back to the CSS.
+
+Speaker
+
+And here is a quick check.
+
+Speaker
+
+challenge for you.
+
+Speaker
+
+I'm just going to create a little bit of space here.
+
+Speaker
+
+So your challenge is to add a padding of 20 pixels left and right
+
+Speaker
+
+15 pixels top and bottom.
+
+Speaker
+
+was now, have a go at that, and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that just fine.
+
+Speaker
+
+So let's come in here on the header and we're going to use the shorthand.
+
+Speaker
+
+So we'll say padding or 15 pixels.
+
+Speaker
+
+bottom.
+
+Speaker
+
+and 20 pixels.
+
+Speaker
+
+left.
+
+Speaker
+
+And look what's happened, we have solved the problem.
+
+Speaker
+
+And now we can deal with the H1,
+
+Speaker
+
+without it affecting the header.
+
+Speaker
+
+Let's just come in here on the H1 and
+
+Speaker
+
+tidies things up a little bit.
+
+Speaker
+
+I'm going to give it a margin of 0 pixels top.
+
+Speaker
+
+left and right, anemergent of ten pixels at the bottom,
+
+Speaker
+
+just so the text
+
+Speaker
+
+isn't so bunched up together right here.
+
+Speaker
+
+So let's just go ahead and do that.
+
+Speaker
+
+Okay, so by adding padding to the parent, we
+
+Speaker
+
+We've prevented the child elements margin from being passed on to the parent.
+
+Speaker
+
+One last thing that I want you to be aware of, this is not an issue when you're using
+
+Speaker
+
+black box or grid.
+
+Speaker
+
+because they deal with margins differently.
+
+Speaker
+
+and the margins don't.
+
+Speaker
+
+Okay, now that is looking better. I can send this booth to my friend.
+
+Speaker
+
+And let's get back to our layout and...
+
+Speaker
+
+and see if we can use some of this information.
+
+Speaker
+
+Now we've got the default style setup and the margin set to zero.
+
+Speaker
+
+Let's start at the top of the layout.
+
+Speaker
+
+work our way down.
+
+Speaker
+
+So first up we're going to deal with the header.
+
+Speaker
+
+And this image here is
+
+Speaker
+
+is what we're aiming for.
+
+Speaker
+
+When we're done...
+
+Speaker
+
+This text is still going to be squashed up against the left-hand edge of the browser.
+
+Speaker
+
+That's fine.
+
+Speaker
+
+We are going to deal with it later.
+
+Speaker
+
+So just like before, I've given you some information here and this is what you're going to need to complete the challenge.
+
+Speaker
+
+So let's dive straight in.
+
+Speaker
+
+I want you to create a header selector.
+
+Speaker
+
+to target.
+
+Speaker
+
+head to tag right here.
+
+Speaker
+
+I want you to give it its background color,
+
+Speaker
+
+which of course is this purple here.
+
+Speaker
+
+And I also want you to use the correct CSS property to
+
+Speaker
+
+to remove the annoying
+
+Speaker
+
+white space that is actually going to appear at
+
+Speaker
+
+at the top.
+
+Speaker
+
+of the layout.
+
+Speaker
+
+Now I'm not going to tell you what property to use, but
+
+Speaker
+
+I will tell you that you need to use the value of 45 pixels top at
+
+Speaker
+
+When you've done that,
+
+Speaker
+
+Create selectors for the H1 and H3 elements and assign them their correct margin size and
+
+Speaker
+
+And again, I've just finished off with a warning that
+
+Speaker
+
+But of course the text will still be squashed up against the left-hand edge of
+
+Speaker
+
+the browser and that is absolutely fine.
+
+Speaker
+
+So pause now, have a go at that challenge, and I'll see you back here in just a moment.
+
+Speaker
+
+I will have a look together.
+
+Speaker
+
+Okay, hopefully you managed to do that just fine. So let's come in here and we will create a
+
+Speaker
+
+header selector.
+
+Speaker
+
+And the first thing that we should do is give it its background color. So I'm going to use the background color property.
+
+Speaker
+
+And we need to set that.
+
+Speaker
+
+to the hex value.
+
+Speaker
+
+5F2983.
+
+Speaker
+
+>> Three.
+
+Speaker
+
+And now that I scroll to the top of the mini browser, you can see that we've got our background color.
+
+Speaker
+
+Right there.
+
+Speaker
+
+Next, we need to deal with that annoying white space. How do we do that?
+
+Speaker
+
+Well, we need to use the padding property.
+
+Speaker
+
+And...
+
+Speaker
+
+We can set the padding.
+
+Speaker
+
+anything as long as it's a positive number. So if we actually did one pixel,
+
+Speaker
+
+Well, that would actually work.
+
+Speaker
+
+but I did tell you here that we want 45 pixels top and bottom.
+
+Speaker
+
+So let's go with
+
+Speaker
+
+45 and then we're going to include here a zero.
+
+Speaker
+
+because we don't want any padding left.
+
+Speaker
+
+All right.
+
+Speaker
+
+Okay, so that is all we need to do with the header selector for now. The next thing that we need to do is come down here and select the H1.
+
+Speaker
+
+and the instructions were
+
+Speaker
+
+set the size margin and cut.
+
+Speaker
+
+So let's go ahead first with the color.
+
+Speaker
+
+And the color we want for that H1.
+
+Speaker
+
+is.
+
+Speaker
+
+white smoke.
+
+Speaker
+
+And then if we just check back on the slide,
+
+Speaker
+
+the font size that we want is 36.
+
+Speaker
+
+pixels.
+
+Speaker
+
+Now before we deal with the margin, let's just come down onto the H3 and do the same thing.
+
+Speaker
+
+So we know that the text color that we want is this d0 double a double f.
+
+Speaker
+
+and that we want a font size of 20 pixels.
+
+Speaker
+
+Now, at the moment, we've got quite a lot of space between these two. Let's just check back at this slide.
+
+Speaker
+
+We basically don't want any space at all.
+
+Speaker
+
+So for both of these, let's set.
+
+Speaker
+
+a margin to
+
+Speaker
+
+0.
+
+Speaker
+
+And if we do that on the H1, and then we come down here and do that also on the H3.
+
+Speaker
+
+Now you can see the...
+
+Speaker
+
+that the default margin that comes with both of those header sizes has been taken away.
+
+Speaker
+
+And now the header is looking a lot like what we've got on this slide.
+
+Speaker
+
+Okay, let's come on to this first main section.
+
+Speaker
+
+Now.
+
+Speaker
+
+Again, this space on the left we're going to leave for later.
+
+Speaker
+
+because we're actually going to deal with all
+
+Speaker
+
+all of this content spacing in one go.
+
+Speaker
+
+So let's just concentrate from now.
+
+Speaker
+
+on getting this main image right.
+
+Speaker
+
+If we look at this slide, we
+
+Speaker
+
+can see that the image of these purple sneakers is actually taking up
+
+Speaker
+
+the whole width of the screen.
+
+Speaker
+
+But what we haven't got
+
+Speaker
+
+is this horizontal scroll down here that we're getting at the moment.
+
+Speaker
+
+Because at the moment...
+
+Speaker
+
+this image is really, really big.
+
+Speaker
+
+So your challenge is to create a section selector and give it the same padding as we gave to
+
+Speaker
+
+Then in index.html, I want you to find the image of the purple sneakers and attach a class to it.
+
+Speaker
+
+make it so that this image takes up a
+
+Speaker
+
+100% of the
+
+Speaker
+
+the section with.
+
+Speaker
+
+Post now!
+
+Speaker
+
+that shot and I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Pause now on the image of the purple snave to...
+
+Speaker
+
+Then in index.a section select because at the moment here that we're getting at the moment,
+
+Speaker
+
+Because at the moment...
+
+Speaker
+
+this image is really, really big.
+
+Speaker
+
+So your challenge is to create a section selector
+
+Speaker
+
+and give it the same padding as we gave to
+
+Speaker
+
+Then in index.html, I want you to find the image of the purple sneakers and attach a class to it.
+
+Speaker
+
+make it so that this image takes up a
+
+Speaker
+
+100%
+
+Speaker
+
+of the section width.
+
+Speaker
+
+Post now!
+
+Speaker
+
+that shot and I'll see you back here.
+
+Speaker
+
+In just a moment, I'm gonna have a look together.
+
+Speaker
+
+Okay, hopefully that went just fine. So let's come in here and we will set up our section selector.
+
+Speaker
+
+And let's give it the same padding as we gave the header. So that is a padding of
+
+Speaker
+
+45 pixels top and bottom.
+
+Speaker
+
+0 pixels left and right.
+
+Speaker
+
+Now we need to go to index.html and find this sneaker image.
+
+Speaker
+
+So that is up here in the first section.
+
+Speaker
+
+I'm just going to move the mini browser out of the way.
+
+Speaker
+
+So we've got the image right here.
+
+Speaker
+
+And we just need to give it a class and I'm going to call this class.
+
+Speaker
+
+Maine.
+
+Speaker
+
+image, and I think that's a good descriptive name because anybody looking at this layout can instantly work out.
+
+Speaker
+
+image is the main image.
+
+Speaker
+
+So if I save that...
+
+Speaker
+
+and then back in index.html.
+
+Speaker
+
+I just need to select this class.
+
+Speaker
+
+So I'm going to use a dot to select it because this is a class and not a semantic HTML tag like section or an H1, et cetera.
+
+Speaker
+
+I'm going to select that class with a dot.
+
+Speaker
+
+So that was main image.
+
+Speaker
+
+And then I'm going to give that a width and we'll open up the mini browser so we can see it happening live.
+
+Speaker
+
+I'm going to give that a whiff.
+
+Speaker
+
+of 100.
+
+Speaker
+
+The sense.
+
+Speaker
+
+And as soon as we do that.
+
+Speaker
+
+The horizontal scroll bar disappears and the image is now contained within
+
+Speaker
+
+browser.
+
+Speaker
+
+Okay, we've completed the challenge.
+
+Speaker
+
+And we're making great progress. When you're ready to move on.
+
+Speaker
+
+I'll see you in the next room.
+
+Speaker
+
+Now this main image is more manageable. Let's focus on the text that we've got in
+
+Speaker
+
+in this section.
+
+Speaker
+
+So we've got an H2, a
+
+Speaker
+
+Remember it's usually best practice to start a section with a heading.
+
+Speaker
+
+And then we've got this paragraph of text at the bottom.
+
+Speaker
+
+They are going to be...
+
+Speaker
+
+our focus.
+
+Speaker
+
+We'll style these links.
+
+Speaker
+
+later.
+
+Speaker
+
+So this is what we're aiming for.
+
+Speaker
+
+Now, if you look at the mini browser, you might think, "Well, it doesn't look so much different."
+
+Speaker
+
+And to be honest,
+
+Speaker
+
+You
+
+Speaker
+
+This is actually a very small challenge.
+
+Speaker
+
+The challenge here in a way is to do the least amount of work.
+
+Speaker
+
+So, this is what I want you to do.
+
+Speaker
+
+I want you to add CSS so the text in the first section that's the H1 and this paragraph
+
+Speaker
+
+render.
+
+Speaker
+
+correctly. Now watch out for the amount of white space
+
+Speaker
+
+between the--
+
+Speaker
+
+Start of the section here.
+
+Speaker
+
+and the H2.
+
+Speaker
+
+At the moment, what we've got in our actual layout is much bigger than what it should be.
+
+Speaker
+
+Now my last warning...
+
+Speaker
+
+is don't write too much code.
+
+Speaker
+
+It's easy to overdo this challenge and write a ton of CSS that we don't need.
+
+Speaker
+
+Try to avoid doing that.
+
+Speaker
+
+Okay.
+
+Speaker
+
+course now.
+
+Speaker
+
+Give it your best shot and we'll meet back here in just a moment and have a look together.
+
+Speaker
+
+Okay, so hopefully that went just fine.
+
+Speaker
+
+I'm going to come in here and I'm going to create an H2 selector.
+
+Speaker
+
+And of course, I'm putting it between the H1 and the H3. I'm sure you did that automatically, right? You didn't need me to tell you that two
+
+Speaker
+
+goes between one and three.
+
+Speaker
+
+Now while we're here, let's put a piece selected down here underneath all of our headings.
+
+Speaker
+
+And let's give these the sizes that they need.
+
+Speaker
+
+So P needs a font size.
+
+Speaker
+
+of 16.
+
+Speaker
+
+And H2 needs a fun size of 24.
+
+Speaker
+
+And did you notice what changed in the Mini Browser as we updated those font size properties?
+
+Speaker
+
+Well,
+
+Speaker
+
+No, did I?
+
+Speaker
+
+because actually nothing
+
+Speaker
+
+changed.
+
+Speaker
+
+P is
+
+Speaker
+
+set.
+
+Speaker
+
+16 pixels.
+
+Speaker
+
+already set.
+
+Speaker
+
+16 pixels on the body right here at
+
+Speaker
+
+at the top.
+
+Speaker
+
+So we don't need to repeat ourselves.
+
+Speaker
+
+Now H2 will actually default to 1.5 times the size we set on the body. Now 1.5 times 16 is 24.
+
+Speaker
+
+which is exactly what we want.
+
+Speaker
+
+So actually both of these size properties here are unnecessary. We can take away that one.
+
+Speaker
+
+And the one on
+
+Speaker
+
+the pay and nothing.
+
+Speaker
+
+will change.
+
+Speaker
+
+Now guess what?
+
+Speaker
+
+on here.
+
+Speaker
+
+We've got the...
+
+Speaker
+
+color 2b, 2a, 3a,
+
+Speaker
+
+Hah!
+
+Speaker
+
+You guessed it.
+
+Speaker
+
+on the body.
+
+Speaker
+
+We have set the default color to be 283A.
+
+Speaker
+
+So actually setting it again on the H2 and the P.
+
+Speaker
+
+Hey!
+
+Speaker
+
+not going to do anything.
+
+Speaker
+
+So we don't actually need to set the color on either of those two selectors.
+
+Speaker
+
+It's always a good idea to check that you're not repeating yourself.
+
+Speaker
+
+that code wouldn't do any harm in itself.
+
+Speaker
+
+But it could cause confusion down the line when we're trying to debug. So it's a good idea to keep it simple.
+
+Speaker
+
+and keep everything in one place as much as possible.
+
+Speaker
+
+Sorry, I feel like I kind of cheated you there, bye.
+
+Speaker
+
+I wanted to show you how we can easily overdo the CSS.
+
+Speaker
+
+So, do you have to do anything to complete this challenge?
+
+Speaker
+
+Well, I did say,
+
+Speaker
+
+be careful of the white space between the H2 and the start of this section.
+
+Speaker
+
+So the question is, where is this white space coming from?
+
+Speaker
+
+If you didn't work that out before,
+
+Speaker
+
+course now and think about it for a second.
+
+Speaker
+
+So there are actually two sources of this white space.
+
+Speaker
+
+padding here and this padding is coming from the section.
+
+Speaker
+
+So if we were to comment that out,
+
+Speaker
+
+actually that white space does reduce, but we want that padding, so I'm going to put it back.
+
+Speaker
+
+Now the rest of the white space here is coming from the default margin on
+
+Speaker
+
+on the H2. So let's take that margin.
+
+Speaker
+
+down.
+
+Speaker
+
+zero.
+
+Speaker
+
+Now, if again, we comment out the padding we've got on the section,
+
+Speaker
+
+Well there we are, we've got the white space down to zero. Now that's not what we want, we want the padding on the section, but we do want that at zero.
+
+Speaker
+
+But now we're actually seeing...
+
+Speaker
+
+that this image is right up against
+
+Speaker
+
+H2.
+
+Speaker
+
+In fact, if we were to quickly put a border on this image, let's just say,
+
+Speaker
+
+one pixel solid gray.
+
+Speaker
+
+Well, that's far too close.
+
+Speaker
+
+So I'm actually going to go back to this H2 and I'm going to set the margin 0.
+
+Speaker
+
+Only.
+
+Speaker
+
+Now let's get rid of this border.
+
+Speaker
+
+And I think that is looking...
+
+Speaker
+
+much better.
+
+Speaker
+
+This piece of lecture here is complete.
+
+Speaker
+
+the
+
+Speaker
+
+So, let's.
+
+Speaker
+
+delete it.
+
+Speaker
+
+Okay, so just remember...
+
+Speaker
+
+If we end up having to debug something and we have to work out where some white space is coming from,
+
+Speaker
+
+And then we find it's coming from multiple places.
+
+Speaker
+
+places.
+
+Speaker
+
+The debugging gets harder.
+
+Speaker
+
+So in a case like this it's a really good idea to have all of the margin coming from
+
+Speaker
+
+one place.
+
+Speaker
+
+that you don't by any means have to always remove the default margin.
+
+Speaker
+
+And in fact,
+
+Speaker
+
+We're keeping the default margin at the moment.
+
+Speaker
+
+on this paragraph text down here.
+
+Speaker
+
+because if we were to come in here and put a margin of zero,
+
+Speaker
+
+on that P.
+
+Speaker
+
+Well, everything gets crushed up way too much and that default margin is actually working for us right now.
+
+Speaker
+
+Of course, we could override it.
+
+Speaker
+
+But we don't need to. It's working fine at the moment.
+
+Speaker
+
+Okay, that completes the challenge.
+
+Speaker
+
+A bit later, we'll revisit this text here to talk about line height, but for now, the challenge is complete, so let's move on.
+
+Speaker
+
+Let's take a look at hover and active states.
+
+Speaker
+
+So, at the moment...
+
+Speaker
+
+I am building a
+
+Speaker
+
+a new site for the Haunted Tree Wizard Shop.
+
+Speaker
+
+And I've got this header component here, which has just got a logo, the title.
+
+Speaker
+
+And then this nav component, which lists out some of the products that they offer.
+
+Speaker
+
+Now, the client is happy with the color skin.
+
+Speaker
+
+I think we've got a bit of a problem with how these links work.
+
+Speaker
+
+At the moment, as I put my cursor over them,
+
+Speaker
+
+I can see that my cursor changes to a pointer, which is nice.
+
+Speaker
+
+But we can improve the overall user experience by making it much more obvious that these are links, and we can do that by making them change when the cursor hovers over them.
+
+Speaker
+
+We can do that.
+
+Speaker
+
+using
+
+Speaker
+
+of a state.
+
+Speaker
+
+Now, if we have a look down here, you can see that my cursor is hovered over the word frogs.
+
+Speaker
+
+And frogs has changed to a light pink colour and has an overline.
+
+Speaker
+
+This is an essential CSS skill and we can do it with a pseudo selector.
+
+Speaker
+
+So what is a pseudo selector? Well, we've got one right here.
+
+Speaker
+
+We take, in this case, the anchor tag, although it could be any element, we put a colon, and then the name of our pseudo state that we wanted to
+
+Speaker
+
+target, and this case, it is hover.
+
+Speaker
+
+And then inside the curly braces, we can put any CSS we want, and that will be used for the hover state of
+
+Speaker
+
+the links that we're targeting.
+
+Speaker
+
+So this syntax really is that simple, it is just a colon and the name.
+
+Speaker
+
+of the pseudo state that you want to tell.
+
+Speaker
+
+And that's it. Now hover is just one of many pseudo-selectors that we could use.
+
+Speaker
+
+actually ate none of them.
+
+Speaker
+
+Now this slide here is just the beginning of a long list.
+
+Speaker
+
+It is actually a clickable link. So if you want to pause and click on it,
+
+Speaker
+
+It will take you to a W3 schools page.
+
+Speaker
+
+where all of the pseudo selectors are listed.
+
+Speaker
+
+But don't worry.
+
+Speaker
+
+many of them.
+
+Speaker
+
+you rarely, if ever, use.
+
+Speaker
+
+Okay, let's go back to our wizard shop. So if
+
+Speaker
+
+If I come down here underneath our anchor selector.
+
+Speaker
+
+and I'm going to say a colon and write the word hover.
+
+Speaker
+
+and open up.
+
+Speaker
+
+curly braces.
+
+Speaker
+
+Now I'm going to select the color property and I'm going to set that to light ink.
+
+Speaker
+
+and we should now see as I hover over the anchor elements in this nav that they turn to light pink.
+
+Speaker
+
+Now, also on our slide, we have this overline. I'm being a bit flashy. We could have an underline, but I've gone from an overline.
+
+Speaker
+
+So that is the...
+
+Speaker
+
+decoration, property and overline.
+
+Speaker
+
+Now that we are our hover state is complete.
+
+Speaker
+
+Now, as I say, you could put any CSS that's going to work with text in here.
+
+Speaker
+
+And that will be shown on
+
+Speaker
+
+the hover state.
+
+Speaker
+
+Okay, what about the active state?
+
+Speaker
+
+Well, we add to state fires when somebody clicks on a link.
+
+Speaker
+
+They see some changes just before they're taken to wherever the link leads. So let me quickly cut and paste you a challenge.
+
+Speaker
+
+Okay, so you've seen how to set up a hover pseudo selector. Now I want you to go ahead and set up an
+
+Speaker
+
+active pseudo selector.
+
+Speaker
+
+And I want you to make it so that when we click on the link,
+
+Speaker
+
+color changes to a dark shade of grey and the font weight becomes
+
+Speaker
+
+So pause now, have a go at that, and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to make that work just fine.
+
+Speaker
+
+And that's coming here then, and again we'll select A.
+
+Speaker
+
+Cowlon!
+
+Speaker
+
+And this time we're going for the active state.
+
+Speaker
+
+And I'll open up the curly braces.
+
+Speaker
+
+And we want a color, which is a dark gray.
+
+Speaker
+
+you could have gone for any dark grey you wanted I am going to go for 2 to 2 and
+
+Speaker
+
+And we also want the fun way to be bold.
+
+Speaker
+
+I'm just going to use the bold keyword, but you could have put a number for example 700. And actually, if you have a look at index.html,
+
+Speaker
+
+you can see up here if I just get this mini browser out of the way.
+
+Speaker
+
+with the Roboto Fump, we have got 4,700 available.
+
+Speaker
+
+So
+
+Speaker
+
+You could have come in here and put 700 and that should do exactly the same thing.
+
+Speaker
+
+So now if we hover over the link we get our pink and the overline and if we click the link it
+
+Speaker
+
+turns bold and
+
+Speaker
+
+So if that was going to navigate us away to another page, the last thing that we would see is that link came.
+
+Speaker
+
+Thank you for watching.
+
+Speaker
+
+Now I just want to say a quick word before we finish about another pseudo element which is really important.
+
+Speaker
+
+And that is the focus state.
+
+Speaker
+
+and it looks like this so it'd be a-colon.
+
+Speaker
+
+Focus.
+
+Speaker
+
+And the focus state is used by people who are navigating a site
+
+Speaker
+
+with the keyboard.
+
+Speaker
+
+So you can move through links and buttons with the tag.
+
+Speaker
+
+a
+
+Speaker
+
+the focus state shows you which link or button is currently selected or currently has focus.
+
+Speaker
+
+Now, the focus state is a key part of accessibility and the browser will have its own default focus state, but you might want to style it. Don't be tempted to remove the outline that the focus state has.
+
+Speaker
+
+That will make your site less accessible and is a big no-no.
+
+Speaker
+
+For my focus state, I'm going to go for a color of light pink and a text decoration of Overline.
+
+Speaker
+
+Now, you might have noticed that we've done that before somewhere, yep, our focus date and our hover state are going to be exactly the same. And if you think about it, that makes a certain amount of sense, hovering over a link and tabbing it into focus a similar ax. Now, the Scrimper Recorder doesn't capture the focus date in action, so rather than take my word for it,
+
+Speaker
+
+All is now, click on the mini browser, hit the tab key,
+
+Speaker
+
+and you should be able to tap through the links.
+
+Speaker
+
+just pause now and have a go at that.
+
+Speaker
+
+Okay, so hopefully you saw the focus date in action.
+
+Speaker
+
+But did you notice anything else?
+
+Speaker
+
+Have we broken something?
+
+Speaker
+
+Just pause again and take a moment to test it.
+
+Speaker
+
+Did you see it? Our active state is no longer working.
+
+Speaker
+
+Why is that?
+
+Speaker
+
+just think for a moment and pause and have a play if you'd like to.
+
+Speaker
+
+Okay, so hopefully you saw that what we've done is we've messed up the order of the CSS.
+
+Speaker
+
+And now I'll focus day
+
+Speaker
+
+Eight is actually overriding our active state.
+
+Speaker
+
+so that when I click on one of these links,
+
+Speaker
+
+we're not seeing the color change, which we should be getting from this code right here.
+
+Speaker
+
+This should be a...
+
+Speaker
+
+dark gray.
+
+Speaker
+
+So what we need to do is move this.
+
+Speaker
+
+But actually, what we should have done in the first place to keep our CSS dry is to combine these two
+
+Speaker
+
+together because they are the same.
+
+Speaker
+
+So in fact, what I want to do is take just this.
+
+Speaker
+
+I'm pasted there.
+
+Speaker
+
+Now I'm going to actually delete that entire pseudo selector.
+
+Speaker
+
+And let's test it again by clicking on a link.
+
+Speaker
+
+And there we are, we see the active state, we see the dark gray, so that is working just fine. Now the last state we're going to look at is visited.
+
+Speaker
+
+And this enables any link which the browser recognizes you've already visited.
+
+Speaker
+
+be styled differently.
+
+Speaker
+
+which is obviously useful if you want to revisit content
+
+Speaker
+
+indeed want to avoid it. So again, I'm just going to come down here.
+
+Speaker
+
+A colon visited.
+
+Speaker
+
+And for this one, I'll just go for a color change.
+
+Speaker
+
+Now as soon as I do that all of my links have actually changed to this dark car key color and you should be able to see that if I toggle this color on and off.
+
+Speaker
+
+But there's a bigger problem in the look where I've just plunked this CSS right at the end of the other link states.
+
+Speaker
+
+again it's going to cause problems.
+
+Speaker
+
+So let's just check, are we getting a hover state?
+
+Speaker
+
+No.
+
+Speaker
+
+getting the over line, but we're not getting the colour change.
+
+Speaker
+
+but actually hover.
+
+Speaker
+
+Focus.
+
+Speaker
+
+Active.
+
+Speaker
+
+all broken by this visited pseudo selector.
+
+Speaker
+
+So as you can see, you do have to be a little bit careful with this, and there's actually a mnemonic you can use, and I'm just going to paste it in.
+
+Speaker
+
+So the mnemonic is love hate, we don't need all of the letters, we've got an L for link, i.e. the A selector.
+
+Speaker
+
+and then we've got the V for visited, H for hover and A for active.
+
+Speaker
+
+that's the order that you want to use. So right now we've got the A first, which is fine,
+
+Speaker
+
+But then we've got hover and focus together.
+
+Speaker
+
+and active right here.
+
+Speaker
+
+visited at the bottom. So that's the one we need to move. Let's put that into second place.
+
+Speaker
+
+So that is the V of love. Okay, now let's test. We've got hover states.
+
+Speaker
+
+and active states.
+
+Speaker
+
+And I can see as I tab through the links, we're also getting the focus state.
+
+Speaker
+
+perfectly. And just to show you that the visited state is working, if we go over to the HTML and I just add a URL here.
+
+Speaker
+
+Let's hit save and we get the lighter shade because that page has not been visited. Now I just want to add that it's not just links and buttons that we can use these states with.
+
+Speaker
+
+certainly we do have more options than that.
+
+Speaker
+
+For example, I could come to the header selector.
+
+Speaker
+
+And I could add a hover state.
+
+Speaker
+
+So now when I hover over the header,
+
+Speaker
+
+we get this sky blue background color. Now that gives us some really nasty color contrast between the text and the background. So that doesn't work at all. But I just want to show you that we have got those options.
+
+Speaker
+
+And before we finish, I want to point out to you that default link styles characterized by underlining and colour contrast
+
+Speaker
+
+are actually really important for both general web usability and accessibility. Clearly, links styles enhance clarity and navigation. They allow users to quickly discern navigable elements on a web page, which just improves the overall browsing experiences users expect links
+
+Speaker
+
+differ visually from regular text.
+
+Speaker
+
+Now using distinct link states such as hover, focus, active and visited,
+
+Speaker
+
+is crucial when making sites accessible.
+
+Speaker
+
+as those changes provide important cues to
+
+Speaker
+
+users about their interactions with the website.
+
+Speaker
+
+As you continue to study, you will see other areas where familiar styling is really important for accessibility and also for general usability.
+
+Speaker
+
+For example, forms which we'll be looking at later in the career path.
+
+Speaker
+
+Okay, we're going to put some of the skills we've learned here to good use back in our layout when you're ready, let's go.
+
+Speaker
+
+Okay, let's come on to this inline link in the first paragraph.
+
+Speaker
+
+So links need to be styled so they stand out. That's obviously good for both general user experience and for accessibility.
+
+Speaker
+
+At the moment, if we have a look in the mini browser,
+
+Speaker
+
+We can see that we have got the default blue with the solid underline.
+
+Speaker
+
+And that is the default with most browsers.
+
+Speaker
+
+So let's style up this link.
+
+Speaker
+
+using the information we've got in our slide.
+
+Speaker
+
+So we want the link to be this orange color.
+
+Speaker
+
+We've got a darker yellow for the hover and active state.
+
+Speaker
+
+And this dot
+
+Speaker
+
+supported under line effect.
+
+Speaker
+
+So that's your challenge.
+
+Speaker
+
+I want you to set the color of the link in the paragraph.
+
+Speaker
+
+Make the link color change on hover and active states.
+
+Speaker
+
+And I've put here.
+
+Speaker
+
+Search online to find out how you can give the underline a dotted appearance.
+
+Speaker
+
+In previous modules you have learned how to style links, but you haven't been taught how to get the dotted line effect.
+
+Speaker
+
+I'm leaving that to you as a Google challenge.
+
+Speaker
+
+Remember,
+
+Speaker
+
+Searching Online is a key developer skill.
+
+Speaker
+
+I bet you can find the answer in less than 2 minutes.
+
+Speaker
+
+Probably less than one minute.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+and give this your best shot.
+
+Speaker
+
+Okay, hopefully that went just fine. So I'm going to come in here just underneath the challenge and
+
+Speaker
+
+I'll set up our A selector.
+
+Speaker
+
+And that's changed the color.
+
+Speaker
+
+to the orange that we've got on our slide.
+
+Speaker
+
+And there we are, we can see that already reflected in the browser.
+
+Speaker
+
+Now I'm going to come onto the hover states.
+
+Speaker
+
+And we can see again, we want this dark yellow color. So let's just grab the hex code for that.
+
+Speaker
+
+And then when we hover the cursor over the link, we can see it changing to the dark yellow.
+
+Speaker
+
+We need to do the same.
+
+Speaker
+
+for the active state.
+
+Speaker
+
+Okay, the last thing we need to deal with then is the dotted underline.
+
+Speaker
+
+So let's just go ahead back in the A selector.
+
+Speaker
+
+and we'll use the text decoration process.
+
+Speaker
+
+But see.
+
+Speaker
+
+And we are going to set that to underline.
+
+Speaker
+
+And there we are, we can see that we have now got the dotted underline effect.
+
+Speaker
+
+Okay, we're done with that.
+
+Speaker
+
+And this is a good place to take a break if you've been at this for a while.
+
+Speaker
+
+When you're feeling refreshed...
+
+Speaker
+
+Come back.
+
+Speaker
+
+And we'll move on.
+
+Speaker
+
+Okay, check this out. I am working on this really cool life hacks page and it's got a fantastic idea for upcycling
+
+Speaker
+
+those old white apple earphones.
+
+Speaker
+
+getting yourself a few days off work.
+
+Speaker
+
+What do you have to do?
+
+Speaker
+
+stick an airbag up each nostril.
+
+Speaker
+
+using a plaster stick the plug end.
+
+Speaker
+
+to the back of your hand. It makes it look like you're in hospital.
+
+Speaker
+
+This is pretty much guaranteed to work. Your boss is going to believe it 100%.
+
+Speaker
+
+I just hope mine is not watching. Now,
+
+Speaker
+
+I'm having a little trouble.
+
+Speaker
+
+with this layout.
+
+Speaker
+
+What I'm aiming for.
+
+Speaker
+
+is this.
+
+Speaker
+
+We've got the content in the center of the page.
+
+Speaker
+
+But the background color is going full width.
+
+Speaker
+
+Now that's quite a common layout pattern, so it's something worth thinking about.
+
+Speaker
+
+So if we come over to our CSS, well, we could possibly try something like...
+
+Speaker
+
+putting some...
+
+Speaker
+
+March in.
+
+Speaker
+
+on the left and right.
+
+Speaker
+
+Well, that sort of works because now we've got our content central, but we've got these really horrible white margins that we don't want to talk, so let's undo that.
+
+Speaker
+
+Now we could solve this problem by coming in on each individual element and giving it the correct margin or padding or whatever we need. Now that would work but it could involve writing a lot
+
+Speaker
+
+of CSS.
+
+Speaker
+
+Remember, we want to try and keep things as dry as possible because CSS files can get overcrowded at the--
+
+Speaker
+
+So what's the easiest way to solve this problem?
+
+Speaker
+
+Well, what we need...
+
+Speaker
+
+container.
+
+Speaker
+
+So what we're going to do is create a container.
+
+Speaker
+
+loss.
+
+Speaker
+
+Now, this is nothing special, it's just going to be another div with the class named can
+
+Speaker
+
+And I'm going to call it container A because it's descriptive and B because
+
+Speaker
+
+container is used a lot in CSS for this purposes.
+
+Speaker
+
+So it's quite good to get into the habit of thinking of this as a container.
+
+Speaker
+
+Now, if you have multiple background colors as we do here, we can't just have all of our content in one container. We are going to have to set up a container.
+
+Speaker
+
+for each section. But that's fine, we're still saving ourselves a lot.
+
+Speaker
+
+So let's head over to the HTML.
+
+Speaker
+
+and see what we need to do. And I think we should start with the header.
+
+Speaker
+
+So I'm going to come inside the header.
+
+Speaker
+
+And this is where I'm going to set up out there.
+
+Speaker
+
+And I'm going to give it a class of
+
+Speaker
+
+After the content and the content
+
+Speaker
+
+If I move the mini browser out of the way, it's not the same.
+
+Speaker
+
+is just this one line, that's all of the header content.
+
+Speaker
+
+So I'll close off.
+
+Speaker
+
+our div right there.
+
+Speaker
+
+And of course to keep things tidy, I'll tab in once.
+
+Speaker
+
+Now if I save that, of course nothing's going to happen because we haven't done any CSS yet. So that's pop back to the CSS file and I have set up a challenge for you.
+
+Speaker
+
+I want you to set up a container selector.
+
+Speaker
+
+I want you to give it a width of 600 pixels.
+
+Speaker
+
+and I want you to align it centrally. Now, if you can't remember how to align things centrally,
+
+Speaker
+
+Do have a search on Google for that.
+
+Speaker
+
+You have studied it before, I think you know how to do it, but do check online if you have any problems.
+
+Speaker
+
+So pause now, have a go at that, and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that just fine. So that's coming here and
+
+Speaker
+
+And I'll set up our--
+
+Speaker
+
+Tana Selector.
+
+Speaker
+
+and I'm going to give it a whiff.
+
+Speaker
+
+of 600 pixels.
+
+Speaker
+
+And just while we're working on it, why don't we give it a border of one pixel solid white just so we can see it in action?
+
+Speaker
+
+And there we are, we've got it right there now in the header. There is our container.
+
+Speaker
+
+Now we do need to align it centrally and the easiest way to do that is to use the margin property.
+
+Speaker
+
+And the margin we're going to set to zero-cop and bottom because we don't want to mess around with that, but left and right will set the margin to all the
+
+Speaker
+
+Also,
+
+Speaker
+
+And as soon as we do that,
+
+Speaker
+
+You can see that this container moves into the center.
+
+Speaker
+
+Now we haven't actually got the text aligned in the center.
+
+Speaker
+
+that by putting a text-align center here.
+
+Speaker
+
+And if we get rid of that solid border.
+
+Speaker
+
+Do we want to do that?
+
+Speaker
+
+I think not, I think the original layout is better, so I am going to take that text-a-line center away. The choice is yours. You're welcome to do
+
+Speaker
+
+it differently.
+
+Speaker
+
+I think it looks better that way. Now.
+
+Speaker
+
+What are we going to do then about the rest of this content?
+
+Speaker
+
+Does that look better?
+
+Speaker
+
+Well, when we compare it to the original slide, I actually think the original way looks better.
+
+Speaker
+
+So I am going to delete that line of CSS there.
+
+Speaker
+
+Here's your second challenge.
+
+Speaker
+
+I want you to go ahead.
+
+Speaker
+
+and do the same for this content here.
+
+Speaker
+
+So pause now, have a go at that.
+
+Speaker
+
+And I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you figured out that the CSS is all done.
+
+Speaker
+
+All we need to do is go over to the HTML.
+
+Speaker
+
+move the browser out of the way.
+
+Speaker
+
+And then we'll come into section one and set up our...
+
+Speaker
+
+In fact, I'm just going to copy and paste it.
+
+Speaker
+
+right down.
+
+Speaker
+
+from the--
+
+Speaker
+
+Now, if we come to the end of the section, we can close the div.
+
+Speaker
+
+And let's just carve everything inside the container once and we'll hit save.
+
+Speaker
+
+And look, when we open.
+
+Speaker
+
+put up the mini browser.
+
+Speaker
+
+And there we are, we've got the layout looking just how we want it to be.
+
+Speaker
+
+exactly like it is on the slide.
+
+Speaker
+
+Okay, that is looking pretty good. You've earned yourself some time off, so it's
+
+Speaker
+
+If you've got some old headphones,
+
+Speaker
+
+try sticking them up your nose and seeing if you can get a few days off work. When you're back at work,
+
+Speaker
+
+When you've recovered from your mystery illness, I'll see you back in the layout and we'll put some of these skills to
+
+Speaker
+
+Good use.
+
+Speaker
+
+Okay, it's time to do something about the way all of this content is crushed up again.
+
+Speaker
+
+against the left hand edge of the browser window.
+
+Speaker
+
+It's really starting to irritate me.
+
+Speaker
+
+So, let's have a look.
+
+Speaker
+
+at what we're aiming for.
+
+Speaker
+
+On this slide, I've added a faint grey outline to the content which is not part of the final design at
+
+Speaker
+
+I just want to demonstrate what we're looking to achieve. So we've got an inner container which holds our content.
+
+Speaker
+
+it doesn't need any padding on margin itself.
+
+Speaker
+
+And the width of this container is given to you here.
+
+Speaker
+
+It is 620 pixels.
+
+Speaker
+
+And it is aligned centrally.
+
+Speaker
+
+on the horizontal axis.
+
+Speaker
+
+So you can see what the challenge is.
+
+Speaker
+
+In index HTML, I want you to wrap the contents of the header and the sections in container divs.
+
+Speaker
+
+and come back here and create a selector.
+
+Speaker
+
+for whatever class you put on the new dibs.
+
+Speaker
+
+and then add the properties needed.
+
+Speaker
+
+to fix the content width at the specified 620 pixels.
+
+Speaker
+
+and to center it.
+
+Speaker
+
+Now I've just put a warning here, the background, like we've got on this header, for example, needs to go.
+
+Speaker
+
+Full which?
+
+Speaker
+
+content will be 620 but the background will be full width.
+
+Speaker
+
+Okay, pause now, give this your best shot.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that without too many problems.
+
+Speaker
+
+Let's go straight over to index.html and we'll start pushing.
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+So,
+
+Speaker
+
+in the header.
+
+Speaker
+
+I'm going to create a div right here and I'm going to give it a class of container.
+
+Speaker
+
+And container is a good descriptive name.
+
+Speaker
+
+because this stiff is doing exactly that.
+
+Speaker
+
+its containing content.
+
+Speaker
+
+Now we just need to tab everything once which is inside that div to keep the CSS looking neat and tidy.
+
+Speaker
+
+Now, let's come down to our section.
+
+Speaker
+
+and we're going to do exactly the same thing. So it's div.
+
+Speaker
+
+and the same class contains.
+
+Speaker
+
+China.
+
+Speaker
+
+And then at the bottom of the section,
+
+Speaker
+
+We need to close the data.
+
+Speaker
+
+Have everything in once.
+
+Speaker
+
+And I'll just quickly do the exact same thing on the second section.
+
+Speaker
+
+Now let's hit save, of course nothing is going to change at the moment.
+
+Speaker
+
+We need to come back to index.css. And then down here, after the section, I'm going to create a selector with the dot
+
+Speaker
+
+for our country.
+
+Speaker
+
+Tana.
+
+Speaker
+
+And then I'm going to give it its width and we know that is 620
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+Now, as soon as I do that, you can see this horizontal scroll bar appears.
+
+Speaker
+
+That is because at the moment this browser is not 620 pixels width.
+
+Speaker
+
+If we do that, now we've got...
+
+Speaker
+
+everything.
+
+Speaker
+
+on the screen.
+
+Speaker
+
+Now we also want this to align centrally, and so we can use that great old trick with the margin
+
+Speaker
+
+property.
+
+Speaker
+
+Now at the moment it's still left aligned if we stretch the browser out even more we can just see all of the content
+
+Speaker
+
+is taking up 620 pixels.
+
+Speaker
+
+on the left hand edge. So let's come down again to the container selector and
+
+Speaker
+
+we can use the old trick with the margin property.
+
+Speaker
+
+We can set it to zero top and bottom and all
+
+Speaker
+
+Auto left and right.
+
+Speaker
+
+shifts all of our content.
+
+Speaker
+
+to be centrally aligned.
+
+Speaker
+
+And now, as we stretch out the browser,
+
+Speaker
+
+our content stays in the middle.
+
+Speaker
+
+exactly what we want.
+
+Speaker
+
+Okay, this is looking loads better, but now
+
+Speaker
+
+Now CSS is starting to look a bit disorganized.
+
+Speaker
+
+So we might take a look at that next.
+
+Speaker
+
+When you're ready?
+
+Speaker
+
+I'll see you in the next room.
+
+Speaker
+
+This layer
+
+Speaker
+
+out that we're working on.
+
+Speaker
+
+isn't going to be that big.
+
+Speaker
+
+But CSS files can get really long and can quickly become a nightmare to navigate.
+
+Speaker
+
+Now, we're not looking too bad so far.
+
+Speaker
+
+But why don't we take a moment to do just a little bit of organizing?
+
+Speaker
+
+Now, there's not one universally accepted way to organize or order CSS.
+
+Speaker
+
+But what we should do is just think a little bit logically
+
+Speaker
+
+and use some comments to break up the CSS file so that other people who are reading our code are going to find it easier.
+
+Speaker
+
+to get to the selectors they need.
+
+Speaker
+
+So that's your challenge.
+
+Speaker
+
+go through the CSS and divide it up into segments with comments.
+
+Speaker
+
+But I have put a warning here.
+
+Speaker
+
+don't use too many comments. If we have too much organization, there are comments all over the place and it's not really helping. It's actually just making things more confusing. And because there's no right or wrong way to do this, I'm not going to dictate to you too much here.
+
+Speaker
+
+But I will say that you pretty much always have the general selectors like the body.
+
+Speaker
+
+right here.
+
+Speaker
+
+at the top of the file.
+
+Speaker
+
+By the way, to create comments, you've got a really quick shortcut.
+
+Speaker
+
+key. So that is control slash on windows.
+
+Speaker
+
+And come.
+
+Speaker
+
+on slash.
+
+Speaker
+
+When you're done with that,
+
+Speaker
+
+I'll organize the CSS my way and that doesn't necessarily mean it will be better than yours, it might just be different.
+
+Speaker
+
+So, pause now.
+
+Speaker
+
+and have a go at that.
+
+Speaker
+
+Okay, hopefully you had some ideas of a logical coherent way to do this.
+
+Speaker
+
+I'm going to keep my body selector right here at the top.
+
+Speaker
+
+And I don't think I really need to give that a--
+
+Speaker
+
+a segment title in
+
+Speaker
+
+It pretty much speaks for itself.
+
+Speaker
+
+Now the next thing I'm going to do is create a comment right here and
+
+Speaker
+
+And I'm going to call this section.
+
+Speaker
+
+Typography.
+
+Speaker
+
+And here I'm going to have all of these headers, we've got H1, H2, and H3.
+
+Speaker
+
+And obviously if we had more, for example, the
+
+Speaker
+
+tag.
+
+Speaker
+
+we would put that right here as well.
+
+Speaker
+
+So that's moved all of that.
+
+Speaker
+
+on the typography.
+
+Speaker
+
+Next, I'm going to create a segment
+
+Speaker
+
+for links.
+
+Speaker
+
+And for now, all that's going to have in it is our
+
+Speaker
+
+and the pseudo elements that go with A.
+
+Speaker
+
+So in fact, I can just cut header out of the way.
+
+Speaker
+
+And...
+
+Speaker
+
+Bring that somewhere down here.
+
+Speaker
+
+And lastly, I'm going to come in here and create a section called layout.
+
+Speaker
+
+And this one, I'll try and put in a top to bottom order as much as possible.
+
+Speaker
+
+We'll start with the header.
+
+Speaker
+
+Then we'll have the section.
+
+Speaker
+
+Then the container...
+
+Speaker
+
+"Mven main image."
+
+Speaker
+
+Now, at the later date, we might want to take main image out and put that back somewhere else with other images. But I think in this layout, we've only got a few images.
+
+Speaker
+
+probably having everything under layout is going to be absolutely fine.
+
+Speaker
+
+And likewise, if this layout were more complex,
+
+Speaker
+
+Perhaps I would divide layout up. I might have one call for example.
+
+Speaker
+
+navigation.
+
+Speaker
+
+In a project of this size, I don't think that's necessary at all.
+
+Speaker
+
+Right, that is looking tidier already. If you did something different, maybe yours was better, who knows, but at least you've shown that you've given this some thought.
+
+Speaker
+
+and you've made life a little bit easier.
+
+Speaker
+
+your colleagues.
+
+Speaker
+
+Now when you're ready?
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay,
+
+Speaker
+
+Let's come on to the second section of the layout.
+
+Speaker
+
+If we have a look in detail, we can see the
+
+Speaker
+
+that we've already achieved quite a lot of what we're aiming for.
+
+Speaker
+
+content is centered, the text has got the correct font size and font weight for both the heading and the paragraph.
+
+Speaker
+
+Now the things that we haven't got right yet are these pictures, but we'll come to those later.
+
+Speaker
+
+And the colors.
+
+Speaker
+
+Now this section should have a background of purple
+
+Speaker
+
+and the heading and the paragraph text should be white smoke.
+
+Speaker
+
+Now, if we come to the mini browser, you can see that actually
+
+Speaker
+
+section 2
+
+Speaker
+
+is in quite a mess.
+
+Speaker
+
+at the moment.
+
+Speaker
+
+So here's your challenge.
+
+Speaker
+
+Change the background color of this section, remembering to make sure the color covers 100% of the
+
+Speaker
+
+page width.
+
+Speaker
+
+Change the front color for all the text in this section.
+
+Speaker
+
+Now, I haven't given you much instruction on how to do this. You've got all of the skills you need, so give it some thought.
+
+Speaker
+
+and see what you can come up with.
+
+Speaker
+
+I'm pretty sure
+
+Speaker
+
+that you can do this.
+
+Speaker
+
+So, pause now.
+
+Speaker
+
+Give it your best shot.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+hopefully you identified the
+
+Speaker
+
+The background color we've got here is just the browser's default white and the font color.
+
+Speaker
+
+the default front color we actually set on the body and is inherited throughout the layout.
+
+Speaker
+
+We can override both of them of course, the question is where do we override them?
+
+Speaker
+
+If we use any existing selector,
+
+Speaker
+
+And for example, we've got this section selector.
+
+Speaker
+
+Well, if we change the background color here,
+
+Speaker
+
+Let's change it, for example, to blue.
+
+Speaker
+
+Well,
+
+Speaker
+
+That's obviously going to affect the entire layout, and that's not what we want to tool.
+
+Speaker
+
+So hopefully you figured out
+
+Speaker
+
+what we need to do.
+
+Speaker
+
+is create and
+
+Speaker
+
+- Another.
+
+Speaker
+
+class.
+
+Speaker
+
+So over in index.html,
+
+Speaker
+
+I'm going to come down to the second section.
+
+Speaker
+
+And I'm going to give this section a class.
+
+Speaker
+
+which I am going to call.
+
+Speaker
+
+Section
+
+Speaker
+
+And I will hit save.
+
+Speaker
+
+back in index.css
+
+Speaker
+
+come down under our general section selector.
+
+Speaker
+
+And with a dot, I'll select section two.
+
+Speaker
+
+So let's now give this a color.
+
+Speaker
+
+of
+
+Speaker
+
+white smoke.
+
+Speaker
+
+Now, if we have a look in the mini browser, we'll probably see that everything has pretty much disappeared.
+
+Speaker
+
+Now let's give this a background color.
+
+Speaker
+
+of our purple.
+
+Speaker
+
+Okay, so let's have a look in the mini browser now.
+
+Speaker
+
+And that is looking good.
+
+Speaker
+
+Our purple matches the header of course.
+
+Speaker
+
+And we have got the H2.
+
+Speaker
+
+And the paragraph of text here is
+
+Speaker
+
+white smoke.
+
+Speaker
+
+Right, the next thing we need to work on.
+
+Speaker
+
+of these images, but we're going to come to that in the next scrim.
+
+Speaker
+
+when you're ready to move on.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, let's deal with these two images.
+
+Speaker
+
+So as you can see, we've got them
+
+Speaker
+
+side by side.
+
+Speaker
+
+and they are aligned on the left hand and the right hand with the content.
+
+Speaker
+
+And there is some space.
+
+Speaker
+
+between them.
+
+Speaker
+
+Now in a previous module you were introduced to Flexbox and you're going to need Flexbox again for this.
+
+Speaker
+
+This
+
+Speaker
+
+challenge.
+
+Speaker
+
+One thing that Flexbox does really well is it lets us control how elements are spaced out inside their container.
+
+Speaker
+
+And that is what we want here.
+
+Speaker
+
+So we're going to create an image container and then control
+
+Speaker
+
+where the images sit within that condition.
+
+Speaker
+
+So your challenge is this.
+
+Speaker
+
+Firstly, I want you to give each of these two images a class.
+
+Speaker
+
+And then I want you to set their width.
+
+Speaker
+
+and border radius using the information you've got with this slide.
+
+Speaker
+
+Next, I want you to put them inside a new div.
+
+Speaker
+
+and use flex box to put the two images in
+
+Speaker
+
+in their correct
+
+Speaker
+
+place opposite ends of that
+
+Speaker
+
+Now, I'm going to give you a little bit of help here, firstly, to
+
+Speaker
+
+use flex box you need to set the display property to the correct value.
+
+Speaker
+
+If you've forgotten what value that is, the answer is a really quick good.
+
+Speaker
+
+Google Search Away.
+
+Speaker
+
+Secondly
+
+Speaker
+
+Previously, you've used the justified content property.
+
+Speaker
+
+and you set it to space around.
+
+Speaker
+
+This time, you
+
+Speaker
+
+You'll still need justified content, but you're not going to use space around.
+
+Speaker
+
+again.
+
+Speaker
+
+search online how you could have elements spread out to opposite ends of a container using flex box.
+
+Speaker
+
+In fact, I recommend having a quick look at the MDN article on justify content as that has a great little widget where
+
+Speaker
+
+you can see the
+
+Speaker
+
+different potential values for justify content.
+
+Speaker
+
+in action.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Have a go at that.
+
+Speaker
+
+and we'll have a look together in just a moment.
+
+Speaker
+
+Okay, hopefully you managed to do that.
+
+Speaker
+
+Just fine.
+
+Speaker
+
+I'm going to head over to index.html.
+
+Speaker
+
+And right here in the second section, I'm going to give these images.
+
+Speaker
+
+A class.
+
+Speaker
+
+And I'm going to call this class.
+
+Speaker
+
+Feature.
+
+Speaker
+
+Image.
+
+Speaker
+
+So we've got main image for the big sneaker image at the top of the layout, this one right here.
+
+Speaker
+
+And then these two down here will be called
+
+Speaker
+
+feature image.
+
+Speaker
+
+I'm going to save that.
+
+Speaker
+
+And then back in index.css, I can come right down to the bottom of our layout section.
+
+Speaker
+
+and I will set up a class for feature.
+
+Speaker
+
+Now we know from the slide that we want the images to have a width of 300 pixels.
+
+Speaker
+
+and a border radius of 4.6 pixels.
+
+Speaker
+
+Okay, so let's do the width.
+
+Speaker
+
+first.
+
+Speaker
+
+300 pixels.
+
+Speaker
+
+And there we are. Instantly, we get the images side by side.
+
+Speaker
+
+Let's give them the border radius.
+
+Speaker
+
+4.6
+
+Speaker
+
+So, let's see.
+
+Speaker
+
+Okay, that's already looking pretty good, but we haven't got very much space between them. That is a bit of a problem.
+
+Speaker
+
+So, we
+
+Speaker
+
+We know that our content
+
+Speaker
+
+is 620 pixels wide.
+
+Speaker
+
+The images should be 300 pixels wide, so that should leave 20 in the middle. Well, that's not happening at the moment.
+
+Speaker
+
+Let's head back.
+
+Speaker
+
+into index.html. I'm just going to move the mini browser out of the way.
+
+Speaker
+
+And now let's set up a div here to continue.
+
+Speaker
+
+our images.
+
+Speaker
+
+So I'm going to give this one a
+
+Speaker
+
+class.
+
+Speaker
+
+And I am going to call it...
+
+Speaker
+
+section 2
+
+Speaker
+
+Image container.
+
+Speaker
+
+Again, it's a nice descriptive.
+
+Speaker
+
+last name.
+
+Speaker
+
+And then just after the images, of course, I need to close that div.
+
+Speaker
+
+And let's just indent everything once. So now I'm going to hit save.
+
+Speaker
+
+And of course nothing will change yet, but let's head back to the CSS.
+
+Speaker
+
+And I--
+
+Speaker
+
+again, after feature image.
+
+Speaker
+
+Let's create the selector.
+
+Speaker
+
+for section to Image Container.
+
+Speaker
+
+And now we are going to use Flexbox, so we have to declare the
+
+Speaker
+
+display.
+
+Speaker
+
+and now we're going to use the justify content property and what do we want to set it to?
+
+Speaker
+
+Hopefully you found that we want space.
+
+Speaker
+
+between.
+
+Speaker
+
+And there we are. As soon as we do that, we get the space we're looking for right there in between the two.
+
+Speaker
+
+images.
+
+Speaker
+
+Okay, things are looking pretty good.
+
+Speaker
+
+when you're ready to move on?
+
+Speaker
+
+I'll see you in the next scrim.
+
+Speaker
+
+Okay, so let's get this footer sorted out.
+
+Speaker
+
+If we look in detail, we can see that it's the smallest and bear I say easiest.
+
+Speaker
+
+Part of the layout.
+
+Speaker
+
+There are three obvious differences between where we are now, if we come down to the bottom of our layout.
+
+Speaker
+
+and where we want to be. We want to have this space on the top and the bottom.
+
+Speaker
+
+We want to have the text centered horizontally.
+
+Speaker
+
+we want the text color to
+
+Speaker
+
+to be.
+
+Speaker
+
+We've got the fun sizes we need.
+
+Speaker
+
+right here.
+
+Speaker
+
+So...
+
+Speaker
+
+That's your challenge.
+
+Speaker
+
+Sent in the foot as text horizontally.
+
+Speaker
+
+Give the text space top and bottom. Now I've put a warning here.
+
+Speaker
+
+Don't add margin.
+
+Speaker
+
+look at the sections and header
+
+Speaker
+
+inspiration as to how we're going to create
+
+Speaker
+
+create that space.
+
+Speaker
+
+And lastly, give the text the correct color.
+
+Speaker
+
+So pause now, have a go at this, and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+know everything is contained in the footer.
+
+Speaker
+
+So I can
+
+Speaker
+
+create a fitr selector right here.
+
+Speaker
+
+And if we want to get the text right in the center,
+
+Speaker
+
+can just use the text align property and there we are, easy as that.
+
+Speaker
+
+Text align is great. It will center the text to the right to the left to the center.
+
+Speaker
+
+And that...
+
+Speaker
+
+It's just
+
+Speaker
+
+really easy. Now.
+
+Speaker
+
+Let's give the text the space it needs top and bottom.
+
+Speaker
+
+But if you remember, we've done that already on the header and in the sections with the padding property.
+
+Speaker
+
+So we're giving it.
+
+Speaker
+
+45 pixels top and bottom.
+
+Speaker
+
+But zero pixels left and right and let's just scroll down.
+
+Speaker
+
+And there we are, that is looking good. And then lastly, we just need to change the color of the text. And so the color we want.
+
+Speaker
+
+We've got right here.
+
+Speaker
+
+that we are.
+
+Speaker
+
+That is the footer sorted.
+
+Speaker
+
+Now we're really close to finishing this layout. We have got these links that look like butter.
+
+Speaker
+
+to do.
+
+Speaker
+
+We're going to come onto them.
+
+Speaker
+
+really soon.
+
+Speaker
+
+When you're ready to move on, I'll see you there.
+
+Speaker
+
+Okay, let's take a moment to review what we've done and
+
+Speaker
+
+do some refactoring.
+
+Speaker
+
+Now, when we styled the footer, you might have noticed that this line here padding 4500.
+
+Speaker
+
+We've written that line of CSS at least three times now.
+
+Speaker
+
+You would have heard the acronym.
+
+Speaker
+
+dry.
+
+Speaker
+
+Don't repeat yourself.
+
+Speaker
+
+well, we have repeated ourselves in several places. Now, you've already seen in previous modules how we can group CSS selectors together to
+
+Speaker
+
+apply styles to
+
+Speaker
+
+multiple elements at
+
+Speaker
+
+at the same time.
+
+Speaker
+
+If, for example, we wanted the...
+
+Speaker
+
+- Head to...
+
+Speaker
+
+Section
+
+Speaker
+
+and fitter, order a order with
+
+Speaker
+
+which was...
+
+Speaker
+
+four pixels solid and pink
+
+Speaker
+
+We can do that just
+
+Speaker
+
+just by listing them all.
+
+Speaker
+
+- That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good idea. - That's a good
+
+Speaker
+
+separated.
+
+Speaker
+
+So that means find...
+
+Speaker
+
+All of the headers.
+
+Speaker
+
+all of the sections, all of the footers of
+
+Speaker
+
+of course, we've had you got one header and one footer.
+
+Speaker
+
+give them all.
+
+Speaker
+
+this border.
+
+Speaker
+
+Now that has the advantage that if we wanted to change the border to say lime green,
+
+Speaker
+
+We could go ahead and
+
+Speaker
+
+do that.
+
+Speaker
+
+And if we saw the error of our ways and decided that we don't want that at all,
+
+Speaker
+
+We can delete the whole lot.
+
+Speaker
+
+really, really easily. So grouping select us together like that.
+
+Speaker
+
+is a really useful thing to do.
+
+Speaker
+
+So here's a challenge for you. I want you to refactor the CSS to make it drier by
+
+Speaker
+
+by grouping selectors together.
+
+Speaker
+
+So have a look through the CSS and see where you think you can make savings. Pause now!
+
+Speaker
+
+Have a good that.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+Let's just grow down a little bit and I think the first thing we're going to come across.
+
+Speaker
+
+is this H1 and H3 both having a margin of zero.
+
+Speaker
+
+So why don't we come up to the top of the typography and we're just going to say H1.
+
+Speaker
+
+comma h3
+
+Speaker
+
+open up the curly braces and give them both a margin of zero
+
+Speaker
+
+of course, we'll have the semi-colon on the end.
+
+Speaker
+
+And now let's delete one line of CSS from H1.
+
+Speaker
+
+and one line from
+
+Speaker
+
+H
+
+Speaker
+
+Okay, nothing's changed on the mini browser and that is exactly what we want.
+
+Speaker
+
+Now, as we scroll further down,
+
+Speaker
+
+I think we can do the same thing right here with these hover and active states.
+
+Speaker
+
+They are exactly the same.
+
+Speaker
+
+So how about we put a comma right here and we add the app.
+
+Speaker
+
+If state.
+
+Speaker
+
+And now we can delete.
+
+Speaker
+
+All of that.
+
+Speaker
+
+And let's just come over to the mini browser and check that they're still working.
+
+Speaker
+
+and they are said that is perfect.
+
+Speaker
+
+Now I've already mentioned this padding right here.
+
+Speaker
+
+So let's go ahead and we'll say header, comma section, comma footer.
+
+Speaker
+
+And we will take this padding here of 45 pixels.
+
+Speaker
+
+zero left and right.
+
+Speaker
+
+And let's just now delete that. So we can actually delete this entire section because there's nothing else in it.
+
+Speaker
+
+and then down at the footer.
+
+Speaker
+
+We can just take away.
+
+Speaker
+
+that line
+
+Speaker
+
+And again, we can see in the mini browser that nothing
+
+Speaker
+
+has changed. Now,
+
+Speaker
+
+When we start to get three
+
+Speaker
+
+a row, I think it's a little bit neater if we put them all on different lines. There we are.
+
+Speaker
+
+I think that's just gonna keep things tidy and stop them stretching out across the whole screen.
+
+Speaker
+
+Now I think there's one more that we can do, actually.
+
+Speaker
+
+because section 2 and the header
+
+Speaker
+
+both have the same background color.
+
+Speaker
+
+So how about if we delete that from section 2, but here, that goes
+
+Speaker
+
+around color is the only CSS property we have.
+
+Speaker
+
+So how about if we add the comma and we need the dot?
+
+Speaker
+
+Section
+
+Speaker
+
+Chee!
+
+Speaker
+
+And there we are.
+
+Speaker
+
+back in business with the background color.
+
+Speaker
+
+on the header and on section two.
+
+Speaker
+
+So we've saved ourselves a few lines of CSS,
+
+Speaker
+
+made it a little bit drier.
+
+Speaker
+
+and just generally.
+
+Speaker
+
+I'll just hide it things up.
+
+Speaker
+
+From now on, of course, we need to be aware that we've got more than one selector affecting a given piece of the layout.
+
+Speaker
+
+So that can make it a little bit trickier to debug.
+
+Speaker
+
+That's just something.
+
+Speaker
+
+bear in mind.
+
+Speaker
+
+You're ready, let's move on.
+
+Speaker
+
+This is just a quick warning that some users have had problems with the following scrim not displaying properly.
+
+Speaker
+
+If the Mini Browser is just showing you a blank screen or just a small amount of text,
+
+Speaker
+
+and what's on the screen doesn't seem to make sense with what's being said.
+
+Speaker
+
+There's a couple of things you can try.
+
+Speaker
+
+Firstly, try disabling adlock.
+
+Speaker
+
+Chrome extension or any other ad blocking software that you're running.
+
+Speaker
+
+And secondly,
+
+Speaker
+
+try putting Chrome into Incognito mode.
+
+Speaker
+
+Now, I'm not 100% sure why this particular scrim has triggered the chrome ad rock extension in this way,
+
+Speaker
+
+but that does seem to be the case. So if you have any problems and you try one of those two things, you should be fine.
+
+Speaker
+
+CSS can get pretty complicated.
+
+Speaker
+
+And before long, you're going to run into conflicts.
+
+Speaker
+
+You're going to have something on your layout, whether that's a piece of text or an image or a border.
+
+Speaker
+
+that's being targeted by the way.
+
+Speaker
+
+by more than one selector.
+
+Speaker
+
+Now, in the battle for CSS supremacy,
+
+Speaker
+
+that can only ever be one winner.
+
+Speaker
+
+And if you understand how CSS deals with these conflicts,
+
+Speaker
+
+You can confidently predict which CSS is going to win and control what you see on the screen.
+
+Speaker
+
+and which CSS is going to be ignored by the browser.
+
+Speaker
+
+So what is it that makes one piece of CSS more powerful than another piece?
+
+Speaker
+
+Well, that all comes down to something called...
+
+Speaker
+
+specificity.
+
+Speaker
+
+Let's jump straight into an example.
+
+Speaker
+
+This is a job ad for a junior developer, unlike loads of crazy recruiters.
+
+Speaker
+
+The one who wrote this has got no idea what a junior developer is.
+
+Speaker
+
+Job ads like this are a massive red flag.
+
+Speaker
+
+Check this out!
+
+Speaker
+
+using non-deterministic polynomial time for specific algorithm problems.
+
+Speaker
+
+I mean, that's no problem for me. I do that sort of thing every morning.
+
+Speaker
+
+for a junior developer.
+
+Speaker
+
+That's a non-starter.
+
+Speaker
+
+Okay, honestly, I've got no idea what they're talking about.
+
+Speaker
+
+But that's fine.
+
+Speaker
+
+Let's talk about specificity.
+
+Speaker
+
+So, we're going to target this paragraph of text right here.
+
+Speaker
+
+So I'm just going to come into the CSS and underneath our headers.
+
+Speaker
+
+I'm going to create a paragraph selector.
+
+Speaker
+
+And I'm just going to change the font size here, I too.
+
+Speaker
+
+18 pixels and there we are it's got a little bit bigger.
+
+Speaker
+
+And I'm just going to set the color.
+
+Speaker
+
+to black.
+
+Speaker
+
+Now, that's not going to make a big difference because we already had it set.
+
+Speaker
+
+to a very dark color which is just off black.
+
+Speaker
+
+Okay, now I'm going to head over to index.html. I'll move the mini browser out of the way.
+
+Speaker
+
+And this is the paragraph we've got right here.
+
+Speaker
+
+So I'm going to come in here and I'm going to give it a class and I'm going to call this class
+
+Speaker
+
+Ask short for job description.
+
+Speaker
+
+If I hit save.
+
+Speaker
+
+Back in the CSS, underneath our P Selector.
+
+Speaker
+
+I'm going to set up a selector for Jobdesk.
+
+Speaker
+
+Now I'm going to reopen the mini browser and then I'll come back into job desk and I'm going to give this a fun size.
+
+Speaker
+
+of 20 pixels.
+
+Speaker
+
+And there we are, we saw our paragraph get bigger.
+
+Speaker
+
+And let's just make that really clear.
+
+Speaker
+
+I'm going to give it a color.
+
+Speaker
+
+of greed.
+
+Speaker
+
+Okay, so we can see already.
+
+Speaker
+
+that this class selector here has overruled the paragraph selected that we already had.
+
+Speaker
+
+Now, back in index.html.
+
+Speaker
+
+I'm again just going to move the mini browser out of the way, and now I'm going to give this an ID. I'm going to call this ID just
+
+Speaker
+
+your desk as well.
+
+Speaker
+
+It's no problem to have a class and an ID with the same name.
+
+Speaker
+
+It's not necessarily a good idea.
+
+Speaker
+
+But just for testing purposes, it's going to be absolutely fine.
+
+Speaker
+
+So back in the CSS underneath.
+
+Speaker
+
+our job.
+
+Speaker
+
+class.
+
+Speaker
+
+I'm going to select the ID so we need to use the hash.
+
+Speaker
+
+And I'm going to come in here and give this a font size of
+
+Speaker
+
+$22.
+
+Speaker
+
+And let's just reopen the mini browser.
+
+Speaker
+
+I think that's made it bigger. Let's just comment it out and see, yes it has.
+
+Speaker
+
+And I'm also going to change the color.
+
+Speaker
+
+And so I'll give this the color red.
+
+Speaker
+
+Okay, so now it's really clear that the ID
+
+Speaker
+
+has beaten the
+
+Speaker
+
+class, which is beaten the element.
+
+Speaker
+
+Now, you might be thinking, "This is a top to bottom thing."
+
+Speaker
+
+CSS is red from the top down.
+
+Speaker
+
+Now you're absolutely right.
+
+Speaker
+
+If we have two selectors of equal specificity, the top one will win.
+
+Speaker
+
+Let's just comment out.
+
+Speaker
+
+news
+
+Speaker
+
+And I'm going to come in here.
+
+Speaker
+
+and just create another piece, select
+
+Speaker
+
+and I'll set the color to orange.
+
+Speaker
+
+And there we are, we can see the text turns orange and
+
+Speaker
+
+and if we cut and paste the original selector underneath.
+
+Speaker
+
+We're back to black, so the lower selected.
+
+Speaker
+
+is going to win.
+
+Speaker
+
+But now, if we uncomment these new ones...
+
+Speaker
+
+And then we cut and paste.
+
+Speaker
+
+this piece selector
+
+Speaker
+
+underneath them.
+
+Speaker
+
+Well nothing happened.
+
+Speaker
+
+The red is winning through, not because it's lower.
+
+Speaker
+
+It can be the very first one.
+
+Speaker
+
+But in fact, it's winning through
+
+Speaker
+
+because it has the highest specificity.
+
+Speaker
+
+and likewise in the HTML.
+
+Speaker
+
+the order that we put things in here.
+
+Speaker
+
+Does not matter at all, ID before class class before ID, it makes no.
+
+Speaker
+
+difference.
+
+Speaker
+
+So why does the ID beat the class that beats the element?
+
+Speaker
+
+CSS.
+
+Speaker
+
+based on points.
+
+Speaker
+
+So what we have is an element selector that gets us one point.
+
+Speaker
+
+like pay
+
+Speaker
+
+- I had to.
+
+Speaker
+
+H1.
+
+Speaker
+
+div.
+
+Speaker
+
+Classes override that because they get
+
+Speaker
+
+Say you get the idea
+
+Speaker
+
+The selector with the highest points is going to win.
+
+Speaker
+
+when an ID has a mighty 100 points, so that will easily override both the class and
+
+Speaker
+
+the element.
+
+Speaker
+
+Now, not everybody thinks about points with CSS all of the time.
+
+Speaker
+
+And as we go on, we'll see why it's best just to keep the CSS as simple as possible.
+
+Speaker
+
+and the specificity clear.
+
+Speaker
+
+But in the next scrim,
+
+Speaker
+
+We are going to talk a bit about...
+
+Speaker
+
+points.
+
+Speaker
+
+So...
+
+Speaker
+
+It's a good idea just to keep this in mind.
+
+Speaker
+
+Now just before we wrap up.
+
+Speaker
+
+I just want to say a word about...
+
+Speaker
+
+IDs.
+
+Speaker
+
+We haven't really used them in this layout.
+
+Speaker
+
+and it's quite common to not use IDs for CSS.
+
+Speaker
+
+for targeting elements with JavaScript app.
+
+Speaker
+
+Absolutely.
+
+Speaker
+
+But for styling alone.
+
+Speaker
+
+Not so common.
+
+Speaker
+
+I've used it here as an example, and it is good to know that if you do use an ID, you'll get higher specificity.
+
+Speaker
+
+And of course, you will come across code where IDs are used for styling.
+
+Speaker
+
+Perhaps you will yourself.
+
+Speaker
+
+It is a little bit down to personal taste.
+
+Speaker
+
+My personal preference is
+
+Speaker
+
+is to use an element selector for general rules.
+
+Speaker
+
+and classes for everything else.
+
+Speaker
+
+Now I'm not saying everybody does that, but it is quite common.
+
+Speaker
+
+Okay, so that's an introduction to specificity.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, let's talk for a moment about competition.
+
+Speaker
+
+and the health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health health
+
+Speaker
+
+Compound selectors are somewhat controversial and it makes life a little bit easier.
+
+Speaker
+
+If you don't use them.
+
+Speaker
+
+But you will see them in real life and you might well end up using them yourself, so it's definitely a good idea to take a closer look.
+
+Speaker
+
+So what are...
+
+Speaker
+
+compound selectors.
+
+Speaker
+
+Let's take a real world example.
+
+Speaker
+
+This is a screenshot from Spotify.
+
+Speaker
+
+And look at these two buttons that we've got here. First, we've got a black one on a purple background.
+
+Speaker
+
+Then we've got a green one on a blue background.
+
+Speaker
+
+Now these two buttons
+
+Speaker
+
+and not exactly the same.
+
+Speaker
+
+but they do have a lot of similarities.
+
+Speaker
+
+They're the same height.
+
+Speaker
+
+Then the same shape as in they have the same border radius.
+
+Speaker
+
+The text has got the same font.
+
+Speaker
+
+and the same fault, wait.
+
+Speaker
+
+In fact...
+
+Speaker
+
+They're much more similar than they are different.
+
+Speaker
+
+the background color and the text color are different, but that's about it.
+
+Speaker
+
+So there's no way the developers needed to create two completely different components here.
+
+Speaker
+
+Imagine this.
+
+Speaker
+
+If this section here...
+
+Speaker
+
+had the class name
+
+Speaker
+
+>> [BLANK_AUDIO]
+
+Speaker
+
+And this section in the bottom had the class name blue.
+
+Speaker
+
+What we could do with a compound selector
+
+Speaker
+
+Is select any button?
+
+Speaker
+
+which is inside an element.
+
+Speaker
+
+with the class named purple.
+
+Speaker
+
+And then we could select any button
+
+Speaker
+
+which is inside an element.
+
+Speaker
+
+with the class name below.
+
+Speaker
+
+And of course, we could do this with pretty much anything.
+
+Speaker
+
+We might want to target the...
+
+Speaker
+
+anchor elements which are in the header.
+
+Speaker
+
+and then separately target the anchor elements which are in the footer or the sidebar.
+
+Speaker
+
+So what we're doing with a compound selector is really homing in on the exact element you want to target.
+
+Speaker
+
+without giving that element a
+
+Speaker
+
+class of its own.
+
+Speaker
+
+So let's have a look at some code.
+
+Speaker
+
+back in our crazy job, ever. We have got links.
+
+Speaker
+
+Inside this actual advert container.
+
+Speaker
+
+and outside it down at the bottom.
+
+Speaker
+
+Now, it's quite possible that
+
+Speaker
+
+that we would want to style those links differently.
+
+Speaker
+
+So let's use a compound to target these links, which are right here.
+
+Speaker
+
+inside the application.
+
+Speaker
+
+So if I pop over to the HTML, I'll just move the mini browser out of the way. Here we are. We can see the div called add container.
+
+Speaker
+
+And then down at the bottom of our container.
+
+Speaker
+
+we can see that we've got the anchor tags for these links right here.
+
+Speaker
+
+So what I'm going to do...
+
+Speaker
+
+inandax.css
+
+Speaker
+
+is
+
+Speaker
+
+Come down.
+
+Speaker
+
+to underneath our existing angles.
+
+Speaker
+
+the
+
+Speaker
+
+And I
+
+Speaker
+
+And again, the star.
+
+Speaker
+
+by selecting Add.
+
+Speaker
+
+container.
+
+Speaker
+
+Now I'm going to hit space.
+
+Speaker
+
+And then I'm going to put an A.
+
+Speaker
+
+And what we've got here now then is effectively two selectors.
+
+Speaker
+
+one for ad container.
+
+Speaker
+
+one for A.
+
+Speaker
+
+And
+
+Speaker
+
+what this CSS is doing then.
+
+Speaker
+
+You're saying...
+
+Speaker
+
+find me any anchor elements.
+
+Speaker
+
+inside anything with the class of add_contents.
+
+Speaker
+
+Now, if we reopen the mini browser,
+
+Speaker
+
+Let's go ahead.
+
+Speaker
+
+and style up.
+
+Speaker
+
+just these links right here.
+
+Speaker
+
+So I'm going to give them a color.
+
+Speaker
+
+of lime green.
+
+Speaker
+
+And I'm going to give them a size of 18 pixels.
+
+Speaker
+
+And that we are.
+
+Speaker
+
+You can see that we've successfully targeted the
+
+Speaker
+
+the anchor elements
+
+Speaker
+
+inside this add container.
+
+Speaker
+
+But the other anchor elements we've got in this layout.
+
+Speaker
+
+have not been
+
+Speaker
+
+affected.
+
+Speaker
+
+Okay, let me set you up.
+
+Speaker
+
+with a mini challenge.
+
+Speaker
+
+I want you to create a compound selector which targets the anchor links
+
+Speaker
+
+Inside the Lynx container.
+
+Speaker
+
+So that's these ones at the bottom.
+
+Speaker
+
+And if you go to index.html,
+
+Speaker
+
+You can see that we've already got this div with the class links container right there.
+
+Speaker
+
+and those are these links.
+
+Speaker
+
+I want you.
+
+Speaker
+
+To set their color to Dodger Blue and Dodger Blue is a named color so you can literally just use exactly that.
+
+Speaker
+
+And I want you to set the size to
+
+Speaker
+
+20 pixels.
+
+Speaker
+
+Also, I want you to remove this underline.
+
+Speaker
+
+Now I've given you a stretch goal as well.
+
+Speaker
+
+But a hover state on these links said the colour changes to future when the cursor hovers over them.
+
+Speaker
+
+I'm remember, with targeting these links only, these green links,
+
+Speaker
+
+should not.
+
+Speaker
+
+Okay, pause now.
+
+Speaker
+
+Have a good at that.
+
+Speaker
+
+And I'll see you back here in just a moment and we'll have a look together.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+Let's set up the links container selector
+
+Speaker
+
+on the A.
+
+Speaker
+
+Right, so we want this color of Dodger Blue.
+
+Speaker
+
+and we want to set the font size to 20 pixels.
+
+Speaker
+
+And then we can get rid of that underlying with text decoration.
+
+Speaker
+
+That is looking pretty good. Now for the stretch goal we want to put a hover state on them.
+
+Speaker
+
+Now to do that.
+
+Speaker
+
+We basically want to do the same thing again, so we're going to select.
+
+Speaker
+
+Links container.
+
+Speaker
+
+And...
+
+Speaker
+
+Anchor.
+
+Speaker
+
+But now we want the colon.
+
+Speaker
+
+And then hover, so that's the pseudo element for the hover state.
+
+Speaker
+
+And then we just write our CSS as per normal.
+
+Speaker
+
+So we just want the color.
+
+Speaker
+
+future.
+
+Speaker
+
+And let's just check that's working.
+
+Speaker
+
+And yes it is.
+
+Speaker
+
+So we've successfully targeted our links in different ways depending on where they are.
+
+Speaker
+
+in the layout.
+
+Speaker
+
+Now, you might also remember...
+
+Speaker
+
+that up here we have already got this A selector.
+
+Speaker
+
+where we're setting a margin to 10 pixels.
+
+Speaker
+
+That's doing its job. If we take that out...
+
+Speaker
+
+Well look, we get this sort of horrible mush of links, which is just really confusing to look at.
+
+Speaker
+
+So we're going to keep that.
+
+Speaker
+
+still applying to both of those links.
+
+Speaker
+
+So the compound selectors we've just created,
+
+Speaker
+
+override anything that's in there.
+
+Speaker
+
+if we now change the color here to red.
+
+Speaker
+
+Nothing happened.
+
+Speaker
+
+But anything which is not being specified in these compounds will still stand and
+
+Speaker
+
+And that is useful.
+
+Speaker
+
+because we want that margin of chem pixels to
+
+Speaker
+
+apply to all of our
+
+Speaker
+
+Okay, so that is compound selectors in action.
+
+Speaker
+
+In the next grim, we need to look at them in terms of specificity.
+
+Speaker
+
+When you're ready?
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, let's talk about compound selectors and specificity.
+
+Speaker
+
+So before, when we were working on our job adverts...
+
+Speaker
+
+We created these compound selectors.
+
+Speaker
+
+And if you'll remember, we've also got this single
+
+Speaker
+
+anchor tag selector right here. And if we were to add anything here, for example, a color of pink.
+
+Speaker
+
+nothing's going to happen.
+
+Speaker
+
+because these have higher specificity.
+
+Speaker
+
+And it's nothing to do of course with the position. So if we cut and paste it below them.
+
+Speaker
+
+still nothing at all happens.
+
+Speaker
+
+So that really makes it clear that these have a higher specificity than the single A tag.
+
+Speaker
+
+That also begs the question.
+
+Speaker
+
+How do you calculate specificity?
+
+Speaker
+
+with compound selectors.
+
+Speaker
+
+And to understand that, we need to go back to our CSS points.
+
+Speaker
+
+So if you remember,
+
+Speaker
+
+element.
+
+Speaker
+
+gets one point.
+
+Speaker
+
+A class gets 10 points.
+
+Speaker
+
+and an ID gets 100 points.
+
+Speaker
+
+And to calculate them on a compound, all we need to do is add them together.
+
+Speaker
+
+together.
+
+Speaker
+
+So the class at container is worth 10 points.
+
+Speaker
+
+and the anchor is worth 1 point. So this gets 11.
+
+Speaker
+
+This will also have 11.
+
+Speaker
+
+And this of course will only have
+
+Speaker
+
+one point.
+
+Speaker
+
+And that's why it is beaten in specificity.
+
+Speaker
+
+by these compound selectors.
+
+Speaker
+
+Okay, that's quite neat, right? It hasn't caused us any problems, so...
+
+Speaker
+
+Why the controversy?
+
+Speaker
+
+This is a pretty simple example.
+
+Speaker
+
+And it's a bit hard to mock up a more complex example without getting really contrived or creating a massive code base.
+
+Speaker
+
+But why don't we try a little game?
+
+Speaker
+
+I just want you to focus for a moment on this key requirements list right here.
+
+Speaker
+
+So this list is coming from the HTML that we've got if I just move the mini browser out of the way for a moment.
+
+Speaker
+
+So we've got this UL.
+
+Speaker
+
+and the LI elements right in the middle.
+
+Speaker
+
+Now what I'm going to do...
+
+Speaker
+
+is
+
+Speaker
+
+HTML which is not strictly speaking necessary for this layout just for the purposes of this game.
+
+Speaker
+
+And I'm also going to add to somewhat more complicated compound selectors.
+
+Speaker
+
+I'll pay it in the CSS.
+
+Speaker
+
+underneath this UL. In fact, I'll put them underneath this challenge.
+
+Speaker
+
+What I'm then going to ask you to do is to look through the HTML and the new CSS selectors that I'll put.
+
+Speaker
+
+down here.
+
+Speaker
+
+And figure out...
+
+Speaker
+
+What color?
+
+Speaker
+
+This key requirements list is going to be.
+
+Speaker
+
+I'm closing the mini browser now.
+
+Speaker
+
+Don't look at the mini browser again until you've made your guess.
+
+Speaker
+
+Okay, so here are the new compound selectors. As you can see, they are somewhat more complicated.
+
+Speaker
+
+Look through them, look through the HTML.
+
+Speaker
+
+see if you can decide what color you think that unordered list is going to be when you hit preview up here to reopen the mini browser.
+
+Speaker
+
+Poor's now.
+
+Speaker
+
+Have a think about that.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, so hopefully you got that right.
+
+Speaker
+
+Well, before we reopen the mini browser,
+
+Speaker
+
+Let's do some math.
+
+Speaker
+
+So if we come down here onto this one which has the color red
+
+Speaker
+
+Well...
+
+Speaker
+
+We can see that we've got body,
+
+Speaker
+
+section.
+
+Speaker
+
+And
+
+Speaker
+
+So those will have 1 point each, so that's what we're going to do.
+
+Speaker
+
+one two three four.
+
+Speaker
+
+And then we've got Add Container and General List. These are classes which have 10 points each.
+
+Speaker
+
+That gives us a total of 24.
+
+Speaker
+
+Let's come up onto this green one here.
+
+Speaker
+
+Now again, we've got section UL and L.
+
+Speaker
+
+They will have three
+
+Speaker
+
+Add container is a class so that has 10 points that takes us to 13.
+
+Speaker
+
+and
+
+Speaker
+
+I'm sorry.
+
+Speaker
+
+have 100 points.
+
+Speaker
+
+So that gives us a title here.
+
+Speaker
+
+1, 113.
+
+Speaker
+
+So that means that green should be the clear winner.
+
+Speaker
+
+And let's open the mini browser and see what we've got.
+
+Speaker
+
+Yes, there we are.
+
+Speaker
+
+These key requirements are listed as green, so well done.
+
+Speaker
+
+if you manage to work that out.
+
+Speaker
+
+Now...
+
+Speaker
+
+This was quite contrived with extra divs and IDs going on, and I just did it really as an example to show you how hard it can be to
+
+Speaker
+
+figure out.
+
+Speaker
+
+What is going to win in a specificity battle?
+
+Speaker
+
+Now...
+
+Speaker
+
+It's totally doable, it's not like it's hard maths, it's only edition.
+
+Speaker
+
+But trying to calculate those points is annoying.
+
+Speaker
+
+and it's cognitive load that you don't need.
+
+Speaker
+
+On a CSS file that's a thousand lines long,
+
+Speaker
+
+You'll really wish you ever wrote it.
+
+Speaker
+
+had kept it simple.
+
+Speaker
+
+So
+
+Speaker
+
+That's a brief introduction to compound selectors and specificity.
+
+Speaker
+
+and why we try not to use compound selectors.
+
+Speaker
+
+When you're ready to move on.
+
+Speaker
+
+I'll see you in the next screen.
+
+Speaker
+
+I think that the text that we've got here is just a little bit bunched up and
+
+Speaker
+
+difficult to read.
+
+Speaker
+
+We should space it out a little bit.
+
+Speaker
+
+we can do that really easily with the CSS line height properties.
+
+Speaker
+
+So, have a look at this slide.
+
+Speaker
+
+This is what we're aiming for.
+
+Speaker
+
+text has just got a little bit more space between each line in
+
+Speaker
+
+It's easier on the eye.
+
+Speaker
+
+easier to read.
+
+Speaker
+
+Here's a challenge for you.
+
+Speaker
+
+can you increase the line height of the paragraph text so that is all of this text here and of course up in section 1 can you increase
+
+Speaker
+
+that to a line height of 2.
+
+Speaker
+
+23 picks
+
+Speaker
+
+What's now?
+
+Speaker
+
+and have a go at that.
+
+Speaker
+
+Okay, did you see much difference when you did that?
+
+Speaker
+
+Did you see any difference?
+
+Speaker
+
+Well if you stopped to my instructions you would have done something like this. You selected the power
+
+Speaker
+
+autograph text.
+
+Speaker
+
+and then you did line height and you added
+
+Speaker
+
+23 pixels right there.
+
+Speaker
+
+And nothing is happening.
+
+Speaker
+
+something odd is going on here.
+
+Speaker
+
+Maybe you've guessed it.
+
+Speaker
+
+But the problem.
+
+Speaker
+
+is specificity. So can you pause again?
+
+Speaker
+
+And see if you can debug this CSS.
+
+Speaker
+
+find out why this line height property is not having any
+
+Speaker
+
+Pause now!
+
+Speaker
+
+and do some investigating.
+
+Speaker
+
+Okay, did you find it?
+
+Speaker
+
+Well, on a code-based this size, we could just scroll down and find the problem.
+
+Speaker
+
+But what are you going to do when there's a thousand lines of CSS? What are you going to do when there's 8,000 lines?
+
+Speaker
+
+Well, you
+
+Speaker
+
+You have got that.
+
+Speaker
+
+have tools.
+
+Speaker
+
+If you look in DevTools, you'll actually see that the CSS we just wrote, this line height property,
+
+Speaker
+
+has got a line through it.
+
+Speaker
+
+And that is telling us that the browser is ignoring it.
+
+Speaker
+
+because something with a higher specificity
+
+Speaker
+
+getting in the way.
+
+Speaker
+
+And we can see right here.
+
+Speaker
+
+that we have got.
+
+Speaker
+
+A section.
+
+Speaker
+
+and a P container.
+
+Speaker
+
+Together.
+
+Speaker
+
+Now, let's just scroll down a little bit.
+
+Speaker
+
+And the...
+
+Speaker
+
+there it is right here. So this section and the P together.
+
+Speaker
+
+have got a higher specificity than the P or
+
+Speaker
+
+on its own.
+
+Speaker
+
+And remember, it's nothing to do with the order of CSS. I could create a p tag right here underneath that.
+
+Speaker
+
+and set the line height to what we want it to be.
+
+Speaker
+
+23 pixels, it's still not going to have any effect.
+
+Speaker
+
+This one just has a higher specificity score.
+
+Speaker
+
+So let's delete that.
+
+Speaker
+
+And then we need to decide.
+
+Speaker
+
+Do we want to set the line height specifically on the paragraph text in the sections?
+
+Speaker
+
+Well that would actually exclude the footer.
+
+Speaker
+
+So I would say, let's delete this one here.
+
+Speaker
+
+And there we are. Now we're getting the line height we want.
+
+Speaker
+
+because the selector that we just set up up here
+
+Speaker
+
+has now come.
+
+Speaker
+
+come into play.
+
+Speaker
+
+So that was a bit mean of me.
+
+Speaker
+
+added some CSS without you knowing anything about it.
+
+Speaker
+
+But that was to give you a mini taste of real life.
+
+Speaker
+
+Sometimes you add some CSS to a code base and you find that it doesn't do what you expect.
+
+Speaker
+
+When that happens, you have to think about specificity and
+
+Speaker
+
+start investigating.
+
+Speaker
+
+And of course these def tools are here.
+
+Speaker
+
+Okay, now that text is a bit easier to read and things are looking good.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+When it comes to managing style conflicts in CSS, so far we've seen how the order of our CSS and the specificity of the selectors can both play a role.
+
+Speaker
+
+Now, there are other mechanisms to manage style conflicts, but actually we're not going to cover them all because that would get too complicated.
+
+Speaker
+
+However, I do want to look at the important keyword.
+
+Speaker
+
+Before I show you how the important keyword works, I want to give you a quick warning. What I'm about to show you is a tool which is often misused.
+
+Speaker
+
+So I'm showing it to you here, not because I want you to use it all over the place, but because you'll likely see it in the code bases you work on in the future.
+
+Speaker
+
+And also, because there are some specific circumstances where it is useful.
+
+Speaker
+
+Let's see it in action and then we'll talk about that more.
+
+Speaker
+
+So here's a really simple layout for a jokey magazine article about sofa archaeology. It's got a title and a subtitle and an image, and we can see all of that in the CSS. We've got the class of title.
+
+Speaker
+
+and the class of subtitle.
+
+Speaker
+
+and it's the text that we'll be focusing on.
+
+Speaker
+
+at the moment both the title and the subtitle a purple.
+
+Speaker
+
+And that's slightly confusing at first glance of the CSS because the subtitle has got the color dark green.
+
+Speaker
+
+And what's more, it comes last in the style sheet.
+
+Speaker
+
+So we must have a conflict and if we look up we can see why.
+
+Speaker
+
+This selector covers both the subtitle and the parent container.
+
+Speaker
+
+And that gives this selector
+
+Speaker
+
+high specificity.
+
+Speaker
+
+So it wins through.
+
+Speaker
+
+Okay, let's use the important keyword to overall it.
+
+Speaker
+
+So I'm going to come down here and in between dark green and the semi-colon,
+
+Speaker
+
+I'm going to use the important keyword, which just involves using the exclamation mark.
+
+Speaker
+
+and then the word important.
+
+Speaker
+
+And as soon as I do that, this subtitle turns dark green.
+
+Speaker
+
+Now this is not a good idea.
+
+Speaker
+
+It would be a much better idea to deal with the problem at its root, which is up here.
+
+Speaker
+
+Why? When this is so easy?
+
+Speaker
+
+Well, because CSS is confusing enough already.
+
+Speaker
+
+When we use the important keyword, we're disrupting the natural cascading order of CSS.
+
+Speaker
+
+And that makes maintainability
+
+Speaker
+
+Now we've used the important keyword "a developer trying to make changes has to understand why certain styles aren't being applied as expected."
+
+Speaker
+
+So just using important as a lazy hack,
+
+Speaker
+
+is a bad idea.
+
+Speaker
+
+So when can it be useful?
+
+Speaker
+
+I'll think for a moment about accessibility.
+
+Speaker
+
+You've probably seen widgets on sites that allow users to set font size or change color schemes,
+
+Speaker
+
+So is to make that browsing of the page easier.
+
+Speaker
+
+When coding something like that, depending on how the styles work in that site,
+
+Speaker
+
+It might be necessary to use the important keyword to
+
+Speaker
+
+overall all other styles and ensure the users choices
+
+Speaker
+
+respected.
+
+Speaker
+
+So there are the just a bit uses for it and you should be aware of it.
+
+Speaker
+
+just don't use it as a shortcut.
+
+Speaker
+
+Okay, no challenge needed here.
+
+Speaker
+
+Let's move on.
+
+Speaker
+
+Okay, let's think...
+
+Speaker
+
+about links and buttons.
+
+Speaker
+
+Okay, let's think about links and buttons.
+
+Speaker
+
+because sometimes they get confused and
+
+Speaker
+
+appearances.
+
+Speaker
+
+Be deceptive.
+
+Speaker
+
+Here is a banner ad for a Ferrari track day.
+
+Speaker
+
+It's just a background image on a div with some text and...
+
+Speaker
+
+But wait that, these buttons!
+
+Speaker
+
+look a bit suspicious to me. One of them is offering us some bookings and the other is offering to show us some other offers. Now,
+
+Speaker
+
+Both of those things look like they're going to take me to a new page.
+
+Speaker
+
+This is navigation.
+
+Speaker
+
+patterns shouldn't be doing that.
+
+Speaker
+
+And that brings us to a very good question.
+
+Speaker
+
+When should I use a link and when should I use a button?
+
+Speaker
+
+We should use buttons for
+
+Speaker
+
+the effect the websites front end or back end.
+
+Speaker
+
+Think JavaScript.
+
+Speaker
+
+think about interaction.
+
+Speaker
+
+And we should be using links for navigation to somewhere on the same page, somewhere within the site.
+
+Speaker
+
+elsewhere on the internet.
+
+Speaker
+
+So that's the big divide, links a for navigation buttons of the interaction. Okay, you might be thinking, well, half of the sites I visit break that rule. I'm always clicking on buttons to take me places.
+
+Speaker
+
+Well, you might think that.
+
+Speaker
+
+unless you're inspecting the site using DevTools or looking at the source HTML.
+
+Speaker
+
+You can't be sure.
+
+Speaker
+
+because you can style up a link to look exactly like a button. So you might ask, "Well, why would I want to do?"
+
+Speaker
+
+do that.
+
+Speaker
+
+then the difference seems rather unimportant.
+
+Speaker
+
+Well, you'd be wrong.
+
+Speaker
+
+This is an accessibility issue.
+
+Speaker
+
+Speed readers and assistive technologies rely on the developer making the right decisions.
+
+Speaker
+
+So to keep your site accessible.
+
+Speaker
+
+You need to take the time.
+
+Speaker
+
+to get this right.
+
+Speaker
+
+Let's have a quick look at the CSS.
+
+Speaker
+
+making an anchor tag look like a button is fairly straightforward and
+
+Speaker
+
+And I've set up a challenge for you right here.
+
+Speaker
+
+I want you to change these buttons into links so you can do that over in index.html.
+
+Speaker
+
+I want you to style them like buttons so they look exactly the same. You've got the CSS here.
+
+Speaker
+
+and you can reuse most of it. Warning,
+
+Speaker
+
+This is going to cause a layout issue.
+
+Speaker
+
+Don't worry, we'll deal with that.
+
+Speaker
+
+a bit later.
+
+Speaker
+
+Okay, pause now.
+
+Speaker
+
+Have a go at this and I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+So over in index.html.
+
+Speaker
+
+I am just going to delete these buttons and replace them with anchor tags and I'll just give them some empty
+
+Speaker
+
+DH refs.
+
+Speaker
+
+And let's just close them as well.
+
+Speaker
+
+Now when I hit save,
+
+Speaker
+
+You can see that we have broken that, which is absolutely fine. Back in the CSS then.
+
+Speaker
+
+Well, we've got...
+
+Speaker
+
+All of the CSS properties that we need.
+
+Speaker
+
+Now there are no buttons in our layout, we can just delete button and replace it with
+
+Speaker
+
+A and look what happens now our links look
+
+Speaker
+
+buttons.
+
+Speaker
+
+We have still got the underline which we don't want.
+
+Speaker
+
+Let's come in here and set the text decoration to none. And there we are, we have successfully made the links.
+
+Speaker
+
+look exactly like the buttons.
+
+Speaker
+
+But look what's happened here.
+
+Speaker
+
+The buttons are now on top of the text.
+
+Speaker
+
+Don't worry about that for now.
+
+Speaker
+
+This is a great mystery and we're going to clear it up in the very near future.
+
+Speaker
+
+But I'm going to leave it like this for now.
+
+Speaker
+
+back to our layout and
+
+Speaker
+
+and do some work on our links.
+
+Speaker
+
+And then we'll think about this issue.
+
+Speaker
+
+in a couple of times.
+
+Speaker
+
+of Scrimps Time.
+
+Speaker
+
+When you're ready to move on, I'll see you there.
+
+Speaker
+
+Okay, let's get started.
+
+Speaker
+
+Okay, let's get started on these buttons. We have got two
+
+Speaker
+
+in the first section and two in the second section.
+
+Speaker
+
+Now, if you look at this slide, you can see that we've actually got three different types of button.
+
+Speaker
+
+And that is because more info and contact are
+
+Speaker
+
+actually the same pattern.
+
+Speaker
+
+We've also got a hover and active state using this light yellow background colour and
+
+Speaker
+
+And that is going to be the same on...
+
+Speaker
+
+all of the buttons.
+
+Speaker
+
+And in this box, we have got all of the padding, border radius and font weight information that you need.
+
+Speaker
+
+So let's jump straight into the challenge. Your challenge is to style the four button style links as per the specifications on this slide.
+
+Speaker
+
+group the selectors where possible to
+
+Speaker
+
+code.
+
+Speaker
+
+dry. And I've just put a warning here, think about what would make good
+
+Speaker
+
+class names for the
+
+Speaker
+
+these button links. There's no right or wrong answer to that, I just want you to bear it in mind.
+
+Speaker
+
+course now.
+
+Speaker
+
+Give it your best shot.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hopefully that went just fine.
+
+Speaker
+
+So the first thing that we need to do is head over to index.html.
+
+Speaker
+
+and give these buttons some class names. Now I'm just going to minimize the mini browser.
+
+Speaker
+
+In terms of how we name these buttons, I'm going to call them BTN Dark, BTN Mid, and
+
+Speaker
+
+BTN Lite.
+
+Speaker
+
+Now I'm doing that.
+
+Speaker
+
+to be both specific.
+
+Speaker
+
+But vague.
+
+Speaker
+
+specific in that they're descriptive but vague as in "I'm not using the exact colours, I'm not saying purple or white".
+
+Speaker
+
+And that's because if in the future the colours change, these class names will still make sense as long as there are three different tones.
+
+Speaker
+
+Okay, so let's come down into index.html and
+
+Speaker
+
+and we're going to set up some class names.
+
+Speaker
+
+right.
+
+Speaker
+
+in these links.
+
+Speaker
+
+Okay, so let's get those class names sorted out right here.
+
+Speaker
+
+the first two, we've got class.
+
+Speaker
+
+And
+
+Speaker
+
+We've both got BTN hyphen.
+
+Speaker
+
+Now, the cup one.
+
+Speaker
+
+The first one is going to be BTN Dark, the second one is BTN Mid.
+
+Speaker
+
+And now let's come down to section 2 and I will create some classes in here.
+
+Speaker
+
+And the first one will be BTN light and the second one will be BTN mid.
+
+Speaker
+
+Okay, we need to save index.html.
+
+Speaker
+
+and now let's head back to the CSS.
+
+Speaker
+
+So let's open up the Mini Browser and we can see the links that we're targeting right here.
+
+Speaker
+
+So let's make a start.
+
+Speaker
+
+I'm going to start off with...
+
+Speaker
+
+BGN.
+
+Speaker
+
+Doc.
+
+Speaker
+
+And that is going to be this first button that we've got here.
+
+Speaker
+
+will be grouping the styles together as much as possible
+
+Speaker
+
+So all I want to put on this one here is the background color and the font color.
+
+Speaker
+
+So the background colour that I want...
+
+Speaker
+
+Is the purple?
+
+Speaker
+
+And see.
+
+Speaker
+
+Text color that I want is white smoke.
+
+Speaker
+
+And there we are, we can see that reflected in the layout already.
+
+Speaker
+
+Let's move on to BTNMID.
+
+Speaker
+
+The background colour for that one is going to be
+
+Speaker
+
+F0 is 0, Ff.
+
+Speaker
+
+and the colour is going to be the dark purple.
+
+Speaker
+
+Okay, now that scroll down, in the second section where we can see that the mid button is of course already there,
+
+Speaker
+
+Let's make a start on the light button.
+
+Speaker
+
+BTRN lights.
+
+Speaker
+
+And the background colour for this one is white smoke.
+
+Speaker
+
+And the color property again is the dark purple. Let's just see if that's worked.
+
+Speaker
+
+Okay.
+
+Speaker
+
+That is looking pretty good.
+
+Speaker
+
+Now, before we do anything else, let's think about the hover and action.
+
+Speaker
+
+state.
+
+Speaker
+
+Now these ones we can group together because it is the same hover and active state on each of the three buttons.
+
+Speaker
+
+So I need to just list out all of these selectors.
+
+Speaker
+
+And now we need to make these into pseudo-selectors for the hover state.
+
+Speaker
+
+So if I just put the cursor in the right position, it's colon.
+
+Speaker
+
+And...
+
+Speaker
+
+Now if I just copy all of those.
+
+Speaker
+
+He lost three.
+
+Speaker
+
+We can make into...
+
+Speaker
+
+And now we have got all of these pseudo-selectors we need.
+
+Speaker
+
+so we can open up the curly braces.
+
+Speaker
+
+And then let's give these the background color of F3E 885.
+
+Speaker
+
+and then the color is going to be our regular dark color that we've used quite a lot already and we just need the semi-colon on the end. Okay, let's just check that's working.
+
+Speaker
+
+And it is working on the two buttons in the first section.
+
+Speaker
+
+and in the second section.
+
+Speaker
+
+pretty good but these buttons still look awful.
+
+Speaker
+
+And that's because we need to now set up.
+
+Speaker
+
+all of the general properties that are shared by all of the
+
+Speaker
+
+So we could actually just copy
+
+Speaker
+
+All of this.
+
+Speaker
+
+I'm going to come up right to the top.
+
+Speaker
+
+And I will paste those in there. Now, of course, we can delete this hover, pseudo element part.
+
+Speaker
+
+And then we just need the curly braces. Now we can list out all of our shared.
+
+Speaker
+
+properties.
+
+Speaker
+
+So we need firstly the padding and that is 10 pixels and 19 pixels left and right. There we are already looking much better. We need the border radius.
+
+Speaker
+
+And that is 4.6 pixels.
+
+Speaker
+
+We need a font weight of 500.
+
+Speaker
+
+And the last thing we need to deal with is the dotted underline we've got on the
+
+Speaker
+
+the button text.
+
+Speaker
+
+And we can get rid of that.
+
+Speaker
+
+with the text.
+
+Speaker
+
+their creation property if we set it to none.
+
+Speaker
+
+Okay, that is looking pretty good.
+
+Speaker
+
+buttons are looking how we want the hover and active state is working.
+
+Speaker
+
+My only slight problem is the space we've got.
+
+Speaker
+
+the paragraph text and the button.
+
+Speaker
+
+And we've got the same problem here.
+
+Speaker
+
+And we're going to come to that.
+
+Speaker
+
+next.
+
+Speaker
+
+So when you're ready to move on.
+
+Speaker
+
+I'll see you in the next scrim, over to index.html.
+
+Speaker
+
+and give these buttons some class name these but all them BT specific not use there are three different
+
+Speaker
+
+Okay, so let's get those class two. We've got BTN one is going to be Bob BTN hyphen.
+
+Speaker
+
+Now, the cut one.
+
+Speaker
+
+The first one is going to be and I will create some classes in here.
+
+Speaker
+
+And the first one will be BTN light.
+
+Speaker
+
+BCSS.
+
+Speaker
+
+And that is going to be this first button that we've here is the bite smoke.
+
+Speaker
+
+And the background colour for this, okay!
+
+Speaker
+
+And once we can group together because it is the same hover and active state on each of the three Buddos selectors we can make into
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+And now we have got all
+
+Speaker
+
+All of these similar dark.
+
+Speaker
+
+all of
+
+Speaker
+
+properties. So we need firstly to move on.
+
+Speaker
+
+I'll see you in the next scrim.
+
+Speaker
+
+Okay, let's get started on these.
+
+Speaker
+
+Okay, let's talk about block.
+
+Speaker
+
+inline and inline block
+
+Speaker
+
+We need to see if we can figure out what's going on here with these links that we've styled like buttons.
+
+Speaker
+
+Somehow, the margin that we've got in our CSS, we've got this margin top of 20 pixels here.
+
+Speaker
+
+This
+
+Speaker
+
+is not working.
+
+Speaker
+
+Let's just try whacking that up to 200 or even 2000.
+
+Speaker
+
+These links are not moving, so something is going wrong here.
+
+Speaker
+
+So what's actually happening?
+
+Speaker
+
+Well, let's go look at...
+
+Speaker
+
+block elements to start with.
+
+Speaker
+
+block elements stack on top of each other.
+
+Speaker
+
+Div PH1 are all examples of block elements and of course there are plenty of others.
+
+Speaker
+
+You can set the height and margin top and bottom on a block.
+
+Speaker
+
+And we can see block elements in action right here. We've got this H2.
+
+Speaker
+
+So if I go to index.html and I just
+
+Speaker
+
+copy this H2 and we hit save.
+
+Speaker
+
+Well,
+
+Speaker
+
+And of course we see the H2 stacked on
+
+Speaker
+
+top of each other.
+
+Speaker
+
+And we already know in the CSS that...
+
+Speaker
+
+We can have a margin top here if we want to say.
+
+Speaker
+
+100 pixels, so there we are, the margin top.
+
+Speaker
+
+is respected.
+
+Speaker
+
+Okay, let's put that back.
+
+Speaker
+
+how it was.
+
+Speaker
+
+Okay, next we come on to inline elements.
+
+Speaker
+
+Now, in line elements, side by side.
+
+Speaker
+
+span and A are examples of inline elements.
+
+Speaker
+
+And this makes a certain amount of sense because if you have a link or a span in a text, you don't want that to take a new line.
+
+Speaker
+
+Now, we can't set the height and margin top and bottom on an inline element.
+
+Speaker
+
+Now that is crucial to us right here.
+
+Speaker
+
+Because what we've got with these links
+
+Speaker
+
+is inline elements. And what we're trying to do with this CSS
+
+Speaker
+
+is set the margin top.
+
+Speaker
+
+Well, that is not possible within line elements.
+
+Speaker
+
+But we can do something about that because inline block elements are
+
+Speaker
+
+coming to the rescue.
+
+Speaker
+
+So in the block elements, sit side by side just like in line elements.
+
+Speaker
+
+button and input are good examples of inline block elements.
+
+Speaker
+
+and we can set the height and margin top and
+
+Speaker
+
+bottom.
+
+Speaker
+
+So in a way, within line block elements, we are getting the best of both worlds.
+
+Speaker
+
+They're sitting in line.
+
+Speaker
+
+But we can control both the height and the height.
+
+Speaker
+
+the margin.
+
+Speaker
+
+So what do we need to do to
+
+Speaker
+
+get these links behaving exactly like buttons in terms of having this margin top respected.
+
+Speaker
+
+I've put a little challenge for you right here.
+
+Speaker
+
+All I want you to do is
+
+Speaker
+
+is set the display property of the links to
+
+Speaker
+
+inline block.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+Have a go at that.
+
+Speaker
+
+And I'll see you back here in just a moment.
+
+Speaker
+
+Okay, so hopefully you managed to do that just fine.
+
+Speaker
+
+It literally is just the case of adding the display property to the links.
+
+Speaker
+
+and setting that to inline.
+
+Speaker
+
+And as soon as we do that,
+
+Speaker
+
+the links fall into place. Now we can control the margin top.
+
+Speaker
+
+So if we do want to whack it up to 200.
+
+Speaker
+
+they're going to disappear off the page.
+
+Speaker
+
+We don't want to do that. We could take it down to zero.
+
+Speaker
+
+And now they sit right at the bottom of the text.
+
+Speaker
+
+they don't overlap.
+
+Speaker
+
+There are 20 pixels.
+
+Speaker
+
+is just right.
+
+Speaker
+
+Great, we have solved the mystery of the overlapping buttons. Let's see if we can put this knowledge to good use back in our layout.
+
+Speaker
+
+when you're ready to move on.
+
+Speaker
+
+I'll see you there.
+
+Speaker
+
+Okay, so these buttons are looking fine in themselves.
+
+Speaker
+
+But the space between them and the paragraph text is really bothering me.
+
+Speaker
+
+Now, I'm thinking that we could try is to put some margin on these buttons.
+
+Speaker
+
+So why don't you do that now?
+
+Speaker
+
+Just come in here to this group selector and see if you can give the buttons a margin of 10 pixels just to increase the space between the text and the button. Pause now and try that.
+
+Speaker
+
+Okay, did it work?
+
+Speaker
+
+No, it didn't.
+
+Speaker
+
+If we come in here and we put a margin on these buttons, well look what happens. They space out right and left.
+
+Speaker
+
+but it doesn't increase the space between the text and the button.
+
+Speaker
+
+Now that's happening because these links are inline elements, so margin is not recognized on the top of
+
+Speaker
+
+the bottom. So
+
+Speaker
+
+We might as well go ahead.
+
+Speaker
+
+But the space between them and the paragraph text is really bothering me.
+
+Speaker
+
+Now, I'm think that we could try is to put some margin on these buttons.
+
+Speaker
+
+So why don't you do that now?
+
+Speaker
+
+Just come in here to this group selector and see if you can give the buttons a margin of 10 pixels just to increase the space between the text and the button. Pause now and try that.
+
+Speaker
+
+Okay, did it work?
+
+Speaker
+
+No, it didn't.
+
+Speaker
+
+If we come in here and we put a margin on these buttons, well look what happens.
+
+Speaker
+
+space out right and left.
+
+Speaker
+
+but it doesn't increase the space between the text and the button.
+
+Speaker
+
+Now that's happening because these links are in line elements, so margin is not recognized on the top of
+
+Speaker
+
+the bottom. So,
+
+Speaker
+
+We might as well go ahead and delete that.
+
+Speaker
+
+Now the problem with these being recognized as inline elements is that if we were to come up here to the P selector,
+
+Speaker
+
+and take away the default margin by setting the margin to zero.
+
+Speaker
+
+Well, look what happens now, we have got overlap. And that is the worst look on a website.
+
+Speaker
+
+So let's go back to our default margin, but we do need to solve this problem.
+
+Speaker
+
+So, bye.
+
+Speaker
+
+course, this selector.
+
+Speaker
+
+And take these being recognized as inline elements is that if we were to come up here to the P selector,
+
+Speaker
+
+and take away didn't.
+
+Speaker
+
+If we come in here and we put a margin on these buttons, well, look what happens.
+
+Speaker
+
+They space out right and left.
+
+Speaker
+
+but it doesn't increase the space between the text.
+
+Speaker
+
+and the button.
+
+Speaker
+
+Now that's happening because these links are inline elements so margin is not recognized on the top and
+
+Speaker
+
+the bottom.
+
+Speaker
+
+So, we
+
+Speaker
+
+might as well go ahead and delete that.
+
+Speaker
+
+Now the problem with these being recognized as inline elements is that if we were to come up here to the P selector
+
+Speaker
+
+and take away the default margin by setting the margin to zero,
+
+Speaker
+
+Well look what happens now, we have got overlap and that is the worst look on a website.
+
+Speaker
+
+ever.
+
+Speaker
+
+So let's go back to our default margin, but we do need to solve this problem.
+
+Speaker
+
+So.
+
+Speaker
+
+I've got, of course, a challenge for you.
+
+Speaker
+
+I want you to use the display property to make the new links behave more like buttons.
+
+Speaker
+
+I've left that quite general because...
+
+Speaker
+
+because I think you know what to do here.
+
+Speaker
+
+All is now, get that sorted out, it's only one line of CSS.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+just environments.
+
+Speaker
+
+Okay, hopefully you managed to get that sorted.
+
+Speaker
+
+You should have remembered that all we need here is the display property.
+
+Speaker
+
+And we're going to display these buttons.
+
+Speaker
+
+and style links as in line.
+
+Speaker
+
+And as soon as we do that,
+
+Speaker
+
+look what's happened.
+
+Speaker
+
+space themselves out nicely and what's more.
+
+Speaker
+
+If we ever wanted to put margin on them, we could.
+
+Speaker
+
+Now if we put the 10 pixels,
+
+Speaker
+
+Look, they get bigger, we can have a hundred pixels if we want.
+
+Speaker
+
+And likewise, if we go back to the P selector,
+
+Speaker
+
+If we did want to take the margin here down to zero,
+
+Speaker
+
+at least the buttons don't overlap. They are, of course, too crowded.
+
+Speaker
+
+but they don't overlap with the text.
+
+Speaker
+
+So that
+
+Speaker
+
+exactly what we wanted.
+
+Speaker
+
+Okay, now the layout is looking good. We've got a little bit more to do in terms of refactoring and we'll come onto that next.
+
+Speaker
+
+Okay, let's look at how we can apply two CSS classes to the same element.
+
+Speaker
+
+why that sometimes a good idea.
+
+Speaker
+
+I'm building myself an app to help me keep an eye on my tech stock.
+
+Speaker
+
+All I want to be able to do is to see a glance if the stock site own a
+
+Speaker
+
+going up.
+
+Speaker
+
+or going down at any given moment.
+
+Speaker
+
+So I've got a pretty clear kind of scheme going on here. The stocks which are rising in price are green.
+
+Speaker
+
+stock switcher, falling in price are red.
+
+Speaker
+
+and the stocks which are not changing.
+
+Speaker
+
+in.
+
+Speaker
+
+And it's really good to see that the Scrimber price is on the up.
+
+Speaker
+
+Now, if we look at the CSS,
+
+Speaker
+
+Just like before, I've done a bit too much work.
+
+Speaker
+
+Look, I've got these three classes here, price up.
+
+Speaker
+
+price down. I'm
+
+Speaker
+
+equal.
+
+Speaker
+
+And there's a lot of repetition going on.
+
+Speaker
+
+This is
+
+Speaker
+
+is not
+
+Speaker
+
+- Right.
+
+Speaker
+
+Now we could do what we did before with the group selectors.
+
+Speaker
+
+So we would say...
+
+Speaker
+
+Christ up.
+
+Speaker
+
+comma
+
+Speaker
+
+And then Christown.
+
+Speaker
+
+etc. etc.
+
+Speaker
+
+Now.
+
+Speaker
+
+That's fine.
+
+Speaker
+
+I think there's something else we could do here, which is going to be even neater.
+
+Speaker
+
+and in the long run even less work.
+
+Speaker
+
+And we're going to do that.
+
+Speaker
+
+by putting two crosses
+
+Speaker
+
+one.
+
+Speaker
+
+So if I go over to index.html, I'm just going to move the mini browser out of the way a second.
+
+Speaker
+
+Now here we've got all of the cars.
+
+Speaker
+
+And then we'll see you next time.
+
+Speaker
+
+And what I'm going to do is I'm going to do this.
+
+Speaker
+
+to do is where we've got the price at the bottom of each card.
+
+Speaker
+
+I'm actually going to add a
+
+Speaker
+
+an extra class.
+
+Speaker
+
+Now, this extra class could go before or after, it doesn't really matter, but to be neat and be consistent, I'm actually just going to put it at the beginning.
+
+Speaker
+
+I'm going to call this new class
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+and could put two classes on one element.
+
+Speaker
+
+All we need to do is list them right here inside these speech marks.
+
+Speaker
+
+space between them.
+
+Speaker
+
+It might feel intuitive that they become a separate or something like that.
+
+Speaker
+
+They are not. That will break it.
+
+Speaker
+
+And of course, if there's no space that would just be completely confusing because that says something completely different.
+
+Speaker
+
+So what we want is...
+
+Speaker
+
+is as many classes as we want.
+
+Speaker
+
+separated by
+
+Speaker
+
+a space.
+
+Speaker
+
+Okay, I'm going to work my way down this code and I'm going to add a class of price to
+
+Speaker
+
+each of these elements at the bottom of each card.
+
+Speaker
+
+And now I'm going to save that.
+
+Speaker
+
+We can head back to index.css. Of course, nothing has changed so far.
+
+Speaker
+
+Now...
+
+Speaker
+
+I'm just going to cut and paste you a quick.
+
+Speaker
+
+challenge.
+
+Speaker
+
+Okay, so here's your challenge. I want you to put all
+
+Speaker
+
+of the shared properties from these three classes here in a new selector for the price class.
+
+Speaker
+
+And then I want you to delete any CSS we no longer need.
+
+Speaker
+
+So pause now.
+
+Speaker
+
+I'll have a go at that and I'll see you back here in just a second.
+
+Speaker
+
+Okay, so let's come in here and we'll create a
+
+Speaker
+
+rice class.
+
+Speaker
+
+And then all we need to do is cut and paste the shared properties.
+
+Speaker
+
+So that's everything by the bottom two properties from each of these three.
+
+Speaker
+
+So let's just take this first one.
+
+Speaker
+
+And I'll just paste it in here.
+
+Speaker
+
+I did that up a little bit.
+
+Speaker
+
+And now I can just come and delete everything that we don't need.
+
+Speaker
+
+From here...
+
+Speaker
+
+I'm from here.
+
+Speaker
+
+I look...
+
+Speaker
+
+Everything is working just as we wanted to, so what we've done is we've combined.
+
+Speaker
+
+All of the shared properties in this one class that they've all got and
+
+Speaker
+
+And then we've put anything more specific, in this case it's the color and the box shadow color.
+
+Speaker
+
+in a separate class
+
+Speaker
+
+We have now got...
+
+Speaker
+
+Two classes.
+
+Speaker
+
+on the same.
+
+Speaker
+
+So...
+
+Speaker
+
+That's a really useful way of working with CSS.
+
+Speaker
+
+you're going to use it a lot more in the future.
+
+Speaker
+
+And you're also going to see some really cool naming conventions that
+
+Speaker
+
+make CSS easier to handle.
+
+Speaker
+
+using techniques like this.
+
+Speaker
+
+We're going to put this to use back in our layout.
+
+Speaker
+
+when you're ready to move on.
+
+Speaker
+
+I'll see you then.
+
+Speaker
+
+So let's look at a better way to deal with the CSS for these
+
+Speaker
+
+cotton style links.
+
+Speaker
+
+based on what we've just learned.
+
+Speaker
+
+I think we can reduce the repetition here.
+
+Speaker
+
+and do this in a neater.
+
+Speaker
+
+easier to understand way.
+
+Speaker
+
+So here's a challenge for you.
+
+Speaker
+
+I want you to refactor the CSS for these button style links using two classes on each link element.
+
+Speaker
+
+And I've just put a warning here.
+
+Speaker
+
+think about what you're going to call the new class that you'll need to create.
+
+Speaker
+
+Now while you're doing this,
+
+Speaker
+
+Just remember that we've got the links and we have also got the
+
+Speaker
+
+hover an active state on those links, so be sure to cover every
+
+Speaker
+
+So I post now.
+
+Speaker
+
+I haven't got this.
+
+Speaker
+
+And I'll see you back here.
+
+Speaker
+
+in just a moment.
+
+Speaker
+
+Okay, hopefully that went just fine.
+
+Speaker
+
+Let's come up here.
+
+Speaker
+
+And
+
+Speaker
+
+right here where we've got all
+
+Speaker
+
+But what if this sort of
+
+Speaker
+
+settings.
+
+Speaker
+
+for our button style links.
+
+Speaker
+
+I am going to...
+
+Speaker
+
+delete all of this.
+
+Speaker
+
+and I'm going to set up a new class here and I'm going to call this class just
+
+Speaker
+
+ATM.
+
+Speaker
+
+The GTN is a good name because we can really see that
+
+Speaker
+
+The BTN has got all of the basic settings.
+
+Speaker
+
+and then BTN Dark, BTN Mid-etc.
+
+Speaker
+
+modifying those base settings. So that's really easy to understand for somebody who's unfamiliar with this code.
+
+Speaker
+
+Now when I made that change you can see that we broke the buttons.
+
+Speaker
+
+Well, that's not surprising. We need to...
+
+Speaker
+
+date the HTML.
+
+Speaker
+
+So if we go over to the HTML file and I'm just going to
+
+Speaker
+
+make the mini browser disappear from moment.
+
+Speaker
+
+And let's come in here and...
+
+Speaker
+
+we're going to add the class of Btn.
+
+Speaker
+
+to these.
+
+Speaker
+
+And now if I hit save...
+
+Speaker
+
+Let's just reopen the mini browser.
+
+Speaker
+
+And there we are, we can see the top buttons are working just fine.
+
+Speaker
+
+again.
+
+Speaker
+
+I'll come down and do the same to these button buttons.
+
+Speaker
+
+and hit save.
+
+Speaker
+
+And there we are now, all of the buttons are working just fine.
+
+Speaker
+
+that is looking good.
+
+Speaker
+
+Now we do have to deal with the hover and act.
+
+Speaker
+
+[BLANK_AUDIO]
+
+Speaker
+
+Again, we can reduce repetition here.
+
+Speaker
+
+We don't need most of this.
+
+Speaker
+
+These are the same for all buttons, so we can actually just set them up on the BTN class.
+
+Speaker
+
+So...
+
+Speaker
+
+Let's go ahead and delete all but two of these.
+
+Speaker
+
+Now I'm going to take these down so they're just beat the end.
+
+Speaker
+
+And we're going to need one for hover.
+
+Speaker
+
+And the second one comes.
+
+Speaker
+
+- I'm B.
+
+Speaker
+
+Now we don't need that comma and let's just get the...
+
+Speaker
+
+on the right line and tidy that up.
+
+Speaker
+
+just a little bit.
+
+Speaker
+
+Let's just check that they're working.
+
+Speaker
+
+And they are.
+
+Speaker
+
+Our layout is looking good.
+
+Speaker
+
+Everything is working and everything is where it should be.
+
+Speaker
+
+And the CSS is looking nice and neat and dry.
+
+Speaker
+
+And so we're done.
+
+Speaker
+
+Now, before we head to the outro,
+
+Speaker
+
+And let's just hear from my colleague, Rafael.
+
+Speaker
+
+about one flex box property that we didn't use in this course,
+
+Speaker
+
+is so useful to know about.
+
+Speaker
+
+And after that, we'll quickly check out some more CSS that you should know about before we wrap things up in the outro.
+
+Speaker
+
+So up until this point, Flexbox has been making our lives so much simpler than it could be.
+
+Speaker
+
+It's one of the best things about CSS4 sure.
+
+Speaker
+
+And now let me introduce you to another feature of Flexbox that is just incredible. Let's have a look at this website right here.
+
+Speaker
+
+So I've got some of my all time favorite YouTube videos showing right here.
+
+Speaker
+
+But the problem is that these thumbnails are continuing along this horizontal line, as you can see by scrolling.
+
+Speaker
+
+Now of course this is a horrible user experience.
+
+Speaker
+
+So let's fix this problem by using something called
+
+Speaker
+
+Flex Wrap.
+
+Speaker
+
+Now check this out.
+
+Speaker
+
+So all I gotta do is tell Flexbox, "Hey!"
+
+Speaker
+
+Take all of the elements inside of this parent's div and wrap it around
+
+Speaker
+
+the max width of the parent element.
+
+Speaker
+
+Okay, let's do it now.
+
+Speaker
+
+Flex wrap.
+
+Speaker
+
+And then we'll say, "Yes, please, we do want to wrap it, so let's do that." And there we go.
+
+Speaker
+
+Isn't that amazing?
+
+Speaker
+
+Do you see how beautiful that looks?
+
+Speaker
+
+Imagine how much more CSS we would need to write without Flexrap.
+
+Speaker
+
+Now before we end the scrim, let me show you two.
+
+Speaker
+
+more values that you can put right in here.
+
+Speaker
+
+So the others would be.
+
+Speaker
+
+No wrap.
+
+Speaker
+
+which takes you back to the default.
+
+Speaker
+
+And then there's "rap".
+
+Speaker
+
+Reverse.
+
+Speaker
+
+which of course reverses the order.
+
+Speaker
+
+So let's take it back to wrap.
+
+Speaker
+
+And there we go.
+
+Speaker
+
+beautiful.
+
+Speaker
+
+So you might well have come across situations like this, where you've got a container,
+
+Speaker
+
+but the text it's holding is actually not staying inside it. Now people often find this behavior of CSS really strange
+
+Speaker
+
+and it spawned a thousand memes just like this one. Now I've actually got this coded up already. So here we have a div and it's got the text inside it. And if we look at the CSS, we can see that we've got the
+
+Speaker
+
+black border right here on the dave and we're also defining the width and the height in pixels.
+
+Speaker
+
+And the outcome is this disaster right here.
+
+Speaker
+
+So basically overflow happens when there's too much content, like we've got here.
+
+Speaker
+
+the size of the container, which is defined here.
+
+Speaker
+
+But why exactly does CSS behave in this way?
+
+Speaker
+
+Well, firstly, it is intended behavior. This is not a CSS bug.
+
+Speaker
+
+And it's designed to do it this way to prevent data loss. So page content is still visible even if the container is too small.
+
+Speaker
+
+If this wasn't the case, you could end up with a situation where some key content was missing and...
+
+Speaker
+
+it made the website unusable.
+
+Speaker
+
+And we'll see an example of that in just a moment.
+
+Speaker
+
+Okay, let's just have an overview of the problems that this can cause. So firstly, we've got layout issues. We're disrupting the intended layout.
+
+Speaker
+
+Then we might be overlapping other elements making content unreadable.
+
+Speaker
+
+Now, this brings up accessibility concerns.
+
+Speaker
+
+Particularly, if users are changing, for example, text size,
+
+Speaker
+
+So they want the text to be bigger, but when they increase the size, it actually overflows its container. And as we said above, make some other content unreadable or unusable.
+
+Speaker
+
+And on top of that, we've also got aesthetic disruption, so visible overflow can make a website look messy and unprofessional.
+
+Speaker
+
+All of this can be very, very annoying. So what can we do about it?
+
+Speaker
+
+Well, firstly, let's examine the default behavior. So the default is overflow visible.
+
+Speaker
+
+And that means if content exceeds the boundaries of its container, it will be visible outside the container. And that is exactly what we've got here.
+
+Speaker
+
+So it's the equivalent of me coming in here.
+
+Speaker
+
+and putting overflow visible.
+
+Speaker
+
+So that is the default setting, which is what gives us the layout we've got right now.
+
+Speaker
+
+Now we can override this, we've got some options, and let's start off with overflow hidden.
+
+Speaker
+
+and overflow hidden will hide the excess content and that's useful for maintaining the layout.
+
+Speaker
+
+But it can of course lead to inaccessible content.
+
+Speaker
+
+So let's come in here, I'm going to delete default and change visible to hidden.
+
+Speaker
+
+Well, as soon as I do that, all of the overflowing content disappears.
+
+Speaker
+
+But now imagine if I go to the HTML and I add a button.
+
+Speaker
+
+So I hit save and where is the button?
+
+Speaker
+
+Well, let's try toggling this property. Now you see it.
+
+Speaker
+
+Now you don't.
+
+Speaker
+
+So what we're actually doing there is hiding some really important content. That button would obviously do something and now it's hidden, it's unusable.
+
+Speaker
+
+So let's just take that away and that shows us the drawback of using overflow hidden.
+
+Speaker
+
+So what are the other options?
+
+Speaker
+
+Well, next up, we've got Overflow Scroll.
+
+Speaker
+
+And that adds a scroll bar to the container.
+
+Speaker
+
+But it will do that even if there is no overflow.
+
+Speaker
+
+Let's just see what I mean, so we'll come in here now and say overflow scroll.
+
+Speaker
+
+And it looks like all of the overflowing content is hidden, but if I come into this box, I can actually scroll left and right and
+
+Speaker
+
+up and down.
+
+Speaker
+
+So all of the content is there and it is viewable.
+
+Speaker
+
+Now I said that it will add the scroll bar even if there is no overflow.
+
+Speaker
+
+Well, what I'm getting at there is that when you set overflow to scroll,
+
+Speaker
+
+browsers with visible scroll bars will always display them
+
+Speaker
+
+even if there's not enough content to overflow.
+
+Speaker
+
+Now scroll bars are operating system specific as well as browser specific to some extent. So pause and have an experiment with this and see what scroll bars you get.
+
+Speaker
+
+Now the third option we've got here is overflow auto.
+
+Speaker
+
+And that adds a scroll bar only when needed.
+
+Speaker
+
+I eat when there's an overflow.
+
+Speaker
+
+So we can just come in here, change that to Auto.
+
+Speaker
+
+And again, I can scroll up and down.
+
+Speaker
+
+and a can scroll left and right.
+
+Speaker
+
+But if we were to remove some of the content...
+
+Speaker
+
+Now, I can scroll left and right, but obviously I can't scroll up and down.
+
+Speaker
+
+There's no need to, there's not enough content for a scroll bar to be necessary.
+
+Speaker
+
+And again, you will see different scroll bar behaviour on different browsers and operating systems.
+
+Speaker
+
+Okay, let's go back to how we were.
+
+Speaker
+
+Now on top of what we've just seen, we have also got overflow x and overflow y.
+
+Speaker
+
+And these help us to control the overflow behavior separately for horizontal and vertical content.
+
+Speaker
+
+to some extent.
+
+Speaker
+
+I've put a warning here.
+
+Speaker
+
+overflow x hidden and overflow y visible.
+
+Speaker
+
+don't work together.
+
+Speaker
+
+So
+
+Speaker
+
+If I come in here and add those properties.
+
+Speaker
+
+What I actually see is all of the overflow hidden.
+
+Speaker
+
+So those two don't work together.
+
+Speaker
+
+but what you could do is have overflow x-hidden and overflow y-scroll.
+
+Speaker
+
+Now, when I come in here...
+
+Speaker
+
+I cannot scroll left to right,
+
+Speaker
+
+I can scroll up and down on the Y axis. So again pause and have a play with that to see it in action.
+
+Speaker
+
+And as setting the overflow X and Y can be a little bit tricky with a few gotchers,
+
+Speaker
+
+It is just worth experimenting and reading up in the docs a little bit if you find you need to deal with the overflow on the X and Y axis separately.
+
+Speaker
+
+So in general, remember that restricting the container dimensions with the width and the height properties for container holding text as we're doing here can
+
+Speaker
+
+be problematic.
+
+Speaker
+
+And that's because there might be more text than you expected when you designed the site, or the text might be larger, for example, if the user has increased their font size for accessibility purposes.
+
+Speaker
+
+Now there are of course good use cases.
+
+Speaker
+
+Imagine if we had a chat board.
+
+Speaker
+
+Well, as the conversation grows, if you didn't do something with the overflow,
+
+Speaker
+
+the containing box would have to be absolutely huge.
+
+Speaker
+
+So it's normal for a chat bot for the container to be set to scroll, at least on the Y axis, so the user can scroll up and down through the conversation.
+
+Speaker
+
+So there's a solid use case for using the overflow property.
+
+Speaker
+
+And if you'd like a bit more information, you can click this link to read up on the MDN.
+
+Speaker
+
+Let's talk about using the CSS float property.
+
+Speaker
+
+Float is used for floating images inside columns of text just like we've got here.
+
+Speaker
+
+So this is kind of typical of newspaper article styling.
+
+Speaker
+
+Let's have a look in practice. I've got a layout like this, and in the HTML I've got an image right here, and then this is the paragraph of text.
+
+Speaker
+
+Now it looks pretty weird at the moment. We've got the image and then the text is just underneath and there's all of this space to the right hand side.
+
+Speaker
+
+So let's head over to the CSS.
+
+Speaker
+
+And I'm going to come in here to the image.
+
+Speaker
+
+And I'm going to give it the float property.
+
+Speaker
+
+And I'm going to set it to left.
+
+Speaker
+
+And as soon as I do that,
+
+Speaker
+
+the text wraps around the image with the image on the left.
+
+Speaker
+
+And I have also got the opportunity here to
+
+Speaker
+
+float this to the right.
+
+Speaker
+
+But I've actually already put the margins in here.
+
+Speaker
+
+and I set them for a left hand float. That's why it looks a bit congested here. So I'm going to change this back to a float left.
+
+Speaker
+
+In the past, this technique was also used for creating multi-column layouts, but now we've got much better tools for that.
+
+Speaker
+
+Flexbox is good for that, but also CSS Grid, which is something you'll learn about much later.
+
+Speaker
+
+so you shouldn't be using float for
+
+Speaker
+
+and
+
+Speaker
+
+But though you might see that on some old legacy codebase.
+
+Speaker
+
+But for situations like this where you want an image with text wrapped around it, it's absolutely fine.
+
+Speaker
+
+Now there's a property which goes with float which we need to look at. It's called
+
+Speaker
+
+And it specifies what should happen with the element that is next to a floating element.
+
+Speaker
+
+So if we head back to the HTML then, I
+
+Speaker
+
+I've got my image right here, we've got the paragraph of text.
+
+Speaker
+
+and it's got the class, Para 1.
+
+Speaker
+
+So let's imagine that I know that I absolutely don't want anything ever to float.
+
+Speaker
+
+to the left.
+
+Speaker
+
+of this paragraph.
+
+Speaker
+
+Well, in the CSS I've got a selector for a Para 1 right here.
+
+Speaker
+
+So this is where I can use the Clear property.
+
+Speaker
+
+And I can just say, "Clear left."
+
+Speaker
+
+And what that means is nothing will float to the left of that element.
+
+Speaker
+
+Now I could also use ClearRight.
+
+Speaker
+
+That's not going to make any difference here because we haven't actually got anything floating to the right of this text.
+
+Speaker
+
+And the third option is actually clear both.
+
+Speaker
+
+That will stop anything floating on either the left or the right. Now to be honest, we don't really want that now, so I'm going to toggle that off and put it back to how it was. I think that
+
+Speaker
+
+Looks good.
+
+Speaker
+
+So good to know that the clear option is here.
+
+Speaker
+
+Now there are some other uses for floats because
+
+Speaker
+
+Devs realized that they could float anything, not just images, which gives us some fun ideas.
+
+Speaker
+
+So we can use drop caps and that's what you can see right here. We've got this massive capital first letter
+
+Speaker
+
+floated to the left of the rest of the text.
+
+Speaker
+
+But you can also use float for floating quotes or floating information boxes just to give a few examples.
+
+Speaker
+
+But let's check out how it would work with this drop caps idea.
+
+Speaker
+
+So I've got some text already here which we're just going to uncomment.
+
+Speaker
+
+There's the text, we've got our drop cap now it's already styled, but
+
+Speaker
+
+But look, it's really, really weird. It's sitting really awkwardly. It's kind of half above the text. The pink background is overlapping. So let's just remember that it's got the class of drop cap.
+
+Speaker
+
+And then we'll head over to the CSS.
+
+Speaker
+
+Here's DropCap, it's got all of the styles we want.
+
+Speaker
+
+We've got this front family here, which is giving us this big B. So let's just come in here and float that to the left.
+
+Speaker
+
+And as soon as we do that, we get a really nice drop cap effect. I think that looks really, really cool.
+
+Speaker
+
+Now lastly I just want to uncomment one more block of code right here in the HTML.
+
+Speaker
+
+And that's just scroll up, and I'm just going to stretch out the mini browser a little bit to show you an issue.
+
+Speaker
+
+So what we've got here is text, which is inside a container.
+
+Speaker
+
+and the image is also inside a container.
+
+Speaker
+
+Now, in index.css, we
+
+Speaker
+
+can see that the image is already set to float left.
+
+Speaker
+
+if we take that out of the equation,
+
+Speaker
+
+Now everything changes and we're back to square one. We've got the weird space up here. So we want the image to float left.
+
+Speaker
+
+But we also really want the image to be inside its container.
+
+Speaker
+
+Okay, there's a special trick that we can use to do this. Let's go back to index.html.
+
+Speaker
+
+We can see that the paragraph has got the class of power three.
+
+Speaker
+
+in the CSS if we scroll down, here's Para3, it's got its border.
+
+Speaker
+
+is padding.
+
+Speaker
+
+Let's come in here and we're going to set the display property.
+
+Speaker
+
+And we're going to set that to something new. We're going to set it to flow.
+
+Speaker
+
+And as soon as we do that,
+
+Speaker
+
+actually brings the image inside the container.
+
+Speaker
+
+Or perhaps it's better to set that to assess if we, okay, there's a special trick that we can use where one, we've got the weird space up here. So, we want the image to float left.
+
+Speaker
+
+But we also really want the image to be inside its container.
+
+Speaker
+
+Okay, there's a special trick that we can use to do this. Let's go back to index.html.
+
+Speaker
+
+We can see that the paragraph has got the class of power three.
+
+Speaker
+
+in the CSS if we scroll down, here's Para3, it's got its border.
+
+Speaker
+
+is padding.
+
+Speaker
+
+Let's come in here and we're going to set the display property.
+
+Speaker
+
+And we're going to set that to something new. We're going to set it to flow.
+
+Speaker
+
+roots.
+
+Speaker
+
+And as soon as we do that,
+
+Speaker
+
+actually brings the image inside the container.
+
+Speaker
+
+Perhaps it's better to say it stretches the container around the image.
+
+Speaker
+
+Now this works because when we use float on an element, it actually takes it outside of the flow of the documents.
+
+Speaker
+
+But what flow root does is it ensures the floated element is
+
+Speaker
+
+contained
+
+Speaker
+
+Inside the parent element where display flow route is set.
+
+Speaker
+
+So you could think of it that this element is now rooted in the flow of its parent. It's no longer outside of the flow.
+
+Speaker
+
+That is a little bit of a simplification, but that's quite a good way of understanding it.
+
+Speaker
+
+Okay, so that was a really quick intro into the world of float.
+
+Speaker
+
+As I say, Flexbox and Grid have surpassed float now when it comes to column layouts. So you don't see it as often as you used to.
+
+Speaker
+
+But it is a good thing to know about.
+
+Speaker
+
+and you will come across it.
+
+Speaker
+
+the floating images to the left.
+
+Speaker
+
+funky stuff like drop caps and probably in some legacy code as well.
