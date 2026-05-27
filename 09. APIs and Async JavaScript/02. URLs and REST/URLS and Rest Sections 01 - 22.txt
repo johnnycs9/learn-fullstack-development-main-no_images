@@ -1,0 +1,1858 @@
+In this section, we're going to be diving deeper into some of these most basic components of a request, and that includes URLs and rest.
+0:08
+All the while we'll be building our blog space project and this blog space project is essentially pulling down data from the JSON placeholder API.
+0:17
+We just have some sort of lorem ipsum placeholder text for blog titles and blog bodies.
+0:23
+We're only gonna grab the first five or so but we're also going to be able to include new stuff here.
+0:30
+So we'll have like a new title, a new body, we'll hit post, and that will add it to our list here.
+0:37
+This will also be our first foray into sending data to a server not just always pulling data down from a server.
+0:44
+In this section, we are gonna be talking about requests in a lot more detail than what we covered previously.
+0:50
+We'll also be learning about URLs, URLs, which may not seem like something you need to learn too much about.
+0:55
+But in reality, there's quite a bit to understand when it comes to interacting with an API.
+1:00
+So we'll be learning about not just URLs, but URL parameters and queries, query strings, and so forth.
+1:07
+That will lead us naturally into a discussion about REST API design, what exactly that means, and how you as a developer can use that to your benefit as you interact with more and more APIs that exist out there for you to interact with.
+1:21
+And of course, all of this will be built in the context of our blog space project.
+1:26
+So without further ado, let's jump right in.
+
+
+0:00
+In the previous section, we covered the request response cycle, and at this point, it's going to be helpful for us to dive a little bit deeper into HTTP requests.
+0:10
+But first, let's do a quick recap of the request response cycle.
+0:13
+You might remember that a request is simply when a client, for example, the computer that you're using right now, asks for a resource from a server.
+0:22
+A resource can be anything like an HTML page or JSON, an image file or anything like that.
+0:28
+And then the server's job is to send back a response in response to the request that came in.
+0:34
+So a response is when a server responds to the client.
+0:37
+And the truth is sometimes it works, sometimes it doesn't.
+0:40
+Either way, it's considered a response from the server.
+0:43
+I guess if we wanted to really split hairs, there are times when a server just doesn't respond at all and that's usually called a request time out, but that's a little outside the scope of this lesson right now.
+0:54
+So I mentioned earlier HTTP request.
+0:57
+Well, what does HTTP stand for?
+0:59
+It stands for hypertext transfer protocol.
+1:02
+And kind of like we've talked about before, that's just another one of those acronyms that might cause insecurity or confusion or imposter syndrome or something like that.
+1:12
+So let me see if I can come up with my own definition.
+1:15
+First of all, a protocol is just an agreed upon standard way of doing something.
+1:21
+If you think of it outside the context of web development, you've certainly heard the term protocol before.
+1:26
+Like, what's the protocol for doing such and such a thing?
+1:29
+And it just means what's the way that we have previously agreed upon that this thing should be done?
+1:35
+So that's all a protocol is.
+1:37
+And HTTP or hypertext transfer protocol is a protocol or an agreed upon way of doing things for determining how hypertext, or we can just think of it as text, should be transferred over the Internet.
+1:51
+I think if you looked deeper down, you might see that HTTP also includes something called hypermedia, which means it's not just sending text like an HTML page or some JavaScript or JSON or something like that, but it also can include the transfer of media such as files.
+2:09
+Maybe don't quote me on that because I'm certainly not an expert on the intricacies of HTTP.
+2:15
+But I hope that this has demystified a little bit HTTP in general.
+2:19
+You've certainly seen it many, many times.
+2:21
+Every time you have a URL in a browser, it starts with HTTP or HTTPS which is just the secure or more secure version of HTTP.
+2:32
+For now, this is really all we need to know.
+2:35
+We're not going to dive really deep into HTTP.
+2:38
+You obviously can do as much research on it as you want, but at this point in the career path, it's not going to be crucial for you to understand all the tiny intricate details.
+2:48
+So an HTTP request will have a number of components.
+2:53
+The first thing is called the path and I'd like to call this the URL because that's a little more human friendly or something that you're more used to hearing.
+3:01
+When your client sends a request to a server, it needs to have a URL where it is sending that request to.
+3:07
+Or put another way, the server is sort of you could say living at a specific address and that's the URL that you are sending your request off to.
+3:17
+The next thing is a method.
+3:18
+Your request will always include some sort of method and these include things like get, post, put, and delete as your most common methods that you'll see, but there are a number of other ones like something called patch and options that you'll probably run into but won't likely have to use very often yourself.
+3:37
+We'll be diving deeper into methods later, so I won't talk about each one.
+3:41
+Although I do like to point out at this point that you'll notice that these are all capitalized, and that's just a standard that you'll see with request methods.
+3:50
+They're usually all capitalized like this.
+3:52
+The next thing is the request body, and we'll be talking about exactly what it is and when you send that later.
+3:57
+And last but not least are the headers, and the headers
+4:05
+when you send that later.
+4:06
+And last but not least are the headers, and the headers are sort of like meta information about the request.
+4:12
+They can include details like what kind of browser or operating system is sending this request.
+4:19
+Sometimes this will include things like an authentication token if you are asking for a protected resource.
+4:26
+There's actually dozens or maybe even hundreds of different headers that you can have, so I won't be able to go into all of them.
+4:32
+But it's just meta information about the request, extra information that isn't included in the path, the method, or the body.
+4:39
+So once again, I don't like to just sort of lecture at you, so I'm going to write up a challenge for you to do, and I'm also gonna write up a quiz that will kinda test if you've been paying attention through this little presentation.
+4:51
+This challenge is mostly just in case it's been a while since you've done section one, but I think it's gonna be really helpful helpful for you as well just to get the repetition in.
+5:00
+So your job is to send a request to the JSON placeholder API.
+5:05
+I've included the URL here.
+5:06
+You might remember we talked about APIs dot Scrimo dot com, so don't be put off by that.
+5:11
+You can actually find the document notation of the original JSON placeholder API at this URL if you need to, but I've included the full URL here so you don't necessarily need to go there.
+5:22
+And then when the response comes back, just log the data to the console.
+5:26
+You'll have to parse the JSON body into JavaScript and then just log that JavaScript object to the console.
+5:33
+I know you can do this one.
+5:34
+We've practiced it a bunch.
+5:35
+Pause here and try out the challenge.
+5:42
+Hopefully, you've done this plenty of times, especially if you've been actively following along.
+5:46
+So I'm just going to include my call with fetch.
+5:51
+There's my URL.
+5:52
+This is the the URL that we talked about here as part of the components, the path of the URL.
+6:00
+And then when I get a response back, I'm going to take that response and parse the JSON into JavaScript.
+6:09
+And then once that is finished, I should have access to the data, and I can just console log the data.
+6:16
+We'll hit save, open up the console, and there's my data.
+6:19
+It's an array of objects.
+6:20
+The JSON placeholder API just has lorem ipsum text as its titles and body and everything, but this is meant to represent an array of blog posts.
+6:30
+Hopefully, that went well.
+6:31
+I'm also going to create a little quiz file that I want you to answer some questions on, so I will type that up now.
+6:39
+Okay.
+6:39
+Here's a little quiz.
+6:40
+Read through the questions and do your best to answer them.
+6:43
+Pause here and work
+6:49
+on the quiz.
+6:51
+What does HTTP stand for?
+6:53
+Well, that is hypertext transfer protocol.
+6:58
+Proto call.
+6:59
+Again, kind of an imposter syndrome inducing acronym for you to memorize as a web developer.
+7:05
+I always think it's funny when they stuff two letters in an acronym into one word.
+7:10
+It seems like this should just be HTTP, but who knows?
+7:13
+I don't know the history of it.
+7:14
+So probably more importantly than having memorized what HTTP stands for is how would you describe what a protocol is to just a complete newbie.
+7:23
+Well, I know that I was the one who kinda came up with this definition before, but like I said, I like to think of it as an agreed upon standard way of doing something.
+7:35
+Even outside the context of web development or HTTP requests or anything like that, protocol is just always the way to do something, kind of a documented way of doing something.
+7:49
+In question three, I gave you a URL, and I said, which part of the URL describes the protocol?
+7:54
+Well, that's this very initial part.
+7:57
+H t t p s is hypertext transfer protocol secure, which is the most common version of h t t p that you'll see these days, and it's always followed by this colon and the two slashes.
+8:09
+That whole thing is considered the scheme or in our case we'll call it the protocol.
+8:14
+By the way, you might find it interesting to think about other protocols that you may have heard of.
+8:18
+For example, FTP, if you've ever done any kind of file transferring, this is the file transfer protocol.
+8:26
+Or you may have heard of SMTPTP.
+8:29
+This is the simple mail transfer protocol, There's
+8:36
+a number of these, but these There's a number of these, but these are probably the ones that you've heard of most next to something like HTTP.
+8:48
+And then, hopefully, this one wasn't too annoying of a question.
+8:51
+I'm just having you guess.
+8:52
+But if you had to guess which request method we made in this previous challenge when we did the fetch to this URL, which request method would you guess that we made?
+9:04
+A get, post, put, or delete?
+9:06
+Well, without even knowing what some of these technically mean, we can probably assume we're not deleting something.
+9:13
+We don't seem to be posting something new.
+9:15
+If you think of it in terms of, like, a Twitter post or a Facebook post, we're not sending new data out, but this get request seems to make the most sense.
+9:24
+We're asking the server or the JSON placeholder API.
+9:27
+We're asking it to send us data.
+9:29
+We are trying to get data from the API.
+9:32
+And if that's what you guessed, then you are right.
+9:35
+This was a get request.
+9:36
+We're gonna talk about this later, but fetch, if no other parameters or information is provided except for the URL, it's going to assume that you're sending a get request to get data from this URL.
+9:51
+Awesome work.
+9:51
+Hopefully, that was helpful.
+9:53
+When you feel ready, let's keep moving forward.
+
+0:00
+So we talked about some of the components of a request.
+0:02
+Now we're going to dive deeper into each one of these.
+0:05
+And if you're curious on the Google Slides that I've linked here, I actually left in all of the old slides from previous lessons.
+0:12
+I'm gonna keep building on top of this so that you have quick access to the stuff that we've already talked about just in case you would like to go back and review.
+0:21
+So let's start off by talking about the path or like I mentioned, I like to just think of it as the URL.
+0:26
+As a part of the request, the URL is essentially the address where your desired resource lives.
+0:33
+In the end, this always boils down to an IP address.
+0:37
+We're not gonna dive deep into that because on a human readable level, we always associate IP addresses with some sort of URL.
+0:46
+And the URLs for an API can usually be broken up into kind of two portions.
+0:51
+First of all, there's the base URL, and then there's something called the endpoint.
+0:55
+Now we've been using these up until now.
+0:58
+We just may not have known the words.
+1:00
+So let's take a look at a familiar example.
+1:03
+A base URL is going to be the portion of the URL that will not change no matter what kind of resource you're getting from this API.
+1:13
+So for example, if I'm using the Scrimba version of the JSON placeholder API, every request I make will start with the base URL of h t t p s colon slash slash APIs dot Scrimba dot com slash JSON placeholder.
+1:28
+So my end point is going to be the specific resource at that base URL that I want to get.
+1:34
+For example, there's a slash posts end point and that represents a list of blog posts that live at this API.
+1:42
+So when you put them together, you get the full API or the full URL which is the APIs dot Scrivener dot com slash JSON placeholder slash posts.
+1:51
+And in the case of the JSON placeholder API, there's other endpoints that we can access to, like slash users, I think it is, or slash albums, I think.
+2:01
+There's a few of them there.
+2:02
+You can go to the JSON placeholder API documentation to see the full list.
+2:06
+Now you'll notice that I've actually created a link here with this full URL and that's because if you were to click this link, your browser would send a get request to this URL.
+2:17
+Now usually when we click on links, we think of it as a way to open a new website.
+2:22
+But under the hood, the browser is doing the exact same thing.
+2:25
+When you click a link like this, it's going to do a get request to the URL that you're linking to and if the API or if that URL contains an HTML page as a resource then your browser will just load it like normal.
+2:40
+This is what happens when you click a link to any website or even if you type into your browser's URL bar, say Google dot com and hit enter.
+2:48
+Now your browser won't load an HTML page per se, but what it will load is the JSON response.
+2:54
+And it's able to display that and you can see the JSON in the browser.
+2:58
+If you haven't already clicked on this link, this is essentially what would show up.
+3:03
+You click on the link and it shows you your JSON in the browser and this should look familiar to us.
+3:08
+We have an array of objects and we have a title and a body.
+3:11
+That's because the JSON placeholder has returned some blog posts.
+3:16
+Now personally in Chrome, I have an extension that formats JSON when it comes back, and it looks like this for me.
+3:24
+I can click these little arrows to collapse and expand different sections if I need to.
+3:29
+I can also always see the raw version, which is what we see back here.
+3:32
+If I want to, I can switch back and forth there.
+3:35
+And I've included a link here to the JSON format or Chrome extension if you're using Chrome and have interest in it.
+3:41
+In fact, using your browser can be a really good way to see what the data looks like when it comes back.
+3:47
+Up until now, we've been console logging a lot of stuff.
+3:50
+But when you have a URL, you can always just enter it into your browser and look at the JSON that comes back.
+3:56
+Okay.
+3:56
+Awesome.
+3:56
+Well, I've got a quiz that I'm going to add here, so I will do that now.
+4:00
+Okay.
+4:00
+Here's a quiz for you to work on.
+4:02
+Pause here and finish this quiz.
+4:09
+Alright.
+4:09
+So what's the difference between a base URL and an endpoint?
+4:12
+Well, a base URL is the part of the URL that won't change no matter which resource we want to get from the API and the
+4:26
+source.
+4:28
+Whereas an endpoint specifies exactly which resource we want to get from the API.
+4:37
+Sometimes you'll even end up putting the base URL inside of a variable so that you don't have to copy and paste it or type it out a bunch of times because it won't be changing.
+4:48
+Okay.
+4:48
+So given the following URLs from clearly an example API blah blah blah dot com, which part of the URL is the base URL?
+4:57
+Well, it's this whole part that isn't changing.
+5:00
+It goes all the way up through v two here.
+5:03
+This is something you'll see pretty commonly.
+5:05
+We have blah blah blah dot com and then slash API indicates that this actually isn't an HTML page resource that you're getting.
+5:12
+It's part of the JSON API, likely JSON.
+5:15
+And then you'll oftentimes see something like v one or v two, v three.
+5:18
+And this is saying that it's their second version or first version of the API.
+5:23
+If it's v two, it means that they had an original API that they didn't want to completely erase, but now they've updated it, probably improved it, made it better somehow, and they created a separate endpoint for it or a separate path for it under v two.
+5:38
+So in our case, the base URL is everything leading up to v two.
+5:42
+And then the available end points, this part's a little bit tricky.
+5:45
+We're gonna talk more about end points in-depth a little bit later.
+5:49
+Well, we have a slash users endpoint.
+5:52
+We have a slash products endpoint, but then the tricky one is this last one.
+5:56
+We see slash products slash one two three.
+5:59
+This is a bit of a teaser for a future lesson, but the endpoint that's available isn't specifically slash product slash one two three, but it's actually slash products slash some ID of a product here.
+6:14
+If I were to do a request to slash users, I would actually expect to get an array of users back.
+6:20
+Same with slash products.
+6:21
+I would get an array of slash products back.
+6:24
+But when I say slash products slash one two three, I'm trying to say as a designer of this API that you can get a single product, so an object from amongst the list of products that are available.
+6:38
+So I'm gonna wrap this in little angle brackets so that it's clear that this is not the exact path.
+6:46
+Okay.
+6:46
+Hopefully, you were able to get through that quiz, and fortunately, we just have one more lecture like this before we actually get our hands on the code and start developing our blog space platform.
+6:55
+So when you're ready, let's move on and learn about request methods.
+
+
+0:00
+Let's dive into request methods.
+0:02
+And you can see from our original list here that we have get, post, put, and delete.
+0:07
+Now there's a few others that you probably won't be interacting with directly very often, so we're just gonna focus on these first four.
+0:16
+So, essentially, what the method is doing is telling the server what kind of request you're making or maybe a better way to say it is what your intention with that request is.
+0:26
+For example, when I send a get request or a request with a method set to get, I'm asking the server to send me data.
+0:34
+I'm trying to get data which in context makes it pretty obvious why it's called get.
+0:39
+However, there's other interaction types I might have with the server.
+0:42
+For example, if I want to send new data to a server or to a database, I'll likely be sending a post request.
+0:49
+With a post request, I'm not asking the server to send me data back.
+0:53
+I'm asking the server to add new data.
+0:55
+The name makes a lot of sense when you think of it in terms of, like, a blog post or a Facebook post.
+1:00
+If I'm on Facebook and I type out my Facebook post and I hit send, essentially I'm asking Facebook to add something new to the Facebook data base.
+1:09
+And so I'm sending a post request to Facebook.
+1:13
+Now this isn't only true of places that have something actually called a post like a blog post.
+1:17
+For example, if I have a to do list that is maintained somewhere in the cloud on the Internet, anytime I add a new item to my to do list, I'm essentially sending a post request.
+1:27
+I'm adding something in my data.
+1:30
+The next method that we'll talk about is a put request, and this is whenever I want to edit or update or modify
+1:43
+I personally haven't used I personally haven't used it that way much.
+1:46
+I really just think of a put request as a way to tell the server I want to update existing data.
+1:52
+For example, let's talk about that to do list we just mentioned.
+1:55
+If I maybe made a typo in the to do item that I just posted, I would probably click some kind of edit button that would allow me to fix my typo and then hit submit.
+2:05
+In that case, I'm not necessarily adding something completely new.
+2:10
+The to do item already existed when I added it.
+2:13
+Instead, I'm just trying to update it.
+2:15
+A request like that would oftentimes be a put request.
+2:18
+And then another obvious one is the delete request and this is whenever we want to remove data.
+2:23
+If I want to delete my Facebook post or delete the to do item that I made completely, then I would probably send a delete request to the server.
+2:31
+Like we mentioned, there's a few others like patch or options.
+2:34
+We are not gonna dive into those at this time.
+2:36
+Now I do want to relate these methods to code, but first, I want us to do a quiz.
+2:41
+So here's a quiz that I've typed out.
+2:43
+Pause here and answer the questions on this quiz.
+2:50
+Okay.
+2:50
+So your task is to try and think of a time that you used each of these methods in the real world, probably unknowingly, not really having thought much about these methods before.
+3:00
+So for example, today I checked the weather on my phone this morning.
+3:04
+And when I did that, it probably sent a get request to retrieve the weather information from whatever API my weather app is using.
+3:12
+So I'll go ahead and add that.
+3:14
+Now for a post request, let's see.
+3:17
+Well, when I created this new screencast that you're watching, I had to click new scrim, and that probably sent a post request to Scrimba asking to create a new screencast.
+3:27
+So I'll say created a new
+3:31
+screencast, the one you're watching now.
+3:35
+Okay.
+3:35
+Well, for a put request let's see.
+3:37
+So I went grocery shopping last night.
+3:39
+I have a shared to do list with my wife and we add items for grocery shopping.
+3:44
+And whenever I put one of the items in my cart, I mark it as completed on my list.
+3:48
+At first glance, it might seem that that's kind of like a delete, I guess, because I'm removing it from my list.
+3:53
+But in reality, all I'm doing is changing a property that probably says completed true or false.
+3:58
+So I'll say marked items from my shared to do list as completed.
+4:06
+Again, I'm likely updating the database with that item, marking it as completed.
+4:11
+And then delete.
+4:12
+Let's see.
+4:13
+Well, recently on Slack, I typed a message.
+4:16
+I hit send, and then I realized that I had made a mistake or something, and I really didn't need to send that message.
+4:20
+So I ended up just deleting deleted a message on Slack that was no longer necessary.
+4:28
+The truth is each API can implement the different methods in whichever way makes the most sense to them.
+4:35
+For some reason, I found it's rather common for an API to actually update data by using a post request.
+4:41
+There might be great reasons to do it that way.
+4:43
+I just don't know them myself.
+4:45
+I have always used to put request when I'm writing an API and want to allow my users to update existing data.
+4:52
+Now let's see this in practice a little bit.
+4:54
+So we've learned about fetch.
+4:56
+I'm going to get a URL and this is just a JSON placeholder API URL.
+5:02
+They have a to dos endpoint here and this is what we're familiar with already.
+5:07
+Now the truth is fetch is assuming if you don't specify otherwise that you're doing a get request.
+5:14
+However, there is a way in the fetch API for me to specify the request method and that's by providing a second parameter here.
+5:22
+The first parameter is the URL or the path of where I'm trying to access.
+5:28
+The second parameter is sort of an options object.
+5:31
+And inside this object, I can specify a key called method and tell it that I want it to do a get request.
+5:40
+And by doing this, I'm explicitly telling fetch to perform a get request or rather to set the method of the request to get.
+5:48
+Because it's the default I never really do this when I'm just trying to do a get, but if I need to post data, then I will be doing a post request.
+5:57
+In which case, I would also need to provide something called the body, which we're gonna talk about soon.
+6:02
+But the point is I can change the method of the request using fetch by providing this second parameter my options object, And that leads me to a really quick challenge for you to do.
+6:13
+So just like we've done before, you're going to fetch a list of to dos from the JSON placeholder API.
+6:18
+I've provided the base URL and the endpoint.
+6:21
+But this time, however, I want you to manually set the request method to a get method.
+6:27
+And then I suppose I should specify that you should console the results or console log the results.
+6:34
+Okay.
+6:35
+Pause here, work on this challenge, and we'll go through it together after.
+6:42
+This will be essentially the same as it always has been.
+6:45
+I'm going to take my base URL and add to dos as my endpoint.
+6:52
+But like we talked about this time, I'm going to specify that the method should be a get request.
+6:59
+Everything else will be exactly the same as it was.
+7:02
+I get a response.
+7:03
+I parse the JSON.
+7:05
+The resulting data, I can console log the data.
+7:10
+Hit save and there's my data from the JSON placeholder API.
+7:14
+Again, you likely will never do this.
+7:16
+You're not going to specify the get method because it's already the default for fetch.
+7:20
+But this is good practice, and we'll be doing post request soon.
+7:24
+Awesome.
+7:24
+I hope you've learned a lot here about methods.
+7:26
+Methods are something you're going to hear time and time again as you continue your journey as a web developer.
+7:32
+So this is a pretty crucial lesson.
+7:34
+Fortunately, it's also time for us to jump into our blog space project, and we are going to start with that next.
+
+
+0:00
+Let's go ahead and start our blog space project.
+0:04
+Now I'm starting from essentially absolute beginning.
+0:07
+This is just kind of the default stuff that Scrumba includes.
+0:12
+You'll see I even deleted any of the default CSS and there's no JavaScript at all.
+0:17
+And there's a few different ways that I tend to approach a new project like this.
+0:21
+Sometimes I will focus on the front end and put a bunch of sort of dummy data in just to be able to get the styling all set up and everything.
+0:30
+I think this time around, what I wanna do is start actually from the JavaScript and get my data first.
+0:36
+So I will go over to Index JS and write out a challenge for you to get started.
+0:42
+K.
+0:42
+This won't be too unfamiliar.
+0:44
+You're going to get a list of blog posts.
+0:46
+Let me update that.
+0:48
+Posts from the JSON placeholder API.
+0:51
+The base URL and the endpoint are included here.
+0:53
+Now the JSON placeholder API sends back everything.
+0:57
+So I think there's like one or two hundred blog objects that come back or blog post objects that come back and since there's so many of them let's just limit the array to the first five.
+1:06
+That way our page won't get too crazy or anything.
+1:09
+You can just use the slice array method.
+1:12
+Sometimes APIs will allow a way for you to limit the number of responses that come back, but But in this case, the JSON placeholder API doesn't do that.
+1:20
+So just use the slice method and if you don't remember slice, uh, obviously feel free to Google it and be able to find some good information about slice.
+1:29
+And I guess for now let's just log the five items to the console.
+1:36
+Pause here and try out this challenge.
+1:42
+K.
+1:43
+We are using fetch, of course, and I will copy and paste
+1:52
+the base URL and the endpoint here.
+1:55
+So the JSON placeholder API slash posts.
+1:58
+This should get me all of the posts back.
+2:00
+Do res dot JSON to turn the JSON into a JavaScript object or I guess, in this case, an array of objects.
+2:08
+And then once that is done, uh, we will just console log our data.
+2:13
+There's more to do because I haven't limited my array to five objects yet, but this is a good stepping stone.
+2:20
+And, yes, if I open my Chrome developer It does kind of truncate
+2:26
+the
+2:28
+array once it realizes it's gonna be a little bit long.
+2:31
+It does kind of truncate the array once it realizes it's gonna be a little bit long.
+2:35
+And so now I can open up the body of this function.
+2:40
+And instead of just console logging the data, one thing I could do is I could create a new variable maybe and say const posts array is equal to data dot slice.
+2:51
+Data is an array and dot slice is an array method.
+2:55
+It takes the index where I want to start and that's inclusive and then the index where I want to end and that is not inclusive.
+3:02
+So I will have the objects at indices zero, one, two, three, and four and that makes five total.
+3:10
+Let's just make sure that's right and we'll console log the the post array, and then I'll get rid of this console log.
+3:16
+And cool.
+3:17
+We can see that that is shorter.
+3:18
+In the dev tools, I can see it is an array with five objects.
+3:21
+Okay.
+3:22
+This is a great start.
+3:23
+Let's now take this data in the next screen cast, and we will start putting some elements on our screen.
+
+
+
+0:00
+Now that we've got the first five posts, let's actually display them over on our little browser.
+0:05
+So your challenge is to take those first five blog post objects, display the title and body properties.
+0:11
+You are welcome to add a little bit of styling if you want.
+0:14
+I've got some hints that will help you along in the process if you need it.
+0:18
+Pause here and work on this challenge.
+0:25
+I think I can get rid of my console log.
+0:28
+Although, if I do look at my console log let's do that really quick.
+0:31
+We'll see that the objects that came back have a title property and a body property.
+0:36
+So those are what we will be accessing in order to display on our screen.
+0:41
+But for now, I can get rid of this.
+0:43
+So I think what I'll do is first go to my HTML and create a new div here.
+0:48
+And this div, I will give an ID so that I can select it.
+0:52
+Maybe let's call it blog list maybe.
+0:56
+And I'm going to leave this div empty in my HTML so that in my JavaScript, I can fill it with the blog posts.
+1:02
+So let's go back to here and the first thing I'm going to do is create an empty string HTML variable.
+1:11
+This string is going to hold all of the HTML elements that I want to create as I'm looping over my posts array.
+1:18
+And then after my four loop, I will stuff the entire div here, my blog list div with all of the contents of my HTML.
+1:27
+If that didn't make sense, we'll just do that together now.
+1:29
+I'm going to use a for of loop.
+1:32
+So I can say let post of
+1:36
+posts array, and I'm going to add to my string, my HTML string, some HTML.
+1:45
+We'll give the blog title maybe an h three like that, and we'll stick the post dot title in that h three.
+1:57
+And then we'll have a regular paragraph be the post body.
+2:01
+So I'll say post dot body.
+2:06
+Now at this point, if I hit save, nothing really is gonna happen because I haven't put anything in there.
+2:12
+But let's do after our for loop.
+2:14
+Let's just console log our HTML variable and take a look at what this looks like.
+2:20
+Let's save.
+2:20
+Let me open this.
+2:22
+And, okay, that kinda looks right.
+2:23
+It's a bunch of text, but we have an h three and then a paragraph, then another each one of these representing our blog post.
+2:32
+So I should be able to, after my for loop, grab my element, which was blog list.
+2:40
+Right?
+2:40
+Is it blog list?
+2:41
+Yeah.
+2:42
+Blog dash list.
+2:44
+And then change the inner HTML to equal my HTML variable.
+2:51
+Get rid of this console log.
+2:53
+Hit save, cross our fingers, and awesome.
+2:56
+Look at that.
+2:56
+We've got our h threes followed by our paragraphs.
+3:00
+Now this is all just lorem ipsum text because that's what the JSON placeholder API produces, but we can see we have our five blog posts here in our browser.
+3:10
+One thing I think I might do just because the title and the paragraph kinda blend together with the next title and paragraph is add maybe just like a horizontal rule to the end of each blog post.
+3:23
+Let's see.
+3:23
+Yeah.
+3:24
+That that separates it a little better.
+3:25
+I'll just leave it like that.
+3:26
+Obviously, we'll put some more styling into it.
+3:28
+If you wanna practice with some CSS, you could add some styling to it now, but this is a really great start.
+3:33
+If it's been a while since you've dealt with DOM manipulation involving for loops and arrays, spend as much time with this as you need.
+3:40
+Go over it again.
+3:41
+Watch me do it again.
+3:42
+Delete everything.
+3:43
+Try to do it again from scratch or maybe even just delete small portions of it like this for loop.
+3:48
+Really do everything you can to internalize this.
+3:51
+I'm sure you're tired of me harping on a practice and getting your hands on the keyboard, But really, the worst thing you could do for your coding education is just watch and watch and watch and never do.
+4:01
+So once you feel pretty comfortable with this, let's keep going forward with our blog space project.
+
+
+0:00
+I think it's really important for us to have these CSS challenges every now and then just so that we keep the ball rolling with CSS.
+0:06
+We don't forget everything that we learned.
+0:08
+So your challenge is to add a little bit of style.
+0:10
+Primarily, you're going to add a little fixed nav bar at the top.
+0:14
+That may introduce a couple challenges with spacing that you'll likely want to figure out how to fix.
+0:20
+You're obviously welcome to go above and beyond if you'd like.
+0:23
+I'm gonna keep my styles pretty simple and we'll solve any issues that we come across together.
+0:28
+I haven't pre written the CSS anywhere so this will be in a sense me live coding and solving any issues that we face together.
+0:36
+Pause here and start adding some style to the blog space project.
+0:44
+Well, now that I think about it, I probably should have put this challenge over in the CSS or the HTML because we're not really gonna be touching our JavaScript here.
+0:51
+Like, it says we're gonna add a little fixed nav bar at the top with the text that says blog space.
+0:57
+So let's go to our HTML.
+1:00
+This is our blog list.
+1:01
+So right above that, we'll add there's a nav element.
+1:04
+This one is specifically designed for navigation bars, and I think I'll put maybe, like, an h three inside, and we'll say blog space.
+1:14
+Hit save.
+1:15
+And okay.
+1:16
+Right now, it's just kind of the generic h three text there.
+1:20
+So maybe what I'll do is just give my nav bar a little bit of color.
+1:25
+We'll say nav.
+1:27
+And why don't we give it a background tough time spelling background.
+1:31
+Here we go.
+1:32
+Background color of, I don't know, beige, something simple, and I might have to hit refresh.
+1:38
+Okay.
+1:38
+And that's showing me that the spacing is not quite right.
+1:41
+Right?
+1:41
+My h three is going the entire or sorry.
+1:45
+My nav is going the entire spacing, the entire width of my page here, but there also appears to be maybe some kind of default padding on the left and right.
+1:56
+Maybe let's see if we can get rid of that.
+1:57
+We'll select the body and we'll say padding zero.
+2:02
+K.
+2:02
+And maybe add margin zero, see if that makes a difference.
+2:05
+There we go.
+2:06
+Okay.
+2:07
+Now it looks like I also have some space above my nav bar, and I don't think I don't have anything above my nav bar.
+2:15
+So I'm guessing that's actually my h three, which has also default.
+2:20
+I think it's margin on the top and bottom.
+2:22
+So let's select our h three from within our nav bar or the h three that's inside of our nav, and we will give it a margin of zero.
+2:31
+Yeah.
+2:31
+That did it.
+2:32
+That got rid of that.
+2:33
+Now, obviously, it's a little bit squeezed, so maybe with my nav bar, I'll also add some padding.
+2:38
+Let's give it, I don't know, something smallish, like five pixels that looks pretty good.
+2:42
+And, well, let's also specify a height on it.
+2:45
+We'll say thirty pixels because I think that's what we mentioned in the challenge, not three hundred pixels.
+2:50
+Thirty pixels.
+2:51
+There we go.
+2:52
+Uh, and then, of course, once I did that, I noticed that the spacing is a little bit off.
+2:57
+Like, if I were to make this, like, sixty pixels, you'll see blog spaces floating up there in the upper left.
+3:02
+I don't know why, but I want this to be vertically centered.
+3:05
+So what I think the easiest way that I know of is I'm just going to make my whole navbar a flex container.
+3:13
+And then when I say align item center, there we go.
+3:18
+K.
+3:18
+That centered it.
+3:19
+And then you can see if I decided to change this to sixty pixels, it stays centered.
+3:24
+And we also talked about wanting it to be fixed.
+3:26
+Right now, it's just at the top, but it doesn't scroll with the content.
+3:30
+So I say display fixed sorry.
+3:35
+Not display.
+3:35
+Position fixed.
+3:37
+We'll see that it changes a bit.
+3:38
+Right?
+3:39
+It kind of becomes an inline element.
+3:41
+Everything floats behind it.
+3:42
+If I scroll a little bit, you can see that it basically gets removed from the flow of the document.
+3:48
+So let's fix the width first.
+3:50
+It should just be able to say a hundred percent width, and that'll take up the entire width again.
+3:55
+And then it looks like it got bumped down, but really what happened is the h three of the title of this first thing has a margin top, and it's just bumping everything down from it.
+4:07
+So I should be able to fix this maybe by giving my div here some additional padding.
+4:15
+Let's let's give it a shot.
+4:17
+And I've already got an ID assigned to this div.
+4:20
+I think just so that I'm not styling all divs, I might just use that ID as my selector here.
+4:26
+And let's see what happens if we give it a padding top of thirty pixels.
+4:30
+Uh, again, three hundred pixels.
+4:32
+There we go.
+4:33
+Okay.
+4:33
+So that collapsing margin, the margin that's on the top of this h three didn't push down blog space anymore now that there's a little bit of space for it to live.
+4:43
+But obviously, things are a little squeezed on the left and the right, probably the bottom as well.
+4:48
+So instead of just padding top thirty pixels, I might just say padding of thirty pixels on the top and then I'll say I want ten pixels on the left and right and then ten pixels on the bottom.
+5:01
+And there we go.
+5:02
+We get a little bit of space there, little extra space on the bottom.
+5:05
+That's looking a little better.
+5:07
+Now as I'm viewing this, it's kind of got the default, almost looks like Times New Roman maybe font.
+5:14
+So one thing I did do ahead of time is I went and I grabbed some fonts from Google Fonts.
+5:20
+I chose this font called Carla, and I I grabbed a couple different weights.
+5:23
+I got got two hundred, four hundred, seven hundred, just different thicknesses of the font there.
+5:29
+Now notice also that I'm putting those Google font links above my index dot CSS, and that's because in my CSS file, I want to be able to reference the font family of Carla.
+5:40
+I just pasted this in.
+5:41
+When you get fonts from Google Fonts, they will actually have this line there for you, and I just automatically have a backup of sans serif or Google Fonts chooses a backup of sans serif for you.
+5:53
+I think with the way Scrible works in the recording, you might have to click refresh here or maybe I'll hit refresh and maybe that'll change the font for you, but you should see a nicer font there whether it just did it there or if you hit the refresh button.
+6:07
+Now I hope you were able to spend a little time putting some style into this.
+6:11
+I'm gonna leave it here just with my header that I added or my nav bar and some of the spacing that I did and the fonts.
+6:18
+Mostly this is just setting myself up so that when we add a little form up here at the top to add a new blog post to our list of blogs that we're not working with something so crazy that just is a bunch of titles and post bodies.
+6:32
+So okay.
+6:32
+That's enough for now.
+6:33
+Let's keep moving forward.
+
+
+0:00
+The next feature we want to add to BlogSpace is a form that will allow us to add a new blog to our list.
+0:06
+So that's your challenge.
+0:07
+You're going to create a form that has two inputs with associated labels.
+0:12
+One input will be for the post title which would just be an input type text and another input for the post body which I would make a text area element.
+0:21
+Lastly, you'll add a a button to the form.
+0:23
+You're not gonna worry about styling or any JavaScript right now.
+0:26
+Pause here and work on this challenge.
+0:35
+Okay.
+0:35
+Let's create a form
+0:42
+Inside there, we will have two labels.
+0:48
+Under the first label, we will have an input with a type of text.
+0:55
+And under the second one, we will have a text area.
+1:01
+Inputs are self closing, but text areas are not.
+1:03
+So we need to make sure we include our closing element here, closing tag here.
+1:10
+Then for the first label, we're gonna say this is going to be the title, and this is going to be the body.
+1:16
+And lastly, we will have a button
+1:20
+that probably just says post.
+1:23
+Let's hit save just to see where we are and well, it looks like it's popping behind our fixed nav bar there.
+1:29
+So I think what I'll do is go into my CSS.
+1:32
+I'd no.
+1:33
+I said we're not doing any styling, but I wanna at least be able to see my form here.
+1:37
+And we'll select the form, and let's just give it a padding top.
+1:43
+We'll see.
+1:43
+Our blog list has a padding set to thirty ten ten.
+1:48
+Why don't we just move this down and see if that kinda works?
+1:51
+Maybe thirty is not quite enough.
+1:53
+And, yeah, sixty is working better.
+1:55
+I can see my elements, my form there.
+1:57
+But of course since I moved my padding away, my blog list has no padding and the sides are smooshed up against the side.
+2:03
+So let's just add back some padding maybe just ten pixels to get back the sides there.
+2:08
+And awesome.
+2:09
+That's looking good.
+2:10
+Now the only last thing that I want to touch on here is we have labels and inputs kind of side by side as sibling elements, and this is perfectly fine.
+2:20
+In fact, this is the way that I like to do it.
+2:22
+However, sometimes you'll see people putting the input inside of the label like this.
+2:27
+And as far as I know, this is also perfectly acceptable.
+2:30
+It's sort of an automatic way to associate a label with an input because the input is now a child of the label element.
+2:37
+However, like I said, I personally prefer to have them be siblings, but if I'm going to do that, I need to associate them somehow.
+2:44
+The way I can do that is to give an ID to my input in my text area.
+2:49
+This is gonna be my post, uh, title here in the text area.
+2:53
+We'll give an ID of post body.
+2:56
+And then to associate my label with my input, I will use the four attribute and say this is for the element with the ID of post title.
+3:05
+And this label is for the element with the ID of post body.
+3:10
+I believe this has some benefits with accessibility.
+3:13
+It also makes it a little more usable where if I click the title, it will automatically let me refresh this.
+3:18
+If I click the title, it'll automatically focus into my input there.
+3:22
+If I click body, it'll automatically focus into the input or the text area there.
+3:27
+K.
+3:27
+Awesome work.
+3:28
+Hopefully, that wasn't too challenging.
+3:30
+The next thing we're gonna do is to add a a little bit of styling to our form so it's a little more presentable, and we'll do that in the next screencast.
+
+
+
+0:00
+Okay.
+0:00
+So our form is obviously struggling a little bit with these default styling.
+0:04
+So let's go ahead and improve the form's visibility or improve the form style a little bit.
+0:10
+The challenge is just written here.
+0:11
+So go ahead, read through the challenge, pause the screencast and try to add a little bit of style to our form.
+0:22
+Well, the first thing that's pretty glaring and obvious is the layout.
+0:26
+And I think what I'm going to do is put it into display grid and well you know what this alone seems to have basically fixed my whole layout issue.
+0:36
+The default layout for grid is to have a single column and everything is just lined up really nicely.
+0:41
+Obviously, if I move this to a larger screen then it gets a little bit overwhelming how wide it is and we would need to fix it.
+0:47
+For now, this is gonna be fine.
+0:49
+I think just to give it some separation from the rest of the blogs in the list below, I'm going to give it a different background color, and we'll just choose something simple like light blue.
+1:00
+That also gives me a better idea of where things are spaced out and everything, so that's kinda nice.
+1:06
+Now the title input and the body input or text area are really kind of jammed together or rather the input here and the label for the body are kinda jammed together.
+1:17
+Same thing with the button and the bottom of this text area.
+1:20
+So I think I'll give those a little bit of bottom margin.
+1:24
+We can select our input and maybe we'll be really specific and say it's the input with the ID of post title and I think we'll just give the same spacing to the text area.
+1:35
+So I'll say, like, a text area with the ID of post body.
+1:42
+And let's just try giving it a little bit of margin bottom, maybe ten pixels.
+1:46
+Okay.
+1:47
+That's a lot more manageable.
+1:49
+Now our button is a little bit small.
+1:51
+So let's go ahead and get our button, and let's see if we just add some padding there.
+1:56
+Okay.
+1:57
+That's already a lot better.
+1:58
+It makes the button a little more present.
+2:01
+The font looks a little bit small, so I might change the font size to something like twenty pixels, uh, maybe eighteen pixels.
+2:08
+Okay.
+2:09
+And one thing I always like to do with my buttons is to change the cursor to be the pointer style.
+2:15
+Now I think in Scrimba, you just see kind of the little blue arrow.
+2:19
+If you click the refresh button over here, you'll see what I'm talking about.
+2:22
+It's the little Mickey Mouse hand as you hover over the button.
+2:25
+It just makes it a lot more obvious that it's a button that's meant to be clicked.
+2:28
+We could probably go through and add a different border or height around the inputs or the text area.
+2:34
+I'm not going to worry too much about it.
+2:36
+Hopefully, you had a chance to play around with that.
+2:39
+But for now, at least this form isn't quite so difficult to look at.
+2:42
+Gonna raise this up just a little bit so we can start to see the difference in our post body down there and awesome.
+2:49
+Okay.
+2:49
+That's all the styling we're gonna deal with right now for the form.
+2:52
+The next thing to do is to start hooking up this form and making it so that you can actually fill something in and hit the post button.
+3:00
+
+
+
+:00
+In this challenge, what we're preparing ourselves to do is to take information that is input by the user in our two input fields here and to send it off to a server.
+0:09
+So the first thing we need to do is listen for the submit event on the form, which in our case will happen when the button is clicked, and that's because our button is inside of our form element.
+0:21
+And your task is then to take the values that are input in the title and the body inputs
+0:31
+property.
+0:31
+And then for now, just log that object to the console.
+0:34
+Pause here and work on the challenge.
+0:43
+Well, in order to listen for a submit event on the form, I need my form to have an ID.
+0:49
+So let's go ahead and give this an ID.
+0:51
+Maybe we'll call it new post.
+0:54
+Okay.
+0:54
+With that ID attached to our form, we should be able to easily select it.
+0:59
+So I can say document dot get element by ID new post.
+1:03
+We're going to add an event listener.
+1:06
+Now in our case, we are going to be clicking the button and the button will have a click event, but clicking the button is actually going to trigger the submit event on our form.
+1:16
+We could listen for the click on the button instead of the submit on the form, but personally, I think it's a little more semantically logical to be listening for a form submit.
+1:27
+So we're listening for a submit, and we will run the following function.
+1:34
+I put e here.
+1:35
+I could also just put event.
+1:37
+It doesn't matter.
+1:37
+I'm gonna say e so that I can put prevent default.
+1:41
+This way, it just won't refresh our page when we hit the submit button.
+1:46
+Okay.
+1:46
+And then what I need to do is grab the values that will be input into the title in the body at the time of the post button being clicked.
+1:53
+So let's create a variable.
+1:55
+We'll call it post title.
+1:57
+And that's going to be document dot get element by ID, and our ID is post title.
+2:08
+And then I'm just gonna grab the value from that input box.
+2:12
+We'll do the same thing for the post body.
+2:16
+We'll change that to body.
+2:17
+We'll change that to body, and we should be good.
+2:20
+It's been a minute since I've done any kind of checking of my work so far, so I think I'm gonna console log.
+2:26
+Let's just console log the post title.
+2:28
+Hit save, type something into the title, and post.
+2:31
+And okay.
+2:32
+Good.
+2:32
+So our event listener is working, and we're correctly selecting the post title maybe just to make sure that I'm getting the body as well.
+2:43
+Hit save, type something in there.
+2:45
+Actually, this is the only thing that matters is the body will hit post.
+2:48
+And okay.
+2:48
+Good.
+2:49
+That seems to be working.
+2:51
+Great.
+2:52
+Well, the last thing was just to put those into an object together.
+2:56
+So we'll say maybe data equals an object.
+3:01
+In this case, it says it should have a title property and a body property.
+3:06
+So I'll say the title is the post title that we got above, and the body is the post body that we got above.
+3:13
+And for good measure, it says to console log the resulting object, which we call data.
+3:20
+Okay.
+3:20
+Let's hit save.
+3:21
+We'll say title and body.
+3:25
+We'll hit post.
+3:26
+And awesome.
+3:27
+We got our object with a title property and a body property.
+3:31
+Nice work.
+3:32
+When you're ready, let's keep moving forward.
+3:34
+We're getting closer to actually sending this to the API.
+
+
+
+
+Here we are back looking at our components of a request, and the next thing we're gonna talk about is the request body.
+0:06
+Now the request body is simply the data that we want to send to the server.
+0:10
+So what I want you to do is to think about the methods that we have.
+0:14
+We have a get method, post, put, and delete methods.
+0:17
+In
+0:24
+fact In fact, if you need to, you can pause here just to give yourself a little more time to think about it.
+0:31
+Well, with a get request, we aren't sending anything to the server.
+0:34
+We're asking the server to send us something, and it's something similar with a delete request.
+0:39
+We're not sending data to the server.
+0:41
+We're just sending a signal to the server telling it to delete something for us.
+0:45
+However, with a post and a put request, we are sending data to the server.
+0:49
+So with the request body, we're actually only going to be including it when we have a post or a put request.
+0:55
+And lastly, we need to make sure that we turn the JavaScript object that we're gonna be sending to the server into JSON first.
+1:03
+So how do we actually include a request body?
+1:05
+Well we're gonna do this in a series of challenges here.
+1:08
+First of all, let's remember with fetch we have fetch and then we supply a URL.
+1:13
+Obviously for the first little bit this isn't actually going to work as a fetch request because URL is not a valid URL.
+1:20
+And you'll remember that fetch when we don't provide any additional information or options to fetch, it assumes that our request is a get request.
+1:29
+So your first challenge is to change this fetch call to a post request.
+1:35
+Again, it's not gonna work because URL isn't a valid URL, but it's good practice anyway.
+1:40
+Pause here and try to change this into a post request.
+1:47
+Well, all I need to do is add a second parameter to my fetch request, which is an options object.
+1:54
+And here I can say I want the method of this fetch request to be a post request and that needs to be a string.
+2:01
+Okay, awesome.
+2:02
+Well this options object and let me actually pull this onto its own line so it isn't quite so cluttered.
+2:08
+This options object has, believe it or not, other options that we can add and the one that we're most interested in right now is the body.
+2:16
+And this is where we would include the body or the data that we want to send off to the server.
+2:22
+So with that being said, let me type up the next challenge.
+2:26
+We're gonna do this challenge in a couple parts.
+2:28
+So the first thing I want you to do is to set up this request so you're adding a new to do item on the JSON placeholder API.
+2:35
+I've given you the base URL and the endpoint and the body object that you send should contain two properties.
+2:42
+One will be the title property which is the string of your to do item and the other is a completed property which will be a boolean.
+2:48
+You could probably just default it to false.
+2:50
+Now don't add the dot then blocks yet.
+2:52
+We have one more thing that we're gonna do before it will work correctly.
+2:55
+Pause here and work on this challenge.
+3:02
+Okay.
+3:03
+Well, let's take this beginning URL or the base URL, and then we will add our endpoint there.
+3:12
+So that's the full URL URL where we are sending our request.
+3:15
+We are sending a post request, and the body should be an object with a title property.
+3:21
+And let's just say maybe buy milk, and a completed property, which, like I mentioned, we'll just set as false.
+3:31
+Now the one more thing that we need to do before this will work correctly is change this into JSON.
+3:36
+Like we mentioned here, it needs to be JSON before we can send it off.
+3:40
+There are some libraries that will automatically change your JavaScript body into JSON for you.
+3:46
+With fetch, however, it won't do that automatically for us.
+3:49
+So we need to do that manually.
+3:51
+Fortunately, it's pretty simple.
+3:52
+All we need to do is to use JSON dot stringify
+3:57
+and put our object inside there like that.
+4:01
+Now the second part of this challenge should be second nature to you by now.
+4:04
+You've done it a million times by now.
+4:06
+Let me type it out real quick.
+4:08
+K.
+4:08
+You're just gonna add those two dot then blocks, parse the response as JSON, and then console log the data.
+4:13
+Pause here and do part two of this challenge.
+4:20
+Alright.
+4:21
+Well, like I said, should be second nature.
+4:24
+Get the response.
+4:25
+We'll do dot JSON.
+4:28
+And then with the data that we're given, we will console log the data.
+4:33
+Let's open up the console and run this code.
+4:37
+Okay.
+4:38
+And you'll notice that all we got back was an object with an ID property of two zero one.
+4:43
+Now the JSON placeholder API is a little bit funny.
+4:45
+It's not actually saving new data.
+4:48
+It's not taking my data of this object here and adding it to the main list of to dos.
+4:54
+Instead, it's really just kind of mimicking what would happen if I were to add a post request.
+5:00
+Now if this were the API that I had created or the database that I was maintaining, I would obviously write my server in a way that it would actually add this to do item and save it forever.
+5:11
+In our case, what we got back was an object that says, hey, I added your new to do and here's the ID of that new item.
+5:18
+Sometimes the server would actually respond with the full item.
+5:21
+I would see the title completed and an ID properties all in my to do item that I just saved.
+5:27
+But again, in this case, it's just kind of mimicking a real server.
+5:30
+Awesome work.
+5:31
+Hopefully that wasn't too difficult.
+5:32
+If it was, ask questions in discord, practice this, delete everything you saw, try typing it out again like I always say.
+5:39
+And when you're ready, let's keep going forward.
+
+
+The last main component of a request that we need to talk about is the headers.
+0:04
+Now I mentioned in the last screencast that sometimes an API will send back the data along with the ID that we got.
+0:11
+Well, the truth is this API will do that.
+0:13
+It's still not really adding it to its database or anything, but there's one small problem with what we have going on here.
+0:20
+And that is that we are not properly setting our headers.
+0:24
+Now a header is simply extra information, or I like to think of it as meta information about the outgoing request.
+0:32
+The headers can include information about the type of authentication that you have going on in this request or it might include information about the body that you're sending which is what we're gonna do soon.
+0:43
+Sometimes it'll show things about the client like the browser you're using or the environment you're currently in and so forth.
+0:49
+What I did was I took a screenshot of the headers that were sent out when I did this request to APIs dot Scribba dot com slash JSON placeholders slash to dos.
+0:59
+You can see here that it's got information like the scheme.
+1:02
+It's h t t p s or the path.
+1:03
+It's JSON placeholder slash to dos or that the method was a post method and so forth.
+1:10
+Now there's one thing that's a little bit off here and that is the content type.
+1:14
+By default, it's text plain and it has a character set of u t f eight.
+1:18
+And I believe what this is telling the server is that we're sending plain text to the server in the content body.
+1:23
+However, that's not actually true.
+1:25
+We're sending JSON, not plain text.
+1:28
+Now in an effort to get your hands on the keyboard and get you searching and problem solving, I'm gonna do this next challenge in, again, a little unconventional way.
+1:36
+Let me type it out real quick.
+1:38
+What I want you to do is to copy and paste this URL here.
+1:41
+It's just some documentation from the Mozilla developer network on using fetch.
+1:46
+I even included the ID of the place where you're gonna find this answer.
+1:50
+I want you to look through that and see if you can figure out how to set the content type header.
+1:55
+What's nice about this is the example that they use is using JSON as the content type so you should just be able to essentially copy what is there.
+2:03
+I would like you to type it out just to get some muscle memory involved and then once you add that header to our fetch request, I want you to check to see what comes back.
+2:11
+So pause here and work on this challenge.
+2:18
+Well as we might expect, just like we were able to add a method option to our options object and a body option to our options object, I can add a headers option to our options object, And the headers will be represented by another object.
+2:32
+This is not one that we have to JSON dot stringify or anything.
+2:36
+It's just information about the request that we're passing along to fetch.
+2:40
+And inside there, I'm going to have a property called content dash type.
+2:45
+I believe they need to be capitalized like that.
+2:47
+At least that's the strong convention.
+2:50
+And for the value, I'm going to use application slash JSON.
+2:55
+What this is doing is telling the server that I'm sending JSON in the request body here, so be prepared to take that JSON and parse it into JavaScript and do your thing with it.
+3:06
+Now without these headers, let me comment this out and run this again, open the console.
+3:11
+You'll see we received in return an object with an ID of two zero one.
+3:15
+Now if I put this back in and I hit save and run this, not only do I have an ID of two zero one but I also have the information in the request body that I sent to the server.
+3:26
+What this tells me is that without setting the content type of JSON, the server really didn't know how to handle this request body.
+3:34
+But once I told it that I was sending it JSON, it was successfully able to parse the request body from JSON, add it to the database.
+3:42
+Again, it's not really doing that but for practice sake we're gonna say that it's adding it to its database.
+3:47
+And then when it returns the object back to me, it gives me the same data that I gave it plus the ID that the database added to my object.
+3:56
+There's a lot of options for headers.
+3:58
+For the next while, you probably aren't going to have to deal with them too much beyond what we've done here with content type.
+4:05
+I can't promise that a hundred percent, but I personally haven't done a whole lot with headers manually and so I imagine as you're going through the front end developer career path here, we're not gonna dive super deep into headers.
+4:16
+But if nothing else, hopefully they make sense and you understand the language a little better when you hear someone talking about request headers.
+4:23
+And now we are poised to continue working on blog space and actually add new blogs to our list of blogs through that form that we created.
+4:30
+So let's work on that next.
+
+
+
+Alright.
+0:00
+It's time to basically combine all of the cool stuff that we've learned until now to send our data to the server.
+0:07
+I I know I've said it a bunch of times.
+0:09
+With the JSON placeholder API, we are sending a post request but it's not actually going to add our data to their database or anything.
+0:17
+This is really just for practice.
+0:18
+So your challenge is to send it off to the server.
+0:21
+I've given you the base URL, the endpoint and then kind of was vague about what your method should be and what your request body should be, how you should write your headers and everything.
+0:29
+There's some hints in there and you can always go back and check some of our past casts for a quick reminder if you need it.
+0:35
+But really try this out.
+0:36
+Don't just wait until I show you how to do it.
+0:39
+Kind of pretend this is actually a challenge that you're given maybe at work and you don't have someone right next to you that's just gonna show you how to do it in ten seconds anyway.
+0:47
+I know that you can do it.
+0:49
+Pause here.
+0:49
+Work on this challenge.
+0:55
+Well, let's just start at number one.
+0:57
+We can begin our fetch request.
+0:59
+We'll say fetch, and I'll copy this URL.
+1:03
+This time we're sending it to the post's endpoint.
+1:06
+And let's see.
+1:07
+As we've been learning, I put this options object directly into my fetch request here.
+1:12
+I think just for some variety, I'll take a look at adding that options object separately.
+1:17
+So I'll say const options is an object, and I'll fill it out, but then I'm just gonna supply it here as the second parameter.
+1:25
+You didn't have to do it this way.
+1:26
+It's not necessarily the right way.
+1:28
+It's just for me it's a little bit easier to read.
+1:31
+Now the method is going to be a post request, all capitals p o s t.
+1:36
+Our request body is going to be an object, but it needs to be stringify, JSON dot stringify.
+1:44
+And this object actually, we've already defined this object up here as data, so I don't need the curly braces.
+1:50
+I'll just say data.
+1:53
+And then we have our headers.
+1:55
+And for headers, the only one we're gonna worry about right now is content dash type, capital c, capital t, set to application slash JSON.
+2:04
+Now if you did end up going to the JSON placeholder documentation or something like that, you might see somebody setting the char set a specific way.
+2:12
+I've found that I don't actually need to do that for this to work, but just hoping to acknowledge that that is a thing you can set the different character set right here inside of content type.
+2:22
+So I've built out my options object, and I'm supplying it here in fetch.
+2:27
+I'm not really gonna get any kind of feedback if I just run this, so I better add my dot then blocks.
+2:33
+I'm gonna take the response and parse the body from JSON to JavaScript.
+2:39
+And then with the data, we will console log the data.
+2:44
+And let's see how we did.
+2:45
+Let's hit run.
+2:47
+I'll say this is a new title, new body, hit post, and awesome.
+2:52
+Look.
+2:53
+If we check our console, it looks like we got that back similar to how we did with the to do's API earlier.
+2:58
+The obvious next step is to take this data that we got back and to actually add it to our list of blog posts here.
+3:05
+We're gonna do that in the next screen cast.
+
+
+
+
+So we've written the logic that allows us to post a new blog post to the server.
+0:05
+Now what we need to do is take the data that comes back and just add it to the DOM.
+0:10
+Probably the easy approach would be just to add it to the bottom of our posts here in the list down here at the bottom.
+0:18
+If you want a little bit of an extra challenge, you could try to make it so that it puts the newest post on the top.
+0:23
+It's really up to you, but go ahead pause here and work on this challenge.
+0:32
+Well, up here, I'm adding my HTML or I've got my HTML that's allowing me to add this stuff to the DOM.
+0:40
+And I'm setting an HTML variable and then adding it all to my inner HTML of my blog list.
+0:47
+So this blog list is the div, I think, that's containing all of my blogs.
+0:53
+Let me go ahead and grab this.
+0:56
+And down below, essentially, I'm going to take the inner HTML and then do a plus equals of probably just the same HTML that I was adding up above here.
+1:08
+So let me copy this.
+1:10
+I'll paste it in there.
+1:12
+And then up above, we chose to call our post post, and here we're calling it data.
+1:16
+I think I might actually just change it here since I really get to choose what I wanna call this anyway.
+1:22
+And, actually, I'll delete this console log.
+1:25
+So this should be saying grab the inner HTML of everything that's already there and then add to it the same HTML that we had been using to add the other blog posts.
+1:36
+Scroll to the top and just refresh this.
+1:40
+We'll say this is a new title and a new body.
+1:43
+Hit post, and let's scroll down to the bottom.
+1:46
+Awesome.
+1:46
+There it is.
+1:47
+So that added it to the Dom.
+1:48
+Now with a blog post, it seems kind of funny to add it to the bottom, so I think I also want to do the challenge of putting it up here toward the top.
+1:56
+Now kind of a tricky way that I could do is to just take this inner HTML line that I have here and stick it at the bottom of my document here.
+2:06
+And then what I'm gonna do instead of adding to it, I'm just gonna get rid of my plus.
+2:11
+And essentially what I'm saying is take the inner HTML of the div that contains all of my blog posts and set it equal to this new blog post and then all the other blog posts from before.
+2:24
+The inner HTML of all the other blog posts is not yet being overwritten until this operation is complete, and so I still have access to all those other blog posts in this line right here.
+2:36
+First, let's just see if this works.
+2:37
+I'll hit save.
+2:39
+And notice, by the way, before I submit a new one that my new post is gone.
+2:42
+It's not here because the database is really not saving this data anywhere.
+2:48
+But we'll say new title, new body, post, and there it is.
+2:53
+It showed up there at the top.
+2:54
+Now if you're still fairly new to web development, this might not trigger the same things that is triggering for me, but this is something that to me is called a code smell, which means that something just feels off.
+3:05
+For example, I have this HTML that's being written twice.
+3:09
+I've got it up here and I've got it down below where we just added it.
+3:13
+And this seems to be working just fine.
+3:15
+And for a small project like what we have here, it's probably not going to be a big deal.
+3:20
+However, oftentimes you don't know how big the project's gonna end up growing, and when you introduce little inconsistencies or pieces of your code that aren't dry or aren't conforming to a really a good pattern, sometimes those can get a little bit out of hand as your project grows.
+3:37
+For example, if I wanted to add a class to this h three, just call it blah, then all of a sudden I have two places that I need to update this.
+3:46
+I would need to add it here, and I would also need to add it here.
+3:50
+And who knows?
+3:50
+Maybe I have four or five instances where I've copied and pasted this code.
+3:55
+Now I'm updating it everywhere, and it just starts to get out of hand.
+3:58
+So in the next screencast, we're going to do a bit of a refactor on how we approached this problem.
+4:04
+Doing a refactor like this is completely normal.
+4:06
+It's one of the most common things you're gonna end up doing as a web developer assuming you have the bandwidth to actually fix your code instead of kind of leaving it in a poor condition for other people.
+4:16
+So when you feel good about what we did here, let's keep moving forward.
+
+
+
+Now there's a couple things with our code that are kind of rubbing me the wrong way.
+0:04
+The first one like we talked about is our duplicated HTML code that we have both here and down here.
+0:10
+In a small project like this, it's probably not that big of a deal, but I usually like to tend toward the side of doing things right instead of assuming that this project will never grow and passing it on to other developers who then have to wonder why I didn't make this simpler or more dry.
+0:27
+The other thing though that's kind of irking me about this code is we've got this operation that runs right when the program loads and it's doing a lot of things.
+0:36
+First of all it's getting the data and then obviously it's getting the JSON from the data then it's taking the the data and it's maintaining the array and then it's creating some HTML and then it's updating the DOM.
+0:47
+That makes it sound like a lot of things.
+0:49
+If you boil it down really though it's getting data and updating the dom and then later on we're also updating the dom in the same way and that's where we get our duplicated code.
+0:59
+Another thing is we really only have access to the list of posts that comes back within this function right here.
+1:07
+Once this function ends, we no longer have access to our posts array, which is why down here, what we had to do was take everything from the inner HTML and tack it on to the end of our new blog post.
+1:20
+So I think what a better approach would be is to have in this case a global variable.
+1:25
+So let's say posts array, and I'm gonna set this equal to an empty array.
+1:31
+And by the way, I'm intentionally not doing this first part as a challenge because I kinda thought it might be helpful just to see the way that I go about these refactors.
+1:41
+And at a point in this cast, we will do a quick challenge just so you don't tune out quite yet.
+1:46
+Then I think what I'll do is when I have access to the data and I slice out just the first five items so we don't have a hundred items listed there, Instead of creating this new variable, I think I'm just going to set my post array equal to the array that comes back with just the first five items.
+2:05
+Of course, typing this equal sign is reminding me that I can't use a const here.
+2:08
+I'm gonna have to use a let if I'm going to be reassigning this variable.
+2:12
+And the next thing I think I'm gonna do is create a separate function that I'll call render posts whose entire job is to update the DOM based on what the current state of our post array is.
+2:26
+In that way, each of these fetch requests that I have here and I have down here, all they're going to do is update post array and then call render posts, and they will delegate the updating of the Dom to my function render posts.
+2:39
+Now if you have followed my logic up until now and that kind of makes sense then what I'd like you to do is to pause and to actually try implementing this render post.
+2:48
+Refactor what we have, move some of this code into render posts and then call render posts inside of our other functions.
+2:55
+If you're feeling a little lost, you can skip this exercise.
+2:58
+You have my permission to skip this one challenge.
+3:00
+But if that does make sense, I want you to pause here and to try it out.
+3:08
+Well, I'm going to, I think, just take all of this code that deals with updating the DOM, and I'm gonna cut it right out of this fetch here.
+3:16
+And then I'm going to paste it inside of my render posts method or function up here and then just call render posts.
+3:26
+So I'm gonna hit refresh.
+3:27
+The funny thing about doing refactors is essentially we'll know that it worked if nothing changes.
+3:32
+So let me hit refresh and oh, yep.
+3:35
+We got an error that said post array is not defined.
+3:38
+That's really smart.
+3:39
+That's because here, it's post ARR.
+3:42
+That's what we called it inside of our other function, but now we're calling it post array.
+3:47
+So let me update this and let's try refreshing again and there's our posts again.
+3:51
+Awesome.
+3:51
+That means that the refactor is working.
+3:54
+We have this function that is dedicated entirely to taking whatever is in our post array and rendering it to the Dom.
+4:01
+You can see our fetch here that runs right when the app loads is much simpler now.
+4:05
+Okay.
+4:06
+This is where the challenge for everybody lives.
+4:08
+Let me type it out really quick.
+4:10
+Okay.
+4:10
+So the challenge is to use our brand new render post function and to clean up the code that we have down here.
+4:15
+Make sure that when you're doing this, you update the post's array variable first.
+4:19
+Pause here and try this challenge.
+4:26
+Well, instead of being concerned with how our data is laid out, for example, putting our new post at the top and then taking everything from the DOM from before, what I should be able to do is just update my post array variable.
+4:40
+So we'll say posts
+4:44
+array.
+4:44
+And since this is an array, if I wanna add my new post to the end, I can say simply dot push post.
+4:51
+Or what's really nice about doing it this way is if I want my new post to show up at the beginning, I have an array method for that, and I can just use unshift.
+4:59
+That'll put my new post at the beginning of the post's array.
+5:03
+And then when I call render posts, it should just put my new post at the top.
+5:07
+Let's refresh.
+5:10
+We'll say new title, new body, post, and awesome.
+5:14
+It showed up right at the top, and we did it in just two lines of code.
+5:19
+I can delete this challenge to clean things up a little bit, and you can see that, essentially, we have our app completed.
+5:26
+Again, doing a refactor like this is a pretty common thing.
+5:29
+If you want to go back to the beginning and see if you can reimplement this refactor from scratch, you are more than welcome to do that.
+5:36
+The more practice you get, the better.
+5:38
+When what we've done here makes sense, let's keep going forward.
+
+stopped at RESET FORM
+

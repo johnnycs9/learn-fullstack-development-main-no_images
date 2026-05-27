@@ -1,0 +1,1747 @@
+Speaker
+
+What you see before you is the magnificent
+
+Speaker
+
+board bot. And this is the project we are going to be working on in this section. Now in reality all it is is a button and when you click it it calls out to an API called the board API and it gives you an idea of something to do in case you're bored.
+
+Speaker
+
+This will be a great project for us to use as our starting point because the project itself is fairly simple.
+
+Speaker
+
+And I mean, you can even see.
+
+Speaker
+
+I have 14 lines of HTML, I have 11 lines of JavaScript.
+
+Speaker
+
+And I've included...
+
+Speaker
+
+Well, I guess the CSS is the most here. And when we build this together, we're going to build it completely from the ground up. I'm not going to skip any steps with you. Hopefully that will give you a chance to practice some of the past modules that you've worked on in the career path. And we're going to use the simple projects to really drive some of the syntax that we'll be learning. You can see if you haven't used fetch before the syntax might look a little funny where we have fetch, we have these dot then.
+
+Speaker
+
+functions that are running and...
+
+Speaker
+
+That's where we put our code inside there. We're going to really dive deep into this concept.
+
+Speaker
+
+in a future section, but we will be practicing this syntax together in this section.
+
+Speaker
+
+So without further ado, let's dive right in.
+
+Speaker
+
+At this point in the course you should have already learned about JSON, but I thought it might be a good time to do a little bit of a recap. JSON stands for JavaScript, Object Notation, and the reason is because it looks
+
+Speaker
+
+Well, basically, like JavaScript. You can see I have here an object, and this object has a name, property, age, property, gender, property, a hobbies, property, which is an array of strings. And essentially, this looks almost identical to a JavaScript object. Now, as you can see, this is person.json, not person.js. So this is a JSON file.
+
+Speaker
+
+The major difference here is that our keys in the object need to be surrounded in double quotes. And as long as the keys are in double quotes, your values can be any regular JavaScript value type that you normally would have. For example, you can see I have here age is the number 42. I wouldn't want to put this as the string 42 because that, well, it's a different data type.
+
+Speaker
+
+And if I wanted to have a boolean value, I wouldn't use the string
+
+Speaker
+
+true, for example, it would just be the value true, which is its own Boolean data type. It's not a string. Now strictly speaking, JavaScript Object Notation JSON is valid as just a plain string. I could just have the string high, and this is valid JSON. Same with like true. I could just have the value true here. However, you're pretty much never going to see any JSON that's just a bare value like this. It's
+
+Speaker
+
+possible I suppose that you may come across some
+
+Speaker
+
+something simple like an array of strings like this, but...
+
+Speaker
+
+Almost exclusively, you will either have.
+
+Speaker
+
+a single object.
+
+Speaker
+
+or
+
+Speaker
+
+like we see over here in people.json.
+
+Speaker
+
+an array of objects.
+
+Speaker
+
+Hopefully most of that is review for you. I thought one thing that could be useful to look at is the network tab. Now in this module we are mostly concerned with JSON because it's the format for the data that is going to be sent to us well and that we're going to be sending out as well. Now I'm using a site called JSON-Lint as my example here mostly I guess to kill two birds with one stone. You can see that I've taken this person.json object copied it over into JSON-Lint
+
+Speaker
+
+And I hit this Validate JSON button, and what that will do is it'll tell me that it's Validate JSON.
+
+Speaker
+
+This is useful if, for example, I'm typing out my own JSON for something.
+
+Speaker
+
+And I just want to make sure I formatted it exactly. And it needs to be exactly right with the double quotes and the commas at the end and everything. So JSON-Lint is helpful, you can come.
+
+Speaker
+
+click on the link up here that'll take you there. But while I was there, I thought I would show you how you can look at your own network tab and see the JSON that comes in. So if you were to right click,
+
+Speaker
+
+This doesn't have to be on JSON-Lint. It can be on any website. And click the Inspect icon. This may be a little bit different depending on which browser you're using.
+
+Speaker
+
+This will bring up your developer tools. By default, it will show you the elements tab, which is great if you're doing HTML and CSS kind of debugging or--
+
+Speaker
+
+testing, but I would like you to go over to the Network tab. And once you're over to the Network tab, you'll see something that kind of looks like this.
+
+Speaker
+
+Now one thing you might notice is I've clicked this xh.
+
+Speaker
+
+an array of objects. The network tab that is going to be here mostly that I've taken on Lint.
+
+Speaker
+
+And I hit this validate JSON button, and what that will do is it'll tell me that it's valid JSON. This is useful if, for example, I'm typing out my own JSON for something added it exactly. It needs to be exactly right with the double quotes and the commas at the end and everything. So JSON Lint is helpful, you can come.
+
+Speaker
+
+Click on the link up here that'll take you there. But while I was there, I thought I would show you how you can look at your own network tab and see the JSON that comes in. So if you were to right click,
+
+Speaker
+
+This doesn't have to be on JSON-Lint. It can be on any website. And click the inspect icon. This may be a little bit different depending on which browser you're using.
+
+Speaker
+
+This will bring up your developer tools. By default, it will show you the elements tab, which is great if you're doing HTML and CSS kind of debugging or--
+
+Speaker
+
+testing, but I would like you to go over to the Network tab. And once you're over to the Network tab, you'll see something that kind of looks like this.
+
+Speaker
+
+Now one thing you might notice is I've clicked this XHR filter, which means it's not going to show me every request or network request and response that I have made from this website.
+
+Speaker
+
+But instead, it's just going to filter out the XHR requests. We haven't really talked much about XHR, but it's an Ajax request that usually receives JSON as a response. Don't be too concerned about that. But the point is, I was able to see that JSON-Lint, for example, on this third Ajax request, or XHR request,
+
+Speaker
+
+able to click on it and see that
+
+Speaker
+
+It was sending a post request out to Stripe and it got a status code of 200 in return. And if you click the preview tab in sort of the submenu, you can actually see the JSON data that was being sent out. This top line in black is a representation of the object. You can see there's an ellipsis here that says there's more properties to this object.
+
+Speaker
+
+And if you click the little drop down arrow, it'll actually--
+
+Speaker
+
+enumerate the keys and values that were being sent.
+
+Speaker
+
+Now I'm not logged into JSON Linter anything. I'm assuming that these numbers don't really mean anything meaningful to us. But this is kind of a fun little habit to get into. You can go to any website that you normally might use. Maybe try going to Facebook, opening your developer tools.
+
+Speaker
+
+going to the Network tab, if you want to make it a little easier to parse through the long list of network requests that are being made, you can
+
+Speaker
+
+and
+
+Speaker
+
+XHR request that's sending JSON and you could even take a look at what comes back. It's actually pretty interesting. I know maybe this is a little boring for some of you. If you're curious, this little timeline here is a way to see how long each request took and what order everything kind of played out when the site refreshed. Anyway, that was just meant to be a quick recap of JSON. Hopefully that's helpful. We're going to be using JSON
+
+Speaker
+
+pretty extensively.
+
+Speaker
+
+We won't actually be typing too much of our own JSON, but because JSON is sort of the language of data on the web.
+
+Speaker
+
+I thought it would be good to kind of refresh our knowledge of JSON.
+
+Speaker
+
+Play around in your dev tools, check out jsonlint.com, and when you feel ready, let's keep going forward.
+
+Speaker
+
+Okay, so this might be a little bit of an unconventional approach. I'm supposed to teach you how to use Fetch.
+
+Speaker
+
+But what I would actually like you to do is...
+
+Speaker
+
+To work on this challenge, you're going to Google how to use fetch with JSON, and you should really get a good result as probably the first or maybe second result from MDN. And you'll find on that page an example of how to use fetch, but I want you to manually copy over the fetch example that you see and change the URL that they use
+
+Speaker
+
+with this dog CEO URL that I have here. The only reason I'm doing it this way this time is because it's going to be a very common task for you as a developer to have to Google something, look up the documentation for how to do something. Of course, we're going to go through this together, but I highly encourage you to give this challenge your very best try. So pause here and try it out.
+
+Speaker
+
+Okay, well, I took a couple screenshots just to show what
+
+Speaker
+
+results look like, so I searched for how to use fetch with JSON.
+
+Speaker
+
+And at the very top result was the
+
+Speaker
+
+Mozilla Developer Network, or MDN, article on using fetch.
+
+Speaker
+
+And in that article, it led me to this example where it has
+
+Speaker
+
+- Catch you, catch you.
+
+Speaker
+
+a URL.
+
+Speaker
+
+and to dot then.
+
+Speaker
+
+sort of blocks after it.
+
+Speaker
+
+So we are going to do that. We're using the keyword fetch. This is a built in function to JavaScript.
+
+Speaker
+
+We are going to use this URL. You didn't have to manually copy over this URL just copying pastes this fine. And in our example, they put their dot then blocks on the next line. We're going to go in detail onto what this actually means and what it's doing a bit later.
+
+Speaker
+
+And let's see, it says that dot then receives a response. Now I have an arrow, which means that this is actually a function. So dot then receives a function that
+
+Speaker
+
+that will take a response, and it returns response.json.
+
+Speaker
+
+So we'll say response arrow response dot json and that was a function as well. Then on the next line there's another dot then where we have our data and they just console log the data.
+
+Speaker
+
+Data Arrow.
+
+Speaker
+
+Console Log Data.
+
+Speaker
+
+Let me open the console, since we'll be logging this. I'll hit run.
+
+Speaker
+
+And it's pretty simple JSON that's coming back. It's an object that has...
+
+Speaker
+
+a message property, which has an image on it, and a status property, which says success. And just based on the URL, as I'm recording this,
+
+Speaker
+
+even though you may have gotten a different one since it's a random image. The one that I got in response looks like it's an Australian Terrier just based on the URL.
+
+Speaker
+
+Now again, we're gonna dive.
+
+Speaker
+
+a lot deeper into promises and understanding exactly what this syntax is doing. But until then, we're going to get a lot of practice with actually just typing this out the way it is. I do have one quick aside I want to talk about before we continue on, and we are going to do that in the next screencast.
+
+Speaker
+
+Okay, so this might be a little bit of an unconventional approach. I'm supposed to teach you how to use Fetch.
+
+Speaker
+
+But what I would actually like you to do is.
+
+Speaker
+
+to work on this challenge. You're going to Google how to use fetch with JSON and you should really get a good result as probably the first or maybe second result from MDN. And you'll find on that page an example of how to use fetch. But I want you to manually copy over the fetch example that you see and a little bit of an unconventional approach. I'm supposed to teach you how to use fetch
+
+Speaker
+
+But what I
+
+Speaker
+
+couple screenshots just to show
+
+Speaker
+
+results look like.
+
+Speaker
+
+So I searched for how to use fetch with JSON.
+
+Speaker
+
+And at the very top result was the
+
+Speaker
+
+Mozilla Developer Network, or MDN, article on using fetch.
+
+Speaker
+
+And in that article, it led me to this example where it has fetch.
+
+Speaker
+
+URL and two dot then sort of blocks after it. So we are going to do that. We're using the keyword fetch. This is a built in function to JavaScript.
+
+Speaker
+
+We are going to use this URL. You didn't have to manually copy over this URL, just copy and paste this fine. And in our example, they put their dot then blocks on the next line. We're going to go in detail onto what this actually means and what it's doing a bit later.
+
+Speaker
+
+And let's see, it says that dot then receives a response. Now I have an arrow, which means that this is actually a function. So dot then receives a function that will take a response and it returns response dot JSON.
+
+Speaker
+
+So we'll say response arrow.
+
+Speaker
+
+response.json.
+
+Speaker
+
+And that was a function as well.
+
+Speaker
+
+Then on the next line, there's another dot then.
+
+Speaker
+
+where we have our data and they just console log the data.
+
+Speaker
+
+Data Arrow.
+
+Speaker
+
+console log data.
+
+Speaker
+
+Let me open the console, since we'll be...
+
+Speaker
+
+Logging this, so hit run.
+
+Speaker
+
+And it's pretty simple JSON that's coming back. It's an object that has...
+
+Speaker
+
+Two properties, a message property, which has an image on it and a status property, which says success. And just based on the URL, as I'm recording this, even though you may have gotten a different one since it's a random image, the one that I got in response looks like it's an Australian Terrier just based on the URL.
+
+Speaker
+
+Now again, we're gonna dive.
+
+Speaker
+
+a lot deeper into promises and understanding exactly what this syntax is doing. But until then, we're going to get a lot of practice with actually just typing this out the way it is. I do have one quick aside I want to talk about before we continue on, and we are going to do that in the next screencast.
+
+Speaker
+
+Okay, so this might be a little bit of an unconventional.
+
+Speaker
+
+Okay, well, I took a couple screenshots just to show what my results look like. So I searched for how to use and at the very top result Mozilla developer now using FET, me too, this example where it has FET.
+
+Speaker
+
+>> Thank you.
+
+Speaker
+
+you are all.
+
+Speaker
+
+and to dot then.
+
+Speaker
+
+sort of blocks after it.
+
+Speaker
+
+So we are going to do that. We're using the keyword fetch. This is a built in function to JavaScript.
+
+Speaker
+
+We are going to use this URL. You didn't have to manually copy over this URL just copy and paste this fine. And in our example, they put their dot then blocks on the next line. We're going to go in detail onto what this actually means and what it's doing a bit later.
+
+Speaker
+
+And let's see, it says that.then receives a response. Now I have an arrow, which means that this is actually a function. So.then receives a function that will take a response, and it returns response.json.
+
+Speaker
+
+So we'll say response arrow response dot json and that was a function as well. Then on the next line there's another dot then where we have our data and they just console log the data.
+
+Speaker
+
+Data Arrow.
+
+Speaker
+
+Console log data.
+
+Speaker
+
+Let me open the console, since we'll be
+
+Speaker
+
+So hit run.
+
+Speaker
+
+And it's pretty simple JSON that's coming back. It's an object that has...
+
+Speaker
+
+To properties, a message property, which has an image on it and a status property, which says success.
+
+Speaker
+
+And just based on the URL, as I'm recording this, even though you may have gotten a different one since it's a random image, the one that I got in response looks like it's an Australian terrier just based on the URL.
+
+Speaker
+
+Now again, we're going to dive on.
+
+Speaker
+
+a lot deeper into promises and understanding exactly what this syntax is doing. But until then, we're gonna get a lot of practice with actually just typing this out the way it is. I do have one quick aside I wanna talk about before we continue on, and we are gonna do that in the next screencast.
+
+Speaker
+
+One thing that will be really helpful to understand will kind of gloss over this idea now, and we'll cover it much more in detail later, is the fact that the code that you write inside of your dot then function, this function inside of the dot then,
+
+Speaker
+
+order in which this is executed will be different than you might expect.
+
+Speaker
+
+Let me kind of show you what I mean.
+
+Speaker
+
+Let me put above my fetch a console log.
+
+Speaker
+
+the first console log. And then I'm going to move another console log down here and we'll say the second console log.
+
+Speaker
+
+And then we're already console logging the data inside of this dot then. Intuition as your first learning coding might tell you that.
+
+Speaker
+
+This will run from the top down, kind of like we read a book. And we would see console log the first console log.
+
+Speaker
+
+It would do the fetch requests. It would change the JSON response into JavaScript. It would then console lock the data. And then it would console lock the second console log string here. But let's run this and see what happens. We open the console. And you probably noticed it said the first console log, the second console log, and then we got the data. And this is the beauty of asynchronous JavaScript. asynchronous just means it's happening out of order, out of time. The beauty of these dot then blocks is they don't block the other code in your JavaScript program from running.
+
+Speaker
+
+We're going to do run this code 100 times.
+
+Speaker
+
+back let's put this console log in there.
+
+Speaker
+
+And we'll say...
+
+Speaker
+
+inside the for loop.
+
+Speaker
+
+I'll hit save to run my program. And well, okay, so Scrimba's console shows 100 next to I'm inside the 4 loop.
+
+Speaker
+
+And that's because it ran that pan-selegg 100 times. So we got the first pan-selegg, the second pan-selegg,
+
+Speaker
+
+in Consolog, 100 instances of the Consolog I'm inside the for loop, and then if you were watching closely, it even then took, you know, another few milliseconds before the Consolog of our data came back. This is just a taste of asynchronous JavaScript. We are going to touch on this in a lot more depth later in the course, but hopefully there's some insight happening or maybe even clarified some
+
+Speaker
+
+something that you've been confused about. With that said, let's keep moving forward in the course.
+
+Speaker
+
+One thing that will be really helpful to understand will kind of gloss over this idea now, and we'll cover it much more in detail later, is the fact that the
+
+Speaker
+
+the code that you write inside of your dot then function, this function inside of the dot then.
+
+Speaker
+
+the order in which this is executed will be different than you might expect.
+
+Speaker
+
+Let me kind of show you our in detail later is the fact that
+
+Speaker
+
+the code that you write inside of your dot then function, this function inside of the dot then.
+
+Speaker
+
+The order in which this is executed will be different than you might expect.
+
+Speaker
+
+Let me kind of show you what I mean.
+
+Speaker
+
+Let me put above my fetch a console log.
+
+Speaker
+
+the first console log. And then I'm going to move another console log down here and we'll say the second console log.
+
+Speaker
+
+And then we're already console logging the data inside of this dot then.
+
+Speaker
+
+In this challenge, you're essentially going to be doing the same thing that you did before when you did your first fetch, but this time you're going to take the URL that you received from the dog API and put it into the DOM, actually display it on our screen over here. Obviously, feel free to look back at that or use the Google resources that we talked about in that last video to help you get started, but go ahead, pause now, and work on this challenge.
+
+Speaker
+
+Well, let's start with number one. We're going to fetch the resource.
+
+Speaker
+
+I put the URL up here. And on the next line, I like to do it on the next line just to keep it simple, otherwise it gets kind of long on this one line.
+
+Speaker
+
+We'll say with the response that comes back, we're going to...
+
+Speaker
+
+Change the...
+
+Speaker
+
+body of the response from JSON into JavaScript. That's what response.json does.
+
+Speaker
+
+And then...
+
+Speaker
+
+We'll have access to the data.
+
+Speaker
+
+And once again, let's just start by console logging the data.
+
+Speaker
+
+It's safe.
+
+Speaker
+
+Okay, this is where we ended last time now.
+
+Speaker
+
+Data is an object. It has a message property.
+
+Speaker
+
+We want to do more than just console like this. I'm going to open the body of this function.
+
+Speaker
+
+And currently I have, well nothing on my browser, so over in my HTML. I guess I could create an image and have an empty source, although I think that's actually bad practice, and then add the source in the JavaScript.
+
+Speaker
+
+Instead, I think what I'll do is create a div where I can put this image.
+
+Speaker
+
+and then just create the image in JavaScript. So I'll give it an ID so it's easy to select, we'll say image, I don't know, image container, why not.
+
+Speaker
+
+I guess I also could have put this in the body, but I don't know, a div gives me a
+
+Speaker
+
+based on does.
+
+Speaker
+
+And...
+
+Speaker
+
+Then...
+
+Speaker
+
+We'll have access to the data.
+
+Speaker
+
+And once again, let's just start by console logging the data.
+
+Speaker
+
+It's safe.
+
+Speaker
+
+My console and okay, this is where we ended last time now.
+
+Speaker
+
+Data is an object. It has a message property.
+
+Speaker
+
+We want to do more than just console log this. I'm going to open the body of this function.
+
+Speaker
+
+And currently I have, well, nothing on my browser, so over in my HTML. I guess I could create an image and have an empty source, although I think that's actually bad practice, and then add the source in the JavaScript.
+
+Speaker
+
+Instead, I think what I'll do is create a div where I can put this image.
+
+Speaker
+
+and then just create the image in JavaScript. So I'll give it an ID so it's easy to select, we'll say image, I don't know, image container, why not.
+
+Speaker
+
+I guess I also could have put this in the body, but I don't know. A div gives me a little more styling control and stuff like that, so.
+
+Speaker
+
+Let's say first we'll
+
+Speaker
+
+Get our elements.
+
+Speaker
+
+by the image container.
+
+Speaker
+
+I d, and then we'll set the inner H2 metal to equal. I'm going to use a template string.
+
+Speaker
+
+So I can just put this on its own line.
+
+Speaker
+
+We'll say we have an image where the source equals, let me finish off this tag.
+
+Speaker
+
+And we will use interpolation here, and we decided it was data.message. We haven't done anything with the Hiter width, but let's just kind of see how this turns out.
+
+Speaker
+
+Let's save and awesome. In the end, this really should have just been a way to practice this fetch syntax with these dot then blocks, which still probably are a bit unfamiliar. And again, that's okay. We're going to cover these more in detail later, but also hopefully a little bit of a callback to
+
+Speaker
+
+inner HTML and DOM manipulation and so forth. If you're still feeling a little bit uncomfortable with this, of course, to spend as much time here as you can.
+
+Speaker
+
+You could delete this entire thing and start again from scratch. And whenever you're ready, let's keep going forward.
+
+Speaker
+
+Well, if you know my teaching style, you know, I'm all about the repetition. So...
+
+Speaker
+
+What your challenge is this time is you're going to fetch a random activity from the board API.
+
+Speaker
+
+Here is the URL that you will use, and once you get that activity IDEA from the board API, which is an API for helping you come up with ideas if you're feeling bored, you'll display the activity in the browser, or rather you'll display the text of the activity IDEA in the browser.
+
+Speaker
+
+pause here and try this out.
+
+Speaker
+
+Okay, well, let's do fetch.
+
+Speaker
+
+We use the URL found up here.
+
+Speaker
+
+And then when the response comes back, we'll run this function, which receives the response.
+
+Speaker
+
+And we'll parse the body of the response into JSON or out of JSON into JavaScript.
+
+Speaker
+
+and that will give us access to the data. I pretty much always like to just console log the data first to see what it looks like.
+
+Speaker
+
+Okay, we have an object with an activity, a type, participants, price, link, key, and accessibility.
+
+Speaker
+
+The activity key is the one we want. We got go on a fishing trip with some friends.
+
+Speaker
+
+So the next thing is to do part two, which is to display the text of the activity in the browser. So I'm going to open up this function.
+
+Speaker
+
+So we can do more than one thing. And I guess I could do something really simple like document.write, but I kind of hate document.write because it's so useless. We never really do it in the real world.
+
+Speaker
+
+Instead, I think what I'll do is maybe this time I will create an H1 placeholder.
+
+Speaker
+
+And this is where the text is going to be, but for now, I'll give it an ID, so it's easy to select, we'll say activity name, maybe.
+
+Speaker
+
+Ben.
+
+Speaker
+
+In my JavaScript, I can...
+
+Speaker
+
+get the element by the ID that I just specified and change the text content to be, well, let me have you do this. If you struggled getting to this point, then pause here and try to add in the last little piece that we need here to finish this challenge.
+
+Speaker
+
+Well, we've got data and it's got an activity property, so it should just be data.activity. Now, when I hit save, it's actually going to do another fetch and probably get a different activity, so we probably won't see go on a fishing trip with some friends, but let's see, maybe we'll get lucky.
+
+Speaker
+
+Okay, start a garden. Cool.
+
+Speaker
+
+Again, this kind of repetition, I don't intend it to be busy work at all. If this is unfamiliar to you, then hopefully typing this out again and again. We'll really prime you for when we talk more in depth about exactly what's happening here.
+
+Speaker
+
+Awesome, well, we've got the very basics of what we want to do with our board bot kind of started here. So let's keep moving forward and keep building out the board bot.
+
+Speaker
+
+Before we get too far and this becomes kind of a confusing thing I want
+
+Speaker
+
+I wanted to address why we're using this URL where it's api.scrimba.com.
+
+Speaker
+
+Instead of if you happen to do a quick search for the board API, the real URL that they use, which is boardapi.com/api/activity. The only reason you'll see a number of these APIs.scrimba.com links here when we're fetching from an API is purely a logistical thing. It's trying to solve an issue where if sometime down the road, the board API decides that they want
+
+Speaker
+
+to shut their doors or not really support any.
+
+Speaker
+
+more requests or anything like that, that these lessons that are using the board API don't become obsolete. In fact, here on Scrimba on some of my other courses, I've recorded lessons that we're using, for example, an API called swapi.co.
+
+Speaker
+
+But then swap you dot co-gott.
+
+Speaker
+
+removed or whoever was running the website decided to take it down and somebody else popped up and had Swapi.dev. Well, because of the difference here, all of a sudden all of my screencasts are a little bit broken. Students who are trying to run their code with Swapi.co
+
+Speaker
+
+aren't able to.
+
+Speaker
+
+Anyway, long story short.
+
+Speaker
+
+The reason that you'll see a number of APIs.scrum.com
+
+Speaker
+
+is just so that we can have the API be a little bit more evergreen. So these courses won't become obsolete if something were to change or break on the API. Many of these APIs are completely open source, including the data that they provide. And so we've just simply
+
+Speaker
+
+put that on our own Scrimba servers so that we can kind of have a little bit more control over the longevity of that API. So again, just wanted to address that for now. In case there was any kind of confusion, you'll see a number of these APIs.scrimba.com.
+
+Speaker
+
+URLs as we go throughout this course and other courses. And that's about it. Let's keep going forward.
+
+Speaker
+
+Okay, let's start building out the skeleton for the board bot. We're gonna start with the HTML and I have a challenge here for you to work through. I've commented out the JavaScript because we're not going to...
+
+Speaker
+
+be terribly concerned with this quite yet. Let's actually get some elements on the screen.
+
+Speaker
+
+so that we have something to interact with.
+
+Speaker
+
+Pause here, read through this challenge, and start working on it.
+
+Speaker
+
+Okay, let's add a title to our app. We had some stuff here from before. We're gonna be recreating this, so...
+
+Speaker
+
+Probably.
+
+Speaker
+
+going to get rid of this activity name and I think I will just say board bot.
+
+Speaker
+
+Like I said, it's probably a good place. I'm going to put a couple of little emojis there.
+
+Speaker
+
+And let's hit refresh. Okay, our styling is struggling of course, but
+
+Speaker
+
+Let's go ahead and add maybe an H4.
+
+Speaker
+
+that just has something simple like...
+
+Speaker
+
+I am something...
+
+Speaker
+
+Okay, and then we are going to add a button and this will probably end up being...
+
+Speaker
+
+Make a big red circle.
+
+Speaker
+
+that we have here for finding something to do. So actually, I don't need any text there. It will just be a visual button that they can click.
+
+Speaker
+
+And the default styling here is just a little tiny button there. That's fine. We're going to get to the CSS next, but I figured we could just kind of fight into this one small piece at a time. So when you're ready, let's go to the next section where we will add quite a bit of CSS here so that it actually looks decent.
+
+Speaker
+
+One thing that's hard about these kinds of projects is when I ask you to do something super open and ended like for example, adding some styling, I totally understand that might be a bit difficult to spend a bunch of time and effort doing that only because once you hit play and watch me do it, all of your work is essentially going to go away. Now you can click down here in the right, the lower right corner. There's a little gear icon.
+
+Speaker
+
+You can click download as zip if there's ever anything that you want to save. Also, when you make changes to the screencast, you have the opportunity to save your changes as a note. And that note, essentially, will create a separate scrim on your--
+
+Speaker
+
+account that you can always come back to and you can give it a good name if you wanted to remember it or come back to it.
+
+Speaker
+
+But the main point isn't for you to be building the next Facebook or anything. It's for you to get your hands on the keyboard and get those repetitions in practicing, in this case, some CSS. So pause the screencast here, work on this challenge, add some styling to this boardbot, so I guess it's not quite so boring.
+
+Speaker
+
+Okay, so let's go over to our CSS.
+
+Speaker
+
+And the first thing I think I want to do is give a little bit of a background color to the body. Now I could go with just kind of a basic background color.
+
+Speaker
+
+But something that I sometimes like to do is go over to uigradiance.com. There's hundreds of different gradients that you can use that all look semi decent. And if you click on them, it'll just give you the CSS code that you need to paste in.
+
+Speaker
+
+So I guess I kind of cheated in that sense because...
+
+Speaker
+
+I went and got this background gradient. It's just kind of a silvery gray. It looks a little boring and like a robot at the same time.
+
+Speaker
+
+I left the comments in here just so that it was clear that this was coming from UI Gradients. This wasn't anything that I created really. And the repeat looks a little funny, so I'm going to add background.
+
+Speaker
+
+See background.
+
+Speaker
+
+Repeat of, I think, it's none.
+
+Speaker
+
+No, it's no - repeat. There we go.
+
+Speaker
+
+And of course, this is only taking up the height that it needs to, so maybe I'll go ahead and say I want to take up the entire view height.
+
+Speaker
+
+in this case. And then I think at what I want to do because this is just a small window and I know that I'm going to...
+
+Speaker
+
+not really add a lot to this website. I'm just gonna make the entire thing a flex container. So I'll say display.
+
+Speaker
+
+Flex.
+
+Speaker
+
+And I'll change the flex direction.
+
+Speaker
+
+to be a
+
+Speaker
+
+- Paul, um.
+
+Speaker
+
+And then I will just center everything, so I'll say align items center.
+
+Speaker
+
+Cool, well the font is a little boring and I did go and grab some Google fonts. I grabbed a font called Oxygen. See where is it right there? Oxygen. Now one thing that's kind of funny about Scrumba is you might have to just click refresh in this browser to see the change. Of course I haven't applied this yet. Let's go ahead and apply that.
+
+Speaker
+
+So I will just change the font family to be.
+
+Speaker
+
+oxygen.
+
+Speaker
+
+And we'll have a backup of Sans Serif like that. So as I'm recording this, I can see that this font changed. Again, if you're not seeing that, you may have to click refresh, or maybe if I come over here and hit refresh, it shows up for you.
+
+Speaker
+
+And okay, now our button is pretty piddly. Let's go ahead and select our button. We're only going to have one button for this website, so I'm just going to select the button tag.
+
+Speaker
+
+And let's make it significantly bigger. I'll give it a height of 100 pixels and a width of 100 pixels and then we'll give it a border radius.
+
+Speaker
+
+50%, so it's nice around.
+
+Speaker
+
+We'll give it a background color of red and then the borders a little funny the default border. So I'll say border is
+
+Speaker
+
+One pixel solid, maybe dark red, just something subtle. And awesome, that's a good good. Another thing I like to do with my buttons is add a...
+
+Speaker
+
+cursor pointer.
+
+Speaker
+
+Which when I hover over this turns it into a little Mickey Mouse hand again This might be another thing that Scrimba doesn't record you might have to refresh the mini browser to see the effect I have a black arrow outside of the button and then like the white Mickey Mouse hand of course I think it depends on what kind of computer you're on but the changes obvious the little
+
+Speaker
+
+cursor pointer makes it clear that this is a button that can be clicked. And awesome, we haven't hooked up our button, we're gonna do that next. And like I said, this isn't
+
+Speaker
+
+you know, the right answer or anything on how to style this. This is just one of the first things I came up with. In fact, this might be a good opportunity if you were pretty excited about what you were able to design during this challenge. Take a screenshot of it and share it in the Discord channel. We always love seeing people's submissions and really love seeing the differences between each person's sort of take on this kind of creative work. Next up, we will hook up this button to our actual board API.
+
+Speaker
+
+Okay, this time I played a little mean trick on you. I actually deleted the code. I'll hail extensive repetition. But what I want you to do is get extra practice with writing these fetch requests. Again, we're going to talk about what they're actually doing a little bit later. And I would like you to make it so that I'm going to be a little bit vague in my challenge instead of giving you the step by step. But I want you to make it so that when the button is clicked,
+
+Speaker
+
+It should call out to the board API and I've given you the URL to use right here.
+
+Speaker
+
+and have it replace the H4, which currently says find something to do.
+
+Speaker
+
+with the activity that comes from the API.
+
+Speaker
+
+the screencast here and work on this challenge. Good luck.
+
+Speaker
+
+Okay, well it all starts with fetch, so we'll use fetch.
+
+Speaker
+
+We'll grab the URL from up here.
+
+Speaker
+
+I'll write my dot then functions, which will receive a, now remember, this is a function.
+
+Speaker
+
+And...
+
+Speaker
+
+Sometimes gets a little lost when we use this arrow. It looks a little bit less like a function. I could easily write this.
+
+Speaker
+
+like a function declaration that you might be more familiar with seeing.
+
+Speaker
+
+I'll do that here and then I'll just change it.
+
+Speaker
+
+for switching things up, I guess.
+
+Speaker
+
+So...
+
+Speaker
+
+Then receives a function that function will receive a response and inside the body of this function, I guess I could open it up here. Again, we're going to change this in just a second. We will return response dot json, which means take the body of the response or the data that came back from the response in its JSON format and return it as or rather turn it into JavaScript. Actually, I'm realizing since we haven't really gone deep into dot then that this function syntax might be a little more confusing.
+
+Speaker
+
+kind of a board dot and go back and look at what this looks like as an arrow function.
+
+Speaker
+
+We have our arrow C, give it a function keyword, and it's a lot shorter. You can see it's a little nicer.
+
+Speaker
+
+don't need all that. Okay, much simpler. Now.
+
+Speaker
+
+In the next dot then function, we're going to be receiving the data. And again, I just always like to console log the data.
+
+Speaker
+
+Let's open our console, hit play.
+
+Speaker
+
+And now this fetch currently is just running as soon as the program runs, right? It's not tied to the button at all. We're going to add that a little bit later. But it's nice to see some progress in my console. I can see that I have an activity.
+
+Speaker
+
+Let's open up the body of this function.
+
+Speaker
+
+Okay, and then I
+
+Speaker
+
+have data.activity, that's the text that I want to replace the text in my...
+
+Speaker
+
+each four over there, so
+
+Speaker
+
+Let's go back.
+
+Speaker
+
+Now I could just select my
+
+Speaker
+
+I guess, but
+
+Speaker
+
+Let's go ahead and give it an ID just to make it a little simpler. We'll say activity.
+
+Speaker
+
+Okay, that's the idea of my H4 that will make it easy to and actually you know what if you weren't able to get quite this far well first of all I'd recommend going back and really just practicing this fetch syntax again We're gonna cover this so don't be concerned if it doesn't make perfect sense. That's totally okay, but just in case you weren't able to get this far in the challenge I'll
+
+Speaker
+
+have you pause and do the rest of this part of it where you take data.activity and replace the text here. This is a little bit of practice doing DOM manipulation. If you need to, go ahead, pause here, and try that out.
+
+Speaker
+
+Okay, well, that's regular.
+
+Speaker
+
+document.getElement by ID Activity
+
+Speaker
+
+and then we will change the text contents to be
+
+Speaker
+
+data.activity.
+
+Speaker
+
+I would notice sometimes I end up using inner HTML and sometimes I use text content. I try to keep them separate. My text content is whenever I'm taking existing HTML.
+
+Speaker
+
+which I have already, I have a tag in the H4 here.
+
+Speaker
+
+And oh, well, looks like maybe I introduced in bug, sorry if that caused any confusion. I have an H4 that exists already, and all I need to do is change the text content inside of that H4. I'm not injecting any additional HTML like an expand or something.
+
+Speaker
+
+I'm not doing anything like that.
+
+Speaker
+
+And so I like to keep it simple with text content. If I'm going to be creating new elements like an image or like I showed you a span or something, then I'll kind of concern myself with inner H2L. For now, we'll stick with text content. Let's run this and see if I find something to do changes. Again, this is running as soon as the program runs.
+
+Speaker
+
+and write a poem. Okay, cool.
+
+Speaker
+
+That means the last thing we need to do is essentially tie this JavaScript to the button or rather listen for a click on the button.
+
+Speaker
+
+And when that happens, run this JavaScript.
+
+Speaker
+
+Let's see if my button... Okay, so it does not have an idea we're going to select it in JavaScript, so maybe we'll say get activity.
+
+Speaker
+
+And over here.
+
+Speaker
+
+I'm going to set up an event listener, we'll say.
+
+Speaker
+
+Add event listener and oh actually you know what I don't want to add an event listener to the entire document I want to get my element by its ID first get activity and then add an event listener to that element I guess that brings up an important point I can add an event listener to the document I could just say this but then a click absolutely anywhere on the document would trigger my function so
+
+Speaker
+
+Add event listener, and this will receive a function. I could write it out as a function declaration like this and then put all my code.
+
+Speaker
+
+inside of there.
+
+Speaker
+
+And truthfully, I don't see a reason to worry about changing this into an error function, so I'll just leave it that way.
+
+Speaker
+
+So now when I hit refresh, I get an error.
+
+Speaker
+
+two arguments required, but only one present. Ah, that's because I need to tell it what kind of event to listen for.
+
+Speaker
+
+Classic mistake. OK.
+
+Speaker
+
+So add an event listener for a click event, and then if that happens on this button.
+
+Speaker
+
+then run this function.
+
+Speaker
+
+Okay, let's try hitting refresh again. Okay, good.
+
+Speaker
+
+So I click the button and there we go. Awesome. Conquer one of your fears. Now I should just be able to click this again and have it change to a new idea from the API.
+
+Speaker
+
+go to the Library and Find an interesting book. While I'm here, I'm going to get rid of my console log, it's clearly working just fine, so we'll get rid of that. I'll close the console, just run it again, create and follow, save and spend great idea. Awesome, nice work. Hopefully you were able to follow along with this. Keep practicing it if you need extra practice, and when you're ready, let's keep going forward.
+
+Speaker
+
+The last thing I think we're going to do with the board bot is to make it so that it's a little more obvious when an activity comes in from the API. Right now, we click the button.
+
+Speaker
+
+And all it really does is change this one little h4 here.
+
+Speaker
+
+It might be nice to spruce it up a little bit, make it so that it seems a little less boring.
+
+Speaker
+
+Again, because this is styling, it's sort of intentionally vague. I wanted you to have a chance to be creative, but also to practice some of your CSS skills and a little bit of your JavaScript skills as well.
+
+Speaker
+
+I've added a few resources that I think will be helpful, the DOM Element
+
+Speaker
+
+last list property would be something that might be helpful for you to search.
+
+Speaker
+
+It's a really good DOM API that makes it really easy to just add and remove.
+
+Speaker
+
+CSS classes directly from the JavaScript.
+
+Speaker
+
+And then we talked about earlier UI gradients, maybe make the background a little less
+
+Speaker
+
+our ideas here.
+
+Speaker
+
+You
+
+Speaker
+
+with color a little bit with color. Adobe.com.
+
+Speaker
+
+Those are just really great resources in general.
+
+Speaker
+
+So pause the screencast here, start working on this challenge, and have a little bit of fun with it.
+
+Speaker
+
+Okay, let's just start with this top one. Change the title from board bot to something more exciting. Well...
+
+Speaker
+
+We see in my HTML. Right now, this H1 doesn't have an ID. I would like to select it in my...
+
+Speaker
+
+So I'll change the ID or add an ID to...
+
+Speaker
+
+It's got title.
+
+Speaker
+
+Then in my JavaScript after the idea comes in, that's going to be inside of this.then function.
+
+Speaker
+
+We will select...
+
+Speaker
+
+that element.
+
+Speaker
+
+And then we'll just change the text content. And right now we have sort of a, I guess, stoic kind of bland looking little robot face there. I'm going to
+
+Speaker
+
+Keep with the robot theme, but maybe change up.
+
+Speaker
+
+the emojis a little bit, so we've got...
+
+Speaker
+
+little emoji robot arm and a robot leg. We're going to change the name to happy bot.
+
+Speaker
+
+And let's just see if that's working. So I hit the button.
+
+Speaker
+
+And happy bot, cool. Now this background is still feeling quite a bit drab to me, so...
+
+Speaker
+
+What I'm going to do is, and I cheated a little bit, I went to uigradiance.com and grabbed a gradient that has a little bit more character to it.
+
+Speaker
+
+And I think the first thing I'll do is create a specialized fun class.
+
+Speaker
+
+in my CSS. I'm just going to have anything that has this fun class.
+
+Speaker
+
+have a different background on it.
+
+Speaker
+
+If I go to my index HTML and maybe just apply.
+
+Speaker
+
+The
+
+Speaker
+
+last of
+
+Speaker
+
+fun here.
+
+Speaker
+
+So this is essentially what I'm aiming for when the fun class is added. I don't want to do that from the default, but...
+
+Speaker
+
+What I can do is use the class list.
+
+Speaker
+
+property.
+
+Speaker
+
+in order to modify the classes that are attached to the document's body. So I can just say document.body and I can actually access the body element especially through the document without having to give it an ID or anything.
+
+Speaker
+
+And we'll say class list.
+
+Speaker
+
+And that has a method called add. And all I have to do is add the fun class.
+
+Speaker
+
+So now, if I hit save and click the button, cool. Okay, we've changed to HappyBot. We've got a more colorful, fun background. We've got our idea here to write a song, and everything is looking good. This essentially is the finished point for our board bot.
+
+Speaker
+
+I hope you were able to do some more exciting stuff. The rest of this is just practicing CSS. Maybe you have your title bouncing up and down or animating or something, or maybe you included a different Google font and changed the font family. I hope you were able to put a little bit of effort and time into this because practicing this stuff really is the soul of your learning experience on Scrumba. Play around with this, make it really extra cool or unique, take a screenshot of it, put it in Discord, start a discussion there. We really love seeing people's
+
+Speaker
+
+sort of approaches to challenges like this.
+
+Speaker
+
+Before we move on, I want to do a quick recap of what we've learned, and then it will be time to move on to our next project.
+
+Speaker
+
+Before we completely wrap up our board bot, there are a few issues with accessibility that we should address now.
+
+Speaker
+
+I'm coming back to this project a while after I originally recorded it and now know that there are some deficiencies with the code that we've written when it comes to users who are using assistive technologies to understand what's happening on our page.
+
+Speaker
+
+Now, if you have done any research on accessibility, then I have a challenge for you, and if you haven't done any research or yet learned much about accessibility, then you can just watch me solve the challenge.
+
+Speaker
+
+But I do want to give you a chance, if you'd like, to complete this challenge. I want you to try and find at least four changes that we could make to our code that would greatly improve this app's accessibility for those using assistive technologies.
+
+Speaker
+
+So if you'd like to do this challenge, pause now and give it a try.
+
+Speaker
+
+The first one that I noticed when I was coming back to this is that our button, although it looks really fun, as a red circle, it has no text inside. And so anyone using a screen reader is essentially going to have no idea what this button is doing.
+
+Speaker
+
+One way we could fix this is by putting text inside of our button and then simply hiding that text.
+
+Speaker
+
+However, as far as I'm aware, this would take something like...
+
+Speaker
+
+10 new lines of CSS to do correctly?
+
+Speaker
+
+using visibility hidden or display none is not really recommended because assistive technologies just won't read the content that's hidden in these ways.
+
+Speaker
+
+much simpler way is for us to include an ARIA-label property.
+
+Speaker
+
+Are you a label allows us to direct the assistive technology? How it should describe what this button is supposed to do? So I might say something like,
+
+Speaker
+
+a new activity.
+
+Speaker
+
+Okay, let's add that to a running list here.
+
+Speaker
+
+Alright, now the second one that I noticed is that we are jumping immediately from an H1 to an H4.
+
+Speaker
+
+I believe I originally did this because an H4 seemed like it was by default about the right size of text that I wanted, but the truth is you should never use headings in this way. Heading should always be sequential, with a single H1 per page, and then working its way down to define specific sections of your page.
+
+Speaker
+
+Because this content changes from find something to do to the activity that the boardbot is suggesting,
+
+Speaker
+
+This makes a lot more sense as a paragraph.
+
+Speaker
+
+Not only that, but because we are using JavaScript to change the text content of this paragraph, we need to make sure that we use an RELive property to tell assistive technologies like a screen reader that when a DOM change happens to this element, that it should read out the new value of the text content.
+
+Speaker
+
+So I can set Ria Live equal to, in this case I think polite is probably the most appropriate value to put here.
+
+Speaker
+
+Okay, we'll add that to our list of fixes.
+
+Speaker
+
+I would say that these three fixes represent the lowest hanging fruit that will have the biggest impact on improving the accessibility of this app.
+
+Speaker
+
+One other thing that kind of came to me randomly is that we could wrap all of our main content here in a semantic main tag.
+
+Speaker
+
+And so I just decided to include that as one of my four, although you may or may not agree.
+
+Speaker
+
+So for the sake of getting to all four, I'll add that to the list.
+
+Speaker
+
+And of course I do need to update my
+
+Speaker
+
+CSS will just change that to main.
+
+Speaker
+
+And then we'll have to give our body.
+
+Speaker
+
+A padding of zero.
+
+Speaker
+
+or let's see, note this is a margin of zero. There we go.
+
+Speaker
+
+Let's click the button to make sure everything is working well.
+
+Speaker
+
+Oh, of course, when we make a structural change like that, we will need to make some other small changes.
+
+Speaker
+
+Let's see here we are doing document.body.classlist. And we really want to add this to our main element.
+
+Speaker
+
+And although we can access the body easily with document.body, we are going to have to do a little bit more, so we'll do query selector, and we'll just get the main element like this.
+
+Speaker
+
+All right, let's try this again, click the button, and there we go, our styles are back.
+
+Speaker
+
+We can clean up this old challenge text.
+
+Speaker
+
+And we will clean up this new challenge text and now our app is ready to ship to the public.
+
+Speaker
+
+As you learn more about accessibility, not only does it help you write more compliant and generally better code, but it actually can start to be a little bit addictive to make new challenge tell our app is
+
+Speaker
+
+As you learn again, click the button and there we go, our styles are back.
+
+Speaker
+
+and clean up this old challenge text.
+
+Speaker
+
+And we will clean up dirt and and although we can access the body easily with document dot body we are going to have to do a little bit more so we'll do query selector and we'll just get the main element
+
+Speaker
+
+All right, let's try this again, click the button, and there we go, our styles are back.
+
+Speaker
+
+We can clean up this old challenge text.
+
+Speaker
+
+And we will clean up this new challenge text, and now our app is ready to ship to the public.
+
+Speaker
+
+As you learn more about accessibility, not only does it help you write more compliant and generally better code, but it actually can start to be a little bit addictive to make sure that you're thinking of accessibility from the get-go.
+
+Speaker
+
+Alright, this has been a super fun section. Let's wrap everything up in the next scrim.
+
+Speaker
+
+Great work making it through this section.
+
+Speaker
+
+Before we move on, let's take a second to do a quick recap of what we've learned so far.
+
+Speaker
+
+We covered some really important topics including servers and clients and the difference between the two and how they interact with each other.
+
+Speaker
+
+And closely related, we talked about the request response cycle and what it means to send out a request and to receive a response in return from the server.
+
+Speaker
+
+And then we had a chance to use the request response cycle and interact with a number of different APIs.
+
+Speaker
+
+We learned a little bit more about JSON and how it's essentially the format for data on the internet today. It's the most popular way to transfer data from one place to another.
+
+Speaker
+
+And all of this was made possible by our practicing of the Fetch syntax.
+
+Speaker
+
+more deeply understanding exactly what we're typing with the fetch syntax.
+
+Speaker
+
+But for now, we're getting our repetitions in so that we can start using Fetch right away.
+
+Speaker
+
+And then of course we used all of this new knowledge to help us build the board bot project.
+
+Speaker
+
+It's a pretty simple app so far. We just click the button and get some ideas back. Of course, I clicked it and we saw this learn JavaScript as an idea. And I thought that was a really appropriate way to end this section because you are doing exactly that.
+
+Speaker
+
+Take this time to stand up, stretch a little bit, pat yourself on the back, congratulate yourself for making it through all of these really important basic topics.
+
+Speaker
+
+And when you're ready, we are going to keep moving onward.
+
+Speaker
+
+In this section, we're going to be diving deep into the surface.
